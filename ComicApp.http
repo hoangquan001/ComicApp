@@ -1,6 +1,0 @@
-@ComicApp_HostAddress = http://localhost:5080
-
-GET {{ComicApp_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

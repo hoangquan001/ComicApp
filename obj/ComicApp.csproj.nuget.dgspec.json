@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj": {}
+    "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj": {
+    "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj",
+        "projectUniqueName": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj",
         "projectName": "ComicApp",
-        "projectPath": "C:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj",
+        "projectPath": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ACER\\Desktop\\ComicApp\\obj\\",
+        "outputPath": "c:\\Users\\ACER\\Desktop\\ComicApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,9 +50,21 @@
               "target": "Package",
               "version": "[8.0.3, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.5.0, )"
             }
           },
           "imports": [
