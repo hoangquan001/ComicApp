@@ -32,12 +32,13 @@ namespace ComicApp.Data
             {
                 b.ToTable("Comics");
                 b.HasKey(x => x.id);
+                b.HasMany(e => e.genres).WithMany().UsingEntity<ComicGenre>();
             });
             modelBuilder.Entity<ComicGenre>(b =>
             {
                 b.ToTable("Comic_Genre");
                 b.HasKey(x => new { x.comicid, x.genreid });
-                // b.HasOne("comic").WithMany("Comics").HasForeignKey("comicid");
+                b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.comicid);
                 b.HasOne(x => x.genre).WithMany().HasForeignKey(x => x.genreid);
             }
             );
