@@ -5,11 +5,11 @@ namespace ComicApp.Models
     public class ComicGenre
     {
         // [Key]
-        public int comicid { get; set; }
-        public Comics? comic { get; set; }
+        public int ComicID { get; set; }
+        public Comic? Comic { get; set; }
         // [Key]
-        public int genreid { get; set; }
-        public Genres? genre { get; set; }
+        public int GenreID { get; set; }
+        public Genre? Genre { get; set; }
     }
 
 }

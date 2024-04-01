@@ -21,7 +21,7 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<List<Comics>> GetComics(int page, int step)
+    public ActionResult<List<Comic>> GetComics(int page, int step)
     {
         var data = _comicService.GetComics(page, step);
         return Ok(data);
@@ -29,20 +29,20 @@ public class ComicController : ControllerBase
     //get one comic by id
 
     [HttpGet("{id}")]
-    public ActionResult<Comics> GetComic(int id)
+    public ActionResult<Comic> GetComic(int id)
     {
         return Ok();
     }
 
     [HttpPost]
-    public ActionResult<Comics> AddComic(Comics comic)
+    public ActionResult<Comic> AddComic(Comic comic)
     {
         return Ok();
     }
 
     //Get all Genres
     [HttpGet("Genres")]
-    public ActionResult<List<Genres>> GetGenres()
+    public ActionResult<List<Genre>> GetGenres()
     {
         var data = _comicService.GetGenres();
         return Ok(data);

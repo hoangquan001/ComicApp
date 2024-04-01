@@ -12,38 +12,46 @@ namespace ComicApp.Data
 
         }
 
-        public DbSet<Users> Users => Set<Users>();
-        public DbSet<Comics> Comics => Set<Comics>();
-        public DbSet<Genres> Genres => Set<Genres>();
+        public DbSet<User> Users => Set<User>();
+        public DbSet<Comic> Comics => Set<Comic>();
+        public DbSet<Genre> Genres => Set<Genre>();
         public DbSet<ComicGenre> ComicGenre => Set<ComicGenre>();
-        public DbSet<Chapters> Chapters => Set<Chapters>();
+        public DbSet<Chapter> Chapters => Set<Chapter>();
+        public DbSet<Page> Pages => Set<Page>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Users>().ToTable("Users").HasKey(x => x.id);
+            modelBuilder.Entity<User>().ToTable("_USER").HasKey(x => x.ID);
 
-            modelBuilder.Entity<Chapters>(b =>
+            modelBuilder.Entity<Chapter>(b =>
             {
-                b.ToTable("Chapters");
-                b.HasKey(x => x.id);
-                b.HasOne(x => x.comic);
+                b.ToTable("CHAPTER");
+                b.HasKey(x => x.ID);
+                b.HasMany(e => e.Pages)
+                .WithOne()
+                .HasForeignKey(x => x.ChapterID);
             });
-            modelBuilder.Entity<Genres>().ToTable("Genres").HasKey(x => x.id);
-            modelBuilder.Entity<Comics>(b =>
+            modelBuilder.Entity<Genre>().ToTable("GENRE").HasKey(x => x.ID);
+            modelBuilder.Entity<Comic>(b =>
             {
-                b.ToTable("Comics");
-                b.HasKey(x => x.id);
+                b.ToTable("COMIC");
+                b.HasKey(x => x.ID);
                 b.HasMany(e => e.genres).WithMany().UsingEntity<ComicGenre>();
             });
             modelBuilder.Entity<ComicGenre>(b =>
             {
-                b.ToTable("Comic_Genre");
-                b.HasKey(x => new { x.comicid, x.genreid });
-                b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.comicid);
-                b.HasOne(x => x.genre).WithMany().HasForeignKey(x => x.genreid);
+                b.ToTable("COMIC_GENRE");
+                b.HasKey(x => new { x.ComicID, x.GenreID });
+                b.HasOne(x => x.Comic).WithMany().HasForeignKey(x => x.ComicID);
+                b.HasOne(x => x.Genre).WithMany().HasForeignKey(x => x.GenreID);
             }
             );
 
 
+            modelBuilder.Entity<Page>(b =>
+            {
+                b.ToTable("PAGE");
+                b.HasKey(x => x.ID);
+            });
 
 
 

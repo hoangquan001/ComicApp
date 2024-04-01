@@ -27,9 +27,9 @@ public class AuthController : ControllerBase
     }
     [Route("Register")]
     [HttpPost]
-    public ActionResult<ServiceResponse<Users>> Register(UserRegisterDTO RegisterData)
+    public ActionResult<ServiceResponse<User>> Register(UserRegisterDTO RegisterData)
     {
-        ServiceResponse<Users> res = _authService.Register(RegisterData);
+        ServiceResponse<User> res = _authService.Register(RegisterData);
         return Ok(res);
     }
     [Route("Logout")]

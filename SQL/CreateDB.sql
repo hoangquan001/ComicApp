@@ -6,66 +6,129 @@ GO
 USE ComicApp
 GO
 
-CREATE TABLE Users (
-    id INT NOT NULL IDENTITY(1,1),
-    username NVARCHAR(50) UNIQUE,
-    email NVARCHAR(100),
-    hash_password NVARCHAR(255),
-	CONSTRAINT PK_User PRIMARY KEY (id)
+CREATE TABLE _USER (
+    ID INT NOT NULL IDENTITY(1,1),
+    Username NVARCHAR(50) UNIQUE,
+    Email NVARCHAR(100),
+    HashPassword NVARCHAR(255),
+    Role int NOT NULL CHECK (Role IN(0,1,2)),
+	CONSTRAINT PK_USER PRIMARY KEY (ID)
+);
+
+INSERT INTO _USER (  Username, Email, HashPassword, Role )  VALUES
+( N'admin', N'admin', N'admin', 2 ),
+( N'user', N'user', N'user', 1 ),
+( N'guest', N'guest', N'guest', 0 ) -- gen more data
+
+CREATE TABLE COMIC (
+    ID INT NOT NULL IDENTITY(1,1),
+    Title NVARCHAR(255),
+    Author NVARCHAR(100),
+    Description NVARCHAR(MAX),
+    CoverImage NVARCHAR(255),
+    Status int NOT NULL CHECK (status IN(0,1)),
+    Rating int NOT NULL CHECK (Rating <=10),
+    CreateAt DATETIME NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    UpdateAt DATETIME NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT PK_COMIC PRIMARY KEY (ID)
+);
+INSERT INTO COMIC (Title, Author, Description, CoverImage,Status,Rating) VALUES
+('Comic 1', 'Author 1', 'Description for Comic 1', '/images/comic1.jpg' ,1,5),
+('Comic 2', 'Author 2', 'Description for Comic 2', '/images/comic2.jpg' ,1,5),
+('Comic 3', 'Author 3', 'Description for Comic 3', '/images/comic3.jpg' ,1,5),
+('Comic 4', 'Author 4', 'Description for Comic 4', '/images/comic4.jpg' ,1,5),
+('Comic 5', 'Author 5', 'Description for Comic 5', '/images/comic5.jpg' ,1,5),
+('Comic 6', 'Author 6', 'Description for Comic 6', '/images/comic6.jpg' ,1,5),
+('Comic 7', 'Author 7', 'Description for Comic 7', '/images/comic7.jpg' ,1,5),
+('Comic 8', 'Author 8', 'Description for Comic 8', '/images/comic8.jpg' ,1,5),
+('Comic 9', 'Author 9', 'Description for Comic 9', '/images/comic9.jpg' ,1,5),
+('Comic 10', 'Author 10', 'Description for Comic 10', '/images/comic10.jpg' ,1,5);
+
+
+CREATE TABLE USER_FOLLOW_COMIC (
+  UserID INT NOT NULL,
+  ComicID INT NOT NULL,
+  FollowDate DATETIME DEFAULT CURRENT_TIMESTAMP,  
+  PRIMARY KEY (UserID, ComicID),
+  FOREIGN KEY (UserID) REFERENCES _USER(ID),  
+  FOREIGN KEY (ComicID) REFERENCES COMIC(ID) 
+);
+
+CREATE TABLE USER_VOTE_COMIC (
+  UserID INT NOT NULL,
+  ComicID INT NOT NULL,
+  VotePoint INT NOT NULL CHECK(VotePoint in  (1,2,3,4,5,6,7,8,9,10)),
+  PRIMARY KEY (UserID, ComicID),  
+  FOREIGN KEY (UserID) REFERENCES _USER(ID),  
+  FOREIGN KEY (ComicID) REFERENCES COMIC(ID)  
 );
 
 
-CREATE TABLE Comics (
-    id INT NOT NULL IDENTITY(1,1),
-    title NVARCHAR(255),
-    author NVARCHAR(100),
-    description NVARCHAR(MAX),
-    cover_image NVARCHAR(255),
-    CONSTRAINT PK_Comics PRIMARY KEY (id)
-);
-
-CREATE TABLE Genres (
-    id INT NOT NULL IDENTITY(1,1),
-    title NVARCHAR(255),
-    description NVARCHAR(MAX),
-    CONSTRAINT PK_Genres PRIMARY KEY (id)
+CREATE TABLE GENRE (
+    ID INT NOT NULL IDENTITY(1,1),
+    Title NVARCHAR(255),
+    Description NVARCHAR(MAX),
+    CONSTRAINT PK_GENRE PRIMARY KEY (ID)
 );
 
 
-CREATE TABLE Comic_Genre (
-    comicid INT,
-    genreid INT,
-    CONSTRAINT PK_Comic_Genre PRIMARY KEY (comicid, genreid),
-	CONSTRAINT FK_Comic_Genre_comic FOREIGN KEY (comicid) REFERENCES Comics(id),
-	CONSTRAINT FK_Comic_Genre_genre FOREIGN KEY (genreid) REFERENCES Genres(id)
+CREATE TABLE COMIC_GENRE (
+    ComicID INT,
+    GenreID INT,
+    CONSTRAINT PK_Comic_Genre PRIMARY KEY (ComicID, GenreID),
+	CONSTRAINT FK_Comic_Genre_comic FOREIGN KEY (ComicID) REFERENCES COMIC(ID),
+	CONSTRAINT FK_Comic_Genre_genre FOREIGN KEY (GenreID) REFERENCES GENRE(ID)
 );
 
 
 
-CREATE TABLE Chapters (
-    id INT NOT NULL IDENTITY(1,1),
-    comicid INT,
-    chapter_number INT,
-    title NVARCHAR(255),
-    content NVARCHAR(MAX),
-    CONSTRAINT FK_Chapters PRIMARY KEY (id),
-    FOREIGN KEY (comicid) REFERENCES Comics(id)
+CREATE TABLE CHAPTER (
+    ID INT NOT NULL IDENTITY(1,1),
+    ComicID INT,
+    Title NVARCHAR(255),
+    ChapterNumber INT NOT NULL,
+    Content NVARCHAR(MAX),
+    ViewCount INT NOT NULL DEFAULT 0,
+    CONSTRAINT FK_CHAPTER PRIMARY KEY (ID),
+    FOREIGN KEY (ComicID) REFERENCES COMIC(ID)
 );
+INSERT INTO CHAPTER (comicid, Title, content, ChapterNumber) VALUES
+(1, N'Chương 1', N'Noi dung chuong 1', 1),
+(1, N'Chuong 2', N'Noi dung chuong 2', 2),
+(1, N'Chuong 3', N'Noi dung chuong 3', 3),
+(1, N'Chuong 4', N'Noi dung chuong 4', 4),
+(1, N'Chuong 5', N'Noi dung chuong 5', 5),
+(1, N'Chuong 6', N'Noi dung chuong 6', 6),
+(1, N'Chuong 7', N'Noi dung chuong 7', 7),
+(1, N'Chuong 8', N'Noi dung chuong 8', 8),
+(1, N'Chuong 9', N'Noi dung chuong 9', 9),
+(1, N'Chuong 10', N'Noi dung chuong 10', 10),
+(1, N'Chuong 11', N'Noi dung chuong 11', 11)
 
 
-INSERT INTO Comics (title, author, description, cover_image) VALUES
-('Comic 1', 'Author 1', 'Description for Comic 1', '/images/comic1.jpg'),
-('Comic 2', 'Author 2', 'Description for Comic 2', '/images/comic2.jpg'),
-('Comic 3', 'Author 3', 'Description for Comic 3', '/images/comic3.jpg'),
-('Comic 4', 'Author 4', 'Description for Comic 4', '/images/comic4.jpg'),
-('Comic 5', 'Author 5', 'Description for Comic 5', '/images/comic5.jpg'),
-('Comic 6', 'Author 6', 'Description for Comic 6', '/images/comic6.jpg'),
-('Comic 7', 'Author 7', 'Description for Comic 7', '/images/comic7.jpg'),
-('Comic 8', 'Author 8', 'Description for Comic 8', '/images/comic8.jpg'),
-('Comic 9', 'Author 9', 'Description for Comic 9', '/images/comic9.jpg'),
-('Comic 10', 'Author 10', 'Description for Comic 10', '/images/comic10.jpg');
+CREATE TABLE PAGE (
+  ID INT NOT NULL IDENTITY(1,1),
+  ChapterID INT NOT NULL,
+  PageNumber INT NOT NULL,
+  Content TEXT,  -- Description of the page content (optional)
+  ImageURL VARCHAR(255),  -- URL for the page image
+  CONSTRAINT FK_PAGE PRIMARY KEY (ID),
+  FOREIGN KEY (ChapterID) REFERENCES CHAPTER(ID)
+);
+INSERT INTO PAGE (ChapterID, PageNumber, Content, ImageURL) VALUES
+(1, 1, 'Noi dung trang 1', '/images/page1.jpg'),
+(1, 2, 'Noi dung trang 2', '/images/page2.jpg'),
+(1, 3, 'Noi dung trang 3', '/images/page3.jpg'),
+(1, 4, 'Noi dung trang 4', '/images/page4.jpg'),
+(1, 5, 'Noi dung trang 5', '/images/page5.jpg'),
+(1, 6, 'Noi dung trang 6', '/images/page6.jpg'),
+(1, 7, 'Noi dung trang 7', '/images/page7.jpg'),
+(1, 8, 'Noi dung trang 8', '/images/page8.jpg'),
+(1, 9, 'Noi dung trang 9', '/images/page9.jpg'),
+(1, 10, 'Noi dung trang 10', '/images/page10.jpg'),
+(1, 11, 'Noi dung trang 11', '/images/page11.jpg')
 
-INSERT INTO Genres (title, description) VALUES
+INSERT INTO GENRE (Title, Description) VALUES
 (N'Action', N'Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh'),
 (N'Adult', N'Thể loại có đề cập đến vấn đề nhạy cảm, chỉ dành cho tuổi 17+'),
 (N'Adventure', N'Thể loại phiêu lưu, mạo hiểm, thường là hành trình của các nhân vật'),
@@ -118,43 +181,32 @@ INSERT INTO Genres (title, description) VALUES
 (N'Webtoon', N'Là truyện tranh được đăng dài kỳ trên internet của Hàn Quốc chứ không xuất bản theo cách thông thường'),
 (N'Xuyên Không', N'Xuyên Không, Xuyên Việt là thể loại nhân vật chính vì một lý do nào đó mà bị đưa đến sinh sống ở một không gian hay một khoảng thời gian khác. Nhân vật chính có thể trực tiếp xuyên qua bằng thân xác mình hoặc sống lại bằng thân xác người khác.')
 
-INSERT INTO Comic_Genre (genreid, comicid) VALUES
-(52,1),
-(52,2),
-(52,3),
-(52,4),
-(52,5),
-(52,6),
-(52,7),
-(52,8),
-(53,9),
-(53,10),
-(54,1),
-(54,2)
+INSERT INTO COMIC_GENRE (genreid, comicid) VALUES
+(1,1),
+(2,2),
+(3,3),
+(4,4),
+(5,5),
+(6,6),
+(7,7),
+(8,8),
+(9,9),
+(10,10),
+(11,1),
+(11,2)
 
-INSERT INTO Chapters (comicid, title, content, chapter_number) VALUES
-(1, N'Chương 1', N'Noi dung chuong 1', 1),
-(1, N'Chuong 2', N'Noi dung chuong 2', 2),
-(1, N'Chuong 3', N'Noi dung chuong 3', 3),
-(1, N'Chuong 4', N'Noi dung chuong 4', 4),
-(1, N'Chuong 5', N'Noi dung chuong 5', 5),
-(1, N'Chuong 6', N'Noi dung chuong 6', 6),
-(1, N'Chuong 7', N'Noi dung chuong 7', 7),
-(1, N'Chuong 8', N'Noi dung chuong 8', 8),
-(1, N'Chuong 9', N'Noi dung chuong 9', 9),
-(1, N'Chuong 10', N'Noi dung chuong 10', 10),
-(1, N'Chuong 11', N'Noi dung chuong 11', 11)
 
 
 SELECT * 
-FROM Users
+FROM _USER
 SELECT * 
-FROM Comics
+FROM COMIC
 SELECT * 
-FROM Comic_Genre
+FROM COMIC_GENRE
 SELECT * 
-FROM Chapters
+FROM CHAPTER
 SELECT * 
-FROM Genres
-
---DELETE FROM Genres WHERE id>0;
+FROM GENRE
+SELECT * 
+FROM PAGE
+--DELETE FROM GENRE WHERE ID>0;

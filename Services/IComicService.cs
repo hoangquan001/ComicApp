@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 public interface IComicService
 {
-    ServiceResponse<List<Comics>> GetComics(int page, int step);
-    ServiceResponse<Comics> GetComic(int id);
-    ServiceResponse<Comics> AddComic(Comics comic);
-    ServiceResponse<List<Genres>> GetGenres();
+    ServiceResponse<List<Comic>> GetComics(int page, int step);
+    ServiceResponse<Comic> GetComic(int id);
+    ServiceResponse<Comic> AddComic(Comic comic);
+    ServiceResponse<List<Genre>> GetGenres();
 }

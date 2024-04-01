@@ -8,6 +8,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Security.Claims;
 using System.Text;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 namespace ComicApp.Services;
 public class ComicService : IComicService
 {
@@ -20,25 +21,35 @@ public class ComicService : IComicService
 
     // Get one comic
 
-    public ServiceResponse<Comics> GetComic(int id)
+    public ServiceResponse<Comic> GetComic(int id)
     {
-        return new ServiceResponse<Comics>
+        return new ServiceResponse<Comic>
         {
-            Data = _dbContext.Comics.SingleOrDefault(comic => comic.id == id),
+            Data = _dbContext.Comics.SingleOrDefault(comic => comic.ID == id),
             Status = 0,
             Message = "Success"
         };
     }
-    public ServiceResponse<List<Comics>> GetComics(int page, int step)
+    public ServiceResponse<List<Comic>> GetComics(int page, int step)
     {
         if (page < 1) page = 1;
-        var xdata = _dbContext.Genres.ToList();
-        var data2 = _dbContext.ComicGenre.ToList();
-        var data3 = _dbContext.Chapters.FirstOrDefault();
-        var data = _dbContext.Comics.Skip((page - 1) * step).Take(step).ToList();
-        var datax = _dbContext.Chapters.Where(c => c.comicid == 1).ToList();
-        var l = _dbContext.ComicGenre.Where(c => c.comicid == data[0].id).ToList();
-        return new ServiceResponse<List<Comics>>
+        // var xdata = _dbContext.Genres.ToList();
+        // var data2 = _dbContext.ComicGenre.ToList();
+        // var data3 = _dbContext.Chapters.FirstOrDefault();
+        var data = _dbContext.Comics.
+        Include(c => c.genres).
+        Include(c => c.Chapters).
+        Skip((page - 1) * step).
+        Take(step).
+        ToList();
+        var datax = _dbContext.Chapters
+        .Include(c => c.Pages)
+        .Where(c => c.ComicID == 1)
+        .Select(c => new {c.ComicID} )
+        .ToList();
+        var pageData = _dbContext.Pages.ToList();
+        // var l = _dbContext.ComicGenre.Where(c => c.ComicID == data[0].ID).ToList();
+        return new ServiceResponse<List<Comic>>
         {
             Data = data,
             Status = 0,
@@ -46,11 +57,11 @@ public class ComicService : IComicService
         };
     }
 
-    public ServiceResponse<Comics> AddComic(Comics comic)
+    public ServiceResponse<Comic> AddComic(Comic comic)
     {
         _dbContext.Comics.Add(comic);
         _dbContext.SaveChanges();
-        return new ServiceResponse<Comics>
+        return new ServiceResponse<Comic>
         {
             Data = comic,
             Status = 0,
@@ -58,10 +69,10 @@ public class ComicService : IComicService
         };
     }
 
-    public ServiceResponse<List<Genres>> GetGenres()
+    public ServiceResponse<List<Genre>> GetGenres()
     {
         _dbContext.Genres.ToList();
-        return new ServiceResponse<List<Genres>>
+        return new ServiceResponse<List<Genre>>
         {
             Data = _dbContext.Genres.ToList(),
             Status = 0,

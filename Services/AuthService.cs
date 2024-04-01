@@ -21,7 +21,7 @@ public class AuthService : IAuthService
     public ServiceResponse<string> Login(UserLoginDTO userLogin)
     {
         ServiceResponse<string> res = new ServiceResponse<string>();
-        var data = _dbContext.Users.SingleOrDefault(user => user.username == userLogin.username && user.hash_password == userLogin.password);
+        var data = _dbContext.Users.SingleOrDefault(user => user.Username == userLogin.username && user.HashPassword == userLogin.password);
         if (data == null)
         {
             res.Status = 0;
@@ -29,26 +29,26 @@ public class AuthService : IAuthService
             return res;
         }
 
-        res.Data = CreateToken(data.id);
+        res.Data = CreateToken(data.ID);
         res.Status = 1;
         res.Message = "Success";
         return res;
     }
-    public ServiceResponse<Users> Register(UserRegisterDTO RegisterData)
+    public ServiceResponse<User> Register(UserRegisterDTO RegisterData)
     {
-        if (_dbContext.Users.Any(user => user.username == RegisterData.username))
+        if (_dbContext.Users.Any(user => user.Username == RegisterData.username))
         {
-            return new ServiceResponse<Users> { Status = 0, Message = "Username already exists" };
+            return new ServiceResponse<User> { Status = 0, Message = "Username already exists" };
         }
-        Users user = new Users
+        User user = new User
         {
-            username = RegisterData.username!,
-            email = RegisterData.email!,
-            hash_password = RegisterData.password!
+            Username = RegisterData.username!,
+            Email = RegisterData.email!,
+            HashPassword = RegisterData.password!
         };
         _dbContext.Users.Add(user);
         _dbContext.SaveChanges();
-        return new ServiceResponse<Users>
+        return new ServiceResponse<User>
         {
             Data = user,
             Status = 1,
