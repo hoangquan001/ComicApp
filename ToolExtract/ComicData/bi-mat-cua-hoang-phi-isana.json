@@ -1,0 +1,66 @@
+{
+  "Title": "B\u00ed M\u1eadt C\u1ee7a Ho\u00e0ng Phi Isana",
+  "URL": "bi-mat-cua-hoang-phi-isana",
+  "CoverImage": "bi-mat-cua-hoang-phi-isana.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": [
+    {
+      "urlChapter": "chapter-12",
+      "dateUpdateChapter": "2023-12-26 22:22:23"
+    },
+    {
+      "urlChapter": "chapter-11",
+      "dateUpdateChapter": "2023-12-26 22:22:17"
+    },
+    {
+      "urlChapter": "chapter-10",
+      "dateUpdateChapter": "2023-12-26 22:22:15"
+    },
+    {
+      "urlChapter": "chapter-9",
+      "dateUpdateChapter": "2023-12-26 22:22:13"
+    },
+    {
+      "urlChapter": "chapter-8",
+      "dateUpdateChapter": "2023-12-26 22:22:11"
+    },
+    {
+      "urlChapter": "chapter-7",
+      "dateUpdateChapter": "2023-12-26 22:22:10"
+    },
+    {
+      "urlChapter": "chapter-6",
+      "dateUpdateChapter": "2023-12-26 22:22:08"
+    },
+    {
+      "urlChapter": "chapter-5",
+      "dateUpdateChapter": "2023-12-26 22:22:06"
+    },
+    {
+      "urlChapter": "chapter-4",
+      "dateUpdateChapter": "2023-12-26 22:22:04"
+    },
+    {
+      "urlChapter": "chapter-3",
+      "dateUpdateChapter": "2023-12-26 22:22:02"
+    },
+    {
+      "urlChapter": "chapter-2",
+      "dateUpdateChapter": "2023-12-26 22:22:00"
+    },
+    {
+      "urlChapter": "chapter-1",
+      "dateUpdateChapter": "2023-12-26 22:21:58"
+    }
+  ]
+}

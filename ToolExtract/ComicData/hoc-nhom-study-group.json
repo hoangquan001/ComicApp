@@ -1,0 +1,956 @@
+{
+  "Title": "H\u1ecdc Nh\u00f3m - Study Group",
+  "URL": "hoc-nhom-study-group",
+  "CoverImage": "hoc-nhom-study-group.jpg",
+  "CreateAt": "12/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Manhwa",
+    "Martial Arts",
+    "School Life",
+    "Shounen",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-234",
+  "TotalChapter": 234,
+  "Chapters": [
+    {
+      "urlChapter": "chapter-234",
+      "dateUpdateChapter": "2023-12-12 01:53:06"
+    },
+    {
+      "urlChapter": "chapter-233",
+      "dateUpdateChapter": "2023-12-12 01:53:02"
+    },
+    {
+      "urlChapter": "chapter-232",
+      "dateUpdateChapter": "2023-12-12 01:52:59"
+    },
+    {
+      "urlChapter": "chapter-231",
+      "dateUpdateChapter": "2023-12-12 01:52:56"
+    },
+    {
+      "urlChapter": "chapter-230",
+      "dateUpdateChapter": "2023-12-12 01:52:53"
+    },
+    {
+      "urlChapter": "chapter-229",
+      "dateUpdateChapter": "2023-12-12 01:52:49"
+    },
+    {
+      "urlChapter": "chapter-228",
+      "dateUpdateChapter": "2023-12-12 01:52:47"
+    },
+    {
+      "urlChapter": "chapter-227",
+      "dateUpdateChapter": "2023-12-12 01:52:44"
+    },
+    {
+      "urlChapter": "chapter-226",
+      "dateUpdateChapter": "2023-12-12 01:52:41"
+    },
+    {
+      "urlChapter": "chapter-225",
+      "dateUpdateChapter": "2023-12-12 01:52:38"
+    },
+    {
+      "urlChapter": "chapter-224",
+      "dateUpdateChapter": "2023-12-12 01:52:27"
+    },
+    {
+      "urlChapter": "chapter-223",
+      "dateUpdateChapter": "2023-12-12 01:52:21"
+    },
+    {
+      "urlChapter": "chapter-222",
+      "dateUpdateChapter": "2023-12-12 01:52:18"
+    },
+    {
+      "urlChapter": "chapter-221",
+      "dateUpdateChapter": "2023-12-12 01:52:15"
+    },
+    {
+      "urlChapter": "chapter-220",
+      "dateUpdateChapter": "2023-12-12 01:52:10"
+    },
+    {
+      "urlChapter": "chapter-219",
+      "dateUpdateChapter": "2023-12-12 01:52:07"
+    },
+    {
+      "urlChapter": "chapter-218",
+      "dateUpdateChapter": "2023-12-12 01:52:04"
+    },
+    {
+      "urlChapter": "chapter-217",
+      "dateUpdateChapter": "2023-12-12 01:52:00"
+    },
+    {
+      "urlChapter": "chapter-216",
+      "dateUpdateChapter": "2023-12-12 01:51:56"
+    },
+    {
+      "urlChapter": "chapter-215",
+      "dateUpdateChapter": "2023-12-12 01:51:54"
+    },
+    {
+      "urlChapter": "chapter-214",
+      "dateUpdateChapter": "2023-12-12 01:51:51"
+    },
+    {
+      "urlChapter": "chapter-213",
+      "dateUpdateChapter": "2023-12-12 01:51:48"
+    },
+    {
+      "urlChapter": "chapter-212",
+      "dateUpdateChapter": "2023-12-12 01:51:45"
+    },
+    {
+      "urlChapter": "chapter-211",
+      "dateUpdateChapter": "2023-12-12 01:51:41"
+    },
+    {
+      "urlChapter": "chapter-210",
+      "dateUpdateChapter": "2023-12-12 01:51:37"
+    },
+    {
+      "urlChapter": "chapter-209",
+      "dateUpdateChapter": "2023-12-12 01:51:34"
+    },
+    {
+      "urlChapter": "chapter-208",
+      "dateUpdateChapter": "2023-12-12 01:51:32"
+    },
+    {
+      "urlChapter": "chapter-207",
+      "dateUpdateChapter": "2023-12-12 01:51:29"
+    },
+    {
+      "urlChapter": "chapter-206",
+      "dateUpdateChapter": "2023-12-12 01:51:24"
+    },
+    {
+      "urlChapter": "chapter-205",
+      "dateUpdateChapter": "2023-12-12 01:51:21"
+    },
+    {
+      "urlChapter": "chapter-204",
+      "dateUpdateChapter": "2023-12-12 01:51:18"
+    },
+    {
+      "urlChapter": "chapter-203",
+      "dateUpdateChapter": "2023-12-12 01:51:14"
+    },
+    {
+      "urlChapter": "chapter-202",
+      "dateUpdateChapter": "2023-12-12 01:51:12"
+    },
+    {
+      "urlChapter": "chapter-201",
+      "dateUpdateChapter": "2023-12-12 01:51:06"
+    },
+    {
+      "urlChapter": "chapter-200",
+      "dateUpdateChapter": "2023-12-12 01:51:02"
+    },
+    {
+      "urlChapter": "chapter-199",
+      "dateUpdateChapter": "2023-12-12 01:50:58"
+    },
+    {
+      "urlChapter": "chapter-198",
+      "dateUpdateChapter": "2023-12-12 01:50:56"
+    },
+    {
+      "urlChapter": "chapter-197",
+      "dateUpdateChapter": "2023-12-12 01:50:52"
+    },
+    {
+      "urlChapter": "chapter-196",
+      "dateUpdateChapter": "2023-12-12 01:50:50"
+    },
+    {
+      "urlChapter": "chapter-195",
+      "dateUpdateChapter": "2023-12-12 01:50:46"
+    },
+    {
+      "urlChapter": "chapter-194",
+      "dateUpdateChapter": "2023-12-12 01:50:43"
+    },
+    {
+      "urlChapter": "chapter-193",
+      "dateUpdateChapter": "2023-12-12 01:50:39"
+    },
+    {
+      "urlChapter": "chapter-192",
+      "dateUpdateChapter": "2023-12-12 01:50:33"
+    },
+    {
+      "urlChapter": "chapter-191",
+      "dateUpdateChapter": "2023-12-12 01:50:28"
+    },
+    {
+      "urlChapter": "chapter-190",
+      "dateUpdateChapter": "2023-12-12 01:50:23"
+    },
+    {
+      "urlChapter": "chapter-189",
+      "dateUpdateChapter": "2023-12-12 01:50:19"
+    },
+    {
+      "urlChapter": "chapter-188",
+      "dateUpdateChapter": "2023-12-12 01:50:16"
+    },
+    {
+      "urlChapter": "chapter-187",
+      "dateUpdateChapter": "2023-12-12 01:50:13"
+    },
+    {
+      "urlChapter": "chapter-186",
+      "dateUpdateChapter": "2023-12-12 01:50:11"
+    },
+    {
+      "urlChapter": "chapter-185",
+      "dateUpdateChapter": "2023-12-12 01:50:08"
+    },
+    {
+      "urlChapter": "chapter-184",
+      "dateUpdateChapter": "2023-12-12 01:50:05"
+    },
+    {
+      "urlChapter": "chapter-183",
+      "dateUpdateChapter": "2023-12-12 01:50:03"
+    },
+    {
+      "urlChapter": "chapter-182",
+      "dateUpdateChapter": "2023-12-12 01:49:59"
+    },
+    {
+      "urlChapter": "chapter-181",
+      "dateUpdateChapter": "2023-12-12 01:49:56"
+    },
+    {
+      "urlChapter": "chapter-180",
+      "dateUpdateChapter": "2023-12-12 01:49:44"
+    },
+    {
+      "urlChapter": "chapter-179",
+      "dateUpdateChapter": "2023-12-12 01:49:40"
+    },
+    {
+      "urlChapter": "chapter-178",
+      "dateUpdateChapter": "2023-12-12 01:49:38"
+    },
+    {
+      "urlChapter": "chapter-177",
+      "dateUpdateChapter": "2023-12-12 01:49:35"
+    },
+    {
+      "urlChapter": "chapter-176",
+      "dateUpdateChapter": "2023-12-12 01:49:26"
+    },
+    {
+      "urlChapter": "chapter-175",
+      "dateUpdateChapter": "2023-12-12 01:49:23"
+    },
+    {
+      "urlChapter": "chapter-174",
+      "dateUpdateChapter": "2023-12-12 01:49:21"
+    },
+    {
+      "urlChapter": "chapter-173",
+      "dateUpdateChapter": "2023-12-12 01:49:19"
+    },
+    {
+      "urlChapter": "chapter-172",
+      "dateUpdateChapter": "2023-12-12 01:49:16"
+    },
+    {
+      "urlChapter": "chapter-171",
+      "dateUpdateChapter": "2023-12-12 01:49:14"
+    },
+    {
+      "urlChapter": "chapter-170",
+      "dateUpdateChapter": "2023-12-12 01:49:05"
+    },
+    {
+      "urlChapter": "chapter-169",
+      "dateUpdateChapter": "2023-12-12 01:49:03"
+    },
+    {
+      "urlChapter": "chapter-168",
+      "dateUpdateChapter": "2023-12-12 01:49:00"
+    },
+    {
+      "urlChapter": "chapter-167",
+      "dateUpdateChapter": "2023-12-12 01:48:57"
+    },
+    {
+      "urlChapter": "chapter-166",
+      "dateUpdateChapter": "2023-12-12 01:48:55"
+    },
+    {
+      "urlChapter": "chapter-165",
+      "dateUpdateChapter": "2023-12-12 01:48:52"
+    },
+    {
+      "urlChapter": "chapter-164",
+      "dateUpdateChapter": "2023-12-12 01:48:50"
+    },
+    {
+      "urlChapter": "chapter-163",
+      "dateUpdateChapter": "2023-12-12 01:48:47"
+    },
+    {
+      "urlChapter": "chapter-162",
+      "dateUpdateChapter": "2023-12-12 01:48:45"
+    },
+    {
+      "urlChapter": "chapter-161",
+      "dateUpdateChapter": "2023-12-12 01:48:42"
+    },
+    {
+      "urlChapter": "chapter-160",
+      "dateUpdateChapter": "2023-12-12 01:48:35"
+    },
+    {
+      "urlChapter": "chapter-159",
+      "dateUpdateChapter": "2023-12-12 01:48:33"
+    },
+    {
+      "urlChapter": "chapter-158",
+      "dateUpdateChapter": "2023-12-12 01:48:30"
+    },
+    {
+      "urlChapter": "chapter-157",
+      "dateUpdateChapter": "2023-12-12 01:48:27"
+    },
+    {
+      "urlChapter": "chapter-156",
+      "dateUpdateChapter": "2023-12-12 01:48:23"
+    },
+    {
+      "urlChapter": "chapter-155",
+      "dateUpdateChapter": "2023-12-12 01:48:20"
+    },
+    {
+      "urlChapter": "chapter-154",
+      "dateUpdateChapter": "2023-12-12 01:48:17"
+    },
+    {
+      "urlChapter": "chapter-153",
+      "dateUpdateChapter": "2023-12-12 01:48:15"
+    },
+    {
+      "urlChapter": "chapter-152",
+      "dateUpdateChapter": "2023-12-12 01:48:11"
+    },
+    {
+      "urlChapter": "chapter-151",
+      "dateUpdateChapter": "2023-12-12 01:48:06"
+    },
+    {
+      "urlChapter": "chapter-150",
+      "dateUpdateChapter": "2023-12-12 01:48:04"
+    },
+    {
+      "urlChapter": "chapter-149",
+      "dateUpdateChapter": "2023-12-12 01:48:01"
+    },
+    {
+      "urlChapter": "chapter-148",
+      "dateUpdateChapter": "2023-12-12 01:47:59"
+    },
+    {
+      "urlChapter": "chapter-147",
+      "dateUpdateChapter": "2023-12-12 01:47:57"
+    },
+    {
+      "urlChapter": "chapter-146",
+      "dateUpdateChapter": "2023-12-12 01:47:48"
+    },
+    {
+      "urlChapter": "chapter-145",
+      "dateUpdateChapter": "2023-12-12 01:47:45"
+    },
+    {
+      "urlChapter": "chapter-144",
+      "dateUpdateChapter": "2023-12-12 01:47:42"
+    },
+    {
+      "urlChapter": "chapter-143",
+      "dateUpdateChapter": "2023-12-12 01:47:38"
+    },
+    {
+      "urlChapter": "chapter-142",
+      "dateUpdateChapter": "2023-12-12 01:47:35"
+    },
+    {
+      "urlChapter": "chapter-141",
+      "dateUpdateChapter": "2023-12-12 01:47:32"
+    },
+    {
+      "urlChapter": "chapter-140",
+      "dateUpdateChapter": "2023-12-12 01:47:29"
+    },
+    {
+      "urlChapter": "chapter-139",
+      "dateUpdateChapter": "2023-12-12 01:47:26"
+    },
+    {
+      "urlChapter": "chapter-138",
+      "dateUpdateChapter": "2023-12-12 01:47:24"
+    },
+    {
+      "urlChapter": "chapter-137",
+      "dateUpdateChapter": "2023-12-12 01:47:21"
+    },
+    {
+      "urlChapter": "chapter-136",
+      "dateUpdateChapter": "2023-12-12 01:47:18"
+    },
+    {
+      "urlChapter": "chapter-135",
+      "dateUpdateChapter": "2023-12-12 01:47:16"
+    },
+    {
+      "urlChapter": "chapter-134",
+      "dateUpdateChapter": "2023-12-12 01:47:13"
+    },
+    {
+      "urlChapter": "chapter-133",
+      "dateUpdateChapter": "2023-12-12 01:47:10"
+    },
+    {
+      "urlChapter": "chapter-132",
+      "dateUpdateChapter": "2023-12-12 01:47:06"
+    },
+    {
+      "urlChapter": "chapter-131",
+      "dateUpdateChapter": "2023-12-12 01:47:03"
+    },
+    {
+      "urlChapter": "chapter-130",
+      "dateUpdateChapter": "2023-12-12 01:46:58"
+    },
+    {
+      "urlChapter": "chapter-129",
+      "dateUpdateChapter": "2023-12-12 01:46:55"
+    },
+    {
+      "urlChapter": "chapter-128",
+      "dateUpdateChapter": "2023-12-12 01:46:51"
+    },
+    {
+      "urlChapter": "chapter-127",
+      "dateUpdateChapter": "2023-12-12 01:46:48"
+    },
+    {
+      "urlChapter": "chapter-126",
+      "dateUpdateChapter": "2023-12-12 01:46:45"
+    },
+    {
+      "urlChapter": "chapter-125",
+      "dateUpdateChapter": "2023-12-12 01:46:38"
+    },
+    {
+      "urlChapter": "chapter-124",
+      "dateUpdateChapter": "2023-12-12 01:46:35"
+    },
+    {
+      "urlChapter": "chapter-123",
+      "dateUpdateChapter": "2023-12-12 01:46:33"
+    },
+    {
+      "urlChapter": "chapter-122",
+      "dateUpdateChapter": "2023-12-12 01:46:29"
+    },
+    {
+      "urlChapter": "chapter-121",
+      "dateUpdateChapter": "2023-12-12 01:46:25"
+    },
+    {
+      "urlChapter": "chapter-120",
+      "dateUpdateChapter": "2023-12-12 01:46:23"
+    },
+    {
+      "urlChapter": "chapter-119",
+      "dateUpdateChapter": "2023-12-12 01:46:13"
+    },
+    {
+      "urlChapter": "chapter-118",
+      "dateUpdateChapter": "2023-12-12 01:46:11"
+    },
+    {
+      "urlChapter": "chapter-117",
+      "dateUpdateChapter": "2023-12-12 01:46:05"
+    },
+    {
+      "urlChapter": "chapter-116",
+      "dateUpdateChapter": "2023-12-12 01:46:02"
+    },
+    {
+      "urlChapter": "chapter-115",
+      "dateUpdateChapter": "2023-12-12 01:45:58"
+    },
+    {
+      "urlChapter": "chapter-114",
+      "dateUpdateChapter": "2023-12-12 01:45:55"
+    },
+    {
+      "urlChapter": "chapter-113",
+      "dateUpdateChapter": "2023-12-12 01:45:52"
+    },
+    {
+      "urlChapter": "chapter-112",
+      "dateUpdateChapter": "2023-12-12 01:45:46"
+    },
+    {
+      "urlChapter": "chapter-111",
+      "dateUpdateChapter": "2023-12-12 01:45:44"
+    },
+    {
+      "urlChapter": "chapter-110",
+      "dateUpdateChapter": "2023-12-12 01:45:41"
+    },
+    {
+      "urlChapter": "chapter-109",
+      "dateUpdateChapter": "2023-12-12 01:45:38"
+    },
+    {
+      "urlChapter": "chapter-108",
+      "dateUpdateChapter": "2023-12-12 01:45:36"
+    },
+    {
+      "urlChapter": "chapter-107",
+      "dateUpdateChapter": "2023-12-12 01:45:32"
+    },
+    {
+      "urlChapter": "chapter-106",
+      "dateUpdateChapter": "2023-12-12 01:45:29"
+    },
+    {
+      "urlChapter": "chapter-105",
+      "dateUpdateChapter": "2023-12-12 01:45:27"
+    },
+    {
+      "urlChapter": "chapter-104",
+      "dateUpdateChapter": "2023-12-12 01:45:24"
+    },
+    {
+      "urlChapter": "chapter-103",
+      "dateUpdateChapter": "2023-12-12 01:45:22"
+    },
+    {
+      "urlChapter": "chapter-102",
+      "dateUpdateChapter": "2023-12-12 01:45:19"
+    },
+    {
+      "urlChapter": "chapter-101",
+      "dateUpdateChapter": "2023-12-12 01:45:17"
+    },
+    {
+      "urlChapter": "chapter-100",
+      "dateUpdateChapter": "2023-12-12 01:45:14"
+    },
+    {
+      "urlChapter": "chapter-99",
+      "dateUpdateChapter": "2023-12-12 01:45:12"
+    },
+    {
+      "urlChapter": "chapter-98",
+      "dateUpdateChapter": "2023-12-12 01:45:10"
+    },
+    {
+      "urlChapter": "chapter-97",
+      "dateUpdateChapter": "2023-12-12 01:45:05"
+    },
+    {
+      "urlChapter": "chapter-96",
+      "dateUpdateChapter": "2023-12-12 01:44:58"
+    },
+    {
+      "urlChapter": "chapter-95",
+      "dateUpdateChapter": "2023-12-12 01:44:55"
+    },
+    {
+      "urlChapter": "chapter-94",
+      "dateUpdateChapter": "2023-12-12 01:44:52"
+    },
+    {
+      "urlChapter": "chapter-93",
+      "dateUpdateChapter": "2023-12-12 01:44:50"
+    },
+    {
+      "urlChapter": "chapter-92",
+      "dateUpdateChapter": "2023-12-12 01:44:47"
+    },
+    {
+      "urlChapter": "chapter-91",
+      "dateUpdateChapter": "2023-12-12 01:44:45"
+    },
+    {
+      "urlChapter": "chapter-90",
+      "dateUpdateChapter": "2023-12-12 01:44:42"
+    },
+    {
+      "urlChapter": "chapter-89",
+      "dateUpdateChapter": "2023-12-12 01:44:38"
+    },
+    {
+      "urlChapter": "chapter-88",
+      "dateUpdateChapter": "2023-12-12 01:44:29"
+    },
+    {
+      "urlChapter": "chapter-87",
+      "dateUpdateChapter": "2023-12-12 01:44:25"
+    },
+    {
+      "urlChapter": "chapter-86",
+      "dateUpdateChapter": "2023-12-12 01:44:23"
+    },
+    {
+      "urlChapter": "chapter-85",
+      "dateUpdateChapter": "2023-12-12 01:44:20"
+    },
+    {
+      "urlChapter": "chapter-84",
+      "dateUpdateChapter": "2023-12-12 01:44:17"
+    },
+    {
+      "urlChapter": "chapter-83",
+      "dateUpdateChapter": "2023-12-12 01:44:15"
+    },
+    {
+      "urlChapter": "chapter-82",
+      "dateUpdateChapter": "2023-12-12 01:44:09"
+    },
+    {
+      "urlChapter": "chapter-81",
+      "dateUpdateChapter": "2023-12-12 01:44:07"
+    },
+    {
+      "urlChapter": "chapter-80",
+      "dateUpdateChapter": "2023-12-12 01:44:05"
+    },
+    {
+      "urlChapter": "chapter-79",
+      "dateUpdateChapter": "2023-12-12 01:44:03"
+    },
+    {
+      "urlChapter": "chapter-78",
+      "dateUpdateChapter": "2023-12-12 01:44:01"
+    },
+    {
+      "urlChapter": "chapter-77",
+      "dateUpdateChapter": "2023-12-12 01:43:58"
+    },
+    {
+      "urlChapter": "chapter-76",
+      "dateUpdateChapter": "2023-12-12 01:43:48"
+    },
+    {
+      "urlChapter": "chapter-75",
+      "dateUpdateChapter": "2023-12-12 01:43:46"
+    },
+    {
+      "urlChapter": "chapter-74",
+      "dateUpdateChapter": "2023-12-12 01:43:44"
+    },
+    {
+      "urlChapter": "chapter-73",
+      "dateUpdateChapter": "2023-12-12 01:43:42"
+    },
+    {
+      "urlChapter": "chapter-72",
+      "dateUpdateChapter": "2023-12-12 01:43:39"
+    },
+    {
+      "urlChapter": "chapter-71",
+      "dateUpdateChapter": "2023-12-12 01:43:33"
+    },
+    {
+      "urlChapter": "chapter-70",
+      "dateUpdateChapter": "2023-12-12 01:43:30"
+    },
+    {
+      "urlChapter": "chapter-69",
+      "dateUpdateChapter": "2023-12-12 01:43:26"
+    },
+    {
+      "urlChapter": "chapter-68",
+      "dateUpdateChapter": "2023-12-12 01:43:24"
+    },
+    {
+      "urlChapter": "chapter-67",
+      "dateUpdateChapter": "2023-12-12 01:43:19"
+    },
+    {
+      "urlChapter": "chapter-66",
+      "dateUpdateChapter": "2023-12-12 01:43:17"
+    },
+    {
+      "urlChapter": "chapter-65",
+      "dateUpdateChapter": "2023-12-12 01:43:15"
+    },
+    {
+      "urlChapter": "chapter-64",
+      "dateUpdateChapter": "2023-12-12 01:43:13"
+    },
+    {
+      "urlChapter": "chapter-63",
+      "dateUpdateChapter": "2023-12-12 01:43:11"
+    },
+    {
+      "urlChapter": "chapter-62",
+      "dateUpdateChapter": "2023-12-12 01:43:08"
+    },
+    {
+      "urlChapter": "chapter-61",
+      "dateUpdateChapter": "2023-12-12 01:43:01"
+    },
+    {
+      "urlChapter": "chapter-60",
+      "dateUpdateChapter": "2023-12-12 01:42:59"
+    },
+    {
+      "urlChapter": "chapter-59",
+      "dateUpdateChapter": "2023-12-12 01:42:56"
+    },
+    {
+      "urlChapter": "chapter-58",
+      "dateUpdateChapter": "2023-12-12 01:42:54"
+    },
+    {
+      "urlChapter": "chapter-57",
+      "dateUpdateChapter": "2023-12-12 01:42:51"
+    },
+    {
+      "urlChapter": "chapter-56",
+      "dateUpdateChapter": "2023-12-12 01:42:48"
+    },
+    {
+      "urlChapter": "chapter-55",
+      "dateUpdateChapter": "2023-12-12 01:42:46"
+    },
+    {
+      "urlChapter": "chapter-54",
+      "dateUpdateChapter": "2023-12-12 01:42:43"
+    },
+    {
+      "urlChapter": "chapter-53",
+      "dateUpdateChapter": "2023-12-12 01:42:41"
+    },
+    {
+      "urlChapter": "chapter-52",
+      "dateUpdateChapter": "2023-12-12 01:42:38"
+    },
+    {
+      "urlChapter": "chapter-51",
+      "dateUpdateChapter": "2023-12-12 01:42:35"
+    },
+    {
+      "urlChapter": "chapter-50",
+      "dateUpdateChapter": "2023-12-12 01:42:33"
+    },
+    {
+      "urlChapter": "chapter-49",
+      "dateUpdateChapter": "2023-12-12 01:42:30"
+    },
+    {
+      "urlChapter": "chapter-48",
+      "dateUpdateChapter": "2023-12-12 01:42:28"
+    },
+    {
+      "urlChapter": "chapter-47",
+      "dateUpdateChapter": "2023-12-12 01:42:26"
+    },
+    {
+      "urlChapter": "chapter-46",
+      "dateUpdateChapter": "2023-12-12 01:42:23"
+    },
+    {
+      "urlChapter": "chapter-45",
+      "dateUpdateChapter": "2023-12-12 01:42:21"
+    },
+    {
+      "urlChapter": "chapter-44",
+      "dateUpdateChapter": "2023-12-12 01:42:18"
+    },
+    {
+      "urlChapter": "chapter-43",
+      "dateUpdateChapter": "2023-12-12 01:42:15"
+    },
+    {
+      "urlChapter": "chapter-42",
+      "dateUpdateChapter": "2023-12-12 01:42:12"
+    },
+    {
+      "urlChapter": "chapter-41",
+      "dateUpdateChapter": "2023-12-12 01:42:09"
+    },
+    {
+      "urlChapter": "chapter-40",
+      "dateUpdateChapter": "2023-12-12 01:42:07"
+    },
+    {
+      "urlChapter": "chapter-39",
+      "dateUpdateChapter": "2023-12-12 01:42:05"
+    },
+    {
+      "urlChapter": "chapter-38",
+      "dateUpdateChapter": "2023-12-12 01:42:02"
+    },
+    {
+      "urlChapter": "chapter-37",
+      "dateUpdateChapter": "2023-12-12 01:42:00"
+    },
+    {
+      "urlChapter": "chapter-36",
+      "dateUpdateChapter": "2023-12-12 01:41:57"
+    },
+    {
+      "urlChapter": "chapter-35",
+      "dateUpdateChapter": "2023-12-12 01:41:55"
+    },
+    {
+      "urlChapter": "chapter-34",
+      "dateUpdateChapter": "2023-12-12 01:41:53"
+    },
+    {
+      "urlChapter": "chapter-33",
+      "dateUpdateChapter": "2023-12-12 01:41:50"
+    },
+    {
+      "urlChapter": "chapter-32",
+      "dateUpdateChapter": "2023-12-12 01:41:47"
+    },
+    {
+      "urlChapter": "chapter-31",
+      "dateUpdateChapter": "2023-12-12 01:41:46"
+    },
+    {
+      "urlChapter": "chapter-30",
+      "dateUpdateChapter": "2023-12-12 01:41:42"
+    },
+    {
+      "urlChapter": "chapter-29",
+      "dateUpdateChapter": "2023-12-12 01:41:40"
+    },
+    {
+      "urlChapter": "chapter-28",
+      "dateUpdateChapter": "2023-12-12 01:41:32"
+    },
+    {
+      "urlChapter": "chapter-27",
+      "dateUpdateChapter": "2023-12-12 01:41:29"
+    },
+    {
+      "urlChapter": "chapter-26",
+      "dateUpdateChapter": "2023-12-12 01:41:26"
+    },
+    {
+      "urlChapter": "chapter-25",
+      "dateUpdateChapter": "2023-12-12 01:41:24"
+    },
+    {
+      "urlChapter": "chapter-24",
+      "dateUpdateChapter": "2023-12-12 01:41:22"
+    },
+    {
+      "urlChapter": "chapter-23",
+      "dateUpdateChapter": "2023-12-12 01:41:20"
+    },
+    {
+      "urlChapter": "chapter-22",
+      "dateUpdateChapter": "2023-12-12 01:41:18"
+    },
+    {
+      "urlChapter": "chapter-21",
+      "dateUpdateChapter": "2023-12-12 01:41:16"
+    },
+    {
+      "urlChapter": "chapter-20",
+      "dateUpdateChapter": "2023-12-12 01:41:13"
+    },
+    {
+      "urlChapter": "chapter-19",
+      "dateUpdateChapter": "2023-12-12 01:41:11"
+    },
+    {
+      "urlChapter": "chapter-18",
+      "dateUpdateChapter": "2023-12-12 01:41:09"
+    },
+    {
+      "urlChapter": "chapter-17",
+      "dateUpdateChapter": "2023-12-12 01:41:07"
+    },
+    {
+      "urlChapter": "chapter-16",
+      "dateUpdateChapter": "2023-12-12 01:41:04"
+    },
+    {
+      "urlChapter": "chapter-15",
+      "dateUpdateChapter": "2023-12-12 01:41:01"
+    },
+    {
+      "urlChapter": "chapter-14",
+      "dateUpdateChapter": "2023-12-12 01:40:59"
+    },
+    {
+      "urlChapter": "chapter-13",
+      "dateUpdateChapter": "2023-12-12 01:40:55"
+    },
+    {
+      "urlChapter": "chapter-12",
+      "dateUpdateChapter": "2023-12-12 01:40:52"
+    },
+    {
+      "urlChapter": "chapter-11",
+      "dateUpdateChapter": "2023-12-12 01:40:50"
+    },
+    {
+      "urlChapter": "chapter-10",
+      "dateUpdateChapter": "2023-12-12 01:40:48"
+    },
+    {
+      "urlChapter": "chapter-9",
+      "dateUpdateChapter": "2023-12-12 01:40:46"
+    },
+    {
+      "urlChapter": "chapter-8",
+      "dateUpdateChapter": "2023-12-12 01:40:43"
+    },
+    {
+      "urlChapter": "chapter-7",
+      "dateUpdateChapter": "2023-12-12 01:40:41"
+    },
+    {
+      "urlChapter": "chapter-6",
+      "dateUpdateChapter": "2023-12-12 01:40:38"
+    },
+    {
+      "urlChapter": "chapter-5",
+      "dateUpdateChapter": "2023-12-12 01:40:35"
+    },
+    {
+      "urlChapter": "chapter-4",
+      "dateUpdateChapter": "2023-12-12 01:40:33"
+    },
+    {
+      "urlChapter": "chapter-3",
+      "dateUpdateChapter": "2023-12-12 01:40:31"
+    },
+    {
+      "urlChapter": "chapter-2",
+      "dateUpdateChapter": "2023-12-12 01:40:29"
+    },
+    {
+      "urlChapter": "chapter-1",
+      "dateUpdateChapter": "2023-12-12 01:40:22"
+    }
+  ]
+}

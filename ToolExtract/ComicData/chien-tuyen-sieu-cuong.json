@@ -1,0 +1,35 @@
+{
+  "Title": "Chi\u1ebfn Tuy\u1ebfn Si\u00eau C\u01b0\u1eddng",
+  "URL": "chien-tuyen-sieu-cuong",
+  "CoverImage": "chien-tuyen-sieu-cuong.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": [
+    {
+      "urlChapter": "chapter-5",
+      "dateUpdateChapter": "18 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-4",
+      "dateUpdateChapter": "2024-02-16 19:15:00"
+    },
+    {
+      "urlChapter": "chapter-3",
+      "dateUpdateChapter": "2024-01-22 22:48:56"
+    },
+    {
+      "urlChapter": "chapter-2",
+      "dateUpdateChapter": "2024-01-22 22:48:54"
+    },
+    {
+      "urlChapter": "chapter-1",
+      "dateUpdateChapter": "2024-01-22 22:48:52"
+    }
+  ]
+}

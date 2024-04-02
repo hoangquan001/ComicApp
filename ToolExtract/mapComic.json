@@ -1,0 +1,3604 @@
+{
+  "comic": [
+    {
+      "urlComic": "tien-nu-ngoai-truyen",
+      "totalChapter": 97,
+      "createDateComic": "2024-01-01T08:20:26.000Z",
+      "lastUpdateChapter": "2024-01-01T08:27:00.000Z"
+    },
+    {
+      "urlComic": "hay-khien-toi-ghet-cau",
+      "totalChapter": 42,
+      "createDateComic": "2023-12-30T02:26:38.000Z",
+      "lastUpdateChapter": "2024-03-01T23:28:13.000Z"
+    },
+    {
+      "urlComic": "su-ton-nghich-do-nay-khong-phai-la-thanh-tu",
+      "totalChapter": 37,
+      "createDateComic": "2023-12-27T01:06:21.000Z",
+      "lastUpdateChapter": "2024-03-27T07:56:09.000Z"
+    },
+    {
+      "urlComic": "tieu-su-muoi-ro-rang-rat-manh-nhung-lai-qua-tau-he",
+      "totalChapter": 204,
+      "createDateComic": "2023-12-13T19:43:16.000Z",
+      "lastUpdateChapter": "2024-01-11T08:35:01.000Z"
+    },
+    {
+      "urlComic": "nguoi-hung-cua-ac-nu",
+      "totalChapter": 105,
+      "createDateComic": "2023-12-11T06:51:48.000Z",
+      "lastUpdateChapter": "2023-12-11T06:55:38.000Z"
+    },
+    {
+      "urlComic": "hoi-phap-su-nhiem-vu-tram-nam",
+      "totalChapter": 158,
+      "createDateComic": "2023-12-10T01:43:36.000Z",
+      "lastUpdateChapter": "2024-03-28T13:03:35.000Z"
+    },
+    {
+      "urlComic": "lilien-cua-turin",
+      "totalChapter": 47,
+      "createDateComic": "2023-12-21T17:22:10.000Z",
+      "lastUpdateChapter": "2024-03-27T04:16:22.000Z"
+    },
+    {
+      "urlComic": "phong-van",
+      "totalChapter": 671,
+      "createDateComic": "2023-12-15T09:00:06.000Z",
+      "lastUpdateChapter": "2023-12-15T09:33:25.000Z"
+    },
+    {
+      "urlComic": "co-dau-thu-99-cua-cong-tuoc",
+      "totalChapter": 43,
+      "createDateComic": "2024-01-01T08:14:28.000Z",
+      "lastUpdateChapter": "2024-01-01T08:16:28.000Z"
+    },
+    {
+      "urlComic": "cach-bao-ve-anh-trai-cua-nu-chinh",
+      "totalChapter": 43,
+      "createDateComic": "2023-12-12T09:38:18.000Z",
+      "lastUpdateChapter": "2023-12-12T09:41:20.000Z"
+    },
+    {
+      "urlComic": "doc-thoai-cua-nguoi-duoc-si",
+      "totalChapter": 71,
+      "createDateComic": "2023-12-17T10:11:07.000Z",
+      "lastUpdateChapter": "2024-03-12T00:16:49.000Z"
+    },
+    {
+      "urlComic": "toi-cuong-than-thoai-de-hoang",
+      "totalChapter": 121,
+      "createDateComic": "2023-12-13T01:15:47.000Z",
+      "lastUpdateChapter": "2024-03-29T00:22:31.000Z"
+    },
+    {
+      "urlComic": "anh-chang-sat-thu-nguy-hiem-lai-rat-ngot-ngao",
+      "totalChapter": 24,
+      "createDateComic": "2024-01-09T14:05:27.000Z",
+      "lastUpdateChapter": "2024-03-21T14:50:00.000Z"
+    },
+    {
+      "urlComic": "quy-luat-lam-ban-voi-con-trai",
+      "totalChapter": 71,
+      "createDateComic": "2024-01-02T23:57:05.000Z",
+      "lastUpdateChapter": "2024-03-21T23:52:19.000Z"
+    },
+    {
+      "urlComic": "lam-si",
+      "totalChapter": 262,
+      "createDateComic": "2023-12-12T18:32:39.000Z",
+      "lastUpdateChapter": "2023-12-12T18:44:51.000Z"
+    },
+    {
+      "urlComic": "nam-giu-trai-tim-cua-bao-chua",
+      "totalChapter": 59,
+      "createDateComic": "2024-01-01T21:00:40.000Z",
+      "lastUpdateChapter": "2024-02-29T00:43:33.000Z"
+    },
+    {
+      "urlComic": "luu-hoa-bat-cap-xuan",
+      "totalChapter": 61,
+      "createDateComic": "2023-12-25T09:43:11.000Z",
+      "lastUpdateChapter": "2023-12-25T09:45:27.000Z"
+    },
+    {
+      "urlComic": "onii-chan-wa-oshimai",
+      "totalChapter": 115,
+      "createDateComic": "2023-12-21T18:21:00.000Z",
+      "lastUpdateChapter": "2024-02-27T07:28:59.000Z"
+    },
+    {
+      "urlComic": "pham-nhan-be-con-cua-dinh-thu-mua-dong",
+      "totalChapter": 27,
+      "createDateComic": "2024-02-16T11:28:30.000Z",
+      "lastUpdateChapter": "2024-04-02T05:00:11.000Z"
+    },
+    {
+      "urlComic": "hoang-hau-uong-buong",
+      "totalChapter": 302,
+      "createDateComic": "2023-12-08T11:27:41.000Z",
+      "lastUpdateChapter": "2023-12-08T11:38:34.000Z"
+    },
+    {
+      "urlComic": "chu-mau-xuyen-khong-toi-lam-phu-nhan-hao-mon",
+      "totalChapter": 69,
+      "createDateComic": "2023-12-26T02:14:55.000Z",
+      "lastUpdateChapter": "2024-03-29T02:15:54.000Z"
+    },
+    {
+      "urlComic": "bi-mat-cua-hoang-phi-isana",
+      "totalChapter": 12,
+      "createDateComic": "2023-12-26T15:21:57.000Z",
+      "lastUpdateChapter": "2023-12-26T15:22:23.000Z"
+    },
+    {
+      "urlComic": "nhan-vat-phan-dien-dai-su-huynh-tat-ca-cac-su-muoi-deu-la-benh-kieu",
+      "totalChapter": 120,
+      "createDateComic": "2023-12-16T19:17:11.000Z",
+      "lastUpdateChapter": "2024-03-23T06:13:22.000Z"
+    },
+    {
+      "urlComic": "tinh-dau-cua-ma-ca-rong",
+      "totalChapter": 40,
+      "createDateComic": "2024-01-16T08:21:16.000Z",
+      "lastUpdateChapter": "2024-03-14T23:01:26.000Z"
+    },
+    {
+      "urlComic": "khe-uoc-hon-nhan-cua-me-toi",
+      "totalChapter": 56,
+      "createDateComic": "2023-12-27T00:44:57.000Z",
+      "lastUpdateChapter": "2024-03-27T18:00:17.000Z"
+    },
+    {
+      "urlComic": "dung-si-hesman",
+      "totalChapter": 159,
+      "createDateComic": "2023-12-29T10:36:34.000Z",
+      "lastUpdateChapter": "2023-12-29T10:45:59.000Z"
+    },
+    {
+      "urlComic": "tu-chan-noi-chuyen-phiem-quan",
+      "totalChapter": 445,
+      "createDateComic": "2023-12-08T10:04:16.000Z",
+      "lastUpdateChapter": "2024-04-01T10:08:56.000Z"
+    },
+    {
+      "urlComic": "kono-oto-tomare",
+      "totalChapter": 133,
+      "createDateComic": "2023-12-30T02:36:12.000Z",
+      "lastUpdateChapter": "2024-03-11T00:01:06.000Z"
+    },
+    {
+      "urlComic": "majo-to-yajuu",
+      "totalChapter": 24,
+      "createDateComic": "2024-01-17T13:09:08.000Z",
+      "lastUpdateChapter": "2024-03-30T06:19:44.000Z"
+    },
+    {
+      "urlComic": "ta-lam-lon-o-hau-cung",
+      "totalChapter": 197,
+      "createDateComic": "2023-12-08T18:44:15.000Z",
+      "lastUpdateChapter": "2023-12-08T18:51:41.000Z"
+    },
+    {
+      "urlComic": "de-tu-tu-luyen-con-ta-thi-luoi-bieng",
+      "totalChapter": 59,
+      "createDateComic": "2024-01-13T21:47:59.000Z",
+      "lastUpdateChapter": "2024-03-27T07:59:21.000Z"
+    },
+    {
+      "urlComic": "hoa-long-ky",
+      "totalChapter": 283,
+      "createDateComic": "2023-12-09T08:07:12.000Z",
+      "lastUpdateChapter": "2023-12-09T08:14:01.000Z"
+    },
+    {
+      "urlComic": "arya-ban-ben-thinh-thoang-lai-treu-gheo-toi-bang-tieng-nga",
+      "totalChapter": 37,
+      "createDateComic": "2023-12-26T09:01:45.000Z",
+      "lastUpdateChapter": "2024-03-16T22:59:49.000Z"
+    },
+    {
+      "urlComic": "tuyet-sac-quyen-ru-quy-y-chi-ton",
+      "totalChapter": 521,
+      "createDateComic": "2023-12-06T11:15:07.000Z",
+      "lastUpdateChapter": "2023-12-06T11:44:45.000Z"
+    },
+    {
+      "urlComic": "sanctuary",
+      "totalChapter": 107,
+      "createDateComic": "2024-01-03T16:43:13.000Z",
+      "lastUpdateChapter": "2024-01-03T16:52:42.000Z"
+    },
+    {
+      "urlComic": "tha-vu-nu-do-ra",
+      "totalChapter": 576,
+      "createDateComic": "2023-12-08T17:09:29.000Z",
+      "lastUpdateChapter": "2024-04-02T10:05:56.000Z"
+    },
+    {
+      "urlComic": "friendzone",
+      "totalChapter": 103,
+      "createDateComic": "2023-12-09T01:13:22.000Z",
+      "lastUpdateChapter": "2023-12-09T01:15:42.000Z"
+    },
+    {
+      "urlComic": "tu-hom-nay-bat-dau-lam-thanh-chu",
+      "totalChapter": 522,
+      "createDateComic": "2023-12-06T13:28:19.000Z",
+      "lastUpdateChapter": "2024-04-01T10:50:04.000Z"
+    },
+    {
+      "urlComic": "mua-dong-tam-toi",
+      "totalChapter": 125,
+      "createDateComic": "2023-12-25T11:40:31.000Z",
+      "lastUpdateChapter": "2023-12-25T11:46:18.000Z"
+    },
+    {
+      "urlComic": "khoi-tao-nhan-vat-phan-dien",
+      "totalChapter": 148,
+      "createDateComic": "2023-12-13T22:22:50.000Z",
+      "lastUpdateChapter": "2024-03-29T13:05:24.000Z"
+    },
+    {
+      "urlComic": "toi-se-bi-tru-khu-cung-hoang-de",
+      "totalChapter": 184,
+      "createDateComic": "2023-12-11T09:56:29.000Z",
+      "lastUpdateChapter": "2024-03-28T13:53:25.000Z"
+    },
+    {
+      "urlComic": "hay-de-toi-duoc-hieu-em",
+      "totalChapter": 199,
+      "createDateComic": "2023-12-12T15:57:21.000Z",
+      "lastUpdateChapter": "2024-04-02T10:06:52.000Z"
+    },
+    {
+      "urlComic": "toi-tuong-ban-than-khong-con-song-duoc-bao-lau",
+      "totalChapter": 124,
+      "createDateComic": "2023-12-13T22:18:35.000Z",
+      "lastUpdateChapter": "2024-02-06T05:20:31.000Z"
+    },
+    {
+      "urlComic": "gia-dinh-chong-bi-am-anh-boi-toi",
+      "totalChapter": 199,
+      "createDateComic": "2023-12-21T10:16:42.000Z",
+      "lastUpdateChapter": "2024-03-27T12:22:51.000Z"
+    },
+    {
+      "urlComic": "tinh-yeu-cua-ik-seob",
+      "totalChapter": 79,
+      "createDateComic": "2023-12-26T15:13:59.000Z",
+      "lastUpdateChapter": "2024-04-02T10:08:53.000Z"
+    },
+    {
+      "urlComic": "phuong-phap-che-giau-dua-con-cua-hoang-de",
+      "totalChapter": 100,
+      "createDateComic": "2023-12-13T21:43:38.000Z",
+      "lastUpdateChapter": "2024-03-28T10:17:50.000Z"
+    },
+    {
+      "urlComic": "danh-cho-nhan-vat-bi-bo-roi-yeu-thich-nhat-cua-toi",
+      "totalChapter": 141,
+      "createDateComic": "2023-12-12T14:16:23.000Z",
+      "lastUpdateChapter": "2024-04-02T11:06:38.000Z"
+    },
+    {
+      "urlComic": "serena",
+      "totalChapter": 152,
+      "createDateComic": "2023-12-25T04:22:22.000Z",
+      "lastUpdateChapter": "2024-04-01T15:39:49.000Z"
+    },
+    {
+      "urlComic": "vo-luyen-dinh-phong",
+      "totalChapter": 3725,
+      "createDateComic": "2023-12-05T03:22:00.000Z",
+      "lastUpdateChapter": "2024-04-02T03:57:03.000Z"
+    },
+    {
+      "urlComic": "quang-doi-con-lai-cua-nu-phu-yeu-menh",
+      "totalChapter": 94,
+      "createDateComic": "2023-12-25T09:11:41.000Z",
+      "lastUpdateChapter": "2024-03-27T17:01:01.000Z"
+    },
+    {
+      "urlComic": "thieu-soai-vo-ngai-lai-bo-tron",
+      "totalChapter": 512,
+      "createDateComic": "2023-12-06T05:13:57.000Z",
+      "lastUpdateChapter": "2023-12-06T05:30:44.000Z"
+    },
+    {
+      "urlComic": "tu-do-trong-mo",
+      "totalChapter": 196,
+      "createDateComic": "2023-12-11T03:25:27.000Z",
+      "lastUpdateChapter": "2024-03-27T00:01:21.000Z"
+    },
+    {
+      "urlComic": "em-chi-muon-hit-van-khi-cua-anh",
+      "totalChapter": 49,
+      "createDateComic": "2023-12-19T16:18:29.000Z",
+      "lastUpdateChapter": "2024-03-28T08:42:12.000Z"
+    },
+    {
+      "urlComic": "kiep-nay-toi-nhat-dinh-tro-thanh-gia-chu",
+      "totalChapter": 144,
+      "createDateComic": "2023-12-08T16:17:03.000Z",
+      "lastUpdateChapter": "2024-04-02T10:08:47.000Z"
+    },
+    {
+      "urlComic": "lan-nua-toa-sang",
+      "totalChapter": 89,
+      "createDateComic": "2023-12-11T10:47:49.000Z",
+      "lastUpdateChapter": "2024-03-31T02:31:13.000Z"
+    },
+    {
+      "urlComic": "the-thao-cuc-han",
+      "totalChapter": 521,
+      "createDateComic": "2023-12-06T04:25:29.000Z",
+      "lastUpdateChapter": "2024-04-01T02:00:07.000Z"
+    },
+    {
+      "urlComic": "tro-thanh-co-chau-gai-bi-khinh-miet-cua-gia-toc-vo-lam",
+      "totalChapter": 54,
+      "createDateComic": "2023-12-25T08:04:29.000Z",
+      "lastUpdateChapter": "2024-03-24T00:26:54.000Z"
+    },
+    {
+      "urlComic": "su-phan-boi",
+      "totalChapter": 73,
+      "createDateComic": "2024-01-04T12:28:24.000Z",
+      "lastUpdateChapter": "2024-04-01T15:26:22.000Z"
+    },
+    {
+      "urlComic": "cha-oi-con-khong-muon-ket-hon-dau",
+      "totalChapter": 144,
+      "createDateComic": "2023-12-09T05:15:30.000Z",
+      "lastUpdateChapter": "2024-03-27T17:58:08.000Z"
+    },
+    {
+      "urlComic": "cuoc-hon-nhan-nay-du-sao-cung-se-tan-vo-ma-thoi",
+      "totalChapter": 69,
+      "createDateComic": "2023-12-21T08:03:49.000Z",
+      "lastUpdateChapter": "2024-03-30T08:01:33.000Z"
+    },
+    {
+      "urlComic": "dai-quan-gia-la-ma-hoang",
+      "totalChapter": 530,
+      "createDateComic": "2023-12-05T16:32:36.000Z",
+      "lastUpdateChapter": "2024-03-30T06:19:36.000Z"
+    },
+    {
+      "urlComic": "quyen-ru-papa-cua-nhan-vat-phan-dien",
+      "totalChapter": 150,
+      "createDateComic": "2023-12-09T07:42:28.000Z",
+      "lastUpdateChapter": "2024-03-21T23:52:10.000Z"
+    },
+    {
+      "urlComic": "bao-ve-sieu-sao-cua-toi",
+      "totalChapter": 143,
+      "createDateComic": "2023-12-11T10:41:14.000Z",
+      "lastUpdateChapter": "2023-12-11T10:47:47.000Z"
+    },
+    {
+      "urlComic": "giao-duc-chan-chinh-get-schooled",
+      "totalChapter": 133,
+      "createDateComic": "2023-12-13T16:41:12.000Z",
+      "lastUpdateChapter": "2024-03-15T01:55:42.000Z"
+    },
+    {
+      "urlComic": "bac-kiem-giang-ho",
+      "totalChapter": 183,
+      "createDateComic": "2023-12-10T02:09:34.000Z",
+      "lastUpdateChapter": "2024-03-29T13:09:46.000Z"
+    },
+    {
+      "urlComic": "toi-sap-ly-hon-voi-nguoi-chong-doc-ac-nhung-chung-toi-co-baby",
+      "totalChapter": 99,
+      "createDateComic": "2023-12-19T01:36:56.000Z",
+      "lastUpdateChapter": "2024-03-25T00:01:12.000Z"
+    },
+    {
+      "urlComic": "cuop-dau",
+      "totalChapter": 134,
+      "createDateComic": "2023-12-17T13:56:53.000Z",
+      "lastUpdateChapter": "2024-03-26T00:05:51.000Z"
+    },
+    {
+      "urlComic": "chainsaw-man-tho-san-quy",
+      "totalChapter": 163,
+      "createDateComic": "2023-12-08T19:11:23.000Z",
+      "lastUpdateChapter": "2024-03-27T04:49:35.000Z"
+    },
+    {
+      "urlComic": "hom-nay-cong-nuong-toan-nang-cung-thay-chan-nan",
+      "totalChapter": 88,
+      "createDateComic": "2023-12-17T12:11:12.000Z",
+      "lastUpdateChapter": "2024-02-01T06:16:04.000Z"
+    },
+    {
+      "urlComic": "tinh-giap-hon-tuong",
+      "totalChapter": 198,
+      "createDateComic": "2023-12-08T04:47:07.000Z",
+      "lastUpdateChapter": "2024-03-27T08:36:15.000Z"
+    },
+    {
+      "urlComic": "toi-tro-thanh-thu-ky-cua-bao-chua",
+      "totalChapter": 139,
+      "createDateComic": "2023-12-18T18:20:55.000Z",
+      "lastUpdateChapter": "2024-04-01T10:07:08.000Z"
+    },
+    {
+      "urlComic": "phuong-phap-khien-phu-quan-dung-ve-phia-toi",
+      "totalChapter": 93,
+      "createDateComic": "2023-12-10T02:17:45.000Z",
+      "lastUpdateChapter": "2024-03-15T01:38:12.000Z"
+    },
+    {
+      "urlComic": "nong-long-muon-giay-vo-em",
+      "totalChapter": 61,
+      "createDateComic": "2024-01-04T07:48:02.000Z",
+      "lastUpdateChapter": "2024-04-02T09:57:44.000Z"
+    },
+    {
+      "urlComic": "xam-nhap-vao-truong-trung-hoc-tai-phiet",
+      "totalChapter": 119,
+      "createDateComic": "2023-12-17T12:24:32.000Z",
+      "lastUpdateChapter": "2024-03-27T18:00:45.000Z"
+    },
+    {
+      "urlComic": "khi-doi-chan-thoi-buoc",
+      "totalChapter": 119,
+      "createDateComic": "2023-12-21T10:26:22.000Z",
+      "lastUpdateChapter": "2023-12-21T10:32:24.000Z"
+    },
+    {
+      "urlComic": "cao-vo-ha-canh-den-mot-van-nam-sau",
+      "totalChapter": 113,
+      "createDateComic": "2023-12-10T19:28:59.000Z",
+      "lastUpdateChapter": "2024-04-01T05:14:55.000Z"
+    },
+    {
+      "urlComic": "toi-phai-giau-em-trai-truoc-da",
+      "totalChapter": 75,
+      "createDateComic": "2023-12-21T10:48:09.000Z",
+      "lastUpdateChapter": "2023-12-21T10:52:26.000Z"
+    },
+    {
+      "urlComic": "toi-da-co-chong-sau-khi-nhat-duoc-nam-chinh",
+      "totalChapter": 58,
+      "createDateComic": "2023-12-20T02:12:10.000Z",
+      "lastUpdateChapter": "2024-01-19T14:18:52.000Z"
+    },
+    {
+      "urlComic": "nguoi-tu-tien-tai-do-thi",
+      "totalChapter": 192,
+      "createDateComic": "2023-12-09T17:00:49.000Z",
+      "lastUpdateChapter": "2023-12-09T17:08:53.000Z"
+    },
+    {
+      "urlComic": "ac-nu-hom-nay-lai-yeu-doi-roi",
+      "totalChapter": 77,
+      "createDateComic": "2023-12-11T15:48:58.000Z",
+      "lastUpdateChapter": "2023-12-11T15:52:56.000Z"
+    },
+    {
+      "urlComic": "tham-tu-conan",
+      "totalChapter": 1125,
+      "createDateComic": "2023-12-05T21:55:14.000Z",
+      "lastUpdateChapter": "2024-01-28T02:05:30.000Z"
+    },
+    {
+      "urlComic": "phap-su-hien-kim-cua-tro-choi-loi",
+      "totalChapter": 25,
+      "createDateComic": "2024-01-15T02:06:34.000Z",
+      "lastUpdateChapter": "2024-02-17T00:03:08.000Z"
+    },
+    {
+      "urlComic": "doi-moi-tren-luoi-dao",
+      "totalChapter": 113,
+      "createDateComic": "2023-12-25T01:21:15.000Z",
+      "lastUpdateChapter": "2024-03-30T01:26:49.000Z"
+    },
+    {
+      "urlComic": "toi-da-nuoi-duong-mot-nam-phu-day-am-anh",
+      "totalChapter": 73,
+      "createDateComic": "2023-12-29T04:00:10.000Z",
+      "lastUpdateChapter": "2024-02-27T10:49:03.000Z"
+    },
+    {
+      "urlComic": "chung-cu-yeu-quai",
+      "totalChapter": 97,
+      "createDateComic": "2023-12-25T06:59:54.000Z",
+      "lastUpdateChapter": "2023-12-25T07:02:47.000Z"
+    },
+    {
+      "urlComic": "trung-sinh-ta-moi-la-thien-vuong-giai-tri",
+      "totalChapter": 57,
+      "createDateComic": "2023-12-29T16:52:48.000Z",
+      "lastUpdateChapter": "2023-12-29T16:54:26.000Z"
+    },
+    {
+      "urlComic": "trong-sinh-dia-cau-tien-ton",
+      "totalChapter": 244,
+      "createDateComic": "2023-12-08T12:01:13.000Z",
+      "lastUpdateChapter": "2024-03-19T14:26:12.000Z"
+    },
+    {
+      "urlComic": "thiet-lap-dan-harem-tai-the-gioi-khac",
+      "totalChapter": 89,
+      "createDateComic": "2023-12-23T02:39:43.000Z",
+      "lastUpdateChapter": "2024-03-28T13:52:06.000Z"
+    },
+    {
+      "urlComic": "bastian",
+      "totalChapter": 65,
+      "createDateComic": "2023-12-23T23:21:07.000Z",
+      "lastUpdateChapter": "2023-12-23T23:24:04.000Z"
+    },
+    {
+      "urlComic": "ngon-ngu-yeu-thuong",
+      "totalChapter": 28,
+      "createDateComic": "2024-01-04T10:45:36.000Z",
+      "lastUpdateChapter": "2024-01-04T10:47:51.000Z"
+    },
+    {
+      "urlComic": "vo-chong-dinh-luu-co-chut-ngot-ngao",
+      "totalChapter": 88,
+      "createDateComic": "2023-12-18T12:23:12.000Z",
+      "lastUpdateChapter": "2024-03-30T12:02:15.000Z"
+    },
+    {
+      "urlComic": "tuyet-sac-dao-lu-deu-noi-ngo-hoang-the-chat-vo-dich",
+      "totalChapter": 208,
+      "createDateComic": "2023-12-22T19:23:53.000Z",
+      "lastUpdateChapter": "2024-03-31T23:53:10.000Z"
+    },
+    {
+      "urlComic": "tieu-thieu-gia-gia-toc-tai-phiet",
+      "totalChapter": 102,
+      "createDateComic": "2023-12-23T13:42:17.000Z",
+      "lastUpdateChapter": "2024-03-15T01:26:31.000Z"
+    },
+    {
+      "urlComic": "tong-tai-tai-thuong",
+      "totalChapter": 607,
+      "createDateComic": "2023-12-06T02:06:33.000Z",
+      "lastUpdateChapter": "2023-12-06T02:32:07.000Z"
+    },
+    {
+      "urlComic": "van-co-chi-ton",
+      "totalChapter": 286,
+      "createDateComic": "2023-12-07T05:59:38.000Z",
+      "lastUpdateChapter": "2024-03-20T02:04:51.000Z"
+    },
+    {
+      "urlComic": "tu-ky-si-khai-huyen",
+      "totalChapter": 118,
+      "createDateComic": "2023-12-31T06:14:02.000Z",
+      "lastUpdateChapter": "2024-04-02T00:51:35.000Z"
+    },
+    {
+      "urlComic": "nuoi-duong-mot-be-rong-den",
+      "totalChapter": 111,
+      "createDateComic": "2023-12-18T23:47:09.000Z",
+      "lastUpdateChapter": "2023-12-18T23:52:35.000Z"
+    },
+    {
+      "urlComic": "toi-la-fan-cung-cua-hoang-tu",
+      "totalChapter": 92,
+      "createDateComic": "2024-01-10T01:43:16.000Z",
+      "lastUpdateChapter": "2024-03-18T02:46:26.000Z"
+    },
+    {
+      "urlComic": "lam-sao-de-chay-tron-dan-hau-cung",
+      "totalChapter": 121,
+      "createDateComic": "2023-12-22T20:08:24.000Z",
+      "lastUpdateChapter": "2024-03-22T04:31:46.000Z"
+    },
+    {
+      "urlComic": "toi-khong-tai-nang-den-the-dau",
+      "totalChapter": 74,
+      "createDateComic": "2023-12-21T08:11:59.000Z",
+      "lastUpdateChapter": "2024-03-30T12:05:28.000Z"
+    },
+    {
+      "urlComic": "lan-kha-ky-duyen",
+      "totalChapter": 303,
+      "createDateComic": "2023-12-07T14:32:55.000Z",
+      "lastUpdateChapter": "2024-03-09T10:45:07.000Z"
+    },
+    {
+      "urlComic": "ai-do-dang-dieu-khien-co-the-cua-toi",
+      "totalChapter": 45,
+      "createDateComic": "2024-01-01T02:01:57.000Z",
+      "lastUpdateChapter": "2024-02-16T00:25:00.000Z"
+    },
+    {
+      "urlComic": "benh-kieu-vuong-gia-dua-vao-ta-de-tiep-tuc-song",
+      "totalChapter": 102,
+      "createDateComic": "2023-12-22T19:06:45.000Z",
+      "lastUpdateChapter": "2023-12-22T19:09:49.000Z"
+    },
+    {
+      "urlComic": "hoa-phung-lieu-nguyen",
+      "totalChapter": 601,
+      "createDateComic": "2023-12-15T21:09:25.000Z",
+      "lastUpdateChapter": "2024-02-06T05:37:51.000Z"
+    },
+    {
+      "urlComic": "mokrin",
+      "totalChapter": 75,
+      "createDateComic": "2023-12-25T22:21:28.000Z",
+      "lastUpdateChapter": "2023-12-25T22:23:34.000Z"
+    },
+    {
+      "urlComic": "ly-do-ket-hon",
+      "totalChapter": 28,
+      "createDateComic": "2024-03-13T04:41:00.000Z",
+      "lastUpdateChapter": "2024-03-27T00:26:24.000Z"
+    },
+    {
+      "urlComic": "co-con-gai-ut-cua-cong-tuoc-phan-dien",
+      "totalChapter": 73,
+      "createDateComic": "2023-12-23T15:34:57.000Z",
+      "lastUpdateChapter": "2024-03-30T01:20:28.000Z"
+    },
+    {
+      "urlComic": "tieu-thu-crystal-la-mot-nguoi-dan-ong",
+      "totalChapter": 48,
+      "createDateComic": "2024-01-02T08:19:33.000Z",
+      "lastUpdateChapter": "2024-02-07T03:21:58.000Z"
+    },
+    {
+      "urlComic": "chuong-mon-khiem-ton-chut",
+      "totalChapter": 344,
+      "createDateComic": "2023-12-08T16:01:03.000Z",
+      "lastUpdateChapter": "2024-04-01T14:18:23.000Z"
+    },
+    {
+      "urlComic": "xuyen-nhanh-ky-chu-co-ay-mot-long-muon-chet",
+      "totalChapter": 90,
+      "createDateComic": "2023-12-29T13:07:28.000Z",
+      "lastUpdateChapter": "2024-04-01T15:25:36.000Z"
+    },
+    {
+      "urlComic": "sieu-pham-sat-than",
+      "totalChapter": 175,
+      "createDateComic": "2023-12-15T16:50:19.000Z",
+      "lastUpdateChapter": "2024-04-01T14:18:27.000Z"
+    },
+    {
+      "urlComic": "kho-do-danh",
+      "totalChapter": 87,
+      "createDateComic": "2023-12-11T16:17:21.000Z",
+      "lastUpdateChapter": "2023-12-11T16:20:44.000Z"
+    },
+    {
+      "urlComic": "dung-choc-dua-em-gai-be-bong-cua-chung-toi",
+      "totalChapter": 101,
+      "createDateComic": "2023-12-17T11:21:13.000Z",
+      "lastUpdateChapter": "2023-12-17T11:29:38.000Z"
+    },
+    {
+      "urlComic": "nghe-noi-toi-la-dai-tieu-thu-phan-dien",
+      "totalChapter": 32,
+      "createDateComic": "2023-12-29T08:24:18.000Z",
+      "lastUpdateChapter": "2023-12-29T08:25:35.000Z"
+    },
+    {
+      "urlComic": "king-game",
+      "totalChapter": 86,
+      "createDateComic": "2023-12-26T06:45:48.000Z",
+      "lastUpdateChapter": "2024-03-15T01:26:17.000Z"
+    },
+    {
+      "urlComic": "the-fragrant-flower-blooms-with-dignity-kaoru-hana-wa-rin-to-saku",
+      "totalChapter": 101,
+      "createDateComic": "2023-12-21T07:59:08.000Z",
+      "lastUpdateChapter": "2024-01-19T14:20:56.000Z"
+    },
+    {
+      "urlComic": "ta-dem-hoang-tu-duong-thanh-hac-hoa",
+      "totalChapter": 107,
+      "createDateComic": "2023-12-24T04:37:01.000Z",
+      "lastUpdateChapter": "2024-04-02T00:49:37.000Z"
+    },
+    {
+      "urlComic": "tinh-vo-than-quyet",
+      "totalChapter": 648,
+      "createDateComic": "2023-12-06T08:49:06.000Z",
+      "lastUpdateChapter": "2024-04-02T10:05:49.000Z"
+    },
+    {
+      "urlComic": "toi-lac-vao-the-gioi-tro-choi-harem-nguoc",
+      "totalChapter": 182,
+      "createDateComic": "2023-12-25T10:26:55.000Z",
+      "lastUpdateChapter": "2024-03-23T13:52:36.000Z"
+    },
+    {
+      "urlComic": "tho-san-hang-s-khong-muon-tro-thanh-ac-nu",
+      "totalChapter": 34,
+      "createDateComic": "2024-02-16T01:00:21.000Z",
+      "lastUpdateChapter": "2024-03-31T23:41:21.000Z"
+    },
+    {
+      "urlComic": "cach-hiep-si-song-nhu-mot-tieu-thu-quyen-quy",
+      "totalChapter": 179,
+      "createDateComic": "2023-12-19T06:58:56.000Z",
+      "lastUpdateChapter": "2024-02-26T00:01:00.000Z"
+    },
+    {
+      "urlComic": "tsuihousareru-tabi-ni-skill-wo-te-ni-ireta-ore-ga-100-no-isekai-de-2-shuume-musou",
+      "totalChapter": 21,
+      "createDateComic": "2024-02-16T11:26:47.000Z",
+      "lastUpdateChapter": "2024-03-31T23:41:10.000Z"
+    },
+    {
+      "urlComic": "kimi-no-koto-ga-dai-dai-dai-dai-daisuki-na-100-ri-no-kanojo",
+      "totalChapter": 104,
+      "createDateComic": "2023-12-21T19:52:15.000Z",
+      "lastUpdateChapter": "2024-03-26T23:50:56.000Z"
+    },
+    {
+      "urlComic": "khanh-du-nien",
+      "totalChapter": 133,
+      "createDateComic": "2023-12-23T19:12:49.000Z",
+      "lastUpdateChapter": "2024-03-31T23:43:25.000Z"
+    },
+    {
+      "urlComic": "pha-bo-gioi-han",
+      "totalChapter": 155,
+      "createDateComic": "2023-12-13T02:53:59.000Z",
+      "lastUpdateChapter": "2024-04-01T10:07:24.000Z"
+    },
+    {
+      "urlComic": "nu-chinh-muon-toi-tro-thanh-chi-dau-cua-co-ay",
+      "totalChapter": 47,
+      "createDateComic": "2023-12-26T15:03:09.000Z",
+      "lastUpdateChapter": "2024-03-17T06:55:12.000Z"
+    },
+    {
+      "urlComic": "bi-giam-cam-tram-van-nam-de-tu-ta-trai-khap-chu-thien-than-gioi",
+      "totalChapter": 230,
+      "createDateComic": "2023-12-08T16:59:54.000Z",
+      "lastUpdateChapter": "2024-03-28T05:37:26.000Z"
+    },
+    {
+      "urlComic": "vuong-gia-han-luon-nghi-toi-yeu-han-den-nghien",
+      "totalChapter": 71,
+      "createDateComic": "2023-12-26T04:56:55.000Z",
+      "lastUpdateChapter": "2024-03-26T00:16:07.000Z"
+    },
+    {
+      "urlComic": "vat-trong-tay",
+      "totalChapter": 111,
+      "createDateComic": "2023-12-12T19:53:08.000Z",
+      "lastUpdateChapter": "2024-03-31T13:55:18.000Z"
+    },
+    {
+      "urlComic": "suc-manh-cua-ac-than",
+      "totalChapter": 133,
+      "createDateComic": "2023-12-15T08:39:09.000Z",
+      "lastUpdateChapter": "2024-02-12T22:46:04.000Z"
+    },
+    {
+      "urlComic": "tay-du-ky-ngoai-truyen",
+      "totalChapter": 305,
+      "createDateComic": "2023-12-15T13:21:58.000Z",
+      "lastUpdateChapter": "2024-03-27T01:33:05.000Z"
+    },
+    {
+      "urlComic": "dau-la-dai-luc-5",
+      "totalChapter": 176,
+      "createDateComic": "2023-12-21T08:33:09.000Z",
+      "lastUpdateChapter": "2024-04-02T08:02:53.000Z"
+    },
+    {
+      "urlComic": "con-trai-ut-cua-gia-dinh-kiem-thuat-danh-tieng",
+      "totalChapter": 104,
+      "createDateComic": "2023-12-11T08:17:24.000Z",
+      "lastUpdateChapter": "2024-03-26T23:42:54.000Z"
+    },
+    {
+      "urlComic": "nguoi-choi-khong-the-thang-cap",
+      "totalChapter": 141,
+      "createDateComic": "2023-12-10T19:35:57.000Z",
+      "lastUpdateChapter": "2024-03-29T00:21:56.000Z"
+    },
+    {
+      "urlComic": "thuc-ra-toi-moi-la-that",
+      "totalChapter": 149,
+      "createDateComic": "2023-12-10T01:01:16.000Z",
+      "lastUpdateChapter": "2023-12-10T01:07:07.000Z"
+    },
+    {
+      "urlComic": "dua-em-den-mat-trang",
+      "totalChapter": 81,
+      "createDateComic": "2023-12-30T08:17:42.000Z",
+      "lastUpdateChapter": "2024-03-31T23:41:39.000Z"
+    },
+    {
+      "urlComic": "vo-dao-doc-ton",
+      "totalChapter": 631,
+      "createDateComic": "2023-12-05T23:29:41.000Z",
+      "lastUpdateChapter": "2023-12-05T23:59:55.000Z"
+    },
+    {
+      "urlComic": "that-nghiep-chuyen-sinh-lam-lai-het-suc",
+      "totalChapter": 123,
+      "createDateComic": "2023-12-08T13:20:04.000Z",
+      "lastUpdateChapter": "2024-04-02T00:49:29.000Z"
+    },
+    {
+      "urlComic": "hoan-doi-nhiem-mau",
+      "totalChapter": 490,
+      "createDateComic": "2023-12-06T09:35:26.000Z",
+      "lastUpdateChapter": "2024-03-15T01:19:45.000Z"
+    },
+    {
+      "urlComic": "lo-ngo-vo-phai-tinh-yeu",
+      "totalChapter": 129,
+      "createDateComic": "2023-12-22T23:26:30.000Z",
+      "lastUpdateChapter": "2023-12-22T23:33:52.000Z"
+    },
+    {
+      "urlComic": "no-le-cam",
+      "totalChapter": 58,
+      "createDateComic": "2023-12-16T18:00:35.000Z",
+      "lastUpdateChapter": "2023-12-16T18:02:54.000Z"
+    },
+    {
+      "urlComic": "than-hon-vo-de",
+      "totalChapter": 387,
+      "createDateComic": "2023-12-08T16:22:56.000Z",
+      "lastUpdateChapter": "2024-04-01T05:15:49.000Z"
+    },
+    {
+      "urlComic": "bac-si-tro-lai",
+      "totalChapter": 146,
+      "createDateComic": "2023-12-13T22:11:38.000Z",
+      "lastUpdateChapter": "2023-12-13T22:18:32.000Z"
+    },
+    {
+      "urlComic": "toan-cau-cao-vo",
+      "totalChapter": 252,
+      "createDateComic": "2023-12-08T04:21:58.000Z",
+      "lastUpdateChapter": "2024-03-30T09:08:30.000Z"
+    },
+    {
+      "urlComic": "chi-toi-da-nhat-ve-nha-mot-nam-chinh-quyen-ru",
+      "totalChapter": 86,
+      "createDateComic": "2023-12-18T15:41:58.000Z",
+      "lastUpdateChapter": "2024-01-07T15:05:15.000Z"
+    },
+    {
+      "urlComic": "cao-dang-linh-hon",
+      "totalChapter": 293,
+      "createDateComic": "2023-12-10T03:25:26.000Z",
+      "lastUpdateChapter": "2024-03-19T12:56:22.000Z"
+    },
+    {
+      "urlComic": "hoang-phi-hong-phan-1",
+      "totalChapter": 35,
+      "createDateComic": "2024-01-03T03:47:13.000Z",
+      "lastUpdateChapter": "2024-01-03T03:50:46.000Z"
+    },
+    {
+      "urlComic": "khong-chi-la-bat-nat",
+      "totalChapter": 138,
+      "createDateComic": "2023-12-22T19:29:12.000Z",
+      "lastUpdateChapter": "2024-03-30T14:27:20.000Z"
+    },
+    {
+      "urlComic": "naruto-cuu-vi-ho-ly",
+      "totalChapter": 712,
+      "createDateComic": "2023-12-10T06:53:43.000Z",
+      "lastUpdateChapter": "2023-12-10T16:52:59.000Z"
+    },
+    {
+      "urlComic": "vuong-phi-that-thich-trang-diem",
+      "totalChapter": 174,
+      "createDateComic": "2023-12-16T15:49:59.000Z",
+      "lastUpdateChapter": "2023-12-16T16:00:31.000Z"
+    },
+    {
+      "urlComic": "doraemon",
+      "totalChapter": 769,
+      "createDateComic": "2023-12-11T15:52:58.000Z",
+      "lastUpdateChapter": "2024-03-31T23:50:10.000Z"
+    },
+    {
+      "urlComic": "sep-thu-tinh-nha-ben",
+      "totalChapter": 97,
+      "createDateComic": "2023-12-15T17:59:25.000Z",
+      "lastUpdateChapter": "2024-03-17T13:06:25.000Z"
+    },
+    {
+      "urlComic": "tinh-yeu-chay-bong",
+      "totalChapter": 152,
+      "createDateComic": "2023-12-21T09:19:28.000Z",
+      "lastUpdateChapter": "2023-12-21T09:25:51.000Z"
+    },
+    {
+      "urlComic": "quy-tac-chuyen-la-bat-dau-hoa-than-danh-lui-chien-than",
+      "totalChapter": 95,
+      "createDateComic": "2024-03-06T22:25:43.000Z",
+      "lastUpdateChapter": "2024-03-30T14:32:51.000Z"
+    },
+    {
+      "urlComic": "bach-lien-hoa-dua-vao-viec-gia-trang-dang-thuong-huong-dan-ca-ca-xung-ba-toan-cau",
+      "totalChapter": 26,
+      "createDateComic": "2024-01-02T16:52:02.000Z",
+      "lastUpdateChapter": "2024-01-02T16:52:57.000Z"
+    },
+    {
+      "urlComic": "khuyen-da-xoa-ban-dep",
+      "totalChapter": 560,
+      "createDateComic": "2023-12-13T01:57:21.000Z",
+      "lastUpdateChapter": "2023-12-13T02:24:41.000Z"
+    },
+    {
+      "urlComic": "cong-chua-bi-ruong-bo",
+      "totalChapter": 51,
+      "createDateComic": "2023-12-30T16:54:47.000Z",
+      "lastUpdateChapter": "2023-12-30T16:56:36.000Z"
+    },
+    {
+      "urlComic": "ket-thuc-toi-muon-thay-doi-no",
+      "totalChapter": 48,
+      "createDateComic": "2023-12-30T18:11:27.000Z",
+      "lastUpdateChapter": "2023-12-30T18:15:48.000Z"
+    },
+    {
+      "urlComic": "toi-khong-muon-lam-nguoi-mai-moi",
+      "totalChapter": 54,
+      "createDateComic": "2023-12-21T17:38:09.000Z",
+      "lastUpdateChapter": "2024-02-23T00:13:33.000Z"
+    },
+    {
+      "urlComic": "tan-hon-don-kiem-than",
+      "totalChapter": 130,
+      "createDateComic": "2023-12-17T19:30:28.000Z",
+      "lastUpdateChapter": "2024-03-31T07:27:35.000Z"
+    },
+    {
+      "urlComic": "vung-trom-giau-khong-duoc",
+      "totalChapter": 139,
+      "createDateComic": "2023-12-08T20:56:48.000Z",
+      "lastUpdateChapter": "2024-03-23T04:04:25.000Z"
+    },
+    {
+      "urlComic": "mato-seihei-no-slave",
+      "totalChapter": 142,
+      "createDateComic": "2023-12-13T05:42:32.000Z",
+      "lastUpdateChapter": "2024-03-24T06:01:32.000Z"
+    },
+    {
+      "urlComic": "tien-vo-de-ton",
+      "totalChapter": 561,
+      "createDateComic": "2023-12-05T22:34:53.000Z",
+      "lastUpdateChapter": "2024-04-01T10:09:20.000Z"
+    },
+    {
+      "urlComic": "tro-thanh-vo-thai-tu-quai-vat",
+      "totalChapter": 187,
+      "createDateComic": "2023-12-11T07:26:44.000Z",
+      "lastUpdateChapter": "2024-02-06T04:14:35.000Z"
+    },
+    {
+      "urlComic": "toan-tri-doc-gia-omniscient-reader",
+      "totalChapter": 206,
+      "createDateComic": "2023-12-08T14:23:18.000Z",
+      "lastUpdateChapter": "2024-03-30T02:54:48.000Z"
+    },
+    {
+      "urlComic": "oshi-no-ko",
+      "totalChapter": 149,
+      "createDateComic": "2023-12-11T04:35:27.000Z",
+      "lastUpdateChapter": "2024-03-14T07:01:33.000Z"
+    },
+    {
+      "urlComic": "chu-thuat-hoi-chien",
+      "totalChapter": 258,
+      "createDateComic": "2023-12-08T00:32:44.000Z",
+      "lastUpdateChapter": "2024-04-02T00:52:03.000Z"
+    },
+    {
+      "urlComic": "khong-the-thoat-khoi-nguoi",
+      "totalChapter": 105,
+      "createDateComic": "2023-12-19T19:08:23.000Z",
+      "lastUpdateChapter": "2024-03-29T00:47:23.000Z"
+    },
+    {
+      "urlComic": "moi-lien-ket-giua-bao-den-va-be-tho",
+      "totalChapter": 139,
+      "createDateComic": "2023-12-10T01:15:30.000Z",
+      "lastUpdateChapter": "2024-03-31T02:27:49.000Z"
+    },
+    {
+      "urlComic": "ket-thuc-cua-nhan-vat-phan-dien-chi-co-the-la-cai-chet",
+      "totalChapter": 146,
+      "createDateComic": "2023-12-08T12:08:47.000Z",
+      "lastUpdateChapter": "2024-03-21T23:50:19.000Z"
+    },
+    {
+      "urlComic": "than-vo-thien-ton",
+      "totalChapter": 661,
+      "createDateComic": "2023-12-05T20:16:08.000Z",
+      "lastUpdateChapter": "2024-04-01T05:15:40.000Z"
+    },
+    {
+      "urlComic": "bao-chua-be-con",
+      "totalChapter": 102,
+      "createDateComic": "2023-12-20T23:26:22.000Z",
+      "lastUpdateChapter": "2024-02-15T23:53:25.000Z"
+    },
+    {
+      "urlComic": "ta-tro-thanh-con-gai-nuoi-cua-nam-chinh",
+      "totalChapter": 126,
+      "createDateComic": "2023-12-11T06:55:40.000Z",
+      "lastUpdateChapter": "2023-12-11T07:00:16.000Z"
+    },
+    {
+      "urlComic": "toi-thuan-hoa-cho-dien-cua-chong-cu",
+      "totalChapter": 139,
+      "createDateComic": "2023-12-19T07:59:20.000Z",
+      "lastUpdateChapter": "2024-03-29T00:18:17.000Z"
+    },
+    {
+      "urlComic": "kiep-sau-tha-lay-thang-khac",
+      "totalChapter": 58,
+      "createDateComic": "2023-12-24T12:46:40.000Z",
+      "lastUpdateChapter": "2023-12-24T12:48:45.000Z"
+    },
+    {
+      "urlComic": "kingdom-vuong-gia-thien-ha",
+      "totalChapter": 793,
+      "createDateComic": "2023-12-06T16:00:34.000Z",
+      "lastUpdateChapter": "2024-03-25T13:53:38.000Z"
+    },
+    {
+      "urlComic": "nay-nguoi-chong-phan-dien-ngai-am-anh-sai-nguoi-roi",
+      "totalChapter": 35,
+      "createDateComic": "2024-01-15T15:28:23.000Z",
+      "lastUpdateChapter": "2024-03-26T12:54:51.000Z"
+    },
+    {
+      "urlComic": "cach-de-em-bao-ve-anh",
+      "totalChapter": 184,
+      "createDateComic": "2023-12-12T09:54:28.000Z",
+      "lastUpdateChapter": "2024-03-29T00:17:23.000Z"
+    },
+    {
+      "urlComic": "nguyen-ton",
+      "totalChapter": 969,
+      "createDateComic": "2023-12-05T17:34:07.000Z",
+      "lastUpdateChapter": "2024-04-01T03:58:46.000Z"
+    },
+    {
+      "urlComic": "nguyen-tro-thanh-thanh-kiem-trung-thanh-bao-ve-em",
+      "totalChapter": 105,
+      "createDateComic": "2023-12-22T21:09:57.000Z",
+      "lastUpdateChapter": "2024-02-07T01:10:14.000Z"
+    },
+    {
+      "urlComic": "anh-sao-ban-mai",
+      "totalChapter": 97,
+      "createDateComic": "2023-12-10T19:02:47.000Z",
+      "lastUpdateChapter": "2023-12-10T19:05:12.000Z"
+    },
+    {
+      "urlComic": "yeu-than-ky",
+      "totalChapter": 824,
+      "createDateComic": "2023-12-05T17:17:43.000Z",
+      "lastUpdateChapter": "2024-03-30T15:37:21.000Z"
+    },
+    {
+      "urlComic": "thanh-thoi-thu-the-chung-chung-dien-sinh-sinh-te",
+      "totalChapter": 543,
+      "createDateComic": "2023-12-06T12:13:13.000Z",
+      "lastUpdateChapter": "2023-12-06T12:38:55.000Z"
+    },
+    {
+      "urlComic": "ragna-crimson",
+      "totalChapter": 78,
+      "createDateComic": "2023-12-21T07:46:00.000Z",
+      "lastUpdateChapter": "2024-03-18T23:24:46.000Z"
+    },
+    {
+      "urlComic": "bac-thay-thiet-ke-dien-trang",
+      "totalChapter": 135,
+      "createDateComic": "2023-12-11T11:06:52.000Z",
+      "lastUpdateChapter": "2024-03-31T23:53:45.000Z"
+    },
+    {
+      "urlComic": "thanh-nu-gia-muon-bo-tron",
+      "totalChapter": 43,
+      "createDateComic": "2024-01-02T05:29:22.000Z",
+      "lastUpdateChapter": "2024-04-01T10:07:02.000Z"
+    },
+    {
+      "urlComic": "cuoc-hon-nhan-vu-loi",
+      "totalChapter": 139,
+      "createDateComic": "2023-12-12T16:06:49.000Z",
+      "lastUpdateChapter": "2024-04-02T10:07:08.000Z"
+    },
+    {
+      "urlComic": "luat-cua-tieu-thuyet-mang",
+      "totalChapter": 253,
+      "createDateComic": "2023-12-10T04:25:34.000Z",
+      "lastUpdateChapter": "2024-02-09T00:59:35.000Z"
+    },
+    {
+      "urlComic": "em-trai-toi-la-hoang-de-ngang-nguoc",
+      "totalChapter": 45,
+      "createDateComic": "2023-12-25T14:26:12.000Z",
+      "lastUpdateChapter": "2023-12-25T14:27:51.000Z"
+    },
+    {
+      "urlComic": "nhung-nhan-vat-manh-nhat-the-gioi-am-anh-toi",
+      "totalChapter": 140,
+      "createDateComic": "2023-12-16T08:17:59.000Z",
+      "lastUpdateChapter": "2024-04-02T10:07:04.000Z"
+    },
+    {
+      "urlComic": "ban-hoc-toi-la-linh-danh-thue",
+      "totalChapter": 179,
+      "createDateComic": "2023-12-07T20:27:18.000Z",
+      "lastUpdateChapter": "2024-03-05T23:35:09.000Z"
+    },
+    {
+      "urlComic": "co-em-gai-quy-gia-cua-nhan-vat-phan-dien",
+      "totalChapter": 139,
+      "createDateComic": "2023-12-10T18:40:44.000Z",
+      "lastUpdateChapter": "2024-04-02T10:06:26.000Z"
+    },
+    {
+      "urlComic": "tuyet-the-duong-mon-dau-la-dai-luc-2",
+      "totalChapter": 475,
+      "createDateComic": "2023-12-07T00:37:47.000Z",
+      "lastUpdateChapter": "2024-04-01T10:08:43.000Z"
+    },
+    {
+      "urlComic": "hiep-khach-giang-ho",
+      "totalChapter": 678,
+      "createDateComic": "2023-12-06T12:38:58.000Z",
+      "lastUpdateChapter": "2024-02-14T14:57:42.000Z"
+    },
+    {
+      "urlComic": "het-nhu-han-quang-gap-nang-gat",
+      "totalChapter": 534,
+      "createDateComic": "2023-12-05T16:19:44.000Z",
+      "lastUpdateChapter": "2024-03-31T02:32:36.000Z"
+    },
+    {
+      "urlComic": "van-tra-trieu-hoang",
+      "totalChapter": 574,
+      "createDateComic": "2023-12-08T01:29:00.000Z",
+      "lastUpdateChapter": "2024-03-05T05:20:07.000Z"
+    },
+    {
+      "urlComic": "vuu-vat",
+      "totalChapter": 38,
+      "createDateComic": "2024-01-01T02:04:38.000Z",
+      "lastUpdateChapter": "2024-04-02T00:49:43.000Z"
+    },
+    {
+      "urlComic": "cung-dinh-luu-anh-de-yeu-duong-phat-duong",
+      "totalChapter": 256,
+      "createDateComic": "2023-12-15T06:55:00.000Z",
+      "lastUpdateChapter": "2024-04-01T15:26:55.000Z"
+    },
+    {
+      "urlComic": "nghich-thien-ta-than",
+      "totalChapter": 675,
+      "createDateComic": "2023-12-05T19:57:26.000Z",
+      "lastUpdateChapter": "2024-03-30T15:36:18.000Z"
+    },
+    {
+      "urlComic": "toi-tro-thanh-em-gai-cua-nam-chinh-tieu-thuyet-bl",
+      "totalChapter": 82,
+      "createDateComic": "2023-12-24T02:17:08.000Z",
+      "lastUpdateChapter": "2024-03-28T04:00:22.000Z"
+    },
+    {
+      "urlComic": "vo-dang-ky-hiep",
+      "totalChapter": 119,
+      "createDateComic": "2023-12-13T03:27:17.000Z",
+      "lastUpdateChapter": "2023-12-13T03:34:43.000Z"
+    },
+    {
+      "urlComic": "toi-la-me-ke-cua-nam-chinh",
+      "totalChapter": 160,
+      "createDateComic": "2023-12-19T14:03:44.000Z",
+      "lastUpdateChapter": "2024-02-07T00:42:06.000Z"
+    },
+    {
+      "urlComic": "than-gui-tinh-nhan-cua-chong-toi",
+      "totalChapter": 64,
+      "createDateComic": "2024-01-03T19:23:31.000Z",
+      "lastUpdateChapter": "2024-04-01T10:08:33.000Z"
+    },
+    {
+      "urlComic": "bat-dau-voi-chi-ton-dan-dien",
+      "totalChapter": 312,
+      "createDateComic": "2023-12-07T21:09:12.000Z",
+      "lastUpdateChapter": "2024-03-23T13:14:24.000Z"
+    },
+    {
+      "urlComic": "ore-no-genjitsu-wa-renai-game-ka-to-omottara-inochigake-no-game-datta",
+      "totalChapter": 103,
+      "createDateComic": "2023-12-19T20:11:53.000Z",
+      "lastUpdateChapter": "2024-02-24T11:09:36.000Z"
+    },
+    {
+      "urlComic": "ky-nguyen-ky-la",
+      "totalChapter": 265,
+      "createDateComic": "2023-12-15T11:04:25.000Z",
+      "lastUpdateChapter": "2024-03-29T00:22:50.000Z"
+    },
+    {
+      "urlComic": "thuan-hoa-nam-no-le-hac-hoa",
+      "totalChapter": 89,
+      "createDateComic": "2023-12-30T19:52:24.000Z",
+      "lastUpdateChapter": "2024-04-01T15:26:13.000Z"
+    },
+    {
+      "urlComic": "mot-ngay-no-ta-tro-thanh-cong-chua",
+      "totalChapter": 163,
+      "createDateComic": "2023-12-07T04:22:02.000Z",
+      "lastUpdateChapter": "2023-12-07T04:30:05.000Z"
+    },
+    {
+      "urlComic": "om-khan-tieu-ma-giap-cua-toi",
+      "totalChapter": 297,
+      "createDateComic": "2023-12-07T17:46:08.000Z",
+      "lastUpdateChapter": "2024-03-31T23:56:17.000Z"
+    },
+    {
+      "urlComic": "sau-khi-mo-mat-de-tu-cua-ta-thanh-nu-de-dai-ma-dau",
+      "totalChapter": 5,
+      "createDateComic": "2024-03-06T22:36:12.000Z",
+      "lastUpdateChapter": "2024-03-06T22:36:27.000Z"
+    },
+    {
+      "urlComic": "cau-be-toi-pham",
+      "totalChapter": 61,
+      "createDateComic": "2024-01-01T05:15:56.000Z",
+      "lastUpdateChapter": "2024-04-01T05:17:40.000Z"
+    },
+    {
+      "urlComic": "ba-vuong-sung-ai-co-vo-mu",
+      "totalChapter": 84,
+      "createDateComic": "2023-12-18T23:31:07.000Z",
+      "lastUpdateChapter": "2024-03-31T09:41:24.000Z"
+    },
+    {
+      "urlComic": "doc-la-dungeon",
+      "totalChapter": 102,
+      "createDateComic": "2023-12-30T09:02:03.000Z",
+      "lastUpdateChapter": "2024-03-13T13:10:11.000Z"
+    },
+    {
+      "urlComic": "vo-oi-xin-hay-ngoan-ngoan-nhe",
+      "totalChapter": 62,
+      "createDateComic": "2024-01-19T23:48:40.000Z",
+      "lastUpdateChapter": "2024-03-27T10:52:13.000Z"
+    },
+    {
+      "urlComic": "dragon-quest-dau-an-rong-thieng",
+      "totalChapter": 349,
+      "createDateComic": "2023-12-13T05:52:06.000Z",
+      "lastUpdateChapter": "2023-12-13T16:05:58.000Z"
+    },
+    {
+      "urlComic": "vua-choi-da-co-tai-khoan-vuong-gia",
+      "totalChapter": 326,
+      "createDateComic": "2023-12-08T13:09:33.000Z",
+      "lastUpdateChapter": "2024-03-31T04:10:38.000Z"
+    },
+    {
+      "urlComic": "ba-dao-tong-tai-nhe-nhang-yeu",
+      "totalChapter": 437,
+      "createDateComic": "2023-12-10T04:08:52.000Z",
+      "lastUpdateChapter": "2023-12-10T04:25:31.000Z"
+    },
+    {
+      "urlComic": "tho-ren-huyen-thoai",
+      "totalChapter": 225,
+      "createDateComic": "2023-12-09T01:48:01.000Z",
+      "lastUpdateChapter": "2024-03-19T12:52:23.000Z"
+    },
+    {
+      "urlComic": "tong-tai-ty-phu-chi-sung-co-vo-the-than",
+      "totalChapter": 25,
+      "createDateComic": "2024-01-11T17:09:28.000Z",
+      "lastUpdateChapter": "2024-03-30T12:06:33.000Z"
+    },
+    {
+      "urlComic": "cai-the-de-ton",
+      "totalChapter": 403,
+      "createDateComic": "2023-12-07T00:49:59.000Z",
+      "lastUpdateChapter": "2024-03-28T13:02:41.000Z"
+    },
+    {
+      "urlComic": "do-de-cua-ta-deu-la-dai-phan-phai",
+      "totalChapter": 212,
+      "createDateComic": "2023-12-10T02:50:45.000Z",
+      "lastUpdateChapter": "2024-04-01T07:11:13.000Z"
+    },
+    {
+      "urlComic": "toi-da-thuan-hoa-mot-ten-bao-chua-va-chay-tron",
+      "totalChapter": 125,
+      "createDateComic": "2023-12-11T20:32:04.000Z",
+      "lastUpdateChapter": "2024-03-31T02:32:55.000Z"
+    },
+    {
+      "urlComic": "tan-tac-long-ho-mon",
+      "totalChapter": 1484,
+      "createDateComic": "2023-12-11T04:59:36.000Z",
+      "lastUpdateChapter": "2024-01-24T01:20:42.000Z"
+    },
+    {
+      "urlComic": "co-vo-hop-dong-bo-tron-cua-tong-giam-doc",
+      "totalChapter": 515,
+      "createDateComic": "2023-12-05T17:50:29.000Z",
+      "lastUpdateChapter": "2023-12-05T18:08:55.000Z"
+    },
+    {
+      "urlComic": "thiet-huyet-kiem-si-hoi-quy",
+      "totalChapter": 73,
+      "createDateComic": "2023-12-16T18:02:57.000Z",
+      "lastUpdateChapter": "2024-03-27T18:00:52.000Z"
+    },
+    {
+      "urlComic": "ma-ton-muon-om-om",
+      "totalChapter": 87,
+      "createDateComic": "2023-12-12T01:03:28.000Z",
+      "lastUpdateChapter": "2023-12-12T01:07:42.000Z"
+    },
+    {
+      "urlComic": "trong-sinh-do-thi-tu-tien",
+      "totalChapter": 980,
+      "createDateComic": "2023-12-05T15:12:40.000Z",
+      "lastUpdateChapter": "2024-04-01T12:20:19.000Z"
+    },
+    {
+      "urlComic": "toi-da-chuyen-sinh-thanh-slime",
+      "totalChapter": 121,
+      "createDateComic": "2023-12-08T06:33:49.000Z",
+      "lastUpdateChapter": "2024-03-05T01:38:54.000Z"
+    },
+    {
+      "urlComic": "ra-mat-hay-ra-di",
+      "totalChapter": 101,
+      "createDateComic": "2023-12-26T23:33:45.000Z",
+      "lastUpdateChapter": "2024-03-31T23:42:10.000Z"
+    },
+    {
+      "urlComic": "nghich-tap-chi-hao-dung-nhan-sinh",
+      "totalChapter": 340,
+      "createDateComic": "2023-12-11T18:53:15.000Z",
+      "lastUpdateChapter": "2023-12-11T19:09:32.000Z"
+    },
+    {
+      "urlComic": "nhiem-vu-doi-that",
+      "totalChapter": 133,
+      "createDateComic": "2023-12-12T09:30:11.000Z",
+      "lastUpdateChapter": "2024-02-05T06:29:47.000Z"
+    },
+    {
+      "urlComic": "ta-troi-sinh-da-la-nhan-vat-phan-dien",
+      "totalChapter": 153,
+      "createDateComic": "2023-12-08T05:28:16.000Z",
+      "lastUpdateChapter": "2024-03-31T02:27:22.000Z"
+    },
+    {
+      "urlComic": "man-cap-tra-xanh-xuyen-khong-thanh-tieu-dang-thuong",
+      "totalChapter": 114,
+      "createDateComic": "2023-12-16T19:23:57.000Z",
+      "lastUpdateChapter": "2024-04-02T00:51:53.000Z"
+    },
+    {
+      "urlComic": "19-days",
+      "totalChapter": 304,
+      "createDateComic": "2023-12-06T06:31:32.000Z",
+      "lastUpdateChapter": "2024-04-02T10:06:24.000Z"
+    },
+    {
+      "urlComic": "chung-cuc-dau-la",
+      "totalChapter": 516,
+      "createDateComic": "2023-12-07T04:07:05.000Z",
+      "lastUpdateChapter": "2024-04-02T08:02:39.000Z"
+    },
+    {
+      "urlComic": "khong-co-noi-nao-danh-cho-cong-chua-gia-mao",
+      "totalChapter": 43,
+      "createDateComic": "2023-12-24T01:06:47.000Z",
+      "lastUpdateChapter": "2023-12-24T01:08:22.000Z"
+    },
+    {
+      "urlComic": "chuyen-sinh-vao-the-gioi-vo-lam",
+      "totalChapter": 87,
+      "createDateComic": "2023-12-22T23:15:20.000Z",
+      "lastUpdateChapter": "2024-03-27T15:43:02.000Z"
+    },
+    {
+      "urlComic": "cuoc-hon-nhan-gia-doi",
+      "totalChapter": 123,
+      "createDateComic": "2023-12-15T07:03:51.000Z",
+      "lastUpdateChapter": "2023-12-15T07:09:11.000Z"
+    },
+    {
+      "urlComic": "cong-tuoc-loan-vua-thoi",
+      "totalChapter": 146,
+      "createDateComic": "2023-12-12T06:10:42.000Z",
+      "lastUpdateChapter": "2023-12-12T06:17:07.000Z"
+    },
+    {
+      "urlComic": "chiec-tui-bi-mat-cua-tieu-thu-xau-xi",
+      "totalChapter": 56,
+      "createDateComic": "2023-12-26T13:08:43.000Z",
+      "lastUpdateChapter": "2023-12-26T13:10:59.000Z"
+    },
+    {
+      "urlComic": "hotboy-quoc-dan-la-nu",
+      "totalChapter": 465,
+      "createDateComic": "2023-12-06T16:32:25.000Z",
+      "lastUpdateChapter": "2024-04-02T04:59:21.000Z"
+    },
+    {
+      "urlComic": "huyen-thoai-game-thu-tai-xuat",
+      "totalChapter": 148,
+      "createDateComic": "2023-12-11T21:07:05.000Z",
+      "lastUpdateChapter": "2024-03-31T23:41:41.000Z"
+    },
+    {
+      "urlComic": "ke-phan-dien-vo-song",
+      "totalChapter": 70,
+      "createDateComic": "2023-12-23T11:45:41.000Z",
+      "lastUpdateChapter": "2024-03-28T07:11:26.000Z"
+    },
+    {
+      "urlComic": "berserk",
+      "totalChapter": 382,
+      "createDateComic": "2023-12-09T14:54:24.000Z",
+      "lastUpdateChapter": "2023-12-18T00:11:00.000Z"
+    },
+    {
+      "urlComic": "vu-be-boi-tra-hinh",
+      "totalChapter": 64,
+      "createDateComic": "2024-01-19T17:53:29.000Z",
+      "lastUpdateChapter": "2024-03-24T06:08:27.000Z"
+    },
+    {
+      "urlComic": "la-healer-nhung-lai-co-mat-tren-chien-truong",
+      "totalChapter": 52,
+      "createDateComic": "2023-12-23T17:02:10.000Z",
+      "lastUpdateChapter": "2023-12-23T17:07:30.000Z"
+    },
+    {
+      "urlComic": "quy-co-the-luc-ngam",
+      "totalChapter": 103,
+      "createDateComic": "2023-12-21T12:43:37.000Z",
+      "lastUpdateChapter": "2024-02-17T23:36:13.000Z"
+    },
+    {
+      "urlComic": "ngay-nao-thieu-soai-cung-ghen",
+      "totalChapter": 637,
+      "createDateComic": "2023-12-06T02:32:09.000Z",
+      "lastUpdateChapter": "2023-12-06T03:05:12.000Z"
+    },
+    {
+      "urlComic": "bat-dau-danh-dau-hoang-co-thanh-the",
+      "totalChapter": 45,
+      "createDateComic": "2023-12-25T09:42:08.000Z",
+      "lastUpdateChapter": "2024-03-28T07:10:21.000Z"
+    },
+    {
+      "urlComic": "toi-la-tai-xe-xe-cong-nghe-co-chut-tien-thi-da-sao",
+      "totalChapter": 113,
+      "createDateComic": "2024-01-01T14:21:48.000Z",
+      "lastUpdateChapter": "2024-04-02T04:59:59.000Z"
+    },
+    {
+      "urlComic": "tieu-thu-be-bong-dang-yeu",
+      "totalChapter": 229,
+      "createDateComic": "2023-12-09T12:45:19.000Z",
+      "lastUpdateChapter": "2024-03-31T23:42:06.000Z"
+    },
+    {
+      "urlComic": "ta-live-stream-trong-lanh-cung",
+      "totalChapter": 63,
+      "createDateComic": "2023-12-26T18:29:04.000Z",
+      "lastUpdateChapter": "2024-03-27T09:28:42.000Z"
+    },
+    {
+      "urlComic": "cung-luc-gia-yeu-duong-vung-trom",
+      "totalChapter": 67,
+      "createDateComic": "2024-01-01T23:30:45.000Z",
+      "lastUpdateChapter": "2024-03-11T12:59:37.000Z"
+    },
+    {
+      "urlComic": "quan-kich-ban-tran-mong",
+      "totalChapter": 75,
+      "createDateComic": "2023-12-23T12:14:09.000Z",
+      "lastUpdateChapter": "2024-03-20T23:35:46.000Z"
+    },
+    {
+      "urlComic": "neu-bi-phat-hien-lieu-toi-co-chet-khong",
+      "totalChapter": 58,
+      "createDateComic": "2024-01-02T17:57:52.000Z",
+      "lastUpdateChapter": "2024-03-29T05:10:28.000Z"
+    },
+    {
+      "urlComic": "cuu-thien-kiem-phap",
+      "totalChapter": 76,
+      "createDateComic": "2023-12-21T03:38:07.000Z",
+      "lastUpdateChapter": "2023-12-21T03:43:38.000Z"
+    },
+    {
+      "urlComic": "soc-nho-tai-nang",
+      "totalChapter": 75,
+      "createDateComic": "2023-12-19T13:49:43.000Z",
+      "lastUpdateChapter": "2024-03-28T03:59:37.000Z"
+    },
+    {
+      "urlComic": "nu-do-de-ai-nay-deu-muon-giet-ta",
+      "totalChapter": 141,
+      "createDateComic": "2023-12-26T04:11:55.000Z",
+      "lastUpdateChapter": "2024-04-02T10:06:02.000Z"
+    },
+    {
+      "urlComic": "nhan-vat-webtoon-na-kang-lim",
+      "totalChapter": 69,
+      "createDateComic": "2024-02-17T00:05:06.000Z",
+      "lastUpdateChapter": "2024-03-15T01:18:37.000Z"
+    },
+    {
+      "urlComic": "eleceed-hoa-than-thanh-meo",
+      "totalChapter": 275,
+      "createDateComic": "2023-12-20T22:50:37.000Z",
+      "lastUpdateChapter": "2023-12-27T06:46:53.000Z"
+    },
+    {
+      "urlComic": "tien-la-tat-ca-chong-la-phu-du",
+      "totalChapter": 59,
+      "createDateComic": "2023-12-22T12:12:35.000Z",
+      "lastUpdateChapter": "2024-03-13T03:38:26.000Z"
+    },
+    {
+      "urlComic": "cuong-ma-tai-the",
+      "totalChapter": 112,
+      "createDateComic": "2023-12-13T17:35:32.000Z",
+      "lastUpdateChapter": "2024-03-15T01:23:24.000Z"
+    },
+    {
+      "urlComic": "co-nang-xau-xi-o-pho-den-do",
+      "totalChapter": 74,
+      "createDateComic": "2024-01-05T10:37:20.000Z",
+      "lastUpdateChapter": "2024-03-26T02:42:14.000Z"
+    },
+    {
+      "urlComic": "mong-cho-giay-phut-thieng-lieng-duoc-cham-toi-nguoi",
+      "totalChapter": 120,
+      "createDateComic": "2023-12-24T06:22:54.000Z",
+      "lastUpdateChapter": "2024-03-12T00:04:50.000Z"
+    },
+    {
+      "urlComic": "xuyen-thanh-ac-nu-bi-nghe-trom-tieng-long",
+      "totalChapter": 70,
+      "createDateComic": "2024-01-16T08:16:31.000Z",
+      "lastUpdateChapter": "2024-01-16T08:19:08.000Z"
+    },
+    {
+      "urlComic": "toi-tro-thanh-me-ke-cua-gia-dinh-hac-am",
+      "totalChapter": 31,
+      "createDateComic": "2024-02-03T14:07:42.000Z",
+      "lastUpdateChapter": "2024-03-19T22:45:26.000Z"
+    },
+    {
+      "urlComic": "noragami",
+      "totalChapter": 140,
+      "createDateComic": "2023-12-22T16:37:27.000Z",
+      "lastUpdateChapter": "2024-03-06T08:05:13.000Z"
+    },
+    {
+      "urlComic": "dac-nhiem-sieu-cap-thanh-pho",
+      "totalChapter": 264,
+      "createDateComic": "2023-12-09T08:47:16.000Z",
+      "lastUpdateChapter": "2024-04-01T10:09:01.000Z"
+    },
+    {
+      "urlComic": "nguoi-tinh-cua-hoang-de",
+      "totalChapter": 16,
+      "createDateComic": "2023-12-22T10:39:00.000Z",
+      "lastUpdateChapter": "2023-12-22T10:39:40.000Z"
+    },
+    {
+      "urlComic": "thien-ma-phi-thang-truyen",
+      "totalChapter": 106,
+      "createDateComic": "2023-12-22T17:15:52.000Z",
+      "lastUpdateChapter": "2023-12-22T17:24:15.000Z"
+    },
+    {
+      "urlComic": "tu-tien-phai-dua-vao-sugar-mommy",
+      "totalChapter": 206,
+      "createDateComic": "2023-12-11T18:04:03.000Z",
+      "lastUpdateChapter": "2024-03-24T23:31:01.000Z"
+    },
+    {
+      "urlComic": "cua-hang-sung-thu-sieu-than",
+      "totalChapter": 143,
+      "createDateComic": "2023-12-09T02:35:18.000Z",
+      "lastUpdateChapter": "2024-03-31T11:44:16.000Z"
+    },
+    {
+      "urlComic": "dosanko-gyaru-is-mega-cute",
+      "totalChapter": 66,
+      "createDateComic": "2024-01-05T05:20:11.000Z",
+      "lastUpdateChapter": "2024-03-28T13:03:29.000Z"
+    },
+    {
+      "urlComic": "dai-chua-te",
+      "totalChapter": 383,
+      "createDateComic": "2023-12-09T04:33:37.000Z",
+      "lastUpdateChapter": "2023-12-09T04:49:28.000Z"
+    },
+    {
+      "urlComic": "toan-dan-chuyen-chuc-duy-ta-vo-chuc-tan-nhan",
+      "totalChapter": 110,
+      "createDateComic": "2023-12-21T08:15:24.000Z",
+      "lastUpdateChapter": "2024-03-28T13:53:32.000Z"
+    },
+    {
+      "urlComic": "nu-hoang-ngoai-khoa",
+      "totalChapter": 144,
+      "createDateComic": "2023-12-15T17:48:04.000Z",
+      "lastUpdateChapter": "2023-12-15T17:53:56.000Z"
+    },
+    {
+      "urlComic": "dieu-thu-cuong-y",
+      "totalChapter": 311,
+      "createDateComic": "2023-12-08T20:26:41.000Z",
+      "lastUpdateChapter": "2024-03-18T14:52:14.000Z"
+    },
+    {
+      "urlComic": "hard-core-leveling-warrior-ss3",
+      "totalChapter": 21,
+      "createDateComic": "2024-01-17T15:14:02.000Z",
+      "lastUpdateChapter": "2024-03-15T02:03:02.000Z"
+    },
+    {
+      "urlComic": "nhat-duoc-bao-boi-manh-manh",
+      "totalChapter": 140,
+      "createDateComic": "2023-12-19T00:54:34.000Z",
+      "lastUpdateChapter": "2023-12-19T01:05:26.000Z"
+    },
+    {
+      "urlComic": "mat-the-sieu-cap-he-thong",
+      "totalChapter": 342,
+      "createDateComic": "2023-12-08T06:48:40.000Z",
+      "lastUpdateChapter": "2024-03-12T08:47:26.000Z"
+    },
+    {
+      "urlComic": "toi-mong-giua-ban-ngay",
+      "totalChapter": 45,
+      "createDateComic": "2023-12-25T22:41:24.000Z",
+      "lastUpdateChapter": "2024-03-29T13:18:06.000Z"
+    },
+    {
+      "urlComic": "khoc-di-hay-cau-xin-toi-cung-duoc",
+      "totalChapter": 29,
+      "createDateComic": "2024-01-24T09:19:18.000Z",
+      "lastUpdateChapter": "2024-02-10T07:13:34.000Z"
+    },
+    {
+      "urlComic": "toi-se-co-gang-thay-doi-cot-truyen",
+      "totalChapter": 91,
+      "createDateComic": "2023-12-22T11:52:54.000Z",
+      "lastUpdateChapter": "2024-04-01T07:11:04.000Z"
+    },
+    {
+      "urlComic": "bo-lam-simp-chua-ta-co-trong-tay-ca-ti-than-hao",
+      "totalChapter": 150,
+      "createDateComic": "2023-12-19T16:19:45.000Z",
+      "lastUpdateChapter": "2024-03-30T12:12:57.000Z"
+    },
+    {
+      "urlComic": "couple-breaker",
+      "totalChapter": 89,
+      "createDateComic": "2023-12-25T07:22:29.000Z",
+      "lastUpdateChapter": "2023-12-25T07:26:04.000Z"
+    },
+    {
+      "urlComic": "toi-da-cuop-mat-dem-dau-tien-cua-nam-chinh",
+      "totalChapter": 108,
+      "createDateComic": "2023-12-13T00:49:37.000Z",
+      "lastUpdateChapter": "2023-12-13T00:54:39.000Z"
+    },
+    {
+      "urlComic": "vo-nghich",
+      "totalChapter": 514,
+      "createDateComic": "2023-12-07T14:44:26.000Z",
+      "lastUpdateChapter": "2024-04-02T04:59:29.000Z"
+    },
+    {
+      "urlComic": "danh-mon-chi-ai",
+      "totalChapter": 579,
+      "createDateComic": "2023-12-06T01:13:11.000Z",
+      "lastUpdateChapter": "2023-12-06T02:06:30.000Z"
+    },
+    {
+      "urlComic": "hang-ty-ngoi-sao-cung-khong-bang-em",
+      "totalChapter": 48,
+      "createDateComic": "2023-12-29T07:59:47.000Z",
+      "lastUpdateChapter": "2024-03-31T04:57:03.000Z"
+    },
+    {
+      "urlComic": "toi-da-nuoi-ho-ly-sai-cach-roi",
+      "totalChapter": 68,
+      "createDateComic": "2024-01-26T13:44:49.000Z",
+      "lastUpdateChapter": "2024-03-27T00:19:26.000Z"
+    },
+    {
+      "urlComic": "giang-ho-thuc-thi-cong-ly",
+      "totalChapter": 101,
+      "createDateComic": "2023-12-21T07:40:06.000Z",
+      "lastUpdateChapter": "2024-03-30T02:55:56.000Z"
+    },
+    {
+      "urlComic": "tu-luc-bat-dau-lien-vo-dich",
+      "totalChapter": 119,
+      "createDateComic": "2023-12-09T01:15:43.000Z",
+      "lastUpdateChapter": "2024-02-23T08:56:25.000Z"
+    },
+    {
+      "urlComic": "song-sot-nhu-mot-hau-gai-trong-tro-choi-kinh-di",
+      "totalChapter": 39,
+      "createDateComic": "2024-01-04T10:37:20.000Z",
+      "lastUpdateChapter": "2024-01-19T16:28:50.000Z"
+    },
+    {
+      "urlComic": "psycho-x-past-nhung-vu-an-giet-nguoi-ky-quai",
+      "totalChapter": 22,
+      "createDateComic": "2024-01-16T09:44:57.000Z",
+      "lastUpdateChapter": "2024-04-02T00:47:59.000Z"
+    },
+    {
+      "urlComic": "ma-dao-to-su-mao-doan-tieu-kiem-kiem",
+      "totalChapter": 146,
+      "createDateComic": "2023-12-09T12:23:01.000Z",
+      "lastUpdateChapter": "2023-12-09T12:26:48.000Z"
+    },
+    {
+      "urlComic": "cuoc-chien-trong-toa-thap-tower-of-god",
+      "totalChapter": 604,
+      "createDateComic": "2023-12-07T16:42:48.000Z",
+      "lastUpdateChapter": "2024-02-12T00:40:14.000Z"
+    },
+    {
+      "urlComic": "tomodachi-game",
+      "totalChapter": 123,
+      "createDateComic": "2023-12-16T21:27:12.000Z",
+      "lastUpdateChapter": "2023-12-18T00:19:55.000Z"
+    },
+    {
+      "urlComic": "chu-be-rong-ryuuroden",
+      "totalChapter": 349,
+      "createDateComic": "2023-12-13T20:15:30.000Z",
+      "lastUpdateChapter": "2024-02-12T00:50:10.000Z"
+    },
+    {
+      "urlComic": "sat-thu-peter",
+      "totalChapter": 38,
+      "createDateComic": "2024-01-03T10:13:42.000Z",
+      "lastUpdateChapter": "2024-03-06T01:19:14.000Z"
+    },
+    {
+      "urlComic": "duoc-su-tu-su-nhat-ky-giai-ma-bi-an-chon-hau-cung-cua-maomao",
+      "totalChapter": 67,
+      "createDateComic": "2023-12-30T17:10:14.000Z",
+      "lastUpdateChapter": "2024-01-19T15:41:29.000Z"
+    },
+    {
+      "urlComic": "ta-co-mot-son-trai",
+      "totalChapter": 850,
+      "createDateComic": "2023-12-06T00:17:14.000Z",
+      "lastUpdateChapter": "2024-04-02T08:02:49.000Z"
+    },
+    {
+      "urlComic": "the-gioi-hau-tan-the",
+      "totalChapter": 124,
+      "createDateComic": "2023-12-13T18:38:46.000Z",
+      "lastUpdateChapter": "2024-03-31T23:41:43.000Z"
+    },
+    {
+      "urlComic": "tro-thanh-hau-nu-con-quan-trong-hon-la-lam-cong-chua",
+      "totalChapter": 13,
+      "createDateComic": "2024-03-12T23:21:35.000Z",
+      "lastUpdateChapter": "2024-03-28T08:42:20.000Z"
+    },
+    {
+      "urlComic": "nha-toi-co-mot-con-chuot",
+      "totalChapter": 33,
+      "createDateComic": "2024-01-09T03:35:01.000Z",
+      "lastUpdateChapter": "2024-03-21T23:55:44.000Z"
+    },
+    {
+      "urlComic": "to-tinh",
+      "totalChapter": 31,
+      "createDateComic": "2023-12-27T00:28:50.000Z",
+      "lastUpdateChapter": "2024-03-19T12:53:36.000Z"
+    },
+    {
+      "urlComic": "toan-cau-bang-phong-ta-che-tao-phong-an-toan-tai-tan-the",
+      "totalChapter": 267,
+      "createDateComic": "2023-12-11T20:52:43.000Z",
+      "lastUpdateChapter": "2024-04-01T10:28:15.000Z"
+    },
+    {
+      "urlComic": "toi-tro-thanh-me-cua-nam-chinh",
+      "totalChapter": 25,
+      "createDateComic": "2024-01-14T01:34:30.000Z",
+      "lastUpdateChapter": "2024-03-30T20:06:27.000Z"
+    },
+    {
+      "urlComic": "toi-tro-thanh-vo-nam-chinh",
+      "totalChapter": 103,
+      "createDateComic": "2023-12-11T07:22:28.000Z",
+      "lastUpdateChapter": "2024-02-06T04:30:23.000Z"
+    },
+    {
+      "urlComic": "dragon-ball-bay-vien-ngoc-rong",
+      "totalChapter": 521,
+      "createDateComic": "2023-12-11T03:45:37.000Z",
+      "lastUpdateChapter": "2023-12-11T04:04:05.000Z"
+    },
+    {
+      "urlComic": "bach-luyen-thanh-than",
+      "totalChapter": 1176,
+      "createDateComic": "2023-12-05T15:39:43.000Z",
+      "lastUpdateChapter": "2024-03-27T07:48:52.000Z"
+    },
+    {
+      "urlComic": "dua-be-la-cua-ai",
+      "totalChapter": 167,
+      "createDateComic": "2023-12-13T17:13:59.000Z",
+      "lastUpdateChapter": "2023-12-13T17:23:47.000Z"
+    },
+    {
+      "urlComic": "ta-la-ta-de",
+      "totalChapter": 487,
+      "createDateComic": "2023-12-05T21:20:37.000Z",
+      "lastUpdateChapter": "2024-04-02T08:02:43.000Z"
+    },
+    {
+      "urlComic": "huong-dan-sinh-ton-trong-hoc-vien",
+      "totalChapter": 19,
+      "createDateComic": "2024-01-20T05:42:48.000Z",
+      "lastUpdateChapter": "2024-03-29T00:26:33.000Z"
+    },
+    {
+      "urlComic": "weak-hero",
+      "totalChapter": 267,
+      "createDateComic": "2023-12-12T17:00:26.000Z",
+      "lastUpdateChapter": "2023-12-12T17:23:00.000Z"
+    },
+    {
+      "urlComic": "nang-cong-nuong-roselia",
+      "totalChapter": 81,
+      "createDateComic": "2023-12-27T20:33:16.000Z",
+      "lastUpdateChapter": "2024-03-25T23:51:18.000Z"
+    },
+    {
+      "urlComic": "chi-gai-a-kiep-nay-em-chinh-la-nu-hoang",
+      "totalChapter": 172,
+      "createDateComic": "2023-12-16T10:58:20.000Z",
+      "lastUpdateChapter": "2024-04-02T10:07:10.000Z"
+    },
+    {
+      "urlComic": "tieu-thu-muon-duoc-nghi-ngoi",
+      "totalChapter": 127,
+      "createDateComic": "2023-12-12T14:10:58.000Z",
+      "lastUpdateChapter": "2024-02-06T05:09:11.000Z"
+    },
+    {
+      "urlComic": "lam-ac-nu-bo-khong-tuyet-sao",
+      "totalChapter": 45,
+      "createDateComic": "2023-12-21T11:37:55.000Z",
+      "lastUpdateChapter": "2023-12-21T11:40:37.000Z"
+    },
+    {
+      "urlComic": "tro-thanh-tieu-thu-xau-xi",
+      "totalChapter": 130,
+      "createDateComic": "2023-12-13T01:24:27.000Z",
+      "lastUpdateChapter": "2024-02-16T23:50:55.000Z"
+    },
+    {
+      "urlComic": "tuyet-the-vo-than",
+      "totalChapter": 780,
+      "createDateComic": "2023-12-05T18:54:25.000Z",
+      "lastUpdateChapter": "2024-03-31T14:03:58.000Z"
+    },
+    {
+      "urlComic": "da-nem-thu-thi-an-luon-mot-mieng-di",
+      "totalChapter": 42,
+      "createDateComic": "2023-12-23T05:27:49.000Z",
+      "lastUpdateChapter": "2023-12-23T05:29:32.000Z"
+    },
+    {
+      "urlComic": "ket-dep-voi-chu-ut-kiep-truoc-sau-chia-tay",
+      "totalChapter": 29,
+      "createDateComic": "2024-01-13T22:59:21.000Z",
+      "lastUpdateChapter": "2024-04-02T00:53:04.000Z"
+    },
+    {
+      "urlComic": "ta-sang-tao-truyen-thuyet-do-thi",
+      "totalChapter": 40,
+      "createDateComic": "2024-01-21T10:27:21.000Z",
+      "lastUpdateChapter": "2024-03-28T05:39:39.000Z"
+    },
+    {
+      "urlComic": "tro-choi-hon-nhan-sinh-ton",
+      "totalChapter": 25,
+      "createDateComic": "2023-12-18T21:16:01.000Z",
+      "lastUpdateChapter": "2024-02-04T00:17:47.000Z"
+    },
+    {
+      "urlComic": "chuyen-sinh-thanh-lieu-dot-bien",
+      "totalChapter": 191,
+      "createDateComic": "2023-12-09T11:26:07.000Z",
+      "lastUpdateChapter": "2024-03-31T10:43:19.000Z"
+    },
+    {
+      "urlComic": "nu-cuoi-cua-nguoi-ngot-den-muc-lam-gay-tam-cai-rang-cua-ta",
+      "totalChapter": 103,
+      "createDateComic": "2023-12-25T08:37:08.000Z",
+      "lastUpdateChapter": "2024-03-27T17:58:18.000Z"
+    },
+    {
+      "urlComic": "toi-thang-cap-mot-minh",
+      "totalChapter": 111,
+      "createDateComic": "2023-12-06T11:10:41.000Z",
+      "lastUpdateChapter": "2023-12-06T11:15:04.000Z"
+    },
+    {
+      "urlComic": "van-may-khong-ngo",
+      "totalChapter": 55,
+      "createDateComic": "2023-12-29T06:07:38.000Z",
+      "lastUpdateChapter": "2023-12-29T06:09:45.000Z"
+    },
+    {
+      "urlComic": "quan-li-du-con",
+      "totalChapter": 86,
+      "createDateComic": "2023-12-25T15:50:22.000Z",
+      "lastUpdateChapter": "2024-02-16T00:07:55.000Z"
+    },
+    {
+      "urlComic": "ngu-linh-the-gioi",
+      "totalChapter": 803,
+      "createDateComic": "2023-12-06T19:20:35.000Z",
+      "lastUpdateChapter": "2024-04-02T04:59:25.000Z"
+    },
+    {
+      "urlComic": "tran-quoc-than-te",
+      "totalChapter": 118,
+      "createDateComic": "2023-12-30T17:12:10.000Z",
+      "lastUpdateChapter": "2024-04-01T10:10:20.000Z"
+    },
+    {
+      "urlComic": "rac-roi-dang-yeu",
+      "totalChapter": 71,
+      "createDateComic": "2024-01-11T12:03:13.000Z",
+      "lastUpdateChapter": "2024-01-11T12:11:54.000Z"
+    },
+    {
+      "urlComic": "vo-cua-luc-tong-khong-phai-dang-vua",
+      "totalChapter": 119,
+      "createDateComic": "2023-12-19T19:35:00.000Z",
+      "lastUpdateChapter": "2024-03-31T23:57:29.000Z"
+    },
+    {
+      "urlComic": "nhiem-vu-toi-thuong",
+      "totalChapter": 131,
+      "createDateComic": "2023-12-13T00:36:13.000Z",
+      "lastUpdateChapter": "2024-03-15T01:37:14.000Z"
+    },
+    {
+      "urlComic": "lao-to-tong-vua-xinh-vua-ngau",
+      "totalChapter": 74,
+      "createDateComic": "2023-12-31T15:13:46.000Z",
+      "lastUpdateChapter": "2024-04-02T10:06:19.000Z"
+    },
+    {
+      "urlComic": "ta-la-dai-than-tien",
+      "totalChapter": 691,
+      "createDateComic": "2023-12-06T16:50:26.000Z",
+      "lastUpdateChapter": "2024-04-01T10:49:56.000Z"
+    },
+    {
+      "urlComic": "mang-theo-cac-tien-tu-vo-dich-thien-ha",
+      "totalChapter": 127,
+      "createDateComic": "2023-12-21T03:56:34.000Z",
+      "lastUpdateChapter": "2023-12-21T04:04:07.000Z"
+    },
+    {
+      "urlComic": "bong-nhien-toi-tro-thanh-qua-den",
+      "totalChapter": 140,
+      "createDateComic": "2023-12-17T16:50:29.000Z",
+      "lastUpdateChapter": "2023-12-17T16:56:39.000Z"
+    },
+    {
+      "urlComic": "mot-sach",
+      "totalChapter": 203,
+      "createDateComic": "2023-12-24T03:28:19.000Z",
+      "lastUpdateChapter": "2023-12-24T03:48:03.000Z"
+    },
+    {
+      "urlComic": "vo-toi-la-quy-vuong",
+      "totalChapter": 458,
+      "createDateComic": "2023-12-07T18:10:12.000Z",
+      "lastUpdateChapter": "2024-02-21T03:15:10.000Z"
+    },
+    {
+      "urlComic": "tu-dai-danh-bo",
+      "totalChapter": 338,
+      "createDateComic": "2023-12-27T05:01:06.000Z",
+      "lastUpdateChapter": "2023-12-27T05:34:55.000Z"
+    },
+    {
+      "urlComic": "nguoi-chong-thien-than-cua-toi-that-ra-la-ac-quy",
+      "totalChapter": 110,
+      "createDateComic": "2024-01-04T02:22:10.000Z",
+      "lastUpdateChapter": "2024-03-26T00:10:23.000Z"
+    },
+    {
+      "urlComic": "toi-o-the-gioi-khac-dua-dam-vao-phu-nu",
+      "totalChapter": 169,
+      "createDateComic": "2023-12-12T11:32:58.000Z",
+      "lastUpdateChapter": "2024-03-31T02:31:36.000Z"
+    },
+    {
+      "urlComic": "ai-da-bat-coc-hoang-hau",
+      "totalChapter": 112,
+      "createDateComic": "2023-12-25T02:17:09.000Z",
+      "lastUpdateChapter": "2024-02-25T04:49:12.000Z"
+    },
+    {
+      "urlComic": "ac-nu-trung-sinh",
+      "totalChapter": 187,
+      "createDateComic": "2023-12-17T11:11:31.000Z",
+      "lastUpdateChapter": "2024-03-25T23:57:07.000Z"
+    },
+    {
+      "urlComic": "do-de-nha-ta-lai-quai-roi",
+      "totalChapter": 324,
+      "createDateComic": "2023-12-08T17:51:22.000Z",
+      "lastUpdateChapter": "2023-12-08T18:02:14.000Z"
+    },
+    {
+      "urlComic": "toi-se-cho-anh-thu-toi-te-nhat",
+      "totalChapter": 22,
+      "createDateComic": "2024-02-26T00:01:22.000Z",
+      "lastUpdateChapter": "2024-03-29T13:23:44.000Z"
+    },
+    {
+      "urlComic": "ngu-dai-do-de-cua-charlotte",
+      "totalChapter": 278,
+      "createDateComic": "2023-12-10T05:31:22.000Z",
+      "lastUpdateChapter": "2024-03-15T00:54:00.000Z"
+    },
+    {
+      "urlComic": "co-vo-nho-nuong-chieu-qua-lai-thanh-ac",
+      "totalChapter": 254,
+      "createDateComic": "2023-12-07T15:22:08.000Z",
+      "lastUpdateChapter": "2023-12-07T15:33:24.000Z"
+    },
+    {
+      "urlComic": "giet-chet-ac-nu-phan-dien",
+      "totalChapter": 142,
+      "createDateComic": "2023-12-12T04:39:34.000Z",
+      "lastUpdateChapter": "2024-02-01T06:09:41.000Z"
+    },
+    {
+      "urlComic": "vet-trang",
+      "totalChapter": 28,
+      "createDateComic": "2024-03-21T09:37:27.000Z",
+      "lastUpdateChapter": "2024-03-27T18:05:11.000Z"
+    },
+    {
+      "urlComic": "anh-ay-rat-hay-treu-choc-toi",
+      "totalChapter": 87,
+      "createDateComic": "2023-12-12T04:36:55.000Z",
+      "lastUpdateChapter": "2024-04-02T08:02:29.000Z"
+    },
+    {
+      "urlComic": "cach-thuc-sinh-ton-cua-phao-hoi-khue-nu",
+      "totalChapter": 253,
+      "createDateComic": "2023-12-09T15:23:06.000Z",
+      "lastUpdateChapter": "2024-04-02T00:51:22.000Z"
+    },
+    {
+      "urlComic": "do-thi-cuc-pham-y-tien",
+      "totalChapter": 412,
+      "createDateComic": "2023-12-09T18:31:49.000Z",
+      "lastUpdateChapter": "2023-12-09T18:54:33.000Z"
+    },
+    {
+      "urlComic": "ngon-gio-dong-xu-altas",
+      "totalChapter": 13,
+      "createDateComic": "2024-01-15T01:53:54.000Z",
+      "lastUpdateChapter": "2024-01-15T01:54:30.000Z"
+    },
+    {
+      "urlComic": "cam-bay",
+      "totalChapter": 217,
+      "createDateComic": "2023-12-16T12:46:14.000Z",
+      "lastUpdateChapter": "2024-03-26T02:42:48.000Z"
+    },
+    {
+      "urlComic": "chong-yeu-em-muon-dinh-cong",
+      "totalChapter": 59,
+      "createDateComic": "2023-12-21T16:02:58.000Z",
+      "lastUpdateChapter": "2023-12-21T16:06:03.000Z"
+    },
+    {
+      "urlComic": "toi-tuong-do-chi-la-tieu-thuyet-trong-sinh-binh-thuong",
+      "totalChapter": 67,
+      "createDateComic": "2023-12-22T02:33:49.000Z",
+      "lastUpdateChapter": "2024-02-07T00:42:43.000Z"
+    },
+    {
+      "urlComic": "giac-mo-hoc-thuc",
+      "totalChapter": 37,
+      "createDateComic": "2024-01-24T11:12:22.000Z",
+      "lastUpdateChapter": "2024-03-24T07:50:42.000Z"
+    },
+    {
+      "urlComic": "mairimashita-iruma-kun-if-episode-of-mafia",
+      "totalChapter": 6,
+      "createDateComic": "2024-02-15T01:53:07.000Z",
+      "lastUpdateChapter": "2024-03-10T10:56:50.000Z"
+    },
+    {
+      "urlComic": "mat-the-sieu-cap-he-thong",
+      "totalChapter": 342,
+      "createDateComic": "2023-12-08T06:48:40.000Z",
+      "lastUpdateChapter": "2024-03-12T08:47:26.000Z"
+    },
+    {
+      "urlComic": "nu-chinh-ngoai-tinh-voi-vi-hon-phu-cua-toi",
+      "totalChapter": 27,
+      "createDateComic": "2024-01-04T04:30:23.000Z",
+      "lastUpdateChapter": "2024-02-20T05:02:39.000Z"
+    },
+    {
+      "urlComic": "tokyo-aliens",
+      "totalChapter": 43,
+      "createDateComic": "2024-01-03T16:35:49.000Z",
+      "lastUpdateChapter": "2024-03-28T15:01:03.000Z"
+    },
+    {
+      "urlComic": "vi-hon-the-khe-uoc-cua-cong-tuoc",
+      "totalChapter": 56,
+      "createDateComic": "2024-02-23T00:10:28.000Z",
+      "lastUpdateChapter": "2024-03-30T15:38:15.000Z"
+    },
+    {
+      "urlComic": "huong-dan-su-dung-manh-thu",
+      "totalChapter": 28,
+      "createDateComic": "2024-01-24T01:35:31.000Z",
+      "lastUpdateChapter": "2024-03-15T01:56:54.000Z"
+    },
+    {
+      "urlComic": "toi-den-tu-the-gioi-tro-choi",
+      "totalChapter": 264,
+      "createDateComic": "2023-12-11T17:15:02.000Z",
+      "lastUpdateChapter": "2024-04-01T15:42:59.000Z"
+    },
+    {
+      "urlComic": "vua-thang-cap",
+      "totalChapter": 166,
+      "createDateComic": "2023-12-09T04:16:27.000Z",
+      "lastUpdateChapter": "2024-04-01T10:07:12.000Z"
+    },
+    {
+      "urlComic": "bat-dau-voi-tuyet-sac-su-ton-he-thong-tong-cuc-phan-cot",
+      "totalChapter": 59,
+      "createDateComic": "2024-01-09T04:59:01.000Z",
+      "lastUpdateChapter": "2024-04-02T00:49:06.000Z"
+    },
+    {
+      "urlComic": "gia-toc-diep-vien-yozakura",
+      "totalChapter": 219,
+      "createDateComic": "2023-12-15T14:21:51.000Z",
+      "lastUpdateChapter": "2024-04-02T05:19:01.000Z"
+    },
+    {
+      "urlComic": "con-gai-be-bong-cua-cong-tuoc-ac-ma",
+      "totalChapter": 69,
+      "createDateComic": "2023-12-30T04:13:47.000Z",
+      "lastUpdateChapter": "2024-03-25T06:17:32.000Z"
+    },
+    {
+      "urlComic": "gokurakugai",
+      "totalChapter": 13,
+      "createDateComic": "2024-01-13T14:12:51.000Z",
+      "lastUpdateChapter": "2024-02-22T13:12:42.000Z"
+    },
+    {
+      "urlComic": "can-ke-tiep-xuc",
+      "totalChapter": 130,
+      "createDateComic": "2023-12-11T08:22:15.000Z",
+      "lastUpdateChapter": "2023-12-11T08:27:06.000Z"
+    },
+    {
+      "urlComic": "trang-trai-hat-de-gan-cung-dien-hoang-gia",
+      "totalChapter": 64,
+      "createDateComic": "2023-12-22T19:27:16.000Z",
+      "lastUpdateChapter": "2024-03-04T08:15:19.000Z"
+    },
+    {
+      "urlComic": "ga-cho-phan-dien",
+      "totalChapter": 28,
+      "createDateComic": "2024-01-10T15:34:05.000Z",
+      "lastUpdateChapter": "2024-03-28T00:43:56.000Z"
+    },
+    {
+      "urlComic": "linh-kiem-ton",
+      "totalChapter": 530,
+      "createDateComic": "2023-12-06T18:56:45.000Z",
+      "lastUpdateChapter": "2023-12-06T19:20:32.000Z"
+    },
+    {
+      "urlComic": "yaiba",
+      "totalChapter": 255,
+      "createDateComic": "2023-12-18T13:55:31.000Z",
+      "lastUpdateChapter": "2023-12-18T14:13:39.000Z"
+    },
+    {
+      "urlComic": "cung-chieu-vo-yeu",
+      "totalChapter": 325,
+      "createDateComic": "2023-12-08T00:50:57.000Z",
+      "lastUpdateChapter": "2023-12-08T01:04:58.000Z"
+    },
+    {
+      "urlComic": "ta-nhan-duoc-vat-pham-than-thoai",
+      "totalChapter": 99,
+      "createDateComic": "2023-12-16T19:58:34.000Z",
+      "lastUpdateChapter": "2024-03-30T02:55:39.000Z"
+    },
+    {
+      "urlComic": "sokushi-cheat-ga-saikyou-sugite-isekai-no-yatsura-ga-marude-aite-ni-naranai-n-desu-ga",
+      "totalChapter": 58,
+      "createDateComic": "2023-12-25T22:27:38.000Z",
+      "lastUpdateChapter": "2024-03-29T08:16:05.000Z"
+    },
+    {
+      "urlComic": "loop-7-kaime-no-akuyaku-reijou-wa-moto-tekikoku-de-juukimama-na-hanayome-seikatsu-o-mankitsu-suru",
+      "totalChapter": 14,
+      "createDateComic": "2024-01-13T09:47:37.000Z",
+      "lastUpdateChapter": "2024-02-23T03:50:13.000Z"
+    },
+    {
+      "urlComic": "haite-kudasai-takamine-san",
+      "totalChapter": 42,
+      "createDateComic": "2023-12-23T14:18:43.000Z",
+      "lastUpdateChapter": "2024-03-20T23:37:31.000Z"
+    },
+    {
+      "urlComic": "thang-cap-vo-han-trong-murim",
+      "totalChapter": 181,
+      "createDateComic": "2023-12-17T08:15:59.000Z",
+      "lastUpdateChapter": "2024-02-12T00:55:19.000Z"
+    },
+    {
+      "urlComic": "dua-con-gai-con-do-nha-cong-tuoc",
+      "totalChapter": 36,
+      "createDateComic": "2023-12-31T09:16:39.000Z",
+      "lastUpdateChapter": "2023-12-31T09:18:30.000Z"
+    },
+    {
+      "urlComic": "son-ca-yeu-kieu-cua-yeu-tinh",
+      "totalChapter": 35,
+      "createDateComic": "2023-12-21T09:00:34.000Z",
+      "lastUpdateChapter": "2023-12-21T09:02:12.000Z"
+    },
+    {
+      "urlComic": "cach-de-ton-tai-nhu-mot-cong-pham",
+      "totalChapter": 10,
+      "createDateComic": "2024-02-23T02:44:32.000Z",
+      "lastUpdateChapter": "2024-04-02T00:48:58.000Z"
+    },
+    {
+      "urlComic": "nguoi-tren-van-nguoi",
+      "totalChapter": 318,
+      "createDateComic": "2023-12-06T04:01:13.000Z",
+      "lastUpdateChapter": "2024-03-13T04:44:46.000Z"
+    },
+    {
+      "urlComic": "gate-jietai-kare-no-chi-nite-kaku-tatakeri",
+      "totalChapter": 139,
+      "createDateComic": "2023-12-25T15:41:28.000Z",
+      "lastUpdateChapter": "2024-03-11T07:02:53.000Z"
+    },
+    {
+      "urlComic": "nuoi-vi-hon-phu-bang-tien-bac",
+      "totalChapter": 35,
+      "createDateComic": "2024-02-28T05:40:49.000Z",
+      "lastUpdateChapter": "2024-04-01T01:02:11.000Z"
+    },
+    {
+      "urlComic": "bat-dau-vung-day-tu-viec-choi-game-nghiem-tuc",
+      "totalChapter": 145,
+      "createDateComic": "2023-12-13T23:35:23.000Z",
+      "lastUpdateChapter": "2024-03-12T10:36:07.000Z"
+    },
+    {
+      "urlComic": "loi-cau-hon-tu-ke-phan-dien",
+      "totalChapter": 65,
+      "createDateComic": "2024-03-21T09:40:08.000Z",
+      "lastUpdateChapter": "2024-03-25T23:56:27.000Z"
+    },
+    {
+      "urlComic": "please-go-home-akutsu-san",
+      "totalChapter": 198,
+      "createDateComic": "2023-12-12T23:52:34.000Z",
+      "lastUpdateChapter": "2024-03-22T23:34:59.000Z"
+    },
+    {
+      "urlComic": "lao-dai-xuyen-khong-ga-cho-phu-quan-mu",
+      "totalChapter": 98,
+      "createDateComic": "2023-12-16T07:57:24.000Z",
+      "lastUpdateChapter": "2024-03-30T15:38:54.000Z"
+    },
+    {
+      "urlComic": "ngay-mai-cung-thich",
+      "totalChapter": 43,
+      "createDateComic": "2024-01-07T16:11:14.000Z",
+      "lastUpdateChapter": "2024-03-31T23:47:21.000Z"
+    },
+    {
+      "urlComic": "ta-nguoi-chi-can-nhin-thay-thanh-mau-co-the-trung-phat-than-linh",
+      "totalChapter": 199,
+      "createDateComic": "2023-12-19T23:48:24.000Z",
+      "lastUpdateChapter": "2024-03-12T14:12:57.000Z"
+    },
+    {
+      "urlComic": "doi-truong-linh-danh-thue",
+      "totalChapter": 202,
+      "createDateComic": "2023-12-15T10:05:43.000Z",
+      "lastUpdateChapter": "2024-03-15T01:20:20.000Z"
+    },
+    {
+      "urlComic": "co-vo-hop-dong-lanh-lung-khong-de-dung-dau",
+      "totalChapter": 301,
+      "createDateComic": "2023-12-09T04:49:30.000Z",
+      "lastUpdateChapter": "2023-12-09T04:59:29.000Z"
+    },
+    {
+      "urlComic": "doc-thu-vu-y",
+      "totalChapter": 454,
+      "createDateComic": "2023-12-07T12:44:42.000Z",
+      "lastUpdateChapter": "2023-12-07T13:04:25.000Z"
+    },
+    {
+      "urlComic": "toi-da-nuoi-duong-ban-thoi-tho-au-thanh-bao-chua",
+      "totalChapter": 98,
+      "createDateComic": "2023-12-18T19:23:34.000Z",
+      "lastUpdateChapter": "2023-12-18T19:31:08.000Z"
+    },
+    {
+      "urlComic": "monogatari-no-kuromaku-ni-tensei-shite",
+      "totalChapter": 18,
+      "createDateComic": "2024-01-10T07:42:12.000Z",
+      "lastUpdateChapter": "2024-03-09T23:34:40.000Z"
+    },
+    {
+      "urlComic": "sieu-than-co-gioi-su",
+      "totalChapter": 269,
+      "createDateComic": "2023-12-10T05:44:46.000Z",
+      "lastUpdateChapter": "2024-03-31T23:42:49.000Z"
+    },
+    {
+      "urlComic": "toi-tro-thanh-nhan-vat-phan-dien-thuc-su",
+      "totalChapter": 78,
+      "createDateComic": "2023-12-25T07:36:59.000Z",
+      "lastUpdateChapter": "2024-03-27T18:00:34.000Z"
+    },
+    {
+      "urlComic": "cuong-gia-den-tu-trai-tam-than",
+      "totalChapter": 248,
+      "createDateComic": "2023-12-08T08:56:08.000Z",
+      "lastUpdateChapter": "2024-04-02T06:13:37.000Z"
+    },
+    {
+      "urlComic": "su-tro-lai-cua-anh-hung-diet-the",
+      "totalChapter": 88,
+      "createDateComic": "2023-12-18T12:26:04.000Z",
+      "lastUpdateChapter": "2023-12-18T12:32:05.000Z"
+    },
+    {
+      "urlComic": "bi-mat-cua-quy-co",
+      "totalChapter": 136,
+      "createDateComic": "2023-12-25T03:03:21.000Z",
+      "lastUpdateChapter": "2024-03-25T01:36:00.000Z"
+    },
+    {
+      "urlComic": "mairimashita-iruma-kun",
+      "totalChapter": 363,
+      "createDateComic": "2023-12-06T06:18:15.000Z",
+      "lastUpdateChapter": "2024-03-29T06:02:25.000Z"
+    },
+    {
+      "urlComic": "tieu-thu-tich-tien-di-bui",
+      "totalChapter": 47,
+      "createDateComic": "2023-12-26T15:36:18.000Z",
+      "lastUpdateChapter": "2024-01-07T15:25:18.000Z"
+    },
+    {
+      "urlComic": "su-tro-lai-cua-anh-hung-cap-tham-hoa",
+      "totalChapter": 77,
+      "createDateComic": "2023-12-12T03:49:33.000Z",
+      "lastUpdateChapter": "2023-12-12T03:53:39.000Z"
+    },
+    {
+      "urlComic": "co-gai-thich-lan-grand-blue",
+      "totalChapter": 116,
+      "createDateComic": "2023-12-13T19:38:59.000Z",
+      "lastUpdateChapter": "2024-03-10T09:18:43.000Z"
+    },
+    {
+      "urlComic": "toi-chan-nan-vi-chong-thu-hai-khong-chung-thuy",
+      "totalChapter": 154,
+      "createDateComic": "2024-01-13T07:59:52.000Z",
+      "lastUpdateChapter": "2024-03-16T22:52:38.000Z"
+    },
+    {
+      "urlComic": "ta-co-90-ty-tien-liem-cau",
+      "totalChapter": 182,
+      "createDateComic": "2023-12-27T08:22:11.000Z",
+      "lastUpdateChapter": "2024-04-02T09:53:12.000Z"
+    },
+    {
+      "urlComic": "toi-bi-mac-ket-trong-tro-choi-loi",
+      "totalChapter": 56,
+      "createDateComic": "2024-01-09T13:47:05.000Z",
+      "lastUpdateChapter": "2024-03-15T00:51:30.000Z"
+    },
+    {
+      "urlComic": "boku-no-kokoro-yabai-yatsu",
+      "totalChapter": 309,
+      "createDateComic": "2023-12-19T11:34:02.000Z",
+      "lastUpdateChapter": "2024-03-26T23:50:50.000Z"
+    },
+    {
+      "urlComic": "duoc-cac-anh-trai-chieu-chuong-toi-tro-nen-ngang-tang",
+      "totalChapter": 270,
+      "createDateComic": "2023-12-08T02:54:16.000Z",
+      "lastUpdateChapter": "2024-04-01T05:57:15.000Z"
+    },
+    {
+      "urlComic": "thap-dai-de-hoang-deu-la-de-tu-cua-ta",
+      "totalChapter": 286,
+      "createDateComic": "2023-12-09T13:33:30.000Z",
+      "lastUpdateChapter": "2024-03-31T12:44:21.000Z"
+    },
+    {
+      "urlComic": "toan-chuc-phap-su",
+      "totalChapter": 1172,
+      "createDateComic": "2023-12-05T08:34:40.000Z",
+      "lastUpdateChapter": "2024-03-30T06:20:02.000Z"
+    },
+    {
+      "urlComic": "nguoi-trong-giang-ho",
+      "totalChapter": 2337,
+      "createDateComic": "2023-12-07T01:02:26.000Z",
+      "lastUpdateChapter": "2023-12-07T04:07:03.000Z"
+    },
+    {
+      "urlComic": "cau-chuyen-co-tich-cua-me-ke",
+      "totalChapter": 147,
+      "createDateComic": "2023-12-17T08:24:58.000Z",
+      "lastUpdateChapter": "2024-03-25T23:50:17.000Z"
+    },
+    {
+      "urlComic": "nguoi-choi-moi-cap-toi-da",
+      "totalChapter": 152,
+      "createDateComic": "2023-12-09T00:49:13.000Z",
+      "lastUpdateChapter": "2024-04-01T10:07:38.000Z"
+    },
+    {
+      "urlComic": "quy-co-kho-gan",
+      "totalChapter": 109,
+      "createDateComic": "2023-12-10T17:53:16.000Z",
+      "lastUpdateChapter": "2023-12-10T18:02:09.000Z"
+    },
+    {
+      "urlComic": "tu-than-phieu-nguyet",
+      "totalChapter": 91,
+      "createDateComic": "2023-12-16T08:13:25.000Z",
+      "lastUpdateChapter": "2024-03-30T12:04:01.000Z"
+    },
+    {
+      "urlComic": "hoa-son-tai-xuat",
+      "totalChapter": 123,
+      "createDateComic": "2023-12-10T20:15:29.000Z",
+      "lastUpdateChapter": "2024-03-22T12:13:04.000Z"
+    },
+    {
+      "urlComic": "hoang-hau-muon-tai-hon",
+      "totalChapter": 181,
+      "createDateComic": "2023-12-09T08:59:47.000Z",
+      "lastUpdateChapter": "2024-04-02T10:08:42.000Z"
+    },
+    {
+      "urlComic": "uzumaki-boruto",
+      "totalChapter": 107,
+      "createDateComic": "2023-12-19T17:13:41.000Z",
+      "lastUpdateChapter": "2024-03-24T00:31:43.000Z"
+    },
+    {
+      "urlComic": "moi-quan-he-khong-hoan-hao",
+      "totalChapter": 200,
+      "createDateComic": "2023-12-17T12:15:19.000Z",
+      "lastUpdateChapter": "2024-03-27T00:38:20.000Z"
+    },
+    {
+      "urlComic": "ke-phan-dien-la-mot-con-roi",
+      "totalChapter": 93,
+      "createDateComic": "2023-12-11T03:22:15.000Z",
+      "lastUpdateChapter": "2024-04-01T15:27:03.000Z"
+    },
+    {
+      "urlComic": "den-day-nao-ma-phap-thieu-nu",
+      "totalChapter": 59,
+      "createDateComic": "2024-01-08T01:56:29.000Z",
+      "lastUpdateChapter": "2024-01-08T01:58:02.000Z"
+    },
+    {
+      "urlComic": "dai-tuong-vo-hinh",
+      "totalChapter": 403,
+      "createDateComic": "2023-12-06T23:55:38.000Z",
+      "lastUpdateChapter": "2024-03-27T07:52:56.000Z"
+    },
+    {
+      "urlComic": "thanh-khu",
+      "totalChapter": 275,
+      "createDateComic": "2023-12-09T13:44:27.000Z",
+      "lastUpdateChapter": "2024-03-30T09:07:22.000Z"
+    },
+    {
+      "urlComic": "thien-kim-toan-nang-ba-khi-ngut-troi",
+      "totalChapter": 81,
+      "createDateComic": "2023-12-25T14:14:06.000Z",
+      "lastUpdateChapter": "2024-03-30T01:27:00.000Z"
+    },
+    {
+      "urlComic": "3-kiep-xui-xeo-kiep-nay-cung-ta-than-kinh",
+      "totalChapter": 196,
+      "createDateComic": "2023-12-18T20:31:39.000Z",
+      "lastUpdateChapter": "2023-12-18T20:37:07.000Z"
+    },
+    {
+      "urlComic": "truyen-vo",
+      "totalChapter": 212,
+      "createDateComic": "2023-12-17T13:41:55.000Z",
+      "lastUpdateChapter": "2024-04-01T10:09:04.000Z"
+    },
+    {
+      "urlComic": "tieu-thiep-chi-muon-song-yen-binh",
+      "totalChapter": 59,
+      "createDateComic": "2023-12-29T06:32:44.000Z",
+      "lastUpdateChapter": "2024-03-31T23:43:32.000Z"
+    },
+    {
+      "urlComic": "toi-se-quyen-ru-cong-tuoc-phuong-bac",
+      "totalChapter": 70,
+      "createDateComic": "2023-12-25T20:20:25.000Z",
+      "lastUpdateChapter": "2024-03-10T23:56:18.000Z"
+    },
+    {
+      "urlComic": "dua-tre-trong-giong-toi",
+      "totalChapter": 20,
+      "createDateComic": "2024-03-12T23:18:54.000Z",
+      "lastUpdateChapter": "2024-03-31T02:32:18.000Z"
+    },
+    {
+      "urlComic": "dai-vuong-tha-mang",
+      "totalChapter": 915,
+      "createDateComic": "2023-12-05T16:48:13.000Z",
+      "lastUpdateChapter": "2024-03-29T13:06:04.000Z"
+    },
+    {
+      "urlComic": "anh-hung-onepunch",
+      "totalChapter": 313,
+      "createDateComic": "2023-12-05T23:20:08.000Z",
+      "lastUpdateChapter": "2024-03-20T23:34:24.000Z"
+    },
+    {
+      "urlComic": "tien-nghich",
+      "totalChapter": 175,
+      "createDateComic": "2023-12-11T15:10:01.000Z",
+      "lastUpdateChapter": "2023-12-11T15:16:55.000Z"
+    },
+    {
+      "urlComic": "nguoi-choi-manh-nhat-hoi-quy-lan-thu-100",
+      "totalChapter": 42,
+      "createDateComic": "2023-12-25T22:48:57.000Z",
+      "lastUpdateChapter": "2024-02-29T23:00:01.000Z"
+    },
+    {
+      "urlComic": "bon-thanh-nu-nga-bai-roi",
+      "totalChapter": 180,
+      "createDateComic": "2024-03-06T12:09:25.000Z",
+      "lastUpdateChapter": "2024-04-02T00:48:34.000Z"
+    },
+    {
+      "urlComic": "ke-nghiep-du",
+      "totalChapter": 108,
+      "createDateComic": "2023-12-24T01:27:19.000Z",
+      "lastUpdateChapter": "2024-02-06T00:37:14.000Z"
+    },
+    {
+      "urlComic": "healer-bao-thu",
+      "totalChapter": 117,
+      "createDateComic": "2023-12-09T07:48:45.000Z",
+      "lastUpdateChapter": "2024-02-26T14:54:01.000Z"
+    },
+    {
+      "urlComic": "doa-hoa-kieu-diem-cua-hoang-de",
+      "totalChapter": 17,
+      "createDateComic": "2023-12-31T14:21:06.000Z",
+      "lastUpdateChapter": "2023-12-31T14:22:04.000Z"
+    },
+    {
+      "urlComic": "tro-thanh-nguoi-giam-dinh-chat-doc-cho-the-luc-hac-am",
+      "totalChapter": 35,
+      "createDateComic": "2024-01-08T02:01:35.000Z",
+      "lastUpdateChapter": "2024-03-19T22:42:38.000Z"
+    },
+    {
+      "urlComic": "boss-nha-giau-lai-la-nu-sinh-trung-hoc",
+      "totalChapter": 228,
+      "createDateComic": "2023-12-12T10:03:58.000Z",
+      "lastUpdateChapter": "2024-04-02T04:59:56.000Z"
+    },
+    {
+      "urlComic": "khi-toi-bi-chu-cho-toi-bo-roi-can",
+      "totalChapter": 35,
+      "createDateComic": "2024-01-15T11:12:56.000Z",
+      "lastUpdateChapter": "2024-03-18T02:44:37.000Z"
+    },
+    {
+      "urlComic": "tuy-kiem-da-hanh",
+      "totalChapter": 110,
+      "createDateComic": "2023-12-21T10:39:47.000Z",
+      "lastUpdateChapter": "2024-03-30T12:03:51.000Z"
+    },
+    {
+      "urlComic": "tu-la-vo-than",
+      "totalChapter": 782,
+      "createDateComic": "2023-12-05T20:38:44.000Z",
+      "lastUpdateChapter": "2024-01-17T06:04:27.000Z"
+    },
+    {
+      "urlComic": "con-gai-chong-that-de-thuong",
+      "totalChapter": 144,
+      "createDateComic": "2023-12-13T00:01:23.000Z",
+      "lastUpdateChapter": "2024-04-02T10:06:34.000Z"
+    },
+    {
+      "urlComic": "khe-uoc-cua-nu-cong-tuoc-quai-vat",
+      "totalChapter": 160,
+      "createDateComic": "2023-12-12T04:49:59.000Z",
+      "lastUpdateChapter": "2023-12-12T04:58:50.000Z"
+    },
+    {
+      "urlComic": "nhat-dinh-chung-ta-se-duoc-hanh-phuc",
+      "totalChapter": 185,
+      "createDateComic": "2023-12-15T14:56:57.000Z",
+      "lastUpdateChapter": "2023-12-15T15:12:39.000Z"
+    },
+    {
+      "urlComic": "imaizumin-s-house-is-a-place-for-gals-to-gather",
+      "totalChapter": 25,
+      "createDateComic": "2024-01-02T04:31:08.000Z",
+      "lastUpdateChapter": "2024-03-30T14:35:13.000Z"
+    },
+    {
+      "urlComic": "o-mot-the-gioi-khong-co-em-gai-ma-ai-cung-yeu",
+      "totalChapter": 45,
+      "createDateComic": "2023-12-23T09:02:32.000Z",
+      "lastUpdateChapter": "2024-03-29T13:17:28.000Z"
+    },
+    {
+      "urlComic": "nang-bao-chua-muon-co-mot-cuoc-song-hanh-phuc-hon",
+      "totalChapter": 106,
+      "createDateComic": "2023-12-15T15:37:57.000Z",
+      "lastUpdateChapter": "2024-01-16T01:08:31.000Z"
+    },
+    {
+      "urlComic": "nghich-thien-kiem-than",
+      "totalChapter": 629,
+      "createDateComic": "2023-12-06T03:22:50.000Z",
+      "lastUpdateChapter": "2024-03-26T00:03:24.000Z"
+    },
+    {
+      "urlComic": "mat-the-pham-nhan",
+      "totalChapter": 572,
+      "createDateComic": "2023-12-08T07:35:09.000Z",
+      "lastUpdateChapter": "2024-03-31T04:07:52.000Z"
+    },
+    {
+      "urlComic": "toi-da-giet-tuyen-thu-hoc-vien",
+      "totalChapter": 28,
+      "createDateComic": "2024-01-13T17:15:27.000Z",
+      "lastUpdateChapter": "2024-03-25T07:10:32.000Z"
+    },
+    {
+      "urlComic": "co-di-ma-lay-chong-toi-di",
+      "totalChapter": 76,
+      "createDateComic": "2023-12-16T01:55:46.000Z",
+      "lastUpdateChapter": "2023-12-16T01:59:17.000Z"
+    },
+    {
+      "urlComic": "nghich-do-moi-ngay-deu-muon-bat-nat-su-phu",
+      "totalChapter": 176,
+      "createDateComic": "2023-12-15T08:54:32.000Z",
+      "lastUpdateChapter": "2024-03-23T08:23:50.000Z"
+    },
+    {
+      "urlComic": "kekkon-yubiwa-monogatari",
+      "totalChapter": 86,
+      "createDateComic": "2023-12-26T02:48:25.000Z",
+      "lastUpdateChapter": "2023-12-26T02:55:14.000Z"
+    },
+    {
+      "urlComic": "trang-toi-ki-nguyen-mau",
+      "totalChapter": 117,
+      "createDateComic": "2023-12-18T15:27:07.000Z",
+      "lastUpdateChapter": "2024-03-30T01:20:22.000Z"
+    },
+    {
+      "urlComic": "hao-do-nhi-hay-tha-cho-vi-su",
+      "totalChapter": 252,
+      "createDateComic": "2023-12-12T10:50:52.000Z",
+      "lastUpdateChapter": "2024-03-29T00:21:51.000Z"
+    },
+    {
+      "urlComic": "chau-trai-cua-nam-chinh-rat-thich-toi",
+      "totalChapter": 61,
+      "createDateComic": "2023-12-26T21:30:45.000Z",
+      "lastUpdateChapter": "2024-03-28T03:59:49.000Z"
+    },
+    {
+      "urlComic": "anh-sang-cuoi-con-duong",
+      "totalChapter": 190,
+      "createDateComic": "2023-12-07T00:10:30.000Z",
+      "lastUpdateChapter": "2024-01-24T08:29:30.000Z"
+    },
+    {
+      "urlComic": "dau-truong-chuyen-sinh",
+      "totalChapter": 22,
+      "createDateComic": "2024-01-14T09:11:12.000Z",
+      "lastUpdateChapter": "2024-03-25T02:52:31.000Z"
+    },
+    {
+      "urlComic": "chua-te-hoc-duong",
+      "totalChapter": 610,
+      "createDateComic": "2023-12-07T15:33:26.000Z",
+      "lastUpdateChapter": "2023-12-07T16:05:53.000Z"
+    },
+    {
+      "urlComic": "dung-dung-vao-em-trai-ta",
+      "totalChapter": 52,
+      "createDateComic": "2023-12-23T22:55:21.000Z",
+      "lastUpdateChapter": "2023-12-23T22:57:47.000Z"
+    },
+    {
+      "urlComic": "tim-lai-camellia",
+      "totalChapter": 89,
+      "createDateComic": "2023-12-21T16:53:56.000Z",
+      "lastUpdateChapter": "2023-12-21T16:59:26.000Z"
+    },
+    {
+      "urlComic": "sau-khi-nang-bi-danh-chet-cac-anh-trai-deu-hoi-han",
+      "totalChapter": 17,
+      "createDateComic": "2024-01-05T03:42:51.000Z",
+      "lastUpdateChapter": "2024-01-05T03:43:38.000Z"
+    },
+    {
+      "urlComic": "dai-tan-ta-con-trai-tan-thuy-hoang-giet-dich-thang-cap-thanh-than",
+      "totalChapter": 134,
+      "createDateComic": "2023-12-22T14:40:43.000Z",
+      "lastUpdateChapter": "2024-03-26T09:42:29.000Z"
+    },
+    {
+      "urlComic": "tai-sinh-tro-lai-chong-cu-khoc-loc-cau-xin-tai-hon",
+      "totalChapter": 159,
+      "createDateComic": "2023-12-19T04:07:34.000Z",
+      "lastUpdateChapter": "2024-04-02T00:49:40.000Z"
+    },
+    {
+      "urlComic": "nu-hoang-ai-cap",
+      "totalChapter": 182,
+      "createDateComic": "2023-12-12T06:59:28.000Z",
+      "lastUpdateChapter": "2024-03-31T23:42:37.000Z"
+    },
+    {
+      "urlComic": "dinh-cap-khi-van-lang-le-tu-luyen-ngan-nam",
+      "totalChapter": 156,
+      "createDateComic": "2023-12-08T08:10:15.000Z",
+      "lastUpdateChapter": "2024-04-01T10:06:59.000Z"
+    },
+    {
+      "urlComic": "ban-trai-cua-nam-chinh-bi-am-anh-boi-toi",
+      "totalChapter": 23,
+      "createDateComic": "2024-03-29T00:28:18.000Z",
+      "lastUpdateChapter": "2024-03-31T23:43:47.000Z"
+    },
+    {
+      "urlComic": "co-vo-mang-thai-mot-tang-mot",
+      "totalChapter": 291,
+      "createDateComic": "2023-12-08T06:22:00.000Z",
+      "lastUpdateChapter": "2024-03-27T05:13:03.000Z"
+    },
+    {
+      "urlComic": "dua-mami-ve-nha",
+      "totalChapter": 423,
+      "createDateComic": "2023-12-05T23:59:58.000Z",
+      "lastUpdateChapter": "2023-12-06T00:17:12.000Z"
+    },
+    {
+      "urlComic": "giam-cam",
+      "totalChapter": 54,
+      "createDateComic": "2024-03-14T22:49:52.000Z",
+      "lastUpdateChapter": "2024-03-28T03:58:42.000Z"
+    },
+    {
+      "urlComic": "please-don-t-bully-me-nagatoro-san",
+      "totalChapter": 157,
+      "createDateComic": "2023-12-23T00:35:35.000Z",
+      "lastUpdateChapter": "2024-03-26T00:02:57.000Z"
+    },
+    {
+      "urlComic": "thien-quy-chang-song-noi-cuoc-doi-binh-thuong",
+      "totalChapter": 112,
+      "createDateComic": "2023-12-15T10:59:52.000Z",
+      "lastUpdateChapter": "2024-03-15T01:15:40.000Z"
+    },
+    {
+      "urlComic": "dung-den-cua-hang-cua-ac-nu",
+      "totalChapter": 66,
+      "createDateComic": "2023-12-23T03:07:10.000Z",
+      "lastUpdateChapter": "2024-03-16T22:52:21.000Z"
+    },
+    {
+      "urlComic": "nhung-ranker-cap-s-ma-toi-nuoi-duong",
+      "totalChapter": 126,
+      "createDateComic": "2023-12-12T03:25:40.000Z",
+      "lastUpdateChapter": "2024-03-04T07:08:38.000Z"
+    },
+    {
+      "urlComic": "chap-su-tho-cup-tai",
+      "totalChapter": 102,
+      "createDateComic": "2023-12-27T21:20:11.000Z",
+      "lastUpdateChapter": "2024-03-30T12:04:52.000Z"
+    },
+    {
+      "urlComic": "trong-sinh-thanh-than-y-thoi-tam-quoc",
+      "totalChapter": 103,
+      "createDateComic": "2023-12-19T08:10:27.000Z",
+      "lastUpdateChapter": "2024-03-19T12:52:40.000Z"
+    },
+    {
+      "urlComic": "anh-hau-cung-khong-bang-niem-thanh-hoa",
+      "totalChapter": 144,
+      "createDateComic": "2023-12-15T09:58:45.000Z",
+      "lastUpdateChapter": "2023-12-15T10:05:40.000Z"
+    },
+    {
+      "urlComic": "thang-cap-cung-than",
+      "totalChapter": 109,
+      "createDateComic": "2023-12-13T01:44:00.000Z",
+      "lastUpdateChapter": "2024-03-30T02:55:16.000Z"
+    },
+    {
+      "urlComic": "tinh-nhan-4-tuan",
+      "totalChapter": 78,
+      "createDateComic": "2023-12-22T10:51:18.000Z",
+      "lastUpdateChapter": "2024-03-15T01:10:57.000Z"
+    },
+    {
+      "urlComic": "gakuen-alice",
+      "totalChapter": 123,
+      "createDateComic": "2023-12-29T05:37:55.000Z",
+      "lastUpdateChapter": "2023-12-29T05:46:06.000Z"
+    },
+    {
+      "urlComic": "dan-anh-xau-xa",
+      "totalChapter": 68,
+      "createDateComic": "2023-12-26T03:34:00.000Z",
+      "lastUpdateChapter": "2024-03-29T00:22:58.000Z"
+    },
+    {
+      "urlComic": "thanh-guom-diet-quy",
+      "totalChapter": 220,
+      "createDateComic": "2023-12-05T19:10:17.000Z",
+      "lastUpdateChapter": "2023-12-05T19:16:23.000Z"
+    },
+    {
+      "urlComic": "giai-thoat-99-nu-chinh-o-mat-the",
+      "totalChapter": 147,
+      "createDateComic": "2023-12-15T16:55:14.000Z",
+      "lastUpdateChapter": "2024-04-01T06:10:37.000Z"
+    },
+    {
+      "urlComic": "khoi-dau-co-kiem-vuc-ta-se-tro-thanh-kiem-than",
+      "totalChapter": 163,
+      "createDateComic": "2023-12-15T15:34:47.000Z",
+      "lastUpdateChapter": "2024-03-31T07:28:46.000Z"
+    },
+    {
+      "urlComic": "crush-cua-toi-la-mot-dua-lang-lo",
+      "totalChapter": 36,
+      "createDateComic": "2024-01-03T01:41:49.000Z",
+      "lastUpdateChapter": "2024-03-27T08:47:48.000Z"
+    },
+    {
+      "urlComic": "nang-cong-chua-cua-moi-nguoi",
+      "totalChapter": 37,
+      "createDateComic": "2023-12-31T08:02:31.000Z",
+      "lastUpdateChapter": "2023-12-31T08:04:34.000Z"
+    },
+    {
+      "urlComic": "sieu-cap-than-co-nhan",
+      "totalChapter": 230,
+      "createDateComic": "2023-12-12T21:06:28.000Z",
+      "lastUpdateChapter": "2024-03-31T23:43:10.000Z"
+    },
+    {
+      "urlComic": "anh-hoac-ngoan-ngoan-nuong-chieu-toi",
+      "totalChapter": 24,
+      "createDateComic": "2024-01-15T07:36:57.000Z",
+      "lastUpdateChapter": "2024-04-02T03:56:57.000Z"
+    },
+    {
+      "urlComic": "toi-cuong-phan-sao-lo-he-thong",
+      "totalChapter": 649,
+      "createDateComic": "2023-12-05T18:30:12.000Z",
+      "lastUpdateChapter": "2023-12-05T18:41:54.000Z"
+    },
+    {
+      "urlComic": "duong-dich-vi-hoan",
+      "totalChapter": 291,
+      "createDateComic": "2023-12-09T13:58:17.000Z",
+      "lastUpdateChapter": "2023-12-12T00:25:43.000Z"
+    },
+    {
+      "urlComic": "toi-tro-thanh-hau-gai-cua-mot-cong-tuoc",
+      "totalChapter": 119,
+      "createDateComic": "2023-12-11T17:37:53.000Z",
+      "lastUpdateChapter": "2023-12-11T17:42:25.000Z"
+    },
+    {
+      "urlComic": "here-u-are",
+      "totalChapter": 154,
+      "createDateComic": "2023-12-12T07:06:39.000Z",
+      "lastUpdateChapter": "2023-12-12T07:12:39.000Z"
+    },
+    {
+      "urlComic": "maria-doan-toi",
+      "totalChapter": 26,
+      "createDateComic": "2024-01-05T10:23:35.000Z",
+      "lastUpdateChapter": "2024-03-22T06:40:07.000Z"
+    },
+    {
+      "urlComic": "ijousha-no-ai",
+      "totalChapter": 43,
+      "createDateComic": "2023-12-30T16:24:43.000Z",
+      "lastUpdateChapter": "2024-02-21T17:04:12.000Z"
+    },
+    {
+      "urlComic": "the-doraemon-special-doi-quan-doraemons-dac-biet-doi-quan-doremon-them",
+      "totalChapter": 12,
+      "createDateComic": "2024-01-05T03:41:59.000Z",
+      "lastUpdateChapter": "2024-01-05T03:42:47.000Z"
+    },
+    {
+      "urlComic": "mot-dem-khong-bong",
+      "totalChapter": 86,
+      "createDateComic": "2024-01-02T06:14:49.000Z",
+      "lastUpdateChapter": "2024-03-27T05:25:09.000Z"
+    },
+    {
+      "urlComic": "su-tro-lai-cua-nguoi-choi-bi-dong-bang",
+      "totalChapter": 117,
+      "createDateComic": "2023-12-15T08:10:13.000Z",
+      "lastUpdateChapter": "2024-03-27T05:16:26.000Z"
+    },
+    {
+      "urlComic": "khong-the-roi-mat-khoi-em",
+      "totalChapter": 18,
+      "createDateComic": "2024-02-16T12:06:21.000Z",
+      "lastUpdateChapter": "2024-03-26T00:01:59.000Z"
+    },
+    {
+      "urlComic": "su-tro-lai-cua-phap-su-cap-8",
+      "totalChapter": 82,
+      "createDateComic": "2023-12-12T11:02:14.000Z",
+      "lastUpdateChapter": "2023-12-12T11:06:50.000Z"
+    },
+    {
+      "urlComic": "vo-dich-don-ngo",
+      "totalChapter": 169,
+      "createDateComic": "2023-12-17T14:41:52.000Z",
+      "lastUpdateChapter": "2024-03-26T09:31:02.000Z"
+    },
+    {
+      "urlComic": "ac-ma-may-man",
+      "totalChapter": 77,
+      "createDateComic": "2023-12-27T19:48:31.000Z",
+      "lastUpdateChapter": "2023-12-27T19:55:16.000Z"
+    },
+    {
+      "urlComic": "buttobi-itto",
+      "totalChapter": 103,
+      "createDateComic": "2023-12-12T07:24:14.000Z",
+      "lastUpdateChapter": "2023-12-12T07:28:37.000Z"
+    },
+    {
+      "urlComic": "ta-o-nha-100-nam-khi-ra-ngoai-da-vo-dich",
+      "totalChapter": 315,
+      "createDateComic": "2023-12-08T19:33:17.000Z",
+      "lastUpdateChapter": "2024-03-14T03:01:18.000Z"
+    },
+    {
+      "urlComic": "tinh-mong-than-tuong",
+      "totalChapter": 357,
+      "createDateComic": "2023-12-08T09:51:53.000Z",
+      "lastUpdateChapter": "2023-12-08T10:04:13.000Z"
+    },
+    {
+      "urlComic": "chi-co-ta-co-the-su-dung-trieu-hoan-thuat",
+      "totalChapter": 112,
+      "createDateComic": "2023-12-17T00:39:00.000Z",
+      "lastUpdateChapter": "2024-03-15T02:03:33.000Z"
+    },
+    {
+      "urlComic": "chung-ta-khong-phai-chi-em-than-thiet",
+      "totalChapter": 80,
+      "createDateComic": "2024-02-07T15:36:33.000Z",
+      "lastUpdateChapter": "2024-03-14T04:03:56.000Z"
+    },
+    {
+      "urlComic": "fan-vo-ban-da-biet-chua",
+      "totalChapter": 44,
+      "createDateComic": "2024-01-01T21:29:41.000Z",
+      "lastUpdateChapter": "2024-03-28T13:03:03.000Z"
+    },
+    {
+      "urlComic": "the-vi-thuong",
+      "totalChapter": 151,
+      "createDateComic": "2023-12-18T21:03:40.000Z",
+      "lastUpdateChapter": "2023-12-18T21:09:05.000Z"
+    },
+    {
+      "urlComic": "cam-bay-cua-ho-ly",
+      "totalChapter": 75,
+      "createDateComic": "2023-12-17T16:02:24.000Z",
+      "lastUpdateChapter": "2023-12-17T16:05:16.000Z"
+    },
+    {
+      "urlComic": "toi-se-chi-song-nhu-mot-nhan-vat-phan-dien",
+      "totalChapter": 75,
+      "createDateComic": "2023-12-16T20:06:17.000Z",
+      "lastUpdateChapter": "2023-12-16T20:09:39.000Z"
+    },
+    {
+      "urlComic": "tondemo-skill-de-isekai-hourou-meshi",
+      "totalChapter": 65,
+      "createDateComic": "2023-12-16T07:26:29.000Z",
+      "lastUpdateChapter": "2024-03-14T01:17:40.000Z"
+    },
+    {
+      "urlComic": "bat-bai-chan-ma",
+      "totalChapter": 196,
+      "createDateComic": "2023-12-12T14:45:25.000Z",
+      "lastUpdateChapter": "2023-12-12T15:25:20.000Z"
+    },
+    {
+      "urlComic": "vo-si-the-boxer",
+      "totalChapter": 127,
+      "createDateComic": "2023-12-15T16:00:35.000Z",
+      "lastUpdateChapter": "2023-12-15T16:11:27.000Z"
+    },
+    {
+      "urlComic": "thien-phu-cua-nguoi-gio-la-cua-ta",
+      "totalChapter": 75,
+      "createDateComic": "2023-12-15T08:36:38.000Z",
+      "lastUpdateChapter": "2024-04-01T14:18:10.000Z"
+    },
+    {
+      "urlComic": "bat-dau-voi-tram-van-minh-te",
+      "totalChapter": 122,
+      "createDateComic": "2023-12-19T15:35:01.000Z",
+      "lastUpdateChapter": "2024-04-01T07:11:16.000Z"
+    },
+    {
+      "urlComic": "de-nhat-danh-sach",
+      "totalChapter": 266,
+      "createDateComic": "2023-12-11T07:00:18.000Z",
+      "lastUpdateChapter": "2024-04-01T10:09:46.000Z"
+    },
+    {
+      "urlComic": "ac-nu-thuan-hoa-quai-thu",
+      "totalChapter": 60,
+      "createDateComic": "2023-12-23T05:29:35.000Z",
+      "lastUpdateChapter": "2024-03-27T17:58:57.000Z"
+    },
+    {
+      "urlComic": "nu-tuong-xuyen-den-hien-dai-tro-thanh-chi-dau-quyen-luc",
+      "totalChapter": 71,
+      "createDateComic": "2023-12-29T20:25:53.000Z",
+      "lastUpdateChapter": "2024-03-29T02:16:03.000Z"
+    },
+    {
+      "urlComic": "toi-muon-tro-thanh-co-ay-du-chi-la-mot-ngay",
+      "totalChapter": 224,
+      "createDateComic": "2023-12-13T16:23:27.000Z",
+      "lastUpdateChapter": "2023-12-13T16:41:09.000Z"
+    },
+    {
+      "urlComic": "kieu-quy-phi-thu-doan-ac-doc-va-hoang-thuong-khong-de-choc",
+      "totalChapter": 309,
+      "createDateComic": "2023-12-15T19:21:35.000Z",
+      "lastUpdateChapter": "2024-03-09T11:27:08.000Z"
+    },
+    {
+      "urlComic": "dao-hai-tac",
+      "totalChapter": 1115,
+      "createDateComic": "2023-12-06T07:17:32.000Z",
+      "lastUpdateChapter": "2024-02-23T00:17:01.000Z"
+    },
+    {
+      "urlComic": "moi-tuan-ta-co-mot-nghe-nghiep-moi",
+      "totalChapter": 432,
+      "createDateComic": "2023-12-08T03:45:41.000Z",
+      "lastUpdateChapter": "2024-03-31T23:43:02.000Z"
+    },
+    {
+      "urlComic": "chi-la-anh-binh-minh",
+      "totalChapter": 56,
+      "createDateComic": "2024-01-04T02:01:25.000Z",
+      "lastUpdateChapter": "2024-03-04T00:32:02.000Z"
+    },
+    {
+      "urlComic": "tong-tai-huyet-toc-cuc-sung-co-vo-my-nhan-ngu",
+      "totalChapter": 164,
+      "createDateComic": "2023-12-15T07:25:57.000Z",
+      "lastUpdateChapter": "2024-03-30T00:37:26.000Z"
+    },
+    {
+      "urlComic": "van-co-toi-cuong-tong",
+      "totalChapter": 317,
+      "createDateComic": "2023-12-06T14:39:00.000Z",
+      "lastUpdateChapter": "2024-03-24T10:33:02.000Z"
+    },
+    {
+      "urlComic": "ta-se-nuoi-day-con-cua-ngai-that-tot-be-ha",
+      "totalChapter": 96,
+      "createDateComic": "2023-12-25T09:02:13.000Z",
+      "lastUpdateChapter": "2024-03-28T13:02:46.000Z"
+    },
+    {
+      "urlComic": "chang-re-manh-nhat-lich-su",
+      "totalChapter": 178,
+      "createDateComic": "2023-12-09T11:33:35.000Z",
+      "lastUpdateChapter": "2024-03-30T12:07:05.000Z"
+    },
+    {
+      "urlComic": "su-tro-lai-cua-nguoi-choi-sau-10000-nam",
+      "totalChapter": 74,
+      "createDateComic": "2023-12-12T08:13:31.000Z",
+      "lastUpdateChapter": "2024-03-27T17:59:04.000Z"
+    },
+    {
+      "urlComic": "dau-pha-thuong-khung",
+      "totalChapter": 460,
+      "createDateComic": "2023-12-05T21:38:50.000Z",
+      "lastUpdateChapter": "2024-03-24T07:02:35.000Z"
+    },
+    {
+      "urlComic": "ta-bi-nhot-tai-cung-mot-ngay-muoi-van-nam",
+      "totalChapter": 394,
+      "createDateComic": "2023-12-06T18:13:29.000Z",
+      "lastUpdateChapter": "2024-04-02T04:59:42.000Z"
+    },
+    {
+      "urlComic": "ac-nu-phan-dien-dao-nguoc-dong-ho-cat",
+      "totalChapter": 136,
+      "createDateComic": "2023-12-10T20:58:40.000Z",
+      "lastUpdateChapter": "2023-12-10T21:02:55.000Z"
+    },
+    {
+      "urlComic": "thong-linh-phi",
+      "totalChapter": 882,
+      "createDateComic": "2023-12-05T19:16:27.000Z",
+      "lastUpdateChapter": "2023-12-05T19:57:24.000Z"
+    },
+    {
+      "urlComic": "ton-tai-voi-tu-cach-la-vo-cua-nam-chinh",
+      "totalChapter": 207,
+      "createDateComic": "2023-12-07T16:36:25.000Z",
+      "lastUpdateChapter": "2023-12-07T16:42:46.000Z"
+    },
+    {
+      "urlComic": "dac-vu-song-sinh",
+      "totalChapter": 70,
+      "createDateComic": "2023-12-26T05:52:42.000Z",
+      "lastUpdateChapter": "2024-03-09T23:38:49.000Z"
+    },
+    {
+      "urlComic": "ngay-toi-sinh-ra-bach-quy-da-hanh-tuyet-thi-ho-dao",
+      "totalChapter": 115,
+      "createDateComic": "2023-12-26T14:55:32.000Z",
+      "lastUpdateChapter": "2024-03-30T12:09:55.000Z"
+    },
+    {
+      "urlComic": "mat-the-quat-khoi",
+      "totalChapter": 272,
+      "createDateComic": "2023-12-09T14:13:01.000Z",
+      "lastUpdateChapter": "2024-03-31T07:26:56.000Z"
+    },
+    {
+      "urlComic": "chien-hon-tuyet-the",
+      "totalChapter": 505,
+      "createDateComic": "2023-12-06T15:21:24.000Z",
+      "lastUpdateChapter": "2024-03-30T07:17:17.000Z"
+    },
+    {
+      "urlComic": "cho-con-num-vu-di-ma",
+      "totalChapter": 110,
+      "createDateComic": "2023-12-17T15:36:01.000Z",
+      "lastUpdateChapter": "2023-12-17T15:40:10.000Z"
+    },
+    {
+      "urlComic": "hoc-nhom-study-group",
+      "totalChapter": 234,
+      "createDateComic": "2023-12-11T18:40:21.000Z",
+      "lastUpdateChapter": "2023-12-11T18:53:06.000Z"
+    },
+    {
+      "urlComic": "ba-nguoi-anh-trai-cua-toi-la-bao-quan",
+      "totalChapter": 114,
+      "createDateComic": "2023-12-15T19:02:13.000Z",
+      "lastUpdateChapter": "2023-12-15T19:07:55.000Z"
+    },
+    {
+      "urlComic": "toi-da-thuan-hoa-hau-tuoc-ac-ma",
+      "totalChapter": 74,
+      "createDateComic": "2023-12-31T03:21:11.000Z",
+      "lastUpdateChapter": "2023-12-31T03:26:41.000Z"
+    },
+    {
+      "urlComic": "de-co-the-song-sot",
+      "totalChapter": 128,
+      "createDateComic": "2023-12-15T13:44:04.000Z",
+      "lastUpdateChapter": "2024-03-15T01:57:05.000Z"
+    },
+    {
+      "urlComic": "satanophany",
+      "totalChapter": 247,
+      "createDateComic": "2023-12-15T07:56:05.000Z",
+      "lastUpdateChapter": "2024-03-30T12:02:54.000Z"
+    },
+    {
+      "urlComic": "nguyen-lai-ta-la-tu-tien-dai-lao",
+      "totalChapter": 389,
+      "createDateComic": "2023-12-07T17:56:28.000Z",
+      "lastUpdateChapter": "2024-04-02T04:59:48.000Z"
+    },
+    {
+      "urlComic": "aisha",
+      "totalChapter": 60,
+      "createDateComic": "2024-01-12T11:08:57.000Z",
+      "lastUpdateChapter": "2024-02-02T18:01:21.000Z"
+    },
+    {
+      "urlComic": "co-di-ma-ket-hon-voi-chong-toi-di",
+      "totalChapter": 76,
+      "createDateComic": "2023-12-10T05:26:35.000Z",
+      "lastUpdateChapter": "2023-12-10T05:31:18.000Z"
+    },
+    {
+      "urlComic": "thoi-dai-cua-oman",
+      "totalChapter": 67,
+      "createDateComic": "2024-01-02T17:18:23.000Z",
+      "lastUpdateChapter": "2024-03-28T05:33:08.000Z"
+    },
+    {
+      "urlComic": "ke-cuong-buc-yeu-quy-cua-toi",
+      "totalChapter": 27,
+      "createDateComic": "2024-02-28T05:40:36.000Z",
+      "lastUpdateChapter": "2024-03-30T00:37:48.000Z"
+    },
+    {
+      "urlComic": "thieu-nien-huong-noi",
+      "totalChapter": 74,
+      "createDateComic": "2024-01-14T01:24:33.000Z",
+      "lastUpdateChapter": "2024-03-25T02:49:08.000Z"
+    },
+    {
+      "urlComic": "ba-xa-nha-toi-den-tu-ngan-nam-truoc",
+      "totalChapter": 265,
+      "createDateComic": "2023-12-12T03:31:07.000Z",
+      "lastUpdateChapter": "2024-04-01T05:16:04.000Z"
+    },
+    {
+      "urlComic": "hy-vong-duy-nhat",
+      "totalChapter": 105,
+      "createDateComic": "2023-12-27T00:24:52.000Z",
+      "lastUpdateChapter": "2024-03-25T01:35:08.000Z"
+    },
+    {
+      "urlComic": "song-nhu-hau-nu-bi-giam-cam",
+      "totalChapter": 54,
+      "createDateComic": "2024-01-03T17:49:33.000Z",
+      "lastUpdateChapter": "2024-02-27T00:39:44.000Z"
+    },
+    {
+      "urlComic": "than-ho-jangsan",
+      "totalChapter": 33,
+      "createDateComic": "2024-01-04T09:07:54.000Z",
+      "lastUpdateChapter": "2024-03-14T23:10:03.000Z"
+    },
+    {
+      "urlComic": "dai-phung-da-canh-nhan",
+      "totalChapter": 347,
+      "createDateComic": "2023-12-11T08:42:29.000Z",
+      "lastUpdateChapter": "2024-04-01T09:32:53.000Z"
+    },
+    {
+      "urlComic": "dau-la-dai-luc",
+      "totalChapter": 446,
+      "createDateComic": "2023-12-06T14:01:24.000Z",
+      "lastUpdateChapter": "2024-04-01T10:08:41.000Z"
+    },
+    {
+      "urlComic": "chuyen-sinh-ma-phap-dac-biet-yeu",
+      "totalChapter": 247,
+      "createDateComic": "2023-12-08T00:40:46.000Z",
+      "lastUpdateChapter": "2024-02-12T00:40:40.000Z"
+    },
+    {
+      "urlComic": "nga-lao-ma-than",
+      "totalChapter": 198,
+      "createDateComic": "2023-12-08T15:34:58.000Z",
+      "lastUpdateChapter": "2024-03-23T13:53:01.000Z"
+    },
+    {
+      "urlComic": "cong-chua-bi-bo-roi",
+      "totalChapter": 53,
+      "createDateComic": "2024-01-14T02:22:42.000Z",
+      "lastUpdateChapter": "2024-01-14T02:27:37.000Z"
+    },
+    {
+      "urlComic": "dai-tieu-thu-giau-co-tan-tay-xe-kich-ban-bach-nguyet-quang",
+      "totalChapter": 17,
+      "createDateComic": "2024-02-21T18:30:36.000Z",
+      "lastUpdateChapter": "2024-04-02T00:47:45.000Z"
+    },
+    {
+      "urlComic": "nam-chinh-quai-vat-song-duoi-giuong-toi",
+      "totalChapter": 36,
+      "createDateComic": "2023-12-31T20:56:37.000Z",
+      "lastUpdateChapter": "2023-12-31T20:59:04.000Z"
+    },
+    {
+      "urlComic": "tham-hoa-tu-linh-su",
+      "totalChapter": 72,
+      "createDateComic": "2023-12-24T15:14:44.000Z",
+      "lastUpdateChapter": "2024-03-31T12:48:49.000Z"
+    },
+    {
+      "urlComic": "my-harem-grew-so-large-i-was-forced-to-ascend",
+      "totalChapter": 80,
+      "createDateComic": "2023-12-20T03:33:57.000Z",
+      "lastUpdateChapter": "2024-02-10T06:38:45.000Z"
+    },
+    {
+      "urlComic": "hoang-hau-be-bong",
+      "totalChapter": 62,
+      "createDateComic": "2023-12-24T00:56:14.000Z",
+      "lastUpdateChapter": "2023-12-24T00:59:55.000Z"
+    },
+    {
+      "urlComic": "mot-dem-voi-hoang-de",
+      "totalChapter": 51,
+      "createDateComic": "2023-12-26T21:51:07.000Z",
+      "lastUpdateChapter": "2023-12-26T21:53:56.000Z"
+    },
+    {
+      "urlComic": "chao-mung-den-voi-lop-hoc-de-cao-thuc-luc-nam-2",
+      "totalChapter": 17,
+      "createDateComic": "2024-01-13T13:14:13.000Z",
+      "lastUpdateChapter": "2024-01-13T13:14:41.000Z"
+    },
+    {
+      "urlComic": "truong-cong-chua-ac-doc-bat-dau-chim-dam-trong-yeu-duong",
+      "totalChapter": 58,
+      "createDateComic": "2023-12-29T06:44:16.000Z",
+      "lastUpdateChapter": "2024-03-29T13:17:41.000Z"
+    },
+    {
+      "urlComic": "toa-sang-ruc-ro",
+      "totalChapter": 54,
+      "createDateComic": "2024-01-03T17:47:28.000Z",
+      "lastUpdateChapter": "2024-01-03T17:49:29.000Z"
+    },
+    {
+      "urlComic": "mot-dem-sau-dam-cua-adeline",
+      "totalChapter": 87,
+      "createDateComic": "2024-01-01T11:30:15.000Z",
+      "lastUpdateChapter": "2024-03-13T02:50:53.000Z"
+    },
+    {
+      "urlComic": "dai-duong-kieu-sa",
+      "totalChapter": 100,
+      "createDateComic": "2023-12-31T06:05:28.000Z",
+      "lastUpdateChapter": "2024-04-01T15:27:07.000Z"
+    },
+    {
+      "urlComic": "sau-khi-xuyen-sach-toi-con-chang-phai-la-nu-phu",
+      "totalChapter": 17,
+      "createDateComic": "2024-01-22T07:17:08.000Z",
+      "lastUpdateChapter": "2024-04-02T00:54:58.000Z"
+    },
+    {
+      "urlComic": "rosen-garten-saga",
+      "totalChapter": 72,
+      "createDateComic": "2023-12-25T16:27:15.000Z",
+      "lastUpdateChapter": "2024-03-22T23:37:32.000Z"
+    },
+    {
+      "urlComic": "toi-co-ong-chong-hay-ghen",
+      "totalChapter": 143,
+      "createDateComic": "2023-12-21T18:37:05.000Z",
+      "lastUpdateChapter": "2024-03-16T22:58:17.000Z"
+    },
+    {
+      "urlComic": "toi-se-khong-hoi-tiec-vi-anh-dau",
+      "totalChapter": 120,
+      "createDateComic": "2023-12-21T12:02:49.000Z",
+      "lastUpdateChapter": "2024-03-29T13:15:44.000Z"
+    },
+    {
+      "urlComic": "toi-dang-duoc-nuoi-duong-boi-nhung-ke-phan-dien",
+      "totalChapter": 56,
+      "createDateComic": "2023-12-19T04:29:54.000Z",
+      "lastUpdateChapter": "2024-01-19T14:08:39.000Z"
+    },
+    {
+      "urlComic": "toi-muon-nhin-thay-dang-ve-xau-ho-cua-cau",
+      "totalChapter": 60,
+      "createDateComic": "2023-12-23T23:19:14.000Z",
+      "lastUpdateChapter": "2024-03-31T23:43:19.000Z"
+    },
+    {
+      "urlComic": "toi-da-pham-sai-lam-roi",
+      "totalChapter": 51,
+      "createDateComic": "2024-01-05T09:04:01.000Z",
+      "lastUpdateChapter": "2024-03-17T06:01:52.000Z"
+    },
+    {
+      "urlComic": "ta-co-mot-toa-mat-the-me-cung",
+      "totalChapter": 200,
+      "createDateComic": "2023-12-13T21:19:34.000Z",
+      "lastUpdateChapter": "2024-03-30T07:18:12.000Z"
+    },
+    {
+      "urlComic": "vo-toi-va-toi-thong-tri-tam-gioi",
+      "totalChapter": 131,
+      "createDateComic": "2023-12-13T21:25:20.000Z",
+      "lastUpdateChapter": "2024-03-22T23:42:03.000Z"
+    },
+    {
+      "urlComic": "than-phan-cua-phu-nhan-lam-chan-dong-ca-thanh-pho",
+      "totalChapter": 36,
+      "createDateComic": "2023-12-30T05:33:45.000Z",
+      "lastUpdateChapter": "2024-02-24T11:28:02.000Z"
+    },
+    {
+      "urlComic": "toi-ket-hon-cung-antifan",
+      "totalChapter": 38,
+      "createDateComic": "2024-01-05T04:32:14.000Z",
+      "lastUpdateChapter": "2024-01-05T04:34:41.000Z"
+    },
+    {
+      "urlComic": "dac-vu-kim",
+      "totalChapter": 176,
+      "createDateComic": "2023-12-11T18:27:37.000Z",
+      "lastUpdateChapter": "2024-03-16T22:52:14.000Z"
+    },
+    {
+      "urlComic": "toi-la-thanh-nu-gia-mao-nhung-cac-than-lai-am-anh-toi",
+      "totalChapter": 70,
+      "createDateComic": "2023-12-25T04:57:10.000Z",
+      "lastUpdateChapter": "2024-03-30T02:52:07.000Z"
+    },
+    {
+      "urlComic": "ngay-tan-the-ta-nhan-duoc-ty-le-rot-do-gap-100-lan",
+      "totalChapter": 319,
+      "createDateComic": "2023-12-11T02:18:32.000Z",
+      "lastUpdateChapter": "2024-03-25T12:13:04.000Z"
+    },
+    {
+      "urlComic": "dang-nhap-murim",
+      "totalChapter": 185,
+      "createDateComic": "2023-12-10T06:44:14.000Z",
+      "lastUpdateChapter": "2024-02-06T04:00:40.000Z"
+    },
+    {
+      "urlComic": "co-dau-thu-99-cua-cong-tuoc",
+      "totalChapter": 43,
+      "createDateComic": "2024-01-01T08:14:28.000Z",
+      "lastUpdateChapter": "2024-01-01T08:16:28.000Z"
+    },
+    {
+      "urlComic": "ta-o-hien-dai-lam-dai-boss",
+      "totalChapter": 71,
+      "createDateComic": "2023-12-19T07:49:04.000Z",
+      "lastUpdateChapter": "2024-03-29T04:20:11.000Z"
+    },
+    {
+      "urlComic": "toi-se-tu-bo-vi-tri-hoang-phi",
+      "totalChapter": 48,
+      "createDateComic": "2024-01-09T13:34:41.000Z",
+      "lastUpdateChapter": "2024-01-09T13:38:26.000Z"
+    },
+    {
+      "urlComic": "tien-nu-ngoai-truyen",
+      "totalChapter": 97,
+      "createDateComic": "2024-01-01T08:20:26.000Z",
+      "lastUpdateChapter": "2024-01-01T08:27:00.000Z"
+    },
+    {
+      "urlComic": "thuan-tinh-nha-dau-hoa-lat-lat",
+      "totalChapter": 480,
+      "createDateComic": "2023-12-06T00:41:13.000Z",
+      "lastUpdateChapter": "2023-12-06T01:13:07.000Z"
+    },
+    {
+      "urlComic": "toi-cuong-vo-hon-he-thong",
+      "totalChapter": 206,
+      "createDateComic": "2023-12-12T15:25:23.000Z",
+      "lastUpdateChapter": "2024-03-31T23:43:15.000Z"
+    },
+    {
+      "urlComic": "toi-thang-cap-mot-minh-ss2",
+      "totalChapter": 69,
+      "createDateComic": "2023-12-08T07:23:45.000Z",
+      "lastUpdateChapter": "2023-12-08T07:27:50.000Z"
+    },
+    {
+      "urlComic": "gay-go-cap-99",
+      "totalChapter": 203,
+      "createDateComic": "2023-12-11T18:11:00.000Z",
+      "lastUpdateChapter": "2024-03-11T12:02:45.000Z"
+    },
+    {
+      "urlComic": "song-lai-tuoi-20",
+      "totalChapter": 192,
+      "createDateComic": "2023-12-11T21:02:41.000Z",
+      "lastUpdateChapter": "2024-03-02T05:30:32.000Z"
+    },
+    {
+      "urlComic": "ton-tai-nhu-nang-cong-chua-da-chung",
+      "totalChapter": 89,
+      "createDateComic": "2023-12-26T17:22:09.000Z",
+      "lastUpdateChapter": "2024-03-29T13:14:42.000Z"
+    }
+  ]
+}

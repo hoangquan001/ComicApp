@@ -1,0 +1,118 @@
+{
+  "Title": "Majo To Yajuu",
+  "URL": "majo-to-yajuu",
+  "CoverImage": "majo-to-yajuu.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Seinen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": [
+    {
+      "urlChapter": "chapter-24",
+      "dateUpdateChapter": "3 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-23",
+      "dateUpdateChapter": "4 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-22",
+      "dateUpdateChapter": "14 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-21",
+      "dateUpdateChapter": "24 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-20",
+      "dateUpdateChapter": "2024-02-29 08:08:27"
+    },
+    {
+      "urlChapter": "chapter-19",
+      "dateUpdateChapter": "2024-02-20 15:18:18"
+    },
+    {
+      "urlChapter": "chapter-18",
+      "dateUpdateChapter": "2024-02-16 19:14:50"
+    },
+    {
+      "urlChapter": "chapter-17",
+      "dateUpdateChapter": "2024-02-11 10:23:36"
+    },
+    {
+      "urlChapter": "chapter-16",
+      "dateUpdateChapter": "2024-01-26 21:23:15"
+    },
+    {
+      "urlChapter": "chapter-15",
+      "dateUpdateChapter": "2024-01-17 20:09:40"
+    },
+    {
+      "urlChapter": "chapter-14",
+      "dateUpdateChapter": "2024-01-17 20:09:38"
+    },
+    {
+      "urlChapter": "chapter-13",
+      "dateUpdateChapter": "2024-01-17 20:09:35"
+    },
+    {
+      "urlChapter": "chapter-12",
+      "dateUpdateChapter": "2024-01-17 20:09:32"
+    },
+    {
+      "urlChapter": "chapter-11",
+      "dateUpdateChapter": "2024-01-17 20:09:30"
+    },
+    {
+      "urlChapter": "chapter-10",
+      "dateUpdateChapter": "2024-01-17 20:09:28"
+    },
+    {
+      "urlChapter": "chapter-9",
+      "dateUpdateChapter": "2024-01-17 20:09:26"
+    },
+    {
+      "urlChapter": "chapter-8",
+      "dateUpdateChapter": "2024-01-17 20:09:25"
+    },
+    {
+      "urlChapter": "chapter-7",
+      "dateUpdateChapter": "2024-01-17 20:09:22"
+    },
+    {
+      "urlChapter": "chapter-6",
+      "dateUpdateChapter": "2024-01-17 20:09:20"
+    },
+    {
+      "urlChapter": "chapter-5",
+      "dateUpdateChapter": "2024-01-17 20:09:18"
+    },
+    {
+      "urlChapter": "chapter-4",
+      "dateUpdateChapter": "2024-01-17 20:09:16"
+    },
+    {
+      "urlChapter": "chapter-3",
+      "dateUpdateChapter": "2024-01-17 20:09:14"
+    },
+    {
+      "urlChapter": "chapter-2",
+      "dateUpdateChapter": "2024-01-17 20:09:11"
+    },
+    {
+      "urlChapter": "chapter-1",
+      "dateUpdateChapter": "2024-01-17 20:09:08"
+    }
+  ]
+}

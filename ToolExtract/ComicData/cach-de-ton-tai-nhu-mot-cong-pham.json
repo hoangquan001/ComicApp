@@ -1,0 +1,56 @@
+{
+  "Title": "C\u00e1ch \u0110\u1ec3 T\u1ed3n T\u1ea1i Nh\u01b0 M\u1ed9t C\u1ed1ng Ph\u1ea9m",
+  "URL": "cach-de-ton-tai-nhu-mot-cong-pham",
+  "CoverImage": "cach-de-ton-tai-nhu-mot-cong-pham.jpg",
+  "CreateAt": "23/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": [
+    {
+      "urlChapter": "chapter-10",
+      "dateUpdateChapter": "9 gi\u01a1\u0300 tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-9",
+      "dateUpdateChapter": "7 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-8",
+      "dateUpdateChapter": "15 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-7",
+      "dateUpdateChapter": "21 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-6",
+      "dateUpdateChapter": "29 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-5",
+      "dateUpdateChapter": "2024-02-27 07:45:24"
+    },
+    {
+      "urlChapter": "chapter-4",
+      "dateUpdateChapter": "2024-02-23 09:44:37"
+    },
+    {
+      "urlChapter": "chapter-3",
+      "dateUpdateChapter": "2024-02-23 09:44:35"
+    },
+    {
+      "urlChapter": "chapter-2",
+      "dateUpdateChapter": "2024-02-23 09:44:34"
+    },
+    {
+      "urlChapter": "chapter-1",
+      "dateUpdateChapter": "2024-02-23 09:44:32"
+    }
+  ]
+}

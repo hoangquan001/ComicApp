@@ -36,22 +36,22 @@ expression = jmespath.compile(
 )
 
 # Apply JMESPath expression
-flat_data = expression.search(data)
+# flat_data = expression.search(data)
 
-# Print the restructured data
-print(json.dumps(flat_data, indent=2))
+# # Print the restructured data
+# print(json.dumps(flat_data, indent=2))
 
 
 
-####
-from bs4 import BeautifulSoup
+# ####
+# from bs4 import BeautifulSoup
 
-# Assuming we have an HTML document in the 'html_content' variable
-soup = BeautifulSoup(html_content, 'html.parser')
+# # Assuming we have an HTML document in the 'html_content' variable
+# soup = BeautifulSoup(html_content, 'html.parser')
 
-# Find the desired element and extract its text using get_text()
-element = soup.find_all('span',itemprop="name")
+# # Find the desired element and extract its text using get_text()
+# element = soup.find_all('span',itemprop="name")
 
-#get_text with strip set to true
-for e in element:
-  print(e) 
+# #get_text with strip set to true
+# for e in element:
+#   print(e) 

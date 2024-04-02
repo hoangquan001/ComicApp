@@ -1,0 +1,87 @@
+{
+  "Title": "Quy\u1ebft Chi\u1ebfn",
+  "URL": "quyet-chien",
+  "CoverImage": "quyet-chien.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": [
+    {
+      "urlChapter": "chapter-17",
+      "dateUpdateChapter": "7 nga\u0300y tr\u01b0\u01a1\u0301c"
+    },
+    {
+      "urlChapter": "chapter-16",
+      "dateUpdateChapter": "2024-02-26 21:52:05"
+    },
+    {
+      "urlChapter": "chapter-15",
+      "dateUpdateChapter": "2024-01-26 21:20:15"
+    },
+    {
+      "urlChapter": "chapter-14",
+      "dateUpdateChapter": "2024-01-17 03:40:28"
+    },
+    {
+      "urlChapter": "chapter-13",
+      "dateUpdateChapter": "2024-01-17 03:40:26"
+    },
+    {
+      "urlChapter": "chapter-12",
+      "dateUpdateChapter": "2024-01-17 03:40:24"
+    },
+    {
+      "urlChapter": "chapter-11",
+      "dateUpdateChapter": "2024-01-17 03:40:23"
+    },
+    {
+      "urlChapter": "chapter-10",
+      "dateUpdateChapter": "2024-01-17 03:40:21"
+    },
+    {
+      "urlChapter": "chapter-9",
+      "dateUpdateChapter": "2024-01-17 03:40:19"
+    },
+    {
+      "urlChapter": "chapter-8",
+      "dateUpdateChapter": "2024-01-17 03:40:16"
+    },
+    {
+      "urlChapter": "chapter-7",
+      "dateUpdateChapter": "2024-01-17 03:40:13"
+    },
+    {
+      "urlChapter": "chapter-6",
+      "dateUpdateChapter": "2024-01-17 03:40:10"
+    },
+    {
+      "urlChapter": "chapter-5",
+      "dateUpdateChapter": "2024-01-17 03:40:08"
+    },
+    {
+      "urlChapter": "chapter-4",
+      "dateUpdateChapter": "2024-01-17 03:40:05"
+    },
+    {
+      "urlChapter": "chapter-3",
+      "dateUpdateChapter": "2024-01-17 03:40:01"
+    },
+    {
+      "urlChapter": "chapter-2",
+      "dateUpdateChapter": "2024-01-17 03:39:56"
+    },
+    {
+      "urlChapter": "chapter-1",
+      "dateUpdateChapter": "2024-01-17 03:39:53"
+    }
+  ]
+}

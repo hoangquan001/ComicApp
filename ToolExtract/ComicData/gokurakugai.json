@@ -1,0 +1,70 @@
+{
+  "Title": "Gokurakugai",
+  "URL": "gokurakugai",
+  "CoverImage": "gokurakugai.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": [
+    {
+      "urlChapter": "chapter-13",
+      "dateUpdateChapter": "2024-02-22 20:12:42"
+    },
+    {
+      "urlChapter": "chapter-12",
+      "dateUpdateChapter": "2024-01-13 21:13:15"
+    },
+    {
+      "urlChapter": "chapter-11",
+      "dateUpdateChapter": "2024-01-13 21:13:13"
+    },
+    {
+      "urlChapter": "chapter-10",
+      "dateUpdateChapter": "2024-01-13 21:13:11"
+    },
+    {
+      "urlChapter": "chapter-9",
+      "dateUpdateChapter": "2024-01-13 21:13:10"
+    },
+    {
+      "urlChapter": "chapter-8",
+      "dateUpdateChapter": "2024-01-13 21:13:08"
+    },
+    {
+      "urlChapter": "chapter-7",
+      "dateUpdateChapter": "2024-01-13 21:13:06"
+    },
+    {
+      "urlChapter": "chapter-6",
+      "dateUpdateChapter": "2024-01-13 21:13:04"
+    },
+    {
+      "urlChapter": "chapter-5",
+      "dateUpdateChapter": "2024-01-13 21:13:02"
+    },
+    {
+      "urlChapter": "chapter-4",
+      "dateUpdateChapter": "2024-01-13 21:13:00"
+    },
+    {
+      "urlChapter": "chapter-3",
+      "dateUpdateChapter": "2024-01-13 21:12:56"
+    },
+    {
+      "urlChapter": "chapter-2",
+      "dateUpdateChapter": "2024-01-13 21:12:54"
+    },
+    {
+      "urlChapter": "chapter-1",
+      "dateUpdateChapter": "2024-01-13 21:12:52"
+    }
+  ]
+}
