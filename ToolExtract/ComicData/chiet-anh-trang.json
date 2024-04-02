@@ -11,66 +11,8 @@
   ],
   "LastChapter": "chapter-15",
   "TotalChapter": 15,
-  "Chapters": [
-    {
-      "urlChapter": "chapter-15",
-      "dateUpdateChapter": "2 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-14",
-      "dateUpdateChapter": "10 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-13",
-      "dateUpdateChapter": "10 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-12",
-      "dateUpdateChapter": "16 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-11",
-      "dateUpdateChapter": "18 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-10",
-      "dateUpdateChapter": "29 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-9",
-      "dateUpdateChapter": "2024-03-02 13:37:27"
-    },
-    {
-      "urlChapter": "chapter-8",
-      "dateUpdateChapter": "2024-03-02 13:37:25"
-    },
-    {
-      "urlChapter": "chapter-7",
-      "dateUpdateChapter": "2024-02-24 09:51:36"
-    },
-    {
-      "urlChapter": "chapter-6",
-      "dateUpdateChapter": "2024-02-19 13:54:20"
-    },
-    {
-      "urlChapter": "chapter-5",
-      "dateUpdateChapter": "2024-02-18 06:41:06"
-    },
-    {
-      "urlChapter": "chapter-4",
-      "dateUpdateChapter": "2024-02-18 06:41:06"
-    },
-    {
-      "urlChapter": "chapter-3",
-      "dateUpdateChapter": "2024-02-16 19:16:07"
-    },
-    {
-      "urlChapter": "chapter-2",
-      "dateUpdateChapter": "2024-02-16 19:16:04"
-    },
-    {
-      "urlChapter": "chapter-1",
-      "dateUpdateChapter": "2024-02-16 19:16:02"
-    }
-  ]
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
 }

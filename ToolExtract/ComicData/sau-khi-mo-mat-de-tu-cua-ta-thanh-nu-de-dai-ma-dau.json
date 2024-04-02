@@ -10,26 +10,8 @@
   ],
   "LastChapter": "chapter-5",
   "TotalChapter": 5,
-  "Chapters": [
-    {
-      "urlChapter": "chapter-5",
-      "dateUpdateChapter": "26 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-4",
-      "dateUpdateChapter": "26 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-3",
-      "dateUpdateChapter": "26 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-2",
-      "dateUpdateChapter": "26 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-1",
-      "dateUpdateChapter": "26 nga\u0300y tr\u01b0\u01a1\u0301c"
-    }
-  ]
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "26 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
 }
