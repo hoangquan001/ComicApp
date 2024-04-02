@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pQrp+9E/oKGLgWphbVeF4Ftc/VZDhzSYrLz4mOALUozImpKklZPS5C1syLKUMK+tTFsxadtbSfMEK5dAtsKNmg==",
+  "dgSpecHash": "KI2IzxVqQJiwfr6td1/HZshHSlvm1Ilv8M76oFuBXWg77ynPwziA2ovLpP9R3v3GL6GQkcF9q3DRNBG1KBKhMQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj",
+  "projectFilePath": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicAPI\\ComicApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ACER\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

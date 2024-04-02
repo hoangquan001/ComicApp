@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj": {}
+    "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicAPI\\ComicApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj": {
+    "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicAPI\\ComicApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj",
+        "projectUniqueName": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicAPI\\ComicApp.csproj",
         "projectName": "ComicApp",
-        "projectPath": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicApp.csproj",
+        "projectPath": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicAPI\\ComicApp.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ACER\\Desktop\\ComicApp\\obj\\",
+        "outputPath": "c:\\Users\\ACER\\Desktop\\ComicApp\\ComicAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
