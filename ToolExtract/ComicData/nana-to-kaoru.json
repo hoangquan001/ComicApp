@@ -1,0 +1,19 @@
+{
+  "Title": "Nana To Kaoru",
+  "URL": "nana-to-kaoru",
+  "CoverImage": "nana-to-kaoru.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Ecchi",
+    "Manga",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-93",
+  "TotalChapter": 93,
+  "Chapters": {
+    "urlChapter": "chapter-93",
+    "dateUpdateChapter": "2023-12-30 11:53:59"
+  }
+}

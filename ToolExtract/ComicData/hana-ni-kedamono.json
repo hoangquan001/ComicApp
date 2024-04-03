@@ -1,0 +1,18 @@
+{
+  "Title": "Hana ni Kedamono",
+  "URL": "hana-ni-kedamono",
+  "CoverImage": "hana-ni-kedamono.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "One shot"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-15 16:17:02"
+  }
+}

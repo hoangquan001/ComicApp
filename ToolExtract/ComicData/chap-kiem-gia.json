@@ -1,0 +1,21 @@
+{
+  "Title": "Ch\u1ea5p Ki\u1ebfm Gi\u1ea3",
+  "URL": "chap-kiem-gia",
+  "CoverImage": "chap-kiem-gia.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Manhua",
+    "Martial Arts",
+    "Mystery",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-69",
+  "TotalChapter": 69,
+  "Chapters": {
+    "urlChapter": "chapter-69",
+    "dateUpdateChapter": "2023-12-31 22:56:32"
+  }
+}

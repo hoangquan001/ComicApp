@@ -1,0 +1,17 @@
+{
+  "Title": "Crystal Palace",
+  "URL": "crystal-palace",
+  "CoverImage": "crystal-palace.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Shounen Ai"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-25 10:27:19"
+  }
+}

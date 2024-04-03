@@ -1,0 +1,19 @@
+{
+  "Title": "Sachi-iro no One Room",
+  "URL": "sachi-iro-no-one-room",
+  "CoverImage": "sachi-iro-no-one-room.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-68",
+  "TotalChapter": 68,
+  "Chapters": {
+    "urlChapter": "chapter-68",
+    "dateUpdateChapter": "2023-12-24 11:48:03"
+  }
+}

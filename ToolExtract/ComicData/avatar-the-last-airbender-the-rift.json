@@ -13,38 +13,8 @@
   ],
   "LastChapter": "chapter-8",
   "TotalChapter": 8,
-  "Chapters": [
-    {
-      "urlChapter": "chapter-8",
-      "dateUpdateChapter": "2024-01-22 18:51:49"
-    },
-    {
-      "urlChapter": "chapter-7",
-      "dateUpdateChapter": "2024-01-22 18:51:46"
-    },
-    {
-      "urlChapter": "chapter-6",
-      "dateUpdateChapter": "2024-01-22 18:51:45"
-    },
-    {
-      "urlChapter": "chapter-5",
-      "dateUpdateChapter": "2024-01-22 18:51:43"
-    },
-    {
-      "urlChapter": "chapter-4",
-      "dateUpdateChapter": "2024-01-22 18:51:42"
-    },
-    {
-      "urlChapter": "chapter-3",
-      "dateUpdateChapter": "2024-01-22 18:51:41"
-    },
-    {
-      "urlChapter": "chapter-2",
-      "dateUpdateChapter": "2024-01-22 18:51:28"
-    },
-    {
-      "urlChapter": "chapter-1",
-      "dateUpdateChapter": "2024-01-22 18:51:26"
-    }
-  ]
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-22 18:51:49"
+  }
 }

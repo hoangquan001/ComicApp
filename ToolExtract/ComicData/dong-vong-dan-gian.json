@@ -1,0 +1,23 @@
+{
+  "Title": "\u0110\u1ed3ng V\u1ecdng D\u00e2n Gian",
+  "URL": "dong-vong-dan-gian",
+  "CoverImage": "dong-vong-dan-gian.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Mystery",
+    "Supernatural",
+    "Tragedy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-23 15:54:35"
+  }
+}

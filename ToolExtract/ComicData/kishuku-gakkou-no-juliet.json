@@ -1,0 +1,22 @@
+{
+  "Title": "Kishuku Gakkou No Juliet",
+  "URL": "kishuku-gakkou-no-juliet",
+  "CoverImage": "kishuku-gakkou-no-juliet.jpg",
+  "CreateAt": "16/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Josei",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-123",
+  "TotalChapter": 123,
+  "Chapters": {
+    "urlChapter": "chapter-123",
+    "dateUpdateChapter": "2023-12-16 17:26:13"
+  }
+}

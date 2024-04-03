@@ -1,0 +1,19 @@
+{
+  "Title": "SCP \u0110\u01a1n Gi\u1ea3n H\u00f3a",
+  "URL": "scp-don-gian-hoa",
+  "CoverImage": "scp-don-gian-hoa.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Mystery",
+    "Psychological",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-61",
+  "TotalChapter": 61,
+  "Chapters": {
+    "urlChapter": "chapter-61",
+    "dateUpdateChapter": "2023-12-31 13:23:01"
+  }
+}

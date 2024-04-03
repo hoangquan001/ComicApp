@@ -1,0 +1,25 @@
+{
+  "Title": "Shibuya Kingyo",
+  "URL": "shibuya-kingyo",
+  "CoverImage": "shibuya-kingyo.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Mature",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-81",
+  "TotalChapter": 81,
+  "Chapters": {
+    "urlChapter": "chapter-81",
+    "dateUpdateChapter": "2023-12-24 09:41:52"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "M\u00e1u tr\u1eafng",
+  "URL": "mau-trang",
+  "CoverImage": "mau-trang.jpg",
+  "CreateAt": "21/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhwa",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-117",
+  "TotalChapter": 117,
+  "Chapters": {
+    "urlChapter": "chapter-117",
+    "dateUpdateChapter": "2023-12-21 16:41:08"
+  }
+}

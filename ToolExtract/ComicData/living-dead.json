@@ -1,0 +1,20 @@
+{
+  "Title": "Living Dead",
+  "URL": "living-dead",
+  "CoverImage": "living-dead.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 17:10:57"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "COIN",
+  "URL": "coin",
+  "CoverImage": "coin.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhwa",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-26 22:49:12"
+  }
+}

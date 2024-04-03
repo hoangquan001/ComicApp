@@ -1,0 +1,17 @@
+{
+  "Title": "Emerging",
+  "URL": "emerging",
+  "CoverImage": "emerging.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-13 17:25:30"
+  }
+}

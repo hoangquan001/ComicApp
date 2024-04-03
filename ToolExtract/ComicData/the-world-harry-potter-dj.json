@@ -1,0 +1,19 @@
+{
+  "Title": "The World - Harry Potter Dj",
+  "URL": "the-world-harry-potter-dj",
+  "CoverImage": "the-world-harry-potter-dj.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Josei",
+    "Mystery",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-22 13:43:45"
+  }
+}

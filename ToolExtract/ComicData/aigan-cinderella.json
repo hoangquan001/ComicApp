@@ -1,0 +1,19 @@
+{
+  "Title": "Aigan Cinderella",
+  "URL": "aigan-cinderella",
+  "CoverImage": "aigan-cinderella.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Josei",
+    "Romance",
+    "Smut"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-03 11:25:15"
+  }
+}

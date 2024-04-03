@@ -1,0 +1,21 @@
+{
+  "Title": "B\u1ea3ng Phong Th\u1ea7n",
+  "URL": "bang-phong-than",
+  "CoverImage": "bang-phong-than.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Historical",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-206",
+  "TotalChapter": 206,
+  "Chapters": {
+    "urlChapter": "chapter-206",
+    "dateUpdateChapter": "2024-01-10 04:12:07"
+  }
+}

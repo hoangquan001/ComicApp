@@ -1,0 +1,18 @@
+{
+  "Title": "Hakase to Slime-chan",
+  "URL": "hakase-to-slime-chan",
+  "CoverImage": "hakase-to-slime-chan.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-20 06:44:04"
+  }
+}

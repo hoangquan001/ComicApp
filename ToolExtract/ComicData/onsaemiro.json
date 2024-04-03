@@ -1,0 +1,21 @@
+{
+  "Title": "Onsaemiro",
+  "URL": "onsaemiro",
+  "CoverImage": "onsaemiro.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Historical",
+    "Manhwa",
+    "Romance",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "3 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

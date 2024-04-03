@@ -1,0 +1,21 @@
+{
+  "Title": "\u0110\u1ea3o Kinh Ho\u00e0ng",
+  "URL": "dao-kinh-hoang",
+  "CoverImage": "dao-kinh-hoang.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-09 11:36:02"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Ef - A fairy tale of the two",
+  "URL": "ef-a-fairy-tale-of-the-two",
+  "CoverImage": "ef-a-fairy-tale-of-the-two.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-20 18:20:08"
+  }
+}

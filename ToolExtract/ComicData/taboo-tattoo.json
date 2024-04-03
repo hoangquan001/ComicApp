@@ -1,0 +1,19 @@
+{
+  "Title": "Taboo Tattoo",
+  "URL": "taboo-tattoo",
+  "CoverImage": "taboo-tattoo.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-26 18:30:04"
+  }
+}

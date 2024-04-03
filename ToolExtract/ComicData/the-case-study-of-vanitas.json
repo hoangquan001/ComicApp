@@ -1,0 +1,20 @@
+{
+  "Title": "The Case study of Vanitas",
+  "URL": "the-case-study-of-vanitas",
+  "CoverImage": "the-case-study-of-vanitas.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Historical",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-69",
+  "TotalChapter": 69,
+  "Chapters": {
+    "urlChapter": "chapter-69",
+    "dateUpdateChapter": "14 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

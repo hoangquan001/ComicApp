@@ -1,0 +1,18 @@
+{
+  "Title": "Chigihagu Planet",
+  "URL": "chigihagu-planet",
+  "CoverImage": "chigihagu-planet.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-26 22:54:11"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Gunjou",
+  "URL": "gunjou",
+  "CoverImage": "gunjou.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Seinen",
+    "Slice of Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 18:03:31"
+  }
+}

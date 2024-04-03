@@ -1,0 +1,21 @@
+{
+  "Title": "Boyfriend - Namorado",
+  "URL": "boyfriend-namorado",
+  "CoverImage": "boyfriend-namorado.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "School Life",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-23 13:45:00"
+  }
+}

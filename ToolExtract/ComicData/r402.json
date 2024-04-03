@@ -1,0 +1,18 @@
+{
+  "Title": "R402",
+  "URL": "r402",
+  "CoverImage": "r402.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Ecchi",
+    "Romance"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-02 14:50:04"
+  }
+}

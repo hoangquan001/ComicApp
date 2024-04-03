@@ -1,0 +1,20 @@
+{
+  "Title": "Danh Ki\u1ebfm Ch\u1ee7ng",
+  "URL": "danh-kiem-chung",
+  "CoverImage": "danh-kiem-chung.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-09 21:01:12"
+  }
+}

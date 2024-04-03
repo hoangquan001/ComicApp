@@ -1,0 +1,20 @@
+{
+  "Title": "Danchigai",
+  "URL": "danchigai",
+  "CoverImage": "danchigai.jpg",
+  "CreateAt": "07/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-128",
+  "TotalChapter": 128,
+  "Chapters": {
+    "urlChapter": "chapter-128",
+    "dateUpdateChapter": "2024-01-07 23:25:27"
+  }
+}

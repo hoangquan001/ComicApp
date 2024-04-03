@@ -1,0 +1,18 @@
+{
+  "Title": "Kodomo no omocha",
+  "URL": "kodomo-no-omocha",
+  "CoverImage": "kodomo-no-omocha.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-53",
+  "TotalChapter": 53,
+  "Chapters": {
+    "urlChapter": "chapter-53",
+    "dateUpdateChapter": "2024-01-04 03:22:43"
+  }
+}

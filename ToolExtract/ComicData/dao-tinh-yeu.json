@@ -1,0 +1,19 @@
+{
+  "Title": "\u0110\u1ea3o T\u00ecnh Y\u00eau",
+  "URL": "dao-tinh-yeu",
+  "CoverImage": "dao-tinh-yeu.jpg",
+  "CreateAt": "16/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Manga",
+    "Mystery",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-16 19:48:46"
+  }
+}

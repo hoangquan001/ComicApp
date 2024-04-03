@@ -1,0 +1,18 @@
+{
+  "Title": "Mayonaka no Stellarium",
+  "URL": "mayonaka-no-stellarium",
+  "CoverImage": "mayonaka-no-stellarium.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-16 19:19:07"
+  }
+}

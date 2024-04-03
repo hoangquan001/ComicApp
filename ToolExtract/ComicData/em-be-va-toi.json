@@ -1,0 +1,19 @@
+{
+  "Title": "Em Be\u0301 Va\u0300 T\u00f4i",
+  "URL": "em-be-va-toi",
+  "CoverImage": "em-be-va-toi.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-108",
+  "TotalChapter": 108,
+  "Chapters": {
+    "urlChapter": "chapter-108",
+    "dateUpdateChapter": "2024-01-13 14:30:45"
+  }
+}

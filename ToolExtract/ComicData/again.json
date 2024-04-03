@@ -1,0 +1,19 @@
+{
+  "Title": "Again!!",
+  "URL": "again",
+  "CoverImage": "again.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-139",
+  "TotalChapter": 139,
+  "Chapters": {
+    "urlChapter": "chapter-139",
+    "dateUpdateChapter": "2024-01-04 23:34:03"
+  }
+}

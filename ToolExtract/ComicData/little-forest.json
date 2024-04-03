@@ -1,0 +1,16 @@
+{
+  "Title": "Little Forest",
+  "URL": "little-forest",
+  "CoverImage": "little-forest.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy"
+  ],
+  "LastChapter": "chapter-33",
+  "TotalChapter": 33,
+  "Chapters": {
+    "urlChapter": "chapter-33",
+    "dateUpdateChapter": "2024-01-23 00:38:34"
+  }
+}

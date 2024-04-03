@@ -1,0 +1,18 @@
+{
+  "Title": "MUV LUV Unlimited Manga",
+  "URL": "muv-luv-unlimited-manga",
+  "CoverImage": "muv-luv-unlimited-manga.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-23 13:39:03"
+  }
+}

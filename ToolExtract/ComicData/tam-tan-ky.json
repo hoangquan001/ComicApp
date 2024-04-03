@@ -1,0 +1,19 @@
+{
+  "Title": "T\u1ea7m T\u1ea7n K\u00fd",
+  "URL": "tam-tan-ky",
+  "CoverImage": "tam-tan-ky.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-199",
+  "TotalChapter": 199,
+  "Chapters": {
+    "urlChapter": "chapter-199",
+    "dateUpdateChapter": "2023-12-27 10:57:37"
+  }
+}

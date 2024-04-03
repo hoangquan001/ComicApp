@@ -1,0 +1,20 @@
+{
+  "Title": "Sekirei",
+  "URL": "sekirei",
+  "CoverImage": "sekirei.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-193",
+  "TotalChapter": 193,
+  "Chapters": {
+    "urlChapter": "chapter-193",
+    "dateUpdateChapter": "2024-01-03 12:29:41"
+  }
+}

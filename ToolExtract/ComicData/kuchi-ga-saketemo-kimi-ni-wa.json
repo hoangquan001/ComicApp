@@ -1,0 +1,19 @@
+{
+  "Title": "Kuchi ga Saketemo Kimi ni wa",
+  "URL": "kuchi-ga-saketemo-kimi-ni-wa",
+  "CoverImage": "kuchi-ga-saketemo-kimi-ni-wa.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Horror",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-48",
+  "TotalChapter": 48,
+  "Chapters": {
+    "urlChapter": "chapter-48",
+    "dateUpdateChapter": "2023-12-30 15:03:01"
+  }
+}

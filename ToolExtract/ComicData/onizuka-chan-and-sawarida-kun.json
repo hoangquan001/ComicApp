@@ -1,0 +1,20 @@
+{
+  "Title": "Onizuka-chan and Sawarida-kun",
+  "URL": "onizuka-chan-and-sawarida-kun",
+  "CoverImage": "onizuka-chan-and-sawarida-kun.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-61",
+  "TotalChapter": 61,
+  "Chapters": {
+    "urlChapter": "chapter-61",
+    "dateUpdateChapter": "2024-01-01 10:50:49"
+  }
+}

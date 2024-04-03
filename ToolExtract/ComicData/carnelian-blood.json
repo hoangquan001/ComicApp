@@ -1,0 +1,19 @@
+{
+  "Title": "Carnelian Blood",
+  "URL": "carnelian-blood",
+  "CoverImage": "carnelian-blood.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Horror",
+    "Manga",
+    "Mystery"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-26 22:30:44"
+  }
+}

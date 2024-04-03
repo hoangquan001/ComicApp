@@ -1,0 +1,23 @@
+{
+  "Title": "Tr\u0103ng Cu\u1ed1i Th\u00e1ng",
+  "URL": "trang-cuoi-thang",
+  "CoverImage": "trang-cuoi-thang.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Josei",
+    "Mystery",
+    "Psychological",
+    "Romance",
+    "Slice of Life",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-03 11:42:03"
+  }
+}

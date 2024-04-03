@@ -1,0 +1,19 @@
+{
+  "Title": "Aoi Kiseki",
+  "URL": "aoi-kiseki",
+  "CoverImage": "aoi-kiseki.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 23:39:33"
+  }
+}

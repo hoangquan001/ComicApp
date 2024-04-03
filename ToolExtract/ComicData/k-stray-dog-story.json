@@ -1,0 +1,17 @@
+{
+  "Title": "K - Stray Dog Story",
+  "URL": "k-stray-dog-story",
+  "CoverImage": "k-stray-dog-story.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "One shot"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-03 11:47:09"
+  }
+}

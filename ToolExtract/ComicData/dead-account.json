@@ -1,0 +1,20 @@
+{
+  "Title": "Dead Account",
+  "URL": "dead-account",
+  "CoverImage": "dead-account.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-51",
+  "TotalChapter": 51,
+  "Chapters": {
+    "urlChapter": "chapter-51",
+    "dateUpdateChapter": "2024-02-25 05:40:05"
+  }
+}

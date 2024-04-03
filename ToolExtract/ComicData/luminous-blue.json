@@ -1,0 +1,22 @@
+{
+  "Title": "Luminous=Blue",
+  "URL": "luminous-blue",
+  "CoverImage": "luminous-blue.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shoujo Ai",
+    "Kha\u0301c",
+    "Yuri"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-20 15:31:35"
+  }
+}

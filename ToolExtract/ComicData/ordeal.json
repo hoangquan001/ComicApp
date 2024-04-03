@@ -1,0 +1,19 @@
+{
+  "Title": "Ordeal",
+  "URL": "ordeal",
+  "CoverImage": "ordeal.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Martial Arts",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-20 07:39:10"
+  }
+}

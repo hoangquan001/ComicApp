@@ -1,0 +1,21 @@
+{
+  "Title": "Isekai Demo Bunan ni Ikitai Shoukougun",
+  "URL": "isekai-demo-bunan-ni-ikitai-shoukougun",
+  "CoverImage": "isekai-demo-bunan-ni-ikitai-shoukougun.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Fantasy",
+    "Josei",
+    "Manga",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2023-12-29 15:51:03"
+  }
+}

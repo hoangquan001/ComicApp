@@ -1,0 +1,21 @@
+{
+  "Title": "Kasane",
+  "URL": "kasane",
+  "CoverImage": "kasane.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Psychological",
+    "School Life",
+    "Seinen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-127",
+  "TotalChapter": 127,
+  "Chapters": {
+    "urlChapter": "chapter-127",
+    "dateUpdateChapter": "2024-01-01 11:26:07"
+  }
+}

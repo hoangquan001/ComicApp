@@ -1,0 +1,19 @@
+{
+  "Title": "Ma c\u00e0 r\u1ed3ng h\u1ed9 m\u1ec7nh",
+  "URL": "ma-ca-rong-ho-menh",
+  "CoverImage": "ma-ca-rong-ho-menh.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-20 22:37:30"
+  }
+}

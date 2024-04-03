@@ -1,0 +1,20 @@
+{
+  "Title": "\u0110\u1ea3o t\u1ef1 s\u00e1t",
+  "URL": "dao-tu-sat",
+  "CoverImage": "dao-tu-sat.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Mature",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-168",
+  "TotalChapter": 168,
+  "Chapters": {
+    "urlChapter": "chapter-168",
+    "dateUpdateChapter": "2023-12-30 17:24:55"
+  }
+}

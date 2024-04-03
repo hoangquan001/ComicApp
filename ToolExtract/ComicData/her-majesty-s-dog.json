@@ -1,0 +1,18 @@
+{
+  "Title": "Her Majesty's Dog",
+  "URL": "her-majesty-s-dog",
+  "CoverImage": "her-majesty-s-dog.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-01 07:00:34"
+  }
+}

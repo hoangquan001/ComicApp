@@ -1,0 +1,21 @@
+{
+  "Title": "Sakura Discord",
+  "URL": "sakura-discord",
+  "CoverImage": "sakura-discord.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-02-01 03:47:14"
+  }
+}

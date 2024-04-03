@@ -1,0 +1,19 @@
+{
+  "Title": "Coffee And Vanilla Black",
+  "URL": "coffee-and-vanilla-black",
+  "CoverImage": "coffee-and-vanilla-black.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance",
+    "Shoujo",
+    "Smut"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-02 07:36:10"
+  }
+}

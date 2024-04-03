@@ -1,0 +1,20 @@
+{
+  "Title": "Change 123",
+  "URL": "change-123",
+  "CoverImage": "change-123.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Martial Arts",
+    "School Life"
+  ],
+  "LastChapter": "chapter-62",
+  "TotalChapter": 62,
+  "Chapters": {
+    "urlChapter": "chapter-62",
+    "dateUpdateChapter": "2024-01-15 21:46:19"
+  }
+}

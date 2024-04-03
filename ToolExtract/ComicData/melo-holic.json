@@ -1,0 +1,19 @@
+{
+  "Title": "Melo Holic",
+  "URL": "melo-holic",
+  "CoverImage": "melo-holic.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Sci-fi",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-31 02:24:58"
+  }
+}

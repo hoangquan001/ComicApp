@@ -1,0 +1,19 @@
+{
+  "Title": "Sex And Dungeon",
+  "URL": "sex-and-dungeon",
+  "CoverImage": "sex-and-dungeon.jpg",
+  "CreateAt": "23/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Ecchi",
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-36",
+  "TotalChapter": 36,
+  "Chapters": {
+    "urlChapter": "chapter-36",
+    "dateUpdateChapter": "2023-12-23 10:54:26"
+  }
+}

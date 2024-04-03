@@ -1,0 +1,19 @@
+{
+  "Title": "Kindan no Koi wo Shiyou",
+  "URL": "kindan-no-koi-wo-shiyou",
+  "CoverImage": "kindan-no-koi-wo-shiyou.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-26 17:30:45"
+  }
+}

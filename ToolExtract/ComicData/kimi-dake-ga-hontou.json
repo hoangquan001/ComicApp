@@ -1,0 +1,18 @@
+{
+  "Title": "Kimi Dake ga Hontou",
+  "URL": "kimi-dake-ga-hontou",
+  "CoverImage": "kimi-dake-ga-hontou.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-14 12:52:00"
+  }
+}

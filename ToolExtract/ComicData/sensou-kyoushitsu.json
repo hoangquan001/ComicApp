@@ -1,0 +1,22 @@
+{
+  "Title": "Sensou Kyoushitsu",
+  "URL": "sensou-kyoushitsu",
+  "CoverImage": "sensou-kyoushitsu.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Psychological",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "21 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

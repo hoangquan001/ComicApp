@@ -1,0 +1,18 @@
+{
+  "Title": "Shepherd House Hotel",
+  "URL": "shepherd-house-hotel",
+  "CoverImage": "shepherd-house-hotel.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Mystery",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "16 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

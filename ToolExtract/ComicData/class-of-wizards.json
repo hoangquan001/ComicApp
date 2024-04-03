@@ -1,0 +1,19 @@
+{
+  "Title": "Class Of Wizards",
+  "URL": "class-of-wizards",
+  "CoverImage": "class-of-wizards.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Horror",
+    "School Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-38",
+  "TotalChapter": 38,
+  "Chapters": {
+    "urlChapter": "chapter-38",
+    "dateUpdateChapter": "2024-01-30 23:37:29"
+  }
+}

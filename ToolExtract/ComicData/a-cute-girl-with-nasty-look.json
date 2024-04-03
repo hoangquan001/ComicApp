@@ -1,0 +1,20 @@
+{
+  "Title": "A cute girl with nasty look",
+  "URL": "a-cute-girl-with-nasty-look",
+  "CoverImage": "a-cute-girl-with-nasty-look.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-32",
+  "TotalChapter": 32,
+  "Chapters": {
+    "urlChapter": "chapter-32",
+    "dateUpdateChapter": "2024-01-09 17:55:39"
+  }
+}

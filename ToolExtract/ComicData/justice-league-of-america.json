@@ -1,0 +1,18 @@
+{
+  "Title": "Justice League of America",
+  "URL": "justice-league-of-america",
+  "CoverImage": "justice-league-of-america.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 01:04:26"
+  }
+}

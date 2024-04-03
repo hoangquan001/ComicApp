@@ -1,0 +1,20 @@
+{
+  "Title": "Tokyo Undead",
+  "URL": "tokyo-undead",
+  "CoverImage": "tokyo-undead.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Drama",
+    "Horror",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-09 07:26:38"
+  }
+}

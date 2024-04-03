@@ -1,0 +1,22 @@
+{
+  "Title": "Rain",
+  "URL": "rain",
+  "CoverImage": "rain.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Mystery",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-77",
+  "TotalChapter": 77,
+  "Chapters": {
+    "urlChapter": "chapter-77",
+    "dateUpdateChapter": "2024-01-05 02:53:45"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Cu\u1ed3ng \u0110\u1ed3 Tu Ti\u00ean",
+  "URL": "cuong-do-tu-tien",
+  "CoverImage": "cuong-do-tu-tien.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Mystery",
+    "Truy\u1ec7n M\u00e0u",
+    "Xuy\u00ean Kh\u00f4ng"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-10 20:24:39"
+  }
+}

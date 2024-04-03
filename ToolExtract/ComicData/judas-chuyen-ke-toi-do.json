@@ -1,0 +1,24 @@
+{
+  "Title": "Judas - Chuy\u1ec7n K\u1ebb T\u1ed9i \u0110\u1ed3",
+  "URL": "judas-chuyen-ke-toi-do",
+  "CoverImage": "judas-chuyen-ke-toi-do.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Comic",
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Mystery",
+    "Sci-fi",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-23 16:13:17"
+  }
+}

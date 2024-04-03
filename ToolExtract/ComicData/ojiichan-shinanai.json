@@ -1,0 +1,19 @@
+{
+  "Title": "Ojiichan shinanai",
+  "URL": "ojiichan-shinanai",
+  "CoverImage": "ojiichan-shinanai.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-02 04:36:12"
+  }
+}

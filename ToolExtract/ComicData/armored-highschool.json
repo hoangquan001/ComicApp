@@ -1,0 +1,18 @@
+{
+  "Title": "Armored Highschool",
+  "URL": "armored-highschool",
+  "CoverImage": "armored-highschool.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "School Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 08:46:54"
+  }
+}

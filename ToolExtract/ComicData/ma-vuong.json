@@ -1,0 +1,21 @@
+{
+  "Title": "Ma V\u01b0\u01a1ng",
+  "URL": "ma-vuong",
+  "CoverImage": "ma-vuong.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Horror",
+    "Manga",
+    "Sci-fi",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-97",
+  "TotalChapter": 97,
+  "Chapters": {
+    "urlChapter": "chapter-97",
+    "dateUpdateChapter": "2024-01-10 20:41:31"
+  }
+}

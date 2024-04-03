@@ -1,0 +1,18 @@
+{
+  "Title": "Doremon Color",
+  "URL": "doremon-color",
+  "CoverImage": "doremon-color.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Supernatural",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-23 08:14:53"
+  }
+}

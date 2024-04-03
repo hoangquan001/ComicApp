@@ -1,0 +1,19 @@
+{
+  "Title": "Absolute Duo",
+  "URL": "absolute-duo",
+  "CoverImage": "absolute-duo.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Harem",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-22 20:59:17"
+  }
+}

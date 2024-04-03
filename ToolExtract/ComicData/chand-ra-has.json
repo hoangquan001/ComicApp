@@ -1,0 +1,22 @@
+{
+  "Title": "Chand Ra Has",
+  "URL": "chand-ra-has",
+  "CoverImage": "chand-ra-has.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Mystery",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-17 12:54:42"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "GTO: Shonan 14 Days",
+  "URL": "gto-shonan-14-days",
+  "CoverImage": "gto-shonan-14-days.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Comedy",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-76",
+  "TotalChapter": 76,
+  "Chapters": {
+    "urlChapter": "chapter-76",
+    "dateUpdateChapter": "2023-12-30 22:09:55"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Princess Lucia",
+  "URL": "princess-lucia",
+  "CoverImage": "princess-lucia.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Harem",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-20 02:51:33"
+  }
+}

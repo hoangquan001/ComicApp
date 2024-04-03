@@ -1,0 +1,20 @@
+{
+  "Title": "Tiger Dragon Brothers",
+  "URL": "tiger-dragon-brothers",
+  "CoverImage": "tiger-dragon-brothers.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Martial Arts",
+    "Shounen",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 18:35:26"
+  }
+}

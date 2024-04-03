@@ -1,0 +1,23 @@
+{
+  "Title": "Oridinary School",
+  "URL": "oridinary-school",
+  "CoverImage": "oridinary-school.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comedy",
+    "Manga",
+    "One shot",
+    "School Life",
+    "Sci-fi",
+    "Sports"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-02 10:52:27"
+  }
+}

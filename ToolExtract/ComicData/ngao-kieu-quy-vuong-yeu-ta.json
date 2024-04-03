@@ -1,0 +1,21 @@
+{
+  "Title": "Ng\u1ea1o Ki\u1ec1u Qu\u1ef7 V\u01b0\u01a1ng Y\u00eau Ta",
+  "URL": "ngao-kieu-quy-vuong-yeu-ta",
+  "CoverImage": "ngao-kieu-quy-vuong-yeu-ta.jpg",
+  "CreateAt": "18/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Horror",
+    "Manhua",
+    "Romance",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-123",
+  "TotalChapter": 123,
+  "Chapters": {
+    "urlChapter": "chapter-123",
+    "dateUpdateChapter": "2023-12-18 19:47:46"
+  }
+}

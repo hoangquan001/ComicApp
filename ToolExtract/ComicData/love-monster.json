@@ -1,0 +1,21 @@
+{
+  "Title": "Love monster",
+  "URL": "love-monster",
+  "CoverImage": "love-monster.jpg",
+  "CreateAt": "11/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-60",
+  "TotalChapter": 60,
+  "Chapters": {
+    "urlChapter": "chapter-60",
+    "dateUpdateChapter": "2024-01-11 21:29:15"
+  }
+}

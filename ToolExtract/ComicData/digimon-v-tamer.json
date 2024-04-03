@@ -1,0 +1,20 @@
+{
+  "Title": "Digimon V-Tamer",
+  "URL": "digimon-v-tamer",
+  "CoverImage": "digimon-v-tamer.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-58",
+  "TotalChapter": 58,
+  "Chapters": {
+    "urlChapter": "chapter-58",
+    "dateUpdateChapter": "2024-01-21 15:39:48"
+  }
+}

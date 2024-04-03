@@ -1,0 +1,21 @@
+{
+  "Title": "C\u00f4ng ch\u00faa v\u00e0 qu\u00e1i v\u1eadt",
+  "URL": "cong-chua-va-quai-vat",
+  "CoverImage": "cong-chua-va-quai-vat.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-22 19:43:56"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Teens blues",
+  "URL": "teens-blues",
+  "CoverImage": "teens-blues.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Ng\u00f4n T\u00ecnh",
+    "One shot",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-03 11:08:25"
+  }
+}

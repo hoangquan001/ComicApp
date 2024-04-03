@@ -1,0 +1,16 @@
+{
+  "Title": "I Found Another Kitten",
+  "URL": "i-found-another-kitten",
+  "CoverImage": "i-found-another-kitten.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "School Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 12:47:52"
+  }
+}

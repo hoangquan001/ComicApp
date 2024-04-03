@@ -1,0 +1,17 @@
+{
+  "Title": "Break Blade",
+  "URL": "break-blade",
+  "CoverImage": "break-blade.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga"
+  ],
+  "LastChapter": "chapter-97",
+  "TotalChapter": 97,
+  "Chapters": {
+    "urlChapter": "chapter-97",
+    "dateUpdateChapter": "2024-01-10 12:30:18"
+  }
+}

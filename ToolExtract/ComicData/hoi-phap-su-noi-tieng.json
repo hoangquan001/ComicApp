@@ -1,0 +1,22 @@
+{
+  "Title": "H\u1ed9i Ph\u00e1p S\u01b0 N\u1ed5i Ti\u1ebfng",
+  "URL": "hoi-phap-su-noi-tieng",
+  "CoverImage": "hoi-phap-su-noi-tieng.jpg",
+  "CreateAt": "11/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-560",
+  "TotalChapter": 560,
+  "Chapters": {
+    "urlChapter": "chapter-560",
+    "dateUpdateChapter": "2023-12-11 09:56:12"
+  }
+}

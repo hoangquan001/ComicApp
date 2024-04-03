@@ -1,0 +1,22 @@
+{
+  "Title": "Puella Magi Madoka Magica",
+  "URL": "puella-magi-madoka-magica",
+  "CoverImage": "puella-magi-madoka-magica.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Mystery",
+    "School Life",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-22 18:41:04"
+  }
+}

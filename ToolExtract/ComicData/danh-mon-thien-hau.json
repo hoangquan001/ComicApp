@@ -1,0 +1,21 @@
+{
+  "Title": "Danh M\u00f4n Thi\u00ean H\u1eadu",
+  "URL": "danh-mon-thien-hau",
+  "CoverImage": "danh-mon-thien-hau.jpg",
+  "CreateAt": "11/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Smut",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-208",
+  "TotalChapter": 208,
+  "Chapters": {
+    "urlChapter": "chapter-208",
+    "dateUpdateChapter": "2023-12-12 00:04:40"
+  }
+}

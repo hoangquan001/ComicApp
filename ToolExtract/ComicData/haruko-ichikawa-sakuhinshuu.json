@@ -1,0 +1,21 @@
+{
+  "Title": "Haruko Ichikawa Sakuhinshuu",
+  "URL": "haruko-ichikawa-sakuhinshuu",
+  "CoverImage": "haruko-ichikawa-sakuhinshuu.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "Mystery",
+    "Psychological",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-30 15:56:45"
+  }
+}

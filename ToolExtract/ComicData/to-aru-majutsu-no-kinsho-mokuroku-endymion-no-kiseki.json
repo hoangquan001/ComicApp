@@ -1,0 +1,21 @@
+{
+  "Title": "To Aru Majutsu no Kinsho Mokuroku - Endymion no Kiseki",
+  "URL": "to-aru-majutsu-no-kinsho-mokuroku-endymion-no-kiseki",
+  "CoverImage": "to-aru-majutsu-no-kinsho-mokuroku-endymion-no-kiseki.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "School Life",
+    "Sci-fi",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-01 13:27:40"
+  }
+}

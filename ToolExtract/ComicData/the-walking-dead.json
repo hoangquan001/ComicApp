@@ -1,0 +1,21 @@
+{
+  "Title": "The Walking Dead",
+  "URL": "the-walking-dead",
+  "CoverImage": "the-walking-dead.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comic",
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-144",
+  "TotalChapter": 144,
+  "Chapters": {
+    "urlChapter": "chapter-144",
+    "dateUpdateChapter": "28 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

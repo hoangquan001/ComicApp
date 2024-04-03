@@ -1,0 +1,20 @@
+{
+  "Title": "Ng\u01b0\u1eddi b\u00e0 t\u00e0i gi\u1ecfi v\u00f9ng Saga",
+  "URL": "nguoi-ba-tai-gioi-vung-saga",
+  "CoverImage": "nguoi-ba-tai-gioi-vung-saga.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-90",
+  "TotalChapter": 90,
+  "Chapters": {
+    "urlChapter": "chapter-90",
+    "dateUpdateChapter": "2023-12-29 20:37:55"
+  }
+}

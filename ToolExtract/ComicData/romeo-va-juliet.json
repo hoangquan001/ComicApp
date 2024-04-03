@@ -1,0 +1,19 @@
+{
+  "Title": "Romeo v\u00e0 Juliet",
+  "URL": "romeo-va-juliet",
+  "CoverImage": "romeo-va-juliet.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Historical",
+    "Romance",
+    "Truy\u1ec7n scan"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-02 14:52:41"
+  }
+}

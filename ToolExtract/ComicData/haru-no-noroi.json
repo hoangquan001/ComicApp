@@ -1,0 +1,20 @@
+{
+  "Title": "Haru no Noroi",
+  "URL": "haru-no-noroi",
+  "CoverImage": "haru-no-noroi.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Josei",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-16 22:23:05"
+  }
+}

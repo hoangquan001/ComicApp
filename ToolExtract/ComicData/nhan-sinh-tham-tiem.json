@@ -1,0 +1,20 @@
+{
+  "Title": "Nh\u00e2n Sinh Th\u00e2m Ti\u1ec1m",
+  "URL": "nhan-sinh-tham-tiem",
+  "CoverImage": "nhan-sinh-tham-tiem.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-09 21:16:01"
+  }
+}

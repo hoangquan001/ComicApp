@@ -1,0 +1,24 @@
+{
+  "Title": "Li\u00ea\u0323u nh\u00e2n loa\u0323i co\u0301 c\u00e2\u0300n n\u00ea\u0300n v\u0103n minh h\u1eadu t\u1eadn th\u00ea\u0301 kh\u00f4ng?",
+  "URL": "lieu-nhan-loai-co-can-nen-van-minh-hau-tan-the-khong",
+  "CoverImage": "lieu-nhan-loai-co-can-nen-van-minh-hau-tan-the-khong.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Mystery",
+    "Romance",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "7 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "I Hate Love",
+  "URL": "i-hate-love",
+  "CoverImage": "i-hate-love.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Slice of Life",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-31 14:44:19"
+  }
+}

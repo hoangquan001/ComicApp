@@ -1,0 +1,22 @@
+{
+  "Title": "Durarara",
+  "URL": "durarara",
+  "CoverImage": "durarara.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-23 22:22:34"
+  }
+}

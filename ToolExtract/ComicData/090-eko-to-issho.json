@@ -1,0 +1,17 @@
+{
+  "Title": "090 - Eko to Issho",
+  "URL": "090-eko-to-issho",
+  "CoverImage": "090-eko-to-issho.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-02-03 12:53:04"
+  }
+}

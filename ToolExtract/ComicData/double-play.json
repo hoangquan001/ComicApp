@@ -1,0 +1,25 @@
+{
+  "Title": "Double Play",
+  "URL": "double-play",
+  "CoverImage": "double-play.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Drama",
+    "Ecchi",
+    "Harem",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Slice of Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-02 14:46:34"
+  }
+}

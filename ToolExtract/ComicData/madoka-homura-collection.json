@@ -1,0 +1,17 @@
+{
+  "Title": "Madoka Homura Collection",
+  "URL": "madoka-homura-collection",
+  "CoverImage": "madoka-homura-collection.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Doujinshi"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-30 23:39:26"
+  }
+}

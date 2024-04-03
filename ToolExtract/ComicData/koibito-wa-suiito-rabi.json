@@ -1,0 +1,18 @@
+{
+  "Title": "Koibito Wa Suiito Rabi",
+  "URL": "koibito-wa-suiito-rabi",
+  "CoverImage": "koibito-wa-suiito-rabi.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "One shot",
+    "School Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-03 13:01:18"
+  }
+}

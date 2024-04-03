@@ -1,0 +1,16 @@
+{
+  "Title": "Long Quy\u1ec3n Phong",
+  "URL": "long-quyen-phong",
+  "CoverImage": "long-quyen-phong.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhwa"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2024-01-23 00:40:59"
+  }
+}

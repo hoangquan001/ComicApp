@@ -1,0 +1,26 @@
+{
+  "Title": "L\u1eddi h\u1ee9a c\u1ee7a n\u00e0ng l\u1ecd lem",
+  "URL": "loi-hua-cua-nang-lo-lem",
+  "CoverImage": "loi-hua-cua-nang-lo-lem.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Historical",
+    "Horror",
+    "Josei",
+    "Manhua",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Sports",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-115",
+  "TotalChapter": 115,
+  "Chapters": {
+    "urlChapter": "chapter-115",
+    "dateUpdateChapter": "2024-01-01 12:53:08"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "GantZ: G",
+  "URL": "gantz-g",
+  "CoverImage": "gantz-g.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Mystery",
+    "Sci-fi",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-15 22:40:27"
+  }
+}

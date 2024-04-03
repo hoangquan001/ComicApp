@@ -1,0 +1,23 @@
+{
+  "Title": "Torikago Syndrome",
+  "URL": "torikago-syndrome",
+  "CoverImage": "torikago-syndrome.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Harem",
+    "Mystery",
+    "Psychological",
+    "School Life",
+    "Shoujo",
+    "Shoujo Ai",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-31 03:42:33"
+  }
+}

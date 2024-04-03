@@ -1,0 +1,18 @@
+{
+  "Title": "Little Rain",
+  "URL": "little-rain",
+  "CoverImage": "little-rain.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-15 19:19:18"
+  }
+}

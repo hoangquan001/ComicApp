@@ -1,0 +1,19 @@
+{
+  "Title": "Hareluya II Boy",
+  "URL": "hareluya-ii-boy",
+  "CoverImage": "hareluya-ii-boy.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-120",
+  "TotalChapter": 120,
+  "Chapters": {
+    "urlChapter": "chapter-120",
+    "dateUpdateChapter": "2024-01-16 18:35:01"
+  }
+}

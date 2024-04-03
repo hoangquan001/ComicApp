@@ -1,0 +1,21 @@
+{
+  "Title": "H\u1ecdc gi\u00e1o d\u1ee5c gi\u1edbi t\u00ednh c\u00f9ng c\u00f4",
+  "URL": "hoc-giao-duc-gioi-tinh-cung-co",
+  "CoverImage": "hoc-giao-duc-gioi-tinh-cung-co.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-03 21:57:54"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Kimi ga Uso wo Tsuita",
+  "URL": "kimi-ga-uso-wo-tsuita",
+  "CoverImage": "kimi-ga-uso-wo-tsuita.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-23 02:31:46"
+  }
+}

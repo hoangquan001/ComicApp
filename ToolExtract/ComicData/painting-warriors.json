@@ -1,0 +1,21 @@
+{
+  "Title": "Painting Warriors",
+  "URL": "painting-warriors",
+  "CoverImage": "painting-warriors.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhua",
+    "Martial Arts",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-02-02 16:54:49"
+  }
+}

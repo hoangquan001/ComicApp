@@ -1,0 +1,19 @@
+{
+  "Title": "Huy\u1ec1n S\u1eafc Thanh \u00c2m",
+  "URL": "huyen-sac-thanh-am",
+  "CoverImage": "huyen-sac-thanh-am.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "\u0110am M\u1ef9",
+    "Psychological"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-15 18:20:04"
+  }
+}

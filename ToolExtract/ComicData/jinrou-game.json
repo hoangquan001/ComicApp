@@ -1,0 +1,20 @@
+{
+  "Title": "Jinrou Game",
+  "URL": "jinrou-game",
+  "CoverImage": "jinrou-game.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Mature",
+    "Mystery",
+    "Psychological"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-09 08:03:19"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "Title": "Maou Gakuen no Hangyakusha",
+  "URL": "maou-gakuen-no-hangyakusha",
+  "CoverImage": "maou-gakuen-no-hangyakusha.jpg",
+  "CreateAt": "28/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Mature",
+    "Mystery",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2023-12-28 00:23:48"
+  }
+}

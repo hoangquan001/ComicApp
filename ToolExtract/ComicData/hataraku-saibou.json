@@ -1,0 +1,20 @@
+{
+  "Title": "Hataraku Saibou !",
+  "URL": "hataraku-saibou",
+  "CoverImage": "hataraku-saibou.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-10 12:54:09"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Pastel",
+  "URL": "pastel",
+  "CoverImage": "pastel.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "Romance",
+    "Seinen",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-197",
+  "TotalChapter": 197,
+  "Chapters": {
+    "urlChapter": "chapter-197",
+    "dateUpdateChapter": "2024-01-05 16:47:51"
+  }
+}

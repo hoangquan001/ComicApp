@@ -1,0 +1,19 @@
+{
+  "Title": "Rock Lee's Springtime of Youth",
+  "URL": "rock-lee-s-springtime-of-youth",
+  "CoverImage": "rock-lee-s-springtime-of-youth.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Fantasy",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-23 13:23:07"
+  }
+}

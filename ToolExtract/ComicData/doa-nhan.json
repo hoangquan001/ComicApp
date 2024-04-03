@@ -1,0 +1,23 @@
+{
+  "Title": "\u0110\u1ecda Nh\u00e2n",
+  "URL": "doa-nhan",
+  "CoverImage": "doa-nhan.jpg",
+  "CreateAt": "12/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Mature"
+  ],
+  "LastChapter": "chapter-163",
+  "TotalChapter": 163,
+  "Chapters": {
+    "urlChapter": "chapter-163",
+    "dateUpdateChapter": "2023-12-12 21:26:42"
+  }
+}

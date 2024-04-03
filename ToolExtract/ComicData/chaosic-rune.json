@@ -1,0 +1,18 @@
+{
+  "Title": "Chaosic Rune",
+  "URL": "chaosic-rune",
+  "CoverImage": "chaosic-rune.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-60",
+  "TotalChapter": 60,
+  "Chapters": {
+    "urlChapter": "chapter-60",
+    "dateUpdateChapter": "2024-01-21 22:05:29"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Seagull Villa Days",
+  "URL": "seagull-villa-days",
+  "CoverImage": "seagull-villa-days.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Kha\u0301c",
+    "Yuri"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-15 07:39:46"
+  }
+}

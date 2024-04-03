@@ -1,0 +1,18 @@
+{
+  "Title": "Tanuki",
+  "URL": "tanuki",
+  "CoverImage": "tanuki.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-16 03:42:02"
+  }
+}

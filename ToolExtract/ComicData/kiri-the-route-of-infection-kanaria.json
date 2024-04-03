@@ -1,0 +1,19 @@
+{
+  "Title": "Kiri - The Route of Infection Kanaria",
+  "URL": "kiri-the-route-of-infection-kanaria",
+  "CoverImage": "kiri-the-route-of-infection-kanaria.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Mystery",
+    "Sci-fi",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-20 18:44:09"
+  }
+}

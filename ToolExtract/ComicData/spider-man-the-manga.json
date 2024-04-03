@@ -1,0 +1,16 @@
+{
+  "Title": "Spider Man - The Manga",
+  "URL": "spider-man-the-manga",
+  "CoverImage": "spider-man-the-manga.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-03 11:58:01"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "7 Genme Wa Himitsu",
+  "URL": "7-genme-wa-himitsu",
+  "CoverImage": "7-genme-wa-himitsu.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 02:19:11"
+  }
+}

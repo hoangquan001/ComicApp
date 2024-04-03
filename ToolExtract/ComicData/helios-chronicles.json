@@ -1,0 +1,19 @@
+{
+  "Title": "Helios Chronicles",
+  "URL": "helios-chronicles",
+  "CoverImage": "helios-chronicles.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhwa"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 09:07:44"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Kine san no 1 ri de Cinema",
+  "URL": "kine-san-no-1-ri-de-cinema",
+  "CoverImage": "kine-san-no-1-ri-de-cinema.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 14:24:38"
+  }
+}

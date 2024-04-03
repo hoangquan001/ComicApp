@@ -1,0 +1,18 @@
+{
+  "Title": "Sexless Friend",
+  "URL": "sexless-friend",
+  "CoverImage": "sexless-friend.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-23 08:04:06"
+  }
+}

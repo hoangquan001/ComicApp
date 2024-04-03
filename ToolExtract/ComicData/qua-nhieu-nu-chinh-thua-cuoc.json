@@ -1,0 +1,19 @@
+{
+  "Title": "Qu\u00e1 nhi\u1ec1u n\u1eef ch\u00ednh thua cu\u1ed9c!",
+  "URL": "qua-nhieu-nu-chinh-thua-cuoc",
+  "CoverImage": "qua-nhieu-nu-chinh-thua-cuoc.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-23 09:46:48"
+  }
+}

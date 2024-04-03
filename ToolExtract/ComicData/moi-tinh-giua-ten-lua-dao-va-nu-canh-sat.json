@@ -1,0 +1,20 @@
+{
+  "Title": "M\u1ed1i t\u00ecnh gi\u1eefa t\u00ean l\u1eeba \u0111\u1ea3o v\u00e0 n\u1eef c\u1ea3nh s\u00e1t",
+  "URL": "moi-tinh-giua-ten-lua-dao-va-nu-canh-sat",
+  "CoverImage": "moi-tinh-giua-ten-lua-dao-va-nu-canh-sat.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-23 01:45:46"
+  }
+}

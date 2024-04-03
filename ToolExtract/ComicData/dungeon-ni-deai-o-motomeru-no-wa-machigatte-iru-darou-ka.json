@@ -1,0 +1,22 @@
+{
+  "Title": "Dungeon ni Deai o Motomeru no wa Machigatte Iru Darou ka",
+  "URL": "dungeon-ni-deai-o-motomeru-no-wa-machigatte-iru-darou-ka",
+  "CoverImage": "dungeon-ni-deai-o-motomeru-no-wa-machigatte-iru-darou-ka.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Harem",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-89",
+  "TotalChapter": 89,
+  "Chapters": {
+    "urlChapter": "chapter-89",
+    "dateUpdateChapter": "2023-12-30 08:58:44"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "B'TX \u2013 Ng\u01b0\u1eddi X",
+  "URL": "b-tx-nguoi-x",
+  "CoverImage": "b-tx-nguoi-x.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Mecha",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-58",
+  "TotalChapter": 58,
+  "Chapters": {
+    "urlChapter": "chapter-58",
+    "dateUpdateChapter": "2024-01-14 06:28:16"
+  }
+}

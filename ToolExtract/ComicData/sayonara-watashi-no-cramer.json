@@ -1,0 +1,20 @@
+{
+  "Title": "Sayonara Watashi no Cramer",
+  "URL": "sayonara-watashi-no-cramer",
+  "CoverImage": "sayonara-watashi-no-cramer.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "School Life",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-27 03:44:17"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Quy\u1ec3n s\u1ed5 b\u00e1o th\u00f9",
+  "URL": "quyen-so-bao-thu",
+  "CoverImage": "quyen-so-bao-thu.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Manga",
+    "Psychological",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-87",
+  "TotalChapter": 87,
+  "Chapters": {
+    "urlChapter": "chapter-87",
+    "dateUpdateChapter": "2023-12-29 12:51:12"
+  }
+}

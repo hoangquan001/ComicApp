@@ -1,0 +1,19 @@
+{
+  "Title": "The Pale Horse",
+  "URL": "the-pale-horse",
+  "CoverImage": "the-pale-horse.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhwa",
+    "Romance",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-23 15:44:49"
+  }
+}

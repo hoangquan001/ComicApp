@@ -1,0 +1,17 @@
+{
+  "Title": "Asuka Hybrid",
+  "URL": "asuka-hybrid",
+  "CoverImage": "asuka-hybrid.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-23 08:33:14"
+  }
+}

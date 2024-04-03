@@ -1,0 +1,20 @@
+{
+  "Title": "Baki - Son of Ogre",
+  "URL": "baki-son-of-ogre",
+  "CoverImage": "baki-son-of-ogre.jpg",
+  "CreateAt": "09/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Martial Arts",
+    "Shounen",
+    "Supernatural",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-303",
+  "TotalChapter": 303,
+  "Chapters": {
+    "urlChapter": "chapter-303",
+    "dateUpdateChapter": "2023-12-09 15:31:10"
+  }
+}

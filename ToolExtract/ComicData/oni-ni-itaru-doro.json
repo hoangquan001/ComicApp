@@ -1,0 +1,21 @@
+{
+  "Title": "Oni ni Itaru Doro",
+  "URL": "oni-ni-itaru-doro",
+  "CoverImage": "oni-ni-itaru-doro.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manga",
+    "One shot",
+    "School Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-03 12:07:40"
+  }
+}

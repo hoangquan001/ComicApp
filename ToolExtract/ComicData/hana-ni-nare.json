@@ -1,0 +1,18 @@
+{
+  "Title": "Hana ni Nare",
+  "URL": "hana-ni-nare",
+  "CoverImage": "hana-ni-nare.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-78",
+  "TotalChapter": 78,
+  "Chapters": {
+    "urlChapter": "chapter-78",
+    "dateUpdateChapter": "2024-01-14 12:26:42"
+  }
+}

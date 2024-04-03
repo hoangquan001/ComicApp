@@ -1,0 +1,21 @@
+{
+  "Title": "Binbougami Ga!",
+  "URL": "binbougami-ga",
+  "CoverImage": "binbougami-ga.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-84",
+  "TotalChapter": 84,
+  "Chapters": {
+    "urlChapter": "chapter-84",
+    "dateUpdateChapter": "2024-01-12 00:25:01"
+  }
+}

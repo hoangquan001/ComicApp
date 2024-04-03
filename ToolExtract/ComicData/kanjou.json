@@ -1,0 +1,19 @@
+{
+  "Title": "Kanjou",
+  "URL": "kanjou",
+  "CoverImage": "kanjou.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "One shot",
+    "Romance",
+    "Shounen Ai",
+    "Soft Yaoi"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-01 13:49:22"
+  }
+}

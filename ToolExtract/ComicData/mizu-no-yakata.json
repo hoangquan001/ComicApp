@@ -1,0 +1,17 @@
+{
+  "Title": "Mizu no yakata",
+  "URL": "mizu-no-yakata",
+  "CoverImage": "mizu-no-yakata.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "One shot"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-26 23:31:53"
+  }
+}

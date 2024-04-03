@@ -1,0 +1,19 @@
+{
+  "Title": "\u00c1c ma \u0111\u1eebng h\u00f4n t\u00f4i",
+  "URL": "ac-ma-dung-hon-toi",
+  "CoverImage": "ac-ma-dung-hon-toi.jpg",
+  "CreateAt": "10/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance"
+  ],
+  "LastChapter": "chapter-200",
+  "TotalChapter": 200,
+  "Chapters": {
+    "urlChapter": "chapter-200",
+    "dateUpdateChapter": "2023-12-10 12:10:30"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Hatsukoi Shinjuu",
+  "URL": "hatsukoi-shinjuu",
+  "CoverImage": "hatsukoi-shinjuu.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Mature",
+    "Romance",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-38",
+  "TotalChapter": 38,
+  "Chapters": {
+    "urlChapter": "chapter-38",
+    "dateUpdateChapter": "2024-01-23 08:30:44"
+  }
+}

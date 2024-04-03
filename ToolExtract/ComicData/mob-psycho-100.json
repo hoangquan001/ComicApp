@@ -1,0 +1,22 @@
+{
+  "Title": "Mob Psycho 100",
+  "URL": "mob-psycho-100",
+  "CoverImage": "mob-psycho-100.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Psychological",
+    "School Life",
+    "Shounen",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-144",
+  "TotalChapter": 144,
+  "Chapters": {
+    "urlChapter": "chapter-144",
+    "dateUpdateChapter": "2023-12-30 21:34:00"
+  }
+}

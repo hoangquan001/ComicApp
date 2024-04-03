@@ -1,0 +1,19 @@
+{
+  "Title": "Chrono Crusade",
+  "URL": "chrono-crusade",
+  "CoverImage": "chrono-crusade.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-59",
+  "TotalChapter": 59,
+  "Chapters": {
+    "urlChapter": "chapter-59",
+    "dateUpdateChapter": "2024-01-23 01:59:12"
+  }
+}

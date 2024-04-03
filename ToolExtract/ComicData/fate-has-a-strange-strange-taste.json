@@ -1,0 +1,19 @@
+{
+  "Title": "Fate Has A Strange, Strange Taste",
+  "URL": "fate-has-a-strange-strange-taste",
+  "CoverImage": "fate-has-a-strange-strange-taste.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Fantasy",
+    "One shot",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-03 11:32:16"
+  }
+}

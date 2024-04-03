@@ -1,0 +1,20 @@
+{
+  "Title": "Happy Sugar Life",
+  "URL": "happy-sugar-life",
+  "CoverImage": "happy-sugar-life.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Shoujo",
+    "Shoujo Ai",
+    "Slice of Life",
+    "Soft Yuri"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-14 08:35:26"
+  }
+}

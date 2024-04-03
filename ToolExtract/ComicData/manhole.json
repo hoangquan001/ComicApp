@@ -1,0 +1,20 @@
+{
+  "Title": "Manhole",
+  "URL": "manhole",
+  "CoverImage": "manhole.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Horror",
+    "Manga",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-12 02:14:02"
+  }
+}

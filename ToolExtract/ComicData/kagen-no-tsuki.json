@@ -1,0 +1,19 @@
+{
+  "Title": "Kagen no Tsuki",
+  "URL": "kagen-no-tsuki",
+  "CoverImage": "kagen-no-tsuki.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-27 01:45:01"
+  }
+}

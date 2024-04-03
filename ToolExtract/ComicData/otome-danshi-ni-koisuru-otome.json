@@ -1,0 +1,21 @@
+{
+  "Title": "Otome Danshi ni Koisuru Otome",
+  "URL": "otome-danshi-ni-koisuru-otome",
+  "CoverImage": "otome-danshi-ni-koisuru-otome.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Shounen Ai",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-123",
+  "TotalChapter": 123,
+  "Chapters": {
+    "urlChapter": "chapter-123",
+    "dateUpdateChapter": "2024-01-04 08:46:28"
+  }
+}

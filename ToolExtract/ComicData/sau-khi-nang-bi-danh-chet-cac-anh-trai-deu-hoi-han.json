@@ -12,74 +12,8 @@
   ],
   "LastChapter": "chapter-17",
   "TotalChapter": 17,
-  "Chapters": [
-    {
-      "urlChapter": "chapter-17",
-      "dateUpdateChapter": "2024-01-05 10:43:38"
-    },
-    {
-      "urlChapter": "chapter-16",
-      "dateUpdateChapter": "2024-01-05 10:43:36"
-    },
-    {
-      "urlChapter": "chapter-15",
-      "dateUpdateChapter": "2024-01-05 10:43:34"
-    },
-    {
-      "urlChapter": "chapter-14",
-      "dateUpdateChapter": "2024-01-05 10:43:32"
-    },
-    {
-      "urlChapter": "chapter-13",
-      "dateUpdateChapter": "2024-01-05 10:43:30"
-    },
-    {
-      "urlChapter": "chapter-12",
-      "dateUpdateChapter": "2024-01-05 10:43:28"
-    },
-    {
-      "urlChapter": "chapter-11",
-      "dateUpdateChapter": "2024-01-05 10:43:26"
-    },
-    {
-      "urlChapter": "chapter-10",
-      "dateUpdateChapter": "2024-01-05 10:43:23"
-    },
-    {
-      "urlChapter": "chapter-9",
-      "dateUpdateChapter": "2024-01-05 10:43:15"
-    },
-    {
-      "urlChapter": "chapter-8",
-      "dateUpdateChapter": "2024-01-05 10:43:10"
-    },
-    {
-      "urlChapter": "chapter-7",
-      "dateUpdateChapter": "2024-01-05 10:43:07"
-    },
-    {
-      "urlChapter": "chapter-6",
-      "dateUpdateChapter": "2024-01-05 10:43:04"
-    },
-    {
-      "urlChapter": "chapter-5",
-      "dateUpdateChapter": "2024-01-05 10:43:02"
-    },
-    {
-      "urlChapter": "chapter-4",
-      "dateUpdateChapter": "2024-01-05 10:42:58"
-    },
-    {
-      "urlChapter": "chapter-3",
-      "dateUpdateChapter": "2024-01-05 10:42:56"
-    },
-    {
-      "urlChapter": "chapter-2",
-      "dateUpdateChapter": "2024-01-05 10:42:54"
-    },
-    {
-      "urlChapter": "chapter-1",
-      "dateUpdateChapter": "2024-01-05 10:42:52"
-    }
-  ]
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-05 10:43:38"
+  }
 }

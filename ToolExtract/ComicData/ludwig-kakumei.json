@@ -1,0 +1,20 @@
+{
+  "Title": "Ludwig Kakumei",
+  "URL": "ludwig-kakumei",
+  "CoverImage": "ludwig-kakumei.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Romance",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-16 03:19:18"
+  }
+}

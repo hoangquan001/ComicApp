@@ -1,0 +1,20 @@
+{
+  "Title": "Red Sprite",
+  "URL": "red-sprite",
+  "CoverImage": "red-sprite.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-22 03:05:01"
+  }
+}

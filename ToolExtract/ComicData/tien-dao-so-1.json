@@ -1,0 +1,20 @@
+{
+  "Title": "Ti\u1ec1n \u0111\u1ea1o s\u1ed1 1",
+  "URL": "tien-dao-so-1",
+  "CoverImage": "tien-dao-so-1.jpg",
+  "CreateAt": "09/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Manga",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-256",
+  "TotalChapter": 256,
+  "Chapters": {
+    "urlChapter": "chapter-256",
+    "dateUpdateChapter": "3 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

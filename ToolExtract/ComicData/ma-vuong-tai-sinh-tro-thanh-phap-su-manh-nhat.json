@@ -1,0 +1,20 @@
+{
+  "Title": "Ma v\u01b0\u01a1ng t\u00e1i sinh tr\u1edf th\u00e0nh ph\u00e1p s\u01b0 m\u1ea1nh nh\u1ea5t",
+  "URL": "ma-vuong-tai-sinh-tro-thanh-phap-su-manh-nhat",
+  "CoverImage": "ma-vuong-tai-sinh-tro-thanh-phap-su-manh-nhat.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2023-12-31 09:55:14"
+  }
+}

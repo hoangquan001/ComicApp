@@ -1,0 +1,21 @@
+{
+  "Title": "BB Project",
+  "URL": "bb-project",
+  "CoverImage": "bb-project.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-02-01 10:05:38"
+  }
+}

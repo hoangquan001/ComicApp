@@ -1,0 +1,22 @@
+{
+  "Title": "Ng\u01b0\u1eddi N\u00e2ng C\u1ea5p",
+  "URL": "nguoi-nang-cap",
+  "CoverImage": "nguoi-nang-cap.jpg",
+  "CreateAt": "20/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhwa",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-104",
+  "TotalChapter": 104,
+  "Chapters": {
+    "urlChapter": "chapter-104",
+    "dateUpdateChapter": "2023-12-20 03:49:43"
+  }
+}

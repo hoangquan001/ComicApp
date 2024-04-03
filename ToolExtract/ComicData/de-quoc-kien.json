@@ -1,0 +1,21 @@
+{
+  "Title": "\u0110\u1ebf Qu\u1ed1c Ki\u1ebfn",
+  "URL": "de-quoc-kien",
+  "CoverImage": "de-quoc-kien.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Josei",
+    "Manga"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-22 14:04:19"
+  }
+}

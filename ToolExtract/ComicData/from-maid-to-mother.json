@@ -1,0 +1,22 @@
+{
+  "Title": "From Maid To Mother",
+  "URL": "from-maid-to-mother",
+  "CoverImage": "from-maid-to-mother.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Chuy\u1ec3n Sinh",
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "Shoujo",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-21 03:32:09"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Dear My Girls",
+  "URL": "dear-my-girls",
+  "CoverImage": "dear-my-girls.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhwa",
+    "Romance"
+  ],
+  "LastChapter": "chapter-34",
+  "TotalChapter": 34,
+  "Chapters": {
+    "urlChapter": "chapter-34",
+    "dateUpdateChapter": "2024-01-23 01:24:44"
+  }
+}

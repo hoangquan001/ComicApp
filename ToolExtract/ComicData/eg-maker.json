@@ -1,0 +1,17 @@
+{
+  "Title": "EG Maker",
+  "URL": "eg-maker",
+  "CoverImage": "eg-maker.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-25 11:11:28"
+  }
+}

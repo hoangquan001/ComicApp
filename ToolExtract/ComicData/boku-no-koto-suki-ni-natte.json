@@ -1,0 +1,20 @@
+{
+  "Title": "Boku no Koto Suki ni Natte",
+  "URL": "boku-no-koto-suki-ni-natte",
+  "CoverImage": "boku-no-koto-suki-ni-natte.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-27 04:51:38"
+  }
+}

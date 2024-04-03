@@ -1,0 +1,20 @@
+{
+  "Title": "T\u00e2n Teppi",
+  "URL": "tan-teppi",
+  "CoverImage": "tan-teppi.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-67",
+  "TotalChapter": 67,
+  "Chapters": {
+    "urlChapter": "chapter-67",
+    "dateUpdateChapter": "2024-01-13 21:37:44"
+  }
+}

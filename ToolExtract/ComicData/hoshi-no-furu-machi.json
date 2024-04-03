@@ -1,0 +1,19 @@
+{
+  "Title": "Hoshi No Furu Machi",
+  "URL": "hoshi-no-furu-machi",
+  "CoverImage": "hoshi-no-furu-machi.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2024-01-26 21:42:34"
+  }
+}

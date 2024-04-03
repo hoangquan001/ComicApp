@@ -1,0 +1,20 @@
+{
+  "Title": "Accel World / Dural - Magisa Garden",
+  "URL": "accel-world-dural-magisa-garden",
+  "CoverImage": "accel-world-dural-magisa-garden.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "School Life",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-30 22:21:12"
+  }
+}

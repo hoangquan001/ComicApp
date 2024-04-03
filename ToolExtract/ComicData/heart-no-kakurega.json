@@ -1,0 +1,19 @@
+{
+  "Title": "Heart No Kakurega",
+  "URL": "heart-no-kakurega",
+  "CoverImage": "heart-no-kakurega.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Slice of Life",
+    "Soft Yaoi"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-14 17:52:56"
+  }
+}

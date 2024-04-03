@@ -1,0 +1,20 @@
+{
+  "Title": "Nani made nara Koroseru?",
+  "URL": "nani-made-nara-koroseru",
+  "CoverImage": "nani-made-nara-koroseru.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Horror",
+    "One shot",
+    "Psychological",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 13:05:08"
+  }
+}

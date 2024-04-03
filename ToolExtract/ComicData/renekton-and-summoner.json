@@ -1,0 +1,20 @@
+{
+  "Title": "Renekton And Summoner",
+  "URL": "renekton-and-summoner",
+  "CoverImage": "renekton-and-summoner.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Manhwa",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-02 08:39:05"
+  }
+}

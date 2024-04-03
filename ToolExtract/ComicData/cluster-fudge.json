@@ -1,0 +1,19 @@
+{
+  "Title": "Cluster Fudge",
+  "URL": "cluster-fudge",
+  "CoverImage": "cluster-fudge.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-02-02 13:44:52"
+  }
+}

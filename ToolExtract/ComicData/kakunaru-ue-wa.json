@@ -1,0 +1,21 @@
+{
+  "Title": "Kakunaru Ue wa",
+  "URL": "kakunaru-ue-wa",
+  "CoverImage": "kakunaru-ue-wa.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "24 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

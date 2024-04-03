@@ -1,0 +1,21 @@
+{
+  "Title": "Ng\u01b0\u1eddi Ti\u00ean Phong",
+  "URL": "nguoi-tien-phong",
+  "CoverImage": "nguoi-tien-phong.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Live action",
+    "Manhua",
+    "School Life"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-14 21:34:16"
+  }
+}

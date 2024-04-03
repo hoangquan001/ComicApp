@@ -1,0 +1,20 @@
+{
+  "Title": "Kakukaku Shikajika",
+  "URL": "kakukaku-shikajika",
+  "CoverImage": "kakukaku-shikajika.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Josei",
+    "Manga",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-30 12:26:40"
+  }
+}

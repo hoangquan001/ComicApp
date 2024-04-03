@@ -1,0 +1,17 @@
+{
+  "Title": "Captain Tsubasa : J Boy's Challenge",
+  "URL": "captain-tsubasa-j-boy-s-challenge",
+  "CoverImage": "captain-tsubasa-j-boy-s-challenge.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Sports"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-15 17:40:55"
+  }
+}

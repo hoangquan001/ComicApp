@@ -1,0 +1,20 @@
+{
+  "Title": "Mousou Sensei.",
+  "URL": "mousou-sensei",
+  "CoverImage": "mousou-sensei.jpg",
+  "CreateAt": "10/03/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "11 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

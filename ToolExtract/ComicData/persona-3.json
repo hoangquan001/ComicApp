@@ -1,0 +1,21 @@
+{
+  "Title": "Persona 3",
+  "URL": "persona-3",
+  "CoverImage": "persona-3.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-26 14:16:48"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "School Resort!",
+  "URL": "school-resort",
+  "CoverImage": "school-resort.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 02:23:20"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Ch\u00f3 V\u00e0 C\u1eb7n B\u00e3",
+  "URL": "cho-va-can-ba",
+  "CoverImage": "cho-va-can-ba.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2023-12-31 21:44:12"
+  }
+}

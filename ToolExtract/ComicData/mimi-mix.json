@@ -1,0 +1,22 @@
+{
+  "Title": "Mimi Mix!",
+  "URL": "mimi-mix",
+  "CoverImage": "mimi-mix.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Romance",
+    "School Life",
+    "Slice of Life",
+    "Soft Yuri",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-23 00:13:56"
+  }
+}

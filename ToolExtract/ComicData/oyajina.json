@@ -1,0 +1,22 @@
+{
+  "Title": "Oyajina!",
+  "URL": "oyajina",
+  "CoverImage": "oyajina.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shoujo",
+    "Shoujo Ai",
+    "Shounen",
+    "Slice of Life",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 18:42:34"
+  }
+}

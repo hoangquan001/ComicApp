@@ -1,0 +1,18 @@
+{
+  "Title": "Astral Walker",
+  "URL": "astral-walker",
+  "CoverImage": "astral-walker.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-02-02 12:58:31"
+  }
+}

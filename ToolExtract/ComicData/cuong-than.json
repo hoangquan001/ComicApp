@@ -1,0 +1,24 @@
+{
+  "Title": "Cu\u1ed3ng Th\u1ea7n",
+  "URL": "cuong-than",
+  "CoverImage": "cuong-than.jpg",
+  "CreateAt": "25/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manhua",
+    "Romance",
+    "Supernatural",
+    "Tragedy",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-110",
+  "TotalChapter": 110,
+  "Chapters": {
+    "urlChapter": "chapter-110",
+    "dateUpdateChapter": "2023-12-25 20:26:26"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Freesia",
+  "URL": "freesia",
+  "CoverImage": "freesia.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Manga",
+    "Mature",
+    "Psychological",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-83",
+  "TotalChapter": 83,
+  "Chapters": {
+    "urlChapter": "chapter-83",
+    "dateUpdateChapter": "2024-01-12 03:11:51"
+  }
+}

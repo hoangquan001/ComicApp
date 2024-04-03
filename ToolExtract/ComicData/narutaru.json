@@ -1,0 +1,24 @@
+{
+  "Title": "Narutaru",
+  "URL": "narutaru",
+  "CoverImage": "narutaru.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Manga",
+    "Mature",
+    "Psychological",
+    "Sci-fi",
+    "Seinen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-22 20:50:20"
+  }
+}

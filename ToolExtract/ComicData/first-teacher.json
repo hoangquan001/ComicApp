@@ -1,0 +1,24 @@
+{
+  "Title": "First Teacher",
+  "URL": "first-teacher",
+  "CoverImage": "first-teacher.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Mature",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Smut"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2023-12-27 11:52:34"
+  }
+}

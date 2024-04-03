@@ -1,0 +1,21 @@
+{
+  "Title": "Between You And I",
+  "URL": "between-you-and-i",
+  "CoverImage": "between-you-and-i.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manhwa",
+    "Romance",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-30 03:41:31"
+  }
+}

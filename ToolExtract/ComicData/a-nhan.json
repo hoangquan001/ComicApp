@@ -1,0 +1,18 @@
+{
+  "Title": "\u00c1 Nh\u00e2n",
+  "URL": "a-nhan",
+  "CoverImage": "a-nhan.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Horror"
+  ],
+  "LastChapter": "chapter-99",
+  "TotalChapter": 99,
+  "Chapters": {
+    "urlChapter": "chapter-99",
+    "dateUpdateChapter": "2023-12-24 12:53:55"
+  }
+}

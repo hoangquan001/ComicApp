@@ -1,0 +1,21 @@
+{
+  "Title": "Shounen no Abyss",
+  "URL": "shounen-no-abyss",
+  "CoverImage": "shounen-no-abyss.jpg",
+  "CreateAt": "22/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Mystery",
+    "Psychological",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-167",
+  "TotalChapter": 167,
+  "Chapters": {
+    "urlChapter": "chapter-167",
+    "dateUpdateChapter": "9 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

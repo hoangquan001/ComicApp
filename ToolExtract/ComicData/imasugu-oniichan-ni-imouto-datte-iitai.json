@@ -1,0 +1,21 @@
+{
+  "Title": "Imasugu Oniichan ni Imouto Datte Iitai",
+  "URL": "imasugu-oniichan-ni-imouto-datte-iitai",
+  "CoverImage": "imasugu-oniichan-ni-imouto-datte-iitai.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-23 03:29:44"
+  }
+}

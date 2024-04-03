@@ -1,0 +1,19 @@
+{
+  "Title": "Chocolate",
+  "URL": "chocolate",
+  "CoverImage": "chocolate.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-26 14:35:24"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Re:marina",
+  "URL": "re-marina",
+  "CoverImage": "re-marina.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Mature",
+    "Romance",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-49",
+  "TotalChapter": 49,
+  "Chapters": {
+    "urlChapter": "chapter-49",
+    "dateUpdateChapter": "2024-01-13 02:29:25"
+  }
+}

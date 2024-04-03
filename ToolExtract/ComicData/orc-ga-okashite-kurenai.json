@@ -1,0 +1,21 @@
+{
+  "Title": "Orc ga Okashite Kurenai!",
+  "URL": "orc-ga-okashite-kurenai",
+  "CoverImage": "orc-ga-okashite-kurenai.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Martial Arts",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-35",
+  "TotalChapter": 35,
+  "Chapters": {
+    "urlChapter": "chapter-35",
+    "dateUpdateChapter": "2023-12-29 23:33:35"
+  }
+}

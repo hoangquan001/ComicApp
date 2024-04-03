@@ -1,0 +1,19 @@
+{
+  "Title": "Little Lotus",
+  "URL": "little-lotus",
+  "CoverImage": "little-lotus.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-65",
+  "TotalChapter": 65,
+  "Chapters": {
+    "urlChapter": "chapter-65",
+    "dateUpdateChapter": "2023-12-27 22:22:48"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Idol A",
+  "URL": "idol-a",
+  "CoverImage": "idol-a.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-30 14:07:55"
+  }
+}

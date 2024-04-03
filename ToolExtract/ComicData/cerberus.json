@@ -1,0 +1,21 @@
+{
+  "Title": "Cerberus",
+  "URL": "cerberus",
+  "CoverImage": "cerberus.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-22 14:11:42"
+  }
+}

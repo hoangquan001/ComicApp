@@ -1,0 +1,19 @@
+{
+  "Title": "\u0110oan n\u00e3o",
+  "URL": "doan-nao",
+  "CoverImage": "doan-nao.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Mystery",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-03 12:13:31"
+  }
+}

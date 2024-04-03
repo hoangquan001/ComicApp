@@ -1,0 +1,21 @@
+{
+  "Title": "Shibito no Koe o Kiku ga Yoi",
+  "URL": "shibito-no-koe-o-kiku-ga-yoi",
+  "CoverImage": "shibito-no-koe-o-kiku-ga-yoi.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-20 10:30:37"
+  }
+}

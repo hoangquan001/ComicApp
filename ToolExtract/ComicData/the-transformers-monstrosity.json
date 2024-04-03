@@ -1,0 +1,18 @@
+{
+  "Title": "The Transformers: Monstrosity",
+  "URL": "the-transformers-monstrosity",
+  "CoverImage": "the-transformers-monstrosity.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-02-02 22:42:57"
+  }
+}

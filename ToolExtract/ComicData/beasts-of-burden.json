@@ -1,0 +1,18 @@
+{
+  "Title": "Beasts of Burden",
+  "URL": "beasts-of-burden",
+  "CoverImage": "beasts-of-burden.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-02-03 12:44:28"
+  }
+}

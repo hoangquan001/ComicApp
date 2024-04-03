@@ -1,0 +1,17 @@
+{
+  "Title": "Boku kara Kimi ga Kienai",
+  "URL": "boku-kara-kimi-ga-kienai",
+  "CoverImage": "boku-kara-kimi-ga-kienai.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-11 17:18:14"
+  }
+}

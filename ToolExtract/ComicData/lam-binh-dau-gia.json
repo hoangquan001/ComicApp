@@ -1,0 +1,20 @@
+{
+  "Title": "L\u00e2m Binh \u0110\u1ea5u Gi\u1ea3",
+  "URL": "lam-binh-dau-gia",
+  "CoverImage": "lam-binh-dau-gia.jpg",
+  "CreateAt": "25/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Mystery",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-47",
+  "TotalChapter": 47,
+  "Chapters": {
+    "urlChapter": "chapter-47",
+    "dateUpdateChapter": "2023-12-25 11:14:00"
+  }
+}

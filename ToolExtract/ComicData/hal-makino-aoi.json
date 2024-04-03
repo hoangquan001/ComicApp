@@ -1,0 +1,21 @@
+{
+  "Title": "Hal - Makino Aoi",
+  "URL": "hal-makino-aoi",
+  "CoverImage": "hal-makino-aoi.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Psychological",
+    "Romance",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-02 15:36:01"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "IFRIT - Danzai no Enjin",
+  "URL": "ifrit-danzai-no-enjin",
+  "CoverImage": "ifrit-danzai-no-enjin.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Sci-fi",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-75",
+  "TotalChapter": 75,
+  "Chapters": {
+    "urlChapter": "chapter-75",
+    "dateUpdateChapter": "2024-01-21 17:58:08"
+  }
+}

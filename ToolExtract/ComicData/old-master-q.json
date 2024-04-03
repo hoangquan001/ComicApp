@@ -1,0 +1,20 @@
+{
+  "Title": "Old Master Q",
+  "URL": "old-master-q",
+  "CoverImage": "old-master-q.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manga",
+    "School Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 02:22:17"
+  }
+}

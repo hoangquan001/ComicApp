@@ -1,0 +1,19 @@
+{
+  "Title": "Chuy\u1ec7n Ba Ng\u01b0\u1eddi",
+  "URL": "chuyen-ba-nguoi",
+  "CoverImage": "chuyen-ba-nguoi.jpg",
+  "CreateAt": "08/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-08 02:13:03"
+  }
+}

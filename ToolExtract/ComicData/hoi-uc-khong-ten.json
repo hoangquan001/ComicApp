@@ -1,0 +1,20 @@
+{
+  "Title": "H\u1ed3i \u1ee8c Kh\u00f4ng T\u00ean",
+  "URL": "hoi-uc-khong-ten",
+  "CoverImage": "hoi-uc-khong-ten.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-35",
+  "TotalChapter": 35,
+  "Chapters": {
+    "urlChapter": "chapter-35",
+    "dateUpdateChapter": "2024-02-24 20:46:48"
+  }
+}

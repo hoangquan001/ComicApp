@@ -1,0 +1,18 @@
+{
+  "Title": "Freezing",
+  "URL": "freezing",
+  "CoverImage": "freezing.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manhwa"
+  ],
+  "LastChapter": "chapter-223",
+  "TotalChapter": 223,
+  "Chapters": {
+    "urlChapter": "chapter-223",
+    "dateUpdateChapter": "2024-01-01 00:56:31"
+  }
+}

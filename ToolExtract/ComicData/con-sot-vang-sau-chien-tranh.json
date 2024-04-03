@@ -1,0 +1,24 @@
+{
+  "Title": "C\u01a1n s\u1ed1t v\u00e0ng sau chi\u1ebfn tranh",
+  "URL": "con-sot-vang-sau-chien-tranh",
+  "CoverImage": "con-sot-vang-sau-chien-tranh.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Horror",
+    "Manga",
+    "Mature",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-249",
+  "TotalChapter": 249,
+  "Chapters": {
+    "urlChapter": "chapter-249",
+    "dateUpdateChapter": "2023-12-27 12:59:40"
+  }
+}

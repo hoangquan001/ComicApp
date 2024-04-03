@@ -1,0 +1,18 @@
+{
+  "Title": "Boy + Girl Fusion",
+  "URL": "boy-girl-fusion",
+  "CoverImage": "boy-girl-fusion.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "One shot",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 02:17:00"
+  }
+}

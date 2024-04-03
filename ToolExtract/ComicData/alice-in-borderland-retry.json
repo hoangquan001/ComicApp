@@ -1,0 +1,24 @@
+{
+  "Title": "Alice in Borderland RETRY",
+  "URL": "alice-in-borderland-retry",
+  "CoverImage": "alice-in-borderland-retry.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Drama",
+    "Horror",
+    "Manga",
+    "Psychological",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-09 20:47:03"
+  }
+}

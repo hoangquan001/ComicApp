@@ -1,0 +1,18 @@
+{
+  "Title": "Khinh Phong",
+  "URL": "khinh-phong",
+  "CoverImage": "khinh-phong.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-13 20:16:54"
+  }
+}

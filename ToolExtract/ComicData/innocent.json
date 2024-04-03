@@ -1,0 +1,21 @@
+{
+  "Title": "Innocent",
+  "URL": "innocent",
+  "CoverImage": "innocent.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Historical",
+    "Mature",
+    "Psychological",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-105",
+  "TotalChapter": 105,
+  "Chapters": {
+    "urlChapter": "chapter-105",
+    "dateUpdateChapter": "2024-01-01 20:56:18"
+  }
+}

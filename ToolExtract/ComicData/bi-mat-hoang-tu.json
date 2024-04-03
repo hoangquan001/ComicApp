@@ -1,0 +1,19 @@
+{
+  "Title": "B\u00ed m\u1eadt ho\u00e0ng t\u1eed",
+  "URL": "bi-mat-hoang-tu",
+  "CoverImage": "bi-mat-hoang-tu.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manhwa",
+    "Romance"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-26 19:51:20"
+  }
+}

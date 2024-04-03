@@ -1,0 +1,22 @@
+{
+  "Title": "Dragon Head",
+  "URL": "dragon-head",
+  "CoverImage": "dragon-head.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Horror",
+    "Mature",
+    "Mystery",
+    "Psychological",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-89",
+  "TotalChapter": 89,
+  "Chapters": {
+    "urlChapter": "chapter-89",
+    "dateUpdateChapter": "2024-01-05 22:37:28"
+  }
+}

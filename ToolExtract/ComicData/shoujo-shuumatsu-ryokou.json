@@ -1,0 +1,18 @@
+{
+  "Title": "Shoujo shuumatsu ryokou",
+  "URL": "shoujo-shuumatsu-ryokou",
+  "CoverImage": "shoujo-shuumatsu-ryokou.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-45",
+  "TotalChapter": 45,
+  "Chapters": {
+    "urlChapter": "chapter-45",
+    "dateUpdateChapter": "2024-01-15 11:31:00"
+  }
+}

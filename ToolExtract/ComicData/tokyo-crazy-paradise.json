@@ -1,0 +1,23 @@
+{
+  "Title": "Tokyo Crazy Paradise",
+  "URL": "tokyo-crazy-paradise",
+  "CoverImage": "tokyo-crazy-paradise.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Sci-fi",
+    "Shoujo",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-112",
+  "TotalChapter": 112,
+  "Chapters": {
+    "urlChapter": "chapter-112",
+    "dateUpdateChapter": "2024-01-05 01:17:54"
+  }
+}

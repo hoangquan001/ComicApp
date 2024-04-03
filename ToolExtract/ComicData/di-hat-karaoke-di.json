@@ -1,0 +1,21 @@
+{
+  "Title": "\u0110i h\u00e1t Karaoke \u0111i!",
+  "URL": "di-hat-karaoke-di",
+  "CoverImage": "di-hat-karaoke-di.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "School Life",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-27 03:11:18"
+  }
+}

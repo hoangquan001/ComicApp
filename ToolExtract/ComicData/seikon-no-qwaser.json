@@ -1,0 +1,20 @@
+{
+  "Title": "Seikon no Qwaser",
+  "URL": "seikon-no-qwaser",
+  "CoverImage": "seikon-no-qwaser.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Romance",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-21 19:02:55"
+  }
+}

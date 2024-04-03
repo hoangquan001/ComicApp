@@ -1,0 +1,18 @@
+{
+  "Title": "Tam Qu\u1ed1c Ch\u00ed",
+  "URL": "tam-quoc-chi",
+  "CoverImage": "tam-quoc-chi.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Historical"
+  ],
+  "LastChapter": "chapter-36",
+  "TotalChapter": 36,
+  "Chapters": {
+    "urlChapter": "chapter-36",
+    "dateUpdateChapter": "2024-01-23 12:51:16"
+  }
+}

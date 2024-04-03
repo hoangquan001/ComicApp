@@ -1,0 +1,20 @@
+{
+  "Title": "Kiss x Death",
+  "URL": "kiss-x-death",
+  "CoverImage": "kiss-x-death.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-82",
+  "TotalChapter": 82,
+  "Chapters": {
+    "urlChapter": "chapter-82",
+    "dateUpdateChapter": "2024-01-02 04:29:39"
+  }
+}

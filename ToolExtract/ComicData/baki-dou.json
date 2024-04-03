@@ -1,0 +1,19 @@
+{
+  "Title": "Baki Dou",
+  "URL": "baki-dou",
+  "CoverImage": "baki-dou.jpg",
+  "CreateAt": "19/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Martial Arts",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-127",
+  "TotalChapter": 127,
+  "Chapters": {
+    "urlChapter": "chapter-127",
+    "dateUpdateChapter": "2023-12-19 01:36:18"
+  }
+}

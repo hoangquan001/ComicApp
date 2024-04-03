@@ -1,0 +1,21 @@
+{
+  "Title": "Misu Misou",
+  "URL": "misu-misou",
+  "CoverImage": "misu-misou.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Josei",
+    "Manga",
+    "Mature",
+    "School Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-10 19:37:10"
+  }
+}

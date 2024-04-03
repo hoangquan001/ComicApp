@@ -1,0 +1,18 @@
+{
+  "Title": "Kid Gang II",
+  "URL": "kid-gang-ii",
+  "CoverImage": "kid-gang-ii.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manhwa"
+  ],
+  "LastChapter": "chapter-85",
+  "TotalChapter": 85,
+  "Chapters": {
+    "urlChapter": "chapter-85",
+    "dateUpdateChapter": "2024-01-13 07:47:52"
+  }
+}

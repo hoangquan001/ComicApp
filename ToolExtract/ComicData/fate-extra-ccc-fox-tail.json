@@ -1,0 +1,20 @@
+{
+  "Title": "Fate/Extra CCC Fox Tail",
+  "URL": "fate-extra-ccc-fox-tail",
+  "CoverImage": "fate-extra-ccc-fox-tail.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-20 03:04:04"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "S\u00e1t Th\u1ee7 M\u00e8o \u0110en",
+  "URL": "sat-thu-meo-den",
+  "CoverImage": "sat-thu-meo-den.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Manga",
+    "Shounen Ai"
+  ],
+  "LastChapter": "chapter-185",
+  "TotalChapter": 185,
+  "Chapters": {
+    "urlChapter": "chapter-185",
+    "dateUpdateChapter": "2023-12-31 19:23:55"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Sikinen",
+  "URL": "sikinen",
+  "CoverImage": "sikinen.jpg",
+  "CreateAt": "11/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Drama",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-11 17:51:11"
+  }
+}

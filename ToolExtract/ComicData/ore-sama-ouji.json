@@ -1,0 +1,21 @@
+{
+  "Title": "Ore sama Ouji",
+  "URL": "ore-sama-ouji",
+  "CoverImage": "ore-sama-ouji.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Martial Arts",
+    "School Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-22 01:52:35"
+  }
+}

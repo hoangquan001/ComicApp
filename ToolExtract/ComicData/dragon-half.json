@@ -1,0 +1,18 @@
+{
+  "Title": "Dragon Half",
+  "URL": "dragon-half",
+  "CoverImage": "dragon-half.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-02-02 10:20:23"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Bad Luck",
+  "URL": "bad-luck",
+  "CoverImage": "bad-luck.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Tragedy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-29",
+  "TotalChapter": 29,
+  "Chapters": {
+    "urlChapter": "chapter-29",
+    "dateUpdateChapter": "2023-12-31 20:24:18"
+  }
+}

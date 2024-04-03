@@ -1,0 +1,18 @@
+{
+  "Title": "Mirai no Footbal",
+  "URL": "mirai-no-footbal",
+  "CoverImage": "mirai-no-footbal.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Historical",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 17:10:43"
+  }
+}

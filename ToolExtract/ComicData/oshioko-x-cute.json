@@ -1,0 +1,20 @@
+{
+  "Title": "Oshioko X Cute",
+  "URL": "oshioko-x-cute",
+  "CoverImage": "oshioko-x-cute.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Smut"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-30 22:35:55"
+  }
+}

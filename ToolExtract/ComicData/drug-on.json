@@ -1,0 +1,18 @@
+{
+  "Title": "Drug-on",
+  "URL": "drug-on",
+  "CoverImage": "drug-on.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-02-01 12:54:06"
+  }
+}

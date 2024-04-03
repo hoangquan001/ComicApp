@@ -1,0 +1,24 @@
+{
+  "Title": "Song Tinh \u00c2m D\u01b0\u01a1ng S\u01b0",
+  "URL": "song-tinh-am-duong-su",
+  "CoverImage": "song-tinh-am-duong-su.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "Shounen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-89",
+  "TotalChapter": 89,
+  "Chapters": {
+    "urlChapter": "chapter-89",
+    "dateUpdateChapter": "9 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

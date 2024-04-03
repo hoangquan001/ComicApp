@@ -1,0 +1,19 @@
+{
+  "Title": "School Back",
+  "URL": "school-back",
+  "CoverImage": "school-back.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-27 07:57:42"
+  }
+}

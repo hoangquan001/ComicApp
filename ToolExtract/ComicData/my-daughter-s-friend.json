@@ -1,0 +1,20 @@
+{
+  "Title": "My Daughter's Friend",
+  "URL": "my-daughter-s-friend",
+  "CoverImage": "my-daughter-s-friend.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Mature",
+    "Psychological",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-63",
+  "TotalChapter": 63,
+  "Chapters": {
+    "urlChapter": "chapter-63",
+    "dateUpdateChapter": "2023-12-30 00:06:20"
+  }
+}

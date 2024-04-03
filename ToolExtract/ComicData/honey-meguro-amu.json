@@ -1,0 +1,20 @@
+{
+  "Title": "Honey (MEGURO Amu)",
+  "URL": "honey-meguro-amu",
+  "CoverImage": "honey-meguro-amu.jpg",
+  "CreateAt": "11/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-40",
+  "TotalChapter": 40,
+  "Chapters": {
+    "urlChapter": "chapter-40",
+    "dateUpdateChapter": "2024-01-11 21:39:38"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Th\u00e1nh T\u1ed5",
+  "URL": "thanh-to",
+  "CoverImage": "thanh-to.jpg",
+  "CreateAt": "15/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Martial Arts",
+    "Truy\u1ec7n M\u00e0u",
+    "Xuy\u00ean Kh\u00f4ng"
+  ],
+  "LastChapter": "chapter-228",
+  "TotalChapter": 228,
+  "Chapters": {
+    "urlChapter": "chapter-228",
+    "dateUpdateChapter": "2023-12-15 23:39:03"
+  }
+}

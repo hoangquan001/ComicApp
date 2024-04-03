@@ -1,0 +1,22 @@
+{
+  "Title": "Oldman",
+  "URL": "oldman",
+  "CoverImage": "oldman.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Mature",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-20 03:19:57"
+  }
+}

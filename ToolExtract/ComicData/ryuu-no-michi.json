@@ -1,0 +1,21 @@
+{
+  "Title": "Ryuu No Michi",
+  "URL": "ryuu-no-michi",
+  "CoverImage": "ryuu-no-michi.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Psychological",
+    "Sci-fi",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-17 17:05:52"
+  }
+}

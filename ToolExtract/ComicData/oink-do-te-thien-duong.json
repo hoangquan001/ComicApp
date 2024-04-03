@@ -1,0 +1,21 @@
+{
+  "Title": "Oink - \u0110\u1ed3 T\u1ec3 Thi\u00ean \u0110\u01b0\u1eddng",
+  "URL": "oink-do-te-thien-duong",
+  "CoverImage": "oink-do-te-thien-duong.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 16:27:05"
+  }
+}

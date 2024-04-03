@@ -1,0 +1,19 @@
+{
+  "Title": "Dark Gathering",
+  "URL": "dark-gathering",
+  "CoverImage": "dark-gathering.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-58",
+  "TotalChapter": 58,
+  "Chapters": {
+    "urlChapter": "chapter-58",
+    "dateUpdateChapter": "8 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

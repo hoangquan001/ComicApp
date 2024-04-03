@@ -1,0 +1,22 @@
+{
+  "Title": "School Days",
+  "URL": "school-days",
+  "CoverImage": "school-days.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Anime",
+    "Drama",
+    "Harem",
+    "Psychological",
+    "Romance",
+    "School Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-14 18:22:18"
+  }
+}

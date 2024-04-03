@@ -1,0 +1,20 @@
+{
+  "Title": "Ph\u1ea3i L\u00f2ng C\u1eadu Shipper",
+  "URL": "phai-long-cau-shipper",
+  "CoverImage": "phai-long-cau-shipper.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "\u0110am M\u1ef9",
+    "Manhua",
+    "Shounen",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2023-12-31 21:10:15"
+  }
+}

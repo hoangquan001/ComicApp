@@ -1,0 +1,21 @@
+{
+  "Title": "Illegal Rare",
+  "URL": "illegal-rare",
+  "CoverImage": "illegal-rare.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Horror",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-24 13:40:01"
+  }
+}

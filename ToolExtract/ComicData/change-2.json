@@ -1,0 +1,18 @@
+{
+  "Title": "Change 2!!",
+  "URL": "change-2",
+  "CoverImage": "change-2.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-03 10:31:46"
+  }
+}

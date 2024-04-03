@@ -1,0 +1,19 @@
+{
+  "Title": "Ghost Sweeper Mikami",
+  "URL": "ghost-sweeper-mikami",
+  "CoverImage": "ghost-sweeper-mikami.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-02-01 01:00:21"
+  }
+}

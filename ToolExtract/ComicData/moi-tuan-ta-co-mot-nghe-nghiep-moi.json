@@ -1,11 +1,21 @@
 {
-  "Title": null,
-  "URL": null,
-  "CoverImage": null,
-  "CreateAt": null,
-  "statusComic": null,
-  "Category": null,
-  "LastChapter": null,
-  "TotalChapter": null,
-  "Chapters": null
+  "Title": "M\u1ed7i Tu\u1ea7n Ta C\u00f3 M\u1ed9t Ngh\u1ec1 Nghi\u1ec7p M\u1edbi",
+  "URL": "moi-tuan-ta-co-mot-nghe-nghiep-moi",
+  "CoverImage": "moi-tuan-ta-co-mot-nghe-nghiep-moi.jpg",
+  "CreateAt": "08/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Harem",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-432",
+  "TotalChapter": 432,
+  "Chapters": {
+    "urlChapter": "chapter-432",
+    "dateUpdateChapter": "2 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
 }

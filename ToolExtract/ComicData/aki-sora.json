@@ -1,0 +1,16 @@
+{
+  "Title": "Aki-Sora",
+  "URL": "aki-sora",
+  "CoverImage": "aki-sora.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Romance"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-12 13:58:48"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "Asmodeus Wa Akiramenai",
+  "URL": "asmodeus-wa-akiramenai",
+  "CoverImage": "asmodeus-wa-akiramenai.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-50",
+  "TotalChapter": 50,
+  "Chapters": {
+    "urlChapter": "chapter-50",
+    "dateUpdateChapter": "2024-01-01 22:21:15"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "Th\u1ee3 S\u0103n \u1ea8m Th\u1ef1c",
+  "URL": "tho-san-am-thuc",
+  "CoverImage": "tho-san-am-thuc.jpg",
+  "CreateAt": "11/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Manga",
+    "Mature",
+    "Romance",
+    "Seinen",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-396",
+  "TotalChapter": 396,
+  "Chapters": {
+    "urlChapter": "chapter-396",
+    "dateUpdateChapter": "2023-12-11 11:35:25"
+  }
+}

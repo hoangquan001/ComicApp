@@ -1,0 +1,20 @@
+{
+  "Title": "Journey Home After School",
+  "URL": "journey-home-after-school",
+  "CoverImage": "journey-home-after-school.jpg",
+  "CreateAt": "16/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-02-16 19:24:23"
+  }
+}

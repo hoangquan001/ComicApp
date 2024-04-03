@@ -1,0 +1,17 @@
+{
+  "Title": "Jigokusei Lemina",
+  "URL": "jigokusei-lemina",
+  "CoverImage": "jigokusei-lemina.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-17 04:14:22"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Kimi ni Happiness",
+  "URL": "kimi-ni-happiness",
+  "CoverImage": "kimi-ni-happiness.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "One shot",
+    "Romance"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-20 02:49:05"
+  }
+}

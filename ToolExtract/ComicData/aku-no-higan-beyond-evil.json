@@ -1,0 +1,23 @@
+{
+  "Title": "Aku no Higan - Beyond Evil",
+  "URL": "aku-no-higan-beyond-evil",
+  "CoverImage": "aku-no-higan-beyond-evil.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Horror",
+    "Mystery",
+    "School Life",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-66",
+  "TotalChapter": 66,
+  "Chapters": {
+    "urlChapter": "chapter-66",
+    "dateUpdateChapter": "2024-01-12 23:54:28"
+  }
+}

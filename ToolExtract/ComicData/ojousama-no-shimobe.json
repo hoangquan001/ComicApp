@@ -1,0 +1,21 @@
+{
+  "Title": "Ojousama No Shimobe",
+  "URL": "ojousama-no-shimobe",
+  "CoverImage": "ojousama-no-shimobe.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-78",
+  "TotalChapter": 78,
+  "Chapters": {
+    "urlChapter": "chapter-78",
+    "dateUpdateChapter": "2023-12-29 14:33:22"
+  }
+}

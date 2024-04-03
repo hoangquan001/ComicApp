@@ -1,0 +1,19 @@
+{
+  "Title": "C\u1ea3nh S\u00e1t Kh\u00f4ng Gian",
+  "URL": "canh-sat-khong-gian",
+  "CoverImage": "canh-sat-khong-gian.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-24 17:22:10"
+  }
+}

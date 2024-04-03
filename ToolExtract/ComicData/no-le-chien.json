@@ -1,0 +1,22 @@
+{
+  "Title": "N\u00f4 L\u1ec7 Chi\u1ebfn",
+  "URL": "no-le-chien",
+  "CoverImage": "no-le-chien.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Psychological",
+    "School Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-22 19:16:59"
+  }
+}

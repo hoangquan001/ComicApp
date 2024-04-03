@@ -1,0 +1,19 @@
+{
+  "Title": "Kimi to Koi no Tochuu",
+  "URL": "kimi-to-koi-no-tochuu",
+  "CoverImage": "kimi-to-koi-no-tochuu.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-17 00:18:01"
+  }
+}

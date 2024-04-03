@@ -1,0 +1,21 @@
+{
+  "Title": "Song Sinh Tr\u1eddi \u0110\u00e1nh",
+  "URL": "song-sinh-troi-danh",
+  "CoverImage": "song-sinh-troi-danh.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-24 20:10:56"
+  }
+}

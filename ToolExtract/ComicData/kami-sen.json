@@ -1,0 +1,17 @@
+{
+  "Title": "Kami Sen",
+  "URL": "kami-sen",
+  "CoverImage": "kami-sen.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-28",
+  "TotalChapter": 28,
+  "Chapters": {
+    "urlChapter": "chapter-28",
+    "dateUpdateChapter": "2024-01-30 18:24:24"
+  }
+}

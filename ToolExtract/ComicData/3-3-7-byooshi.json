@@ -1,0 +1,20 @@
+{
+  "Title": "3.3.7 Byooshi!!",
+  "URL": "3-3-7-byooshi",
+  "CoverImage": "3-3-7-byooshi.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Romance",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 02:34:38"
+  }
+}

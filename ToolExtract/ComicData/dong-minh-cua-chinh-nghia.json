@@ -1,0 +1,20 @@
+{
+  "Title": "\u0110\u1ed3ng minh c\u1ee7a ch\u00ednh ngh\u0129a",
+  "URL": "dong-minh-cua-chinh-nghia",
+  "CoverImage": "dong-minh-cua-chinh-nghia.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 10:47:00"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "Title": "L\u1ef1a Ch\u1ecdn Ph\u00e2n K\u1ef3",
+  "URL": "lua-chon-phan-ky",
+  "CoverImage": "lua-chon-phan-ky.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Manga",
+    "Martial Arts",
+    "Mystery",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-186",
+  "TotalChapter": 186,
+  "Chapters": {
+    "urlChapter": "chapter-186",
+    "dateUpdateChapter": "2023-12-24 18:58:32"
+  }
+}

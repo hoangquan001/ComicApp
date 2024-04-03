@@ -1,0 +1,20 @@
+{
+  "Title": "Nise no Chigiri",
+  "URL": "nise-no-chigiri",
+  "CoverImage": "nise-no-chigiri.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-31 02:09:27"
+  }
+}

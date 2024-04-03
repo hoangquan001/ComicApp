@@ -1,0 +1,16 @@
+{
+  "Title": "Nh\u1eefng Th\u00e1nh Troll",
+  "URL": "nhung-thanh-troll",
+  "CoverImage": "nhung-thanh-troll.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Live action"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-01 05:59:35"
+  }
+}

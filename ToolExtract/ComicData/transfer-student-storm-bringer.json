@@ -1,0 +1,20 @@
+{
+  "Title": "Transfer Student Storm Bringer",
+  "URL": "transfer-student-storm-bringer",
+  "CoverImage": "transfer-student-storm-bringer.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-92",
+  "TotalChapter": 92,
+  "Chapters": {
+    "urlChapter": "chapter-92",
+    "dateUpdateChapter": "2024-01-05 13:19:33"
+  }
+}

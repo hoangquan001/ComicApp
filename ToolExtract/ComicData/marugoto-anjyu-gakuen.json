@@ -1,0 +1,20 @@
+{
+  "Title": "Marugoto Anjyu Gakuen",
+  "URL": "marugoto-anjyu-gakuen",
+  "CoverImage": "marugoto-anjyu-gakuen.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Supernatural",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-23 09:47:55"
+  }
+}

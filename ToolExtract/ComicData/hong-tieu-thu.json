@@ -1,0 +1,20 @@
+{
+  "Title": "H\u1ed3ng Ti\u1ec3u Th\u01b0",
+  "URL": "hong-tieu-thu",
+  "CoverImage": "hong-tieu-thu.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2024-01-03 09:24:48"
+  }
+}

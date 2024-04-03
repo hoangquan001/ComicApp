@@ -1,0 +1,20 @@
+{
+  "Title": "Gunjou Gakusha",
+  "URL": "gunjou-gakusha",
+  "CoverImage": "gunjou-gakusha.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Romance",
+    "Seinen",
+    "Slice of Life",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-26 10:43:28"
+  }
+}

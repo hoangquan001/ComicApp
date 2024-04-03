@@ -1,0 +1,19 @@
+{
+  "Title": "Devil Desires!!",
+  "URL": "devil-desires",
+  "CoverImage": "devil-desires.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 00:53:05"
+  }
+}

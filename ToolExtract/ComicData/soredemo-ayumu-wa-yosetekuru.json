@@ -1,0 +1,21 @@
+{
+  "Title": "Soredemo Ayumu wa Yosetekuru",
+  "URL": "soredemo-ayumu-wa-yosetekuru",
+  "CoverImage": "soredemo-ayumu-wa-yosetekuru.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-228",
+  "TotalChapter": 228,
+  "Chapters": {
+    "urlChapter": "chapter-228",
+    "dateUpdateChapter": "2023-12-27 02:11:40"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Akame ga Kiru!",
+  "URL": "akame-ga-kiru",
+  "CoverImage": "akame-ga-kiru.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Romance",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-87",
+  "TotalChapter": 87,
+  "Chapters": {
+    "urlChapter": "chapter-87",
+    "dateUpdateChapter": "2023-12-26 22:13:57"
+  }
+}

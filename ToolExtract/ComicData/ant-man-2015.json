@@ -1,0 +1,21 @@
+{
+  "Title": "Ant-Man 2015",
+  "URL": "ant-man-2015",
+  "CoverImage": "ant-man-2015.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comic",
+    "Mature",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-03 12:00:14"
+  }
+}

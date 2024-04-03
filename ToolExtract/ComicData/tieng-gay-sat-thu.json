@@ -1,0 +1,25 @@
+{
+  "Title": "Ti\u1ebfng g\u00e1y s\u00e1t th\u1ee7",
+  "URL": "tieng-gay-sat-thu",
+  "CoverImage": "tieng-gay-sat-thu.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Mature",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-57",
+  "TotalChapter": 57,
+  "Chapters": {
+    "urlChapter": "chapter-57",
+    "dateUpdateChapter": "2023-12-24 08:36:14"
+  }
+}

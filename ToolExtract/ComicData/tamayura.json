@@ -1,0 +1,20 @@
+{
+  "Title": "Tamayura",
+  "URL": "tamayura",
+  "CoverImage": "tamayura.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Historical",
+    "Romance",
+    "School Life",
+    "Shounen Ai"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-30 22:09:59"
+  }
+}

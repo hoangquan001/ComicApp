@@ -1,0 +1,19 @@
+{
+  "Title": "JLA JSA: VIRTUE AND VICE",
+  "URL": "jla-jsa-virtue-and-vice",
+  "CoverImage": "jla-jsa-virtue-and-vice.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comic",
+    "Mystery",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 01:12:25"
+  }
+}

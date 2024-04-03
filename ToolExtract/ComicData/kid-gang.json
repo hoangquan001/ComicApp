@@ -1,0 +1,18 @@
+{
+  "Title": "Kid Gang",
+  "URL": "kid-gang",
+  "CoverImage": "kid-gang.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manhwa"
+  ],
+  "LastChapter": "chapter-180",
+  "TotalChapter": 180,
+  "Chapters": {
+    "urlChapter": "chapter-180",
+    "dateUpdateChapter": "2024-01-03 17:26:13"
+  }
+}

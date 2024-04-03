@@ -1,0 +1,19 @@
+{
+  "Title": "Gokojou chocolat danshi",
+  "URL": "gokojou-chocolat-danshi",
+  "CoverImage": "gokojou-chocolat-danshi.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Josei",
+    "Manga",
+    "Romance",
+    "Smut"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-13 02:20:12"
+  }
+}

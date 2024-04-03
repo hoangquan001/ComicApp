@@ -1,0 +1,20 @@
+{
+  "Title": "My Lovely Master",
+  "URL": "my-lovely-master",
+  "CoverImage": "my-lovely-master.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-86",
+  "TotalChapter": 86,
+  "Chapters": {
+    "urlChapter": "chapter-86",
+    "dateUpdateChapter": "2024-01-15 09:41:06"
+  }
+}

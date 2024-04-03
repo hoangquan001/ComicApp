@@ -1,0 +1,20 @@
+{
+  "Title": "Honzuki no Gekokujou : Koshiki Komikku Ansoroji",
+  "URL": "honzuki-no-gekokujou-koshiki-komikku-ansoroji",
+  "CoverImage": "honzuki-no-gekokujou-koshiki-komikku-ansoroji.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Manga",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-37",
+  "TotalChapter": 37,
+  "Chapters": {
+    "urlChapter": "chapter-37",
+    "dateUpdateChapter": "17 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

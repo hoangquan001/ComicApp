@@ -1,0 +1,18 @@
+{
+  "Title": "Kedamono Kareshi",
+  "URL": "kedamono-kareshi",
+  "CoverImage": "kedamono-kareshi.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-81",
+  "TotalChapter": 81,
+  "Chapters": {
+    "urlChapter": "chapter-81",
+    "dateUpdateChapter": "2023-12-29 12:15:54"
+  }
+}

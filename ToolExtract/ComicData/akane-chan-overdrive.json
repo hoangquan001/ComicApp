@@ -1,0 +1,20 @@
+{
+  "Title": "Akane-chan Overdrive",
+  "URL": "akane-chan-overdrive",
+  "CoverImage": "akane-chan-overdrive.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-27 00:45:32"
+  }
+}

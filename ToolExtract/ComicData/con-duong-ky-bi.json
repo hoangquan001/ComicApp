@@ -1,0 +1,21 @@
+{
+  "Title": "Con \u0110\u01b0\u1eddng K\u1ef3 B\u00ed",
+  "URL": "con-duong-ky-bi",
+  "CoverImage": "con-duong-ky-bi.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Manhua",
+    "Mystery",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 18:36:49"
+  }
+}

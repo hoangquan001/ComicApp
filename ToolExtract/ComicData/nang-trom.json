@@ -1,0 +1,20 @@
+{
+  "Title": "N\u00e0ng Tr\u1ed9m",
+  "URL": "nang-trom",
+  "CoverImage": "nang-trom.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-14 06:04:32"
+  }
+}
