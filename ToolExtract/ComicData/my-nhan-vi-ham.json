@@ -1,0 +1,21 @@
+{
+  "Title": "M\u1ef9 Nh\u00e2n Vi H\u1ea1m",
+  "URL": "my-nhan-vi-ham",
+  "CoverImage": "my-nhan-vi-ham.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-16 20:37:39"
+  }
+}

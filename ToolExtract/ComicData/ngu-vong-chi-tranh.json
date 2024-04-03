@@ -1,0 +1,20 @@
+{
+  "Title": "Ngu V\u00f5ng Chi Tranh",
+  "URL": "ngu-vong-chi-tranh",
+  "CoverImage": "ngu-vong-chi-tranh.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-23 02:26:26"
+  }
+}

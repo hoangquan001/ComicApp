@@ -1,0 +1,16 @@
+{
+  "Title": "Komorebi no Kuni",
+  "URL": "komorebi-no-kuni",
+  "CoverImage": "komorebi-no-kuni.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-27 03:48:30"
+  }
+}

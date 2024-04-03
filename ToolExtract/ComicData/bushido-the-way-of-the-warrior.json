@@ -1,0 +1,23 @@
+{
+  "Title": "BUSHIDO - The way of the warrior",
+  "URL": "bushido-the-way-of-the-warrior",
+  "CoverImage": "bushido-the-way-of-the-warrior.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Drama",
+    "Live action",
+    "Martial Arts",
+    "Mature",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 14:16:55"
+  }
+}

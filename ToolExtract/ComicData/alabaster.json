@@ -1,0 +1,21 @@
+{
+  "Title": "Alabaster",
+  "URL": "alabaster",
+  "CoverImage": "alabaster.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Mystery",
+    "Sci-fi",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-01 08:15:08"
+  }
+}

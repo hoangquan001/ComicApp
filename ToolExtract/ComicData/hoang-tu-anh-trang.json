@@ -1,0 +1,18 @@
+{
+  "Title": "Ho\u00e0ng T\u1eed \u00c1nh Tr\u0103ng",
+  "URL": "hoang-tu-anh-trang",
+  "CoverImage": "hoang-tu-anh-trang.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 13:29:14"
+  }
+}

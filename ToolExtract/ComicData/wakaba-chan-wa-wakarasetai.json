@@ -1,0 +1,18 @@
+{
+  "Title": "Wakaba-chan wa Wakarasetai",
+  "URL": "wakaba-chan-wa-wakarasetai",
+  "CoverImage": "wakaba-chan-wa-wakarasetai.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-28 07:08:57"
+  }
+}

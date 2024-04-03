@@ -1,0 +1,19 @@
+{
+  "Title": "Online - The Comic",
+  "URL": "online-the-comic",
+  "CoverImage": "online-the-comic.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Psychological",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-14 19:11:00"
+  }
+}

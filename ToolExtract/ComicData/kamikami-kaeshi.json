@@ -1,0 +1,17 @@
+{
+  "Title": "Kamikami Kaeshi",
+  "URL": "kamikami-kaeshi",
+  "CoverImage": "kamikami-kaeshi.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-01 03:05:39"
+  }
+}

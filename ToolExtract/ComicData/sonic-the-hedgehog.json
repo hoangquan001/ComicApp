@@ -1,0 +1,19 @@
+{
+  "Title": "Sonic the Hedgehog",
+  "URL": "sonic-the-hedgehog",
+  "CoverImage": "sonic-the-hedgehog.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Comic"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-02 08:30:25"
+  }
+}

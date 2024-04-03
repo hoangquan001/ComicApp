@@ -1,0 +1,20 @@
+{
+  "Title": "H\u1ea3i H\u1ed5 The Beginning",
+  "URL": "hai-ho-the-beginning",
+  "CoverImage": "hai-ho-the-beginning.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Sci-fi",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-20 18:40:11"
+  }
+}

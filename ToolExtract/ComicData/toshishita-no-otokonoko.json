@@ -1,0 +1,18 @@
+{
+  "Title": "Toshishita no Otokonoko",
+  "URL": "toshishita-no-otokonoko",
+  "CoverImage": "toshishita-no-otokonoko.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-16 16:38:52"
+  }
+}

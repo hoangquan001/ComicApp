@@ -1,0 +1,20 @@
+{
+  "Title": "The Legend of Maian",
+  "URL": "the-legend-of-maian",
+  "CoverImage": "the-legend-of-maian.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-146",
+  "TotalChapter": 146,
+  "Chapters": {
+    "urlChapter": "chapter-146",
+    "dateUpdateChapter": "2024-01-17 23:27:37"
+  }
+}

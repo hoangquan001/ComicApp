@@ -1,0 +1,17 @@
+{
+  "Title": "Kingdom Of The Z",
+  "URL": "kingdom-of-the-z",
+  "CoverImage": "kingdom-of-the-z.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Ecchi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 04:10:22"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Potion Mania",
+  "URL": "potion-mania",
+  "CoverImage": "potion-mania.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Manhwa",
+    "Mystery",
+    "Psychological"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-26 13:51:06"
+  }
+}

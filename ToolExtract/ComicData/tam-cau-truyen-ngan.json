@@ -1,0 +1,21 @@
+{
+  "Title": "T\u00e1m c\u00e2u truy\u1ec7n ng\u1eafn",
+  "URL": "tam-cau-truyen-ngan",
+  "CoverImage": "tam-cau-truyen-ngan.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Historical",
+    "Romance",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 17:59:40"
+  }
+}

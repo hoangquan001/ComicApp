@@ -1,0 +1,21 @@
+{
+  "Title": "Tadokoro-san",
+  "URL": "tadokoro-san",
+  "CoverImage": "tadokoro-san.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shoujo Ai"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-10 15:30:05"
+  }
+}

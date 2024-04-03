@@ -1,0 +1,20 @@
+{
+  "Title": "Code Name wa Sailor V",
+  "URL": "code-name-wa-sailor-v",
+  "CoverImage": "code-name-wa-sailor-v.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-27 03:15:51"
+  }
+}

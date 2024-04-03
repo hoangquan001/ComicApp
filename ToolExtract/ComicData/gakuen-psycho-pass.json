@@ -1,0 +1,18 @@
+{
+  "Title": "Gakuen Psycho-Pass",
+  "URL": "gakuen-psycho-pass",
+  "CoverImage": "gakuen-psycho-pass.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 03:57:13"
+  }
+}

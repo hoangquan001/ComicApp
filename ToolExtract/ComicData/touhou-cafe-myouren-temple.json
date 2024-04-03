@@ -1,0 +1,16 @@
+{
+  "Title": "Touhou - Caf\u00e9 Myouren Temple",
+  "URL": "touhou-cafe-myouren-temple",
+  "CoverImage": "touhou-cafe-myouren-temple.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 23:59:36"
+  }
+}

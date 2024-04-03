@@ -1,0 +1,18 @@
+{
+  "Title": "S.H.I.E.L.D",
+  "URL": "s-h-i-e-l-d",
+  "CoverImage": "s-h-i-e-l-d.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comic",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-20 18:50:24"
+  }
+}

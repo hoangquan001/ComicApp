@@ -1,0 +1,22 @@
+{
+  "Title": "Aozora Yell",
+  "URL": "aozora-yell",
+  "CoverImage": "aozora-yell.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Slice of Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 08:55:10"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Shinbunbu no Komatsu-san",
+  "URL": "shinbunbu-no-komatsu-san",
+  "CoverImage": "shinbunbu-no-komatsu-san.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-01 00:57:53"
+  }
+}

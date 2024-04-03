@@ -1,0 +1,20 @@
+{
+  "Title": "Lasboss x Hero",
+  "URL": "lasboss-x-hero",
+  "CoverImage": "lasboss-x-hero.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-26 13:02:16"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Kannagi",
+  "URL": "kannagi",
+  "CoverImage": "kannagi.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-35",
+  "TotalChapter": 35,
+  "Chapters": {
+    "urlChapter": "chapter-35",
+    "dateUpdateChapter": "2024-01-22 23:31:23"
+  }
+}

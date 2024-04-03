@@ -1,0 +1,17 @@
+{
+  "Title": "Livingstone",
+  "URL": "livingstone",
+  "CoverImage": "livingstone.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-21 14:54:07"
+  }
+}

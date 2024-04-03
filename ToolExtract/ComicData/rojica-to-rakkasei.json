@@ -1,0 +1,20 @@
+{
+  "Title": "Rojica to Rakkasei",
+  "URL": "rojica-to-rakkasei",
+  "CoverImage": "rojica-to-rakkasei.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Psychological",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-01 11:23:56"
+  }
+}

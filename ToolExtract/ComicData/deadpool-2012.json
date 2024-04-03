@@ -1,0 +1,22 @@
+{
+  "Title": "Deadpool 2012",
+  "URL": "deadpool-2012",
+  "CoverImage": "deadpool-2012.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comedy",
+    "Comic",
+    "Horror",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-26 18:53:12"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "H\u1ecdc! \u0110\u00f3 l\u00e0 nh\u1eefng g\u00ec t\u00f4i c\u1ea7n...",
+  "URL": "hoc-do-la-nhung-gi-toi-can",
+  "CoverImage": "hoc-do-la-nhung-gi-toi-can.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-03 12:45:55"
+  }
+}

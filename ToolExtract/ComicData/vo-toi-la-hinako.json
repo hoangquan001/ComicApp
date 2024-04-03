@@ -1,0 +1,19 @@
+{
+  "Title": "V\u1ee3 t\u00f4i l\u00e0 Hinako!",
+  "URL": "vo-toi-la-hinako",
+  "CoverImage": "vo-toi-la-hinako.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-22 18:42:23"
+  }
+}

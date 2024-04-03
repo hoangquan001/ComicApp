@@ -1,0 +1,21 @@
+{
+  "Title": "New Normal",
+  "URL": "new-normal",
+  "CoverImage": "new-normal.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Josei",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "12 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

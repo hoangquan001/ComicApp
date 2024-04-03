@@ -1,0 +1,18 @@
+{
+  "Title": "A Dead In The Family",
+  "URL": "a-dead-in-the-family",
+  "CoverImage": "a-dead-in-the-family.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comic",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-26 14:11:02"
+  }
+}

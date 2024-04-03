@@ -1,0 +1,19 @@
+{
+  "Title": "Isshun no Tsuki",
+  "URL": "isshun-no-tsuki",
+  "CoverImage": "isshun-no-tsuki.jpg",
+  "CreateAt": "19/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "One shot",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-19 12:02:28"
+  }
+}

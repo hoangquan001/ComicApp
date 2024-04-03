@@ -1,0 +1,17 @@
+{
+  "Title": "K\u00fd Sinh Tr\u00f9ng",
+  "URL": "ky-sinh-trung",
+  "CoverImage": "ky-sinh-trung.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-20 02:57:00"
+  }
+}

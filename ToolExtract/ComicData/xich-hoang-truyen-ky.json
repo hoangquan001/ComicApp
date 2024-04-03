@@ -1,0 +1,20 @@
+{
+  "Title": "X\u00edch Ho\u00e0ng Truy\u1ec1n K\u1ef3",
+  "URL": "xich-hoang-truyen-ky",
+  "CoverImage": "xich-hoang-truyen-ky.jpg",
+  "CreateAt": "19/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-103",
+  "TotalChapter": 103,
+  "Chapters": {
+    "urlChapter": "chapter-103",
+    "dateUpdateChapter": "2023-12-19 19:53:46"
+  }
+}

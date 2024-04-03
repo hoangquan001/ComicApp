@@ -1,0 +1,19 @@
+{
+  "Title": "Tsuttsukumon",
+  "URL": "tsuttsukumon",
+  "CoverImage": "tsuttsukumon.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "One shot",
+    "School Life",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-20 22:37:51"
+  }
+}

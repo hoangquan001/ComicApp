@@ -1,0 +1,18 @@
+{
+  "Title": "Tousei Gensou Hakubutsushi",
+  "URL": "tousei-gensou-hakubutsushi",
+  "CoverImage": "tousei-gensou-hakubutsushi.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-27 01:44:50"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Tonari No Enkyorirenai",
+  "URL": "tonari-no-enkyorirenai",
+  "CoverImage": "tonari-no-enkyorirenai.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-22 13:46:19"
+  }
+}

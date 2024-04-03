@@ -1,0 +1,19 @@
+{
+  "Title": "Koko Kara Saki Wa Ng",
+  "URL": "koko-kara-saki-wa-ng",
+  "CoverImage": "koko-kara-saki-wa-ng.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-24 23:49:00"
+  }
+}

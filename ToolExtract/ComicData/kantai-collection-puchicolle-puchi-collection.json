@@ -1,0 +1,16 @@
+{
+  "Title": "Kantai Collection - Puchicolle! - Puchi Collection",
+  "URL": "kantai-collection-puchicolle-puchi-collection",
+  "CoverImage": "kantai-collection-puchicolle-puchi-collection.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-17 16:18:37"
+  }
+}

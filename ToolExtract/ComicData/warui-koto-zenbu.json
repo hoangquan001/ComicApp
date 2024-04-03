@@ -1,0 +1,20 @@
+{
+  "Title": "Warui Koto Zenbu",
+  "URL": "warui-koto-zenbu",
+  "CoverImage": "warui-koto-zenbu.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-05 14:36:58"
+  }
+}

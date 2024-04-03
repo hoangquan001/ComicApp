@@ -1,0 +1,20 @@
+{
+  "Title": "Cat in the car",
+  "URL": "cat-in-the-car",
+  "CoverImage": "cat-in-the-car.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Manhwa",
+    "Mystery",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-27 02:52:22"
+  }
+}

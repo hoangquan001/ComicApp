@@ -1,0 +1,20 @@
+{
+  "Title": "Con T\u00e0u B\u0103ng",
+  "URL": "con-tau-bang",
+  "CoverImage": "con-tau-bang.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "School Life",
+    "Truy\u1ec7n scan"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-02 15:01:01"
+  }
+}

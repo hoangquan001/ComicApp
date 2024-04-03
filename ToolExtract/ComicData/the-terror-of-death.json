@@ -1,0 +1,21 @@
+{
+  "Title": "The Terror Of Death",
+  "URL": "the-terror-of-death",
+  "CoverImage": "the-terror-of-death.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-18 06:39:39"
+  }
+}

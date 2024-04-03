@@ -1,0 +1,18 @@
+{
+  "Title": "Khung Gi\u1edd T\u1eed Vong",
+  "URL": "khung-gio-tu-vong",
+  "CoverImage": "khung-gio-tu-vong.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-21 03:23:32"
+  }
+}

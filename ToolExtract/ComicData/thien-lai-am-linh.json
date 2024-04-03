@@ -1,0 +1,21 @@
+{
+  "Title": "Thi\u00ean l\u1ea1i \u00e2m linh",
+  "URL": "thien-lai-am-linh",
+  "CoverImage": "thien-lai-am-linh.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-61",
+  "TotalChapter": 61,
+  "Chapters": {
+    "urlChapter": "chapter-61",
+    "dateUpdateChapter": "2023-12-26 19:43:32"
+  }
+}

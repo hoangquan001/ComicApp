@@ -1,0 +1,21 @@
+{
+  "Title": "Alive-final evolution",
+  "URL": "alive-final-evolution",
+  "CoverImage": "alive-final-evolution.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Horror",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 23:47:54"
+  }
+}

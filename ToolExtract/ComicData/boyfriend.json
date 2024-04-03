@@ -1,0 +1,17 @@
+{
+  "Title": "Boyfriend",
+  "URL": "boyfriend",
+  "CoverImage": "boyfriend.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-26 19:28:54"
+  }
+}

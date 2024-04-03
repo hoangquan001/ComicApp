@@ -1,0 +1,22 @@
+{
+  "Title": "Kingdom Hearts Iii",
+  "URL": "kingdom-hearts-iii",
+  "CoverImage": "kingdom-hearts-iii.jpg",
+  "CreateAt": "27/03/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "6 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

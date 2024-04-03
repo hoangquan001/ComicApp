@@ -1,0 +1,19 @@
+{
+  "Title": "Unbalance Triangle",
+  "URL": "unbalance-triangle",
+  "CoverImage": "unbalance-triangle.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Mature",
+    "Romance"
+  ],
+  "LastChapter": "chapter-95",
+  "TotalChapter": 95,
+  "Chapters": {
+    "urlChapter": "chapter-95",
+    "dateUpdateChapter": "2023-12-29 19:58:16"
+  }
+}

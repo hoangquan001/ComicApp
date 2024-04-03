@@ -1,0 +1,20 @@
+{
+  "Title": "Hajimete Datteba!",
+  "URL": "hajimete-datteba",
+  "CoverImage": "hajimete-datteba.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-23 07:17:06"
+  }
+}

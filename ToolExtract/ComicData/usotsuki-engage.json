@@ -1,0 +1,21 @@
+{
+  "Title": "Usotsuki Engage",
+  "URL": "usotsuki-engage",
+  "CoverImage": "usotsuki-engage.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-02 09:31:51"
+  }
+}

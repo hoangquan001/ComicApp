@@ -1,0 +1,24 @@
+{
+  "Title": "1331",
+  "URL": "1331",
+  "CoverImage": "1331.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Manhwa",
+    "Psychological",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-26 08:22:39"
+  }
+}

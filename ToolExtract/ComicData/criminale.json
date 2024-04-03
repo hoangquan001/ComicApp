@@ -1,0 +1,17 @@
+{
+  "Title": "Criminale!",
+  "URL": "criminale",
+  "CoverImage": "criminale.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-14 14:18:53"
+  }
+}

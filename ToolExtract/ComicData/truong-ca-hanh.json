@@ -1,0 +1,23 @@
+{
+  "Title": "Tr\u01b0\u1eddng Ca H\u00e0nh",
+  "URL": "truong-ca-hanh",
+  "CoverImage": "truong-ca-hanh.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Historical",
+    "Manhua",
+    "Tragedy",
+    "Truy\u1ec7n M\u00e0u",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-60",
+  "TotalChapter": 60,
+  "Chapters": {
+    "urlChapter": "chapter-60",
+    "dateUpdateChapter": "2024-01-01 01:52:38"
+  }
+}

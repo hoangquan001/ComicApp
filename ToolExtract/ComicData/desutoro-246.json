@@ -1,0 +1,18 @@
+{
+  "Title": "Desutoro 246",
+  "URL": "desutoro-246",
+  "CoverImage": "desutoro-246.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-26 23:44:28"
+  }
+}

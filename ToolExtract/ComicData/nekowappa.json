@@ -1,0 +1,18 @@
+{
+  "Title": "Nekowappa!",
+  "URL": "nekowappa",
+  "CoverImage": "nekowappa.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-23 08:52:43"
+  }
+}

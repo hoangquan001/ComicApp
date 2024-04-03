@@ -1,0 +1,19 @@
+{
+  "Title": "Kagetora",
+  "URL": "kagetora",
+  "CoverImage": "kagetora.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-02-02 12:56:36"
+  }
+}

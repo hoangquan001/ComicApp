@@ -1,0 +1,18 @@
+{
+  "Title": "C\u00f4 G\u00e1i r\u1eafc r\u1ed1i",
+  "URL": "co-gai-rac-roi",
+  "CoverImage": "co-gai-rac-roi.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Romance"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-17 15:53:22"
+  }
+}

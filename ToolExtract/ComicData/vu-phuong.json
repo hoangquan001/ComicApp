@@ -1,0 +1,18 @@
+{
+  "Title": "V\u0169 Ph\u01b0\u1ee3ng",
+  "URL": "vu-phuong",
+  "CoverImage": "vu-phuong.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "C\u1ed5 \u0110\u1ea1i",
+    "Ng\u00f4n T\u00ecnh",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-22 23:11:27"
+  }
+}

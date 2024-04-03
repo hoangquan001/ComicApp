@@ -1,0 +1,16 @@
+{
+  "Title": "Seifuku!",
+  "URL": "seifuku",
+  "CoverImage": "seifuku.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 01:45:46"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "N\u1eef Ho\u00e0ng Lu\u1eadt",
+  "URL": "nu-hoang-luat",
+  "CoverImage": "nu-hoang-luat.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manhua",
+    "Romance",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-27 01:45:48"
+  }
+}

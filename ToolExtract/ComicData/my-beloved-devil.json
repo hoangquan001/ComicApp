@@ -1,0 +1,20 @@
+{
+  "Title": "My Beloved Devil",
+  "URL": "my-beloved-devil",
+  "CoverImage": "my-beloved-devil.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Fantasy",
+    "One shot",
+    "School Life",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 18:57:54"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Kimi to Koi o Shitta",
+  "URL": "kimi-to-koi-o-shitta",
+  "CoverImage": "kimi-to-koi-o-shitta.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-30 09:18:20"
+  }
+}

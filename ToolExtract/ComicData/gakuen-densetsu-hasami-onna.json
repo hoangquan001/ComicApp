@@ -1,0 +1,17 @@
+{
+  "Title": "Gakuen Densetsu Hasami Onna",
+  "URL": "gakuen-densetsu-hasami-onna",
+  "CoverImage": "gakuen-densetsu-hasami-onna.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-01 02:58:28"
+  }
+}

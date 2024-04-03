@@ -1,0 +1,19 @@
+{
+  "Title": "Why Naitou",
+  "URL": "why-naitou",
+  "CoverImage": "why-naitou.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-22 04:28:12"
+  }
+}

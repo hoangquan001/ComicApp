@@ -1,0 +1,17 @@
+{
+  "Title": "Eremika Doujinshi Collection",
+  "URL": "eremika-doujinshi-collection",
+  "CoverImage": "eremika-doujinshi-collection.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Doujinshi",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-21 00:49:21"
+  }
+}

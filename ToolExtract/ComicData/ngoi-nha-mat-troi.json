@@ -1,0 +1,21 @@
+{
+  "Title": "Ng\u00f4i Nh\u00e0 M\u1eb7t Tr\u1eddi",
+  "URL": "ngoi-nha-mat-troi",
+  "CoverImage": "ngoi-nha-mat-troi.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-64",
+  "TotalChapter": 64,
+  "Chapters": {
+    "urlChapter": "chapter-64",
+    "dateUpdateChapter": "2024-01-04 16:42:29"
+  }
+}

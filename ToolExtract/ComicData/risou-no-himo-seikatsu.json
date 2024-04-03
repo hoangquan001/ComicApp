@@ -1,0 +1,21 @@
+{
+  "Title": "Risou no Himo Seikatsu",
+  "URL": "risou-no-himo-seikatsu",
+  "CoverImage": "risou-no-himo-seikatsu.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Mature",
+    "Romance",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-04 03:59:00"
+  }
+}

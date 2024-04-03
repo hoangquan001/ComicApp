@@ -1,0 +1,18 @@
+{
+  "Title": "King of hell",
+  "URL": "king-of-hell",
+  "CoverImage": "king-of-hell.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Martial Arts",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-304",
+  "TotalChapter": 304,
+  "Chapters": {
+    "urlChapter": "chapter-304",
+    "dateUpdateChapter": "2023-12-30 01:16:59"
+  }
+}

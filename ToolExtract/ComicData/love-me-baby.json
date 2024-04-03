@@ -1,0 +1,21 @@
+{
+  "Title": "Love Me Baby",
+  "URL": "love-me-baby",
+  "CoverImage": "love-me-baby.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo Ai",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-30 04:27:10"
+  }
+}

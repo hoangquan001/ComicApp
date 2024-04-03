@@ -1,0 +1,19 @@
+{
+  "Title": "Thi\u00ean H\u1ed3 Va\u0300 Phong \u1ea4n Thu\u1eadt",
+  "URL": "thien-ho-va-phong-an-thuat",
+  "CoverImage": "thien-ho-va-phong-an-thuat.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Manga",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-03 10:40:08"
+  }
+}

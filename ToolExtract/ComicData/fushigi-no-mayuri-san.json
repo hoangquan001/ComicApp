@@ -1,0 +1,19 @@
+{
+  "Title": "Fushigi No Mayuri-San",
+  "URL": "fushigi-no-mayuri-san",
+  "CoverImage": "fushigi-no-mayuri-san.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-17 22:23:13"
+  }
+}

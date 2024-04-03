@@ -1,0 +1,22 @@
+{
+  "Title": "Ranh gi\u1edbi Gensokyo",
+  "URL": "ranh-gioi-gensokyo",
+  "CoverImage": "ranh-gioi-gensokyo.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Doujinshi",
+    "Drama",
+    "Fantasy",
+    "Mature",
+    "Psychological",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-02-02 12:11:05"
+  }
+}

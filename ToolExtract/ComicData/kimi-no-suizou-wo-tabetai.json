@@ -1,0 +1,20 @@
+{
+  "Title": "Kimi no Suizou wo Tabetai",
+  "URL": "kimi-no-suizou-wo-tabetai",
+  "CoverImage": "kimi-no-suizou-wo-tabetai.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "School Life",
+    "Seinen",
+    "Slice of Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-15 20:11:44"
+  }
+}

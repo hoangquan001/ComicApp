@@ -1,0 +1,17 @@
+{
+  "Title": "Fushigi na shounen",
+  "URL": "fushigi-na-shounen",
+  "CoverImage": "fushigi-na-shounen.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-02-02 09:30:56"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Sengoku Armors",
+  "URL": "sengoku-armors",
+  "CoverImage": "sengoku-armors.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-26 18:16:01"
+  }
+}

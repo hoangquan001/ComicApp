@@ -1,0 +1,17 @@
+{
+  "Title": "6-Gou Keibi",
+  "URL": "6-gou-keibi",
+  "CoverImage": "6-gou-keibi.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-25 22:56:39"
+  }
+}

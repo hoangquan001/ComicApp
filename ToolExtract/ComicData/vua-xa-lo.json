@@ -1,0 +1,20 @@
+{
+  "Title": "Vua xa l\u1ed9",
+  "URL": "vua-xa-lo",
+  "CoverImage": "vua-xa-lo.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-22 23:16:53"
+  }
+}

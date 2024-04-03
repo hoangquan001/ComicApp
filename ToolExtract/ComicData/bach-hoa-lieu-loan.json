@@ -1,0 +1,23 @@
+{
+  "Title": "B\u00e1ch Hoa Li\u1ec5u Lo\u1ea1n",
+  "URL": "bach-hoa-lieu-loan",
+  "CoverImage": "bach-hoa-lieu-loan.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Martial Arts",
+    "Mystery",
+    "Romance",
+    "Sci-fi",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-03 10:04:16"
+  }
+}

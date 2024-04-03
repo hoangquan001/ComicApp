@@ -1,0 +1,20 @@
+{
+  "Title": "B\u1eafc \u0110\u1ea9u Th\u1ea7n Quy\u1ec1n Ti\u1ec1n Truy\u1ec7n",
+  "URL": "bac-dau-than-quyen-tien-truyen",
+  "CoverImage": "bac-dau-than-quyen-tien-truyen.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-30 18:05:28"
+  }
+}

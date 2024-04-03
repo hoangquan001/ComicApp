@@ -1,0 +1,23 @@
+{
+  "Title": "Security: Sixth Division",
+  "URL": "security-sixth-division",
+  "CoverImage": "security-sixth-division.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 01:19:49"
+  }
+}

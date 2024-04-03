@@ -1,0 +1,18 @@
+{
+  "Title": "Koakuma Lion",
+  "URL": "koakuma-lion",
+  "CoverImage": "koakuma-lion.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 09:50:04"
+  }
+}

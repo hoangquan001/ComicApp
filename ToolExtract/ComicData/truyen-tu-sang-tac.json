@@ -1,0 +1,22 @@
+{
+  "Title": "Truy\u1ec7n t\u1ef1 s\u00e1ng t\u00e1c",
+  "URL": "truyen-tu-sang-tac",
+  "CoverImage": "truyen-tu-sang-tac.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Doujinshi",
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Smut"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-20 06:42:03"
+  }
+}

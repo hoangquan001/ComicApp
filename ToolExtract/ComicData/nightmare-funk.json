@@ -1,0 +1,20 @@
+{
+  "Title": "Nightmare Funk",
+  "URL": "nightmare-funk",
+  "CoverImage": "nightmare-funk.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Ecchi",
+    "Mature",
+    "Mystery",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-12 01:21:28"
+  }
+}

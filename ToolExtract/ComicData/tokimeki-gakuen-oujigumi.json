@@ -1,0 +1,20 @@
+{
+  "Title": "Tokimeki gakuen oujigumi",
+  "URL": "tokimeki-gakuen-oujigumi",
+  "CoverImage": "tokimeki-gakuen-oujigumi.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "One shot",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 08:03:43"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Futaribocchi Sensou",
+  "URL": "futaribocchi-sensou",
+  "CoverImage": "futaribocchi-sensou.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Sci-fi",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-02 17:20:25"
+  }
+}

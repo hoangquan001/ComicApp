@@ -1,0 +1,19 @@
+{
+  "Title": "AKB0048",
+  "URL": "akb0048",
+  "CoverImage": "akb0048.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "School Life",
+    "Sci-fi",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-01 00:49:24"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Doubutsu no Oishasan",
+  "URL": "doubutsu-no-oishasan",
+  "CoverImage": "doubutsu-no-oishasan.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-119",
+  "TotalChapter": 119,
+  "Chapters": {
+    "urlChapter": "chapter-119",
+    "dateUpdateChapter": "2024-01-22 21:54:57"
+  }
+}

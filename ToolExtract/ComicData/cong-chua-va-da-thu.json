@@ -1,0 +1,22 @@
+{
+  "Title": "C\u00f4ng Ch\u00faa V\u00e0 D\u00e3 Th\u00fa",
+  "URL": "cong-chua-va-da-thu",
+  "CoverImage": "cong-chua-va-da-thu.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 09:03:47"
+  }
+}

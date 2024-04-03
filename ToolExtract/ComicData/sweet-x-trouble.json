@@ -1,0 +1,20 @@
+{
+  "Title": "Sweet X Trouble",
+  "URL": "sweet-x-trouble",
+  "CoverImage": "sweet-x-trouble.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-04 08:14:46"
+  }
+}

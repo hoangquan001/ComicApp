@@ -1,0 +1,20 @@
+{
+  "Title": "Kuma Kuma Kuma Bear",
+  "URL": "kuma-kuma-kuma-bear",
+  "CoverImage": "kuma-kuma-kuma-bear.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-70",
+  "TotalChapter": 70,
+  "Chapters": {
+    "urlChapter": "chapter-70",
+    "dateUpdateChapter": "2024-02-03 00:19:26"
+  }
+}

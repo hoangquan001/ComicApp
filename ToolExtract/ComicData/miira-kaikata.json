@@ -1,0 +1,18 @@
+{
+  "Title": "Miira Kaikata",
+  "URL": "miira-kaikata",
+  "CoverImage": "miira-kaikata.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-25 08:51:14"
+  }
+}

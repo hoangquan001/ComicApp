@@ -1,0 +1,21 @@
+{
+  "Title": "L\u1eef B\u1ed1 Truy\u1ec1n K\u1ef3",
+  "URL": "lu-bo-truyen-ky",
+  "CoverImage": "lu-bo-truyen-ky.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-03 14:26:45"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Ogeha",
+  "URL": "ogeha",
+  "CoverImage": "ogeha.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Sci-fi",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-09 19:21:31"
+  }
+}

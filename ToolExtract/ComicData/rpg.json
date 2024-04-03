@@ -1,0 +1,21 @@
+{
+  "Title": "RPG",
+  "URL": "rpg",
+  "CoverImage": "rpg.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Shounen",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-21 07:58:36"
+  }
+}

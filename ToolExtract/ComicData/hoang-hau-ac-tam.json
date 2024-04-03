@@ -1,0 +1,20 @@
+{
+  "Title": "Ho\u00e0ng H\u1eadu \u00c1c T\u00e2m",
+  "URL": "hoang-hau-ac-tam",
+  "CoverImage": "hoang-hau-ac-tam.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Shoujo",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 13:35:09"
+  }
+}

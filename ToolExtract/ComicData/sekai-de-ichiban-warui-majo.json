@@ -1,0 +1,22 @@
+{
+  "Title": "Sekai de Ichiban Warui Majo",
+  "URL": "sekai-de-ichiban-warui-majo",
+  "CoverImage": "sekai-de-ichiban-warui-majo.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Josei",
+    "Romance",
+    "Sci-fi",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-20 03:12:19"
+  }
+}

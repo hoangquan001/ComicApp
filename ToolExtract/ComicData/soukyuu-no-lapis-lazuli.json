@@ -1,0 +1,22 @@
+{
+  "Title": "Soukyuu no Lapis Lazuli",
+  "URL": "soukyuu-no-lapis-lazuli",
+  "CoverImage": "soukyuu-no-lapis-lazuli.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Harem",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-26 18:11:53"
+  }
+}

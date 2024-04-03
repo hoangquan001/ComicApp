@@ -1,0 +1,20 @@
+{
+  "Title": "Ti\u1ec7m Th\u1eddi Trang",
+  "URL": "tiem-thoi-trang",
+  "CoverImage": "tiem-thoi-trang.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-31",
+  "TotalChapter": 31,
+  "Chapters": {
+    "urlChapter": "chapter-31",
+    "dateUpdateChapter": "2024-01-22 16:25:21"
+  }
+}

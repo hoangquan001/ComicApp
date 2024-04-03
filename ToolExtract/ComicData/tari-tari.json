@@ -1,0 +1,17 @@
+{
+  "Title": "Tari Tari",
+  "URL": "tari-tari",
+  "CoverImage": "tari-tari.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Anime",
+    "School Life"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-27 02:23:22"
+  }
+}

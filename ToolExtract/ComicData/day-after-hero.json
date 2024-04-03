@@ -1,0 +1,21 @@
+{
+  "Title": "Day After Hero",
+  "URL": "day-after-hero",
+  "CoverImage": "day-after-hero.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Drama",
+    "Seinen",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-23 01:26:38"
+  }
+}

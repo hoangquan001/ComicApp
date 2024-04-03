@@ -1,0 +1,23 @@
+{
+  "Title": "Harry Potter Doujinshi - The World 2",
+  "URL": "harry-potter-doujinshi-the-world-2",
+  "CoverImage": "harry-potter-doujinshi-the-world-2.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo Ai",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-23 13:00:47"
+  }
+}

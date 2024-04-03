@@ -1,0 +1,20 @@
+{
+  "Title": "T\u1ea7n Hi\u1ec7p",
+  "URL": "tan-hiep",
+  "CoverImage": "tan-hiep.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u",
+    "Xuy\u00ean Kh\u00f4ng"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-13 18:53:52"
+  }
+}

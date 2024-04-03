@@ -1,0 +1,20 @@
+{
+  "Title": "Ng\u00f4i Sao Sugar",
+  "URL": "ngoi-sao-sugar",
+  "CoverImage": "ngoi-sao-sugar.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-31 18:51:13"
+  }
+}

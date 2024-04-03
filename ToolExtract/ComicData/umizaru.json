@@ -1,0 +1,19 @@
+{
+  "Title": "Umizaru",
+  "URL": "umizaru",
+  "CoverImage": "umizaru.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-45",
+  "TotalChapter": 45,
+  "Chapters": {
+    "urlChapter": "chapter-45",
+    "dateUpdateChapter": "2024-01-26 19:26:31"
+  }
+}

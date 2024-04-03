@@ -1,0 +1,22 @@
+{
+  "Title": "Demonizer Zilch",
+  "URL": "demonizer-zilch",
+  "CoverImage": "demonizer-zilch.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Harem",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-36",
+  "TotalChapter": 36,
+  "Chapters": {
+    "urlChapter": "chapter-36",
+    "dateUpdateChapter": "2024-01-16 01:48:35"
+  }
+}

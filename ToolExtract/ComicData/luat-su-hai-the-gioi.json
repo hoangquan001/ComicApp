@@ -1,0 +1,20 @@
+{
+  "Title": "Lu\u1eadt S\u01b0 Hai Th\u1ebf Gi\u1edbi",
+  "URL": "luat-su-hai-the-gioi",
+  "CoverImage": "luat-su-hai-the-gioi.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Chuy\u1ec3n Sinh",
+    "Comedy",
+    "Fantasy",
+    "Mystery",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-16 19:15:46"
+  }
+}

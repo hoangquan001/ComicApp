@@ -1,0 +1,20 @@
+{
+  "Title": "Vua Ph\u00e1p Thu\u1eadt",
+  "URL": "vua-phap-thuat",
+  "CoverImage": "vua-phap-thuat.jpg",
+  "CreateAt": "19/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Horror",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-303",
+  "TotalChapter": 303,
+  "Chapters": {
+    "urlChapter": "chapter-303",
+    "dateUpdateChapter": "2023-12-19 00:30:34"
+  }
+}

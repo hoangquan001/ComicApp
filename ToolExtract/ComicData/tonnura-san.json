@@ -1,0 +1,18 @@
+{
+  "Title": "Tonnura-san",
+  "URL": "tonnura-san",
+  "CoverImage": "tonnura-san.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-26 12:03:01"
+  }
+}

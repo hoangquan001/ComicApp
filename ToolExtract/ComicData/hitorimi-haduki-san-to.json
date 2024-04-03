@@ -1,0 +1,19 @@
+{
+  "Title": "Hitorimi Haduki-san to",
+  "URL": "hitorimi-haduki-san-to",
+  "CoverImage": "hitorimi-haduki-san-to.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Historical",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 23:37:45"
+  }
+}

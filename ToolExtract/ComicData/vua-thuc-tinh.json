@@ -1,0 +1,19 @@
+{
+  "Title": "Vua Th\u1ee9c T\u1ec9nh",
+  "URL": "vua-thuc-tinh",
+  "CoverImage": "vua-thuc-tinh.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhwa",
+    "Martial Arts",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 13:05:56"
+  }
+}

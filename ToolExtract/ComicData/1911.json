@@ -1,0 +1,21 @@
+{
+  "Title": "1911",
+  "URL": "1911",
+  "CoverImage": "1911.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Historical",
+    "Romance"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-02-01 07:10:43"
+  }
+}

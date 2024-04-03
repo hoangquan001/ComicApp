@@ -1,0 +1,21 @@
+{
+  "Title": "Magical x Miracle",
+  "URL": "magical-x-miracle",
+  "CoverImage": "magical-x-miracle.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-23 16:09:36"
+  }
+}

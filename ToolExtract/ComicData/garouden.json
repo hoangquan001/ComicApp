@@ -1,0 +1,18 @@
+{
+  "Title": "Garouden",
+  "URL": "garouden",
+  "CoverImage": "garouden.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Martial Arts",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-31 08:28:07"
+  }
+}

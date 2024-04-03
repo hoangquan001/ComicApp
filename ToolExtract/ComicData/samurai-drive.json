@@ -1,0 +1,19 @@
+{
+  "Title": "SAMURAI DRIVE",
+  "URL": "samurai-drive",
+  "CoverImage": "samurai-drive.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-02 13:17:06"
+  }
+}

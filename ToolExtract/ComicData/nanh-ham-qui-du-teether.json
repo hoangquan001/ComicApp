@@ -1,0 +1,23 @@
+{
+  "Title": "Nanh H\u00e0m Qu\u1ec9 D\u1eef - Teether",
+  "URL": "nanh-ham-qui-du-teether",
+  "CoverImage": "nanh-ham-qui-du-teether.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comic",
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "School Life",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-26 23:55:50"
+  }
+}

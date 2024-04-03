@@ -1,0 +1,19 @@
+{
+  "Title": "H\u1ed3ng Lang",
+  "URL": "hong-lang",
+  "CoverImage": "hong-lang.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-26 14:39:45"
+  }
+}

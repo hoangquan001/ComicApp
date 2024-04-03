@@ -1,0 +1,18 @@
+{
+  "Title": "Itsuka hataraku onii-san!",
+  "URL": "itsuka-hataraku-onii-san",
+  "CoverImage": "itsuka-hataraku-onii-san.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 00:38:22"
+  }
+}

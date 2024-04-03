@@ -1,0 +1,19 @@
+{
+  "Title": "Naisho no Jikan",
+  "URL": "naisho-no-jikan",
+  "CoverImage": "naisho-no-jikan.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 01:02:02"
+  }
+}

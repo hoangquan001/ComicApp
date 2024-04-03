@@ -1,0 +1,20 @@
+{
+  "Title": "Benkyou No Jikan",
+  "URL": "benkyou-no-jikan",
+  "CoverImage": "benkyou-no-jikan.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 09:12:52"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Truy\u1ec1n thuy\u1ebft c\u00f4ng ch\u00faa hoa anh \u0111\u00e0o",
+  "URL": "truyen-thuyet-cong-chua-hoa-anh-dao",
+  "CoverImage": "truyen-thuyet-cong-chua-hoa-anh-dao.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Mystery",
+    "Romance",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-17 09:08:21"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "PSO2 Ep 0",
+  "URL": "pso2-ep-0",
+  "CoverImage": "pso2-ep-0.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Psychological",
+    "Sci-fi",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-01 06:20:44"
+  }
+}

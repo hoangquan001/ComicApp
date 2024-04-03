@@ -1,0 +1,19 @@
+{
+  "Title": "Ponkotsu-Chan Kenshou",
+  "URL": "ponkotsu-chan-kenshou",
+  "CoverImage": "ponkotsu-chan-kenshou.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-17 22:45:00"
+  }
+}

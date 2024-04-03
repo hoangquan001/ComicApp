@@ -1,0 +1,20 @@
+{
+  "Title": "Watashi Wa Tensai O Katte Iru",
+  "URL": "watashi-wa-tensai-o-katte-iru",
+  "CoverImage": "watashi-wa-tensai-o-katte-iru.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Mystery",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-12 02:47:05"
+  }
+}

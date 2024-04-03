@@ -1,0 +1,21 @@
+{
+  "Title": "Kurasu Hako",
+  "URL": "kurasu-hako",
+  "CoverImage": "kurasu-hako.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Romance",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-31 17:50:23"
+  }
+}

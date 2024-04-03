@@ -1,0 +1,23 @@
+{
+  "Title": "7'S-SEVENTHS",
+  "URL": "7-s-sevenths",
+  "CoverImage": "7-s-sevenths.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Horror",
+    "Manga",
+    "Mystery",
+    "School Life",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-22 13:57:04"
+  }
+}

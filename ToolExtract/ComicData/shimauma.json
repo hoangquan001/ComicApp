@@ -1,0 +1,19 @@
+{
+  "Title": "Shimauma",
+  "URL": "shimauma",
+  "CoverImage": "shimauma.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Mature",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-27 04:05:09"
+  }
+}

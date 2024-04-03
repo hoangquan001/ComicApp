@@ -1,0 +1,20 @@
+{
+  "Title": "Chuy\u1ec7n T\u00ecnh Y\u00eau C\u1ee7a N\u1eef T\u01b0 T\u1ebf",
+  "URL": "chuyen-tinh-yeu-cua-nu-tu-te",
+  "CoverImage": "chuyen-tinh-yeu-cua-nu-tu-te.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-20 23:08:53"
+  }
+}

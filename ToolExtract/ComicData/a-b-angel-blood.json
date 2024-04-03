@@ -1,0 +1,19 @@
+{
+  "Title": "A + B - Angel + Blood",
+  "URL": "a-b-angel-blood",
+  "CoverImage": "a-b-angel-blood.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 16:56:49"
+  }
+}

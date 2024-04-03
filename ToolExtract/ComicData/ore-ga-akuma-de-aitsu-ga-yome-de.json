@@ -1,0 +1,21 @@
+{
+  "Title": "Ore ga Akuma de, Aitsu ga Yome de.",
+  "URL": "ore-ga-akuma-de-aitsu-ga-yome-de",
+  "CoverImage": "ore-ga-akuma-de-aitsu-ga-yome-de.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-21 13:02:14"
+  }
+}

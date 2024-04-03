@@ -1,0 +1,19 @@
+{
+  "Title": "O Chikadzuki Ni Naritai Manga",
+  "URL": "o-chikadzuki-ni-naritai-manga",
+  "CoverImage": "o-chikadzuki-ni-naritai-manga.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-22 20:05:31"
+  }
+}

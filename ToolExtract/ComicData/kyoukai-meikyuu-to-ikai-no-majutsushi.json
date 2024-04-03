@@ -1,0 +1,22 @@
+{
+  "Title": "Kyoukai Meikyuu To Ikai No Majutsushi",
+  "URL": "kyoukai-meikyuu-to-ikai-no-majutsushi",
+  "CoverImage": "kyoukai-meikyuu-to-ikai-no-majutsushi.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Martial Arts",
+    "Romance"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-12 22:22:28"
+  }
+}

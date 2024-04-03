@@ -1,0 +1,18 @@
+{
+  "Title": "Destro 246",
+  "URL": "destro-246",
+  "CoverImage": "destro-246.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-38",
+  "TotalChapter": 38,
+  "Chapters": {
+    "urlChapter": "chapter-38",
+    "dateUpdateChapter": "2024-01-26 20:51:33"
+  }
+}

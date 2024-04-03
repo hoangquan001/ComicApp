@@ -1,0 +1,18 @@
+{
+  "Title": "Copy Eyes Another World",
+  "URL": "copy-eyes-another-world",
+  "CoverImage": "copy-eyes-another-world.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-20 18:01:27"
+  }
+}

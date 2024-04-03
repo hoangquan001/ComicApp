@@ -1,0 +1,18 @@
+{
+  "Title": "Made in Hikkomuse",
+  "URL": "made-in-hikkomuse",
+  "CoverImage": "made-in-hikkomuse.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 01:25:24"
+  }
+}

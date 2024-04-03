@@ -1,0 +1,19 @@
+{
+  "Title": "Ano Ko Ni Koisuru Yamada Ni Koishita",
+  "URL": "ano-ko-ni-koisuru-yamada-ni-koishita",
+  "CoverImage": "ano-ko-ni-koisuru-yamada-ni-koishita.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-30 02:04:36"
+  }
+}

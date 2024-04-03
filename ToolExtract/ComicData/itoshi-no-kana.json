@@ -1,0 +1,21 @@
+{
+  "Title": "Itoshi no Kana",
+  "URL": "itoshi-no-kana",
+  "CoverImage": "itoshi-no-kana.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Ecchi",
+    "Manga",
+    "Romance",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-23 03:54:31"
+  }
+}

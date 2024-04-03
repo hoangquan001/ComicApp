@@ -1,0 +1,18 @@
+{
+  "Title": "Shoujo Fujuubun",
+  "URL": "shoujo-fujuubun",
+  "CoverImage": "shoujo-fujuubun.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Mystery",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-13 12:33:08"
+  }
+}

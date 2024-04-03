@@ -1,0 +1,19 @@
+{
+  "Title": "Cat story",
+  "URL": "cat-story",
+  "CoverImage": "cat-story.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Harem",
+    "Supernatural",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 17:08:04"
+  }
+}

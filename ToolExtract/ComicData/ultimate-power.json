@@ -1,0 +1,20 @@
+{
+  "Title": "Ultimate Power",
+  "URL": "ultimate-power",
+  "CoverImage": "ultimate-power.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-03 09:58:15"
+  }
+}

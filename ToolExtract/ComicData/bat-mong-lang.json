@@ -1,0 +1,20 @@
+{
+  "Title": "B\u1ea5t M\u1ed9ng Lang",
+  "URL": "bat-mong-lang",
+  "CoverImage": "bat-mong-lang.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-21 04:16:15"
+  }
+}

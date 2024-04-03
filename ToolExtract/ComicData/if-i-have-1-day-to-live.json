@@ -1,0 +1,19 @@
+{
+  "Title": "If I have 1 day to live",
+  "URL": "if-i-have-1-day-to-live",
+  "CoverImage": "if-i-have-1-day-to-live.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-02-02 18:44:05"
+  }
+}

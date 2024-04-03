@@ -1,0 +1,20 @@
+{
+  "Title": "L\u00e0m Thue",
+  "URL": "lam-thue",
+  "CoverImage": "lam-thue.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manhua",
+    "Romance",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-27 01:54:28"
+  }
+}

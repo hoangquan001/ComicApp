@@ -1,0 +1,19 @@
+{
+  "Title": "Sorairo Kaigan",
+  "URL": "sorairo-kaigan",
+  "CoverImage": "sorairo-kaigan.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-03 12:04:19"
+  }
+}

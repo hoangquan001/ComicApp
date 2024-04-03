@@ -1,0 +1,20 @@
+{
+  "Title": "Iyada Nante Iwasenai",
+  "URL": "iyada-nante-iwasenai",
+  "CoverImage": "iyada-nante-iwasenai.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-20 04:18:19"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "M\u00e3nh Qu\u1ef7 Qu\u00e1n",
+  "URL": "manh-quy-quan",
+  "CoverImage": "manh-quy-quan.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Horror",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-01 14:19:06"
+  }
+}

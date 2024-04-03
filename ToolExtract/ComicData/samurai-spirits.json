@@ -1,0 +1,20 @@
+{
+  "Title": "Samurai Spirits",
+  "URL": "samurai-spirits",
+  "CoverImage": "samurai-spirits.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Martial Arts",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 18:43:31"
+  }
+}

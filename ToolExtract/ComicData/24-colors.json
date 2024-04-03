@@ -1,0 +1,18 @@
+{
+  "Title": "24 COLORS",
+  "URL": "24-colors",
+  "CoverImage": "24-colors.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-23 07:48:00"
+  }
+}

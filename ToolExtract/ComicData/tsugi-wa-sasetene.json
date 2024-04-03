@@ -1,0 +1,20 @@
+{
+  "Title": "Tsugi wa Sasetene",
+  "URL": "tsugi-wa-sasetene",
+  "CoverImage": "tsugi-wa-sasetene.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-37",
+  "TotalChapter": 37,
+  "Chapters": {
+    "urlChapter": "chapter-37",
+    "dateUpdateChapter": "2024-01-09 23:50:35"
+  }
+}

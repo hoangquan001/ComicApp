@@ -1,0 +1,17 @@
+{
+  "Title": "!LORNA!",
+  "URL": "lorna",
+  "CoverImage": "lorna.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 19:43:26"
+  }
+}

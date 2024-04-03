@@ -1,0 +1,19 @@
+{
+  "Title": "Bliss C\u1ef1c L\u1ea1c Huy\u1ec5n K\u1ef3 \u0110\u00e0m",
+  "URL": "bliss-cuc-lac-huyen-ky-dam",
+  "CoverImage": "bliss-cuc-lac-huyen-ky-dam.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Martial Arts",
+    "Mecha",
+    "Mystery"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-17 15:16:18"
+  }
+}

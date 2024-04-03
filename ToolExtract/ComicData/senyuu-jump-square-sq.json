@@ -1,0 +1,21 @@
+{
+  "Title": "Senyuu JUMP SQUARE (SQ)",
+  "URL": "senyuu-jump-square-sq",
+  "CoverImage": "senyuu-jump-square-sq.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Shounen",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-02-01 05:35:34"
+  }
+}

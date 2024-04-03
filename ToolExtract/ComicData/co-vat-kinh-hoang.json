@@ -1,0 +1,19 @@
+{
+  "Title": "C\u1ed5 V\u1eadt Kinh Ho\u00e0ng",
+  "URL": "co-vat-kinh-hoang",
+  "CoverImage": "co-vat-kinh-hoang.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Romance"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-31 19:06:17"
+  }
+}

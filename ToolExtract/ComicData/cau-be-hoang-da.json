@@ -1,0 +1,20 @@
+{
+  "Title": "C\u1eadu B\u00e9 Hoang D\u00e3",
+  "URL": "cau-be-hoang-da",
+  "CoverImage": "cau-be-hoang-da.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-21 11:18:17"
+  }
+}

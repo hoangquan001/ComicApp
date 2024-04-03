@@ -1,0 +1,22 @@
+{
+  "Title": "Ho\u00e0ng T\u1eed B\u00f3ng \u0110\u00eam",
+  "URL": "hoang-tu-bong-dem",
+  "CoverImage": "hoang-tu-bong-dem.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-31 20:07:07"
+  }
+}

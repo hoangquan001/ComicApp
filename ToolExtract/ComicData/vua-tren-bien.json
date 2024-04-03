@@ -1,0 +1,20 @@
+{
+  "Title": "Vua Tr\u00ean Bi\u1ec3n",
+  "URL": "vua-tren-bien",
+  "CoverImage": "vua-tren-bien.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-187",
+  "TotalChapter": 187,
+  "Chapters": {
+    "urlChapter": "chapter-187",
+    "dateUpdateChapter": "2024-01-04 20:41:25"
+  }
+}

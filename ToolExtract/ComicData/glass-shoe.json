@@ -1,0 +1,18 @@
+{
+  "Title": "Glass shoe",
+  "URL": "glass-shoe",
+  "CoverImage": "glass-shoe.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Romance",
+    "Shoujo",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-23 03:06:58"
+  }
+}

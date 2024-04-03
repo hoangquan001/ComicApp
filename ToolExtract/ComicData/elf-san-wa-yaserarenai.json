@@ -1,0 +1,20 @@
+{
+  "Title": "Elf-san wa Yaserarenai",
+  "URL": "elf-san-wa-yaserarenai",
+  "CoverImage": "elf-san-wa-yaserarenai.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-20 07:21:16"
+  }
+}

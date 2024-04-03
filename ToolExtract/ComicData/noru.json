@@ -1,0 +1,22 @@
+{
+  "Title": "Noru",
+  "URL": "noru",
+  "CoverImage": "noru.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Drama",
+    "Sci-fi",
+    "Seinen",
+    "Slice of Life",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-27 03:28:18"
+  }
+}

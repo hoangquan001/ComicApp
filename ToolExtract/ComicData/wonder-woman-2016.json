@@ -1,0 +1,18 @@
+{
+  "Title": "Wonder Woman (2016)",
+  "URL": "wonder-woman-2016",
+  "CoverImage": "wonder-woman-2016.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-03 12:35:25"
+  }
+}

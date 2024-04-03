@@ -1,0 +1,20 @@
+{
+  "Title": "Con g\u00e1i Ph\u00e1p S\u01b0 v\u00e0 Ma C\u00e0 R\u1ed3ng",
+  "URL": "con-gai-phap-su-va-ma-ca-rong",
+  "CoverImage": "con-gai-phap-su-va-ma-ca-rong.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "School Life",
+    "Shoujo",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 02:12:28"
+  }
+}

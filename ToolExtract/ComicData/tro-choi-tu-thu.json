@@ -1,0 +1,21 @@
+{
+  "Title": "Tr\u00f2 Ch\u01a1i T\u01b0 Th\u00f9",
+  "URL": "tro-choi-tu-thu",
+  "CoverImage": "tro-choi-tu-thu.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Manga",
+    "Mystery",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-01 01:42:36"
+  }
+}

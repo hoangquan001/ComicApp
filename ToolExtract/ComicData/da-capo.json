@@ -1,0 +1,17 @@
+{
+  "Title": "Da Capo",
+  "URL": "da-capo",
+  "CoverImage": "da-capo.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-02-02 14:08:56"
+  }
+}

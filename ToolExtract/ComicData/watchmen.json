@@ -1,0 +1,19 @@
+{
+  "Title": "Watchmen",
+  "URL": "watchmen",
+  "CoverImage": "watchmen.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-27 01:56:17"
+  }
+}

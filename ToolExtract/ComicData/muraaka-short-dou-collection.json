@@ -1,0 +1,18 @@
+{
+  "Title": "MuraAka Short Dou Collection",
+  "URL": "muraaka-short-dou-collection",
+  "CoverImage": "muraaka-short-dou-collection.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-28",
+  "TotalChapter": 28,
+  "Chapters": {
+    "urlChapter": "chapter-28",
+    "dateUpdateChapter": "2024-01-23 23:02:14"
+  }
+}

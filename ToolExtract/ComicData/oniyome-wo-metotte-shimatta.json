@@ -1,0 +1,20 @@
+{
+  "Title": "Oniyome wo Metotte Shimatta",
+  "URL": "oniyome-wo-metotte-shimatta",
+  "CoverImage": "oniyome-wo-metotte-shimatta.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Historical",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-22 17:20:54"
+  }
+}

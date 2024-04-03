@@ -1,0 +1,20 @@
+{
+  "Title": "Tokage no Ou",
+  "URL": "tokage-no-ou",
+  "CoverImage": "tokage-no-ou.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Horror",
+    "Martial Arts",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-22 15:57:09"
+  }
+}

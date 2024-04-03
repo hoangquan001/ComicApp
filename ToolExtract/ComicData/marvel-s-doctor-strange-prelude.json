@@ -1,0 +1,22 @@
+{
+  "Title": "Marvel's Doctor Strange Prelude",
+  "URL": "marvel-s-doctor-strange-prelude",
+  "CoverImage": "marvel-s-doctor-strange-prelude.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comic",
+    "Psychological",
+    "Sci-fi",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-27 02:51:39"
+  }
+}

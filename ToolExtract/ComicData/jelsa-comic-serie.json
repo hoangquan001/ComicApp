@@ -1,0 +1,23 @@
+{
+  "Title": "Jelsa Comic Serie",
+  "URL": "jelsa-comic-serie",
+  "CoverImage": "jelsa-comic-serie.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "One shot",
+    "Romance",
+    "School Life",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-02 17:55:24"
+  }
+}

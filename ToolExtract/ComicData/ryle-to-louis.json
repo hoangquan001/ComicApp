@@ -1,0 +1,20 @@
+{
+  "Title": "Ryle To Louis",
+  "URL": "ryle-to-louis",
+  "CoverImage": "ryle-to-louis.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 20:28:08"
+  }
+}

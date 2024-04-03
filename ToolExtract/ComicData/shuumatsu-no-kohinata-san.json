@@ -1,0 +1,19 @@
+{
+  "Title": "Shuumatsu no Kohinata-san",
+  "URL": "shuumatsu-no-kohinata-san",
+  "CoverImage": "shuumatsu-no-kohinata-san.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-31 17:48:32"
+  }
+}

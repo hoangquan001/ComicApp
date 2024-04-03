@@ -1,0 +1,20 @@
+{
+  "Title": "B\u1eaft \u0111\u1ea7u n\u1ed5i l\u1ef1c t\u1eeb \u0111\u00e2y",
+  "URL": "bat-dau-noi-luc-tu-day",
+  "CoverImage": "bat-dau-noi-luc-tu-day.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "One shot",
+    "Romance",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-30 10:19:50"
+  }
+}

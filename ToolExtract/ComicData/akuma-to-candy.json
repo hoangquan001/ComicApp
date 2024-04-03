@@ -1,0 +1,19 @@
+{
+  "Title": "Akuma to Candy",
+  "URL": "akuma-to-candy",
+  "CoverImage": "akuma-to-candy.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-31 10:27:07"
+  }
+}

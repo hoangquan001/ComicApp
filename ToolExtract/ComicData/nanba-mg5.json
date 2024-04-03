@@ -1,0 +1,20 @@
+{
+  "Title": "Nanba Mg5",
+  "URL": "nanba-mg5",
+  "CoverImage": "nanba-mg5.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-50",
+  "TotalChapter": 50,
+  "Chapters": {
+    "urlChapter": "chapter-50",
+    "dateUpdateChapter": "2024-01-10 01:32:18"
+  }
+}

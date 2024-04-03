@@ -1,0 +1,18 @@
+{
+  "Title": "HELLO Mi\u00eau Ti\u00ean Sinh",
+  "URL": "hello-mieu-tien-sinh",
+  "CoverImage": "hello-mieu-tien-sinh.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-22 17:13:02"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Cain Saga",
+  "URL": "cain-saga",
+  "CoverImage": "cain-saga.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Historical",
+    "Horror",
+    "Manga",
+    "Psychological",
+    "Shoujo",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-22 02:10:01"
+  }
+}

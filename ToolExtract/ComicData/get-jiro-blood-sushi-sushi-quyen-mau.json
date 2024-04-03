@@ -1,0 +1,22 @@
+{
+  "Title": "Get Jiro: Blood & Sushi - Sushi quy\u1ec7n m\u00e1u",
+  "URL": "get-jiro-blood-sushi-sushi-quyen-mau",
+  "CoverImage": "get-jiro-blood-sushi-sushi-quyen-mau.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comic",
+    "Drama",
+    "Mature",
+    "Slice of Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 08:58:52"
+  }
+}

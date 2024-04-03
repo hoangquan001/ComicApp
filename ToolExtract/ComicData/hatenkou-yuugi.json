@@ -1,0 +1,25 @@
+{
+  "Title": "Hatenkou Yuugi",
+  "URL": "hatenkou-yuugi",
+  "CoverImage": "hatenkou-yuugi.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-31 16:53:35"
+  }
+}

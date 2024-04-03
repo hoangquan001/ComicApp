@@ -1,0 +1,21 @@
+{
+  "Title": "Repeating Your End Together",
+  "URL": "repeating-your-end-together",
+  "CoverImage": "repeating-your-end-together.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-31 01:09:59"
+  }
+}

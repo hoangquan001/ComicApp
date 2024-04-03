@@ -1,0 +1,18 @@
+{
+  "Title": "Baki dou (2018)",
+  "URL": "baki-dou-2018",
+  "CoverImage": "baki-dou-2018.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Martial Arts",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-65",
+  "TotalChapter": 65,
+  "Chapters": {
+    "urlChapter": "chapter-65",
+    "dateUpdateChapter": "2023-12-26 12:59:32"
+  }
+}

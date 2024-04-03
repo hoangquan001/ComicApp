@@ -1,0 +1,16 @@
+{
+  "Title": "Ultimate Spider-Man",
+  "URL": "ultimate-spider-man",
+  "CoverImage": "ultimate-spider-man.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-61",
+  "TotalChapter": 61,
+  "Chapters": {
+    "urlChapter": "chapter-61",
+    "dateUpdateChapter": "2024-01-21 23:11:24"
+  }
+}

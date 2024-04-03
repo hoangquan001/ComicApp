@@ -1,0 +1,21 @@
+{
+  "Title": "SaKuRa No Ichiban",
+  "URL": "sakura-no-ichiban",
+  "CoverImage": "sakura-no-ichiban.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Martial Arts",
+    "Mystery",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-31 14:32:48"
+  }
+}

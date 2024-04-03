@@ -1,0 +1,18 @@
+{
+  "Title": "Qwan",
+  "URL": "qwan",
+  "CoverImage": "qwan.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-23 09:15:38"
+  }
+}

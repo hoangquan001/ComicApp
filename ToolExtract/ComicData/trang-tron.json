@@ -1,0 +1,22 @@
+{
+  "Title": "Tr\u0103ng Tr\u00f2n",
+  "URL": "trang-tron",
+  "CoverImage": "trang-tron.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Historical",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "One shot",
+    "Shoujo",
+    "Shoujo Ai",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-27 02:41:06"
+  }
+}

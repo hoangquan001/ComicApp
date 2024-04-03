@@ -1,0 +1,19 @@
+{
+  "Title": "Batman - The Dark Prince Charming",
+  "URL": "batman-the-dark-prince-charming",
+  "CoverImage": "batman-the-dark-prince-charming.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic",
+    "Mystery",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 09:04:23"
+  }
+}

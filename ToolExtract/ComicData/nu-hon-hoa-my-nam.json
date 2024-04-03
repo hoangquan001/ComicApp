@@ -1,0 +1,20 @@
+{
+  "Title": "N\u1ee5 H\u00f4n Hoa M\u1ef9 Nam",
+  "URL": "nu-hon-hoa-my-nam",
+  "CoverImage": "nu-hon-hoa-my-nam.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 16:35:21"
+  }
+}

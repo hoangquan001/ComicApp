@@ -1,0 +1,18 @@
+{
+  "Title": "Noroi No Rensa chocolate",
+  "URL": "noroi-no-rensa-chocolate",
+  "CoverImage": "noroi-no-rensa-chocolate.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "One shot",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-01 05:56:11"
+  }
+}

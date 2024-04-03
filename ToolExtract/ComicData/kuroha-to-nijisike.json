@@ -1,0 +1,21 @@
+{
+  "Title": "Kuroha to Nijisike",
+  "URL": "kuroha-to-nijisike",
+  "CoverImage": "kuroha-to-nijisike.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Mystery",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-23 14:19:42"
+  }
+}

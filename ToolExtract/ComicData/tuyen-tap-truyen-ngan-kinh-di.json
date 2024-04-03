@@ -1,0 +1,19 @@
+{
+  "Title": "Tuy\u1ec3n t\u1eadp truy\u1ec7n ng\u1eafn kinh d\u1ecb",
+  "URL": "tuyen-tap-truyen-ngan-kinh-di",
+  "CoverImage": "tuyen-tap-truyen-ngan-kinh-di.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Mystery",
+    "School Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-23 09:07:33"
+  }
+}

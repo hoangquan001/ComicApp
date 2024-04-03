@@ -1,0 +1,19 @@
+{
+  "Title": "Qu\u00e1i Th\u00fa V\u00e0 C\u00f4 G\u00e1i M\u00f9",
+  "URL": "quai-thu-va-co-gai-mu",
+  "CoverImage": "quai-thu-va-co-gai-mu.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-22 23:29:32"
+  }
+}

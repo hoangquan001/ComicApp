@@ -1,0 +1,19 @@
+{
+  "Title": "The Witch's Hammer - Malleus Maleficarum",
+  "URL": "the-witch-s-hammer-malleus-maleficarum",
+  "CoverImage": "the-witch-s-hammer-malleus-maleficarum.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Horror",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-27 00:12:37"
+  }
+}

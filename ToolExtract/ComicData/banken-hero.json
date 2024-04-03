@@ -1,0 +1,21 @@
+{
+  "Title": "Banken Hero",
+  "URL": "banken-hero",
+  "CoverImage": "banken-hero.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "One shot",
+    "Romance",
+    "Shoujo",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-30 23:08:12"
+  }
+}

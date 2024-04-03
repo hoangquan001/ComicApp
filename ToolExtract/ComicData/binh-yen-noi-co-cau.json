@@ -1,0 +1,19 @@
+{
+  "Title": "B\u00ecnh Y\u00ean N\u01a1i C\u00f3 C\u1eadu",
+  "URL": "binh-yen-noi-co-cau",
+  "CoverImage": "binh-yen-noi-co-cau.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 18:02:08"
+  }
+}

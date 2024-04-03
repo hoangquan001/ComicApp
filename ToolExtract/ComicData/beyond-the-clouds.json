@@ -1,0 +1,19 @@
+{
+  "Title": "Beyond the Clouds",
+  "URL": "beyond-the-clouds",
+  "CoverImage": "beyond-the-clouds.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 20:00:22"
+  }
+}

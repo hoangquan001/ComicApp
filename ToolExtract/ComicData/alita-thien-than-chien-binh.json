@@ -1,0 +1,22 @@
+{
+  "Title": "Alita - Thi\u00ean Th\u1ea7n Chi\u1ebfn Binh",
+  "URL": "alita-thien-than-chien-binh",
+  "CoverImage": "alita-thien-than-chien-binh.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Manga",
+    "Martial Arts",
+    "Mature",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-23 07:41:14"
+  }
+}

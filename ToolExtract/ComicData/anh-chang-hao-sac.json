@@ -1,0 +1,19 @@
+{
+  "Title": "Anh ch\u00e0ng h\u00e1o s\u1eafc",
+  "URL": "anh-chang-hao-sac",
+  "CoverImage": "anh-chang-hao-sac.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Historical",
+    "Manga",
+    "One shot",
+    "Romance"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 09:04:57"
+  }
+}

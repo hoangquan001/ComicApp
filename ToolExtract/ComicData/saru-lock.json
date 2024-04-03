@@ -1,0 +1,20 @@
+{
+  "Title": "Saru Lock",
+  "URL": "saru-lock",
+  "CoverImage": "saru-lock.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-23 23:15:06"
+  }
+}

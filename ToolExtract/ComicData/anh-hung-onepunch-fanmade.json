@@ -1,0 +1,19 @@
+{
+  "Title": "Anh h\u00f9ng OnePunch Fanmade",
+  "URL": "anh-hung-onepunch-fanmade",
+  "CoverImage": "anh-hung-onepunch-fanmade.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-22 16:47:59"
+  }
+}

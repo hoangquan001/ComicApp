@@ -1,0 +1,22 @@
+{
+  "Title": "Th\u1ea7n T\u1ea1i Nh\u00e2n Gian",
+  "URL": "than-tai-nhan-gian",
+  "CoverImage": "than-tai-nhan-gian.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Martial Arts",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-49",
+  "TotalChapter": 49,
+  "Chapters": {
+    "urlChapter": "chapter-49",
+    "dateUpdateChapter": "2024-01-22 03:24:01"
+  }
+}

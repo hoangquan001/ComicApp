@@ -1,0 +1,18 @@
+{
+  "Title": "City Hunter",
+  "URL": "city-hunter",
+  "CoverImage": "city-hunter.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-94",
+  "TotalChapter": 94,
+  "Chapters": {
+    "urlChapter": "chapter-94",
+    "dateUpdateChapter": "2024-01-13 02:57:58"
+  }
+}

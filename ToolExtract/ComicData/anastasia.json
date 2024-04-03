@@ -1,0 +1,19 @@
+{
+  "Title": "Anastasia",
+  "URL": "anastasia",
+  "CoverImage": "anastasia.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Historical",
+    "One shot",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 01:39:08"
+  }
+}

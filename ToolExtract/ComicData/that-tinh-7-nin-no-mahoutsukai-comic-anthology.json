@@ -1,0 +1,23 @@
+{
+  "Title": "Th\u1ea5t Tinh - 7-nin no Mahoutsukai Comic Anthology",
+  "URL": "that-tinh-7-nin-no-mahoutsukai-comic-anthology",
+  "CoverImage": "that-tinh-7-nin-no-mahoutsukai-comic-anthology.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Harem",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-31 06:56:00"
+  }
+}

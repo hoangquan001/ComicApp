@@ -1,0 +1,17 @@
+{
+  "Title": "T\u1ea7m Ti\u00ean K\u00ed",
+  "URL": "tam-tien-ki",
+  "CoverImage": "tam-tien-ki.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-27 04:06:54"
+  }
+}

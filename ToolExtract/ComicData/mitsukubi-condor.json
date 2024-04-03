@@ -1,0 +1,19 @@
+{
+  "Title": "Mitsukubi Condor",
+  "URL": "mitsukubi-condor",
+  "CoverImage": "mitsukubi-condor.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-03 12:37:53"
+  }
+}

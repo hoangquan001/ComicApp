@@ -1,0 +1,21 @@
+{
+  "Title": "Shini Itaru Yamai",
+  "URL": "shini-itaru-yamai",
+  "CoverImage": "shini-itaru-yamai.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Psychological",
+    "Romance",
+    "Seinen",
+    "Slice of Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-23 11:50:41"
+  }
+}

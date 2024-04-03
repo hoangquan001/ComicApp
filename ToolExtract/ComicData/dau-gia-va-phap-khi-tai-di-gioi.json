@@ -1,0 +1,23 @@
+{
+  "Title": "\u0110\u1ea5u Gi\u1ea3 V\u00e0 Ph\u00e1p Kh\u00ed T\u1ea1i D\u1ecb Gi\u1edbi",
+  "URL": "dau-gia-va-phap-khi-tai-di-gioi",
+  "CoverImage": "dau-gia-va-phap-khi-tai-di-gioi.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Harem",
+    "Mecha",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-52",
+  "TotalChapter": 52,
+  "Chapters": {
+    "urlChapter": "chapter-52",
+    "dateUpdateChapter": "2023-12-31 22:41:34"
+  }
+}

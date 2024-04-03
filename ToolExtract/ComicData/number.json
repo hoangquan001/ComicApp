@@ -1,0 +1,20 @@
+{
+  "Title": "Number",
+  "URL": "number",
+  "CoverImage": "number.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Romance",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-26 13:06:43"
+  }
+}

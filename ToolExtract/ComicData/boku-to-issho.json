@@ -1,0 +1,19 @@
+{
+  "Title": "Boku to Issho",
+  "URL": "boku-to-issho",
+  "CoverImage": "boku-to-issho.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-50",
+  "TotalChapter": 50,
+  "Chapters": {
+    "urlChapter": "chapter-50",
+    "dateUpdateChapter": "2024-01-22 02:36:37"
+  }
+}

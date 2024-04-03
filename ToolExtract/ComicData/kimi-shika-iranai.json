@@ -1,0 +1,18 @@
+{
+  "Title": "Kimi Shika Iranai",
+  "URL": "kimi-shika-iranai",
+  "CoverImage": "kimi-shika-iranai.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 09:38:50"
+  }
+}

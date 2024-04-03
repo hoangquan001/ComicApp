@@ -1,0 +1,19 @@
+{
+  "Title": "100% no Kimi e",
+  "URL": "100-no-kimi-e",
+  "CoverImage": "100-no-kimi-e.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-22 19:26:23"
+  }
+}

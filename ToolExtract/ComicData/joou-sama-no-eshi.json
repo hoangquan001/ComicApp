@@ -1,0 +1,20 @@
+{
+  "Title": "Joou-sama no Eshi",
+  "URL": "joou-sama-no-eshi",
+  "CoverImage": "joou-sama-no-eshi.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-17 22:50:17"
+  }
+}

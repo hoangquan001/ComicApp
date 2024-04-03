@@ -1,0 +1,20 @@
+{
+  "Title": "Alice 38 \u00b0C",
+  "URL": "alice-38-c",
+  "CoverImage": "alice-38-c.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Sports"
+  ],
+  "LastChapter": "chapter-34",
+  "TotalChapter": 34,
+  "Chapters": {
+    "urlChapter": "chapter-34",
+    "dateUpdateChapter": "2024-01-15 21:15:23"
+  }
+}

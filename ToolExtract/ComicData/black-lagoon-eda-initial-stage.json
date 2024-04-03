@@ -1,0 +1,19 @@
+{
+  "Title": "Black Lagoon Eda Initial Stage",
+  "URL": "black-lagoon-eda-initial-stage",
+  "CoverImage": "black-lagoon-eda-initial-stage.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Martial Arts",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-20 18:34:55"
+  }
+}

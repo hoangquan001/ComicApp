@@ -1,0 +1,19 @@
+{
+  "Title": "Shinigami x Doctor",
+  "URL": "shinigami-x-doctor",
+  "CoverImage": "shinigami-x-doctor.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Josei",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-17 15:22:51"
+  }
+}

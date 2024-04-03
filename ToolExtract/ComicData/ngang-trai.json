@@ -1,0 +1,18 @@
+{
+  "Title": "Ngang Tr\u00e1i",
+  "URL": "ngang-trai",
+  "CoverImage": "ngang-trai.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 23:29:53"
+  }
+}

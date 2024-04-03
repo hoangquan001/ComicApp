@@ -1,0 +1,18 @@
+{
+  "Title": "Donuts Tsuushin",
+  "URL": "donuts-tsuushin",
+  "CoverImage": "donuts-tsuushin.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "School Life",
+    "Shoujo Ai",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-02 18:51:35"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Endo Hiroki Tanpenshuu",
+  "URL": "endo-hiroki-tanpenshuu",
+  "CoverImage": "endo-hiroki-tanpenshuu.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Psychological",
+    "Sci-fi",
+    "Seinen",
+    "Slice of Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 18:10:34"
+  }
+}

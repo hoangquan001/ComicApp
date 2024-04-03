@@ -1,0 +1,22 @@
+{
+  "Title": "X\u00fac X\u1eafc T\u1eed Th\u1ea7n",
+  "URL": "xuc-xac-tu-than",
+  "CoverImage": "xuc-xac-tu-than.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Mature",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-10 16:30:25"
+  }
+}

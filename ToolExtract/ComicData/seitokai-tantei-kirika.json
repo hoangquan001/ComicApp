@@ -1,0 +1,19 @@
+{
+  "Title": "Seitokai Tantei Kirika",
+  "URL": "seitokai-tantei-kirika",
+  "CoverImage": "seitokai-tantei-kirika.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "Mystery",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-25 22:23:22"
+  }
+}

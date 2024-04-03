@@ -1,0 +1,21 @@
+{
+  "Title": "Hanatsukihime",
+  "URL": "hanatsukihime",
+  "CoverImage": "hanatsukihime.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-22 18:44:50"
+  }
+}

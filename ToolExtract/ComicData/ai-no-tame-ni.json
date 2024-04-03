@@ -1,0 +1,20 @@
+{
+  "Title": "Ai no Tame ni",
+  "URL": "ai-no-tame-ni",
+  "CoverImage": "ai-no-tame-ni.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "One shot",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 03:27:45"
+  }
+}

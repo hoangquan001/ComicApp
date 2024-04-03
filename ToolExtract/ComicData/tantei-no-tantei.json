@@ -1,0 +1,20 @@
+{
+  "Title": "Tantei no Tantei",
+  "URL": "tantei-no-tantei",
+  "CoverImage": "tantei-no-tantei.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Manga",
+    "Mystery",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-21 13:03:53"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "H\u00e0nh Tr\u00ecnh Chi\u1ebfn Binh",
+  "URL": "hanh-trinh-chien-binh",
+  "CoverImage": "hanh-trinh-chien-binh.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhwa",
+    "Martial Arts",
+    "Truy\u1ec7n M\u00e0u",
+    "Xuy\u00ean Kh\u00f4ng"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-02 14:05:36"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Noritaka",
+  "URL": "noritaka",
+  "CoverImage": "noritaka.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Martial Arts",
+    "Sports"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-27 03:24:00"
+  }
+}

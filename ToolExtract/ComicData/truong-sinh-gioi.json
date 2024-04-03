@@ -1,0 +1,18 @@
+{
+  "Title": "Tr\u01b0\u1eddng Sinh Gi\u1edbi",
+  "URL": "truong-sinh-gioi",
+  "CoverImage": "truong-sinh-gioi.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Mystery"
+  ],
+  "LastChapter": "chapter-70",
+  "TotalChapter": 70,
+  "Chapters": {
+    "urlChapter": "chapter-70",
+    "dateUpdateChapter": "2023-12-29 16:13:17"
+  }
+}

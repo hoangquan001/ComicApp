@@ -1,0 +1,18 @@
+{
+  "Title": "Destiny child",
+  "URL": "destiny-child",
+  "CoverImage": "destiny-child.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-27 02:13:12"
+  }
+}

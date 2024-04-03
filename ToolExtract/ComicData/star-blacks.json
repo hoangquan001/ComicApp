@@ -1,0 +1,20 @@
+{
+  "Title": "Star Blacks",
+  "URL": "star-blacks",
+  "CoverImage": "star-blacks.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "School Life",
+    "Shoujo",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-17 15:05:41"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Huy\u1ec1n Tho\u1ea1i \u0110\u00f4i C\u00e1nh",
+  "URL": "huyen-thoai-doi-canh",
+  "CoverImage": "huyen-thoai-doi-canh.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-235",
+  "TotalChapter": 235,
+  "Chapters": {
+    "urlChapter": "chapter-235",
+    "dateUpdateChapter": "2023-12-26 17:14:15"
+  }
+}

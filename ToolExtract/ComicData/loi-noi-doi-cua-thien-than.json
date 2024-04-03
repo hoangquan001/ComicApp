@@ -1,0 +1,22 @@
+{
+  "Title": "L\u1eddi n\u00f3i d\u1ed1i c\u1ee7a Thi\u00ean Th\u1ea7n",
+  "URL": "loi-noi-doi-cua-thien-than",
+  "CoverImage": "loi-noi-doi-cua-thien-than.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Historical",
+    "Josei",
+    "Manga",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-26 17:33:23"
+  }
+}

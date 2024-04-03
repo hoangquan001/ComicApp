@@ -1,0 +1,17 @@
+{
+  "Title": "Ho\u00e0ng \u0110\u1ebf Thi\u00ean T\u00e0i",
+  "URL": "hoang-de-thien-tai",
+  "CoverImage": "hoang-de-thien-tai.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Comedy"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-01 05:11:18"
+  }
+}

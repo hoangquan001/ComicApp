@@ -1,0 +1,20 @@
+{
+  "Title": "Raid",
+  "URL": "raid",
+  "CoverImage": "raid.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-97",
+  "TotalChapter": 97,
+  "Chapters": {
+    "urlChapter": "chapter-97",
+    "dateUpdateChapter": "2023-12-31 18:55:51"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Domino Kick",
+  "URL": "domino-kick",
+  "CoverImage": "domino-kick.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-27 00:23:40"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Tales of Eternia",
+  "URL": "tales-of-eternia",
+  "CoverImage": "tales-of-eternia.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Anime",
+    "Fantasy",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-17 15:04:17"
+  }
+}

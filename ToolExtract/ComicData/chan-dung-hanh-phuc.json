@@ -1,0 +1,19 @@
+{
+  "Title": "Ch\u00e2n Dung H\u1ea1nh Ph\u00fac",
+  "URL": "chan-dung-hanh-phuc",
+  "CoverImage": "chan-dung-hanh-phuc.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "One shot",
+    "Romance"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-26 14:26:00"
+  }
+}

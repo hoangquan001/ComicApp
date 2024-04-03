@@ -1,0 +1,20 @@
+{
+  "Title": "Half and Half",
+  "URL": "half-and-half",
+  "CoverImage": "half-and-half.jpg",
+  "CreateAt": "11/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-11 17:54:14"
+  }
+}

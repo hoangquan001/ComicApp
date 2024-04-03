@@ -1,0 +1,17 @@
+{
+  "Title": "Watamote",
+  "URL": "watamote",
+  "CoverImage": "watamote.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-26 23:21:53"
+  }
+}

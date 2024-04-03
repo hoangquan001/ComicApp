@@ -1,0 +1,20 @@
+{
+  "Title": "APH Doujinshi - Besame Mucho",
+  "URL": "aph-doujinshi-besame-mucho",
+  "CoverImage": "aph-doujinshi-besame-mucho.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Historical",
+    "Shoujo Ai",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 02:34:05"
+  }
+}

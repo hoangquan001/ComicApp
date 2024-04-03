@@ -1,0 +1,21 @@
+{
+  "Title": "Tsukiyo no Fromage",
+  "URL": "tsukiyo-no-fromage",
+  "CoverImage": "tsukiyo-no-fromage.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Shounen",
+    "Slice of Life",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-23 15:43:59"
+  }
+}

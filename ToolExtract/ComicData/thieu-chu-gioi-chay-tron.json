@@ -1,0 +1,20 @@
+{
+  "Title": "Thi\u1ebfu Ch\u1ee7 Gi\u1ecfi Ch\u1ea1y Tr\u1ed1n",
+  "URL": "thieu-chu-gioi-chay-tron",
+  "CoverImage": "thieu-chu-gioi-chay-tron.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "3 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

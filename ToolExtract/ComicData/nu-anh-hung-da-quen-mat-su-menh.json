@@ -1,0 +1,20 @@
+{
+  "Title": "N\u1eef anh h\u00f9ng \u0111\u00e3 qu\u00ean m\u1ea5t s\u1ee9 m\u1ec7nh!",
+  "URL": "nu-anh-hung-da-quen-mat-su-menh",
+  "CoverImage": "nu-anh-hung-da-quen-mat-su-menh.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-17 11:01:29"
+  }
+}

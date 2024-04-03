@@ -1,0 +1,21 @@
+{
+  "Title": "Goblin Slayer: Brand New Day",
+  "URL": "goblin-slayer-brand-new-day",
+  "CoverImage": "goblin-slayer-brand-new-day.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-13 18:35:48"
+  }
+}

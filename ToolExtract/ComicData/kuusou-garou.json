@@ -1,0 +1,19 @@
+{
+  "Title": "Kuusou Garou",
+  "URL": "kuusou-garou",
+  "CoverImage": "kuusou-garou.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Sci-fi",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 19:31:29"
+  }
+}

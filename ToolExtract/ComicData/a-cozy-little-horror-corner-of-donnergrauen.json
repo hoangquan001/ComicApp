@@ -1,0 +1,16 @@
+{
+  "Title": "A Cozy Little Horror Corner Of Donnergrauen",
+  "URL": "a-cozy-little-horror-corner-of-donnergrauen",
+  "CoverImage": "a-cozy-little-horror-corner-of-donnergrauen.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 23:19:11"
+  }
+}

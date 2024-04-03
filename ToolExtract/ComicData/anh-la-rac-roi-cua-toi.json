@@ -1,0 +1,18 @@
+{
+  "Title": "Anh la\u0300 r\u0103\u0301c r\u00f4\u0301i cu\u0309a t\u00f4i",
+  "URL": "anh-la-rac-roi-cua-toi",
+  "CoverImage": "anh-la-rac-roi-cua-toi.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-17 22:15:42"
+  }
+}

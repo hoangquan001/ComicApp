@@ -1,0 +1,17 @@
+{
+  "Title": "Kantai Collection - Admiral Serenade",
+  "URL": "kantai-collection-admiral-serenade",
+  "CoverImage": "kantai-collection-admiral-serenade.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Doujinshi"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-03 10:22:13"
+  }
+}

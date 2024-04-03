@@ -1,0 +1,19 @@
+{
+  "Title": "Roppongi Black Cross",
+  "URL": "roppongi-black-cross",
+  "CoverImage": "roppongi-black-cross.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Martial Arts",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-70",
+  "TotalChapter": 70,
+  "Chapters": {
+    "urlChapter": "chapter-70",
+    "dateUpdateChapter": "2024-01-15 04:12:53"
+  }
+}

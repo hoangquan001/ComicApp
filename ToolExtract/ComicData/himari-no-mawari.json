@@ -1,0 +1,18 @@
+{
+  "Title": "Himari No Mawari",
+  "URL": "himari-no-mawari",
+  "CoverImage": "himari-no-mawari.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-13 14:32:00"
+  }
+}

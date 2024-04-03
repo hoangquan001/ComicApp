@@ -1,0 +1,19 @@
+{
+  "Title": "Kikenchitai Danshi",
+  "URL": "kikenchitai-danshi",
+  "CoverImage": "kikenchitai-danshi.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-20 14:32:30"
+  }
+}

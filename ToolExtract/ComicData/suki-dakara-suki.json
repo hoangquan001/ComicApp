@@ -1,0 +1,19 @@
+{
+  "Title": "Suki Dakara Suki",
+  "URL": "suki-dakara-suki",
+  "CoverImage": "suki-dakara-suki.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-02-01 14:27:49"
+  }
+}

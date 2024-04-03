@@ -1,0 +1,19 @@
+{
+  "Title": "Senpai! Ima Kara Kokurimasu",
+  "URL": "senpai-ima-kara-kokurimasu",
+  "CoverImage": "senpai-ima-kara-kokurimasu.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-16 21:46:35"
+  }
+}

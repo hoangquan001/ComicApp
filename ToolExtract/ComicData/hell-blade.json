@@ -1,0 +1,17 @@
+{
+  "Title": "Hell Blade",
+  "URL": "hell-blade",
+  "CoverImage": "hell-blade.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhwa",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 21:26:27"
+  }
+}

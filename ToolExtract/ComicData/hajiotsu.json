@@ -1,0 +1,19 @@
+{
+  "Title": "Hajiotsu",
+  "URL": "hajiotsu",
+  "CoverImage": "hajiotsu.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-33",
+  "TotalChapter": 33,
+  "Chapters": {
+    "urlChapter": "chapter-33",
+    "dateUpdateChapter": "2024-01-15 07:25:57"
+  }
+}

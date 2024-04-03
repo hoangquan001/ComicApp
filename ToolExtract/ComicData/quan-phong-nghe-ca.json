@@ -1,0 +1,20 @@
+{
+  "Title": "Qu\u00e2n phong ngh\u00ea ca",
+  "URL": "quan-phong-nghe-ca",
+  "CoverImage": "quan-phong-nghe-ca.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Historical",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-21 12:10:24"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Night Of The Living Deadpool",
+  "URL": "night-of-the-living-deadpool",
+  "CoverImage": "night-of-the-living-deadpool.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Comic",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-27 01:52:50"
+  }
+}

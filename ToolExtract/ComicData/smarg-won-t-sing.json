@@ -1,0 +1,19 @@
+{
+  "Title": "Smarg won't sing",
+  "URL": "smarg-won-t-sing",
+  "CoverImage": "smarg-won-t-sing.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "One shot",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-26 14:08:46"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "Ato Hitoiki De Ai",
+  "URL": "ato-hitoiki-de-ai",
+  "CoverImage": "ato-hitoiki-de-ai.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo Ai",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-31 11:05:17"
+  }
+}

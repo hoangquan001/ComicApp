@@ -1,0 +1,19 @@
+{
+  "Title": "Warau Ishi",
+  "URL": "warau-ishi",
+  "CoverImage": "warau-ishi.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Psychological",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-18 06:42:25"
+  }
+}

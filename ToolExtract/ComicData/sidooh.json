@@ -1,0 +1,19 @@
+{
+  "Title": "Sidooh",
+  "URL": "sidooh",
+  "CoverImage": "sidooh.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Historical",
+    "Martial Arts",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-20 21:23:36"
+  }
+}

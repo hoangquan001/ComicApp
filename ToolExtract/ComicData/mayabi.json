@@ -1,0 +1,21 @@
+{
+  "Title": "Mayabi",
+  "URL": "mayabi",
+  "CoverImage": "mayabi.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manhwa",
+    "Martial Arts",
+    "Sci-fi",
+    "Supernatural",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-25 20:29:53"
+  }
+}

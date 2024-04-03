@@ -1,0 +1,20 @@
+{
+  "Title": "Matantei Loki",
+  "URL": "matantei-loki",
+  "CoverImage": "matantei-loki.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga",
+    "Sci-fi",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-18 06:44:52"
+  }
+}

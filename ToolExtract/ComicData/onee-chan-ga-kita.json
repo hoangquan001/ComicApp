@@ -1,0 +1,18 @@
+{
+  "Title": "Onee-chan ga Kita",
+  "URL": "onee-chan-ga-kita",
+  "CoverImage": "onee-chan-ga-kita.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-02-02 20:32:09"
+  }
+}

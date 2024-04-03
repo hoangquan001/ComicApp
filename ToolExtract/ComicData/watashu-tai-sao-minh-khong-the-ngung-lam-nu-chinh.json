@@ -1,0 +1,21 @@
+{
+  "Title": "WataShu-ta\u0323i sao mi\u0300nh kh\u00f4ng th\u00ea\u0309 ng\u01b0ng la\u0300m n\u01b0\u0303 chi\u0301nh ?",
+  "URL": "watashu-tai-sao-minh-khong-the-ngung-lam-nu-chinh",
+  "CoverImage": "watashu-tai-sao-minh-khong-the-ngung-lam-nu-chinh.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-02 08:51:08"
+  }
+}

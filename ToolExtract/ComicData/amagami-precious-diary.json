@@ -1,0 +1,18 @@
+{
+  "Title": "Amagami - Precious Diary",
+  "URL": "amagami-precious-diary",
+  "CoverImage": "amagami-precious-diary.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-23 07:47:07"
+  }
+}

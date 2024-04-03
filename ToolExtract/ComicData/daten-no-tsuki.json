@@ -1,0 +1,17 @@
+{
+  "Title": "Daten no Tsuki",
+  "URL": "daten-no-tsuki",
+  "CoverImage": "daten-no-tsuki.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-27 02:44:13"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Ane Kurabe",
+  "URL": "ane-kurabe",
+  "CoverImage": "ane-kurabe.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Harem",
+    "Manga"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-30 17:34:12"
+  }
+}

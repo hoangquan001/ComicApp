@@ -1,0 +1,19 @@
+{
+  "Title": "Ana Satsujin",
+  "URL": "ana-satsujin",
+  "CoverImage": "ana-satsujin.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Horror",
+    "Josei",
+    "Romance"
+  ],
+  "LastChapter": "chapter-133",
+  "TotalChapter": 133,
+  "Chapters": {
+    "urlChapter": "chapter-133",
+    "dateUpdateChapter": "2023-12-30 23:36:09"
+  }
+}

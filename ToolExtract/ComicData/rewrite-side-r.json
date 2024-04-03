@@ -1,0 +1,19 @@
+{
+  "Title": "Rewrite: Side-R",
+  "URL": "rewrite-side-r",
+  "CoverImage": "rewrite-side-r.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-03 10:54:29"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "Title": "Qu\u00e1i V\u1eadt Trong Ng\u00f4i Nh\u00e0 K\u00ednh",
+  "URL": "quai-vat-trong-ngoi-nha-kinh",
+  "CoverImage": "quai-vat-trong-ngoi-nha-kinh.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic",
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Manhwa",
+    "Mystery",
+    "Romance",
+    "Shoujo",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-27 04:04:34"
+  }
+}

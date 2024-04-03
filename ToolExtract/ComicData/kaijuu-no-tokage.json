@@ -1,0 +1,18 @@
+{
+  "Title": "Kaijuu no Tokage",
+  "URL": "kaijuu-no-tokage",
+  "CoverImage": "kaijuu-no-tokage.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "One shot",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-18 07:02:09"
+  }
+}

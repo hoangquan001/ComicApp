@@ -1,0 +1,19 @@
+{
+  "Title": "No One Knows",
+  "URL": "no-one-knows",
+  "CoverImage": "no-one-knows.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhua",
+    "Seinen",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 00:30:40"
+  }
+}

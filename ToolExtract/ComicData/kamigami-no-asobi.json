@@ -1,0 +1,22 @@
+{
+  "Title": "Kamigami No Asobi",
+  "URL": "kamigami-no-asobi",
+  "CoverImage": "kamigami-no-asobi.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "Harem",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 13:08:13"
+  }
+}

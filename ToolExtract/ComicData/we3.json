@@ -1,0 +1,16 @@
+{
+  "Title": "WE3",
+  "URL": "we3",
+  "CoverImage": "we3.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-26 14:18:37"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Ibitsu",
+  "URL": "ibitsu",
+  "CoverImage": "ibitsu.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-14 01:09:33"
+  }
+}

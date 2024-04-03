@@ -1,0 +1,20 @@
+{
+  "Title": "Short Program 2",
+  "URL": "short-program-2",
+  "CoverImage": "short-program-2.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "One shot",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-27 03:12:09"
+  }
+}

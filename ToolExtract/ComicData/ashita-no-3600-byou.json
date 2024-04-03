@@ -1,0 +1,20 @@
+{
+  "Title": "Ashita No 3600-Byou",
+  "URL": "ashita-no-3600-byou",
+  "CoverImage": "ashita-no-3600-byou.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-30 06:09:52"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Kodomo wa Tomaranai",
+  "URL": "kodomo-wa-tomaranai",
+  "CoverImage": "kodomo-wa-tomaranai.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "School Life",
+    "Shoujo Ai",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-27 04:17:27"
+  }
+}

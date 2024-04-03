@@ -1,0 +1,20 @@
+{
+  "Title": "Kyou kara Hajimeru Osananajimi",
+  "URL": "kyou-kara-hajimeru-osananajimi",
+  "CoverImage": "kyou-kara-hajimeru-osananajimi.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-21 12:59:46"
+  }
+}

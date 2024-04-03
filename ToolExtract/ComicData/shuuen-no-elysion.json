@@ -1,0 +1,21 @@
+{
+  "Title": "Shuuen no Elysion",
+  "URL": "shuuen-no-elysion",
+  "CoverImage": "shuuen-no-elysion.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Josei",
+    "School Life"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-22 02:20:23"
+  }
+}

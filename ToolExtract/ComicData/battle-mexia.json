@@ -1,0 +1,18 @@
+{
+  "Title": "Battle Mexia",
+  "URL": "battle-mexia",
+  "CoverImage": "battle-mexia.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Mature",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-26 10:05:30"
+  }
+}

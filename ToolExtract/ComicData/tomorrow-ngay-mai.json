@@ -1,0 +1,20 @@
+{
+  "Title": "Tomorrow - Ng\u00e0y mai",
+  "URL": "tomorrow-ngay-mai",
+  "CoverImage": "tomorrow-ngay-mai.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Supernatural",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-31",
+  "TotalChapter": 31,
+  "Chapters": {
+    "urlChapter": "chapter-31",
+    "dateUpdateChapter": "2024-01-22 20:14:50"
+  }
+}

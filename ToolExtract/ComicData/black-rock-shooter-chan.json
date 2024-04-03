@@ -1,0 +1,19 @@
+{
+  "Title": "Black Rock Shooter-Chan",
+  "URL": "black-rock-shooter-chan",
+  "CoverImage": "black-rock-shooter-chan.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-18 07:13:02"
+  }
+}

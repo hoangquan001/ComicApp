@@ -1,0 +1,19 @@
+{
+  "Title": "Genshiken",
+  "URL": "genshiken",
+  "CoverImage": "genshiken.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-78",
+  "TotalChapter": 78,
+  "Chapters": {
+    "urlChapter": "chapter-78",
+    "dateUpdateChapter": "2024-01-22 16:14:27"
+  }
+}

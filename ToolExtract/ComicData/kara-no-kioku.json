@@ -1,0 +1,20 @@
+{
+  "Title": "Kara no Kioku",
+  "URL": "kara-no-kioku",
+  "CoverImage": "kara-no-kioku.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Shoujo",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-17 21:59:42"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "C\u00e1 h\u1ed3i",
+  "URL": "ca-hoi",
+  "CoverImage": "ca-hoi.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Manga",
+    "Seinen",
+    "Smut"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-15 10:53:26"
+  }
+}

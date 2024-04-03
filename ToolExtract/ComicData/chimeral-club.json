@@ -1,0 +1,18 @@
+{
+  "Title": "Chimeral Club",
+  "URL": "chimeral-club",
+  "CoverImage": "chimeral-club.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 08:58:59"
+  }
+}

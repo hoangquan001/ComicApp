@@ -1,0 +1,20 @@
+{
+  "Title": "Sleepy Barmaid",
+  "URL": "sleepy-barmaid",
+  "CoverImage": "sleepy-barmaid.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-14 10:27:29"
+  }
+}

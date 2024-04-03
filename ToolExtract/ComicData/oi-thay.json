@@ -1,0 +1,19 @@
+{
+  "Title": "\u00d4i Th\u1ea7y...!",
+  "URL": "oi-thay",
+  "CoverImage": "oi-thay.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Slice of Life",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-01 09:17:55"
+  }
+}

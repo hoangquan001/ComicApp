@@ -1,0 +1,20 @@
+{
+  "Title": "V\u1ee3 c\u1ee7a ng\u01b0\u1eddi \u0111\u00e0n \u00f4ng",
+  "URL": "vo-cua-nguoi-dan-ong",
+  "CoverImage": "vo-cua-nguoi-dan-ong.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Josei",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-30 12:13:09"
+  }
+}

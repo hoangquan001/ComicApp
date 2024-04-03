@@ -1,0 +1,18 @@
+{
+  "Title": "Superior Day",
+  "URL": "superior-day",
+  "CoverImage": "superior-day.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhwa",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-24 19:02:35"
+  }
+}

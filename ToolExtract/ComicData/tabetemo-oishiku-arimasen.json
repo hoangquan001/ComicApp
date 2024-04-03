@@ -1,0 +1,20 @@
+{
+  "Title": "Tabetemo Oishiku Arimasen",
+  "URL": "tabetemo-oishiku-arimasen",
+  "CoverImage": "tabetemo-oishiku-arimasen.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shounen Ai"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-17 11:18:08"
+  }
+}

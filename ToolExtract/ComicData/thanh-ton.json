@@ -1,0 +1,23 @@
+{
+  "Title": "Th\u00e1nh T\u00f4n",
+  "URL": "thanh-ton",
+  "CoverImage": "thanh-ton.jpg",
+  "CreateAt": "11/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Martial Arts",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-11 23:11:39"
+  }
+}

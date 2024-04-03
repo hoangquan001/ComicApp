@@ -1,0 +1,21 @@
+{
+  "Title": "S\u00e1t Th\u1ee7",
+  "URL": "sat-thu",
+  "CoverImage": "sat-thu.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhua",
+    "Martial Arts",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-30 10:50:31"
+  }
+}

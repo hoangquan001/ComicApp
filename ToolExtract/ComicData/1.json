@@ -1,0 +1,16 @@
+{
+  "Title": "1",
+  "URL": "1",
+  "CoverImage": "1.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-23 23:39:14"
+  }
+}

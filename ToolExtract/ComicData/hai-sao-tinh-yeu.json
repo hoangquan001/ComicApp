@@ -1,0 +1,17 @@
+{
+  "Title": "H\u00e1i Sao T\u00ecnh Y\u00eau",
+  "URL": "hai-sao-tinh-yeu",
+  "CoverImage": "hai-sao-tinh-yeu.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-23 09:27:42"
+  }
+}

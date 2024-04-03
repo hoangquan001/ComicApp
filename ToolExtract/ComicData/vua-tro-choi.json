@@ -1,0 +1,20 @@
+{
+  "Title": "Vua tr\u00f2 ch\u01a1i",
+  "URL": "vua-tro-choi",
+  "CoverImage": "vua-tro-choi.jpg",
+  "CreateAt": "20/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Seinen",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-279",
+  "TotalChapter": 279,
+  "Chapters": {
+    "urlChapter": "chapter-279",
+    "dateUpdateChapter": "2023-12-20 02:34:58"
+  }
+}

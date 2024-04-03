@@ -1,0 +1,17 @@
+{
+  "Title": "Hoshi No Witch",
+  "URL": "hoshi-no-witch",
+  "CoverImage": "hoshi-no-witch.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 03:56:13"
+  }
+}

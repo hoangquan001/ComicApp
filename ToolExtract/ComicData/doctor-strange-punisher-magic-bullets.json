@@ -1,0 +1,19 @@
+{
+  "Title": "Doctor Strange/Punisher: Magic Bullets",
+  "URL": "doctor-strange-punisher-magic-bullets",
+  "CoverImage": "doctor-strange-punisher-magic-bullets.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic",
+    "Mystery",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-02-01 13:00:48"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "C\u00f9ng m\u00e8o c\u01b0ng chi\u1ebfn kh\u1eafp d\u1ecb gi\u1edbi",
+  "URL": "cung-meo-cung-chien-khap-di-gioi",
+  "CoverImage": "cung-meo-cung-chien-khap-di-gioi.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Manga",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-18 06:35:45"
+  }
+}

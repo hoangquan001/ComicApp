@@ -1,0 +1,17 @@
+{
+  "Title": "Behind Master",
+  "URL": "behind-master",
+  "CoverImage": "behind-master.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure"
+  ],
+  "LastChapter": "chapter-46",
+  "TotalChapter": 46,
+  "Chapters": {
+    "urlChapter": "chapter-46",
+    "dateUpdateChapter": "2024-01-27 03:35:05"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "GE - Good Ending",
+  "URL": "ge-good-ending",
+  "CoverImage": "ge-good-ending.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-157",
+  "TotalChapter": 157,
+  "Chapters": {
+    "urlChapter": "chapter-157",
+    "dateUpdateChapter": "2024-01-02 11:14:02"
+  }
+}

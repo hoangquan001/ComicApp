@@ -1,0 +1,21 @@
+{
+  "Title": "Maria No Shiro",
+  "URL": "maria-no-shiro",
+  "CoverImage": "maria-no-shiro.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Historical",
+    "Josei",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-14 23:39:43"
+  }
+}

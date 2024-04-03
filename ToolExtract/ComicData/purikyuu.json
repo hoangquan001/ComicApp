@@ -1,0 +1,19 @@
+{
+  "Title": "Purikyuu",
+  "URL": "purikyuu",
+  "CoverImage": "purikyuu.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 22:02:59"
+  }
+}

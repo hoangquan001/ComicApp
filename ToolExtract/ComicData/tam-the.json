@@ -1,0 +1,22 @@
+{
+  "Title": "TAM TH\u00ca\u0301",
+  "URL": "tam-the",
+  "CoverImage": "tam-the.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Horror",
+    "Mystery",
+    "Shounen",
+    "Supernatural",
+    "Tragedy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 18:21:41"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Thi\u00ean Th\u1ea7n B\u1ea3o H\u1ed9",
+  "URL": "thien-than-bao-ho",
+  "CoverImage": "thien-than-bao-ho.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-28",
+  "TotalChapter": 28,
+  "Chapters": {
+    "urlChapter": "chapter-28",
+    "dateUpdateChapter": "2024-01-23 07:52:21"
+  }
+}

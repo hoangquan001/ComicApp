@@ -1,0 +1,19 @@
+{
+  "Title": "Family Size",
+  "URL": "family-size",
+  "CoverImage": "family-size.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-02-03 11:02:57"
+  }
+}

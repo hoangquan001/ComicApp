@@ -1,0 +1,17 @@
+{
+  "Title": "Hi\u1ec7n Th\u1ebf Th\u1ea7n Linh",
+  "URL": "hien-the-than-linh",
+  "CoverImage": "hien-the-than-linh.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-02 14:51:44"
+  }
+}

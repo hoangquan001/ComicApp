@@ -1,0 +1,19 @@
+{
+  "Title": "Koisuru Yankee Girl",
+  "URL": "koisuru-yankee-girl",
+  "CoverImage": "koisuru-yankee-girl.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-25 07:08:05"
+  }
+}

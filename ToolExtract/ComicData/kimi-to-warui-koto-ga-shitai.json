@@ -1,0 +1,19 @@
+{
+  "Title": "Kimi to Warui Koto ga Shitai",
+  "URL": "kimi-to-warui-koto-ga-shitai",
+  "CoverImage": "kimi-to-warui-koto-ga-shitai.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-20 14:55:17"
+  }
+}

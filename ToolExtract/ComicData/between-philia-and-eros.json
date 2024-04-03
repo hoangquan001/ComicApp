@@ -1,0 +1,19 @@
+{
+  "Title": "Between Philia and Eros",
+  "URL": "between-philia-and-eros",
+  "CoverImage": "between-philia-and-eros.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-03 13:02:29"
+  }
+}

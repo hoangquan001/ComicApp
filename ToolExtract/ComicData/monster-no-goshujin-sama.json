@@ -1,0 +1,23 @@
+{
+  "Title": "Monster No Goshujin-Sama",
+  "URL": "monster-no-goshujin-sama",
+  "CoverImage": "monster-no-goshujin-sama.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Harem",
+    "Mature",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-12 12:58:42"
+  }
+}

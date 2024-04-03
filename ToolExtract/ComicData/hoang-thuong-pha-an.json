@@ -1,0 +1,20 @@
+{
+  "Title": "Ho\u00e0ng th\u01b0\u1ee3ng ph\u00e1 \u00e1n",
+  "URL": "hoang-thuong-pha-an",
+  "CoverImage": "hoang-thuong-pha-an.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Historical",
+    "Romance",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-17 18:42:11"
+  }
+}

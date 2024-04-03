@@ -1,0 +1,20 @@
+{
+  "Title": "G-Maru Edition",
+  "URL": "g-maru-edition",
+  "CoverImage": "g-maru-edition.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-02-01 10:56:56"
+  }
+}

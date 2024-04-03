@@ -1,0 +1,19 @@
+{
+  "Title": "Strawberry Marshmallow",
+  "URL": "strawberry-marshmallow",
+  "CoverImage": "strawberry-marshmallow.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-02-01 13:01:41"
+  }
+}

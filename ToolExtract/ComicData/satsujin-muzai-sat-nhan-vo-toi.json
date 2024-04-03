@@ -1,0 +1,19 @@
+{
+  "Title": "Satsujin Muzai - S\u00e1t Nh\u00e2n V\u00f4 T\u1ed9i",
+  "URL": "satsujin-muzai-sat-nhan-vo-toi",
+  "CoverImage": "satsujin-muzai-sat-nhan-vo-toi.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Mystery",
+    "Psychological",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 11:14:11"
+  }
+}

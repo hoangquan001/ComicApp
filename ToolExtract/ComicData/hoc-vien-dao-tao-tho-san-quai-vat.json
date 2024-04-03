@@ -1,0 +1,20 @@
+{
+  "Title": "H\u1ecdc vi\u1ec7n \u0111\u00e0o t\u1ea1o th\u1ee3 s\u0103n qu\u00e1i v\u1eadt",
+  "URL": "hoc-vien-dao-tao-tho-san-quai-vat",
+  "CoverImage": "hoc-vien-dao-tao-tho-san-quai-vat.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Sci-fi",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-27 00:42:30"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Oshiete, Kurogane-Kun",
+  "URL": "oshiete-kurogane-kun",
+  "CoverImage": "oshiete-kurogane-kun.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 12:36:22"
+  }
+}

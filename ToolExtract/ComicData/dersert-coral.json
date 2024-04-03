@@ -1,0 +1,20 @@
+{
+  "Title": "Dersert Coral",
+  "URL": "dersert-coral",
+  "CoverImage": "dersert-coral.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-02-01 14:12:32"
+  }
+}

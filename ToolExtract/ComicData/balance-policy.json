@@ -1,0 +1,24 @@
+{
+  "Title": "Balance Policy",
+  "URL": "balance-policy",
+  "CoverImage": "balance-policy.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "Sci-fi",
+    "Seinen",
+    "Slice of Life",
+    "Tragedy",
+    "Kha\u0301c",
+    "Yuri"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-16 01:58:20"
+  }
+}

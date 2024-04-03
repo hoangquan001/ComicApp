@@ -1,0 +1,20 @@
+{
+  "Title": "Sanji v\u00e0 Tra\u0301i C\u00e2y \u00c1c Quy\u0309",
+  "URL": "sanji-va-trai-cay-ac-quy",
+  "CoverImage": "sanji-va-trai-cay-ac-quy.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "One shot",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-23 07:51:11"
+  }
+}

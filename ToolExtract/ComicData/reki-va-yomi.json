@@ -1,0 +1,21 @@
+{
+  "Title": "Reki v\u00e0 Yomi",
+  "URL": "reki-va-yomi",
+  "CoverImage": "reki-va-yomi.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Manga",
+    "Psychological",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-28",
+  "TotalChapter": 28,
+  "Chapters": {
+    "urlChapter": "chapter-28",
+    "dateUpdateChapter": "2024-01-23 15:57:30"
+  }
+}

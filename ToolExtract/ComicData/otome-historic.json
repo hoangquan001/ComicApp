@@ -1,0 +1,21 @@
+{
+  "Title": "Otome Historic",
+  "URL": "otome-historic",
+  "CoverImage": "otome-historic.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "One shot",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 03:32:19"
+  }
+}

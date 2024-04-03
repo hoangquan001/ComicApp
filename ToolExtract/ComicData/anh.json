@@ -1,0 +1,19 @@
+{
+  "Title": "Anh",
+  "URL": "anh",
+  "CoverImage": "anh.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manhua",
+    "School Life",
+    "Shounen",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-27 00:46:07"
+  }
+}

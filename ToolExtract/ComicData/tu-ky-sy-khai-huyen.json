@@ -1,0 +1,21 @@
+{
+  "Title": "T\u1ee9 K\u1ef5 S\u1ef9 Kh\u1ea3i Huy\u1ec1n",
+  "URL": "tu-ky-sy-khai-huyen",
+  "CoverImage": "tu-ky-sy-khai-huyen.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 11:47:40"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Bad Girlds",
+  "URL": "bad-girlds",
+  "CoverImage": "bad-girlds.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-01 02:57:40"
+  }
+}

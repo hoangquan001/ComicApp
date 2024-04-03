@@ -1,0 +1,18 @@
+{
+  "Title": "Ari & Kirigirisu",
+  "URL": "ari-kirigirisu",
+  "CoverImage": "ari-kirigirisu.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Shoujo",
+    "Shoujo Ai"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-02-02 10:24:50"
+  }
+}

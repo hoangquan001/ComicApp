@@ -1,0 +1,21 @@
+{
+  "Title": "Claws Of Darkness",
+  "URL": "claws-of-darkness",
+  "CoverImage": "claws-of-darkness.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Horror",
+    "Manhua",
+    "Mystery",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-02 09:50:25"
+  }
+}

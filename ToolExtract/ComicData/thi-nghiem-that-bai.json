@@ -1,0 +1,20 @@
+{
+  "Title": "Th\u00ed Nghi\u1ec7m Th\u1ea5t B\u1ea1i",
+  "URL": "thi-nghiem-that-bai",
+  "CoverImage": "thi-nghiem-that-bai.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-27 01:40:54"
+  }
+}

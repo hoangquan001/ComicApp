@@ -1,0 +1,20 @@
+{
+  "Title": "Hamefura X Arte",
+  "URL": "hamefura-x-arte",
+  "CoverImage": "hamefura-x-arte.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-23 15:57:40"
+  }
+}

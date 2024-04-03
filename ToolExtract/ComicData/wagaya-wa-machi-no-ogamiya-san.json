@@ -1,0 +1,18 @@
+{
+  "Title": "Wagaya Wa Machi No Ogamiya-san",
+  "URL": "wagaya-wa-machi-no-ogamiya-san",
+  "CoverImage": "wagaya-wa-machi-no-ogamiya-san.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-17 13:53:11"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Akuma na Cupid",
+  "URL": "akuma-na-cupid",
+  "CoverImage": "akuma-na-cupid.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "One shot",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-27 03:15:35"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Meikyuu Romantica",
+  "URL": "meikyuu-romantica",
+  "CoverImage": "meikyuu-romantica.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-21 17:13:48"
+  }
+}
