@@ -1,0 +1,18 @@
+{
+  "Title": "The Melancholy of Haruhi",
+  "URL": "the-melancholy-of-haruhi",
+  "CoverImage": "the-melancholy-of-haruhi.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 01:34:48"
+  }
+}

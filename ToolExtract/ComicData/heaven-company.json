@@ -1,0 +1,19 @@
+{
+  "Title": "Heaven Company",
+  "URL": "heaven-company",
+  "CoverImage": "heaven-company.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-27 04:02:17"
+  }
+}

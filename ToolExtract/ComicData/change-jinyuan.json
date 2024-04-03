@@ -1,0 +1,25 @@
+{
+  "Title": "Change (JinYuan)",
+  "URL": "change-jinyuan",
+  "CoverImage": "change-jinyuan.jpg",
+  "CreateAt": "25/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Manhwa",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-101",
+  "TotalChapter": 101,
+  "Chapters": {
+    "urlChapter": "chapter-101",
+    "dateUpdateChapter": "2023-12-25 16:59:56"
+  }
+}

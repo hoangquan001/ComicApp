@@ -1,0 +1,21 @@
+{
+  "Title": "Psycho-Pass",
+  "URL": "psycho-pass",
+  "CoverImage": "psycho-pass.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-17 15:31:37"
+  }
+}

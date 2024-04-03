@@ -1,0 +1,23 @@
+{
+  "Title": "Gunjou Senki",
+  "URL": "gunjou-senki",
+  "CoverImage": "gunjou-senki.jpg",
+  "CreateAt": "08/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Historical",
+    "Horror",
+    "Mystery",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-34",
+  "TotalChapter": 34,
+  "Chapters": {
+    "urlChapter": "chapter-34",
+    "dateUpdateChapter": "2024-01-08 03:46:37"
+  }
+}

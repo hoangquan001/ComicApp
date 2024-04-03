@@ -11,46 +11,8 @@
   ],
   "LastChapter": "chapter-10",
   "TotalChapter": 10,
-  "Chapters": [
-    {
-      "urlChapter": "chapter-10",
-      "dateUpdateChapter": "9 gi\u01a1\u0300 tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-9",
-      "dateUpdateChapter": "7 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-8",
-      "dateUpdateChapter": "15 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-7",
-      "dateUpdateChapter": "21 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-6",
-      "dateUpdateChapter": "29 nga\u0300y tr\u01b0\u01a1\u0301c"
-    },
-    {
-      "urlChapter": "chapter-5",
-      "dateUpdateChapter": "2024-02-27 07:45:24"
-    },
-    {
-      "urlChapter": "chapter-4",
-      "dateUpdateChapter": "2024-02-23 09:44:37"
-    },
-    {
-      "urlChapter": "chapter-3",
-      "dateUpdateChapter": "2024-02-23 09:44:35"
-    },
-    {
-      "urlChapter": "chapter-2",
-      "dateUpdateChapter": "2024-02-23 09:44:34"
-    },
-    {
-      "urlChapter": "chapter-1",
-      "dateUpdateChapter": "2024-02-23 09:44:32"
-    }
-  ]
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "1 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
 }

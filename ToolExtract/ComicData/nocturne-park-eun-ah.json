@@ -1,0 +1,20 @@
+{
+  "Title": "Nocturne - Park Eun Ah",
+  "URL": "nocturne-park-eun-ah",
+  "CoverImage": "nocturne-park-eun-ah.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manhwa",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-26 13:56:28"
+  }
+}

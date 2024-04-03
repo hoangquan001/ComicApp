@@ -1,0 +1,21 @@
+{
+  "Title": "Shinigamisama ni Saigo no Onegai Wo",
+  "URL": "shinigamisama-ni-saigo-no-onegai-wo",
+  "CoverImage": "shinigamisama-ni-saigo-no-onegai-wo.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "One shot",
+    "Psychological",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-02-01 08:50:23"
+  }
+}

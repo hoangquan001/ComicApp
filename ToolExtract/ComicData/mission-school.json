@@ -1,0 +1,18 @@
+{
+  "Title": "Mission! School",
+  "URL": "mission-school",
+  "CoverImage": "mission-school.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-26 12:41:30"
+  }
+}

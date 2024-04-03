@@ -1,0 +1,19 @@
+{
+  "Title": "Not so shoujo love story",
+  "URL": "not-so-shoujo-love-story",
+  "CoverImage": "not-so-shoujo-love-story.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Shoujo Ai",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-32",
+  "TotalChapter": 32,
+  "Chapters": {
+    "urlChapter": "chapter-32",
+    "dateUpdateChapter": "2024-01-12 23:55:50"
+  }
+}

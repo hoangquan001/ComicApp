@@ -1,0 +1,21 @@
+{
+  "Title": "Dear Sa-chan",
+  "URL": "dear-sa-chan",
+  "CoverImage": "dear-sa-chan.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Ecchi",
+    "Manga",
+    "Romance",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-35",
+  "TotalChapter": 35,
+  "Chapters": {
+    "urlChapter": "chapter-35",
+    "dateUpdateChapter": "2023-12-31 10:30:42"
+  }
+}

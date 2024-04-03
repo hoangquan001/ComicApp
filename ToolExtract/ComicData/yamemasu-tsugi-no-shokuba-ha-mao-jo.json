@@ -1,0 +1,22 @@
+{
+  "Title": "Yamemasu Tsugi No Shokuba Ha Mao Jo",
+  "URL": "yamemasu-tsugi-no-shokuba-ha-mao-jo",
+  "CoverImage": "yamemasu-tsugi-no-shokuba-ha-mao-jo.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Romance",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-67",
+  "TotalChapter": 67,
+  "Chapters": {
+    "urlChapter": "chapter-67",
+    "dateUpdateChapter": "2023-12-26 19:24:28"
+  }
+}

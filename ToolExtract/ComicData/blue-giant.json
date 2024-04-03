@@ -1,0 +1,20 @@
+{
+  "Title": "Blue Giant",
+  "URL": "blue-giant",
+  "CoverImage": "blue-giant.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "School Life",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-26 23:32:29"
+  }
+}

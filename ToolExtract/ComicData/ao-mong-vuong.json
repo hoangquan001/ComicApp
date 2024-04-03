@@ -1,0 +1,23 @@
+{
+  "Title": "\u1ea2o M\u1ed9ng V\u01b0\u01a1ng",
+  "URL": "ao-mong-vuong",
+  "CoverImage": "ao-mong-vuong.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comedy",
+    "Manhwa",
+    "Mystery",
+    "Sci-fi",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-73",
+  "TotalChapter": 73,
+  "Chapters": {
+    "urlChapter": "chapter-73",
+    "dateUpdateChapter": "2023-12-29 21:03:41"
+  }
+}

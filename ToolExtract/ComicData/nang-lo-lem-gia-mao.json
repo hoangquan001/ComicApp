@@ -1,0 +1,24 @@
+{
+  "Title": "N\u00e0ng L\u1ecd Lem Gi\u1ea3 M\u1ea1o",
+  "URL": "nang-lo-lem-gia-mao",
+  "CoverImage": "nang-lo-lem-gia-mao.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic",
+    "Doujinshi",
+    "Drama",
+    "Historical",
+    "Manga",
+    "Mystery",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-14 11:24:24"
+  }
+}

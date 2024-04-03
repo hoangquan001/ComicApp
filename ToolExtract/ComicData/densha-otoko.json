@@ -1,0 +1,19 @@
+{
+  "Title": "Densha Otoko",
+  "URL": "densha-otoko",
+  "CoverImage": "densha-otoko.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-24 19:50:50"
+  }
+}

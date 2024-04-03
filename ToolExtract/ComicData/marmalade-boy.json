@@ -1,0 +1,18 @@
+{
+  "Title": "Marmalade Boy",
+  "URL": "marmalade-boy",
+  "CoverImage": "marmalade-boy.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-14 01:46:39"
+  }
+}

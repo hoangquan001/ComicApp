@@ -1,0 +1,21 @@
+{
+  "Title": "Cu\u1ed3ng S\u00e1t",
+  "URL": "cuong-sat",
+  "CoverImage": "cuong-sat.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Mystery",
+    "School Life",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-04 17:56:56"
+  }
+}

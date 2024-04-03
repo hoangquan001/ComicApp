@@ -1,0 +1,19 @@
+{
+  "Title": "N\u1eef Sinh B\u1ea3o M\u1eabu",
+  "URL": "nu-sinh-bao-mau",
+  "CoverImage": "nu-sinh-bao-mau.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-26 22:46:59"
+  }
+}

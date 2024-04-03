@@ -1,0 +1,22 @@
+{
+  "Title": "Shin Sekai Yori",
+  "URL": "shin-sekai-yori",
+  "CoverImage": "shin-sekai-yori.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Shoujo Ai",
+    "Shounen",
+    "Kha\u0301c",
+    "Yuri"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-21 16:33:22"
+  }
+}

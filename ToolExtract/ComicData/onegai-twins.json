@@ -1,0 +1,21 @@
+{
+  "Title": "Onegai Twins",
+  "URL": "onegai-twins",
+  "CoverImage": "onegai-twins.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-27 04:28:42"
+  }
+}

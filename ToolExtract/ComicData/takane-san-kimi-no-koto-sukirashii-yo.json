@@ -1,0 +1,21 @@
+{
+  "Title": "Takane-san, Kimi no Koto Sukirashii yo",
+  "URL": "takane-san-kimi-no-koto-sukirashii-yo",
+  "CoverImage": "takane-san-kimi-no-koto-sukirashii-yo.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-23 02:30:27"
+  }
+}

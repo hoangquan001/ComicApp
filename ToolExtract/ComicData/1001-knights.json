@@ -1,0 +1,19 @@
+{
+  "Title": "1001 Knights",
+  "URL": "1001-knights",
+  "CoverImage": "1001-knights.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-20 02:58:54"
+  }
+}

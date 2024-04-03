@@ -1,0 +1,17 @@
+{
+  "Title": "Hiiro No Isu",
+  "URL": "hiiro-no-isu",
+  "CoverImage": "hiiro-no-isu.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-02 14:55:21"
+  }
+}

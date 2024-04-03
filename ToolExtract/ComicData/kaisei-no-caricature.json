@@ -1,0 +1,24 @@
+{
+  "Title": "Kaisei no Caricature",
+  "URL": "kaisei-no-caricature",
+  "CoverImage": "kaisei-no-caricature.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Mystery",
+    "Psychological",
+    "School Life",
+    "Sci-fi",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-31 19:49:47"
+  }
+}

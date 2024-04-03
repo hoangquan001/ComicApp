@@ -1,0 +1,20 @@
+{
+  "Title": "Tsuki No Toiki",
+  "URL": "tsuki-no-toiki",
+  "CoverImage": "tsuki-no-toiki.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Historical",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 13:44:21"
+  }
+}

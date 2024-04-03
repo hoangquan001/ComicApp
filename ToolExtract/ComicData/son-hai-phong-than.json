@@ -1,0 +1,22 @@
+{
+  "Title": "S\u01a1n H\u1ea3i Phong Th\u1ea7n",
+  "URL": "son-hai-phong-than",
+  "CoverImage": "son-hai-phong-than.jpg",
+  "CreateAt": "23/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Martial Arts",
+    "Mystery",
+    "Supernatural",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-128",
+  "TotalChapter": 128,
+  "Chapters": {
+    "urlChapter": "chapter-128",
+    "dateUpdateChapter": "2023-12-23 21:32:04"
+  }
+}

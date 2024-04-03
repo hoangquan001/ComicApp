@@ -1,0 +1,18 @@
+{
+  "Title": "Zelda no Densetsu - Twilight Princess",
+  "URL": "zelda-no-densetsu-twilight-princess",
+  "CoverImage": "zelda-no-densetsu-twilight-princess.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-25 10:38:33"
+  }
+}

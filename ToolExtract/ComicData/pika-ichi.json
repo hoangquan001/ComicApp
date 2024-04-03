@@ -1,0 +1,21 @@
+{
+  "Title": "Pika Ichi",
+  "URL": "pika-ichi",
+  "CoverImage": "pika-ichi.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-23",
+  "TotalChapter": 23,
+  "Chapters": {
+    "urlChapter": "chapter-23",
+    "dateUpdateChapter": "2024-01-22 10:27:33"
+  }
+}

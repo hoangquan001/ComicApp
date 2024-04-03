@@ -1,0 +1,24 @@
+{
+  "Title": "Type-Moon Complex X",
+  "URL": "type-moon-complex-x",
+  "CoverImage": "type-moon-complex-x.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Doujinshi",
+    "Ecchi",
+    "Fantasy",
+    "Harem",
+    "Horror",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-23 00:58:11"
+  }
+}

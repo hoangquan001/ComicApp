@@ -1,0 +1,19 @@
+{
+  "Title": "Kyutto Musunde, Suki",
+  "URL": "kyutto-musunde-suki",
+  "CoverImage": "kyutto-musunde-suki.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-12 02:08:45"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Chuy\u1ec7n Tr\u00ecnh Duy\u1ec7t",
+  "URL": "chuyen-trinh-duyet",
+  "CoverImage": "chuyen-trinh-duyet.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-23 16:44:43"
+  }
+}

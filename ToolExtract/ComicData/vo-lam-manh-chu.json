@@ -1,0 +1,20 @@
+{
+  "Title": "V\u00f5 l\u00e2m manh ch\u1ee7",
+  "URL": "vo-lam-manh-chu",
+  "CoverImage": "vo-lam-manh-chu.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-15 23:58:12"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Highschool of The Dead",
+  "URL": "highschool-of-the-dead",
+  "CoverImage": "highschool-of-the-dead.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Horror",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-04 16:19:11"
+  }
+}

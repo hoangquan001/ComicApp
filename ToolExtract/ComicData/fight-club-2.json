@@ -1,0 +1,20 @@
+{
+  "Title": "Fight Club 2",
+  "URL": "fight-club-2",
+  "CoverImage": "fight-club-2.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comic",
+    "Mature",
+    "Psychological"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 01:38:24"
+  }
+}

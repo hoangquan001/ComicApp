@@ -1,0 +1,20 @@
+{
+  "Title": "Galaxy Angel",
+  "URL": "galaxy-angel",
+  "CoverImage": "galaxy-angel.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Romance",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-35",
+  "TotalChapter": 35,
+  "Chapters": {
+    "urlChapter": "chapter-35",
+    "dateUpdateChapter": "2024-01-26 14:48:04"
+  }
+}

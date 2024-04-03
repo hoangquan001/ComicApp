@@ -1,0 +1,19 @@
+{
+  "Title": "Junjou Drop",
+  "URL": "junjou-drop",
+  "CoverImage": "junjou-drop.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-17 17:16:06"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Stay Gold",
+  "URL": "stay-gold",
+  "CoverImage": "stay-gold.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Shoujo Ai",
+    "Shounen",
+    "Slice of Life",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-26 18:13:14"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Bye Bye Brother",
+  "URL": "bye-bye-brother",
+  "CoverImage": "bye-bye-brother.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-02 15:30:28"
+  }
+}

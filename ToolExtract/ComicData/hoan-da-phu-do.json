@@ -1,0 +1,20 @@
+{
+  "Title": "Hoan D\u1ea1 Ph\u00f9 \u0110\u1ed3",
+  "URL": "hoan-da-phu-do",
+  "CoverImage": "hoan-da-phu-do.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 03:07:34"
+  }
+}

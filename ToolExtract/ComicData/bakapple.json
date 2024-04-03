@@ -1,0 +1,18 @@
+{
+  "Title": "Bakapple",
+  "URL": "bakapple",
+  "CoverImage": "bakapple.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-23 00:30:10"
+  }
+}

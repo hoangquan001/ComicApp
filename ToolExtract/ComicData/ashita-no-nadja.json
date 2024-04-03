@@ -1,0 +1,21 @@
+{
+  "Title": "Ashita No Nadja",
+  "URL": "ashita-no-nadja",
+  "CoverImage": "ashita-no-nadja.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Drama",
+    "Historical",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-26 21:08:13"
+  }
+}

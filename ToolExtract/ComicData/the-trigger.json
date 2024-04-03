@@ -1,0 +1,18 @@
+{
+  "Title": "The Trigger",
+  "URL": "the-trigger",
+  "CoverImage": "the-trigger.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Mature",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-23 13:32:30"
+  }
+}

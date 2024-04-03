@@ -1,0 +1,21 @@
+{
+  "Title": "Alice in Adultland",
+  "URL": "alice-in-adultland",
+  "CoverImage": "alice-in-adultland.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comic",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo Ai",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-26 08:33:20"
+  }
+}

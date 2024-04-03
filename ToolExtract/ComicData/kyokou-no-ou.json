@@ -1,0 +1,18 @@
+{
+  "Title": "Kyokou No Ou",
+  "URL": "kyokou-no-ou",
+  "CoverImage": "kyokou-no-ou.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-30 16:08:07"
+  }
+}

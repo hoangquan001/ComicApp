@@ -1,0 +1,22 @@
+{
+  "Title": "HEN",
+  "URL": "hen",
+  "CoverImage": "hen.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-92",
+  "TotalChapter": 92,
+  "Chapters": {
+    "urlChapter": "chapter-92",
+    "dateUpdateChapter": "2024-01-02 10:42:10"
+  }
+}

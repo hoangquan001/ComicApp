@@ -1,0 +1,18 @@
+{
+  "Title": "Cherry Juice",
+  "URL": "cherry-juice",
+  "CoverImage": "cherry-juice.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-22 21:22:35"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Bowling King",
+  "URL": "bowling-king",
+  "CoverImage": "bowling-king.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-160",
+  "TotalChapter": 160,
+  "Chapters": {
+    "urlChapter": "chapter-160",
+    "dateUpdateChapter": "2024-01-04 17:31:06"
+  }
+}

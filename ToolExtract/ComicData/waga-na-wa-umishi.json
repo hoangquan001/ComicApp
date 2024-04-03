@@ -1,0 +1,19 @@
+{
+  "Title": "Waga Na wa Umishi",
+  "URL": "waga-na-wa-umishi",
+  "CoverImage": "waga-na-wa-umishi.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-69",
+  "TotalChapter": 69,
+  "Chapters": {
+    "urlChapter": "chapter-69",
+    "dateUpdateChapter": "2024-01-23 08:13:12"
+  }
+}

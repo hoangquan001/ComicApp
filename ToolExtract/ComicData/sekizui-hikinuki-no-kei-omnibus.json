@@ -1,0 +1,21 @@
+{
+  "Title": "Sekizui Hikinuki no Kei Omnibus",
+  "URL": "sekizui-hikinuki-no-kei-omnibus",
+  "CoverImage": "sekizui-hikinuki-no-kei-omnibus.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-22 01:39:20"
+  }
+}

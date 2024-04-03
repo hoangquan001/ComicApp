@@ -1,0 +1,18 @@
+{
+  "Title": "Zusun",
+  "URL": "zusun",
+  "CoverImage": "zusun.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Historical"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-27 03:44:20"
+  }
+}

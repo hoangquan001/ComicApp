@@ -1,0 +1,18 @@
+{
+  "Title": "All for you!",
+  "URL": "all-for-you",
+  "CoverImage": "all-for-you.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-20 22:56:44"
+  }
+}

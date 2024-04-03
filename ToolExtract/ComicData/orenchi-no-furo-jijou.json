@@ -1,0 +1,19 @@
+{
+  "Title": "Orenchi no Furo Jijou",
+  "URL": "orenchi-no-furo-jijou",
+  "CoverImage": "orenchi-no-furo-jijou.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-26 15:01:52"
+  }
+}

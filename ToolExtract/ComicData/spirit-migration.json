@@ -1,0 +1,22 @@
+{
+  "Title": "Spirit Migration",
+  "URL": "spirit-migration",
+  "CoverImage": "spirit-migration.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Harem",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-14 03:40:45"
+  }
+}

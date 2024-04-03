@@ -1,0 +1,22 @@
+{
+  "Title": "Kino no Tabi - the Beautiful World",
+  "URL": "kino-no-tabi-the-beautiful-world",
+  "CoverImage": "kino-no-tabi-the-beautiful-world.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Psychological",
+    "Sci-fi",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-23 04:26:29"
+  }
+}

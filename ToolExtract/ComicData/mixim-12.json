@@ -1,0 +1,22 @@
+{
+  "Title": "Mixim\u264012",
+  "URL": "mixim-12",
+  "CoverImage": "mixim-12.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Fantasy",
+    "Romance",
+    "Sci-fi",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-129",
+  "TotalChapter": 129,
+  "Chapters": {
+    "urlChapter": "chapter-129",
+    "dateUpdateChapter": "2024-01-21 03:05:53"
+  }
+}

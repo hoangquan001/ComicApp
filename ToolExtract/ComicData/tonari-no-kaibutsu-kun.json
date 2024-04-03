@@ -1,0 +1,19 @@
+{
+  "Title": "Tonari no Kaibutsu-kun",
+  "URL": "tonari-no-kaibutsu-kun",
+  "CoverImage": "tonari-no-kaibutsu-kun.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-53",
+  "TotalChapter": 53,
+  "Chapters": {
+    "urlChapter": "chapter-53",
+    "dateUpdateChapter": "2023-12-29 12:54:35"
+  }
+}

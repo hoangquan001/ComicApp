@@ -1,0 +1,19 @@
+{
+  "Title": "Magic destroy",
+  "URL": "magic-destroy",
+  "CoverImage": "magic-destroy.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-31 06:42:16"
+  }
+}

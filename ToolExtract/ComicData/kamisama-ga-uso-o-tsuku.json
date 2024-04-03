@@ -1,0 +1,18 @@
+{
+  "Title": "Kamisama ga Uso o Tsuku.",
+  "URL": "kamisama-ga-uso-o-tsuku",
+  "CoverImage": "kamisama-ga-uso-o-tsuku.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-30 08:32:47"
+  }
+}

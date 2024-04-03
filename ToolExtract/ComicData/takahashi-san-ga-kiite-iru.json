@@ -1,0 +1,19 @@
+{
+  "Title": "Takahashi-san ga Kiite Iru",
+  "URL": "takahashi-san-ga-kiite-iru",
+  "CoverImage": "takahashi-san-ga-kiite-iru.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-02 21:57:12"
+  }
+}

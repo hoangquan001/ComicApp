@@ -1,0 +1,20 @@
+{
+  "Title": "Eden (Tsuruoka Nobuhisa)",
+  "URL": "eden-tsuruoka-nobuhisa",
+  "CoverImage": "eden-tsuruoka-nobuhisa.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Drama",
+    "Fantasy",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-05 19:12:23"
+  }
+}

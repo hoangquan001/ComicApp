@@ -1,0 +1,18 @@
+{
+  "Title": "Marvel Knights- Hulk (2014)",
+  "URL": "marvel-knights-hulk-2014",
+  "CoverImage": "marvel-knights-hulk-2014.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-20 18:15:40"
+  }
+}

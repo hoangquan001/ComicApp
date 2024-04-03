@@ -1,0 +1,21 @@
+{
+  "Title": "Mahou Senki Lyrical Nanoha Force",
+  "URL": "mahou-senki-lyrical-nanoha-force",
+  "CoverImage": "mahou-senki-lyrical-nanoha-force.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-26 18:55:35"
+  }
+}

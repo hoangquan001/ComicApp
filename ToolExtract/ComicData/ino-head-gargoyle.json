@@ -1,0 +1,17 @@
+{
+  "Title": "Ino-Head Gargoyle",
+  "URL": "ino-head-gargoyle",
+  "CoverImage": "ino-head-gargoyle.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-35",
+  "TotalChapter": 35,
+  "Chapters": {
+    "urlChapter": "chapter-35",
+    "dateUpdateChapter": "2024-01-23 09:51:52"
+  }
+}

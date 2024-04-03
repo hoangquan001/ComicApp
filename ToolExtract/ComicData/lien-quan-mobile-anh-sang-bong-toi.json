@@ -1,0 +1,19 @@
+{
+  "Title": "Li\u00ean Qu\u00e2n Mobile - \u00c1nh S\u00e1ng & B\u00f3ng T\u1ed1i",
+  "URL": "lien-quan-mobile-anh-sang-bong-toi",
+  "CoverImage": "lien-quan-mobile-anh-sang-bong-toi.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhua"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-15 23:24:37"
+  }
+}

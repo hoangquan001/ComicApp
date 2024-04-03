@@ -1,0 +1,22 @@
+{
+  "Title": "Tail Star",
+  "URL": "tail-star",
+  "CoverImage": "tail-star.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Martial Arts",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-26 11:32:34"
+  }
+}

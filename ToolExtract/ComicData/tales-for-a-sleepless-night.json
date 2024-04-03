@@ -1,0 +1,16 @@
+{
+  "Title": "Tales for a sleepless night",
+  "URL": "tales-for-a-sleepless-night",
+  "CoverImage": "tales-for-a-sleepless-night.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-17 14:48:34"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Kimi wa Nina Janai!",
+  "URL": "kimi-wa-nina-janai",
+  "CoverImage": "kimi-wa-nina-janai.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-16 23:20:49"
+  }
+}

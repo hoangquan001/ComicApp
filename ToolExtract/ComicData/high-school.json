@@ -1,0 +1,18 @@
+{
+  "Title": "High School",
+  "URL": "high-school",
+  "CoverImage": "high-school.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-76",
+  "TotalChapter": 76,
+  "Chapters": {
+    "urlChapter": "chapter-76",
+    "dateUpdateChapter": "2024-01-20 08:12:57"
+  }
+}

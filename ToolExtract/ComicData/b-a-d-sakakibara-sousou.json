@@ -1,0 +1,20 @@
+{
+  "Title": "B.a.d. (Sakakibara Sousou)",
+  "URL": "b-a-d-sakakibara-sousou",
+  "CoverImage": "b-a-d-sakakibara-sousou.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Horror",
+    "Mystery",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-30 11:44:26"
+  }
+}

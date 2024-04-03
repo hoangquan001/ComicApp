@@ -1,0 +1,22 @@
+{
+  "Title": "Chu du h\u1eadu t\u1eadn th\u1ebf",
+  "URL": "chu-du-hau-tan-the",
+  "CoverImage": "chu-du-hau-tan-the.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Manga",
+    "Mystery",
+    "Sci-fi",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-26 18:38:09"
+  }
+}

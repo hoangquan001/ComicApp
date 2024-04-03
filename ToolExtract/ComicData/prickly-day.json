@@ -1,0 +1,19 @@
+{
+  "Title": "Prickly Day",
+  "URL": "prickly-day",
+  "CoverImage": "prickly-day.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "One shot",
+    "Romance",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 14:57:35"
+  }
+}

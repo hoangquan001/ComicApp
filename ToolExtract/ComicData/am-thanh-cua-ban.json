@@ -1,0 +1,20 @@
+{
+  "Title": "\u00c2M THANH C\u1ee6A B\u1ea0N",
+  "URL": "am-thanh-cua-ban",
+  "CoverImage": "am-thanh-cua-ban.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-27 04:01:54"
+  }
+}

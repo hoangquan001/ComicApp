@@ -1,0 +1,19 @@
+{
+  "Title": "Seihantai No Kimi To Boku",
+  "URL": "seihantai-no-kimi-to-boku",
+  "CoverImage": "seihantai-no-kimi-to-boku.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-22 02:25:35"
+  }
+}

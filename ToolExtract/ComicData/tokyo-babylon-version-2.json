@@ -1,0 +1,20 @@
+{
+  "Title": "Tokyo Babylon version 2",
+  "URL": "tokyo-babylon-version-2",
+  "CoverImage": "tokyo-babylon-version-2.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Mystery",
+    "Shounen Ai",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 19:54:06"
+  }
+}

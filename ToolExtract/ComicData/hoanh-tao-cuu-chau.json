@@ -1,0 +1,21 @@
+{
+  "Title": "Ho\u00e0nh T\u1ea3o C\u1eedu Ch\u00e2u",
+  "URL": "hoanh-tao-cuu-chau",
+  "CoverImage": "hoanh-tao-cuu-chau.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhwa",
+    "Martial Arts",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-70",
+  "TotalChapter": 70,
+  "Chapters": {
+    "urlChapter": "chapter-70",
+    "dateUpdateChapter": "2024-01-12 20:42:10"
+  }
+}

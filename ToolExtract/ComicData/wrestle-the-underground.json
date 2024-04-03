@@ -1,0 +1,20 @@
+{
+  "Title": "Wrestle The Underground",
+  "URL": "wrestle-the-underground",
+  "CoverImage": "wrestle-the-underground.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Martial Arts",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 18:54:02"
+  }
+}

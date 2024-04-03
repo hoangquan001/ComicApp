@@ -1,0 +1,22 @@
+{
+  "Title": "Blackest Night",
+  "URL": "blackest-night",
+  "CoverImage": "blackest-night.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Horror",
+    "Mystery",
+    "Sci-fi",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-51",
+  "TotalChapter": 51,
+  "Chapters": {
+    "urlChapter": "chapter-51",
+    "dateUpdateChapter": "2024-01-15 19:28:10"
+  }
+}

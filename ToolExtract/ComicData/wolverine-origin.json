@@ -1,0 +1,18 @@
+{
+  "Title": "Wolverine Origin",
+  "URL": "wolverine-origin",
+  "CoverImage": "wolverine-origin.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-27 04:21:39"
+  }
+}

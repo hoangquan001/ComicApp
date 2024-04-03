@@ -1,0 +1,18 @@
+{
+  "Title": "King Golf",
+  "URL": "king-golf",
+  "CoverImage": "king-golf.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-136",
+  "TotalChapter": 136,
+  "Chapters": {
+    "urlChapter": "chapter-136",
+    "dateUpdateChapter": "2024-01-05 07:38:50"
+  }
+}

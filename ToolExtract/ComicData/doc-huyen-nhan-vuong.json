@@ -1,0 +1,27 @@
+{
+  "Title": "\u0110\u1ed9c Huy\u1ec1n Nh\u00e3n V\u01b0\u01a1ng",
+  "URL": "doc-huyen-nhan-vuong",
+  "CoverImage": "doc-huyen-nhan-vuong.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Harem",
+    "Mature",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Shounen",
+    "Smut"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-23 23:16:00"
+  }
+}

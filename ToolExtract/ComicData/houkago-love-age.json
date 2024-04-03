@@ -1,0 +1,18 @@
+{
+  "Title": "Houkago Love Age",
+  "URL": "houkago-love-age",
+  "CoverImage": "houkago-love-age.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-23 14:02:32"
+  }
+}

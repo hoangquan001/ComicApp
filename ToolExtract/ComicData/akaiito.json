@@ -1,0 +1,21 @@
+{
+  "Title": "Akaiito",
+  "URL": "akaiito",
+  "CoverImage": "akaiito.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Martial Arts",
+    "Romance",
+    "School Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-20 19:05:50"
+  }
+}

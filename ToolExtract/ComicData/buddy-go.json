@@ -1,0 +1,19 @@
+{
+  "Title": "Buddy Go!",
+  "URL": "buddy-go",
+  "CoverImage": "buddy-go.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-05 12:00:42"
+  }
+}

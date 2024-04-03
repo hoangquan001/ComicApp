@@ -1,0 +1,20 @@
+{
+  "Title": "Haikei Mayumi-sama",
+  "URL": "haikei-mayumi-sama",
+  "CoverImage": "haikei-mayumi-sama.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 20:11:56"
+  }
+}

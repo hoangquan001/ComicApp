@@ -1,0 +1,19 @@
+{
+  "Title": "Umi no Misaki",
+  "URL": "umi-no-misaki",
+  "CoverImage": "umi-no-misaki.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-127",
+  "TotalChapter": 127,
+  "Chapters": {
+    "urlChapter": "chapter-127",
+    "dateUpdateChapter": "2024-01-13 10:57:34"
+  }
+}

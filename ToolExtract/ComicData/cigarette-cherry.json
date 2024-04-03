@@ -1,0 +1,18 @@
+{
+  "Title": "Cigarette & Cherry",
+  "URL": "cigarette-cherry",
+  "CoverImage": "cigarette-cherry.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-128",
+  "TotalChapter": 128,
+  "Chapters": {
+    "urlChapter": "chapter-128",
+    "dateUpdateChapter": "2024-01-03 11:09:35"
+  }
+}

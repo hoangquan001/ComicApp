@@ -1,0 +1,19 @@
+{
+  "Title": "ABOVE THE CLOUD SEA",
+  "URL": "above-the-cloud-sea",
+  "CoverImage": "above-the-cloud-sea.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-02-03 11:04:51"
+  }
+}

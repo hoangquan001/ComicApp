@@ -1,0 +1,17 @@
+{
+  "Title": "Kusoge Onilne",
+  "URL": "kusoge-onilne",
+  "CoverImage": "kusoge-onilne.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Ecchi",
+    "Harem"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-23 17:06:24"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Elsword Magazine",
+  "URL": "elsword-magazine",
+  "CoverImage": "elsword-magazine.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 22:58:02"
+  }
+}

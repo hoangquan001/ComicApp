@@ -1,0 +1,20 @@
+{
+  "Title": "C\u00fa \u0110\u00e1nh Ch\u00ed M\u1ea1ng",
+  "URL": "cu-danh-chi-mang",
+  "CoverImage": "cu-danh-chi-mang.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Horror",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-17 13:26:34"
+  }
+}

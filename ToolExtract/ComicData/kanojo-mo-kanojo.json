@@ -1,0 +1,21 @@
+{
+  "Title": "Kanojo mo Kanojo",
+  "URL": "kanojo-mo-kanojo",
+  "CoverImage": "kanojo-mo-kanojo.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-145",
+  "TotalChapter": 145,
+  "Chapters": {
+    "urlChapter": "chapter-145",
+    "dateUpdateChapter": "2023-12-27 19:49:06"
+  }
+}

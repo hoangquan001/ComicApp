@@ -1,0 +1,20 @@
+{
+  "Title": "Sukedachi 09",
+  "URL": "sukedachi-09",
+  "CoverImage": "sukedachi-09.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Psychological",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-10 19:43:24"
+  }
+}

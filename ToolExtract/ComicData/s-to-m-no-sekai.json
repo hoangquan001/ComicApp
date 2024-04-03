@@ -1,0 +1,19 @@
+{
+  "Title": "S to M no Sekai",
+  "URL": "s-to-m-no-sekai",
+  "CoverImage": "s-to-m-no-sekai.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-02-02 10:33:17"
+  }
+}

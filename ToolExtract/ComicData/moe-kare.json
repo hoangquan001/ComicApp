@@ -1,0 +1,19 @@
+{
+  "Title": "Moe Kare!!",
+  "URL": "moe-kare",
+  "CoverImage": "moe-kare.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-38",
+  "TotalChapter": 38,
+  "Chapters": {
+    "urlChapter": "chapter-38",
+    "dateUpdateChapter": "2024-01-04 03:27:55"
+  }
+}

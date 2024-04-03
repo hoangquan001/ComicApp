@@ -1,0 +1,18 @@
+{
+  "Title": "Cu\u1ed3ng Th\u00e1m",
+  "URL": "cuong-tham",
+  "CoverImage": "cuong-tham.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhua",
+    "Trinh Th\u00e1m",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-99",
+  "TotalChapter": 99,
+  "Chapters": {
+    "urlChapter": "chapter-99",
+    "dateUpdateChapter": "2024-01-14 15:21:37"
+  }
+}

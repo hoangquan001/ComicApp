@@ -1,0 +1,20 @@
+{
+  "Title": "C\u00f4 B\u00e9 Kh\u00f3c Nh\u00e8",
+  "URL": "co-be-khoc-nhe",
+  "CoverImage": "co-be-khoc-nhe.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-31 04:20:29"
+  }
+}

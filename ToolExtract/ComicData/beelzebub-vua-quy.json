@@ -1,0 +1,20 @@
+{
+  "Title": "Beelzebub - Vua Qu\u1ef7",
+  "URL": "beelzebub-vua-quy",
+  "CoverImage": "beelzebub-vua-quy.jpg",
+  "CreateAt": "16/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "School Life",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-248",
+  "TotalChapter": 248,
+  "Chapters": {
+    "urlChapter": "chapter-248",
+    "dateUpdateChapter": "2023-12-16 04:05:16"
+  }
+}

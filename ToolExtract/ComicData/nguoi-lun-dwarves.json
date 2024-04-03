@@ -1,0 +1,23 @@
+{
+  "Title": "Ng\u01b0\u1eddi L\u00f9n | Dwarves",
+  "URL": "nguoi-lun-dwarves",
+  "CoverImage": "nguoi-lun-dwarves.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comic",
+    "Fantasy",
+    "Mature",
+    "Mystery",
+    "Sci-fi",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 15:34:44"
+  }
+}

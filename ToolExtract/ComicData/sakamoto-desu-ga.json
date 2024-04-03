@@ -1,0 +1,16 @@
+{
+  "Title": "Sakamoto desu ga?",
+  "URL": "sakamoto-desu-ga",
+  "CoverImage": "sakamoto-desu-ga.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "School Life"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-14 02:45:05"
+  }
+}

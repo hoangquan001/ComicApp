@@ -1,0 +1,22 @@
+{
+  "Title": "Thuy\u1ec1n Vi\u1ec5n X\u1ee9",
+  "URL": "thuyen-vien-xu",
+  "CoverImage": "thuyen-vien-xu.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-16 02:37:13"
+  }
+}

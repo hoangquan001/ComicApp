@@ -1,0 +1,22 @@
+{
+  "Title": "Saiyuki Gaiden",
+  "URL": "saiyuki-gaiden",
+  "CoverImage": "saiyuki-gaiden.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Shoujo",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-01 07:39:32"
+  }
+}

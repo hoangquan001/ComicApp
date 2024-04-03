@@ -1,0 +1,23 @@
+{
+  "Title": "Sensei no yasashi koroshi kata",
+  "URL": "sensei-no-yasashi-koroshi-kata",
+  "CoverImage": "sensei-no-yasashi-koroshi-kata.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Horror",
+    "Manga",
+    "Mystery",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-03 00:07:54"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "Title": "Huy\u1ec1n Tho\u1ea1i Genbu",
+  "URL": "huyen-thoai-genbu",
+  "CoverImage": "huyen-thoai-genbu.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Tragedy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-31",
+  "TotalChapter": 31,
+  "Chapters": {
+    "urlChapter": "chapter-31",
+    "dateUpdateChapter": "2024-01-21 15:37:11"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Lone wolf and cub",
+  "URL": "lone-wolf-and-cub",
+  "CoverImage": "lone-wolf-and-cub.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Historical",
+    "Martial Arts",
+    "Mature",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-146",
+  "TotalChapter": 146,
+  "Chapters": {
+    "urlChapter": "chapter-146",
+    "dateUpdateChapter": "2024-01-16 00:25:12"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "H\u1ea7m Ng\u1ee5c B\u00f3ng T\u1ed1i",
+  "URL": "ham-nguc-bong-toi",
+  "CoverImage": "ham-nguc-bong-toi.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhwa",
+    "Shounen",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2023-12-30 13:21:47"
+  }
+}

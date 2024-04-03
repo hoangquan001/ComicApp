@@ -1,0 +1,19 @@
+{
+  "Title": "Tista",
+  "URL": "tista",
+  "CoverImage": "tista.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Drama",
+    "Psychological",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-02 20:40:28"
+  }
+}

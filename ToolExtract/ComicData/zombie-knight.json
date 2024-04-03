@@ -1,0 +1,17 @@
+{
+  "Title": "Zombie Knight",
+  "URL": "zombie-knight",
+  "CoverImage": "zombie-knight.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure"
+  ],
+  "LastChapter": "chapter-69",
+  "TotalChapter": 69,
+  "Chapters": {
+    "urlChapter": "chapter-69",
+    "dateUpdateChapter": "2024-01-15 15:26:40"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Gyaru Kuri!",
+  "URL": "gyaru-kuri",
+  "CoverImage": "gyaru-kuri.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-15 07:23:46"
+  }
+}

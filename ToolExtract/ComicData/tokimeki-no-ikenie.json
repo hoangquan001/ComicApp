@@ -1,0 +1,21 @@
+{
+  "Title": "Tokimeki no Ikenie",
+  "URL": "tokimeki-no-ikenie",
+  "CoverImage": "tokimeki-no-ikenie.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Manga",
+    "Mystery",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-23 03:51:01"
+  }
+}

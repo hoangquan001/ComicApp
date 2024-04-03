@@ -1,0 +1,18 @@
+{
+  "Title": "Kawaita Yoru No Machi Wo Oyogu",
+  "URL": "kawaita-yoru-no-machi-wo-oyogu",
+  "CoverImage": "kawaita-yoru-no-machi-wo-oyogu.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Historical",
+    "Smut"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-20 18:49:49"
+  }
+}

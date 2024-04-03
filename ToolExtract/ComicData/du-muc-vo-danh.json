@@ -1,0 +1,23 @@
+{
+  "Title": "Du M\u1ee5c V\u00f4 Danh",
+  "URL": "du-muc-vo-danh",
+  "CoverImage": "du-muc-vo-danh.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Fantasy",
+    "Historical",
+    "Martial Arts",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-31 02:28:08"
+  }
+}

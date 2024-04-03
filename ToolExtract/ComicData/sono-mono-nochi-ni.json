@@ -1,0 +1,23 @@
+{
+  "Title": "Sono Mono. Nochi ni",
+  "URL": "sono-mono-nochi-ni",
+  "CoverImage": "sono-mono-nochi-ni.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Harem",
+    "Romance",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-13 14:14:43"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Thi\u00ean T\u1eb1m Bi\u1ebfn",
+  "URL": "thien-tam-bien",
+  "CoverImage": "thien-tam-bien.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-23 01:30:38"
+  }
+}

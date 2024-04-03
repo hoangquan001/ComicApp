@@ -1,0 +1,19 @@
+{
+  "Title": "Kabe no Naka no Tenshi",
+  "URL": "kabe-no-naka-no-tenshi",
+  "CoverImage": "kabe-no-naka-no-tenshi.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Romance",
+    "Shoujo Ai",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-17 22:27:59"
+  }
+}

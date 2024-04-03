@@ -1,0 +1,23 @@
+{
+  "Title": "Sounan desu ka?",
+  "URL": "sounan-desu-ka",
+  "CoverImage": "sounan-desu-ka.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Manga",
+    "Psychological",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-128",
+  "TotalChapter": 128,
+  "Chapters": {
+    "urlChapter": "chapter-128",
+    "dateUpdateChapter": "2024-01-02 07:27:09"
+  }
+}

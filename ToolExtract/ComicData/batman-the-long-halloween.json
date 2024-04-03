@@ -1,0 +1,18 @@
+{
+  "Title": "Batman: The Long Halloween",
+  "URL": "batman-the-long-halloween",
+  "CoverImage": "batman-the-long-halloween.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 08:56:00"
+  }
+}

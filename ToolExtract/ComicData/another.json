@@ -1,0 +1,20 @@
+{
+  "Title": "Another",
+  "URL": "another",
+  "CoverImage": "another.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-14 21:47:26"
+  }
+}

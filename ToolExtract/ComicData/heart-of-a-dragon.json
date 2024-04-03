@@ -1,0 +1,21 @@
+{
+  "Title": "Heart Of A Dragon",
+  "URL": "heart-of-a-dragon",
+  "CoverImage": "heart-of-a-dragon.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Manhwa",
+    "Sci-fi",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-02-01 14:26:43"
+  }
+}

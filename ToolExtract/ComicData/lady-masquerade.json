@@ -1,0 +1,19 @@
+{
+  "Title": "Lady Masquerade",
+  "URL": "lady-masquerade",
+  "CoverImage": "lady-masquerade.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-22 20:19:41"
+  }
+}

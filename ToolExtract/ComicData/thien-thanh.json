@@ -1,0 +1,19 @@
+{
+  "Title": "Thi\u00ean Thanh",
+  "URL": "thien-thanh",
+  "CoverImage": "thien-thanh.jpg",
+  "CreateAt": "22/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manhua",
+    "Mystery",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-136",
+  "TotalChapter": 136,
+  "Chapters": {
+    "urlChapter": "chapter-136",
+    "dateUpdateChapter": "2023-12-22 03:06:20"
+  }
+}

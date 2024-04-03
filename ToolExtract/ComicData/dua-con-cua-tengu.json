@@ -1,0 +1,21 @@
+{
+  "Title": "\u0110\u1ee9a Con C\u1ee7a Tengu",
+  "URL": "dua-con-cua-tengu",
+  "CoverImage": "dua-con-cua-tengu.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Fantasy",
+    "Josei",
+    "Romance",
+    "School Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 17:26:24"
+  }
+}

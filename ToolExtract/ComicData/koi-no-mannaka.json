@@ -1,0 +1,18 @@
+{
+  "Title": "Koi No Mannaka",
+  "URL": "koi-no-mannaka",
+  "CoverImage": "koi-no-mannaka.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-02 10:38:49"
+  }
+}

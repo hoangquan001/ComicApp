@@ -1,0 +1,21 @@
+{
+  "Title": "Freezing - Second Season",
+  "URL": "freezing-second-season",
+  "CoverImage": "freezing-second-season.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Martial Arts",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 21:25:08"
+  }
+}

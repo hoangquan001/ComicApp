@@ -1,0 +1,19 @@
+{
+  "Title": "Thi\u00ean Y Hoa H\u1ea1",
+  "URL": "thien-y-hoa-ha",
+  "CoverImage": "thien-y-hoa-ha.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-23 13:01:26"
+  }
+}

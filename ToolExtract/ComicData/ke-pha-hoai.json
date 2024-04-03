@@ -1,0 +1,20 @@
+{
+  "Title": "K\u1ebb ph\u00e1 ho\u1ea1i",
+  "URL": "ke-pha-hoai",
+  "CoverImage": "ke-pha-hoai.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhwa",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-72",
+  "TotalChapter": 72,
+  "Chapters": {
+    "urlChapter": "chapter-72",
+    "dateUpdateChapter": "2023-12-24 09:13:45"
+  }
+}

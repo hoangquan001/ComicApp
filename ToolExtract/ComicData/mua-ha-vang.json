@@ -1,0 +1,20 @@
+{
+  "Title": "M\u00f9a h\u1ea1 v\u00e0ng",
+  "URL": "mua-ha-vang",
+  "CoverImage": "mua-ha-vang.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-23 08:23:27"
+  }
+}

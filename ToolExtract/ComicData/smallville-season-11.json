@@ -1,0 +1,20 @@
+{
+  "Title": "SMALLVILLE SEASON 11",
+  "URL": "smallville-season-11",
+  "CoverImage": "smallville-season-11.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Mystery",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-55",
+  "TotalChapter": 55,
+  "Chapters": {
+    "urlChapter": "chapter-55",
+    "dateUpdateChapter": "2024-01-26 20:07:52"
+  }
+}

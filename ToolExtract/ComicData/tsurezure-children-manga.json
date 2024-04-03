@@ -1,0 +1,20 @@
+{
+  "Title": "Tsurezure children manga",
+  "URL": "tsurezure-children-manga",
+  "CoverImage": "tsurezure-children-manga.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Doujinshi",
+    "Manga",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-186",
+  "TotalChapter": 186,
+  "Chapters": {
+    "urlChapter": "chapter-186",
+    "dateUpdateChapter": "2023-12-29 13:07:37"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Ask Arhi senpai!",
+  "URL": "ask-arhi-senpai",
+  "CoverImage": "ask-arhi-senpai.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Live action"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-02-02 19:24:26"
+  }
+}

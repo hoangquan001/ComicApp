@@ -1,0 +1,19 @@
+{
+  "Title": "Hanayome To Futsuma No Kishi",
+  "URL": "hanayome-to-futsuma-no-kishi",
+  "CoverImage": "hanayome-to-futsuma-no-kishi.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-26 18:50:28"
+  }
+}

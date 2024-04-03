@@ -1,0 +1,23 @@
+{
+  "Title": "Kyou Mei Machi",
+  "URL": "kyou-mei-machi",
+  "CoverImage": "kyou-mei-machi.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Ecchi",
+    "Horror",
+    "Mature",
+    "Mystery",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-04 08:40:10"
+  }
+}

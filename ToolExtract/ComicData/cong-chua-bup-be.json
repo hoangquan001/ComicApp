@@ -1,0 +1,18 @@
+{
+  "Title": "C\u00f4ng Ch\u00faa B\u00fap B\u00ea",
+  "URL": "cong-chua-bup-be",
+  "CoverImage": "cong-chua-bup-be.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comic",
+    "Romance"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-27 01:53:07"
+  }
+}

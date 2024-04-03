@@ -1,0 +1,21 @@
+{
+  "Title": "Vanilla",
+  "URL": "vanilla",
+  "CoverImage": "vanilla.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "One shot",
+    "Romance",
+    "Shounen Ai",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-01 01:12:11"
+  }
+}

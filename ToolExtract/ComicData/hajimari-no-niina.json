@@ -1,0 +1,17 @@
+{
+  "Title": "Hajimari no Niina",
+  "URL": "hajimari-no-niina",
+  "CoverImage": "hajimari-no-niina.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-20 18:38:58"
+  }
+}

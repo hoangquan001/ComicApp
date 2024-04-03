@@ -1,0 +1,21 @@
+{
+  "Title": "B\u1ee9c tranh r\u1ed3ng",
+  "URL": "buc-tranh-rong",
+  "CoverImage": "buc-tranh-rong.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-25 08:55:31"
+  }
+}

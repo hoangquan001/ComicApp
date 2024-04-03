@@ -1,0 +1,17 @@
+{
+  "Title": "Aikatsu Short Manga",
+  "URL": "aikatsu-short-manga",
+  "CoverImage": "aikatsu-short-manga.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Doujinshi",
+    "Soft Yuri"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-20 21:23:49"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "Red Eyes",
+  "URL": "red-eyes",
+  "CoverImage": "red-eyes.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Horror",
+    "Mecha",
+    "Psychological",
+    "Sci-fi",
+    "Seinen",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-26 08:02:01"
+  }
+}

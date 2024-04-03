@@ -1,0 +1,17 @@
+{
+  "Title": "Kare Ga Shoujo Manga Wo Yomuriyuu",
+  "URL": "kare-ga-shoujo-manga-wo-yomuriyuu",
+  "CoverImage": "kare-ga-shoujo-manga-wo-yomuriyuu.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "One shot"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-01 05:59:39"
+  }
+}

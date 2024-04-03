@@ -1,0 +1,17 @@
+{
+  "Title": "Asari tinh ngh\u1ecbch",
+  "URL": "asari-tinh-nghich",
+  "CoverImage": "asari-tinh-nghich.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-14 03:41:21"
+  }
+}

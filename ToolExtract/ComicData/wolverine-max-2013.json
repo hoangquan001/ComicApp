@@ -1,0 +1,18 @@
+{
+  "Title": "Wolverine MAX (2013)",
+  "URL": "wolverine-max-2013",
+  "CoverImage": "wolverine-max-2013.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-02-02 07:53:54"
+  }
+}

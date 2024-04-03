@@ -1,0 +1,16 @@
+{
+  "Title": "Touhou - Petit Satorin",
+  "URL": "touhou-petit-satorin",
+  "CoverImage": "touhou-petit-satorin.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 04:23:20"
+  }
+}

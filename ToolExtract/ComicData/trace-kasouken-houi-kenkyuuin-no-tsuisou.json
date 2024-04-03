@@ -1,0 +1,20 @@
+{
+  "Title": "Trace: Kasouken Houi Kenkyuuin no Tsuisou",
+  "URL": "trace-kasouken-houi-kenkyuuin-no-tsuisou",
+  "CoverImage": "trace-kasouken-houi-kenkyuuin-no-tsuisou.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Mystery",
+    "Seinen",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-15 20:00:45"
+  }
+}

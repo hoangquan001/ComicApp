@@ -1,0 +1,21 @@
+{
+  "Title": "Nemuri No Fuchi",
+  "URL": "nemuri-no-fuchi",
+  "CoverImage": "nemuri-no-fuchi.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Horror",
+    "Mystery",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-15 10:55:41"
+  }
+}

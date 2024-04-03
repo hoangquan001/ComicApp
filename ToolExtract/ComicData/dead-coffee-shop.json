@@ -1,0 +1,19 @@
+{
+  "Title": "Dead Coffee Shop",
+  "URL": "dead-coffee-shop",
+  "CoverImage": "dead-coffee-shop.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Mystery",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-26 19:50:31"
+  }
+}

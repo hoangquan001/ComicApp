@@ -1,0 +1,18 @@
+{
+  "Title": "Venus Versus Virus",
+  "URL": "venus-versus-virus",
+  "CoverImage": "venus-versus-virus.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-20 22:03:48"
+  }
+}

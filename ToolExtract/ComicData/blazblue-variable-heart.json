@@ -1,0 +1,23 @@
+{
+  "Title": "BlazBlue - Variable Heart",
+  "URL": "blazblue-variable-heart",
+  "CoverImage": "blazblue-variable-heart.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Fantasy",
+    "School Life",
+    "Sci-fi",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-16 18:58:27"
+  }
+}

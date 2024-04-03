@@ -1,0 +1,18 @@
+{
+  "Title": "T\u00ean N\u00f4 L\u1ec7 \u0110\u00e1ng Y\u00eau",
+  "URL": "ten-no-le-dang-yeu",
+  "CoverImage": "ten-no-le-dang-yeu.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Romance"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-02-01 09:08:45"
+  }
+}

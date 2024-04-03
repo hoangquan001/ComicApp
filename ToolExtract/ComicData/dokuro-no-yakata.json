@@ -1,0 +1,18 @@
+{
+  "Title": "Dokuro no Yakata",
+  "URL": "dokuro-no-yakata",
+  "CoverImage": "dokuro-no-yakata.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Horror",
+    "Mature"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-23 12:13:46"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "Phantasmal Tale under the Moonlight Manhwa",
+  "URL": "phantasmal-tale-under-the-moonlight-manhwa",
+  "CoverImage": "phantasmal-tale-under-the-moonlight-manhwa.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Manhwa",
+    "Mystery",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-22 19:25:15"
+  }
+}

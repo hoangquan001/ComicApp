@@ -1,0 +1,17 @@
+{
+  "Title": "Chim L\u1eeda",
+  "URL": "chim-lua",
+  "CoverImage": "chim-lua.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-101",
+  "TotalChapter": 101,
+  "Chapters": {
+    "urlChapter": "chapter-101",
+    "dateUpdateChapter": "2024-01-04 15:21:45"
+  }
+}

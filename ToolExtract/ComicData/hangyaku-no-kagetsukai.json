@@ -1,0 +1,20 @@
+{
+  "Title": "Hangyaku no Kagetsukai",
+  "URL": "hangyaku-no-kagetsukai",
+  "CoverImage": "hangyaku-no-kagetsukai.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 00:17:09"
+  }
+}

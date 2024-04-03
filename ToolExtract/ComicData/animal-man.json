@@ -1,0 +1,19 @@
+{
+  "Title": "Animal Man",
+  "URL": "animal-man",
+  "CoverImage": "animal-man.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 03:46:26"
+  }
+}

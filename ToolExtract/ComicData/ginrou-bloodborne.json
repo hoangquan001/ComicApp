@@ -1,0 +1,21 @@
+{
+  "Title": "Ginrou Bloodborne",
+  "URL": "ginrou-bloodborne",
+  "CoverImage": "ginrou-bloodborne.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-30 08:09:57"
+  }
+}

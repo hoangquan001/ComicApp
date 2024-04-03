@@ -1,0 +1,20 @@
+{
+  "Title": "Oeufs D'angel",
+  "URL": "oeufs-d-angel",
+  "CoverImage": "oeufs-d-angel.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 00:17:42"
+  }
+}

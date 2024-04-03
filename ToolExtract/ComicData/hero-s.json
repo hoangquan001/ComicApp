@@ -1,0 +1,17 @@
+{
+  "Title": "Hero's",
+  "URL": "hero-s",
+  "CoverImage": "hero-s.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-14 02:16:51"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Youjo to Sukoppu to Magan Ou",
+  "URL": "youjo-to-sukoppu-to-magan-ou",
+  "CoverImage": "youjo-to-sukoppu-to-magan-ou.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-12 09:58:36"
+  }
+}

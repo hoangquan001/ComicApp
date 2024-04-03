@@ -1,0 +1,21 @@
+{
+  "Title": "Black Rock Shooter: The Game",
+  "URL": "black-rock-shooter-the-game",
+  "CoverImage": "black-rock-shooter-the-game.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-23 15:58:19"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "B\u1ea1ch L\u00f4i K\u1ef5 S\u0129",
+  "URL": "bach-loi-ky-si",
+  "CoverImage": "bach-loi-ky-si.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-18 06:52:40"
+  }
+}

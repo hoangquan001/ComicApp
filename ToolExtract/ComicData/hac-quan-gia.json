@@ -1,0 +1,22 @@
+{
+  "Title": "H\u1eafc Qu\u1ea3n Gia",
+  "URL": "hac-quan-gia",
+  "CoverImage": "hac-quan-gia.jpg",
+  "CreateAt": "18/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Fantasy",
+    "Historical",
+    "Manga",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-190",
+  "TotalChapter": 190,
+  "Chapters": {
+    "urlChapter": "chapter-190",
+    "dateUpdateChapter": "2023-12-18 07:49:53"
+  }
+}

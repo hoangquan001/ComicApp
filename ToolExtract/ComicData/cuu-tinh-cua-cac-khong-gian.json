@@ -1,0 +1,21 @@
+{
+  "Title": "C\u1ee9u Tinh C\u1ee7a C\u00e1c Kh\u00f4ng Gian",
+  "URL": "cuu-tinh-cua-cac-khong-gian",
+  "CoverImage": "cuu-tinh-cua-cac-khong-gian.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhwa",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-26 22:43:32"
+  }
+}

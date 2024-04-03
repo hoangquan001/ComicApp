@@ -1,0 +1,20 @@
+{
+  "Title": "High & High",
+  "URL": "high-high",
+  "CoverImage": "high-high.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-49",
+  "TotalChapter": 49,
+  "Chapters": {
+    "urlChapter": "chapter-49",
+    "dateUpdateChapter": "2024-01-24 00:44:15"
+  }
+}

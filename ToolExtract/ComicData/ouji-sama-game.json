@@ -1,0 +1,20 @@
+{
+  "Title": "Ouji-sama Game",
+  "URL": "ouji-sama-game",
+  "CoverImage": "ouji-sama-game.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-01 11:46:01"
+  }
+}

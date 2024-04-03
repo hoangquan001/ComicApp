@@ -1,0 +1,17 @@
+{
+  "Title": "Dear Tear",
+  "URL": "dear-tear",
+  "CoverImage": "dear-tear.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-01 02:48:01"
+  }
+}

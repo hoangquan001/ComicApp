@@ -1,0 +1,21 @@
+{
+  "Title": "LUM",
+  "URL": "lum",
+  "CoverImage": "lum.jpg",
+  "CreateAt": "08/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Romance",
+    "School Life",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-329",
+  "TotalChapter": 329,
+  "Chapters": {
+    "urlChapter": "chapter-329",
+    "dateUpdateChapter": "2024-01-08 01:05:08"
+  }
+}

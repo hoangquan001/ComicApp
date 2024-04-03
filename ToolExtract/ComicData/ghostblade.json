@@ -1,0 +1,18 @@
+{
+  "Title": "GhostBlade",
+  "URL": "ghostblade",
+  "CoverImage": "ghostblade.jpg",
+  "CreateAt": "25/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comic",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-32",
+  "TotalChapter": 32,
+  "Chapters": {
+    "urlChapter": "chapter-32",
+    "dateUpdateChapter": "2023-12-25 17:45:44"
+  }
+}

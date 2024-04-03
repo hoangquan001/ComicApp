@@ -1,0 +1,20 @@
+{
+  "Title": "L\u00f4i Th\u1ea7n Chuy\u1ec3n Sinh",
+  "URL": "loi-than-chuyen-sinh",
+  "CoverImage": "loi-than-chuyen-sinh.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manhwa",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-34",
+  "TotalChapter": 34,
+  "Chapters": {
+    "urlChapter": "chapter-34",
+    "dateUpdateChapter": "2024-01-01 01:58:09"
+  }
+}

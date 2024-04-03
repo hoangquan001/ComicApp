@@ -1,0 +1,16 @@
+{
+  "Title": "Watashi ni XX Shinasai!",
+  "URL": "watashi-ni-xx-shinasai",
+  "CoverImage": "watashi-ni-xx-shinasai.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga"
+  ],
+  "LastChapter": "chapter-81",
+  "TotalChapter": 81,
+  "Chapters": {
+    "urlChapter": "chapter-81",
+    "dateUpdateChapter": "2024-01-09 17:21:15"
+  }
+}

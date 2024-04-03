@@ -1,0 +1,21 @@
+{
+  "Title": "Family Man",
+  "URL": "family-man",
+  "CoverImage": "family-man.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Slice of Life",
+    "Tragedy",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-02-02 15:21:10"
+  }
+}

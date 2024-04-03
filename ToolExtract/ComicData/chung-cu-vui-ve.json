@@ -1,0 +1,22 @@
+{
+  "Title": "Chung c\u01b0 vui v\u1ebb",
+  "URL": "chung-cu-vui-ve",
+  "CoverImage": "chung-cu-vui-ve.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-03 10:05:04"
+  }
+}

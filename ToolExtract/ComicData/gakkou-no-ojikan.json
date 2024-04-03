@@ -1,0 +1,20 @@
+{
+  "Title": "Gakkou No Ojikan",
+  "URL": "gakkou-no-ojikan",
+  "CoverImage": "gakkou-no-ojikan.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comic",
+    "Manga",
+    "Romance",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-29",
+  "TotalChapter": 29,
+  "Chapters": {
+    "urlChapter": "chapter-29",
+    "dateUpdateChapter": "2024-01-30 18:13:04"
+  }
+}

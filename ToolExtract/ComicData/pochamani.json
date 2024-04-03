@@ -1,0 +1,17 @@
+{
+  "Title": "Pochamani",
+  "URL": "pochamani",
+  "CoverImage": "pochamani.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-22 22:51:53"
+  }
+}

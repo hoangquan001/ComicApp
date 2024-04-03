@@ -1,0 +1,19 @@
+{
+  "Title": "T\u00f4i gh\u00e9t khi \u0111\u01b0\u1ee3c c\u1eadu y\u00eau",
+  "URL": "toi-ghet-khi-duoc-cau-yeu",
+  "CoverImage": "toi-ghet-khi-duoc-cau-yeu.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Mature",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 13:12:35"
+  }
+}

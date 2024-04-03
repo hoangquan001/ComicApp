@@ -1,0 +1,17 @@
+{
+  "Title": "Dear My Teacher",
+  "URL": "dear-my-teacher",
+  "CoverImage": "dear-my-teacher.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Romance",
+    "Soft Yuri"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-21 16:29:06"
+  }
+}

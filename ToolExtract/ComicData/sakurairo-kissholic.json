@@ -1,0 +1,18 @@
+{
+  "Title": "Sakurairo Kissholic",
+  "URL": "sakurairo-kissholic",
+  "CoverImage": "sakurairo-kissholic.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Josei",
+    "Romance",
+    "Smut"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2023-12-31 12:32:59"
+  }
+}

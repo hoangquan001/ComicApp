@@ -1,0 +1,20 @@
+{
+  "Title": "Journey To The Center Of The Earth",
+  "URL": "journey-to-the-center-of-the-earth",
+  "CoverImage": "journey-to-the-center-of-the-earth.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Historical",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-26 22:44:37"
+  }
+}

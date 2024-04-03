@@ -1,0 +1,18 @@
+{
+  "Title": "Hyakushou Kizoku",
+  "URL": "hyakushou-kizoku",
+  "CoverImage": "hyakushou-kizoku.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 02:12:27"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Ushio and Tora",
+  "URL": "ushio-and-tora",
+  "CoverImage": "ushio-and-tora.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Horror",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-307",
+  "TotalChapter": 307,
+  "Chapters": {
+    "urlChapter": "chapter-307",
+    "dateUpdateChapter": "2023-12-27 23:29:48"
+  }
+}

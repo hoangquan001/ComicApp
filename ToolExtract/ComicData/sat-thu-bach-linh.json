@@ -1,0 +1,19 @@
+{
+  "Title": "S\u00e1t Th\u1ee7 B\u1ea1ch Linh",
+  "URL": "sat-thu-bach-linh",
+  "CoverImage": "sat-thu-bach-linh.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-110",
+  "TotalChapter": 110,
+  "Chapters": {
+    "urlChapter": "chapter-110",
+    "dateUpdateChapter": "2024-01-01 16:47:13"
+  }
+}

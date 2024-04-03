@@ -1,0 +1,20 @@
+{
+  "Title": "Hana To Akuma",
+  "URL": "hana-to-akuma",
+  "CoverImage": "hana-to-akuma.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Romance",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-54",
+  "TotalChapter": 54,
+  "Chapters": {
+    "urlChapter": "chapter-54",
+    "dateUpdateChapter": "2024-01-04 00:55:50"
+  }
+}

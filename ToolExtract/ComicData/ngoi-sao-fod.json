@@ -1,0 +1,16 @@
+{
+  "Title": "Ng\u00f4i sao Fod",
+  "URL": "ngoi-sao-fod",
+  "CoverImage": "ngoi-sao-fod.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-20 18:51:40"
+  }
+}

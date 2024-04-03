@@ -1,0 +1,17 @@
+{
+  "Title": "Konoha High School",
+  "URL": "konoha-high-school",
+  "CoverImage": "konoha-high-school.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-23 02:24:28"
+  }
+}

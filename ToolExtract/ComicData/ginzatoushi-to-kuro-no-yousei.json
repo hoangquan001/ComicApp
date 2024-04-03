@@ -1,0 +1,21 @@
+{
+  "Title": "Ginzatoushi to Kuro no Yousei",
+  "URL": "ginzatoushi-to-kuro-no-yousei",
+  "CoverImage": "ginzatoushi-to-kuro-no-yousei.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-22 22:33:07"
+  }
+}

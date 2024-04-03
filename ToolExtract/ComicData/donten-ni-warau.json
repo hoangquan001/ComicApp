@@ -1,0 +1,18 @@
+{
+  "Title": "Donten ni Warau",
+  "URL": "donten-ni-warau",
+  "CoverImage": "donten-ni-warau.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-30 12:17:56"
+  }
+}

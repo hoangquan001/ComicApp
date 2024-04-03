@@ -1,0 +1,17 @@
+{
+  "Title": "T\u00ecnh B\u1ea1n D\u1ec3 Th\u01b0\u01a1ng",
+  "URL": "tinh-ban-de-thuong",
+  "CoverImage": "tinh-ban-de-thuong.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 20:23:36"
+  }
+}

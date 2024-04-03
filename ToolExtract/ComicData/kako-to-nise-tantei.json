@@ -1,0 +1,20 @@
+{
+  "Title": "Kako To Nise Tantei",
+  "URL": "kako-to-nise-tantei",
+  "CoverImage": "kako-to-nise-tantei.jpg",
+  "CreateAt": "11/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Horror",
+    "Romance"
+  ],
+  "LastChapter": "chapter-38",
+  "TotalChapter": 38,
+  "Chapters": {
+    "urlChapter": "chapter-38",
+    "dateUpdateChapter": "2024-01-11 17:39:50"
+  }
+}

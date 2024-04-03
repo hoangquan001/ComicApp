@@ -1,0 +1,18 @@
+{
+  "Title": "Gosick",
+  "URL": "gosick",
+  "CoverImage": "gosick.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Mystery",
+    "Romance"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-23 11:44:10"
+  }
+}

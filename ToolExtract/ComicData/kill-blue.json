@@ -1,0 +1,18 @@
+{
+  "Title": "Kill Blue",
+  "URL": "kill-blue",
+  "CoverImage": "kill-blue.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-13 21:55:51"
+  }
+}

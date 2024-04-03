@@ -1,0 +1,20 @@
+{
+  "Title": "Namae wa Mada Nai",
+  "URL": "namae-wa-mada-nai",
+  "CoverImage": "namae-wa-mada-nai.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Shoujo Ai"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-02 18:06:21"
+  }
+}

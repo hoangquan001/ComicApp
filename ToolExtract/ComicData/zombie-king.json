@@ -1,0 +1,18 @@
+{
+  "Title": "Zombie King",
+  "URL": "zombie-king",
+  "CoverImage": "zombie-king.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-28",
+  "TotalChapter": 28,
+  "Chapters": {
+    "urlChapter": "chapter-28",
+    "dateUpdateChapter": "2024-01-04 02:45:15"
+  }
+}

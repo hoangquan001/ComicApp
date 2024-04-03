@@ -1,0 +1,16 @@
+{
+  "Title": "Break Free Magazine",
+  "URL": "break-free-magazine",
+  "CoverImage": "break-free-magazine.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-20 21:22:43"
+  }
+}

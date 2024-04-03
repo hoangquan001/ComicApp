@@ -1,0 +1,22 @@
+{
+  "Title": "Charon !",
+  "URL": "charon",
+  "CoverImage": "charon.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Horror",
+    "Mystery",
+    "Sci-fi",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 09:16:20"
+  }
+}

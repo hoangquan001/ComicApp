@@ -1,0 +1,18 @@
+{
+  "Title": "Mua may b\u00e1n t\u00e0i",
+  "URL": "mua-may-ban-tai",
+  "CoverImage": "mua-may-ban-tai.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-34",
+  "TotalChapter": 34,
+  "Chapters": {
+    "urlChapter": "chapter-34",
+    "dateUpdateChapter": "2024-01-23 09:01:06"
+  }
+}

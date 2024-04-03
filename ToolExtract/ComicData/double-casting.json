@@ -1,0 +1,19 @@
+{
+  "Title": "Double Casting",
+  "URL": "double-casting",
+  "CoverImage": "double-casting.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Mystery",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-90",
+  "TotalChapter": 90,
+  "Chapters": {
+    "urlChapter": "chapter-90",
+    "dateUpdateChapter": "2024-01-16 02:55:25"
+  }
+}

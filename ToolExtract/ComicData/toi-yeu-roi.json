@@ -1,0 +1,18 @@
+{
+  "Title": "T\u00f4i Y\u00eau R\u1ed3i",
+  "URL": "toi-yeu-roi",
+  "CoverImage": "toi-yeu-roi.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhua",
+    "One shot"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-01 09:17:39"
+  }
+}

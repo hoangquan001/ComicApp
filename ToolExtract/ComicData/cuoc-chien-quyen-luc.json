@@ -1,0 +1,19 @@
+{
+  "Title": "Cu\u1ed9c Chi\u1ebfn Quy\u1ec1n L\u1ef1c",
+  "URL": "cuoc-chien-quyen-luc",
+  "CoverImage": "cuoc-chien-quyen-luc.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-20 18:45:29"
+  }
+}

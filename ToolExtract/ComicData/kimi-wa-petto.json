@@ -1,0 +1,18 @@
+{
+  "Title": "Kimi wa petto",
+  "URL": "kimi-wa-petto",
+  "CoverImage": "kimi-wa-petto.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-23 01:10:39"
+  }
+}

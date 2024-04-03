@@ -1,0 +1,20 @@
+{
+  "Title": "Daikusei Kuuki Heishidan",
+  "URL": "daikusei-kuuki-heishidan",
+  "CoverImage": "daikusei-kuuki-heishidan.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 03:54:51"
+  }
+}

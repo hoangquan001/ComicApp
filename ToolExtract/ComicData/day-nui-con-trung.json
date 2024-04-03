@@ -1,0 +1,22 @@
+{
+  "Title": "Da\u0303y Nu\u0301i C\u00f4n Tru\u0300ng",
+  "URL": "day-nui-con-trung",
+  "CoverImage": "day-nui-con-trung.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Ecchi",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-52",
+  "TotalChapter": 52,
+  "Chapters": {
+    "urlChapter": "chapter-52",
+    "dateUpdateChapter": "4 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

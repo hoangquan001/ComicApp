@@ -1,0 +1,20 @@
+{
+  "Title": "Shamo (V\u00f5 \u0110\u1ea1o)",
+  "URL": "shamo-vo-dao",
+  "CoverImage": "shamo-vo-dao.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-101",
+  "TotalChapter": 101,
+  "Chapters": {
+    "urlChapter": "chapter-101",
+    "dateUpdateChapter": "2024-01-03 08:49:37"
+  }
+}

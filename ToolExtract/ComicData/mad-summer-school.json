@@ -1,0 +1,20 @@
+{
+  "Title": "Mad Summer School",
+  "URL": "mad-summer-school",
+  "CoverImage": "mad-summer-school.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Manga",
+    "Mystery",
+    "School Life"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-12 00:42:43"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Mayonaka no Ariadone",
+  "URL": "mayonaka-no-ariadone",
+  "CoverImage": "mayonaka-no-ariadone.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Mystery",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-30 22:33:51"
+  }
+}

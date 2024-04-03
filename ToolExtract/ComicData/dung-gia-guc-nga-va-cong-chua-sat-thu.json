@@ -1,0 +1,23 @@
+{
+  "Title": "D\u0169ng gi\u1ea3 g\u1ee5c ng\u00e3 v\u00e0 C\u00f4ng ch\u00faa s\u00e1t th\u1ee7",
+  "URL": "dung-gia-guc-nga-va-cong-chua-sat-thu",
+  "CoverImage": "dung-gia-guc-nga-va-cong-chua-sat-thu.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-23 16:37:52"
+  }
+}

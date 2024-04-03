@@ -1,0 +1,18 @@
+{
+  "Title": "Golden Change",
+  "URL": "golden-change",
+  "CoverImage": "golden-change.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-17 22:22:27"
+  }
+}

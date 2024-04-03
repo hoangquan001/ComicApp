@@ -1,0 +1,21 @@
+{
+  "Title": "Tr\u01b0\u1eddng H\u1ecdc Vampire",
+  "URL": "truong-hoc-vampire",
+  "CoverImage": "truong-hoc-vampire.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Shounen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-25 11:13:27"
+  }
+}

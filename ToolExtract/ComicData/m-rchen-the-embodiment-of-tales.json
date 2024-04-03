@@ -1,0 +1,23 @@
+{
+  "Title": "M\u00e4rchen: The Embodiment of Tales",
+  "URL": "m-rchen-the-embodiment-of-tales",
+  "CoverImage": "m-rchen-the-embodiment-of-tales.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Martial Arts",
+    "Shounen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-99",
+  "TotalChapter": 99,
+  "Chapters": {
+    "urlChapter": "chapter-99",
+    "dateUpdateChapter": "2024-01-04 10:53:28"
+  }
+}

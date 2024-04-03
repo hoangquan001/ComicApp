@@ -1,0 +1,18 @@
+{
+  "Title": "Mayoi Neko Overrun!",
+  "URL": "mayoi-neko-overrun",
+  "CoverImage": "mayoi-neko-overrun.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-01 04:01:52"
+  }
+}

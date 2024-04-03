@@ -1,0 +1,20 @@
+{
+  "Title": "Y\u00eau Ph\u1ea3i Vampire",
+  "URL": "yeu-phai-vampire",
+  "CoverImage": "yeu-phai-vampire.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manhua",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-21 10:59:29"
+  }
+}

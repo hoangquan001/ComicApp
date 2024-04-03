@@ -1,0 +1,20 @@
+{
+  "Title": "Nuiguru Mix",
+  "URL": "nuiguru-mix",
+  "CoverImage": "nuiguru-mix.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Romance",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-20 18:16:57"
+  }
+}

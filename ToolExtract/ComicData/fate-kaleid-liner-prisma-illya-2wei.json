@@ -1,0 +1,19 @@
+{
+  "Title": "Fate/Kaleid Liner Prisma Illya 2wei!",
+  "URL": "fate-kaleid-liner-prisma-illya-2wei",
+  "CoverImage": "fate-kaleid-liner-prisma-illya-2wei.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Fantasy",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-35",
+  "TotalChapter": 35,
+  "Chapters": {
+    "urlChapter": "chapter-35",
+    "dateUpdateChapter": "2024-01-20 23:01:55"
+  }
+}

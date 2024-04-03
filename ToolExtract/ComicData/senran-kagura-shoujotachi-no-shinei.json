@@ -1,0 +1,20 @@
+{
+  "Title": "Senran Kagura - Shoujotachi no Shinei",
+  "URL": "senran-kagura-shoujotachi-no-shinei",
+  "CoverImage": "senran-kagura-shoujotachi-no-shinei.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Ecchi",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 17:45:56"
+  }
+}

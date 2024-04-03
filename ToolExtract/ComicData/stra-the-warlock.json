@@ -1,0 +1,17 @@
+{
+  "Title": "Stra The Warlock",
+  "URL": "stra-the-warlock",
+  "CoverImage": "stra-the-warlock.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 09:16:38"
+  }
+}

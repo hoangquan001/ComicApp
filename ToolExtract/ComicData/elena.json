@@ -1,0 +1,17 @@
+{
+  "Title": "Elena",
+  "URL": "elena",
+  "CoverImage": "elena.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-02-01 06:17:47"
+  }
+}

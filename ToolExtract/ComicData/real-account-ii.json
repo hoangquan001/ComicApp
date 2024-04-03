@@ -1,0 +1,23 @@
+{
+  "Title": "Real Account II",
+  "URL": "real-account-ii",
+  "CoverImage": "real-account-ii.jpg",
+  "CreateAt": "21/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Horror",
+    "Psychological",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-193",
+  "TotalChapter": 193,
+  "Chapters": {
+    "urlChapter": "chapter-193",
+    "dateUpdateChapter": "2023-12-21 11:45:58"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Tomogui Kyoushitsu",
+  "URL": "tomogui-kyoushitsu",
+  "CoverImage": "tomogui-kyoushitsu.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "School Life",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-02 18:04:08"
+  }
+}

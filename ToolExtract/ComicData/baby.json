@@ -1,0 +1,21 @@
+{
+  "Title": "Baby",
+  "URL": "baby",
+  "CoverImage": "baby.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Martial Arts",
+    "Sci-fi",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-01 13:11:04"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "B\u00ed M\u1eadt C\u1ee7a Ch\u00fang T\u00f4i",
+  "URL": "bi-mat-cua-chung-toi",
+  "CoverImage": "bi-mat-cua-chung-toi.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2023-12-31 22:32:49"
+  }
+}

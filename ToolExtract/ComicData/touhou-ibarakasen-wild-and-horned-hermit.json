@@ -1,0 +1,23 @@
+{
+  "Title": "Touhou Ibarakasen - Wild and Horned Hermit",
+  "URL": "touhou-ibarakasen-wild-and-horned-hermit",
+  "CoverImage": "touhou-ibarakasen-wild-and-horned-hermit.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Historical",
+    "Manga",
+    "Shounen",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-21 19:27:08"
+  }
+}

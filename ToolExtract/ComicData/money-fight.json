@@ -1,0 +1,17 @@
+{
+  "Title": "MONEY FIGHT",
+  "URL": "money-fight",
+  "CoverImage": "money-fight.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-20 19:39:55"
+  }
+}

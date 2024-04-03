@@ -1,0 +1,18 @@
+{
+  "Title": "Kamisama no Iutoori",
+  "URL": "kamisama-no-iutoori",
+  "CoverImage": "kamisama-no-iutoori.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-03 13:44:02"
+  }
+}

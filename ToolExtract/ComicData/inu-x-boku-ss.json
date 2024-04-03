@@ -1,0 +1,18 @@
+{
+  "Title": "Inu x Boku SS",
+  "URL": "inu-x-boku-ss",
+  "CoverImage": "inu-x-boku-ss.jpg",
+  "CreateAt": "08/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-52",
+  "TotalChapter": 52,
+  "Chapters": {
+    "urlChapter": "chapter-52",
+    "dateUpdateChapter": "2024-01-08 00:29:08"
+  }
+}

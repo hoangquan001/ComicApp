@@ -1,0 +1,22 @@
+{
+  "Title": "Ph\u00f9 Thu\u1ef7 Th\u1eddi \u0110\u1ea1i M\u1edbi",
+  "URL": "phu-thuy-thoi-dai-moi",
+  "CoverImage": "phu-thuy-thoi-dai-moi.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Fantasy",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-120",
+  "TotalChapter": 120,
+  "Chapters": {
+    "urlChapter": "chapter-120",
+    "dateUpdateChapter": "2024-01-03 19:07:36"
+  }
+}

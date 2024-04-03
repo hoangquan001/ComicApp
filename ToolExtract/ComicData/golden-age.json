@@ -1,0 +1,19 @@
+{
+  "Title": "Golden Age",
+  "URL": "golden-age",
+  "CoverImage": "golden-age.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-16 21:10:23"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Sengoku Youko",
+  "URL": "sengoku-youko",
+  "CoverImage": "sengoku-youko.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Historical",
+    "Sci-fi",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-68",
+  "TotalChapter": 68,
+  "Chapters": {
+    "urlChapter": "chapter-68",
+    "dateUpdateChapter": "1 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

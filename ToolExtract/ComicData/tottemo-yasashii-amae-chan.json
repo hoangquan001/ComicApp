@@ -1,0 +1,19 @@
+{
+  "Title": "Tottemo Yasashii Amae-Chan!",
+  "URL": "tottemo-yasashii-amae-chan",
+  "CoverImage": "tottemo-yasashii-amae-chan.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-03 10:22:06"
+  }
+}

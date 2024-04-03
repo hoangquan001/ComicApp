@@ -1,0 +1,20 @@
+{
+  "Title": "V\u1ee3 Tui L\u00e0 Ma",
+  "URL": "vo-tui-la-ma",
+  "CoverImage": "vo-tui-la-ma.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-14 13:00:55"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Lupin The 3rd",
+  "URL": "lupin-the-3rd",
+  "CoverImage": "lupin-the-3rd.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-31 23:47:53"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Anh em nh\u00e0 H\u1ed7n \u0110\u1ed9n",
+  "URL": "anh-em-nha-hon-don",
+  "CoverImage": "anh-em-nha-hon-don.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Anime",
+    "Comedy",
+    "Comic",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 21:31:19"
+  }
+}

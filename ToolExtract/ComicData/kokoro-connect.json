@@ -1,0 +1,20 @@
+{
+  "Title": "Kokoro Connect",
+  "URL": "kokoro-connect",
+  "CoverImage": "kokoro-connect.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-01 01:25:50"
+  }
+}

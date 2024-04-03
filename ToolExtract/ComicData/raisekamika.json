@@ -1,0 +1,22 @@
+{
+  "Title": "Raisekamika",
+  "URL": "raisekamika",
+  "CoverImage": "raisekamika.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-32",
+  "TotalChapter": 32,
+  "Chapters": {
+    "urlChapter": "chapter-32",
+    "dateUpdateChapter": "2024-01-09 21:33:39"
+  }
+}

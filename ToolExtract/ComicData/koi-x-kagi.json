@@ -1,0 +1,17 @@
+{
+  "Title": "Koi x Kagi",
+  "URL": "koi-x-kagi",
+  "CoverImage": "koi-x-kagi.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-27 02:19:18"
+  }
+}

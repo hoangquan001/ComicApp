@@ -1,0 +1,21 @@
+{
+  "Title": "Nar Kiss",
+  "URL": "nar-kiss",
+  "CoverImage": "nar-kiss.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo Ai",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-22 20:44:45"
+  }
+}

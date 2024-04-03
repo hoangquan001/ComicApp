@@ -1,0 +1,17 @@
+{
+  "Title": "C\u00e1ch Ly Th\u1ebf Gi\u1edbi",
+  "URL": "cach-ly-the-gioi",
+  "CoverImage": "cach-ly-the-gioi.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-26 18:18:55"
+  }
+}

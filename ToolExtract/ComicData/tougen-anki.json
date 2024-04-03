@@ -1,0 +1,23 @@
+{
+  "Title": "Tougen Anki",
+  "URL": "tougen-anki",
+  "CoverImage": "tougen-anki.jpg",
+  "CreateAt": "21/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-145",
+  "TotalChapter": 145,
+  "Chapters": {
+    "urlChapter": "chapter-145",
+    "dateUpdateChapter": "2024-02-19 12:52:32"
+  }
+}

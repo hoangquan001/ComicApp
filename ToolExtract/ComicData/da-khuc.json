@@ -1,0 +1,22 @@
+{
+  "Title": "D\u1ea1 Kh\u00fac",
+  "URL": "da-khuc",
+  "CoverImage": "da-khuc.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-13 15:41:49"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Snow White and Alice",
+  "URL": "snow-white-and-alice",
+  "CoverImage": "snow-white-and-alice.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-26 13:46:16"
+  }
+}

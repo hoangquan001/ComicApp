@@ -1,0 +1,19 @@
+{
+  "Title": "Watashi (Kari)",
+  "URL": "watashi-kari",
+  "CoverImage": "watashi-kari.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Mystery",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-28",
+  "TotalChapter": 28,
+  "Chapters": {
+    "urlChapter": "chapter-28",
+    "dateUpdateChapter": "2024-01-15 22:28:21"
+  }
+}

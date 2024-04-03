@@ -1,0 +1,19 @@
+{
+  "Title": "Star Child",
+  "URL": "star-child",
+  "CoverImage": "star-child.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Romance",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-02-01 13:42:41"
+  }
+}

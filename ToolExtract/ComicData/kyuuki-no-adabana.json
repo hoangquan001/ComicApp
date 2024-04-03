@@ -1,0 +1,18 @@
+{
+  "Title": "Kyuuki no Adabana",
+  "URL": "kyuuki-no-adabana",
+  "CoverImage": "kyuuki-no-adabana.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-01 05:42:51"
+  }
+}

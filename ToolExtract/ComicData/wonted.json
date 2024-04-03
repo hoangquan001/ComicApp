@@ -1,0 +1,21 @@
+{
+  "Title": "Wonted",
+  "URL": "wonted",
+  "CoverImage": "wonted.jpg",
+  "CreateAt": "08/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Anime",
+    "Comedy",
+    "School Life",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-140",
+  "TotalChapter": 140,
+  "Chapters": {
+    "urlChapter": "chapter-140",
+    "dateUpdateChapter": "2024-01-08 01:48:49"
+  }
+}

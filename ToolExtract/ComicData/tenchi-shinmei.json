@@ -1,0 +1,22 @@
+{
+  "Title": "Tenchi Shinmei",
+  "URL": "tenchi-shinmei",
+  "CoverImage": "tenchi-shinmei.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Horror",
+    "Romance",
+    "School Life",
+    "Smut",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 13:12:01"
+  }
+}

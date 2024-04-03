@@ -1,0 +1,20 @@
+{
+  "Title": "Motto - ikitai",
+  "URL": "motto-ikitai",
+  "CoverImage": "motto-ikitai.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Manga",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-17 13:28:42"
+  }
+}

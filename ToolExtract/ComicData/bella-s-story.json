@@ -1,0 +1,31 @@
+{
+  "Title": "Bella's Story",
+  "URL": "bella-s-story",
+  "CoverImage": "bella-s-story.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic",
+    "Drama",
+    "Fantasy",
+    "Harem",
+    "Mystery",
+    "Ng\u00f4n T\u00ecnh",
+    "Psychological",
+    "Romance",
+    "School Life",
+    "Sci-fi",
+    "Shoujo",
+    "Shoujo Ai",
+    "Shounen",
+    "Slice of Life",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-43",
+  "TotalChapter": 43,
+  "Chapters": {
+    "urlChapter": "chapter-43",
+    "dateUpdateChapter": "2024-01-17 20:18:11"
+  }
+}

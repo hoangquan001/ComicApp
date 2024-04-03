@@ -1,0 +1,21 @@
+{
+  "Title": "Ouji no Kikan",
+  "URL": "ouji-no-kikan",
+  "CoverImage": "ouji-no-kikan.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Romance",
+    "Sci-fi",
+    "Sports"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-01 14:17:04"
+  }
+}

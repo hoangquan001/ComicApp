@@ -1,0 +1,21 @@
+{
+  "Title": "Yureka Lost Saga",
+  "URL": "yureka-lost-saga",
+  "CoverImage": "yureka-lost-saga.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-198",
+  "TotalChapter": 198,
+  "Chapters": {
+    "urlChapter": "chapter-198",
+    "dateUpdateChapter": "2024-01-10 03:23:03"
+  }
+}

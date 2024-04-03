@@ -1,0 +1,19 @@
+{
+  "Title": "Dansan Joshi",
+  "URL": "dansan-joshi",
+  "CoverImage": "dansan-joshi.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-53",
+  "TotalChapter": 53,
+  "Chapters": {
+    "urlChapter": "chapter-53",
+    "dateUpdateChapter": "2024-01-16 19:59:38"
+  }
+}

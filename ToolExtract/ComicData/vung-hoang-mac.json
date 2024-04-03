@@ -1,0 +1,20 @@
+{
+  "Title": "V\u00f9ng Hoang M\u1ea1c",
+  "URL": "vung-hoang-mac",
+  "CoverImage": "vung-hoang-mac.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-02-01 11:21:11"
+  }
+}

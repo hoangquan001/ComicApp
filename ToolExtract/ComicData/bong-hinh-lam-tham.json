@@ -1,0 +1,21 @@
+{
+  "Title": "B\u00f3ng h\u00ecnh lam th\u1eabm",
+  "URL": "bong-hinh-lam-tham",
+  "CoverImage": "bong-hinh-lam-tham.jpg",
+  "CreateAt": "20/03/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "One shot",
+    "Psychological",
+    "School Life",
+    "Shounen Ai"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "13 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

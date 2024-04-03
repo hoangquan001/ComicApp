@@ -1,0 +1,20 @@
+{
+  "Title": "Choujin Sensen",
+  "URL": "choujin-sensen",
+  "CoverImage": "choujin-sensen.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Mature",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-29",
+  "TotalChapter": 29,
+  "Chapters": {
+    "urlChapter": "chapter-29",
+    "dateUpdateChapter": "2024-01-22 23:49:20"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "V\u00f4 song b\u1ea3o ki\u1ebfm",
+  "URL": "vo-song-bao-kiem",
+  "CoverImage": "vo-song-bao-kiem.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manhwa",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-17 22:47:18"
+  }
+}

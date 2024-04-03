@@ -1,0 +1,17 @@
+{
+  "Title": "Sao Mai c\u1ee7a em",
+  "URL": "sao-mai-cua-em",
+  "CoverImage": "sao-mai-cua-em.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-85",
+  "TotalChapter": 85,
+  "Chapters": {
+    "urlChapter": "chapter-85",
+    "dateUpdateChapter": "2023-12-27 08:42:06"
+  }
+}

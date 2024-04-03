@@ -1,0 +1,18 @@
+{
+  "Title": "The Scum of Good and Evil",
+  "URL": "the-scum-of-good-and-evil",
+  "CoverImage": "the-scum-of-good-and-evil.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-37",
+  "TotalChapter": 37,
+  "Chapters": {
+    "urlChapter": "chapter-37",
+    "dateUpdateChapter": "2023-12-30 19:59:52"
+  }
+}

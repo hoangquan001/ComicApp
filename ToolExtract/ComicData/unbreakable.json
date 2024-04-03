@@ -1,0 +1,24 @@
+{
+  "Title": "Unbreakable",
+  "URL": "unbreakable",
+  "CoverImage": "unbreakable.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Horror",
+    "Manhwa",
+    "Seinen",
+    "Supernatural",
+    "Tragedy",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-05 19:15:16"
+  }
+}

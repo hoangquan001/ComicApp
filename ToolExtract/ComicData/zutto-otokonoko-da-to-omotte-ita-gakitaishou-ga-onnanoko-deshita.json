@@ -1,0 +1,19 @@
+{
+  "Title": "Zutto Otokonoko da to Omotte ita Gakitaishou ga Onnanoko deshita",
+  "URL": "zutto-otokonoko-da-to-omotte-ita-gakitaishou-ga-onnanoko-deshita",
+  "CoverImage": "zutto-otokonoko-da-to-omotte-ita-gakitaishou-ga-onnanoko-deshita.jpg",
+  "CreateAt": "28/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2023-12-28 02:46:17"
+  }
+}

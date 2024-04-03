@@ -1,0 +1,18 @@
+{
+  "Title": "Toukyou Akazukin",
+  "URL": "toukyou-akazukin",
+  "CoverImage": "toukyou-akazukin.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-30 16:44:06"
+  }
+}

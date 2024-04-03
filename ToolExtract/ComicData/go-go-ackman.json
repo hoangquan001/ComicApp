@@ -1,0 +1,19 @@
+{
+  "Title": "Go! Go! Ackman",
+  "URL": "go-go-ackman",
+  "CoverImage": "go-go-ackman.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 22:46:04"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "0 x 0 Memories",
+  "URL": "0-x-0-memories",
+  "CoverImage": "0-x-0-memories.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "One shot"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-26 19:19:14"
+  }
+}

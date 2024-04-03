@@ -1,0 +1,19 @@
+{
+  "Title": "T\u1ea1m Bi\u1ec7t IRIS",
+  "URL": "tam-biet-iris",
+  "CoverImage": "tam-biet-iris.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-30 11:49:06"
+  }
+}

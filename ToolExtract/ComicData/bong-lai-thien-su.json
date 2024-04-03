@@ -1,0 +1,23 @@
+{
+  "Title": "B\u1ed3ng lai thi\u00ean s\u01b0",
+  "URL": "bong-lai-thien-su",
+  "CoverImage": "bong-lai-thien-su.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Drama",
+    "Manhua",
+    "Shoujo",
+    "Shoujo Ai",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-30 15:55:10"
+  }
+}

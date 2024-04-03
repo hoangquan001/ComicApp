@@ -1,0 +1,18 @@
+{
+  "Title": "Watashi no Kairosu",
+  "URL": "watashi-no-kairosu",
+  "CoverImage": "watashi-no-kairosu.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Fantasy",
+    "One shot",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 09:15:11"
+  }
+}

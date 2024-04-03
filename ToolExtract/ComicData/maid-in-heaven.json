@@ -1,0 +1,22 @@
+{
+  "Title": "Maid In Heaven",
+  "URL": "maid-in-heaven",
+  "CoverImage": "maid-in-heaven.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Manhwa",
+    "Psychological",
+    "Webtoon",
+    "Kha\u0301c",
+    "Yuri"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-01 05:36:52"
+  }
+}

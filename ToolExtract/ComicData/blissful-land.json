@@ -1,0 +1,19 @@
+{
+  "Title": "Blissful Land",
+  "URL": "blissful-land",
+  "CoverImage": "blissful-land.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Historical",
+    "Romance",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-21 02:46:45"
+  }
+}

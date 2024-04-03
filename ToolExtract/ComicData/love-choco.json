@@ -1,0 +1,18 @@
+{
+  "Title": "Love Choco",
+  "URL": "love-choco",
+  "CoverImage": "love-choco.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Romance",
+    "Shoujo",
+    "Smut"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-10 16:24:15"
+  }
+}

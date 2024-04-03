@@ -1,0 +1,19 @@
+{
+  "Title": "Tam Gi\u1edbi Ch\u00ed",
+  "URL": "tam-gioi-chi",
+  "CoverImage": "tam-gioi-chi.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-21 12:27:38"
+  }
+}

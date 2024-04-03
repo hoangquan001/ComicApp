@@ -1,0 +1,20 @@
+{
+  "Title": "Plants Vs Zombies - Lawnmageddon",
+  "URL": "plants-vs-zombies-lawnmageddon",
+  "CoverImage": "plants-vs-zombies-lawnmageddon.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Comic",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-24 21:30:05"
+  }
+}

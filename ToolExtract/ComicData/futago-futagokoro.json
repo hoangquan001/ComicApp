@@ -1,0 +1,23 @@
+{
+  "Title": "Futago, Futagokoro",
+  "URL": "futago-futagokoro",
+  "CoverImage": "futago-futagokoro.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-20 03:07:34"
+  }
+}

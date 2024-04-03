@@ -1,0 +1,22 @@
+{
+  "Title": "Qu\u1ef7 \u0110\u1ea1o",
+  "URL": "quy-dao",
+  "CoverImage": "quy-dao.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Manhua",
+    "Martial Arts",
+    "Mystery",
+    "Supernatural",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 00:21:59"
+  }
+}

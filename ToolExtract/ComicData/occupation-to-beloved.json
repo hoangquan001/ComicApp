@@ -1,0 +1,20 @@
+{
+  "Title": "Occupation to Beloved",
+  "URL": "occupation-to-beloved",
+  "CoverImage": "occupation-to-beloved.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-01 07:47:00"
+  }
+}

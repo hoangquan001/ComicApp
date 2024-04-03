@@ -1,0 +1,22 @@
+{
+  "Title": "N\u1ee5 H\u00f4n N\u1ed3ng Th\u1eafm",
+  "URL": "nu-hon-nong-tham",
+  "CoverImage": "nu-hon-nong-tham.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-22 02:49:10"
+  }
+}

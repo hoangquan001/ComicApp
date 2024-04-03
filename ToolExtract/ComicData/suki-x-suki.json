@@ -1,0 +1,19 @@
+{
+  "Title": "Suki x Suki",
+  "URL": "suki-x-suki",
+  "CoverImage": "suki-x-suki.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-14 03:11:16"
+  }
+}

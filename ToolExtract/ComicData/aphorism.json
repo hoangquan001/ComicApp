@@ -1,0 +1,19 @@
+{
+  "Title": "Aphorism",
+  "URL": "aphorism",
+  "CoverImage": "aphorism.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-82",
+  "TotalChapter": 82,
+  "Chapters": {
+    "urlChapter": "chapter-82",
+    "dateUpdateChapter": "2024-01-16 16:51:38"
+  }
+}

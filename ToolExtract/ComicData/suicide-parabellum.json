@@ -1,0 +1,18 @@
+{
+  "Title": "Suicide Parabellum",
+  "URL": "suicide-parabellum",
+  "CoverImage": "suicide-parabellum.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-23 13:28:28"
+  }
+}

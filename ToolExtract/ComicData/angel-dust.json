@@ -1,0 +1,19 @@
+{
+  "Title": "Angel/Dust",
+  "URL": "angel-dust",
+  "CoverImage": "angel-dust.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-02 20:24:38"
+  }
+}

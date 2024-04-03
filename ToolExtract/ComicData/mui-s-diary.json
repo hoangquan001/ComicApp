@@ -1,0 +1,18 @@
+{
+  "Title": "Mui\u2019s Diary",
+  "URL": "mui-s-diary",
+  "CoverImage": "mui-s-diary.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comic",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-03 10:06:33"
+  }
+}

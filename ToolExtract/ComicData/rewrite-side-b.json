@@ -1,0 +1,22 @@
+{
+  "Title": "Rewrite: Side-B",
+  "URL": "rewrite-side-b",
+  "CoverImage": "rewrite-side-b.jpg",
+  "CreateAt": "05/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Harem",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-26 23:01:02"
+  }
+}

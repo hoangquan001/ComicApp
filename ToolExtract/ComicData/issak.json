@@ -1,0 +1,21 @@
+{
+  "Title": "Issak",
+  "URL": "issak",
+  "CoverImage": "issak.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Historical",
+    "Mature",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-31",
+  "TotalChapter": 31,
+  "Chapters": {
+    "urlChapter": "chapter-31",
+    "dateUpdateChapter": "2024-01-14 00:04:30"
+  }
+}

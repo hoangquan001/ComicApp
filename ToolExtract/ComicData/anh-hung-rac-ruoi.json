@@ -1,0 +1,21 @@
+{
+  "Title": "Anh H\u00f9ng R\u00e1c R\u01b0\u1edfi",
+  "URL": "anh-hung-rac-ruoi",
+  "CoverImage": "anh-hung-rac-ruoi.jpg",
+  "CreateAt": "11/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manhwa",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-173",
+  "TotalChapter": 173,
+  "Chapters": {
+    "urlChapter": "chapter-173",
+    "dateUpdateChapter": "2023-12-11 10:22:13"
+  }
+}

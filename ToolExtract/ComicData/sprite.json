@@ -1,0 +1,18 @@
+{
+  "Title": "Sprite",
+  "URL": "sprite",
+  "CoverImage": "sprite.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-12 23:01:43"
+  }
+}

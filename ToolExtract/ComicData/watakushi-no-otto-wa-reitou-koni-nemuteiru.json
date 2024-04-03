@@ -1,0 +1,23 @@
+{
+  "Title": "Watakushi no Otto wa Reitou koni Nemuteiru",
+  "URL": "watakushi-no-otto-wa-reitou-koni-nemuteiru",
+  "CoverImage": "watakushi-no-otto-wa-reitou-koni-nemuteiru.jpg",
+  "CreateAt": "08/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Drama",
+    "Horror",
+    "Josei",
+    "Manga",
+    "Psychological",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-08 07:53:59"
+  }
+}

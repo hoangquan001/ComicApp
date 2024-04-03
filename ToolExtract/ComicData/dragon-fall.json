@@ -1,0 +1,21 @@
+{
+  "Title": "Dragon Fall",
+  "URL": "dragon-fall",
+  "CoverImage": "dragon-fall.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-03 11:37:16"
+  }
+}

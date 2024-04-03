@@ -1,0 +1,21 @@
+{
+  "Title": "C\u00f4 N\u00e0ng Y\u00eau Ch\u00f3",
+  "URL": "co-nang-yeu-cho",
+  "CoverImage": "co-nang-yeu-cho.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-23 15:12:26"
+  }
+}

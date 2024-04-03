@@ -1,0 +1,23 @@
+{
+  "Title": "Death of Wolverine - Deadpool & Captain America",
+  "URL": "death-of-wolverine-deadpool-captain-america",
+  "CoverImage": "death-of-wolverine-deadpool-captain-america.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comedy",
+    "Comic",
+    "Horror",
+    "One shot",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-17 22:07:31"
+  }
+}

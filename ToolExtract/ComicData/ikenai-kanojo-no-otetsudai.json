@@ -1,0 +1,21 @@
+{
+  "Title": "Ikenai Kanojo no Otetsudai",
+  "URL": "ikenai-kanojo-no-otetsudai",
+  "CoverImage": "ikenai-kanojo-no-otetsudai.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Romance",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-13 04:10:43"
+  }
+}

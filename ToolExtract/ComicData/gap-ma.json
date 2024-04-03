@@ -1,0 +1,17 @@
+{
+  "Title": "G\u1eb7p Ma",
+  "URL": "gap-ma",
+  "CoverImage": "gap-ma.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "One shot"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 09:23:03"
+  }
+}

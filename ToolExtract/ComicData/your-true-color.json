@@ -1,0 +1,18 @@
+{
+  "Title": "Your True Color",
+  "URL": "your-true-color",
+  "CoverImage": "your-true-color.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 04:25:43"
+  }
+}

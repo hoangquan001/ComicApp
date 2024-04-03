@@ -1,0 +1,22 @@
+{
+  "Title": "Satsujinhime to Fushi no Majutsushi",
+  "URL": "satsujinhime-to-fushi-no-majutsushi",
+  "CoverImage": "satsujinhime-to-fushi-no-majutsushi.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comedy",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-01 04:02:08"
+  }
+}

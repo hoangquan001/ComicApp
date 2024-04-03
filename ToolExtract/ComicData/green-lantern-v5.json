@@ -1,0 +1,18 @@
+{
+  "Title": "Green Lantern v5",
+  "URL": "green-lantern-v5",
+  "CoverImage": "green-lantern-v5.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 04:19:19"
+  }
+}

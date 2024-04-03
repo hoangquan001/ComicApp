@@ -1,0 +1,22 @@
+{
+  "Title": "Kanon - T\u1eadn C\u00f9ng C\u1ee7a T\u00ecnh Y\u00eau.",
+  "URL": "kanon-tan-cung-cua-tinh-yeu",
+  "CoverImage": "kanon-tan-cung-cua-tinh-yeu.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Psychological",
+    "Romance",
+    "Sci-fi",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-31",
+  "TotalChapter": 31,
+  "Chapters": {
+    "urlChapter": "chapter-31",
+    "dateUpdateChapter": "2024-01-15 11:21:32"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Smiley - C\u01b0\u1eddi L\u00ean",
+  "URL": "smiley-cuoi-len",
+  "CoverImage": "smiley-cuoi-len.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga",
+    "Mystery",
+    "Psychological",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-69",
+  "TotalChapter": 69,
+  "Chapters": {
+    "urlChapter": "chapter-69",
+    "dateUpdateChapter": "2024-02-07 12:45:04"
+  }
+}

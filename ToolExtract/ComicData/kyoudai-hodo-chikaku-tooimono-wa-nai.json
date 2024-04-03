@@ -1,0 +1,22 @@
+{
+  "Title": "Kyoudai hodo Chikaku Tooimono wa Nai",
+  "URL": "kyoudai-hodo-chikaku-tooimono-wa-nai",
+  "CoverImage": "kyoudai-hodo-chikaku-tooimono-wa-nai.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Harem",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-123",
+  "TotalChapter": 123,
+  "Chapters": {
+    "urlChapter": "chapter-123",
+    "dateUpdateChapter": "2023-12-26 22:33:49"
+  }
+}

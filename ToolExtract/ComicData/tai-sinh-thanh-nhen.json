@@ -1,0 +1,22 @@
+{
+  "Title": "T\u00e1i Sinh Th\u00e0nh Nh\u1ec7n",
+  "URL": "tai-sinh-thanh-nhen",
+  "CoverImage": "tai-sinh-thanh-nhen.jpg",
+  "CreateAt": "12/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Mature",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-131",
+  "TotalChapter": 131,
+  "Chapters": {
+    "urlChapter": "chapter-131",
+    "dateUpdateChapter": "2023-12-12 01:27:35"
+  }
+}

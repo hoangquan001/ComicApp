@@ -1,0 +1,21 @@
+{
+  "Title": "Inochi",
+  "URL": "inochi",
+  "CoverImage": "inochi.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Psychological",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-21 23:34:13"
+  }
+}

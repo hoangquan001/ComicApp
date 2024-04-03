@@ -1,0 +1,19 @@
+{
+  "Title": "Itoko No Ko",
+  "URL": "itoko-no-ko",
+  "CoverImage": "itoko-no-ko.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-23 16:33:21"
+  }
+}

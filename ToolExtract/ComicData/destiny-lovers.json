@@ -1,0 +1,20 @@
+{
+  "Title": "Destiny Lovers",
+  "URL": "destiny-lovers",
+  "CoverImage": "destiny-lovers.jpg",
+  "CreateAt": "17/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Manga",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-108",
+  "TotalChapter": 108,
+  "Chapters": {
+    "urlChapter": "chapter-108",
+    "dateUpdateChapter": "2023-12-17 23:50:27"
+  }
+}

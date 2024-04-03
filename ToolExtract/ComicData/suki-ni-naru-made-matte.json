@@ -1,0 +1,19 @@
+{
+  "Title": "Suki ni Naru Made Matte",
+  "URL": "suki-ni-naru-made-matte",
+  "CoverImage": "suki-ni-naru-made-matte.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-22 10:26:02"
+  }
+}

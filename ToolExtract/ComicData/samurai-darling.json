@@ -1,0 +1,19 @@
+{
+  "Title": "Samurai Darling",
+  "URL": "samurai-darling",
+  "CoverImage": "samurai-darling.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-27 02:41:03"
+  }
+}

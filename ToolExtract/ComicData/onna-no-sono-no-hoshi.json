@@ -1,0 +1,20 @@
+{
+  "Title": "Onna No Sono No Hoshi",
+  "URL": "onna-no-sono-no-hoshi",
+  "CoverImage": "onna-no-sono-no-hoshi.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Josei",
+    "Manga",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-13 20:51:50"
+  }
+}

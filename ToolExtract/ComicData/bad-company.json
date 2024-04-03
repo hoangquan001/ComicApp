@@ -1,0 +1,19 @@
+{
+  "Title": "Bad Company",
+  "URL": "bad-company",
+  "CoverImage": "bad-company.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Comedy",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-16 20:30:22"
+  }
+}

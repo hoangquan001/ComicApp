@@ -1,0 +1,18 @@
+{
+  "Title": "Captain Tsubasa",
+  "URL": "captain-tsubasa",
+  "CoverImage": "captain-tsubasa.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-57",
+  "TotalChapter": 57,
+  "Chapters": {
+    "urlChapter": "chapter-57",
+    "dateUpdateChapter": "2024-01-04 13:15:14"
+  }
+}

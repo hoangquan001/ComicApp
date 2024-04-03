@@ -1,0 +1,19 @@
+{
+  "Title": "Miseru, Mitsumeru, Futari Dake",
+  "URL": "miseru-mitsumeru-futari-dake",
+  "CoverImage": "miseru-mitsumeru-futari-dake.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "One shot",
+    "School Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-14 09:14:42"
+  }
+}

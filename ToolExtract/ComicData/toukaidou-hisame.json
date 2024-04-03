@@ -1,0 +1,24 @@
+{
+  "Title": "Toukaidou HISAME",
+  "URL": "toukaidou-hisame",
+  "CoverImage": "toukaidou-hisame.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Drama",
+    "Shoujo",
+    "Shoujo Ai",
+    "Shounen",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-02-01 01:39:32"
+  }
+}

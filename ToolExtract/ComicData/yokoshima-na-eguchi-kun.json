@@ -1,0 +1,23 @@
+{
+  "Title": "Yokoshima na Eguchi-kun",
+  "URL": "yokoshima-na-eguchi-kun",
+  "CoverImage": "yokoshima-na-eguchi-kun.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Mature",
+    "School Life",
+    "Seinen",
+    "Slice of Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-20 21:24:33"
+  }
+}

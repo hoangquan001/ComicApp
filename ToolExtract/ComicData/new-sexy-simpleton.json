@@ -1,0 +1,20 @@
+{
+  "Title": "New Sexy Simpleton",
+  "URL": "new-sexy-simpleton",
+  "CoverImage": "new-sexy-simpleton.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manhwa",
+    "Mystery",
+    "Ng\u00f4n T\u00ecnh",
+    "Sci-fi",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-69",
+  "TotalChapter": 69,
+  "Chapters": {
+    "urlChapter": "chapter-69",
+    "dateUpdateChapter": "2024-01-15 20:16:29"
+  }
+}

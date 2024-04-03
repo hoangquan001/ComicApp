@@ -1,0 +1,21 @@
+{
+  "Title": "Orient",
+  "URL": "orient",
+  "CoverImage": "orient.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Manga",
+    "Mystery",
+    "Psychological",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-128",
+  "TotalChapter": 128,
+  "Chapters": {
+    "urlChapter": "chapter-128",
+    "dateUpdateChapter": "2023-12-24 17:30:17"
+  }
+}

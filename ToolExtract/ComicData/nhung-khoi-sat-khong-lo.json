@@ -1,0 +1,21 @@
+{
+  "Title": "Nh\u1eefng kh\u1ed1i s\u1eaft kh\u1ed5ng l\u1ed3",
+  "URL": "nhung-khoi-sat-khong-lo",
+  "CoverImage": "nhung-khoi-sat-khong-lo.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Mecha",
+    "Sci-fi",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-01 01:24:27"
+  }
+}

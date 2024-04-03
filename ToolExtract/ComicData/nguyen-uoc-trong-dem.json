@@ -1,0 +1,19 @@
+{
+  "Title": "Nguy\u1ec7n \u01b0\u1edbc trong \u0111\u00eam",
+  "URL": "nguyen-uoc-trong-dem",
+  "CoverImage": "nguyen-uoc-trong-dem.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-18 06:56:21"
+  }
+}

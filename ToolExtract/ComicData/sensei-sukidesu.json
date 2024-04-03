@@ -1,0 +1,20 @@
+{
+  "Title": "Sensei, Sukidesu.",
+  "URL": "sensei-sukidesu",
+  "CoverImage": "sensei-sukidesu.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Ecchi",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-20 09:31:31"
+  }
+}

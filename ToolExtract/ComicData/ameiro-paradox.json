@@ -1,0 +1,22 @@
+{
+  "Title": "Ameiro Paradox",
+  "URL": "ameiro-paradox",
+  "CoverImage": "ameiro-paradox.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo Ai",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-27 01:11:34"
+  }
+}

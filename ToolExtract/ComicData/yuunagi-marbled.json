@@ -1,0 +1,20 @@
+{
+  "Title": "Yuunagi Marbled",
+  "URL": "yuunagi-marbled",
+  "CoverImage": "yuunagi-marbled.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Shoujo Ai"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-22 23:24:06"
+  }
+}

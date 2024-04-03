@@ -1,0 +1,20 @@
+{
+  "Title": "One shot - 13",
+  "URL": "one-shot-13",
+  "CoverImage": "one-shot-13.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comedy",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-18 07:12:48"
+  }
+}

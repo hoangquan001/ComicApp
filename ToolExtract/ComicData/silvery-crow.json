@@ -1,0 +1,21 @@
+{
+  "Title": "Silvery Crow",
+  "URL": "silvery-crow",
+  "CoverImage": "silvery-crow.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Romance",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-30 07:34:18"
+  }
+}

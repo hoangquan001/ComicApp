@@ -1,0 +1,20 @@
+{
+  "Title": "Jikan Teishi Yuusha",
+  "URL": "jikan-teishi-yuusha",
+  "CoverImage": "jikan-teishi-yuusha.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Ecchi",
+    "Manga"
+  ],
+  "LastChapter": "chapter-34",
+  "TotalChapter": 34,
+  "Chapters": {
+    "urlChapter": "chapter-34",
+    "dateUpdateChapter": "2023-12-31 01:24:30"
+  }
+}

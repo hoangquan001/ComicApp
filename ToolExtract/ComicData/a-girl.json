@@ -1,0 +1,18 @@
+{
+  "Title": "A Girl",
+  "URL": "a-girl",
+  "CoverImage": "a-girl.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-02-01 11:44:33"
+  }
+}

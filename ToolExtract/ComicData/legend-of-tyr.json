@@ -1,0 +1,19 @@
+{
+  "Title": "Legend of Tyr",
+  "URL": "legend-of-tyr",
+  "CoverImage": "legend-of-tyr.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhwa",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-68",
+  "TotalChapter": 68,
+  "Chapters": {
+    "urlChapter": "chapter-68",
+    "dateUpdateChapter": "2024-01-21 00:26:02"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Welcome To The Convience Store",
+  "URL": "welcome-to-the-convience-store",
+  "CoverImage": "welcome-to-the-convience-store.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-01-26 22:42:35"
+  }
+}

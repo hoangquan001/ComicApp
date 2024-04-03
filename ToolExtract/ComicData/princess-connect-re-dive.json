@@ -1,0 +1,20 @@
+{
+  "Title": "Princess Connect Re:Dive",
+  "URL": "princess-connect-re-dive",
+  "CoverImage": "princess-connect-re-dive.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic",
+    "Fantasy",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-21 10:59:17"
+  }
+}

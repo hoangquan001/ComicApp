@@ -1,0 +1,17 @@
+{
+  "Title": "Zero - Kage miko",
+  "URL": "zero-kage-miko",
+  "CoverImage": "zero-kage-miko.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-27 01:32:49"
+  }
+}

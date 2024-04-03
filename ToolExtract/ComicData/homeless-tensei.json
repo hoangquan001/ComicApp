@@ -1,0 +1,19 @@
+{
+  "Title": "Homeless Tensei",
+  "URL": "homeless-tensei",
+  "CoverImage": "homeless-tensei.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-21 08:08:27"
+  }
+}

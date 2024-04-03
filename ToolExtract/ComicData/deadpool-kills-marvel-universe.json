@@ -1,0 +1,17 @@
+{
+  "Title": "Deadpool Kills Marvel Universe",
+  "URL": "deadpool-kills-marvel-universe",
+  "CoverImage": "deadpool-kills-marvel-universe.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 18:38:07"
+  }
+}

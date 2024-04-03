@@ -1,0 +1,21 @@
+{
+  "Title": "Fire Emblem-Hasha no Tsurugi",
+  "URL": "fire-emblem-hasha-no-tsurugi",
+  "CoverImage": "fire-emblem-hasha-no-tsurugi.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-45",
+  "TotalChapter": 45,
+  "Chapters": {
+    "urlChapter": "chapter-45",
+    "dateUpdateChapter": "2024-01-22 16:39:28"
+  }
+}

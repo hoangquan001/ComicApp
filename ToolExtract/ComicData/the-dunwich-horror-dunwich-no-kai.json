@@ -1,0 +1,21 @@
+{
+  "Title": "The Dunwich Horror - Dunwich no Kai",
+  "URL": "the-dunwich-horror-dunwich-no-kai",
+  "CoverImage": "the-dunwich-horror-dunwich-no-kai.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Manga",
+    "Mystery",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-20 15:33:26"
+  }
+}

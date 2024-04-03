@@ -1,0 +1,18 @@
+{
+  "Title": "Radiation House",
+  "URL": "radiation-house",
+  "CoverImage": "radiation-house.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-86",
+  "TotalChapter": 86,
+  "Chapters": {
+    "urlChapter": "chapter-86",
+    "dateUpdateChapter": "2024-01-03 18:50:55"
+  }
+}

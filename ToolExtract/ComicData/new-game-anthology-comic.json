@@ -1,0 +1,18 @@
+{
+  "Title": "New Game! Anthology Comic",
+  "URL": "new-game-anthology-comic",
+  "CoverImage": "new-game-anthology-comic.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Ecchi",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 16:51:33"
+  }
+}

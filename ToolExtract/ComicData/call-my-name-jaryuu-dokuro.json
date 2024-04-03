@@ -1,0 +1,20 @@
+{
+  "Title": "Call My Name (jaryuu Dokuro)",
+  "URL": "call-my-name-jaryuu-dokuro",
+  "CoverImage": "call-my-name-jaryuu-dokuro.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "One shot",
+    "Shoujo Ai",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 01:41:25"
+  }
+}

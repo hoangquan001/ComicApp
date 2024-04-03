@@ -1,0 +1,23 @@
+{
+  "Title": "iZombie - \u0102n n\u00e3o",
+  "URL": "izombie-an-nao",
+  "CoverImage": "izombie-an-nao.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Comic",
+    "Drama",
+    "Horror",
+    "Mature",
+    "Psychological",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 23:00:22"
+  }
+}

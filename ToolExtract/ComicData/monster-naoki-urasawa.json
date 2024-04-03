@@ -1,0 +1,21 @@
+{
+  "Title": "Monster - Naoki Urasawa",
+  "URL": "monster-naoki-urasawa",
+  "CoverImage": "monster-naoki-urasawa.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Seinen",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-162",
+  "TotalChapter": 162,
+  "Chapters": {
+    "urlChapter": "chapter-162",
+    "dateUpdateChapter": "2023-12-26 03:39:59"
+  }
+}

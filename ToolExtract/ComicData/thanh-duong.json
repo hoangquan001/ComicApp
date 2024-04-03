@@ -1,0 +1,19 @@
+{
+  "Title": "Th\u00e1nh \u0110\u01b0\u1eddng",
+  "URL": "thanh-duong",
+  "CoverImage": "thanh-duong.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manhua",
+    "Mystery",
+    "Sci-fi",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-45",
+  "TotalChapter": 45,
+  "Chapters": {
+    "urlChapter": "chapter-45",
+    "dateUpdateChapter": "2024-01-04 22:06:22"
+  }
+}

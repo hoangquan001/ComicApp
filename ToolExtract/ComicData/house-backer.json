@@ -1,0 +1,16 @@
+{
+  "Title": "House Backer",
+  "URL": "house-backer",
+  "CoverImage": "house-backer.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-03 12:22:39"
+  }
+}

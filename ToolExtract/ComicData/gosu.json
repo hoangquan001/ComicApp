@@ -1,0 +1,21 @@
+{
+  "Title": "Gosu",
+  "URL": "gosu",
+  "CoverImage": "gosu.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Historical",
+    "Manhwa",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-133",
+  "TotalChapter": 133,
+  "Chapters": {
+    "urlChapter": "chapter-133",
+    "dateUpdateChapter": "2024-01-21 08:34:06"
+  }
+}

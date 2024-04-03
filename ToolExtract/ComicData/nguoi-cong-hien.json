@@ -1,0 +1,20 @@
+{
+  "Title": "Ng\u01b0\u1eddi c\u1ed1ng hi\u1ebfn",
+  "URL": "nguoi-cong-hien",
+  "CoverImage": "nguoi-cong-hien.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Manhwa",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-40",
+  "TotalChapter": 40,
+  "Chapters": {
+    "urlChapter": "chapter-40",
+    "dateUpdateChapter": "2023-12-27 04:20:24"
+  }
+}

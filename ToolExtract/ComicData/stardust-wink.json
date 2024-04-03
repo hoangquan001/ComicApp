@@ -1,0 +1,19 @@
+{
+  "Title": "Stardust Wink",
+  "URL": "stardust-wink",
+  "CoverImage": "stardust-wink.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-53",
+  "TotalChapter": 53,
+  "Chapters": {
+    "urlChapter": "chapter-53",
+    "dateUpdateChapter": "2024-01-23 00:03:40"
+  }
+}

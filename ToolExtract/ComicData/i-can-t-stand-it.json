@@ -1,0 +1,21 @@
+{
+  "Title": "I Can't Stand It !",
+  "URL": "i-can-t-stand-it",
+  "CoverImage": "i-can-t-stand-it.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Smut"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-14 22:49:18"
+  }
+}

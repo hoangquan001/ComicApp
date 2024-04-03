@@ -1,0 +1,18 @@
+{
+  "Title": "Demons And Strangers",
+  "URL": "demons-and-strangers",
+  "CoverImage": "demons-and-strangers.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manhua",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-20 14:41:20"
+  }
+}

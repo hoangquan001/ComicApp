@@ -1,0 +1,20 @@
+{
+  "Title": "Paladin",
+  "URL": "paladin",
+  "CoverImage": "paladin.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhwa",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-50",
+  "TotalChapter": 50,
+  "Chapters": {
+    "urlChapter": "chapter-50",
+    "dateUpdateChapter": "2024-01-21 17:20:04"
+  }
+}

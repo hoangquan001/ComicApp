@@ -1,0 +1,20 @@
+{
+  "Title": "Hundred",
+  "URL": "hundred",
+  "CoverImage": "hundred.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Mystery",
+    "School Life",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-22 02:23:41"
+  }
+}

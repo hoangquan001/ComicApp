@@ -1,0 +1,21 @@
+{
+  "Title": "Cinderella Man",
+  "URL": "cinderella-man",
+  "CoverImage": "cinderella-man.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-02 12:05:09"
+  }
+}

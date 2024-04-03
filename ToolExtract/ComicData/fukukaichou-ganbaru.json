@@ -1,0 +1,20 @@
+{
+  "Title": "Fukukaichou Ganbaru",
+  "URL": "fukukaichou-ganbaru",
+  "CoverImage": "fukukaichou-ganbaru.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Mature",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-01 05:59:23"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Title": "Rumic World",
+  "URL": "rumic-world",
+  "CoverImage": "rumic-world.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Harem",
+    "Historical",
+    "Martial Arts",
+    "Mystery",
+    "One shot",
+    "Psychological",
+    "Romance",
+    "Shounen",
+    "Slice of Life",
+    "Sports",
+    "Tragedy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-17 22:54:10"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Chocolate Girl",
+  "URL": "chocolate-girl",
+  "CoverImage": "chocolate-girl.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Josei",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-16 22:16:55"
+  }
+}

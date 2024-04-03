@@ -1,0 +1,21 @@
+{
+  "Title": "Okikunattara Kekkon suru!",
+  "URL": "okikunattara-kekkon-suru",
+  "CoverImage": "okikunattara-kekkon-suru.jpg",
+  "CreateAt": "08/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-08 00:11:58"
+  }
+}

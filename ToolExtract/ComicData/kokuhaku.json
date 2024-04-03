@@ -1,0 +1,22 @@
+{
+  "Title": "Kokuhaku",
+  "URL": "kokuhaku",
+  "CoverImage": "kokuhaku.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo Ai",
+    "Shounen",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-21 21:23:17"
+  }
+}

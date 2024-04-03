@@ -1,0 +1,20 @@
+{
+  "Title": "C\u00f4ng ch\u00faa ng\u01b0\u1eddi c\u00e1",
+  "URL": "cong-chua-nguoi-ca",
+  "CoverImage": "cong-chua-nguoi-ca.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-26 14:29:16"
+  }
+}

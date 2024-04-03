@@ -1,0 +1,18 @@
+{
+  "Title": "Brave 10",
+  "URL": "brave-10",
+  "CoverImage": "brave-10.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-02-02 13:50:05"
+  }
+}

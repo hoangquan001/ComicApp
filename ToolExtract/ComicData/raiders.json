@@ -1,0 +1,21 @@
+{
+  "Title": "Raiders",
+  "URL": "raiders",
+  "CoverImage": "raiders.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Historical",
+    "Horror",
+    "Romance",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-76",
+  "TotalChapter": 76,
+  "Chapters": {
+    "urlChapter": "chapter-76",
+    "dateUpdateChapter": "2024-01-21 11:14:55"
+  }
+}

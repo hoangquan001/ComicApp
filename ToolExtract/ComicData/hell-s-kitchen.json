@@ -1,0 +1,19 @@
+{
+  "Title": "Hell\u2019s Kitchen",
+  "URL": "hell-s-kitchen",
+  "CoverImage": "hell-s-kitchen.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Horror",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-51",
+  "TotalChapter": 51,
+  "Chapters": {
+    "urlChapter": "chapter-51",
+    "dateUpdateChapter": "2024-01-15 12:27:55"
+  }
+}

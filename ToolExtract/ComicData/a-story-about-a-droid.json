@@ -1,0 +1,18 @@
+{
+  "Title": "A Story About A Droid",
+  "URL": "a-story-about-a-droid",
+  "CoverImage": "a-story-about-a-droid.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Mecha",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-29",
+  "TotalChapter": 29,
+  "Chapters": {
+    "urlChapter": "chapter-29",
+    "dateUpdateChapter": "2024-01-11 16:57:59"
+  }
+}

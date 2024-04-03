@@ -1,0 +1,20 @@
+{
+  "Title": "Dragon Recipe",
+  "URL": "dragon-recipe",
+  "CoverImage": "dragon-recipe.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhwa",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-29",
+  "TotalChapter": 29,
+  "Chapters": {
+    "urlChapter": "chapter-29",
+    "dateUpdateChapter": "2024-01-23 03:59:01"
+  }
+}

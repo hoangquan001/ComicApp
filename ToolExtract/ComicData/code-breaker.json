@@ -1,0 +1,19 @@
+{
+  "Title": "Code Breaker",
+  "URL": "code-breaker",
+  "CoverImage": "code-breaker.jpg",
+  "CreateAt": "02/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-227",
+  "TotalChapter": 227,
+  "Chapters": {
+    "urlChapter": "chapter-227",
+    "dateUpdateChapter": "2024-01-02 10:21:31"
+  }
+}

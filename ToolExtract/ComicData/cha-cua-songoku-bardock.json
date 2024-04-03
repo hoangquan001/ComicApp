@@ -1,0 +1,19 @@
+{
+  "Title": "Cha c\u1ee7a Songoku: Bardock",
+  "URL": "cha-cua-songoku-bardock",
+  "CoverImage": "cha-cua-songoku-bardock.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 11:24:32"
+  }
+}

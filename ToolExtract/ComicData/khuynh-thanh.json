@@ -1,0 +1,20 @@
+{
+  "Title": "Khuynh Th\u00e0nh",
+  "URL": "khuynh-thanh",
+  "CoverImage": "khuynh-thanh.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "C\u1ed5 \u0110\u1ea1i",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-25 22:41:05"
+  }
+}

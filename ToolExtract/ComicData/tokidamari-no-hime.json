@@ -1,0 +1,18 @@
+{
+  "Title": "Tokidamari no Hime",
+  "URL": "tokidamari-no-hime",
+  "CoverImage": "tokidamari-no-hime.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Josei",
+    "Romance",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-26 22:19:19"
+  }
+}

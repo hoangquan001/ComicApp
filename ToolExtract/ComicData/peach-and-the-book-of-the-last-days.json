@@ -1,0 +1,21 @@
+{
+  "Title": "Peach And The Book Of The Last Days",
+  "URL": "peach-and-the-book-of-the-last-days",
+  "CoverImage": "peach-and-the-book-of-the-last-days.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Manhwa",
+    "Martial Arts",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-23 13:40:33"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Infinity Game",
+  "URL": "infinity-game",
+  "CoverImage": "infinity-game.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "School Life",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-02-02 13:19:50"
+  }
+}

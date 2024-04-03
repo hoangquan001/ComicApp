@@ -1,0 +1,17 @@
+{
+  "Title": "Koi Wo Hitokuchi",
+  "URL": "koi-wo-hitokuchi",
+  "CoverImage": "koi-wo-hitokuchi.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-14 09:20:16"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Taisho Wotome Otogibanashi",
+  "URL": "taisho-wotome-otogibanashi",
+  "CoverImage": "taisho-wotome-otogibanashi.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Historical",
+    "Romance",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-01 13:24:52"
+  }
+}

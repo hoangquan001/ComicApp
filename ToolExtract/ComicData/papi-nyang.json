@@ -1,0 +1,17 @@
+{
+  "Title": "Papi Nyang",
+  "URL": "papi-nyang",
+  "CoverImage": "papi-nyang.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-02-02 14:22:47"
+  }
+}

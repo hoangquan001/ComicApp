@@ -1,0 +1,20 @@
+{
+  "Title": "Yakuza Reincarnation",
+  "URL": "yakuza-reincarnation",
+  "CoverImage": "yakuza-reincarnation.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Seinen",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-49",
+  "TotalChapter": 49,
+  "Chapters": {
+    "urlChapter": "chapter-49",
+    "dateUpdateChapter": "9 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

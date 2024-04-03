@@ -1,0 +1,17 @@
+{
+  "Title": "Momoiro Heaven",
+  "URL": "momoiro-heaven",
+  "CoverImage": "momoiro-heaven.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-34",
+  "TotalChapter": 34,
+  "Chapters": {
+    "urlChapter": "chapter-34",
+    "dateUpdateChapter": "2024-01-12 09:43:34"
+  }
+}

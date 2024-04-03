@@ -1,0 +1,21 @@
+{
+  "Title": "Hi\u1ec7p s\u0129 ph\u00e9p m\u00e0u",
+  "URL": "hiep-si-phep-mau",
+  "CoverImage": "hiep-si-phep-mau.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Mecha",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-23 13:55:41"
+  }
+}

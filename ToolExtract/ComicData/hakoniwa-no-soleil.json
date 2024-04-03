@@ -1,0 +1,20 @@
+{
+  "Title": "Hakoniwa No Soleil",
+  "URL": "hakoniwa-no-soleil",
+  "CoverImage": "hakoniwa-no-soleil.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Mystery",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-22 10:35:06"
+  }
+}

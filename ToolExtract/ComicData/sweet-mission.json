@@ -1,0 +1,22 @@
+{
+  "Title": "Sweet Mission",
+  "URL": "sweet-mission",
+  "CoverImage": "sweet-mission.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-18 06:58:41"
+  }
+}

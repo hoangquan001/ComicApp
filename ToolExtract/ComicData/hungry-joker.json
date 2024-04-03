@@ -1,0 +1,19 @@
+{
+  "Title": "Hungry Joker",
+  "URL": "hungry-joker",
+  "CoverImage": "hungry-joker.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-17 22:12:42"
+  }
+}

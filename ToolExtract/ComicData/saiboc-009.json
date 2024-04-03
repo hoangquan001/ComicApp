@@ -1,0 +1,17 @@
+{
+  "Title": "Saiboc 009",
+  "URL": "saiboc-009",
+  "CoverImage": "saiboc-009.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-18 06:48:29"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Touhou Sangetsusei: Oriental Sacred Place",
+  "URL": "touhou-sangetsusei-oriental-sacred-place",
+  "CoverImage": "touhou-sangetsusei-oriental-sacred-place.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 19:23:21"
+  }
+}

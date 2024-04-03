@@ -1,0 +1,19 @@
+{
+  "Title": "Kare wa Diablo!",
+  "URL": "kare-wa-diablo",
+  "CoverImage": "kare-wa-diablo.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-27 04:25:59"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "T\u1ea5m th\u1ebb b\u00ed \u1ea9n",
+  "URL": "tam-the-bi-an",
+  "CoverImage": "tam-the-bi-an.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-145",
+  "TotalChapter": 145,
+  "Chapters": {
+    "urlChapter": "chapter-145",
+    "dateUpdateChapter": "2023-12-26 08:58:34"
+  }
+}

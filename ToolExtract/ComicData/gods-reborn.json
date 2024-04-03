@@ -1,0 +1,19 @@
+{
+  "Title": "Gods Reborn",
+  "URL": "gods-reborn",
+  "CoverImage": "gods-reborn.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-05 14:16:14"
+  }
+}

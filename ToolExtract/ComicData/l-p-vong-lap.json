@@ -1,0 +1,21 @@
+{
+  "Title": "L\u221ep - V\u00f2ng L\u1eb7p",
+  "URL": "l-p-vong-lap",
+  "CoverImage": "l-p-vong-lap.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Drama",
+    "Horror",
+    "One shot",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-20 19:31:02"
+  }
+}

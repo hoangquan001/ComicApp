@@ -1,0 +1,19 @@
+{
+  "Title": "Life so Happy",
+  "URL": "life-so-happy",
+  "CoverImage": "life-so-happy.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "School Life",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-16 21:30:40"
+  }
+}

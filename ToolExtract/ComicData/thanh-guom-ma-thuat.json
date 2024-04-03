@@ -1,0 +1,17 @@
+{
+  "Title": "Thanh g\u01b0\u01a1m ma thu\u1eadt",
+  "URL": "thanh-guom-ma-thuat",
+  "CoverImage": "thanh-guom-ma-thuat.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-02-01 13:23:49"
+  }
+}

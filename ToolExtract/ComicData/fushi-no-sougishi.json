@@ -1,0 +1,18 @@
+{
+  "Title": "Fushi No Sougishi",
+  "URL": "fushi-no-sougishi",
+  "CoverImage": "fushi-no-sougishi.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-10 02:14:05"
+  }
+}

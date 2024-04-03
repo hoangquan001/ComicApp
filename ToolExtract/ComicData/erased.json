@@ -1,0 +1,18 @@
+{
+  "Title": "ERASED",
+  "URL": "erased",
+  "CoverImage": "erased.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Psychological",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-14 16:41:05"
+  }
+}

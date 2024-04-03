@@ -1,0 +1,21 @@
+{
+  "Title": "Argate online",
+  "URL": "argate-online",
+  "CoverImage": "argate-online.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Manga",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2023-12-31 13:42:03"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Warhammer 40,000: Damnation Crusade",
+  "URL": "warhammer-40-000-damnation-crusade",
+  "CoverImage": "warhammer-40-000-damnation-crusade.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comic",
+    "Horror",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 11:46:53"
+  }
+}

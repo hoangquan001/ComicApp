@@ -1,0 +1,17 @@
+{
+  "Title": "Angel Hunt",
+  "URL": "angel-hunt",
+  "CoverImage": "angel-hunt.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 01:11:49"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "R\u1eebng Qu\u1ef7",
+  "URL": "rung-quy",
+  "CoverImage": "rung-quy.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga",
+    "Psychological",
+    "Seinen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-14 21:45:00"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Suzuka 2",
+  "URL": "suzuka-2",
+  "CoverImage": "suzuka-2.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-30 13:45:52"
+  }
+}

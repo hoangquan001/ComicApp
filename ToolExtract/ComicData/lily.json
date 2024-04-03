@@ -1,0 +1,17 @@
+{
+  "Title": "Lily",
+  "URL": "lily",
+  "CoverImage": "lily.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-21 16:14:25"
+  }
+}

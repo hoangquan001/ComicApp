@@ -1,0 +1,23 @@
+{
+  "Title": "Yuusha Ga Shinda!",
+  "URL": "yuusha-ga-shinda",
+  "CoverImage": "yuusha-ga-shinda.jpg",
+  "CreateAt": "22/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Seinen",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-217",
+  "TotalChapter": 217,
+  "Chapters": {
+    "urlChapter": "chapter-217",
+    "dateUpdateChapter": "2023-12-22 18:45:30"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Tomo-chan wa Onnanoko!",
+  "URL": "tomo-chan-wa-onnanoko",
+  "CoverImage": "tomo-chan-wa-onnanoko.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-191",
+  "TotalChapter": 191,
+  "Chapters": {
+    "urlChapter": "chapter-191",
+    "dateUpdateChapter": "2023-12-24 06:42:40"
+  }
+}

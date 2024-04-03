@@ -1,0 +1,18 @@
+{
+  "Title": "Hoshi wa Utau",
+  "URL": "hoshi-wa-utau",
+  "CoverImage": "hoshi-wa-utau.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-17 14:35:16"
+  }
+}

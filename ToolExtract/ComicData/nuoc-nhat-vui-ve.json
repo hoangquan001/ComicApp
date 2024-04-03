@@ -1,0 +1,22 @@
+{
+  "Title": "N\u01b0\u1edbc Nh\u1eadt Vui V\u1ebb",
+  "URL": "nuoc-nhat-vui-ve",
+  "CoverImage": "nuoc-nhat-vui-ve.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Historical",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-30 18:33:52"
+  }
+}

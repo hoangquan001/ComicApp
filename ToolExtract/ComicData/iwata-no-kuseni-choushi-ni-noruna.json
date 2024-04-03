@@ -1,0 +1,19 @@
+{
+  "Title": "Iwata no kuseni choushi ni noruna!",
+  "URL": "iwata-no-kuseni-choushi-ni-noruna",
+  "CoverImage": "iwata-no-kuseni-choushi-ni-noruna.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-26 17:38:47"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Shin koihime musou",
+  "URL": "shin-koihime-musou",
+  "CoverImage": "shin-koihime-musou.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Harem",
+    "Historical",
+    "Romance"
+  ],
+  "LastChapter": "chapter-27",
+  "TotalChapter": 27,
+  "Chapters": {
+    "urlChapter": "chapter-27",
+    "dateUpdateChapter": "2024-01-21 13:17:00"
+  }
+}

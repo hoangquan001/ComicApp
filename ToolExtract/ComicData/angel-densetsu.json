@@ -1,0 +1,19 @@
+{
+  "Title": "Angel Densetsu",
+  "URL": "angel-densetsu",
+  "CoverImage": "angel-densetsu.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-89",
+  "TotalChapter": 89,
+  "Chapters": {
+    "urlChapter": "chapter-89",
+    "dateUpdateChapter": "2023-12-30 21:46:25"
+  }
+}

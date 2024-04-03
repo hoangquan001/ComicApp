@@ -1,0 +1,19 @@
+{
+  "Title": "Angel Buddy",
+  "URL": "angel-buddy",
+  "CoverImage": "angel-buddy.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "Soft Yaoi"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-04 17:04:38"
+  }
+}

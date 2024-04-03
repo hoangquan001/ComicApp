@@ -1,0 +1,17 @@
+{
+  "Title": "Fairy Heart",
+  "URL": "fairy-heart",
+  "CoverImage": "fairy-heart.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manhwa",
+    "Romance"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-02-01 07:41:10"
+  }
+}

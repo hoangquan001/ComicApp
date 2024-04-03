@@ -1,0 +1,17 @@
+{
+  "Title": "Hatsukoi To Taiyou",
+  "URL": "hatsukoi-to-taiyou",
+  "CoverImage": "hatsukoi-to-taiyou.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-14 01:29:02"
+  }
+}

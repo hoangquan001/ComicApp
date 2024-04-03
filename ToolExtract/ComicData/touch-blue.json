@@ -1,0 +1,17 @@
+{
+  "Title": "Touch Blue",
+  "URL": "touch-blue",
+  "CoverImage": "touch-blue.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Romance"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-01 01:04:24"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Red Doll",
+  "URL": "red-doll",
+  "CoverImage": "red-doll.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhwa",
+    "Martial Arts",
+    "Sci-fi",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 08:02:10"
+  }
+}

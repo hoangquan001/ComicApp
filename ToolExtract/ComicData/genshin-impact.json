@@ -1,0 +1,21 @@
+{
+  "Title": "Genshin Impact",
+  "URL": "genshin-impact",
+  "CoverImage": "genshin-impact.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Josei",
+    "Seinen",
+    "Shoujo",
+    "Smut",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-12 22:54:17"
+  }
+}

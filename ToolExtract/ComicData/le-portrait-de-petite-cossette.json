@@ -1,0 +1,18 @@
+{
+  "Title": "Le portrait de Petite Cossette",
+  "URL": "le-portrait-de-petite-cossette",
+  "CoverImage": "le-portrait-de-petite-cossette.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Horror",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-24 19:45:21"
+  }
+}

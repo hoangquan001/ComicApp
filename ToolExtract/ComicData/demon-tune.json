@@ -1,0 +1,22 @@
+{
+  "Title": "Demon Tune",
+  "URL": "demon-tune",
+  "CoverImage": "demon-tune.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-27 01:00:42"
+  }
+}

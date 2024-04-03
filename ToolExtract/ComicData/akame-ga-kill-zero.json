@@ -1,0 +1,18 @@
+{
+  "Title": "Akame ga KILL! ZERO",
+  "URL": "akame-ga-kill-zero",
+  "CoverImage": "akame-ga-kill-zero.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-53",
+  "TotalChapter": 53,
+  "Chapters": {
+    "urlChapter": "chapter-53",
+    "dateUpdateChapter": "2024-02-07 12:42:51"
+  }
+}

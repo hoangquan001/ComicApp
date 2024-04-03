@@ -1,0 +1,17 @@
+{
+  "Title": "Toxic",
+  "URL": "toxic",
+  "CoverImage": "toxic.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-27 02:48:38"
+  }
+}

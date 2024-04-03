@@ -1,0 +1,20 @@
+{
+  "Title": "Shuu 7",
+  "URL": "shuu-7",
+  "CoverImage": "shuu-7.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-31 04:20:52"
+  }
+}

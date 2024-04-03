@@ -1,0 +1,21 @@
+{
+  "Title": "Helltaker",
+  "URL": "helltaker",
+  "CoverImage": "helltaker.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic",
+    "Harem",
+    "Slice of Life",
+    "Truy\u1ec7n M\u00e0u",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-03 07:33:35"
+  }
+}

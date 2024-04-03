@@ -1,0 +1,17 @@
+{
+  "Title": "Em g\u00e1i tui",
+  "URL": "em-gai-tui",
+  "CoverImage": "em-gai-tui.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-15 15:07:57"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Yae no Sakura",
+  "URL": "yae-no-sakura",
+  "CoverImage": "yae-no-sakura.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-26 07:57:06"
+  }
+}

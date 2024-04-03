@@ -1,0 +1,17 @@
+{
+  "Title": "Akumu Koushounin",
+  "URL": "akumu-koushounin",
+  "CoverImage": "akumu-koushounin.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Josei"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-03 12:50:10"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Rough sketch senpai",
+  "URL": "rough-sketch-senpai",
+  "CoverImage": "rough-sketch-senpai.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-20 16:09:10"
+  }
+}

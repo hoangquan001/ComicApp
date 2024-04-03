@@ -1,0 +1,20 @@
+{
+  "Title": "Up Color Manga???",
+  "URL": "up-color-manga",
+  "CoverImage": "up-color-manga.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 23:39:53"
+  }
+}

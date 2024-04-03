@@ -1,0 +1,21 @@
+{
+  "Title": "Number Five",
+  "URL": "number-five",
+  "CoverImage": "number-five.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Psychological",
+    "Sci-fi",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-18 06:36:20"
+  }
+}

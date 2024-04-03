@@ -1,0 +1,21 @@
+{
+  "Title": "Hone ga Kusaru Made",
+  "URL": "hone-ga-kusaru-made",
+  "CoverImage": "hone-ga-kusaru-made.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Drama",
+    "Horror",
+    "Manga",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-98",
+  "TotalChapter": 98,
+  "Chapters": {
+    "urlChapter": "chapter-98",
+    "dateUpdateChapter": "2023-12-27 03:09:33"
+  }
+}

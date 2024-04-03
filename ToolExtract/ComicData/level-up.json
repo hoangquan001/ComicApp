@@ -1,0 +1,18 @@
+{
+  "Title": "Level Up",
+  "URL": "level-up",
+  "CoverImage": "level-up.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-50",
+  "TotalChapter": 50,
+  "Chapters": {
+    "urlChapter": "chapter-50",
+    "dateUpdateChapter": "2024-01-13 16:42:20"
+  }
+}

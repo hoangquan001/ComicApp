@@ -1,0 +1,18 @@
+{
+  "Title": "Miyuki",
+  "URL": "miyuki",
+  "CoverImage": "miyuki.jpg",
+  "CreateAt": "11/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-82",
+  "TotalChapter": 82,
+  "Chapters": {
+    "urlChapter": "chapter-82",
+    "dateUpdateChapter": "2024-01-11 18:02:17"
+  }
+}

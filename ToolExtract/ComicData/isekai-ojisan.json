@@ -1,0 +1,19 @@
+{
+  "Title": "Isekai Ojisan",
+  "URL": "isekai-ojisan",
+  "CoverImage": "isekai-ojisan.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-69",
+  "TotalChapter": 69,
+  "Chapters": {
+    "urlChapter": "chapter-69",
+    "dateUpdateChapter": "2024-02-04 07:31:26"
+  }
+}

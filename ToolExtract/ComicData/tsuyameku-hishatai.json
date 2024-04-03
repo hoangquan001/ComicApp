@@ -1,0 +1,17 @@
+{
+  "Title": "Tsuyameku Hishatai",
+  "URL": "tsuyameku-hishatai",
+  "CoverImage": "tsuyameku-hishatai.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Soft Yaoi"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-15 08:23:32"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Watashi no Kobushi wo Uketomete!",
+  "URL": "watashi-no-kobushi-wo-uketomete",
+  "CoverImage": "watashi-no-kobushi-wo-uketomete.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Seinen",
+    "Shoujo Ai",
+    "Soft Yuri"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-23 22:03:59"
+  }
+}

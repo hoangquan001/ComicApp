@@ -1,0 +1,22 @@
+{
+  "Title": "T\u00f4i L\u00e0 Ng\u01b0\u1eddi H\u00f9ng",
+  "URL": "toi-la-nguoi-hung",
+  "CoverImage": "toi-la-nguoi-hung.jpg",
+  "CreateAt": "22/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Mature",
+    "Psychological",
+    "Seinen",
+    "Slice of Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-263",
+  "TotalChapter": 263,
+  "Chapters": {
+    "urlChapter": "chapter-263",
+    "dateUpdateChapter": "2023-12-22 23:08:31"
+  }
+}

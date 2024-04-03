@@ -1,0 +1,22 @@
+{
+  "Title": "Yagyuu Hijouken Samon",
+  "URL": "yagyuu-hijouken-samon",
+  "CoverImage": "yagyuu-hijouken-samon.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Martial Arts",
+    "Mature",
+    "Seinen",
+    "Shoujo Ai",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-20 19:15:32"
+  }
+}

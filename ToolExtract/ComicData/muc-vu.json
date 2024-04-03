@@ -1,0 +1,21 @@
+{
+  "Title": "M\u1ee5c V\u1ee5",
+  "URL": "muc-vu",
+  "CoverImage": "muc-vu.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Horror",
+    "Manhua",
+    "Mystery",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-01-16 23:42:14"
+  }
+}

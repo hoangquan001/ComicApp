@@ -1,0 +1,19 @@
+{
+  "Title": "School Ningyo",
+  "URL": "school-ningyo",
+  "CoverImage": "school-ningyo.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Psychological",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-32",
+  "TotalChapter": 32,
+  "Chapters": {
+    "urlChapter": "chapter-32",
+    "dateUpdateChapter": "2024-01-12 01:40:23"
+  }
+}

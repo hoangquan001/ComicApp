@@ -1,0 +1,21 @@
+{
+  "Title": "Memory locked",
+  "URL": "memory-locked",
+  "CoverImage": "memory-locked.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Mystery",
+    "Sci-fi",
+    "Supernatural",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 01:43:12"
+  }
+}

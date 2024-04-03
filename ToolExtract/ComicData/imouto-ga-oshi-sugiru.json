@@ -1,0 +1,18 @@
+{
+  "Title": "Imouto Ga Oshi Sugiru!",
+  "URL": "imouto-ga-oshi-sugiru",
+  "CoverImage": "imouto-ga-oshi-sugiru.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-23 19:58:05"
+  }
+}

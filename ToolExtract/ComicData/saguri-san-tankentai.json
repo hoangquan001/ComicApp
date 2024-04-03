@@ -1,0 +1,18 @@
+{
+  "Title": "Saguri-san Tankentai",
+  "URL": "saguri-san-tankentai",
+  "CoverImage": "saguri-san-tankentai.jpg",
+  "CreateAt": "18/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "One shot",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-18 06:45:46"
+  }
+}

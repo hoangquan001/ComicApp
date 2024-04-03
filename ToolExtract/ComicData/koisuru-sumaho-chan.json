@@ -1,0 +1,18 @@
+{
+  "Title": "Koisuru Sumaho-chan",
+  "URL": "koisuru-sumaho-chan",
+  "CoverImage": "koisuru-sumaho-chan.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-21 19:57:27"
+  }
+}

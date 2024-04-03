@@ -1,0 +1,20 @@
+{
+  "Title": "Ho\u00e0ng Phi H\u1ed3ng Ngo\u1ea1i Truy\u1ec7n",
+  "URL": "hoang-phi-hong-ngoai-truyen",
+  "CoverImage": "hoang-phi-hong-ngoai-truyen.jpg",
+  "CreateAt": "26/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Martial Arts",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-26 21:50:14"
+  }
+}

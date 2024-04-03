@@ -1,0 +1,18 @@
+{
+  "Title": "Chu-Bra",
+  "URL": "chu-bra",
+  "CoverImage": "chu-bra.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Ecchi",
+    "Manga"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-23 11:39:53"
+  }
+}

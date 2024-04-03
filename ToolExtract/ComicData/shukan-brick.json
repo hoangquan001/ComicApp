@@ -1,0 +1,21 @@
+{
+  "Title": "Shukan Brick",
+  "URL": "shukan-brick",
+  "CoverImage": "shukan-brick.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-100",
+  "TotalChapter": 100,
+  "Chapters": {
+    "urlChapter": "chapter-100",
+    "dateUpdateChapter": "2023-12-31 17:00:15"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Ashita no Yoichi!",
+  "URL": "ashita-no-yoichi",
+  "CoverImage": "ashita-no-yoichi.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-60",
+  "TotalChapter": 60,
+  "Chapters": {
+    "urlChapter": "chapter-60",
+    "dateUpdateChapter": "2024-01-14 21:32:46"
+  }
+}

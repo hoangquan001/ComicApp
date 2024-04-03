@@ -1,0 +1,19 @@
+{
+  "Title": "Appleseed",
+  "URL": "appleseed",
+  "CoverImage": "appleseed.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-02-02 08:09:02"
+  }
+}

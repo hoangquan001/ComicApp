@@ -1,0 +1,21 @@
+{
+  "Title": "The Song of the Beast",
+  "URL": "the-song-of-the-beast",
+  "CoverImage": "the-song-of-the-beast.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manhwa",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-26 14:09:17"
+  }
+}

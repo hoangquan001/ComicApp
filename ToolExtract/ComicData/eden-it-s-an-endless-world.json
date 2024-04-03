@@ -1,0 +1,21 @@
+{
+  "Title": "Eden - It's An Endless World",
+  "URL": "eden-it-s-an-endless-world",
+  "CoverImage": "eden-it-s-an-endless-world.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Psychological",
+    "Sci-fi",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-26 23:33:22"
+  }
+}

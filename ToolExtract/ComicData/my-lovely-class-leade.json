@@ -1,0 +1,19 @@
+{
+  "Title": "My Lovely Class Leade",
+  "URL": "my-lovely-class-leade",
+  "CoverImage": "my-lovely-class-leade.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 18:47:32"
+  }
+}

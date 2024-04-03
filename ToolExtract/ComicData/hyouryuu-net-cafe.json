@@ -1,0 +1,22 @@
+{
+  "Title": "Hyouryuu Net Cafe",
+  "URL": "hyouryuu-net-cafe",
+  "CoverImage": "hyouryuu-net-cafe.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Mature",
+    "Mystery",
+    "Romance",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-64",
+  "TotalChapter": 64,
+  "Chapters": {
+    "urlChapter": "chapter-64",
+    "dateUpdateChapter": "2024-01-12 22:18:57"
+  }
+}

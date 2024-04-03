@@ -1,0 +1,18 @@
+{
+  "Title": "Magia\u2605Record",
+  "URL": "magia-record",
+  "CoverImage": "magia-record.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Mystery",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-31 18:45:27"
+  }
+}

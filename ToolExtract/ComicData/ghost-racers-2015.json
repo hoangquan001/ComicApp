@@ -1,0 +1,20 @@
+{
+  "Title": "Ghost Racers (2015)",
+  "URL": "ghost-racers-2015",
+  "CoverImage": "ghost-racers-2015.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Drama",
+    "Horror"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-03 10:37:13"
+  }
+}

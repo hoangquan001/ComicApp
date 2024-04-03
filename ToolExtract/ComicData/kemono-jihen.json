@@ -1,0 +1,18 @@
+{
+  "Title": "Kemono Jihen",
+  "URL": "kemono-jihen",
+  "CoverImage": "kemono-jihen.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2023-12-27 11:28:03"
+  }
+}

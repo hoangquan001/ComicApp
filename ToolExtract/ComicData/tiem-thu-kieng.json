@@ -1,0 +1,23 @@
+{
+  "Title": "Ti\u1ec7m Th\u00fa Ki\u1ec3ng",
+  "URL": "tiem-thu-kieng",
+  "CoverImage": "tiem-thu-kieng.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Horror",
+    "Josei",
+    "Mystery",
+    "Psychological",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-40",
+  "TotalChapter": 40,
+  "Chapters": {
+    "urlChapter": "chapter-40",
+    "dateUpdateChapter": "2024-01-04 17:40:58"
+  }
+}

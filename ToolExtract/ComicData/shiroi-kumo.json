@@ -1,0 +1,20 @@
+{
+  "Title": "Shiroi Kumo",
+  "URL": "shiroi-kumo",
+  "CoverImage": "shiroi-kumo.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Fantasy",
+    "One shot",
+    "Psychological",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "9 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Life is Money",
+  "URL": "life-is-money",
+  "CoverImage": "life-is-money.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Psychological",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-22 04:06:22"
+  }
+}

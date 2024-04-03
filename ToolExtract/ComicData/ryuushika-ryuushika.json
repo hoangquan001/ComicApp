@@ -1,0 +1,19 @@
+{
+  "Title": "Ryuushika Ryuushika",
+  "URL": "ryuushika-ryuushika",
+  "CoverImage": "ryuushika-ryuushika.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-51",
+  "TotalChapter": 51,
+  "Chapters": {
+    "urlChapter": "chapter-51",
+    "dateUpdateChapter": "2024-01-26 12:12:32"
+  }
+}

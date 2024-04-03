@@ -1,0 +1,19 @@
+{
+  "Title": "L\u1ed9t X\u00e1c",
+  "URL": "lot-xac",
+  "CoverImage": "lot-xac.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Manga",
+    "School Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-16 23:21:30"
+  }
+}

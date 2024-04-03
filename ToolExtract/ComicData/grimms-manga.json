@@ -1,0 +1,17 @@
+{
+  "Title": "GRIMMS MANGA",
+  "URL": "grimms-manga",
+  "CoverImage": "grimms-manga.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 08:12:19"
+  }
+}

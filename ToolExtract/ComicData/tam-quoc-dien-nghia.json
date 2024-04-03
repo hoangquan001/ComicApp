@@ -1,0 +1,19 @@
+{
+  "Title": "Tam Qu\u00f4\u0301c Di\u00ea\u0303n Nghi\u0303a",
+  "URL": "tam-quoc-dien-nghia",
+  "CoverImage": "tam-quoc-dien-nghia.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-111",
+  "TotalChapter": 111,
+  "Chapters": {
+    "urlChapter": "chapter-111",
+    "dateUpdateChapter": "2024-01-03 16:09:18"
+  }
+}

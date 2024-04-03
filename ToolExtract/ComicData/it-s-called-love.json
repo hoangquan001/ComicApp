@@ -1,0 +1,17 @@
+{
+  "Title": "IT'S CALLED LOVE",
+  "URL": "it-s-called-love",
+  "CoverImage": "it-s-called-love.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-26 20:35:11"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Itsuka Tenma no Kuro Usagi",
+  "URL": "itsuka-tenma-no-kuro-usagi",
+  "CoverImage": "itsuka-tenma-no-kuro-usagi.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Horror",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-02-01 03:28:24"
+  }
+}

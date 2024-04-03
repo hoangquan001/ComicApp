@@ -1,0 +1,18 @@
+{
+  "Title": "B\u1ebf T\u1eafc",
+  "URL": "be-tac",
+  "CoverImage": "be-tac.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-23 17:39:15"
+  }
+}

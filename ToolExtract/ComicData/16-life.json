@@ -1,0 +1,18 @@
+{
+  "Title": "16 Life",
+  "URL": "16-life",
+  "CoverImage": "16-life.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-21 13:24:59"
+  }
+}

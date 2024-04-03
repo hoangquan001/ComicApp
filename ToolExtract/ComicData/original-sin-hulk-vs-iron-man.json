@@ -1,0 +1,21 @@
+{
+  "Title": "Original Sin - Hulk vs. Iron Man",
+  "URL": "original-sin-hulk-vs-iron-man",
+  "CoverImage": "original-sin-hulk-vs-iron-man.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comic",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 11:50:27"
+  }
+}

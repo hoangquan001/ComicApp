@@ -1,0 +1,19 @@
+{
+  "Title": "ARROW: SEASON 2.5",
+  "URL": "arrow-season-2-5",
+  "CoverImage": "arrow-season-2-5.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 08:46:33"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Screaming Lesson!!!",
+  "URL": "screaming-lesson",
+  "CoverImage": "screaming-lesson.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "School Life",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-63",
+  "TotalChapter": 63,
+  "Chapters": {
+    "urlChapter": "chapter-63",
+    "dateUpdateChapter": "2024-01-09 09:30:36"
+  }
+}

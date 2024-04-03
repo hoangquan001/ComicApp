@@ -1,0 +1,21 @@
+{
+  "Title": "Forward",
+  "URL": "forward",
+  "CoverImage": "forward.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Shounen",
+    "Sports",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-03 09:03:34"
+  }
+}

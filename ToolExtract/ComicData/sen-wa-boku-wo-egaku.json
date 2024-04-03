@@ -1,0 +1,19 @@
+{
+  "Title": "Sen wa, Boku wo Egaku",
+  "URL": "sen-wa-boku-wo-egaku",
+  "CoverImage": "sen-wa-boku-wo-egaku.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-32",
+  "TotalChapter": 32,
+  "Chapters": {
+    "urlChapter": "chapter-32",
+    "dateUpdateChapter": "2024-01-14 20:05:53"
+  }
+}

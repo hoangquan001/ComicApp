@@ -1,0 +1,18 @@
+{
+  "Title": "The man who cleans up makeup",
+  "URL": "the-man-who-cleans-up-makeup",
+  "CoverImage": "the-man-who-cleans-up-makeup.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-21 22:18:24"
+  }
+}

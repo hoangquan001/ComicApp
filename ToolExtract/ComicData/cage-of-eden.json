@@ -1,0 +1,19 @@
+{
+  "Title": "Cage of Eden",
+  "URL": "cage-of-eden",
+  "CoverImage": "cage-of-eden.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-185",
+  "TotalChapter": 185,
+  "Chapters": {
+    "urlChapter": "chapter-185",
+    "dateUpdateChapter": "2023-12-24 12:29:14"
+  }
+}

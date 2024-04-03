@@ -1,0 +1,21 @@
+{
+  "Title": "Senran Kagura - Guren no Hebi",
+  "URL": "senran-kagura-guren-no-hebi",
+  "CoverImage": "senran-kagura-guren-no-hebi.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Martial Arts",
+    "School Life"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-17 17:18:52"
+  }
+}

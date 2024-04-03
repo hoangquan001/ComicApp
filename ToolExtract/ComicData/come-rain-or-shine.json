@@ -1,0 +1,19 @@
+{
+  "Title": "Come Rain Or Shine",
+  "URL": "come-rain-or-shine",
+  "CoverImage": "come-rain-or-shine.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Slice of Life",
+    "Soft Yuri"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-20 18:22:43"
+  }
+}

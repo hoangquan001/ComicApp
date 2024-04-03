@@ -1,0 +1,18 @@
+{
+  "Title": "Liar Game",
+  "URL": "liar-game",
+  "CoverImage": "liar-game.jpg",
+  "CreateAt": "21/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Trinh Th\u00e1m"
+  ],
+  "LastChapter": "chapter-201",
+  "TotalChapter": 201,
+  "Chapters": {
+    "urlChapter": "chapter-201",
+    "dateUpdateChapter": "2023-12-21 12:06:03"
+  }
+}

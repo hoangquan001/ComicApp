@@ -1,0 +1,17 @@
+{
+  "Title": "Yoru Made Matenai",
+  "URL": "yoru-made-matenai",
+  "CoverImage": "yoru-made-matenai.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-14 11:43:56"
+  }
+}

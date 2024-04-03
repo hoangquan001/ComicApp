@@ -1,0 +1,18 @@
+{
+  "Title": "M\u00e1u v\u00e0 L\u01b0\u1ee1i C\u01b0a",
+  "URL": "mau-va-luoi-cua",
+  "CoverImage": "mau-va-luoi-cua.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Horror"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-15 17:01:49"
+  }
+}

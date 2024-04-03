@@ -1,0 +1,17 @@
+{
+  "Title": "Yamase wa doko e Itta?",
+  "URL": "yamase-wa-doko-e-itta",
+  "CoverImage": "yamase-wa-doko-e-itta.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-20 02:32:04"
+  }
+}

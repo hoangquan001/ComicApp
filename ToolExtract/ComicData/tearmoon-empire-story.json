@@ -1,0 +1,20 @@
+{
+  "Title": "Tearmoon Empire Story",
+  "URL": "tearmoon-empire-story",
+  "CoverImage": "tearmoon-empire-story.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Historical",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "3 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

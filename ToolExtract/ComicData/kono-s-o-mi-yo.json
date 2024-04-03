@@ -1,0 +1,23 @@
+{
+  "Title": "Kono S o Mi yo",
+  "URL": "kono-s-o-mi-yo",
+  "CoverImage": "kono-s-o-mi-yo.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Harem",
+    "Mature",
+    "Romance",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-107",
+  "TotalChapter": 107,
+  "Chapters": {
+    "urlChapter": "chapter-107",
+    "dateUpdateChapter": "2024-01-14 09:58:57"
+  }
+}

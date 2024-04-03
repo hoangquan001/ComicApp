@@ -1,0 +1,18 @@
+{
+  "Title": "Love-C Romantic Fruity",
+  "URL": "love-c-romantic-fruity",
+  "CoverImage": "love-c-romantic-fruity.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-30",
+  "TotalChapter": 30,
+  "Chapters": {
+    "urlChapter": "chapter-30",
+    "dateUpdateChapter": "2024-01-30 18:44:10"
+  }
+}

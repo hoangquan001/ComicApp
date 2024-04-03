@@ -1,0 +1,21 @@
+{
+  "Title": "Hareluya I Boy",
+  "URL": "hareluya-i-boy",
+  "CoverImage": "hareluya-i-boy.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-27 04:26:44"
+  }
+}

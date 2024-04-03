@@ -1,0 +1,21 @@
+{
+  "Title": "S\u00e1t \u0110\u1ea1o H\u00e0nh Gi\u1ea3",
+  "URL": "sat-dao-hanh-gia",
+  "CoverImage": "sat-dao-hanh-gia.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhua",
+    "Martial Arts",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-190",
+  "TotalChapter": 190,
+  "Chapters": {
+    "urlChapter": "chapter-190",
+    "dateUpdateChapter": "2023-12-31 00:43:20"
+  }
+}

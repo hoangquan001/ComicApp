@@ -1,0 +1,17 @@
+{
+  "Title": "Issho ni Neyou yo",
+  "URL": "issho-ni-neyou-yo",
+  "CoverImage": "issho-ni-neyou-yo.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-01 03:01:58"
+  }
+}

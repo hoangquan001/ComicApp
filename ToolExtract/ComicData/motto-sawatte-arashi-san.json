@@ -1,0 +1,19 @@
+{
+  "Title": "Motto Sawatte Arashi-san",
+  "URL": "motto-sawatte-arashi-san",
+  "CoverImage": "motto-sawatte-arashi-san.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Josei",
+    "Romance",
+    "Smut"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2023-12-30 15:46:59"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "\u00c1m H\u00e0nh Ng\u1ef1 S\u1eed",
+  "URL": "am-hanh-ngu-su",
+  "CoverImage": "am-hanh-ngu-su.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhwa",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-195",
+  "TotalChapter": 195,
+  "Chapters": {
+    "urlChapter": "chapter-195",
+    "dateUpdateChapter": "2023-12-30 11:24:11"
+  }
+}

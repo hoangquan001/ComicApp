@@ -1,0 +1,17 @@
+{
+  "Title": "Ojisan to Neko to Shoujo",
+  "URL": "ojisan-to-neko-to-shoujo",
+  "CoverImage": "ojisan-to-neko-to-shoujo.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-23 12:06:54"
+  }
+}

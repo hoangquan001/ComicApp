@@ -1,0 +1,21 @@
+{
+  "Title": "H\u1ec7 Th\u1ed1ng XEVEC",
+  "URL": "he-thong-xevec",
+  "CoverImage": "he-thong-xevec.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 11:50:45"
+  }
+}

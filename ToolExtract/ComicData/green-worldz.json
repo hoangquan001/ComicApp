@@ -1,0 +1,17 @@
+{
+  "Title": "Green Worldz",
+  "URL": "green-worldz",
+  "CoverImage": "green-worldz.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure"
+  ],
+  "LastChapter": "chapter-112",
+  "TotalChapter": 112,
+  "Chapters": {
+    "urlChapter": "chapter-112",
+    "dateUpdateChapter": "2023-12-29 22:38:33"
+  }
+}

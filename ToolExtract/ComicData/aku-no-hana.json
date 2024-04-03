@@ -1,0 +1,19 @@
+{
+  "Title": "Aku no Hana",
+  "URL": "aku-no-hana",
+  "CoverImage": "aku-no-hana.jpg",
+  "CreateAt": "11/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-59",
+  "TotalChapter": 59,
+  "Chapters": {
+    "urlChapter": "chapter-59",
+    "dateUpdateChapter": "2024-01-11 23:02:19"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Ng\u00e0y M\u00e0 T\u00f4i Tr\u1edf Th\u00e0nh Ch\u1ecb T\u00f4i",
+  "URL": "ngay-ma-toi-tro-thanh-chi-toi",
+  "CoverImage": "ngay-ma-toi-tro-thanh-chi-toi.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-30 19:18:16"
+  }
+}

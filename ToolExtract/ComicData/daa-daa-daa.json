@@ -1,0 +1,18 @@
+{
+  "Title": "Daa! Daa! Daa!",
+  "URL": "daa-daa-daa",
+  "CoverImage": "daa-daa-daa.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-56",
+  "TotalChapter": 56,
+  "Chapters": {
+    "urlChapter": "chapter-56",
+    "dateUpdateChapter": "2024-01-16 20:49:58"
+  }
+}

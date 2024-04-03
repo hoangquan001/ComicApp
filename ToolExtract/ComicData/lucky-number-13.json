@@ -1,0 +1,18 @@
+{
+  "Title": "Lucky number 13",
+  "URL": "lucky-number-13",
+  "CoverImage": "lucky-number-13.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-01 01:12:36"
+  }
+}

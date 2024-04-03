@@ -1,0 +1,18 @@
+{
+  "Title": "M\u1eadt M\u1ec7nh",
+  "URL": "mat-menh",
+  "CoverImage": "mat-menh.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 09:00:46"
+  }
+}

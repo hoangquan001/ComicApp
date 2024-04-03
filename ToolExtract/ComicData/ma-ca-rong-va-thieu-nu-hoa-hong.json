@@ -1,0 +1,19 @@
+{
+  "Title": "Ma c\u00e0 r\u1ed3ng v\u00e0 thi\u1ebfu n\u1eef hoa h\u1ed3ng",
+  "URL": "ma-ca-rong-va-thieu-nu-hoa-hong",
+  "CoverImage": "ma-ca-rong-va-thieu-nu-hoa-hong.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-15 02:19:35"
+  }
+}

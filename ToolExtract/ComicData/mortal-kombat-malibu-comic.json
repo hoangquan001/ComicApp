@@ -1,0 +1,17 @@
+{
+  "Title": "Mortal Kombat Malibu Comic",
+  "URL": "mortal-kombat-malibu-comic",
+  "CoverImage": "mortal-kombat-malibu-comic.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-26 15:00:35"
+  }
+}

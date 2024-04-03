@@ -1,0 +1,18 @@
+{
+  "Title": "Nasumiko",
+  "URL": "nasumiko",
+  "CoverImage": "nasumiko.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "One shot",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-02 20:13:47"
+  }
+}

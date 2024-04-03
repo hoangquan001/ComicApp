@@ -1,0 +1,21 @@
+{
+  "Title": "Th\u1ea7n Y Asklepios",
+  "URL": "than-y-asklepios",
+  "CoverImage": "than-y-asklepios.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-30 11:32:00"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Fatal Frame: Shadow Priestess",
+  "URL": "fatal-frame-shadow-priestess",
+  "CoverImage": "fatal-frame-shadow-priestess.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Mystery"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-30 19:14:54"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Daydream Nightmare",
+  "URL": "daydream-nightmare",
+  "CoverImage": "daydream-nightmare.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-02-01 01:11:41"
+  }
+}

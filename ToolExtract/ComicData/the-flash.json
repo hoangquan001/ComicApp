@@ -1,0 +1,18 @@
+{
+  "Title": "The Flash",
+  "URL": "the-flash",
+  "CoverImage": "the-flash.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2024-02-01 10:18:36"
+  }
+}

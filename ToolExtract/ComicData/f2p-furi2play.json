@@ -1,0 +1,20 @@
+{
+  "Title": "F2P! Furi2Play!",
+  "URL": "f2p-furi2play",
+  "CoverImage": "f2p-furi2play.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "Mature",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-20 06:35:56"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Title": "Say I Love You",
+  "URL": "say-i-love-you",
+  "CoverImage": "say-i-love-you.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-29",
+  "TotalChapter": 29,
+  "Chapters": {
+    "urlChapter": "chapter-29",
+    "dateUpdateChapter": "2024-01-16 21:19:29"
+  }
+}

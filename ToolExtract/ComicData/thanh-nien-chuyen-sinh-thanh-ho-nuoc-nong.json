@@ -1,0 +1,20 @@
+{
+  "Title": "Thanh ni\u00ean chuy\u1ec3n sinh th\u00e0nh h\u1ed3 n\u01b0\u1edbc n\u00f3ng",
+  "URL": "thanh-nien-chuyen-sinh-thanh-ho-nuoc-nong",
+  "CoverImage": "thanh-nien-chuyen-sinh-thanh-ho-nuoc-nong.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Chuy\u1ec3n Sinh",
+    "Comedy",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-12 02:00:44"
+  }
+}

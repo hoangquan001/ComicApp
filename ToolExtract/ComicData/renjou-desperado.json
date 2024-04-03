@@ -1,0 +1,20 @@
+{
+  "Title": "Renjou Desperado",
+  "URL": "renjou-desperado",
+  "CoverImage": "renjou-desperado.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-23 07:36:16"
+  }
+}

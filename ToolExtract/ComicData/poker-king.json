@@ -1,0 +1,18 @@
+{
+  "Title": "Poker King",
+  "URL": "poker-king",
+  "CoverImage": "poker-king.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 12:09:56"
+  }
+}

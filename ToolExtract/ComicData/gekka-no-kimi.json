@@ -1,0 +1,24 @@
+{
+  "Title": "Gekka no Kimi",
+  "URL": "gekka-no-kimi",
+  "CoverImage": "gekka-no-kimi.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Historical",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Smut",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-22 00:26:30"
+  }
+}

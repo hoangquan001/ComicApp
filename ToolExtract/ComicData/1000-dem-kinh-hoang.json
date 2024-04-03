@@ -1,0 +1,17 @@
+{
+  "Title": "1000 \u0110\u00eam Kinh Ho\u00e0ng",
+  "URL": "1000-dem-kinh-hoang",
+  "CoverImage": "1000-dem-kinh-hoang.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-26 23:24:25"
+  }
+}

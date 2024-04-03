@@ -1,0 +1,21 @@
+{
+  "Title": "Id",
+  "URL": "id",
+  "CoverImage": "id.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Martial Arts",
+    "Romance"
+  ],
+  "LastChapter": "chapter-175",
+  "TotalChapter": 175,
+  "Chapters": {
+    "urlChapter": "chapter-175",
+    "dateUpdateChapter": "2024-01-10 18:08:21"
+  }
+}

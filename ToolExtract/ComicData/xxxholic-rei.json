@@ -1,0 +1,19 @@
+{
+  "Title": "xxxHOLiC Rei",
+  "URL": "xxxholic-rei",
+  "CoverImage": "xxxholic-rei.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-55",
+  "TotalChapter": 55,
+  "Chapters": {
+    "urlChapter": "chapter-55",
+    "dateUpdateChapter": "2024-01-10 02:38:13"
+  }
+}

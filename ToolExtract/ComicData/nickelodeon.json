@@ -1,0 +1,18 @@
+{
+  "Title": "Nickelodeon",
+  "URL": "nickelodeon",
+  "CoverImage": "nickelodeon.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-31",
+  "TotalChapter": 31,
+  "Chapters": {
+    "urlChapter": "chapter-31",
+    "dateUpdateChapter": "2024-01-26 08:12:34"
+  }
+}

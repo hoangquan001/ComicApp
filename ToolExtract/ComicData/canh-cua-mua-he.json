@@ -1,0 +1,22 @@
+{
+  "Title": "C\u00e1nh c\u1eeda m\u00f9a h\u00e8",
+  "URL": "canh-cua-mua-he",
+  "CoverImage": "canh-cua-mua-he.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "2024-01-31 12:33:21"
+  }
+}

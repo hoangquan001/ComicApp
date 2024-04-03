@@ -1,0 +1,18 @@
+{
+  "Title": "Musashi",
+  "URL": "musashi",
+  "CoverImage": "musashi.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "School Life",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-220",
+  "TotalChapter": 220,
+  "Chapters": {
+    "urlChapter": "chapter-220",
+    "dateUpdateChapter": "2024-01-12 17:05:16"
+  }
+}

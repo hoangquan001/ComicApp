@@ -1,0 +1,17 @@
+{
+  "Title": "Love So Life",
+  "URL": "love-so-life",
+  "CoverImage": "love-so-life.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-108",
+  "TotalChapter": 108,
+  "Chapters": {
+    "urlChapter": "chapter-108",
+    "dateUpdateChapter": "2024-01-04 11:26:08"
+  }
+}

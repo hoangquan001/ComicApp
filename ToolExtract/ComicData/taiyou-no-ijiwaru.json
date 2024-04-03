@@ -1,0 +1,19 @@
+{
+  "Title": "Taiyou no Ijiwaru",
+  "URL": "taiyou-no-ijiwaru",
+  "CoverImage": "taiyou-no-ijiwaru.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Psychological",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 17:53:24"
+  }
+}

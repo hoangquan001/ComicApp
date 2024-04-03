@@ -1,0 +1,20 @@
+{
+  "Title": "Chuusotsu Roudousha kara Hajimeru Koukou Seikatsu Roudousha",
+  "URL": "chuusotsu-roudousha-kara-hajimeru-koukou-seikatsu-roudousha",
+  "CoverImage": "chuusotsu-roudousha-kara-hajimeru-koukou-seikatsu-roudousha.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-17 19:18:26"
+  }
+}

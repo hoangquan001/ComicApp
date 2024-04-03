@@ -1,0 +1,17 @@
+{
+  "Title": "Ito Junji Cat's Diary",
+  "URL": "ito-junji-cat-s-diary",
+  "CoverImage": "ito-junji-cat-s-diary.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-15 00:20:05"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "H\u00e3y G\u1eb7p Erma (Short comic)",
+  "URL": "hay-gap-erma-short-comic",
+  "CoverImage": "hay-gap-erma-short-comic.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 02:30:44"
+  }
+}

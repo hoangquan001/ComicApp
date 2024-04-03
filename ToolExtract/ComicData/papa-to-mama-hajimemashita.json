@@ -1,0 +1,18 @@
+{
+  "Title": "Papa to Mama Hajimemashita",
+  "URL": "papa-to-mama-hajimemashita",
+  "CoverImage": "papa-to-mama-hajimemashita.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-25 20:18:11"
+  }
+}

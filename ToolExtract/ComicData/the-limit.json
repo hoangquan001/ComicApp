@@ -1,0 +1,19 @@
+{
+  "Title": "The Limit",
+  "URL": "the-limit",
+  "CoverImage": "the-limit.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Psychological",
+    "Shoujo",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-7",
+  "TotalChapter": 7,
+  "Chapters": {
+    "urlChapter": "chapter-7",
+    "dateUpdateChapter": "2024-01-27 01:40:08"
+  }
+}

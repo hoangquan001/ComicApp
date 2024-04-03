@@ -1,0 +1,19 @@
+{
+  "Title": "Pochi Gokko",
+  "URL": "pochi-gokko",
+  "CoverImage": "pochi-gokko.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Mystery",
+    "Romance"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-20 08:09:44"
+  }
+}

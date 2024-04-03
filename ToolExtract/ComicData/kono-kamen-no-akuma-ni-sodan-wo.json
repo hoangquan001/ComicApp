@@ -1,0 +1,19 @@
+{
+  "Title": "Kono kamen no akuma ni sodan wo!",
+  "URL": "kono-kamen-no-akuma-ni-sodan-wo",
+  "CoverImage": "kono-kamen-no-akuma-ni-sodan-wo.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-20 18:59:40"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Ake no Tobari",
+  "URL": "ake-no-tobari",
+  "CoverImage": "ake-no-tobari.jpg",
+  "CreateAt": "03/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Harem",
+    "Psychological",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-171",
+  "TotalChapter": 171,
+  "Chapters": {
+    "urlChapter": "chapter-171",
+    "dateUpdateChapter": "2024-01-03 00:37:20"
+  }
+}

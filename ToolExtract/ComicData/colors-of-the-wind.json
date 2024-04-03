@@ -1,0 +1,19 @@
+{
+  "Title": "Colors Of The Wind",
+  "URL": "colors-of-the-wind",
+  "CoverImage": "colors-of-the-wind.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Romance",
+    "Tragedy",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-02-03 09:50:28"
+  }
+}

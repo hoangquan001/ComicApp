@@ -1,0 +1,17 @@
+{
+  "Title": "Deep Love - Host",
+  "URL": "deep-love-host",
+  "CoverImage": "deep-love-host.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-31 06:45:31"
+  }
+}

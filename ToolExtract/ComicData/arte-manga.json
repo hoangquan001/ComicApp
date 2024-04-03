@@ -1,0 +1,21 @@
+{
+  "Title": "Arte manga",
+  "URL": "arte-manga",
+  "CoverImage": "arte-manga.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Historical",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Seinen",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-27 02:05:28"
+  }
+}

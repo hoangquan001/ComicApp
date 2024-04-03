@@ -1,0 +1,23 @@
+{
+  "Title": "Ki\u1ebfp n\u00e0y c\u00f3 n\u0103m m\u1ed1i nh\u00e2n duy\u00ean",
+  "URL": "kiep-nay-co-nam-moi-nhan-duyen",
+  "CoverImage": "kiep-nay-co-nam-moi-nhan-duyen.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Romance",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-26 21:01:39"
+  }
+}

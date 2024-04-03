@@ -1,0 +1,20 @@
+{
+  "Title": "Umisho",
+  "URL": "umisho",
+  "CoverImage": "umisho.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Martial Arts",
+    "School Life"
+  ],
+  "LastChapter": "chapter-51",
+  "TotalChapter": 51,
+  "Chapters": {
+    "urlChapter": "chapter-51",
+    "dateUpdateChapter": "2024-01-26 18:16:35"
+  }
+}

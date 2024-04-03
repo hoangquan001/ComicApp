@@ -1,0 +1,18 @@
+{
+  "Title": "Pretty Face",
+  "URL": "pretty-face",
+  "CoverImage": "pretty-face.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-51",
+  "TotalChapter": 51,
+  "Chapters": {
+    "urlChapter": "chapter-51",
+    "dateUpdateChapter": "2024-01-16 22:47:45"
+  }
+}

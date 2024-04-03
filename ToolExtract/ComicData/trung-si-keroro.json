@@ -1,0 +1,18 @@
+{
+  "Title": "Trung s\u0129 Keroro",
+  "URL": "trung-si-keroro",
+  "CoverImage": "trung-si-keroro.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 01:17:35"
+  }
+}

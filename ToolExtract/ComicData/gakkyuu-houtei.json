@@ -1,0 +1,20 @@
+{
+  "Title": "Gakkyuu Houtei",
+  "URL": "gakkyuu-houtei",
+  "CoverImage": "gakkyuu-houtei.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Mystery",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-26 07:47:14"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Happy to see you",
+  "URL": "happy-to-see-you",
+  "CoverImage": "happy-to-see-you.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 03:55:19"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Kiss My Ass",
+  "URL": "kiss-my-ass",
+  "CoverImage": "kiss-my-ass.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-21 13:10:32"
+  }
+}

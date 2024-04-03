@@ -1,0 +1,16 @@
+{
+  "Title": "Renai Sousa",
+  "URL": "renai-sousa",
+  "CoverImage": "renai-sousa.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-01 00:16:32"
+  }
+}

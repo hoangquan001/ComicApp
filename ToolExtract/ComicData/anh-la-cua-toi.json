@@ -1,0 +1,21 @@
+{
+  "Title": "Anh l\u00e0 c\u1ee7a t\u00f4i",
+  "URL": "anh-la-cua-toi",
+  "CoverImage": "anh-la-cua-toi.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-22 21:38:12"
+  }
+}

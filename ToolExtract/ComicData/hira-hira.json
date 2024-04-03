@@ -1,0 +1,21 @@
+{
+  "Title": "Hira Hira",
+  "URL": "hira-hira",
+  "CoverImage": "hira-hira.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Historical",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Shoujo",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 10:58:38"
+  }
+}

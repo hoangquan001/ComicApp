@@ -1,0 +1,18 @@
+{
+  "Title": "Ng\u01b0\u1eddi \u0111\u1eb9p New York",
+  "URL": "nguoi-dep-new-york",
+  "CoverImage": "nguoi-dep-new-york.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "Psychological"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-01 04:04:20"
+  }
+}

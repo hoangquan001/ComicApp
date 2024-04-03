@@ -1,0 +1,19 @@
+{
+  "Title": "Maou no Hajimekata",
+  "URL": "maou-no-hajimekata",
+  "CoverImage": "maou-no-hajimekata.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2023-12-29 18:27:03"
+  }
+}

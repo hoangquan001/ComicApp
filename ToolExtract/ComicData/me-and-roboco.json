@@ -1,0 +1,21 @@
+{
+  "Title": "Me And Roboco",
+  "URL": "me-and-roboco",
+  "CoverImage": "me-and-roboco.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Sci-fi",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-19",
+  "TotalChapter": 19,
+  "Chapters": {
+    "urlChapter": "chapter-19",
+    "dateUpdateChapter": "2024-01-23 08:10:01"
+  }
+}

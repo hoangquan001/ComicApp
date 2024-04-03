@@ -1,0 +1,19 @@
+{
+  "Title": "SEASON OF SU",
+  "URL": "season-of-su",
+  "CoverImage": "season-of-su.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Slice of Life",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-03 09:57:49"
+  }
+}

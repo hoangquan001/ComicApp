@@ -1,0 +1,22 @@
+{
+  "Title": "From Hell",
+  "URL": "from-hell",
+  "CoverImage": "from-hell.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-02 18:04:55"
+  }
+}

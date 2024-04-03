@@ -1,0 +1,23 @@
+{
+  "Title": "Kh\u00e1m Ph\u00e1 Th\u1ebf Gi\u1edbi Game",
+  "URL": "kham-pha-the-gioi-game",
+  "CoverImage": "kham-pha-the-gioi-game.jpg",
+  "CreateAt": "25/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-89",
+  "TotalChapter": 89,
+  "Chapters": {
+    "urlChapter": "chapter-89",
+    "dateUpdateChapter": "2024-01-14 15:02:09"
+  }
+}

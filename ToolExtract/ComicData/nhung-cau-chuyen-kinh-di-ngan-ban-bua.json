@@ -1,0 +1,17 @@
+{
+  "Title": "Nh\u1eefng c\u00e2u chuy\u1ec7n kinh d\u1ecb ng\u1eafn b\u1ea9n b\u1ef1a",
+  "URL": "nhung-cau-chuyen-kinh-di-ngan-ban-bua",
+  "CoverImage": "nhung-cau-chuyen-kinh-di-ngan-ban-bua.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Horror"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-20 03:29:14"
+  }
+}

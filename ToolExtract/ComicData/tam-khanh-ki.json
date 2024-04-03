@@ -1,0 +1,21 @@
+{
+  "Title": "T\u1ea7m khanh k\u00ed",
+  "URL": "tam-khanh-ki",
+  "CoverImage": "tam-khanh-ki.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manhua",
+    "Ng\u00f4n T\u00ecnh",
+    "Shoujo",
+    "Shoujo Ai",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 02:18:17"
+  }
+}

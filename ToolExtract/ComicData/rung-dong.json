@@ -1,0 +1,20 @@
+{
+  "Title": "R\u1eebng \u0110\u00f4ng",
+  "URL": "rung-dong",
+  "CoverImage": "rung-dong.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Horror",
+    "Manhwa",
+    "Romance",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-69",
+  "TotalChapter": 69,
+  "Chapters": {
+    "urlChapter": "chapter-69",
+    "dateUpdateChapter": "2024-01-15 16:36:24"
+  }
+}

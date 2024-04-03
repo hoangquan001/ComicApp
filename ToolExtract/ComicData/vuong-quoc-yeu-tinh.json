@@ -1,0 +1,18 @@
+{
+  "Title": "V\u01b0\u01a1ng Qu\u1ed1c Y\u00eau Tinh",
+  "URL": "vuong-quoc-yeu-tinh",
+  "CoverImage": "vuong-quoc-yeu-tinh.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 00:29:31"
+  }
+}

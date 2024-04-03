@@ -1,0 +1,21 @@
+{
+  "Title": "Vua ba\u0300i",
+  "URL": "vua-bai",
+  "CoverImage": "vua-bai.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Comic",
+    "Fantasy",
+    "Mystery",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-02 16:41:00"
+  }
+}

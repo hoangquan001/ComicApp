@@ -1,0 +1,18 @@
+{
+  "Title": "Iya x Shite",
+  "URL": "iya-x-shite",
+  "CoverImage": "iya-x-shite.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-21 02:47:11"
+  }
+}

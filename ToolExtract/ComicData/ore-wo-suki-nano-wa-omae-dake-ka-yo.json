@@ -1,0 +1,20 @@
+{
+  "Title": "Ore wo Suki Nano wa Omae Dake ka yo",
+  "URL": "ore-wo-suki-nano-wa-omae-dake-ka-yo",
+  "CoverImage": "ore-wo-suki-nano-wa-omae-dake-ka-yo.jpg",
+  "CreateAt": "29/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-55",
+  "TotalChapter": 55,
+  "Chapters": {
+    "urlChapter": "chapter-55",
+    "dateUpdateChapter": "2023-12-29 23:22:50"
+  }
+}

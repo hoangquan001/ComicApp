@@ -1,0 +1,22 @@
+{
+  "Title": "Ua so lovely",
+  "URL": "ua-so-lovely",
+  "CoverImage": "ua-so-lovely.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 02:56:59"
+  }
+}

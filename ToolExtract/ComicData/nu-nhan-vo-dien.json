@@ -1,0 +1,19 @@
+{
+  "Title": "N\u1eef nh\u00e2n v\u00f4 di\u1ec7n",
+  "URL": "nu-nhan-vo-dien",
+  "CoverImage": "nu-nhan-vo-dien.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Mystery",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-02 12:20:30"
+  }
+}

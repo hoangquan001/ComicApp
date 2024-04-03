@@ -1,0 +1,19 @@
+{
+  "Title": "Mobile Suit Gundam Unicorn: BANDE DESSINEE",
+  "URL": "mobile-suit-gundam-unicorn-bande-dessinee",
+  "CoverImage": "mobile-suit-gundam-unicorn-bande-dessinee.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 22:11:04"
+  }
+}

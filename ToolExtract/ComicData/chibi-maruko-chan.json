@@ -1,0 +1,17 @@
+{
+  "Title": "Chibi Maruko-chan",
+  "URL": "chibi-maruko-chan",
+  "CoverImage": "chibi-maruko-chan.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 20:00:41"
+  }
+}

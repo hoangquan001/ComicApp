@@ -1,0 +1,21 @@
+{
+  "Title": "Giao \u01af\u1edbc C\u1ee7a Ph\u00f9 Th\u1ee7y V\u00e0 C\u1eadu B\u00e9",
+  "URL": "giao-uoc-cua-phu-thuy-va-cau-be",
+  "CoverImage": "giao-uoc-cua-phu-thuy-va-cau-be.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-15 18:38:40"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "You Like Me, Don't You?",
+  "URL": "you-like-me-don-t-you",
+  "CoverImage": "you-like-me-don-t-you.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-30 19:21:44"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Grappler Baki",
+  "URL": "grappler-baki",
+  "CoverImage": "grappler-baki.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Manga",
+    "Martial Arts",
+    "Mature",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-104",
+  "TotalChapter": 104,
+  "Chapters": {
+    "urlChapter": "chapter-104",
+    "dateUpdateChapter": "2024-01-01 01:44:12"
+  }
+}

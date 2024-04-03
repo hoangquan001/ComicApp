@@ -1,0 +1,19 @@
+{
+  "Title": "Clover",
+  "URL": "clover",
+  "CoverImage": "clover.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-402",
+  "TotalChapter": 402,
+  "Chapters": {
+    "urlChapter": "chapter-402",
+    "dateUpdateChapter": "2023-12-25 07:20:29"
+  }
+}

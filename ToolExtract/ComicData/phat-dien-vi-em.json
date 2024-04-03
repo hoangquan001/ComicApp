@@ -1,0 +1,21 @@
+{
+  "Title": "Ph\u00e1t \u0111i\u00ean v\u00ec em",
+  "URL": "phat-dien-vi-em",
+  "CoverImage": "phat-dien-vi-em.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-23",
+  "TotalChapter": 23,
+  "Chapters": {
+    "urlChapter": "chapter-23",
+    "dateUpdateChapter": "2024-01-22 21:11:12"
+  }
+}

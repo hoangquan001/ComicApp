@@ -1,0 +1,17 @@
+{
+  "Title": "Maria-sama Ga Miteru",
+  "URL": "maria-sama-ga-miteru",
+  "CoverImage": "maria-sama-ga-miteru.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-23 17:13:33"
+  }
+}

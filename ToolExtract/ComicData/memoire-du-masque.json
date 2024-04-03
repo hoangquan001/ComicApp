@@ -1,0 +1,17 @@
+{
+  "Title": "Memoire Du Masque",
+  "URL": "memoire-du-masque",
+  "CoverImage": "memoire-du-masque.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manhwa"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 02:21:06"
+  }
+}

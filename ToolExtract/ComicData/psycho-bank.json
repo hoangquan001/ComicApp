@@ -1,0 +1,16 @@
+{
+  "Title": "Psycho Bank",
+  "URL": "psycho-bank",
+  "CoverImage": "psycho-bank.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-01-23 03:10:33"
+  }
+}

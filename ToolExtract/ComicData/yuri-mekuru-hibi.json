@@ -1,0 +1,19 @@
+{
+  "Title": "Yuri Mekuru Hibi",
+  "URL": "yuri-mekuru-hibi",
+  "CoverImage": "yuri-mekuru-hibi.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-02 19:45:19"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Arigatights!",
+  "URL": "arigatights",
+  "CoverImage": "arigatights.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-16 04:22:02"
+  }
+}

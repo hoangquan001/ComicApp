@@ -1,0 +1,18 @@
+{
+  "Title": "Yuusen Shoujo",
+  "URL": "yuusen-shoujo",
+  "CoverImage": "yuusen-shoujo.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-02-01 04:21:12"
+  }
+}

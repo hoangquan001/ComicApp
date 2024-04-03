@@ -1,0 +1,19 @@
+{
+  "Title": "New Pet Shop Of Horror",
+  "URL": "new-pet-shop-of-horror",
+  "CoverImage": "new-pet-shop-of-horror.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-28",
+  "TotalChapter": 28,
+  "Chapters": {
+    "urlChapter": "chapter-28",
+    "dateUpdateChapter": "2024-01-15 12:42:54"
+  }
+}

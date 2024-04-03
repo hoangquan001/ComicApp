@@ -1,0 +1,20 @@
+{
+  "Title": "Lights Out",
+  "URL": "lights-out",
+  "CoverImage": "lights-out.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Harem",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-68",
+  "TotalChapter": 68,
+  "Chapters": {
+    "urlChapter": "chapter-68",
+    "dateUpdateChapter": "2024-01-20 15:20:54"
+  }
+}

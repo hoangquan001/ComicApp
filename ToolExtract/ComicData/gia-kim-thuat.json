@@ -1,0 +1,18 @@
+{
+  "Title": "Gi\u1ea3 Kim Thu\u1eadt",
+  "URL": "gia-kim-thuat",
+  "CoverImage": "gia-kim-thuat.jpg",
+  "CreateAt": "28/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga"
+  ],
+  "LastChapter": "chapter-110",
+  "TotalChapter": 110,
+  "Chapters": {
+    "urlChapter": "chapter-110",
+    "dateUpdateChapter": "2023-12-28 02:12:21"
+  }
+}

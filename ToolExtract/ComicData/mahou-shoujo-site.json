@@ -1,0 +1,21 @@
+{
+  "Title": "Mahou Shoujo Site",
+  "URL": "mahou-shoujo-site",
+  "CoverImage": "mahou-shoujo-site.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Psychological",
+    "Shounen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-147",
+  "TotalChapter": 147,
+  "Chapters": {
+    "urlChapter": "chapter-147",
+    "dateUpdateChapter": "2023-12-24 16:00:19"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "M\u1ed1i T\u00ecnh Th\u1eddi Chi\u1ebfn",
+  "URL": "moi-tinh-thoi-chien",
+  "CoverImage": "moi-tinh-thoi-chien.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Historical",
+    "Romance"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 16:34:49"
+  }
+}

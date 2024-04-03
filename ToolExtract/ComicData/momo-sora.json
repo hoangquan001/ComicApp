@@ -1,0 +1,18 @@
+{
+  "Title": "Momo Sora",
+  "URL": "momo-sora",
+  "CoverImage": "momo-sora.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-03-03 06:32:50"
+  }
+}

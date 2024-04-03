@@ -1,0 +1,17 @@
+{
+  "Title": "Itsumo Misora",
+  "URL": "itsumo-misora",
+  "CoverImage": "itsumo-misora.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-48",
+  "TotalChapter": 48,
+  "Chapters": {
+    "urlChapter": "chapter-48",
+    "dateUpdateChapter": "2024-01-15 08:51:26"
+  }
+}

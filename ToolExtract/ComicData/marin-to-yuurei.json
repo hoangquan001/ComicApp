@@ -1,0 +1,21 @@
+{
+  "Title": "Marin to Yuurei",
+  "URL": "marin-to-yuurei",
+  "CoverImage": "marin-to-yuurei.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-15 18:42:43"
+  }
+}

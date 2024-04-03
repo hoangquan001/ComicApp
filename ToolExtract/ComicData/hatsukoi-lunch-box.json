@@ -1,0 +1,18 @@
+{
+  "Title": "Hatsukoi Lunch Box",
+  "URL": "hatsukoi-lunch-box",
+  "CoverImage": "hatsukoi-lunch-box.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-02-02 17:27:55"
+  }
+}

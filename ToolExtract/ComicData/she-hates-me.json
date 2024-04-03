@@ -1,0 +1,19 @@
+{
+  "Title": "She hates me",
+  "URL": "she-hates-me",
+  "CoverImage": "she-hates-me.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shoujo",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-22 16:48:33"
+  }
+}

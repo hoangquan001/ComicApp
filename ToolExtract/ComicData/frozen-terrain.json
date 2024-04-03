@@ -1,0 +1,21 @@
+{
+  "Title": "Frozen Terrain",
+  "URL": "frozen-terrain",
+  "CoverImage": "frozen-terrain.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance",
+    "Shoujo",
+    "Smut",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-13 07:48:31"
+  }
+}

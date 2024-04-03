@@ -1,0 +1,23 @@
+{
+  "Title": "Arifureta Shokugyou de Sekai Saikyou",
+  "URL": "arifureta-shokugyou-de-sekai-saikyou",
+  "CoverImage": "arifureta-shokugyou-de-sekai-saikyou.jpg",
+  "CreateAt": "14/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Chuy\u1ec3n Sinh",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-64",
+  "TotalChapter": 64,
+  "Chapters": {
+    "urlChapter": "chapter-64",
+    "dateUpdateChapter": "2023-12-14 00:35:30"
+  }
+}

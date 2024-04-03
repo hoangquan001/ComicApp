@@ -1,0 +1,21 @@
+{
+  "Title": "Usemono Yado",
+  "URL": "usemono-yado",
+  "CoverImage": "usemono-yado.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Josei",
+    "Mystery",
+    "Psychological",
+    "Romance",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-21 00:44:14"
+  }
+}

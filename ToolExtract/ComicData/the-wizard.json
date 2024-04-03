@@ -1,0 +1,16 @@
+{
+  "Title": "THE WIZARD",
+  "URL": "the-wizard",
+  "CoverImage": "the-wizard.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-02-02 09:08:16"
+  }
+}

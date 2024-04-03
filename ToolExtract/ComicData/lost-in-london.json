@@ -1,0 +1,19 @@
+{
+  "Title": "Lost in London",
+  "URL": "lost-in-london",
+  "CoverImage": "lost-in-london.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-30 03:17:18"
+  }
+}

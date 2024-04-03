@@ -1,0 +1,22 @@
+{
+  "Title": "Gwenpool Si\u00eau Ph\u00e0m",
+  "URL": "gwenpool-sieu-pham",
+  "CoverImage": "gwenpool-sieu-pham.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Comic",
+    "Fantasy",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-21 18:20:39"
+  }
+}

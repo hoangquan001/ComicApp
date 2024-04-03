@@ -1,0 +1,21 @@
+{
+  "Title": "Yaoguai Mingdan",
+  "URL": "yaoguai-mingdan",
+  "CoverImage": "yaoguai-mingdan.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-133",
+  "TotalChapter": 133,
+  "Chapters": {
+    "urlChapter": "chapter-133",
+    "dateUpdateChapter": "2023-12-31 23:20:33"
+  }
+}

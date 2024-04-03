@@ -1,0 +1,19 @@
+{
+  "Title": "Gin To Kin",
+  "URL": "gin-to-kin",
+  "CoverImage": "gin-to-kin.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Psychological",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-02 12:49:41"
+  }
+}

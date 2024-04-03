@@ -1,0 +1,19 @@
+{
+  "Title": "\u00c1o Gi\u00e1p V\u00e0ng",
+  "URL": "ao-giap-vang",
+  "CoverImage": "ao-giap-vang.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Martial Arts",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-111",
+  "TotalChapter": 111,
+  "Chapters": {
+    "urlChapter": "chapter-111",
+    "dateUpdateChapter": "2024-01-04 09:21:56"
+  }
+}

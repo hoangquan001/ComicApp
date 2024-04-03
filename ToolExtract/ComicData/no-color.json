@@ -1,0 +1,19 @@
+{
+  "Title": "No Color",
+  "URL": "no-color",
+  "CoverImage": "no-color.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-24 11:47:34"
+  }
+}

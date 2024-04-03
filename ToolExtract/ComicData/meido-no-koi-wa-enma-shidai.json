@@ -1,0 +1,19 @@
+{
+  "Title": "Meido No Koi Wa Enma Shidai!",
+  "URL": "meido-no-koi-wa-enma-shidai",
+  "CoverImage": "meido-no-koi-wa-enma-shidai.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-13 14:06:23"
+  }
+}

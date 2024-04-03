@@ -1,0 +1,19 @@
+{
+  "Title": "$100 is Too Cheap",
+  "URL": "100-is-too-cheap",
+  "CoverImage": "100-is-too-cheap.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "One shot"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 08:56:28"
+  }
+}

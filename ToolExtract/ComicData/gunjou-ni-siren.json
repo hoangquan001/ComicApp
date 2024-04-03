@@ -1,0 +1,18 @@
+{
+  "Title": "Gunjou ni Siren",
+  "URL": "gunjou-ni-siren",
+  "CoverImage": "gunjou-ni-siren.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Josei",
+    "Sports"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-21 00:39:10"
+  }
+}

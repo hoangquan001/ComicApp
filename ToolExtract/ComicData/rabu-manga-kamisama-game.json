@@ -1,0 +1,19 @@
+{
+  "Title": "[RABU MANGA] Kamisama Game",
+  "URL": "rabu-manga-kamisama-game",
+  "CoverImage": "rabu-manga-kamisama-game.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Romance",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 09:19:54"
+  }
+}

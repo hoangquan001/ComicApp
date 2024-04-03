@@ -1,0 +1,22 @@
+{
+  "Title": "Sekitou Elegy",
+  "URL": "sekitou-elegy",
+  "CoverImage": "sekitou-elegy.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Manga",
+    "Romance",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "10 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

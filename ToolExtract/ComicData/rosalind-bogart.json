@@ -1,0 +1,21 @@
+{
+  "Title": "Rosalind Bogart",
+  "URL": "rosalind-bogart",
+  "CoverImage": "rosalind-bogart.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "C\u1ed5 \u0110\u1ea1i",
+    "Drama",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 08:25:24"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "V\u00ec Ch\u00fang Ta L\u00e0 Nh\u1eefng K\u1ebb Kh\u00f4ng Tin V\u00e0o Ch\u00faa",
+  "URL": "vi-chung-ta-la-nhung-ke-khong-tin-vao-chua",
+  "CoverImage": "vi-chung-ta-la-nhung-ke-khong-tin-vao-chua.jpg",
+  "CreateAt": "16/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "One shot",
+    "Psychological",
+    "Romance",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-16 19:34:16"
+  }
+}

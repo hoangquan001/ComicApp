@@ -1,0 +1,24 @@
+{
+  "Title": "Yondome Wa Iyana Shi Zokusei Majutsushi",
+  "URL": "yondome-wa-iyana-shi-zokusei-majutsushi",
+  "CoverImage": "yondome-wa-iyana-shi-zokusei-majutsushi.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Ecchi",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2024-01-14 15:04:15"
+  }
+}

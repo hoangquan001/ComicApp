@@ -1,0 +1,19 @@
+{
+  "Title": "T\u1ed1i C\u01b0\u1eddng \u1ede R\u1ec3",
+  "URL": "toi-cuong-o-re",
+  "CoverImage": "toi-cuong-o-re.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Chuy\u1ec3n Sinh",
+    "Comedy",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2024-01-01 01:55:41"
+  }
+}

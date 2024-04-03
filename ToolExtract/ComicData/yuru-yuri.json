@@ -1,0 +1,20 @@
+{
+  "Title": "Yuru Yuri",
+  "URL": "yuru-yuri",
+  "CoverImage": "yuru-yuri.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shoujo",
+    "Shoujo Ai",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-144",
+  "TotalChapter": 144,
+  "Chapters": {
+    "urlChapter": "chapter-144",
+    "dateUpdateChapter": "2024-01-13 22:40:40"
+  }
+}

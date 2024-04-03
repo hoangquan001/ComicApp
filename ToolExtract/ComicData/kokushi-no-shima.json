@@ -1,0 +1,20 @@
+{
+  "Title": "Kokushi No Shima",
+  "URL": "kokushi-no-shima",
+  "CoverImage": "kokushi-no-shima.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Psychological",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-02-02 10:05:09"
+  }
+}

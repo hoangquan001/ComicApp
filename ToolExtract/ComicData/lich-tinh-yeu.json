@@ -1,0 +1,21 @@
+{
+  "Title": "L\u1ecbch T\u00ecnh Y\u00eau",
+  "URL": "lich-tinh-yeu",
+  "CoverImage": "lich-tinh-yeu.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-02-01 00:10:38"
+  }
+}

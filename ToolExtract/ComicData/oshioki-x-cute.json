@@ -1,0 +1,20 @@
+{
+  "Title": "Oshioki X-Cute",
+  "URL": "oshioki-x-cute",
+  "CoverImage": "oshioki-x-cute.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Ecchi",
+    "Fantasy",
+    "Romance",
+    "School Life",
+    "Smut"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-14 13:12:20"
+  }
+}

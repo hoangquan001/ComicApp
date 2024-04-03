@@ -1,0 +1,20 @@
+{
+  "Title": "The Voynich Hotel",
+  "URL": "the-voynich-hotel",
+  "CoverImage": "the-voynich-hotel.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Horror",
+    "Romance",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-68",
+  "TotalChapter": 68,
+  "Chapters": {
+    "urlChapter": "chapter-68",
+    "dateUpdateChapter": "2024-01-21 17:13:10"
+  }
+}

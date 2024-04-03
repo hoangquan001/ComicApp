@@ -1,0 +1,18 @@
+{
+  "Title": "Love Hina",
+  "URL": "love-hina",
+  "CoverImage": "love-hina.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-120",
+  "TotalChapter": 120,
+  "Chapters": {
+    "urlChapter": "chapter-120",
+    "dateUpdateChapter": "2024-01-14 10:51:02"
+  }
+}

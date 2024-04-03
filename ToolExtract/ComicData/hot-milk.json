@@ -1,0 +1,19 @@
+{
+  "Title": "Hot Milk",
+  "URL": "hot-milk",
+  "CoverImage": "hot-milk.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-26 18:20:25"
+  }
+}

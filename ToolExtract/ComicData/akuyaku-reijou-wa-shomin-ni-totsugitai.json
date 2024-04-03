@@ -1,0 +1,26 @@
+{
+  "Title": "Akuyaku reijou wa, shomin ni totsugitai! !",
+  "URL": "akuyaku-reijou-wa-shomin-ni-totsugitai",
+  "CoverImage": "akuyaku-reijou-wa-shomin-ni-totsugitai.jpg",
+  "CreateAt": "09/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Manga",
+    "Mystery",
+    "Psychological",
+    "Romance",
+    "Shoujo",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-09 16:46:04"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "B\u00ecnh Minh B\u00ean S\u01b0 T\u1eed",
+  "URL": "binh-minh-ben-su-tu",
+  "CoverImage": "binh-minh-ben-su-tu.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Drama",
+    "Mystery",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-22 17:12:46"
+  }
+}

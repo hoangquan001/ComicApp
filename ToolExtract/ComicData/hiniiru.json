@@ -1,0 +1,18 @@
+{
+  "Title": "Hiniiru",
+  "URL": "hiniiru",
+  "CoverImage": "hiniiru.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-26 20:26:44"
+  }
+}

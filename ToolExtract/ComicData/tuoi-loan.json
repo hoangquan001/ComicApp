@@ -1,0 +1,22 @@
+{
+  "Title": "Tu\u1ed5i Lo\u1ea1n",
+  "URL": "tuoi-loan",
+  "CoverImage": "tuoi-loan.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Historical",
+    "Psychological",
+    "Romance",
+    "Tragedy",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-01 12:46:41"
+  }
+}

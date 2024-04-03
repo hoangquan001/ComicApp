@@ -1,0 +1,20 @@
+{
+  "Title": "Mokushiroku Alice",
+  "URL": "mokushiroku-alice",
+  "CoverImage": "mokushiroku-alice.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Manga",
+    "School Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-22 23:18:59"
+  }
+}

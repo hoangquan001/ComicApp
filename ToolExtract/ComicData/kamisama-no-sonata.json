@@ -1,0 +1,22 @@
+{
+  "Title": "Kamisama no sonata",
+  "URL": "kamisama-no-sonata",
+  "CoverImage": "kamisama-no-sonata.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "One shot",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-20 18:50:00"
+  }
+}

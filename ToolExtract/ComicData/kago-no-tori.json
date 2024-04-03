@@ -1,0 +1,17 @@
+{
+  "Title": "Kago No Tori",
+  "URL": "kago-no-tori",
+  "CoverImage": "kago-no-tori.jpg",
+  "CreateAt": "03/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-02-03 11:00:59"
+  }
+}

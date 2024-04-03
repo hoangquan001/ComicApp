@@ -1,0 +1,19 @@
+{
+  "Title": "Katekin",
+  "URL": "katekin",
+  "CoverImage": "katekin.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-32",
+  "TotalChapter": 32,
+  "Chapters": {
+    "urlChapter": "chapter-32",
+    "dateUpdateChapter": "2024-01-22 09:52:07"
+  }
+}

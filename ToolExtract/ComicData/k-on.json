@@ -1,0 +1,18 @@
+{
+  "Title": "K-on!",
+  "URL": "k-on",
+  "CoverImage": "k-on.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "School Life"
+  ],
+  "LastChapter": "chapter-53",
+  "TotalChapter": 53,
+  "Chapters": {
+    "urlChapter": "chapter-53",
+    "dateUpdateChapter": "1 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Title": "Th\u00e1nh Ki\u1ebfm T\u00e1i Sinh",
+  "URL": "thanh-kiem-tai-sinh",
+  "CoverImage": "thanh-kiem-tai-sinh.jpg",
+  "CreateAt": "30/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Chuy\u1ec3n Sinh",
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-21",
+  "TotalChapter": 21,
+  "Chapters": {
+    "urlChapter": "chapter-21",
+    "dateUpdateChapter": "2023-12-30 16:38:04"
+  }
+}

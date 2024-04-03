@@ -1,0 +1,17 @@
+{
+  "Title": "B\u0103ng Ho\u1ea1i 3Rd",
+  "URL": "bang-hoai-3rd",
+  "CoverImage": "bang-hoai-3rd.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-94",
+  "TotalChapter": 94,
+  "Chapters": {
+    "urlChapter": "chapter-94",
+    "dateUpdateChapter": "2023-12-27 21:05:02"
+  }
+}

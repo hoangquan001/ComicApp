@@ -1,0 +1,21 @@
+{
+  "Title": "Nicola no Oyururi Makai Kikou",
+  "URL": "nicola-no-oyururi-makai-kikou",
+  "CoverImage": "nicola-no-oyururi-makai-kikou.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Seinen",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-27 00:21:01"
+  }
+}

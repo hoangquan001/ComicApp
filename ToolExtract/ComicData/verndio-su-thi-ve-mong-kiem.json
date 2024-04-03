@@ -1,0 +1,22 @@
+{
+  "Title": "Verndio - S\u1eed thi v\u1ec1 m\u1ed9ng ki\u1ebfm",
+  "URL": "verndio-su-thi-ve-mong-kiem",
+  "CoverImage": "verndio-su-thi-ve-mong-kiem.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-91",
+  "TotalChapter": 91,
+  "Chapters": {
+    "urlChapter": "chapter-91",
+    "dateUpdateChapter": "2024-01-01 19:30:03"
+  }
+}

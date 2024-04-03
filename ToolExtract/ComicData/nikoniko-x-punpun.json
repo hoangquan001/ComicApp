@@ -1,0 +1,20 @@
+{
+  "Title": "Nikoniko x Punpun",
+  "URL": "nikoniko-x-punpun",
+  "CoverImage": "nikoniko-x-punpun.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comic",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-23 04:03:30"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Malisa",
+  "URL": "malisa",
+  "CoverImage": "malisa.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ],
+  "LastChapter": "chapter-65",
+  "TotalChapter": 65,
+  "Chapters": {
+    "urlChapter": "chapter-65",
+    "dateUpdateChapter": "2024-01-20 07:16:57"
+  }
+}

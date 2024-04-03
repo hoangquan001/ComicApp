@@ -1,0 +1,18 @@
+{
+  "Title": "La Mosca",
+  "URL": "la-mosca",
+  "CoverImage": "la-mosca.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manhwa",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-01-26 19:21:01"
+  }
+}

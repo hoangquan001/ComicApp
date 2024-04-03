@@ -1,0 +1,18 @@
+{
+  "Title": "Hayate x Blade",
+  "URL": "hayate-x-blade",
+  "CoverImage": "hayate-x-blade.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Martial Arts",
+    "School Life"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-27 02:31:20"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Burning Hell",
+  "URL": "burning-hell",
+  "CoverImage": "burning-hell.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhwa"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-26 23:23:33"
+  }
+}

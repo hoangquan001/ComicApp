@@ -1,0 +1,20 @@
+{
+  "Title": "Aiki",
+  "URL": "aiki",
+  "CoverImage": "aiki.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Manga",
+    "Martial Arts",
+    "Romance"
+  ],
+  "LastChapter": "chapter-98",
+  "TotalChapter": 98,
+  "Chapters": {
+    "urlChapter": "chapter-98",
+    "dateUpdateChapter": "2024-01-01 10:26:23"
+  }
+}

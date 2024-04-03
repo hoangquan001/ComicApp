@@ -1,0 +1,18 @@
+{
+  "Title": "Yujo No Yume",
+  "URL": "yujo-no-yume",
+  "CoverImage": "yujo-no-yume.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Mystery",
+    "Romance"
+  ],
+  "LastChapter": "chapter-33",
+  "TotalChapter": 33,
+  "Chapters": {
+    "urlChapter": "chapter-33",
+    "dateUpdateChapter": "2024-01-31 23:34:27"
+  }
+}

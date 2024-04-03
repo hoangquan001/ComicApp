@@ -1,0 +1,19 @@
+{
+  "Title": "Lovecome Like A Demon",
+  "URL": "lovecome-like-a-demon",
+  "CoverImage": "lovecome-like-a-demon.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-04 00:08:29"
+  }
+}

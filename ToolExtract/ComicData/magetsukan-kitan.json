@@ -1,0 +1,21 @@
+{
+  "Title": "Magetsukan Kitan",
+  "URL": "magetsukan-kitan",
+  "CoverImage": "magetsukan-kitan.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "Manga",
+    "Romance",
+    "Seinen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-46",
+  "TotalChapter": 46,
+  "Chapters": {
+    "urlChapter": "chapter-46",
+    "dateUpdateChapter": "2024-01-15 17:17:31"
+  }
+}

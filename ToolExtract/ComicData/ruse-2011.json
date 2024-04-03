@@ -1,0 +1,17 @@
+{
+  "Title": "Ruse (2011)",
+  "URL": "ruse-2011",
+  "CoverImage": "ruse-2011.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Comic"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 08:49:01"
+  }
+}

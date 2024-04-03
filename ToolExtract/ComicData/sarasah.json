@@ -1,0 +1,18 @@
+{
+  "Title": "Sarasah",
+  "URL": "sarasah",
+  "CoverImage": "sarasah.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Romance",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-31",
+  "TotalChapter": 31,
+  "Chapters": {
+    "urlChapter": "chapter-31",
+    "dateUpdateChapter": "2024-01-23 03:37:54"
+  }
+}

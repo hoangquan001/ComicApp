@@ -1,0 +1,23 @@
+{
+  "Title": "Gal Kazoku",
+  "URL": "gal-kazoku",
+  "CoverImage": "gal-kazoku.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "One shot",
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-16 23:53:03"
+  }
+}

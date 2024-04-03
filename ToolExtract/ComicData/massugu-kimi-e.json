@@ -1,0 +1,18 @@
+{
+  "Title": "Massugu Kimi e",
+  "URL": "massugu-kimi-e",
+  "CoverImage": "massugu-kimi-e.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "One shot",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 06:53:14"
+  }
+}

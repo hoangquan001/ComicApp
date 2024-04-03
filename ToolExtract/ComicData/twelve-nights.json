@@ -1,0 +1,19 @@
+{
+  "Title": "Twelve Nights",
+  "URL": "twelve-nights",
+  "CoverImage": "twelve-nights.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Historical",
+    "Romance",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-31",
+  "TotalChapter": 31,
+  "Chapters": {
+    "urlChapter": "chapter-31",
+    "dateUpdateChapter": "2024-01-30 04:24:13"
+  }
+}

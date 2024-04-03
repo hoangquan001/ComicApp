@@ -1,0 +1,19 @@
+{
+  "Title": "Natsu no Kakera",
+  "URL": "natsu-no-kakera",
+  "CoverImage": "natsu-no-kakera.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "One shot",
+    "Romance"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 01:43:51"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Kara no Kyoukai [JikanFS]",
+  "URL": "kara-no-kyoukai-jikanfs",
+  "CoverImage": "kara-no-kyoukai-jikanfs.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Fantasy",
+    "Horror",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-02-01 07:16:20"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Witch Hunter",
+  "URL": "witch-hunter",
+  "CoverImage": "witch-hunter.jpg",
+  "CreateAt": "27/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-182",
+  "TotalChapter": 182,
+  "Chapters": {
+    "urlChapter": "chapter-182",
+    "dateUpdateChapter": "2023-12-27 05:13:11"
+  }
+}

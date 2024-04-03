@@ -1,0 +1,21 @@
+{
+  "Title": "Shiki",
+  "URL": "shiki",
+  "CoverImage": "shiki.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Horror",
+    "Mystery",
+    "Shounen",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-17 01:03:39"
+  }
+}

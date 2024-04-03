@@ -1,0 +1,20 @@
+{
+  "Title": "Regular Show",
+  "URL": "regular-show",
+  "CoverImage": "regular-show.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Doujinshi",
+    "Psychological",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-02 13:28:04"
+  }
+}

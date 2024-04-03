@@ -1,0 +1,19 @@
+{
+  "Title": "Ai Yori Aoshi",
+  "URL": "ai-yori-aoshi",
+  "CoverImage": "ai-yori-aoshi.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adult",
+    "Manga",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-100",
+  "TotalChapter": 100,
+  "Chapters": {
+    "urlChapter": "chapter-100",
+    "dateUpdateChapter": "2024-01-21 22:37:09"
+  }
+}

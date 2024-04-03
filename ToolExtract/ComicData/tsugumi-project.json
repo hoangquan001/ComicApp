@@ -1,0 +1,21 @@
+{
+  "Title": "Tsugumi Project",
+  "URL": "tsugumi-project",
+  "CoverImage": "tsugumi-project.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Manga",
+    "Mystery",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-21 23:20:46"
+  }
+}

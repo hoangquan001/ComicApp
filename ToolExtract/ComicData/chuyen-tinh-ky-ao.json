@@ -1,0 +1,17 @@
+{
+  "Title": "Chuy\u1ec7n t\u00ecnh k\u1ef3 \u1ea3o",
+  "URL": "chuyen-tinh-ky-ao",
+  "CoverImage": "chuyen-tinh-ky-ao.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 21:30:03"
+  }
+}

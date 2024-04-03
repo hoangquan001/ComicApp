@@ -1,0 +1,19 @@
+{
+  "Title": "Okyu No Trinity",
+  "URL": "okyu-no-trinity",
+  "CoverImage": "okyu-no-trinity.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-41",
+  "TotalChapter": 41,
+  "Chapters": {
+    "urlChapter": "chapter-41",
+    "dateUpdateChapter": "2024-01-13 10:00:28"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Guardian Dog",
+  "URL": "guardian-dog",
+  "CoverImage": "guardian-dog.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Manga",
+    "Romance",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-22",
+  "TotalChapter": 22,
+  "Chapters": {
+    "urlChapter": "chapter-22",
+    "dateUpdateChapter": "2024-02-01 06:25:56"
+  }
+}

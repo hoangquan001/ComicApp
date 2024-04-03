@@ -1,0 +1,22 @@
+{
+  "Title": "Kokou no Hito",
+  "URL": "kokou-no-hito",
+  "CoverImage": "kokou-no-hito.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Drama",
+    "Mature",
+    "Psychological",
+    "Seinen",
+    "Sports",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-138",
+  "TotalChapter": 138,
+  "Chapters": {
+    "urlChapter": "chapter-138",
+    "dateUpdateChapter": "2023-12-31 14:08:16"
+  }
+}

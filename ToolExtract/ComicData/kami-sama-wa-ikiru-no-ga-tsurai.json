@@ -1,0 +1,20 @@
+{
+  "Title": "Kami Sama Wa Ikiru No Ga Tsurai",
+  "URL": "kami-sama-wa-ikiru-no-ga-tsurai",
+  "CoverImage": "kami-sama-wa-ikiru-no-ga-tsurai.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Shoujo",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-21 22:06:43"
+  }
+}

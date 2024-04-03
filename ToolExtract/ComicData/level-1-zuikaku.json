@@ -1,0 +1,17 @@
+{
+  "Title": "Level 1 Zuikaku",
+  "URL": "level-1-zuikaku",
+  "CoverImage": "level-1-zuikaku.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Doujinshi"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-27 00:13:35"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Con \u0110\u01b0\u1eddng B\u00e1 V\u01b0\u01a1ng",
+  "URL": "con-duong-ba-vuong",
+  "CoverImage": "con-duong-ba-vuong.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Drama",
+    "Ecchi",
+    "Manga",
+    "Mature"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-21 16:00:22"
+  }
+}

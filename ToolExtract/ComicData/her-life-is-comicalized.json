@@ -1,0 +1,21 @@
+{
+  "Title": "Her Life is Comicalized",
+  "URL": "her-life-is-comicalized",
+  "CoverImage": "her-life-is-comicalized.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Psychological",
+    "School Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-23 20:10:13"
+  }
+}

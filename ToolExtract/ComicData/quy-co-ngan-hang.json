@@ -1,0 +1,21 @@
+{
+  "Title": "Qu\u00fd C\u00f4 Ng\u00e2n H\u00e0ng",
+  "URL": "quy-co-ngan-hang",
+  "CoverImage": "quy-co-ngan-hang.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Historical",
+    "Manhwa",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-30 20:42:50"
+  }
+}

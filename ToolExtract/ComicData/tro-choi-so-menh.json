@@ -1,0 +1,21 @@
+{
+  "Title": "Tr\u00f2 Ch\u01a1i S\u1ed1 M\u1ec7nh",
+  "URL": "tro-choi-so-menh",
+  "CoverImage": "tro-choi-so-menh.jpg",
+  "CreateAt": "13/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Comedy",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-391",
+  "TotalChapter": 391,
+  "Chapters": {
+    "urlChapter": "chapter-391",
+    "dateUpdateChapter": "2023-12-13 02:14:08"
+  }
+}

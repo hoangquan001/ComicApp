@@ -1,0 +1,19 @@
+{
+  "Title": "T\u00e2m kh\u1ea3m c\u1ee7a Rome",
+  "URL": "tam-kham-cua-rome",
+  "CoverImage": "tam-kham-cua-rome.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "C\u1ed5 \u0110\u1ea1i",
+    "Horror",
+    "Mature",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-02-02 08:27:04"
+  }
+}

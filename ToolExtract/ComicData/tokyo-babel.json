@@ -1,0 +1,20 @@
+{
+  "Title": "Tokyo Babel",
+  "URL": "tokyo-babel",
+  "CoverImage": "tokyo-babel.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Mystery",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-16 18:50:43"
+  }
+}

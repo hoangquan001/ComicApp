@@ -1,0 +1,19 @@
+{
+  "Title": "Pochi Kuro",
+  "URL": "pochi-kuro",
+  "CoverImage": "pochi-kuro.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Romance",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-39",
+  "TotalChapter": 39,
+  "Chapters": {
+    "urlChapter": "chapter-39",
+    "dateUpdateChapter": "2024-01-14 12:34:31"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Anh b\u1ea1n b\u00ed \u1ea9n",
+  "URL": "anh-ban-bi-an",
+  "CoverImage": "anh-ban-bi-an.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Manhwa",
+    "Romance",
+    "School Life"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-30 17:40:28"
+  }
+}

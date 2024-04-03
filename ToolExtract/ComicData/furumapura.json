@@ -1,0 +1,21 @@
+{
+  "Title": "Furumapura",
+  "URL": "furumapura",
+  "CoverImage": "furumapura.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "School Life",
+    "Slice of Life",
+    "Kha\u0301c",
+    "Yuri"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-02 17:12:00"
+  }
+}

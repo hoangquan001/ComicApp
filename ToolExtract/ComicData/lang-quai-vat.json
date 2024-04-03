@@ -1,0 +1,18 @@
+{
+  "Title": "L\u00e0ng qu\u00e1i v\u1eadt",
+  "URL": "lang-quai-vat",
+  "CoverImage": "lang-quai-vat.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-02-02 13:58:27"
+  }
+}

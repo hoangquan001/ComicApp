@@ -1,0 +1,21 @@
+{
+  "Title": "Blade skill online",
+  "URL": "blade-skill-online",
+  "CoverImage": "blade-skill-online.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-02-23 11:55:45"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Guardian of the Witch",
+  "URL": "guardian-of-the-witch",
+  "CoverImage": "guardian-of-the-witch.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-23 13:51:27"
+  }
+}

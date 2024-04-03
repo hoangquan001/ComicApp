@@ -1,0 +1,22 @@
+{
+  "Title": "Yofukashi no Uta",
+  "URL": "yofukashi-no-uta",
+  "CoverImage": "yofukashi-no-uta.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Psychological",
+    "Romance",
+    "Shounen",
+    "Slice of Life",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-149",
+  "TotalChapter": 149,
+  "Chapters": {
+    "urlChapter": "chapter-149",
+    "dateUpdateChapter": "2023-12-24 19:28:20"
+  }
+}

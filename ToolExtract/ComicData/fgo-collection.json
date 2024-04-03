@@ -1,0 +1,19 @@
+{
+  "Title": "FGO collection",
+  "URL": "fgo-collection",
+  "CoverImage": "fgo-collection.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Doujinshi",
+    "Drama",
+    "One shot"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "2024-01-31 07:52:04"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "Title": "Si\u00eau nh\u00e2n Pacman",
+  "URL": "sieu-nhan-pacman",
+  "CoverImage": "sieu-nhan-pacman.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Mystery",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-22 03:16:34"
+  }
+}

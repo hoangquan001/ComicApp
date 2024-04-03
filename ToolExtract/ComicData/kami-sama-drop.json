@@ -1,0 +1,21 @@
+{
+  "Title": "Kami-sama Drop",
+  "URL": "kami-sama-drop",
+  "CoverImage": "kami-sama-drop.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "Romance",
+    "Seinen",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-23 02:50:25"
+  }
+}

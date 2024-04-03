@@ -1,0 +1,19 @@
+{
+  "Title": "Baby Step",
+  "URL": "baby-step",
+  "CoverImage": "baby-step.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Romance",
+    "School Life",
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-33",
+  "TotalChapter": 33,
+  "Chapters": {
+    "urlChapter": "chapter-33",
+    "dateUpdateChapter": "2024-01-23 21:07:01"
+  }
+}

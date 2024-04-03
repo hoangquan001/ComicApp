@@ -1,0 +1,19 @@
+{
+  "Title": "18-Sai no Himitsu",
+  "URL": "18-sai-no-himitsu",
+  "CoverImage": "18-sai-no-himitsu.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-1",
+  "TotalChapter": 1,
+  "Chapters": {
+    "urlChapter": "chapter-1",
+    "dateUpdateChapter": "2024-01-22 01:33:30"
+  }
+}

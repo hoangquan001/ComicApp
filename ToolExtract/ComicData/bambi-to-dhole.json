@@ -1,0 +1,20 @@
+{
+  "Title": "Bambi to Dhole",
+  "URL": "bambi-to-dhole",
+  "CoverImage": "bambi-to-dhole.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-25 21:10:08"
+  }
+}

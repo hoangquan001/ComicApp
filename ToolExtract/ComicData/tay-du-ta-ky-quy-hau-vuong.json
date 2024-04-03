@@ -1,0 +1,25 @@
+{
+  "Title": "T\u00e2y Du T\u00e0 K\u00fd - Qu\u1ef7 H\u1ea7u V\u01b0\u01a1ng",
+  "URL": "tay-du-ta-ky-quy-hau-vuong",
+  "CoverImage": "tay-du-ta-ky-quy-hau-vuong.jpg",
+  "CreateAt": "10/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Adventure",
+    "Ecchi",
+    "Fantasy",
+    "Horror",
+    "Manga",
+    "Mature",
+    "Mystery",
+    "Psychological",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-10 09:34:21"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Title": "Puripuri",
+  "URL": "puripuri",
+  "CoverImage": "puripuri.jpg",
+  "CreateAt": "02/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Harem",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-02-02 22:48:30"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "Title": "Shiruba",
+  "URL": "shiruba",
+  "CoverImage": "shiruba.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 03:59:34"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Title": "Bu\u00f4n X\u00e1c",
+  "URL": "buon-xac",
+  "CoverImage": "buon-xac.jpg",
+  "CreateAt": "26/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Horror",
+    "Manga",
+    "Psychological",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-4",
+  "TotalChapter": 4,
+  "Chapters": {
+    "urlChapter": "chapter-4",
+    "dateUpdateChapter": "29 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

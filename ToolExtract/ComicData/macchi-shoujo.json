@@ -1,0 +1,19 @@
+{
+  "Title": "Macchi Shoujo",
+  "URL": "macchi-shoujo",
+  "CoverImage": "macchi-shoujo.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Psychological",
+    "Seinen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-23 09:59:44"
+  }
+}

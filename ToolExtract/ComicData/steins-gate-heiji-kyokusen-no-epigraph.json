@@ -1,0 +1,18 @@
+{
+  "Title": "Steins, Gate: Heiji Kyokusen No Epigraph",
+  "URL": "steins-gate-heiji-kyokusen-no-epigraph",
+  "CoverImage": "steins-gate-heiji-kyokusen-no-epigraph.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Sci-fi",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-20 23:46:45"
+  }
+}

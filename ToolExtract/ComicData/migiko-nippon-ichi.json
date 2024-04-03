@@ -1,0 +1,17 @@
+{
+  "Title": "Migiko Nippon ichi",
+  "URL": "migiko-nippon-ichi",
+  "CoverImage": "migiko-nippon-ichi.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-01-21 08:48:15"
+  }
+}

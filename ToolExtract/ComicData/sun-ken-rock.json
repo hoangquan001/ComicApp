@@ -1,0 +1,18 @@
+{
+  "Title": "Sun-ken Rock",
+  "URL": "sun-ken-rock",
+  "CoverImage": "sun-ken-rock.jpg",
+  "CreateAt": "17/12/2023",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-175",
+  "TotalChapter": 175,
+  "Chapters": {
+    "urlChapter": "chapter-175",
+    "dateUpdateChapter": "2023-12-17 02:44:31"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "Title": "She Becomes A Tree",
+  "URL": "she-becomes-a-tree",
+  "CoverImage": "she-becomes-a-tree.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "Seinen",
+    "Slice of Life",
+    "Supernatural",
+    "Webtoon",
+    "Kha\u0301c",
+    "Yuri"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-20 08:36:30"
+  }
+}

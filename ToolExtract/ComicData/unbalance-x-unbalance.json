@@ -1,0 +1,22 @@
+{
+  "Title": "Unbalance X Unbalance",
+  "URL": "unbalance-x-unbalance",
+  "CoverImage": "unbalance-x-unbalance.jpg",
+  "CreateAt": "08/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Harem",
+    "Manhwa",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-82",
+  "TotalChapter": 82,
+  "Chapters": {
+    "urlChapter": "chapter-82",
+    "dateUpdateChapter": "2024-01-08 09:08:22"
+  }
+}

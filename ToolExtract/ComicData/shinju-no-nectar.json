@@ -1,0 +1,22 @@
+{
+  "Title": "Shinju No Nectar",
+  "URL": "shinju-no-nectar",
+  "CoverImage": "shinju-no-nectar.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Drama",
+    "Fantasy",
+    "Mature",
+    "Romance",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-55",
+  "TotalChapter": 55,
+  "Chapters": {
+    "urlChapter": "chapter-55",
+    "dateUpdateChapter": "2023-12-31 12:22:27"
+  }
+}

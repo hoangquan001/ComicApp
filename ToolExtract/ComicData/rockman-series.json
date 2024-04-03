@@ -1,0 +1,19 @@
+{
+  "Title": "RockMan: Series",
+  "URL": "rockman-series",
+  "CoverImage": "rockman-series.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comic",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-14",
+  "TotalChapter": 14,
+  "Chapters": {
+    "urlChapter": "chapter-14",
+    "dateUpdateChapter": "2024-01-24 11:06:38"
+  }
+}

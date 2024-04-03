@@ -1,0 +1,17 @@
+{
+  "Title": "Stalker x Stalker",
+  "URL": "stalker-x-stalker",
+  "CoverImage": "stalker-x-stalker.jpg",
+  "CreateAt": "24/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga"
+  ],
+  "LastChapter": "chapter-72",
+  "TotalChapter": 72,
+  "Chapters": {
+    "urlChapter": "chapter-72",
+    "dateUpdateChapter": "2023-12-24 12:15:07"
+  }
+}

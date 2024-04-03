@@ -1,0 +1,17 @@
+{
+  "Title": "Liberty Liberty",
+  "URL": "liberty-liberty",
+  "CoverImage": "liberty-liberty.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-02-01 07:20:27"
+  }
+}

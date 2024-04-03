@@ -1,0 +1,21 @@
+{
+  "Title": "Full Metal Wing",
+  "URL": "full-metal-wing",
+  "CoverImage": "full-metal-wing.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Adventure",
+    "Manhwa",
+    "Martial Arts",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-32",
+  "TotalChapter": 32,
+  "Chapters": {
+    "urlChapter": "chapter-32",
+    "dateUpdateChapter": "2024-01-22 14:19:11"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "Title": "Break Hands",
+  "URL": "break-hands",
+  "CoverImage": "break-hands.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-21 03:44:13"
+  }
+}

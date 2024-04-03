@@ -1,0 +1,19 @@
+{
+  "Title": "Shinigami to Gin no Kishi",
+  "URL": "shinigami-to-gin-no-kishi",
+  "CoverImage": "shinigami-to-gin-no-kishi.jpg",
+  "CreateAt": "20/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Drama",
+    "Fantasy",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-20 02:42:28"
+  }
+}

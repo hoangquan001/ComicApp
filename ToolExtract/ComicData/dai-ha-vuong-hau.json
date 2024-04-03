@@ -1,0 +1,20 @@
+{
+  "Title": "\u0110\u1ea1i H\u1ea1 V\u01b0\u01a1ng H\u1ea7u",
+  "URL": "dai-ha-vuong-hau",
+  "CoverImage": "dai-ha-vuong-hau.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhua",
+    "Mystery",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-16 01:21:52"
+  }
+}

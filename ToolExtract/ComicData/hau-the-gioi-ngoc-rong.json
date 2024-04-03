@@ -1,0 +1,19 @@
+{
+  "Title": "H\u1eadu Th\u1ebf Gi\u1edbi Ng\u1ecdc R\u1ed3ng",
+  "URL": "hau-the-gioi-ngoc-rong",
+  "CoverImage": "hau-the-gioi-ngoc-rong.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-23 20:11:03"
+  }
+}

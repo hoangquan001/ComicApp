@@ -1,0 +1,20 @@
+{
+  "Title": "N\u00e0y Isshiki, c\u1eadu th\u00edch t\u00f4i ph\u1ea3i kh\u00f4ng?",
+  "URL": "nay-isshiki-cau-thich-toi-phai-khong",
+  "CoverImage": "nay-isshiki-cau-thich-toi-phai-khong.jpg",
+  "CreateAt": "17/03/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Manga",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "17 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

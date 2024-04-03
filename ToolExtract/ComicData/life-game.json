@@ -1,0 +1,19 @@
+{
+  "Title": "LIfe Game",
+  "URL": "life-game",
+  "CoverImage": "life-game.jpg",
+  "CreateAt": "24/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "Manga",
+    "Mystery",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-24 18:52:34"
+  }
+}

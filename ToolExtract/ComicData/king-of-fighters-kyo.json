@@ -1,0 +1,18 @@
+{
+  "Title": "King of Fighters Kyo",
+  "URL": "king-of-fighters-kyo",
+  "CoverImage": "king-of-fighters-kyo.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Manga",
+    "Martial Arts"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-30 11:50:40"
+  }
+}

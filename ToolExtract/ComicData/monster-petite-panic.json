@@ -1,0 +1,18 @@
+{
+  "Title": "Monster Petite Panic",
+  "URL": "monster-petite-panic",
+  "CoverImage": "monster-petite-panic.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Supernatural",
+    "Kha\u0301c"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-23 08:03:46"
+  }
+}

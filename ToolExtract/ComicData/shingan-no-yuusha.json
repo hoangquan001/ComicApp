@@ -1,0 +1,20 @@
+{
+  "Title": "Shingan No Yuusha",
+  "URL": "shingan-no-yuusha",
+  "CoverImage": "shingan-no-yuusha.jpg",
+  "CreateAt": "26/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Chuy\u1ec3n Sinh",
+    "Comedy",
+    "Fantasy"
+  ],
+  "LastChapter": "chapter-33",
+  "TotalChapter": 33,
+  "Chapters": {
+    "urlChapter": "chapter-33",
+    "dateUpdateChapter": "2023-12-26 22:27:34"
+  }
+}

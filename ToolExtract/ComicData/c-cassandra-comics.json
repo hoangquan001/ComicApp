@@ -1,0 +1,19 @@
+{
+  "Title": "C. Cassandra Comics",
+  "URL": "c-cassandra-comics",
+  "CoverImage": "c-cassandra-comics.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Comic",
+    "Slice of Life",
+    "Thi\u1ebfu Nhi"
+  ],
+  "LastChapter": "chapter-15",
+  "TotalChapter": 15,
+  "Chapters": {
+    "urlChapter": "chapter-15",
+    "dateUpdateChapter": "2024-01-26 13:43:06"
+  }
+}

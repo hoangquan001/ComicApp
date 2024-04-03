@@ -1,0 +1,19 @@
+{
+  "Title": "Lessa",
+  "URL": "lessa",
+  "CoverImage": "lessa.jpg",
+  "CreateAt": "04/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Manhwa",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-58",
+  "TotalChapter": 58,
+  "Chapters": {
+    "urlChapter": "chapter-58",
+    "dateUpdateChapter": "2024-01-04 16:54:55"
+  }
+}

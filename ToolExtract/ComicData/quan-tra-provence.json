@@ -1,0 +1,19 @@
+{
+  "Title": "Qu\u00e1n tr\u00e0 Provence",
+  "URL": "quan-tra-provence",
+  "CoverImage": "quan-tra-provence.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 18:14:38"
+  }
+}

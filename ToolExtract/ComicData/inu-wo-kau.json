@@ -1,0 +1,16 @@
+{
+  "Title": "Inu wo kau",
+  "URL": "inu-wo-kau",
+  "CoverImage": "inu-wo-kau.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-17 22:40:48"
+  }
+}

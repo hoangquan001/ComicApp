@@ -1,0 +1,19 @@
+{
+  "Title": "RRR - Rock 'n' Roll Ricky",
+  "URL": "rrr-rock-n-roll-ricky",
+  "CoverImage": "rrr-rock-n-roll-ricky.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Seinen",
+    "Slice of Life",
+    "Sports"
+  ],
+  "LastChapter": "chapter-17",
+  "TotalChapter": 17,
+  "Chapters": {
+    "urlChapter": "chapter-17",
+    "dateUpdateChapter": "2024-02-01 13:14:01"
+  }
+}

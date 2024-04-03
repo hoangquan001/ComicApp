@@ -1,0 +1,17 @@
+{
+  "Title": "Kyoudai No Rule",
+  "URL": "kyoudai-no-rule",
+  "CoverImage": "kyoudai-no-rule.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Shounen",
+    "Sports"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 00:12:19"
+  }
+}

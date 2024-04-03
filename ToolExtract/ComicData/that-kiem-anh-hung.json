@@ -1,0 +1,21 @@
+{
+  "Title": "Th\u1ea5t ki\u1ebfm anh h\u00f9ng",
+  "URL": "that-kiem-anh-hung",
+  "CoverImage": "that-kiem-anh-hung.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Anime",
+    "Comic",
+    "C\u1ed5 \u0110\u1ea1i",
+    "Fantasy",
+    "Manhua",
+    "Truy\u1ec7n M\u00e0u"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-30 09:46:52"
+  }
+}

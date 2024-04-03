@@ -1,0 +1,19 @@
+{
+  "Title": "C\u00f4 b\u00e9 m\u1eb7t tr\u1eddi",
+  "URL": "co-be-mat-troi",
+  "CoverImage": "co-be-mat-troi.jpg",
+  "CreateAt": "25/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Fantasy",
+    "Mystery",
+    "Romance"
+  ],
+  "LastChapter": "chapter-25",
+  "TotalChapter": 25,
+  "Chapters": {
+    "urlChapter": "chapter-25",
+    "dateUpdateChapter": "2024-01-25 21:59:59"
+  }
+}

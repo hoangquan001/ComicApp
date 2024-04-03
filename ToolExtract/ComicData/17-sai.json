@@ -1,0 +1,22 @@
+{
+  "Title": "17 SAI",
+  "URL": "17-sai",
+  "CoverImage": "17-sai.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Drama",
+    "Ng\u00f4n T\u00ecnh",
+    "Romance",
+    "School Life",
+    "Shoujo",
+    "Smut"
+  ],
+  "LastChapter": "chapter-2",
+  "TotalChapter": 2,
+  "Chapters": {
+    "urlChapter": "chapter-2",
+    "dateUpdateChapter": "2024-02-01 01:44:56"
+  }
+}

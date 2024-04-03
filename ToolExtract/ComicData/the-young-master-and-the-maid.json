@@ -1,0 +1,18 @@
+{
+  "Title": "The Young Master and The Maid",
+  "URL": "the-young-master-and-the-maid",
+  "CoverImage": "the-young-master-and-the-maid.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Shoujo",
+    "Webtoon"
+  ],
+  "LastChapter": "chapter-10",
+  "TotalChapter": 10,
+  "Chapters": {
+    "urlChapter": "chapter-10",
+    "dateUpdateChapter": "2024-01-26 23:24:18"
+  }
+}

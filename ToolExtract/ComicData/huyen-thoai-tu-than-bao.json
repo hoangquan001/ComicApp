@@ -1,0 +1,22 @@
+{
+  "Title": "Huy\u1ec1n Tho\u1ea1i T\u1ee9 Th\u1ea7n B\u1ea3o",
+  "URL": "huyen-thoai-tu-than-bao",
+  "CoverImage": "huyen-thoai-tu-than-bao.jpg",
+  "CreateAt": "27/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comic",
+    "Drama",
+    "Fantasy",
+    "Romance",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-27 01:33:22"
+  }
+}

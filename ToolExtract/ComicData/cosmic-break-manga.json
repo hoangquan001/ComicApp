@@ -1,0 +1,17 @@
+{
+  "Title": "Cosmic Break Manga",
+  "URL": "cosmic-break-manga",
+  "CoverImage": "cosmic-break-manga.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 00:53:59"
+  }
+}

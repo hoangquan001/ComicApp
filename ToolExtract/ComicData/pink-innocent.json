@@ -1,0 +1,19 @@
+{
+  "Title": "Pink Innocent",
+  "URL": "pink-innocent",
+  "CoverImage": "pink-innocent.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-17 22:24:31"
+  }
+}

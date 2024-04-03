@@ -1,0 +1,26 @@
+{
+  "Title": "Nijiiro Togarashi - \u1edat B\u1ea3y M\u00e0u",
+  "URL": "nijiiro-togarashi-ot-bay-mau",
+  "CoverImage": "nijiiro-togarashi-ot-bay-mau.jpg",
+  "CreateAt": "01/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Drama",
+    "Fantasy",
+    "Historical",
+    "Martial Arts",
+    "Romance",
+    "Sci-fi",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-109",
+  "TotalChapter": 109,
+  "Chapters": {
+    "urlChapter": "chapter-109",
+    "dateUpdateChapter": "2024-01-01 11:12:06"
+  }
+}

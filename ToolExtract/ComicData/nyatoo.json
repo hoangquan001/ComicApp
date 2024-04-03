@@ -1,0 +1,16 @@
+{
+  "Title": "Nyatoo",
+  "URL": "nyatoo",
+  "CoverImage": "nyatoo.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga"
+  ],
+  "LastChapter": "chapter-18",
+  "TotalChapter": 18,
+  "Chapters": {
+    "urlChapter": "chapter-18",
+    "dateUpdateChapter": "2024-01-23 09:17:01"
+  }
+}

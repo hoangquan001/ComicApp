@@ -1,0 +1,21 @@
+{
+  "Title": "Bocchiman",
+  "URL": "bocchiman",
+  "CoverImage": "bocchiman.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Horror",
+    "Psychological",
+    "Sci-fi",
+    "Shounen",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-9",
+  "TotalChapter": 9,
+  "Chapters": {
+    "urlChapter": "chapter-9",
+    "dateUpdateChapter": "2024-01-26 23:35:14"
+  }
+}

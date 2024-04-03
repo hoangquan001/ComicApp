@@ -1,0 +1,20 @@
+{
+  "Title": "Kyouhan",
+  "URL": "kyouhan",
+  "CoverImage": "kyouhan.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-02-01 07:41:21"
+  }
+}

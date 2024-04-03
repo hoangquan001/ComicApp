@@ -1,0 +1,17 @@
+{
+  "Title": "Fukigen Cinderella",
+  "URL": "fukigen-cinderella",
+  "CoverImage": "fukigen-cinderella.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-23",
+  "TotalChapter": 23,
+  "Chapters": {
+    "urlChapter": "chapter-23",
+    "dateUpdateChapter": "2024-01-23 22:10:31"
+  }
+}

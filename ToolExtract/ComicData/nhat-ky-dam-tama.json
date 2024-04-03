@@ -1,0 +1,20 @@
+{
+  "Title": "Nh\u1eadt K\u00fd D\u00e2m Tama",
+  "URL": "nhat-ky-dam-tama",
+  "CoverImage": "nhat-ky-dam-tama.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Fantasy",
+    "Manga"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-01-30 14:40:51"
+  }
+}

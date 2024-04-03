@@ -1,0 +1,17 @@
+{
+  "Title": "My girl",
+  "URL": "my-girl",
+  "CoverImage": "my-girl.jpg",
+  "CreateAt": "15/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Manga"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-15 14:36:55"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Merry Checker",
+  "URL": "merry-checker",
+  "CoverImage": "merry-checker.jpg",
+  "CreateAt": "30/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Romance"
+  ],
+  "LastChapter": "chapter-6",
+  "TotalChapter": 6,
+  "Chapters": {
+    "urlChapter": "chapter-6",
+    "dateUpdateChapter": "2024-01-30 18:15:43"
+  }
+}

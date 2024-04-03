@@ -1,0 +1,19 @@
+{
+  "Title": "The Sword",
+  "URL": "the-sword",
+  "CoverImage": "the-sword.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Mature",
+    "Supernatural",
+    "Tragedy"
+  ],
+  "LastChapter": "chapter-24",
+  "TotalChapter": 24,
+  "Chapters": {
+    "urlChapter": "chapter-24",
+    "dateUpdateChapter": "2024-01-26 20:58:27"
+  }
+}

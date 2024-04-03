@@ -1,0 +1,19 @@
+{
+  "Title": "Teikoku no Koiyome",
+  "URL": "teikoku-no-koiyome",
+  "CoverImage": "teikoku-no-koiyome.jpg",
+  "CreateAt": "27/03/2024",
+  "statusComic": 0,
+  "Category": [
+    "Fantasy",
+    "Manga",
+    "Romance",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-8",
+  "TotalChapter": 8,
+  "Chapters": {
+    "urlChapter": "chapter-8",
+    "dateUpdateChapter": "7 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

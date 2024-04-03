@@ -1,0 +1,17 @@
+{
+  "Title": "Immortal Regis",
+  "URL": "immortal-regis",
+  "CoverImage": "immortal-regis.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Manhwa"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-17 10:19:07"
+  }
+}
