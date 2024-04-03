@@ -1,0 +1,20 @@
+{
+  "Title": "Youchien Wars",
+  "URL": "youchien-wars",
+  "CoverImage": "youchien-wars.jpg",
+  "CreateAt": "05/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga",
+    "Shounen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-61",
+  "TotalChapter": 61,
+  "Chapters": {
+    "urlChapter": "chapter-61",
+    "dateUpdateChapter": "11 nga\u0300y tr\u01b0\u01a1\u0301c"
+  }
+}

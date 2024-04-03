@@ -1,0 +1,21 @@
+{
+  "Title": "Yuria 100 Shiki",
+  "URL": "yuria-100-shiki",
+  "CoverImage": "yuria-100-shiki.jpg",
+  "CreateAt": "16/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Adult",
+    "Comedy",
+    "Ecchi",
+    "Manga",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-102",
+  "TotalChapter": 102,
+  "Chapters": {
+    "urlChapter": "chapter-102",
+    "dateUpdateChapter": "2024-01-16 16:30:52"
+  }
+}

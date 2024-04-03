@@ -1,0 +1,19 @@
+{
+  "Title": "Zombieya Reiko",
+  "URL": "zombieya-reiko",
+  "CoverImage": "zombieya-reiko.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Comedy",
+    "Horror",
+    "Josei",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-5",
+  "TotalChapter": 5,
+  "Chapters": {
+    "urlChapter": "chapter-5",
+    "dateUpdateChapter": "2024-01-21 11:16:32"
+  }
+}

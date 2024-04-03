@@ -1,0 +1,19 @@
+{
+  "Title": "Yugi-Oh-R!!",
+  "URL": "yugi-oh-r",
+  "CoverImage": "yugi-oh-r.jpg",
+  "CreateAt": "12/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-44",
+  "TotalChapter": 44,
+  "Chapters": {
+    "urlChapter": "chapter-44",
+    "dateUpdateChapter": "2024-01-12 02:11:33"
+  }
+}

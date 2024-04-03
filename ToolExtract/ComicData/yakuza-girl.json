@@ -1,0 +1,21 @@
+{
+  "Title": "Yakuza Girl",
+  "URL": "yakuza-girl",
+  "CoverImage": "yakuza-girl.jpg",
+  "CreateAt": "26/01/2024",
+  "statusComic": 1,
+  "Category": [
+    "Action",
+    "Ecchi",
+    "Horror",
+    "Manga",
+    "Mature",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-01-26 18:27:34"
+  }
+}

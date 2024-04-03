@@ -1,0 +1,21 @@
+{
+  "Title": "Yuusha Party O Oida Sareta Kiyou Binbou",
+  "URL": "yuusha-party-o-oida-sareta-kiyou-binbou",
+  "CoverImage": "yuusha-party-o-oida-sareta-kiyou-binbou.jpg",
+  "CreateAt": "23/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Ecchi",
+    "Fantasy",
+    "Manga",
+    "Romance"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-23 03:05:28"
+  }
+}

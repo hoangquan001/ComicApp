@@ -1,0 +1,19 @@
+{
+  "Title": "Yuuhi Romance",
+  "URL": "yuuhi-romance",
+  "CoverImage": "yuuhi-romance.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "School Life",
+    "Shoujo"
+  ],
+  "LastChapter": "chapter-11",
+  "TotalChapter": 11,
+  "Chapters": {
+    "urlChapter": "chapter-11",
+    "dateUpdateChapter": "2024-02-01 03:27:08"
+  }
+}

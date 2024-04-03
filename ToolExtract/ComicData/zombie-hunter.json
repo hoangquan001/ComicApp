@@ -1,0 +1,20 @@
+{
+  "Title": "Zombie Hunter",
+  "URL": "zombie-hunter",
+  "CoverImage": "zombie-hunter.jpg",
+  "CreateAt": "21/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Adult",
+    "Horror",
+    "Manga",
+    "Sci-fi"
+  ],
+  "LastChapter": "chapter-26",
+  "TotalChapter": 26,
+  "Chapters": {
+    "urlChapter": "chapter-26",
+    "dateUpdateChapter": "2024-01-21 23:42:14"
+  }
+}

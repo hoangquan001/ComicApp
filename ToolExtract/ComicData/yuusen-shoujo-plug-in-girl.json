@@ -1,0 +1,19 @@
+{
+  "Title": "Yuusen Shoujo - Plug-in Girl",
+  "URL": "yuusen-shoujo-plug-in-girl",
+  "CoverImage": "yuusen-shoujo-plug-in-girl.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Romance",
+    "Sci-fi",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-16",
+  "TotalChapter": 16,
+  "Chapters": {
+    "urlChapter": "chapter-16",
+    "dateUpdateChapter": "2024-02-01 02:31:31"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Title": "Zanki X 99",
+  "URL": "zanki-x-99",
+  "CoverImage": "zanki-x-99.jpg",
+  "CreateAt": "31/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Horror",
+    "School Life"
+  ],
+  "LastChapter": "chapter-3",
+  "TotalChapter": 3,
+  "Chapters": {
+    "urlChapter": "chapter-3",
+    "dateUpdateChapter": "2024-01-31 10:39:10"
+  }
+}

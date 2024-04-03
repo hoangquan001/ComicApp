@@ -1,0 +1,21 @@
+{
+  "Title": "Yozakura Quartet",
+  "URL": "yozakura-quartet",
+  "CoverImage": "yozakura-quartet.jpg",
+  "CreateAt": "13/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Comedy",
+    "Manga",
+    "Mystery",
+    "Shounen",
+    "Supernatural"
+  ],
+  "LastChapter": "chapter-206",
+  "TotalChapter": 206,
+  "Chapters": {
+    "urlChapter": "chapter-206",
+    "dateUpdateChapter": "2024-03-01 20:51:59"
+  }
+}

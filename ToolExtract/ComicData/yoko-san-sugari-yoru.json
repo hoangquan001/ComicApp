@@ -1,0 +1,20 @@
+{
+  "Title": "Yoko-san, Sugari Yoru",
+  "URL": "yoko-san-sugari-yoru",
+  "CoverImage": "yoko-san-sugari-yoru.jpg",
+  "CreateAt": "17/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Manga",
+    "Romance",
+    "School Life",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-13",
+  "TotalChapter": 13,
+  "Chapters": {
+    "urlChapter": "chapter-13",
+    "dateUpdateChapter": "2024-01-17 17:56:22"
+  }
+}

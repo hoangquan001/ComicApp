@@ -1,0 +1,20 @@
+{
+  "Title": "Yankee Wa Isekai De Seirei Ni Aisaremasu",
+  "URL": "yankee-wa-isekai-de-seirei-ni-aisaremasu",
+  "CoverImage": "yankee-wa-isekai-de-seirei-ni-aisaremasu.jpg",
+  "CreateAt": "31/12/2023",
+  "statusComic": 0,
+  "Category": [
+    "Action",
+    "Fantasy",
+    "Harem",
+    "Manga",
+    "Shounen"
+  ],
+  "LastChapter": "chapter-42",
+  "TotalChapter": 42,
+  "Chapters": {
+    "urlChapter": "chapter-42",
+    "dateUpdateChapter": "2023-12-31 17:42:55"
+  }
+}

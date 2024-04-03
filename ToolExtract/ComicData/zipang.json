@@ -1,0 +1,20 @@
+{
+  "Title": "Zipang",
+  "URL": "zipang",
+  "CoverImage": "zipang.jpg",
+  "CreateAt": "14/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Drama",
+    "Historical",
+    "Manga",
+    "Sci-fi",
+    "Seinen"
+  ],
+  "LastChapter": "chapter-47",
+  "TotalChapter": 47,
+  "Chapters": {
+    "urlChapter": "chapter-47",
+    "dateUpdateChapter": "2024-01-14 05:35:52"
+  }
+}

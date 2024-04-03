@@ -1,0 +1,18 @@
+{
+  "Title": "Yoningurashi",
+  "URL": "yoningurashi",
+  "CoverImage": "yoningurashi.jpg",
+  "CreateAt": "01/02/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Seinen",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-20",
+  "TotalChapter": 20,
+  "Chapters": {
+    "urlChapter": "chapter-20",
+    "dateUpdateChapter": "2024-02-01 03:36:14"
+  }
+}

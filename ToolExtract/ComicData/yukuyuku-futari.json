@@ -1,0 +1,18 @@
+{
+  "Title": "Yukuyuku Futari",
+  "URL": "yukuyuku-futari",
+  "CoverImage": "yukuyuku-futari.jpg",
+  "CreateAt": "22/01/2024",
+  "statusComic": 0,
+  "Category": [
+    "Comedy",
+    "Romance",
+    "Slice of Life"
+  ],
+  "LastChapter": "chapter-12",
+  "TotalChapter": 12,
+  "Chapters": {
+    "urlChapter": "chapter-12",
+    "dateUpdateChapter": "2024-01-22 02:14:28"
+  }
+}
