@@ -33,20 +33,22 @@ public class ComicService : IComicService
     public ServiceResponse<List<Comic>> GetComics(int page, int step)
     {
         if (page < 1) page = 1;
-        // var xdata = _dbContext.Genres.ToList();
+        var xdata = _dbContext.Genres.ToList();
         // var data2 = _dbContext.ComicGenre.ToList();
         // var data3 = _dbContext.Chapters.FirstOrDefault();
         var data = _dbContext.Comics.
         Include(c => c.genres).
-        Include(c => c.Chapters).
+        // Include(c => c.Chapters).
+        OrderBy(c => c.CreateAt).
         Skip((page - 1) * step).
-        Take(step).
+        Take(step)?.
         ToList();
-        var datax = _dbContext.Chapters
-        .Include(c => c.Pages)
-        .Where(c => c.ComicID == 1)
-        .Select(c => new {c.ComicID} )
-        .ToList();
+        // var datax = _dbContext.Chapters
+        // .Include(c => c.Pages)
+        // .Where(c => c.ComicID == 1)
+        // .Select(c => new {c.ComicID} )
+        // .ToList();
+        var a = new {a = 1};
         var pageData = _dbContext.Pages.ToList();
         // var l = _dbContext.ComicGenre.Where(c => c.ComicID == data[0].ID).ToList();
         return new ServiceResponse<List<Comic>>

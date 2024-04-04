@@ -1,0 +1,129 @@
+{% extends 'template.html' %} {% block content %}
+<div class="container">
+  <div class="row">
+    <div id="ctl00_divCenter" class="center-side col-md-8">
+      <div class="Module Module-170">
+        <div class="ModuleContent">
+          <div class="items">
+            <div class="row">
+              {% for comic in data %}
+              <div class="item">
+                <figure class="clearfix">
+                  <div class="image">
+                    <a
+                      title="Luật Của Tiểu Thuyết Mạng"
+                      href="https://www.nettruyenup.vn/truyen-tranh/luat-cua-tieu-thuyet-mang-5419"
+                    >
+                      <img
+                        src="https://www.nettruyenup.vn/images/comics/{{comic.url}}.jpg"
+                        class="lazy"
+                        data-original="https://www.nettruyenup.vn/images/comics/luat-cua-tieu-thuyet-mang.jpg"
+                        alt="Luật Của Tiểu Thuyết Mạng"
+                      />
+                    </a>
+                    <div class="view clearfix">
+                      <span class="pull-left">
+                        <i class="fa fa-eye"></i> 25M
+                        <i class="fa fa-comment"></i> 9,301
+                        <i class="fa fa-heart"></i> 89,969
+                      </span>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <h3>
+                      <a
+                        class="jtip"
+                        title="Luật Của Tiểu Thuyết Mạng"
+                        data-jtip="#truyen-tranh-5419"
+                        href="https://www.nettruyenup.vn/truyen-tranh/luat-cua-tieu-thuyet-mang-5419"
+                      >
+                        {{ comic.title }}
+                      </a>
+                    </h3>
+                    <ul class="comic-item" data-id="5419">
+                      <li class="chapter clearfix">
+                        <a
+                          data-id="1261614"
+                          href="https://www.nettruyenup.vn/truyen-tranh/luat-cua-tieu-thuyet-mang/chapter-251/1261614"
+                          title="Luật Của Tiểu Thuyết Mạng Chapter 251"
+                        >
+                          Chapter 251
+                        </a>
+                        <i class="time">1 tháng trước</i>
+                      </li>
+                      <li class="chapter clearfix">
+                        <a
+                          data-id="1261613"
+                          href="https://www.nettruyenup.vn/truyen-tranh/luat-cua-tieu-thuyet-mang/chapter-250/1261613"
+                          title="Luật Của Tiểu Thuyết Mạng Chapter 250"
+                        >
+                          Chapter 250
+                        </a>
+                        <i class="time">1 tháng trước</i>
+                      </li>
+                      <li class="chapter clearfix">
+                        <a
+                          data-id="1261612"
+                          href="https://www.nettruyenup.vn/truyen-tranh/luat-cua-tieu-thuyet-mang/chapter-249/1261612"
+                          title="Luật Của Tiểu Thuyết Mạng Chapter 249"
+                        >
+                          Chapter 249
+                        </a>
+                        <i class="time">1 tháng trước</i>
+                      </li>
+                    </ul>
+                  </figcaption>
+                </figure>
+                <div
+                  class="box_tootip"
+                  style="display: none"
+                  id="truyen-tranh-5419"
+                >
+                  <div class="box_li">
+                    <div class="title"></div>
+                    <div class="clearfix">
+                      <div class="box_img">
+                        <a
+                          title=""
+                          href="https://www.nettruyenup.vn/truyen-tranh/luat-cua-tieu-thuyet-mang-5419"
+                        >
+                          <img
+                            class="img_a"
+                            src="https://www.nettruyenup.vn/images/comics/luat-cua-tieu-thuyet-mang.jpg"
+                            data-original="https://www.nettruyenup.vn/images/comics/luat-cua-tieu-thuyet-mang.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="message_main">
+                        <p><label>Tên khác:</label></p>
+                        <p><label>Thể loại:</label></p>
+                        <p><label>Tình trạng:</label>Đang tiến hành</p>
+                        <p><label>Lượt xem:</label> 25M</p>
+                        <p><label>Bình luận:</label> 9,301</p>
+                        <p><label>Theo dõi:</label> 89,969</p>
+                        <p><label>Ngày cập nhật:</label>1 tháng trước</p>
+                      </div>
+                    </div>
+                    <div class="box_text">
+                      Tôi chỉ muốn sống một cuộc sống bình thường, tại sao điều
+                      này lại xảy ra với tôi! Hồi sinh viên bình thường của bạn
+                      Ham Dan, người có sở thích đọc sách Law of
+                      Insomnia&nbsp;Nhưng ngay cả trong thế giới của tiểu thuyết
+                      giả tưởng, vai trò của cô cũng không khác.&nbsp;Bị mắc kẹt
+                      như người bạn thời thơ ấu của nữ nhân vật chính, cuộc sống
+                      bình thường hàng ngày của cô chấm dứt, trở nên xoắn hơn
+                      bởi tính cách mạnh mẽ của cô.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
