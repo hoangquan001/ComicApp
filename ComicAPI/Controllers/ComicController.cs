@@ -21,9 +21,9 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<List<Comic>> GetComics(int page, int step)
+    public async Task<ActionResult<List<Comic>>> GetComics(int page, int step)
     {
-        var data = _comicService.GetComics(page, step);
+        var data = await _comicService.GetComics(page, step);
         return Ok(data);
     }
     //get one comic by id

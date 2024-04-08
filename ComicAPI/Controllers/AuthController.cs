@@ -20,23 +20,23 @@ public class AuthController : ControllerBase
     }
     [HttpPost]
     [Route("Login")]
-    public ActionResult<ServiceResponse<string>> Login(UserLoginDTO userLogin)
+    public async Task<ActionResult<ServiceResponse<string>>> Login(UserLoginDTO userLogin)
     {
-        ServiceResponse<string> res = _authService.Login(userLogin);
+        ServiceResponse<string> res = await _authService.Login(userLogin);
         return Ok(res);
     }
     [Route("Register")]
     [HttpPost]
-    public ActionResult<ServiceResponse<User>> Register(UserRegisterDTO RegisterData)
+    public async Task<ActionResult<ServiceResponse<User>>> Register(UserRegisterDTO RegisterData)
     {
-        ServiceResponse<User> res = _authService.Register(RegisterData);
+        ServiceResponse<User> res = await _authService.Register(RegisterData);
         return Ok(res);
     }
     [Route("Logout")]
     [HttpGet]
-    public ActionResult<ServiceResponse<string>> Logout()
+    public async Task<ActionResult<ServiceResponse<string>>> Logout()
     {
-        ServiceResponse<string> res = _authService.Logout();
+        ServiceResponse<string> res = await _authService.Logout();
         return Ok(res);
     }
 

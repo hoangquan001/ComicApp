@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 public interface IAuthService
 {
-    ServiceResponse<string> Login(UserLoginDTO userLogin);
-    ServiceResponse<User> Register(UserRegisterDTO RegisterData);
-    ServiceResponse<string> Logout();
+    Task<ServiceResponse<string>> Login(UserLoginDTO userLogin);
+    Task<ServiceResponse<User>> Register(UserRegisterDTO RegisterData);
+    Task<ServiceResponse<string>> Logout();
 }
