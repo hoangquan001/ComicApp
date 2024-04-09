@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ComicApp.Data
 {
-    public class DataContext : DbContext
+    public class ComicDbContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options)
+        public ComicDbContext(DbContextOptions<ComicDbContext> options)
             : base(options)
         {
 

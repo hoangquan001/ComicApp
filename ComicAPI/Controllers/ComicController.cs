@@ -22,17 +22,19 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<List<Comic>> GetComics(int page, int step, SortType sortType)
+
+    public async Task<ActionResult<List<Comic>>> GetComics(int page, int step)
     {
-        var data = _comicService.GetComics(page, step, sortType);
+        var data = await _comicService.GetComics(page, step);
         return Ok(data);
     }
-    [HttpGet("Genres/{genre}")]
-    public ActionResult<List<Comic>> GetComicsByGenre(string genre,int page, int step )
-    {
-        var data = _comicService.GetComics(page, step);
-        return Ok(data);
-    }
+    // [HttpGet("Genres/{genre}")]
+    // public ActionResult<List<Comic>> GetComicsByGenre(string genre,int page, int step )
+    // {
+    //     // var data = _comicService.GetComicsByGenre(genre,page, step);
+    // }
+
+
     //get one comic by id
 
     [HttpGet("{id}")]

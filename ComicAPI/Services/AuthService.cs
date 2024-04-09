@@ -8,20 +8,21 @@ using System.Reflection.Metadata.Ecma335;
 using System.Security.Claims;
 using System.Text;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 namespace ComicApp.Services;
 public class AuthService : IAuthService
 {
-    readonly DataContext _dbContext;
+    readonly ComicDbContext _dbContext;
     //Contructor
-    public AuthService(DataContext db)
+    public AuthService(ComicDbContext db)
     {
         _dbContext = db;
     }
 
-    public ServiceResponse<string> Login(UserLoginDTO userLogin)
+    public async Task<ServiceResponse<string>> Login(UserLoginDTO userLogin)
     {
         ServiceResponse<string> res = new ServiceResponse<string>();
-        var data = _dbContext.Users.SingleOrDefault(user => user.Username == userLogin.username && user.HashPassword == userLogin.password);
+        var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Username == userLogin.username && user.HashPassword == userLogin.password);
         if (data == null)
         {
             res.Status = 0;
@@ -34,9 +35,9 @@ public class AuthService : IAuthService
         res.Message = "Success";
         return res;
     }
-    public ServiceResponse<User> Register(UserRegisterDTO RegisterData)
+    public async Task<ServiceResponse<User>> Register(UserRegisterDTO RegisterData)
     {
-        if (_dbContext.Users.Any(user => user.Username == RegisterData.username))
+        if (await _dbContext.Users.AnyAsync(user => user.Username == RegisterData.username))
         {
             return new ServiceResponse<User> { Status = 0, Message = "Username already exists" };
         }
@@ -47,7 +48,7 @@ public class AuthService : IAuthService
             HashPassword = RegisterData.password!
         };
         _dbContext.Users.Add(user);
-        _dbContext.SaveChanges();
+        await _dbContext.SaveChangesAsync();
         return new ServiceResponse<User>
         {
             Data = user,
@@ -55,7 +56,7 @@ public class AuthService : IAuthService
             Message = "Success"
         };
     }
-    public ServiceResponse<string> Logout()
+    public async Task<ServiceResponse<string>> Logout()
     {
         return new ServiceResponse<string>
         {
