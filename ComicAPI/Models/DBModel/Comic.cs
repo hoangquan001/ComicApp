@@ -17,8 +17,8 @@ namespace ComicApp.Models
         public int Rating { get; set; } =10;// Enforced by data annotation check constraint
         public DateTime CreateAt { get; set; } = DateTime.Now;
         public DateTime UpdateAt { get; set; } = DateTime.Now;
-        public List<Genre>? genres { get; set; }
-        public List<Chapter>? Chapters { get; set; }
+        public List<Genre> genres { get; set; } = [];
+        public List<Chapter> Chapters { get; set; } = [];
     }
    
 }

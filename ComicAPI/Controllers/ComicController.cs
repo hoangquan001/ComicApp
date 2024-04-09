@@ -8,6 +8,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Security.Claims;
 using System.Text;
 using System.Linq;
+using ComicAPI.Enums;
 [ApiController]
 [Route("[controller]")]
 public class ComicController : ControllerBase
@@ -21,7 +22,13 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet]
-    public ActionResult<List<Comic>> GetComics(int page, int step)
+    public ActionResult<List<Comic>> GetComics(int page, int step, SortType sortType)
+    {
+        var data = _comicService.GetComics(page, step, sortType);
+        return Ok(data);
+    }
+    [HttpGet("Genres/{genre}")]
+    public ActionResult<List<Comic>> GetComicsByGenre(string genre,int page, int step )
     {
         var data = _comicService.GetComics(page, step);
         return Ok(data);
