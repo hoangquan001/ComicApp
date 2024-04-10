@@ -68,14 +68,13 @@ public class ComicService : IComicService
  
     {
         if (page < 1) page = 1;
-        var data =await _dbContext.Comics.
+        var data =  _dbContext.Comics.
         OrderComicByType(sortType).
         Skip((page - 1) * step).
-        Take(step).ToListAsync();
-      
+        Take(step);
         return new ServiceResponse<List<Comic>>
         {
-            Data = data,
+            Data =  await data.ToListAsync(),
             Status = 0,
             Message = "Success"
         };
