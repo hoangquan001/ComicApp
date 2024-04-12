@@ -1,57 +1,48 @@
-pip install jmespath httpx parsel
-%%timeit
+
 import json
-import httpx
+import requests
 import jmespath
 from parsel import Selector
+import os
+import bs4
+import unidecode
+import re
+from datetime import datetime, timedelta
 
-# establish HTTP client and to prevent being instantly banned lets set some browser-like headers
-session = httpx.Client()
+def SaveJSON(fileName,JsonComic):
+  print(fileName+"\n")
+  with open(f"{fileName}.json", "w") as outfile:
+      json.dump(JsonComic, outfile,indent= 2)
 
-# send a request to the target website
-request = session.get(
-    "https://doctruyenonline.vn/truyen-tranh/tu-tien-o-the-gioi-sieu-nang-luc"
-)
-selector = Selector(text=request.text)
-json_data = selector.css("script[type='application/json']::text").get()
-data = json.loads(json_data)
+def CreateSlug(accented_string:str):
 
-
-
-# JMESPath expressions
-expression = jmespath.compile(
-    """
-    {
-      "Name": props.pageProps.comic[0].nameComic,
-      "URL": props.pageProps.comic[0].urlComic,
-      "Description": props.pageProps.comic[0].descriptComic,
-      "CoverImage":   props.pageProps.comic[0].imgComic,
-      "create_date":  props.pageProps.comic[0].create_date
-      "totalChapter": props.pageProps.comic[0].totalChapter
-      "statusComic": props.pageProps.comic[0].statusComic
-      "Category":   props.pageProps.comic[0].category[*].{id:id_cate, name: name_cate},
-      "listChapter": props.pageProps.listChapter[].{urlChapter:urlChapter, dateUpdateChapter: dateUpdateChapter}
-    }
-    """
-)
-
-# Apply JMESPath expression
-# flat_data = expression.search(data)
-
-# # Print the restructured data
-# print(json.dumps(flat_data, indent=2))
+  # accented_string is of type 'unicode'
+  unaccented_string = unidecode.unidecode(accented_string).lower()
+  unaccented_string = re.sub(r"[^\w\s]", '', unaccented_string)
+  unaccented_string=re.sub(r"\s+","-",unaccented_string)
+  return unaccented_string
 
 
 
-# ####
-# from bs4 import BeautifulSoup
+def convert_string_time_to_datetime(time):
+    # Extract the number of days from the string
+    if("ngày" in time):
+        value = int(time.split()[0])
+        return datetime.now() - timedelta(days=value)
+    
+    if("giờ" in time):
+        value = int(time.split()[0])
+        return datetime.now() - timedelta(hours=value)
+    if("phút" in time):
+        value = int(time.split()[0])
+        return datetime.now() - timedelta(minutes=value)
+    try:
+        datetime_string = f"{time}/{datetime.now().year%2000}"
+        datetime_format = "%H:%M %d/%m/%y"
+        return datetime.strptime(datetime_string, datetime_format)
 
-# # Assuming we have an HTML document in the 'html_content' variable
-# soup = BeautifulSoup(html_content, 'html.parser')
-
-# # Find the desired element and extract its text using get_text()
-# element = soup.find_all('span',itemprop="name")
-
-# #get_text with strip set to true
-# for e in element:
-#   print(e) 
+    except:
+        date_format = "%d/%m/%y"
+        return datetime.strptime(time, date_format)
+ 
+     
