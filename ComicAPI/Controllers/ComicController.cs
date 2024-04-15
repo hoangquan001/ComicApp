@@ -9,8 +9,9 @@ using System.Security.Claims;
 using System.Text;
 using System.Linq;
 using ComicAPI.Enums;
+using Microsoft.AspNetCore.Authorization;
 [ApiController]
-[Route("[controller]")]
+[Route("")]
 public class ComicController : ControllerBase
 {
 
@@ -21,7 +22,7 @@ public class ComicController : ControllerBase
         _comicService = comicService;
     }
 
-    [HttpGet]
+    [HttpGet("Comics")]
     public async Task<ActionResult<List<Comic>>> GetComics(int page, int step, SortType sortType)
     {
         var data =await _comicService.GetComics(page, step, sortType);
@@ -36,11 +37,16 @@ public class ComicController : ControllerBase
 
 
     //get one comic by id
-
-    [HttpGet("{id}")]
-    public ActionResult<Comic> GetComic(int id)
+    [Authorize]
+    [HttpGet("Comics/{id}")]
+    public async Task<ActionResult<Comic>> GetComic(int id)
     {
-        return Ok();
+        var data = await _comicService.GetComic(id);
+        if(data.Data == null)
+        {
+            return NotFound(data);
+        }
+        return Ok(data);
     }
 
     [HttpPost]

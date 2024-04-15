@@ -17,7 +17,7 @@ namespace ComicApp.Data
         public DbSet<Genre> Genres => Set<Genre>();
         public DbSet<ComicGenre> ComicGenre => Set<ComicGenre>();
         public DbSet<Chapter> Chapters => Set<Chapter>();
-        public DbSet<Page> Pages => Set<Page>();
+        // public DbSet<Page> Pages => Set<Page>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().ToTable("_USER").HasKey(x => x.ID);
@@ -47,11 +47,11 @@ namespace ComicApp.Data
             );
 
 
-            modelBuilder.Entity<Page>(b =>
-            {
-                b.ToTable("PAGE");
-                b.HasKey(x => x.ID);
-            });
+            // modelBuilder.Entity<Page>(b =>
+            // {
+            //     b.ToTable("PAGE");
+            //     b.HasKey(x => x.ID);
+            // });
 
 
 

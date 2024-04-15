@@ -17,6 +17,7 @@ namespace ComicApp.Models
         public int ID { get; set; }
         public string Username { get; set; } = "";
         public string HashPassword { get; set; } = "";
+        public int Role { get; set; } = 1;
         [Required]
         [EmailAddress]
         public string Email { get; set; } = "";

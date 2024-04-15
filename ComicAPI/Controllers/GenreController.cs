@@ -24,9 +24,9 @@ public class GenreController : ControllerBase
 
    
     [HttpGet("/{genre}")]
-    public ActionResult<List<Comic>> GetComicsByGenre(int genre,int page, int step )
+    public async Task<ActionResult<List<Comic>>> GetComicsByGenre(int genre,int page, int step )
     {
-        var data = _comicService.GetComicsByGenre(genre,page, step);
+        var data =await _comicService.GetComicsByGenre(genre,page, step);
         return Ok(data);
     }
 

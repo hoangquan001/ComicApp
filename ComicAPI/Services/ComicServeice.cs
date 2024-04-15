@@ -19,22 +19,22 @@ static class  DbSetExtension
         switch (sortType)
         {
             case SortType.Chapter:
-                return query.Include(x => x.Chapters).OrderBy(x => x.Chapters.Count);
+                return query.OrderByDescending(x => x.Chapters.Count);
             case SortType.LastUpdate:
-                return query.OrderBy(x => x.CreateAt);
+                return query.OrderByDescending(keySelector: x => x.UpdateAt);
             // case SortType.TopFollow:
             //     return query.OrderBy(x => x.Follow);
             // case SortType.TopComment:
             //     return query.OrderBy(x => x.Comment);
             case SortType.NewComic:
                 return query.OrderBy(x => x.Chapters);
-            case SortType.TopDay:
-                return query.OrderBy(x => x.CreateAt);
-            case SortType.TopWeek:
-                return query.OrderBy(x => x.CreateAt);
-            case SortType.TopMonth:
-                query.SelectMany(x => x.Chapters).Where(c => c.UpdateAt > DateTime.Now.AddDays(-30));
-                return query.Where(c =>query.Contains(c)).OrderBy(x => x.Chapters.Sum(x=>x.ViewCount));
+            // case SortType.TopDay:
+            //     return query.OrderBy(x => x.CreateAt);
+            // case SortType.TopWeek:
+            //     return query.OrderBy(x => x.CreateAt);
+            // case SortType.TopMonth:
+                // query.SelectMany(x => x.Chapters).Where(c => c.UpdateAt > DateTime.Now.AddDays(-30));
+                // return query.Where(c =>query.Contains(c)).OrderBy(x => x.Chapters.Sum(x=>x.ViewCount));
             case SortType.TopAll:
                 return query.OrderBy(x => x.Chapters.Sum(x=>x.ViewCount));
         
@@ -55,10 +55,19 @@ public class ComicService : IComicService
 
     public async Task<ServiceResponse<Comic>> GetComic(int id)
     {
+        var data = await _dbContext.Comics.SingleOrDefaultAsync(comic => comic.ID == id);
+        if(data == null)
+        {
+            return new ServiceResponse<Comic>
+            {
+                Status = 0,
+                Message = "Not found"
+            };
+        }
         return new ServiceResponse<Comic>
         {
-            Data = await _dbContext.Comics.SingleOrDefaultAsync(comic => comic.ID == id),
-            Status = 0,
+            Data = data,
+            Status = 1,
             Message = "Success"
         };
     }
@@ -69,13 +78,13 @@ public class ComicService : IComicService
     {
         if (page < 1) page = 1;
         var data =  _dbContext.Comics.
-        OrderComicByType(sortType).
+        OrderByDescending(keySelector: x => x.UpdateAt).
         Skip((page - 1) * step).
-        Take(step);
+        Take(step).Include(x=>x.genres);
         return new ServiceResponse<List<Comic>>
         {
             Data =  await data.ToListAsync(),
-            Status = 0,
+            Status = 1,
             Message = "Success"
         };
     }
@@ -87,7 +96,7 @@ public class ComicService : IComicService
         return new ServiceResponse<Comic>
         {
             Data = comic,
-            Status = 0,
+            Status = 1,
             Message = "Success"
         };
     }
@@ -98,31 +107,25 @@ public class ComicService : IComicService
         return new ServiceResponse<List<Genre>>
         {
             Data = await _dbContext.Genres.ToListAsync(),
-            Status = 0,
+            Status = 1,
             Message = "Success"
         };
     }
 
-    public ServiceResponse<List<Comic>> GetComicsByGenre(int genre, int page, int step)
+    public async Task<ServiceResponse<List<Comic>>> GetComicsByGenre(int genre, int page, int step)
     {
-        var data = _dbContext.Comics.OrderComicByType(SortType.TopAll)
+        if(page < 1) page = 1;
+        var data =await _dbContext.Comics.OrderComicByType(SortType.TopAll)
         .Include(x=>x.genres)
-        .Where(x=>x.genres
-        .Any(g=>g.ID == genre)).
-        Skip((page - 1) * step).
-        Take(step).ToList();
+        .Where(x=>x.genres.Any(g=>g.ID == genre))
+        .Skip((page - 1) * step)
+        .Take(step).ToListAsync();
+        
         return new ServiceResponse<List<Comic>>
         {
             Data = data,
-            Status = 0,
+            Status = 1,
             Message = "Success"
         };
     }
-
-    Task<ServiceResponse<List<Comic>>> IComicService.GetComicsByGenre(int genre, int page, int step)
-    {
-        throw new NotImplementedException();
-    }
-
-
 }

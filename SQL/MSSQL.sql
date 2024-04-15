@@ -84,12 +84,11 @@ CREATE TABLE COMIC_GENRE (
 
 
 CREATE TABLE CHAPTER (
-    ID INT NOT NULL IDENTITY(1,1),
+    ID INT NOT NULL UNIQUE IDENTITY(1,1) ,
     ComicID INT,
     Title NVARCHAR(255),
+    ChapterNumber INT NOT NULL ,
     URL NVARCHAR(255),
-    ChapterNumber INT NOT NULL Unique ,
-    Content NVARCHAR(MAX),
     ViewCount INT NOT NULL DEFAULT 0,
     UpdateAt DATETIME NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT FK_CHAPTER PRIMARY KEY (ID),
@@ -221,9 +220,29 @@ DELETE FROM COMIC WHERE id>=0;
 
 DELETE FROM GENRE WHERE id >=1;
 
-DELETE FROM CHAPTER WHERE id >=1;
+DELETE FROM CHAPTER WHERE id >=0;
 
 
 
-SELECT * 
-FROM CHAPTER
+SELECT *
+FROM 
+(Select comicId, max(updateAt) as 'CreateAt'
+	from Chapter ct
+	group by comicId
+) as t, COMIC as c
+where t.comicId = c.id
+order by c.CreateAt
+
+
+--UPDATE COMIC
+--SET CreateAt = t.CreateAt
+--FROM 
+--(Select comicId, min(updateAt) as 'CreateAt'
+--	from Chapter ct
+--	group by comicId
+--) as t, COMIC as c
+--where t.comicId = c.id
+
+Select *
+from chapter
+where updateat > '2020-08-04' and updateat > '2020-08-04'

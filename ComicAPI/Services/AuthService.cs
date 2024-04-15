@@ -22,7 +22,7 @@ public class AuthService : IAuthService
     public async Task<ServiceResponse<string>> Login(UserLoginDTO userLogin)
     {
         ServiceResponse<string> res = new ServiceResponse<string>();
-        var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Username == userLogin.username && user.HashPassword == userLogin.password);
+        var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == userLogin.username && user.HashPassword == userLogin.password);
         if (data == null)
         {
             res.Status = 0;

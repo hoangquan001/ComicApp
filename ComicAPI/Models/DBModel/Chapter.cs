@@ -10,10 +10,8 @@ namespace ComicApp.Models
         public int? ComicID { get; set; } // Foreign Key
         public string Title { get; set; } = string.Empty;
         public int? ChapterNumber { get; set; }
-        public string Content { get; set; } = string.Empty;
         public int ViewCount { get; set; }
-        public DateTime CreateAt { get; set; }
-        public DateTime UpdateAt { get; set; } = DateTime.Now;
+        public DateTime UpdateAt { get; set; }
         public virtual List<Page>? Pages { get; set; }
     }
 
