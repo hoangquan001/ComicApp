@@ -25,24 +25,24 @@ public class ComicController : ControllerBase
     [HttpGet("Comics")]
     public async Task<ActionResult<List<Comic>>> GetComics(int page, int step, SortType sortType)
     {
-        var data =await _comicService.GetComics(page, step, sortType);
+        var data = await _comicService.GetComics(page, step, sortType);
         return Ok(data);
     }
     [HttpGet("Genres/{genre}")]
-    public async Task<ActionResult<List<Comic>>> GetComicsByGenre(int genre,int page, int step )
+    public async Task<ActionResult<List<Comic>>> GetComicsByGenre(int genre, int page, int step)
     {
-        var data = await _comicService.GetComicsByGenre(genre,page, step);
+        var data = await _comicService.GetComicsByGenre(genre, page, step);
         return Ok(data);
     }
 
 
     //get one comic by id
-    [Authorize]
+    // [Authorize]
     [HttpGet("Comics/{id}")]
     public async Task<ActionResult<Comic>> GetComic(int id)
     {
         var data = await _comicService.GetComic(id);
-        if(data.Data == null)
+        if (data.Data == null)
         {
             return NotFound(data);
         }
