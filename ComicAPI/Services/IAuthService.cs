@@ -5,5 +5,5 @@ public interface IAuthService
 {
     Task<ServiceResponse<string>> Login(UserLoginDTO userLogin);
     Task<ServiceResponse<User>> Register(UserRegisterDTO RegisterData);
-    Task<ServiceResponse<string>> Logout();
+    Task<ServiceResponse<string>> Logout(string token);
 }

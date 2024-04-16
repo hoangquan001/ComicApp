@@ -9,14 +9,18 @@ using System.Security.Claims;
 using System.Text;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using ComicAPI.Services;
 namespace ComicApp.Services;
 public class AuthService : IAuthService
 {
     readonly ComicDbContext _dbContext;
+    readonly ITokenMgr _tokenMgr;
     //Contructor
-    public AuthService(ComicDbContext db)
+    public AuthService(ComicDbContext db, ITokenMgr tokenMgr)
     {
         _dbContext = db;
+        _tokenMgr = tokenMgr;
+   
     }
 
     public async Task<ServiceResponse<string>> Login(UserLoginDTO userLogin)
@@ -26,11 +30,11 @@ public class AuthService : IAuthService
         if (data == null)
         {
             res.Status = 0;
-            res.Message = "Tên đăng nhập hoặc mật khẩu không chính xác";
+            res.Message = "Username or password is incorrect";
             return res;
         }
 
-        res.Data = CreateToken(data.ID);
+        res.Data = _tokenMgr.CreateToken(data.ID);
         res.Status = 1;
         res.Message = "Success";
         return res;
@@ -56,8 +60,9 @@ public class AuthService : IAuthService
             Message = "Success"
         };
     }
-    public async Task<ServiceResponse<string>> Logout()
+    public async Task<ServiceResponse<string>> Logout(string token)
     {
+        _tokenMgr.AddTokenToBlackList(token);
         return new ServiceResponse<string>
         {
             Status = 1,
@@ -65,24 +70,5 @@ public class AuthService : IAuthService
         };
     }
 
-    string CreateToken(int user_id)
-    {
-        //TODO: Implement Realistic Implementation
-        var tokenHandler = new JwtSecurityTokenHandler();
-        var keyBytes = Encoding.UTF8.GetBytes("hoang anh 34534534534534543quan 123456789");
 
-        var claims = new[]
-        {
-            new Claim(ClaimTypes.NameIdentifier, $"{user_id}"),
-        };
-        // Expires = DateTime.UtcNow.AddDays(7),
-        SigningCredentials cred = new SigningCredentials(new SymmetricSecurityKey(keyBytes), SecurityAlgorithms.HmacSha256Signature);
-        JwtSecurityToken tokenjwt = new
-        (
-            claims: claims,
-            expires: DateTime.UtcNow.AddDays(1),
-            signingCredentials: cred
-        );
-        return tokenHandler.WriteToken(tokenjwt);
-    }
 }

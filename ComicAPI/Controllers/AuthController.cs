@@ -8,15 +8,21 @@ using System.Reflection.Metadata.Ecma335;
 using System.Security.Claims;
 using System.Text;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
+using ComicAPI.Services;
+
 [ApiController]
 [Route("[controller]")]
 public class AuthController : ControllerBase
 {
     readonly IAuthService _authService;
+
+    readonly ITokenMgr _tokenMgr;
     //Contructor
-    public AuthController(IAuthService authService)
+    public AuthController(IAuthService authService, ITokenMgr tokenMgr)
     {
         _authService = authService;
+        _tokenMgr = tokenMgr;
     }
     [HttpPost]
     [Route("Login")]
@@ -34,9 +40,11 @@ public class AuthController : ControllerBase
     }
     [Route("Logout")]
     [HttpGet]
+    [Authorize]
     public async Task<ActionResult<ServiceResponse<string>>> Logout()
     {
-        ServiceResponse<string> res = await _authService.Logout();
+        string jwt = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+        ServiceResponse<string> res = await _authService.Logout(jwt);
         return Ok(res);
     }
 
