@@ -38,7 +38,14 @@ CREATE TABLE COMIC (
     UpdateAt DATETIME NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT PK_COMIC PRIMARY KEY (ID)
 );
-
+CREATE FUNCTION GetComicView(@ComicId int)
+RETURNS INT
+AS
+BEGIN
+    declare @bav int
+    select @bav = sum(viewCount) from Chapter where ComicId = @ComicId
+    RETURN @bav
+END
 CREATE TABLE USER_FOLLOW_COMIC (
   UserID INT NOT NULL,
   ComicID INT NOT NULL,
@@ -124,14 +131,14 @@ DELETE FROM CHAPTER WHERE id >=0;
 
 
 
-SELECT *
+SELECT c.*,t.*
 FROM 
-(Select comicId, max(updateAt) as 'CreateAt'
+(Select comicId, Sum(ct.ViewCount) as 'view'
 	from Chapter ct
 	group by comicId
 ) as t, COMIC as c
 where t.comicId = c.id
-order by c.CreateAt
+Order by 'view' desc
 
 
 --UPDATE COMIC

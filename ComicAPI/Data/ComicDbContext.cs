@@ -13,7 +13,7 @@ namespace ComicApp.Data
         }
 
         public DbSet<User> Users => Set<User>();
-        public DbSet<Comic> Comics => Set<Comic>();
+        public DbSet<Models.Comic> Comics => base.Set<Models.Comic>();
         public DbSet<Genre> Genres => Set<Genre>();
         public DbSet<ComicGenre> ComicGenre => Set<ComicGenre>();
         public DbSet<Chapter> Chapters => Set<Chapter>();
@@ -31,7 +31,7 @@ namespace ComicApp.Data
                 .HasForeignKey(x => x.ChapterID);
             });
             modelBuilder.Entity<Genre>().ToTable("GENRE").HasKey(x => x.ID);
-            modelBuilder.Entity<Comic>(b =>
+            modelBuilder.Entity<Models.Comic>(b =>
             {
                 b.ToTable("COMIC");
                 b.HasKey(x => x.ID);

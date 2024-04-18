@@ -71,6 +71,9 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
 builder.Services.AddAuthentication();
+builder.Services.AddAutoMapper(typeof(Program));
+
+
 WebApplication? app = builder.Build();
 
 // Configure the HTTP request pipeline. 

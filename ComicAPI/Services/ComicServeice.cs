@@ -11,10 +11,11 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ComicAPI.Enums;
 using System.Linq.Expressions;
+using AutoMapper;
 namespace ComicApp.Services;
-static class  DbSetExtension
+static class DbSetExtension
 {
-    public static IOrderedQueryable<Comic> OrderComicByType(this DbSet<Comic> query, SortType sortType)
+    public static IQueryable<Comic> OrderComicByType(this IQueryable<Comic> query, SortType sortType)
     {
         switch (sortType)
         {
@@ -33,11 +34,11 @@ static class  DbSetExtension
             // case SortType.TopWeek:
             //     return query.OrderBy(x => x.CreateAt);
             // case SortType.TopMonth:
-                // query.SelectMany(x => x.Chapters).Where(c => c.UpdateAt > DateTime.Now.AddDays(-30));
-                // return query.Where(c =>query.Contains(c)).OrderBy(x => x.Chapters.Sum(x=>x.ViewCount));
+            // query.SelectMany(x => x.Chapters).Where(c => c.UpdateAt > DateTime.Now.AddDays(-30));
+            // return query.Where(c =>query.Contains(c)).OrderBy(x => x.Chapters.Sum(x=>x.ViewCount));
             case SortType.TopAll:
-                return query.OrderBy(x => x.Chapters.Sum(x=>x.ViewCount));
-        
+                return query.OrderByDescending(x => x.Chapters.Sum(c => c.ViewCount));
+
         }
         return query.OrderBy(x => x.CreateAt);
     }
@@ -45,45 +46,102 @@ static class  DbSetExtension
 public class ComicService : IComicService
 {
     readonly ComicDbContext _dbContext;
+    readonly IMapper _mapper;
     //Contructor
-    public ComicService(ComicDbContext db)
+    public ComicService(ComicDbContext db, IMapper mapper)
     {
         _dbContext = db;
+        _mapper = mapper;
     }
 
     // Get one comic
 
-    public async Task<ServiceResponse<Comic>> GetComic(int id)
+    public async Task<ServiceResponse<ComicDTO>> GetComic(int id)
     {
-        var data = await _dbContext.Comics.SingleOrDefaultAsync(comic => comic.ID == id);
-        if(data == null)
+        var data = await _dbContext
+        .Comics
+        .AsNoTracking()
+        .Where(x => x.ID == id)
+        .Select(x => new ComicDTO()
         {
-            return new ServiceResponse<Comic>
+            ID = x.ID,
+            Title = x.Title,
+            Author = x.Author,
+            CoverImage = x.CoverImage,
+            Description = x.Description,
+            Status = x.Status,
+            Rating = x.Rating,
+            UpdateAt = x.UpdateAt,
+            ViewCount = x.Chapters.Sum(x => x.ViewCount),
+            genres = x.genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+            Chapters = x.Chapters.Select(x => new ChapterDTO
             {
-                Status = 0,
-                Message = "Not found"
-            };
+                ID = x.ID,
+                Title = x.Title,
+                ChapterNumber = x.ChapterNumber,
+                ViewCount = x.ViewCount,
+                UpdateAt = x.UpdateAt
+            })
         }
-        return new ServiceResponse<Comic>
-        {
-            Data = data,
-            Status = 1,
-            Message = "Success"
-        };
+        )
+        .FirstOrDefaultAsync();
+        return GetDataRes<ComicDTO>(data);
     }
 
+    public ServiceResponse<T> GetDataRes<T>(T? data)
+    {
+        var res = new ServiceResponse<T>();
 
-    public async Task<ServiceResponse<List<Comic>>> GetComics(int page, int step, SortType sortType = SortType.TopAll)
- 
+        if (data == null)
+        {
+            res.Status = 0;
+            res.Message = "Not found";
+
+        }
+        else
+        {
+            res.Data = data;
+            res.Status = 1;
+            res.Message = "Success";
+        }
+
+        return res;
+
+    }
+    public async Task<ServiceResponse<List<ComicDTO>>> GetComics(int page, int step, SortType sortType = SortType.TopAll)
+
     {
         if (page < 1) page = 1;
-        var data =  _dbContext.Comics.
-        OrderByDescending(keySelector: x => x.UpdateAt).
-        Skip((page - 1) * step).
-        Take(step).Include(x=>x.genres);
-        return new ServiceResponse<List<Comic>>
+        _dbContext.Comics.Load();
+        var data = await _dbContext.Comics
+        .OrderComicByType(SortType.TopAll)
+        .Select(x => new ComicDTO
         {
-            Data =  await data.ToListAsync(),
+            ID = x.ID,
+            Title = x.Title,
+            Author = x.Author,
+            CoverImage = x.CoverImage,
+            Description = x.Description,
+            Status = x.Status,
+            Rating = x.Rating,
+            UpdateAt = x.UpdateAt,
+            ViewCount = x.Chapters.Sum(x => x.ViewCount),
+            genres = x.genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+            Chapters = x.Chapters.Select(x => new ChapterDTO
+            {
+                ID = x.ID,
+                Title = x.Title,
+                ChapterNumber = x.ChapterNumber,
+                ViewCount = x.ViewCount,
+                UpdateAt = x.UpdateAt
+            }).Take(3)
+        })
+        .Skip((page - 1) * step)
+        .Take(step)
+        .ToListAsync();
+        return new ServiceResponse<List<ComicDTO>>
+        {
+            Data = data,
             Status = 1,
             Message = "Success"
         };
@@ -114,13 +172,17 @@ public class ComicService : IComicService
 
     public async Task<ServiceResponse<List<Comic>>> GetComicsByGenre(int genre, int page, int step)
     {
-        if(page < 1) page = 1;
-        var data =await _dbContext.Comics.OrderComicByType(SortType.TopAll)
-        .Include(x=>x.genres)
-        .Where(x=>x.genres.Any(g=>g.ID == genre))
+        if (page < 1) page = 1;
+        var data = await _dbContext.Comics
         .Skip((page - 1) * step)
-        .Take(step).ToListAsync();
-        
+        .Take(step)
+        .Where(x => x.genres.Any(g => g.ID == genre))
+        .Include(x => x.genres)
+        .AsSplitQuery()
+        .Include(x => x.Chapters)
+        .OrderComicByType(SortType.TopAll)
+        .ToListAsync();
+
         return new ServiceResponse<List<Comic>>
         {
             Data = data,
