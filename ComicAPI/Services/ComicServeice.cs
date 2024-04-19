@@ -13,6 +13,7 @@ using ComicAPI.Enums;
 using System.Linq.Expressions;
 using AutoMapper;
 using HtmlAgilityPack;
+using System.Collections.Immutable;
 namespace ComicApp.Services;
 static class DbSetExtension
 {
@@ -191,45 +192,36 @@ public class ComicService : IComicService
             Message = "Success"
         };
     }
-    static async Task FetchChapterImage(IHeaderDictionary header)
+    static async Task<List<PageDTO>> FetchChapterImage(IHeaderDictionary header)
     {
-      
-        string url = "https://nhattruyenbing.com/";
-
-        using (HttpClient client = new HttpClient())
+        List<PageDTO> urls = new List<PageDTO>();
+        string url = "https://nhattruyenbing.com/truyen-tranh/mousou-sensei/chap-1/1140053";
+        HtmlWeb web = new HtmlWeb();
+        HtmlDocument doc = await web.LoadFromWebAsync(url);
+        HtmlNodeCollection elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
+        int i = 0;
+        foreach (HtmlNode element in elements)
         {
-            
-            HttpResponseMessage response = await client.GetAsync(url);
-            if (response.IsSuccessStatusCode)
+            string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
+            PageDTO page = new PageDTO()
             {
-                string htmlContent = await response.Content.ReadAsStringAsync();
-                HtmlDocument doc = new HtmlDocument();
-                doc.LoadHtml(htmlContent);
+                URL = imgUrl,
+                PageNumber = ++i,
 
-                var elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
-                List<Task> tasks = new List<Task>();
-
-                if (elements != null)
-                {
-                    foreach (var element in elements)
-                    {
-                        string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
-                        Console.WriteLine(imgUrl);
-                        // You can perform further tasks with the image URL, such as downloading it.
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine("Failed to fetch data. Status code: " + response.StatusCode);
-            }
+            };
+            urls.Add(page);
+            // Add imgUrl to list or perform other tasks
         }
+        return urls;
     }
-    public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(IHeaderDictionary header,int comic_id, int chapter_id)
+    public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(IHeaderDictionary header, int comic_id, int chapter_id)
     {
-
-        await FetchChapterImage(header);
+        List<PageDTO> urlsData = await FetchChapterImage(header);
         ServiceResponse<ChapterPageDTO> res = new ServiceResponse<ChapterPageDTO>();
+        res.Data = new ChapterPageDTO()
+        {
+            Pages = urlsData
+        };
         return res;
     }
 }
