@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using ComicAPI.Enums;
 using System.Linq.Expressions;
 using AutoMapper;
+using HtmlAgilityPack;
 namespace ComicApp.Services;
 static class DbSetExtension
 {
@@ -112,7 +113,7 @@ public class ComicService : IComicService
 
     {
         if (page < 1) page = 1;
-        _dbContext.Comics.Load();
+        // _dbContext.Comics.Load();
         var data = await _dbContext.Comics
         .OrderComicByType(SortType.TopAll)
         .Select(x => new ComicDTO
@@ -189,5 +190,46 @@ public class ComicService : IComicService
             Status = 1,
             Message = "Success"
         };
+    }
+    static async Task FetchChapterImage(IHeaderDictionary header)
+    {
+      
+        string url = "https://nhattruyenbing.com/";
+
+        using (HttpClient client = new HttpClient())
+        {
+            
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                string htmlContent = await response.Content.ReadAsStringAsync();
+                HtmlDocument doc = new HtmlDocument();
+                doc.LoadHtml(htmlContent);
+
+                var elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
+                List<Task> tasks = new List<Task>();
+
+                if (elements != null)
+                {
+                    foreach (var element in elements)
+                    {
+                        string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
+                        Console.WriteLine(imgUrl);
+                        // You can perform further tasks with the image URL, such as downloading it.
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Failed to fetch data. Status code: " + response.StatusCode);
+            }
+        }
+    }
+    public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(IHeaderDictionary header,int comic_id, int chapter_id)
+    {
+
+        await FetchChapterImage(header);
+        ServiceResponse<ChapterPageDTO> res = new ServiceResponse<ChapterPageDTO>();
+        return res;
     }
 }
