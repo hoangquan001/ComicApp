@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 using ComicApp.Data;
 
 
-public class ChapterPageDTO: ChapterDTO
+public class ChapterPageDTO : ChapterDTO
 {
-    public IEnumerator<PageDTO> ?Pages { get; set; } 
+    public List<PageDTO>? Pages { get; set; }
 }
 

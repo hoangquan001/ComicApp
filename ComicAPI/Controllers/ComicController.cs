@@ -42,16 +42,7 @@ public class ComicController : ControllerBase
         }
         return Ok(data);
     }
-    // [HttpGet("Comics/{id}")]
-    // public async Task<ActionResult<Comic>> GetComic(int id)
-    // {
-    //     var data = await _comicService.GetComic(id);
-    //     if (data.Data == null)
-    //     {
-    //         return NotFound(data);
-    //     }
-    //     return Ok(data);
-    // }
+
     [HttpGet("Comics/{comic_id}/{chapter_id}")]
     public async Task<ActionResult<Comic>> GetPagesInChapter(int comic_id, int chapter_id)
     {

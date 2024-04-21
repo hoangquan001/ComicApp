@@ -143,46 +143,36 @@ public class ComicService : IComicService
         };
     }
 
-
-}
-
-        return new ServiceResponse<List<Comic>>
-        {
-            Data = data,
-            Status = 1,
-            Message = "Success"
-        };
-    }
     static async Task<List<PageDTO>> FetchChapterImage(IHeaderDictionary header)
-{
-    List<PageDTO> urls = new List<PageDTO>();
-    string url = "https://nhattruyenbing.com/truyen-tranh/mousou-sensei/chap-1/1140053";
-    HtmlWeb web = new HtmlWeb();
-    HtmlDocument doc = await web.LoadFromWebAsync(url);
-    HtmlNodeCollection elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
-    int i = 0;
-    foreach (HtmlNode element in elements)
     {
-        string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
-        PageDTO page = new PageDTO()
+        List<PageDTO> urls = new List<PageDTO>();
+        string url = "https://nhattruyenbing.com/truyen-tranh/mousou-sensei/chap-1/1140053";
+        HtmlWeb web = new HtmlWeb();
+        HtmlDocument doc = await web.LoadFromWebAsync(url);
+        HtmlNodeCollection elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
+        int i = 0;
+        foreach (HtmlNode element in elements)
         {
-            URL = imgUrl,
-            PageNumber = ++i,
+            string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
+            PageDTO page = new PageDTO()
+            {
+                URL = imgUrl,
+                PageNumber = ++i,
 
-        };
-        urls.Add(page);
-        // Add imgUrl to list or perform other tasks
+            };
+            urls.Add(page);
+            // Add imgUrl to list or perform other tasks
+        }
+        return urls;
     }
-    return urls;
-}
-public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(IHeaderDictionary header, int comic_id, int chapter_id)
-{
-    List<PageDTO> urlsData = await FetchChapterImage(header);
-    ServiceResponse<ChapterPageDTO> res = new ServiceResponse<ChapterPageDTO>();
-    res.Data = new ChapterPageDTO()
+    public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(IHeaderDictionary header, int comic_id, int chapter_id)
     {
-        Pages = urlsData
-    };
-    return res;
-}
+        List<PageDTO> urlsData = await FetchChapterImage(header);
+        ServiceResponse<ChapterPageDTO> res = new ServiceResponse<ChapterPageDTO>();
+        res.Data = new ChapterPageDTO()
+        {
+            Pages = urlsData
+        };
+        return res;
+    }
 }
