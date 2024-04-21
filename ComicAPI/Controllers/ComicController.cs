@@ -10,37 +10,25 @@ using System.Text;
 using System.Linq;
 using ComicAPI.Enums;
 using Microsoft.AspNetCore.Authorization;
+using ComicAPI.Classes;
 [ApiController]
 [Route("")]
+
+
 public class ComicController : ControllerBase
 {
-
     IComicService _comicService;
-    //Contructor
     public ComicController(IComicService comicService)
     {
         _comicService = comicService;
     }
 
     [HttpGet("Comics")]
-    public async Task<ActionResult<List<ComicDTO>>> GetComics(int page, int step, SortType sortType)
+    public async Task<ActionResult<List<ComicDTO>>> GetComics(ComicQueryParams queryParams)
     {
-        var data = await _comicService.GetComics(page, step, sortType);
+        var data = await _comicService.GetComics(queryParams);
         return Ok(data);
     }
-    [HttpGet("Genres/{genre}")]
-    public async Task<ActionResult<List<Comic>>> GetComicsByGenre(int genre, int page, int step)
-    {
-        var data = await _comicService.GetComicsByGenre(genre, page, step);
-        return Ok(data);
-    }
-    // [HttpGet("Genres/{genre}")]
-    // public async Task<ActionResult<List<Comic>>> GetComicsByGenre(int genre, int page, int step)
-    // {
-    //     var data = await _comicService.GetComicsByGenre(genre, page, step);
-    //     return Ok(data);
-    // }
-
 
     //get one comic by id
     // [Authorize]
@@ -54,26 +42,7 @@ public class ComicController : ControllerBase
         }
         return Ok(data);
     }
-    // [HttpGet("Comics/{id}")]
-    // public async Task<ActionResult<Comic>> GetComic(int id)
-    // {
-    //     var data = await _comicService.GetComic(id);
-    //     if (data.Data == null)
-    //     {
-    //         return NotFound(data);
-    //     }
-    //     return Ok(data);
-    // }
-    // [HttpGet("Comics/{comic_id}/{chapter_id}")]
-    // public async Task<ActionResult<Comic>> GetPagesInChapter(int comic_id, int chapter_id)
-    // {
-    //     var data = await _comicService.GetComic(comic_id);
-    //     if (data.Data == null)
-    //     {
-    //         return NotFound(data);
-    //     }
-    //     return Ok(data);
-    // }
+
 
     [HttpPost]
     public ActionResult<Comic> AddComic(Comic comic)

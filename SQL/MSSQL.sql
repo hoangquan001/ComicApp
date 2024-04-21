@@ -38,14 +38,7 @@ CREATE TABLE COMIC (
     UpdateAt DATETIME NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT PK_COMIC PRIMARY KEY (ID)
 );
-CREATE FUNCTION GetComicView(@ComicId int)
-RETURNS INT
-AS
-BEGIN
-    declare @bav int
-    select @bav = sum(viewCount) from Chapter where ComicId = @ComicId
-    RETURN @bav
-END
+
 CREATE TABLE USER_FOLLOW_COMIC (
   UserID INT NOT NULL,
   ComicID INT NOT NULL,
@@ -149,6 +142,17 @@ Order by 'view' desc
 --	group by comicId
 --) as t, COMIC as c
 --where t.comicId = c.id
+CREATE FUNCTION GetComicView(@ComicId int)
+RETURNS INT
+AS
+BEGIN
+    declare @bav int
+    select @bav = sum(viewCount) from Chapter where ComicId = @ComicId
+    RETURN @bav
+END
+select cm.*, dbo.GetComicView(cm.id) as 'view'
+from Comic cm
+order by 'view' desc
 
 Select *
 from chapter

@@ -12,37 +12,9 @@ using Microsoft.EntityFrameworkCore;
 using ComicAPI.Enums;
 using System.Linq.Expressions;
 using AutoMapper;
+using ComicAPI.Classes;
 namespace ComicApp.Services;
-static class DbSetExtension
-{
-    public static IQueryable<Comic> OrderComicByType(this IQueryable<Comic> query, SortType sortType)
-    {
-        switch (sortType)
-        {
-            case SortType.Chapter:
-                return query.OrderByDescending(x => x.Chapters.Count);
-            case SortType.LastUpdate:
-                return query.OrderByDescending(keySelector: x => x.UpdateAt);
-            // case SortType.TopFollow:
-            //     return query.OrderBy(x => x.Follow);
-            // case SortType.TopComment:
-            //     return query.OrderBy(x => x.Comment);
-            case SortType.NewComic:
-                return query.OrderBy(x => x.Chapters);
-            // case SortType.TopDay:
-            //     return query.OrderBy(x => x.CreateAt);
-            // case SortType.TopWeek:
-            //     return query.OrderBy(x => x.CreateAt);
-            // case SortType.TopMonth:
-            // query.SelectMany(x => x.Chapters).Where(c => c.UpdateAt > DateTime.Now.AddDays(-30));
-            // return query.Where(c =>query.Contains(c)).OrderBy(x => x.Chapters.Sum(x=>x.ViewCount));
-            case SortType.TopAll:
-                return query.OrderByDescending(x => x.Chapters.Sum(c => c.ViewCount));
 
-        }
-        return query.OrderBy(x => x.CreateAt);
-    }
-}
 public class ComicService : IComicService
 {
     readonly ComicDbContext _dbContext;
@@ -58,32 +30,24 @@ public class ComicService : IComicService
 
     public async Task<ServiceResponse<ComicDTO>> GetComic(int id)
     {
-        var data = await _dbContext
-        .Comics
-        .AsNoTracking()
-        .Where(x => x.ID == id)
-        .Select(x => new ComicDTO()
+
+        var data = await _dbContext.Comics.Select(x => new ComicDTO
         {
             ID = x.ID,
             Title = x.Title,
             Author = x.Author,
-            CoverImage = x.CoverImage,
+            URL = x.URL,
+            CoverImage = "https://static.doctruyenonline.vn/images/vu-luyen-dien-phong.jpg",
             Description = x.Description,
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
             ViewCount = x.Chapters.Sum(x => x.ViewCount),
-            genres = x.genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Select(x => new ChapterDTO
-            {
-                ID = x.ID,
-                Title = x.Title,
-                ChapterNumber = x.ChapterNumber,
-                ViewCount = x.ViewCount,
-                UpdateAt = x.UpdateAt
-            })
-        }
-        )
+            genres = x.genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+            Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).ToList()
+        })
+        .Where(x => x.ID == id)
+        .AsSplitQuery()
         .FirstOrDefaultAsync();
         return GetDataRes<ComicDTO>(data);
     }
@@ -108,34 +72,41 @@ public class ComicService : IComicService
         return res;
 
     }
-    public async Task<ServiceResponse<List<ComicDTO>>> GetComics(int page, int step, SortType sortType = SortType.TopAll)
-
+    private static ChapterDTO ChapterSelector(Chapter x)
     {
-        if (page < 1) page = 1;
-        _dbContext.Comics.Load();
+        return new ChapterDTO
+        {
+            ID = x.ID,
+            Title = x.Title,
+            ChapterNumber = x.ChapterNumber,
+            ViewCount = x.ViewCount,
+            UpdateAt = x.UpdateAt
+        };
+    }
+
+    public async Task<ServiceResponse<List<ComicDTO>>> GetComics(ComicQueryParams comicQueryParams)
+    {
+        int page = comicQueryParams.page == 0 ? 1 : comicQueryParams.page;
+        int step = comicQueryParams.step == 0 ? 10 : comicQueryParams.step;
         var data = await _dbContext.Comics
-        .OrderComicByType(SortType.TopAll)
-        .Select(x => new ComicDTO
+        .OrderComicByType(comicQueryParams.sort)
+        .Select(x =>
+        new ComicDTO
         {
             ID = x.ID,
             Title = x.Title,
             Author = x.Author,
-            CoverImage = x.CoverImage,
+            URL = x.URL,
+            CoverImage = "https://static.doctruyenonline.vn/images/vu-luyen-dien-phong.jpg",
             Description = x.Description,
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
             ViewCount = x.Chapters.Sum(x => x.ViewCount),
-            genres = x.genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Select(x => new ChapterDTO
-            {
-                ID = x.ID,
-                Title = x.Title,
-                ChapterNumber = x.ChapterNumber,
-                ViewCount = x.ViewCount,
-                UpdateAt = x.UpdateAt
-            }).Take(3)
+            genres = x.genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+            Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Take(3).Select(x => ChapterSelector(x)).ToList()
         })
+        .Where(comicQueryParams.status == ComicStatus.All ? x => true : x => x.Status == (int)comicQueryParams.status)
         .Skip((page - 1) * step)
         .Take(step)
         .ToListAsync();
@@ -170,24 +141,6 @@ public class ComicService : IComicService
         };
     }
 
-    public async Task<ServiceResponse<List<Comic>>> GetComicsByGenre(int genre, int page, int step)
-    {
-        if (page < 1) page = 1;
-        var data = await _dbContext.Comics
-        .Skip((page - 1) * step)
-        .Take(step)
-        .Where(x => x.genres.Any(g => g.ID == genre))
-        .Include(x => x.genres)
-        .AsSplitQuery()
-        .Include(x => x.Chapters)
-        .OrderComicByType(SortType.TopAll)
-        .ToListAsync();
 
-        return new ServiceResponse<List<Comic>>
-        {
-            Data = data,
-            Status = 1,
-            Message = "Success"
-        };
-    }
 }
+
