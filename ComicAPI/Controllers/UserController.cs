@@ -12,13 +12,11 @@ using ComicAPI.Enums;
 using Microsoft.AspNetCore.Authorization;
 using ComicAPI.Classes;
 [ApiController]
-[Route("")]
-
-
-public class ComicController : ControllerBase
+[Route("User")]
+public class UserController : ControllerBase
 {
     IComicService _comicService;
-    public ComicController(IComicService comicService)
+    public UserController(IComicService comicService)
     {
         _comicService = comicService;
     }

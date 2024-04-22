@@ -146,7 +146,7 @@ public class ComicService : IComicService
     static async Task<List<PageDTO>> FetchChapterImage(IHeaderDictionary header)
     {
         List<PageDTO> urls = new List<PageDTO>();
-        string url = "https://nhattruyenbing.com/truyen-tranh/mousou-sensei/chap-1/1140053";
+        string url = "https://nhattruyenbing.com/truyen-tranh/tinh-giap-hon-tuong/chap-196/1146887";
         HtmlWeb web = new HtmlWeb();
         HtmlDocument doc = await web.LoadFromWebAsync(url);
         HtmlNodeCollection elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
