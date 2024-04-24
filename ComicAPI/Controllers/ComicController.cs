@@ -24,7 +24,7 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet("Comics")]
-    public async Task<ActionResult<List<ComicDTO>>> GetComics(SortType sort, ComicStatus status, int genre, int page, int step)
+    public async Task<ActionResult<List<ComicDTO>>> GetComics(SortType sort = SortType.TopAll, ComicStatus status=ComicStatus.All, int genre = -1, int page =1, int step =100)
     {
         ComicQueryParams queryParams = new ComicQueryParams();
         {
