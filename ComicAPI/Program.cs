@@ -13,7 +13,7 @@ using ComicAPI.Services;
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<ComicDbContext>(options =>
-    options.UseSqlite("Data Source=ComicDB.db"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

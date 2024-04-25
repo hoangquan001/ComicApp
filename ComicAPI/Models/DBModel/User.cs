@@ -1,50 +1,49 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
 namespace ComicApp.Models
 {
     public class User
     {
-        [Key]
+        [Key, Column("id")]
         public int ID { get; set; }
 
-        [Required, MaxLength(50)]
+        [Required, MaxLength(50), Column("username")]
         public string? Username { get; set; }
 
-        [MaxLength(100)]
+        [MaxLength(100), Column("email")]
         public string? Email { get; set; }
 
-        [Required]
+        [Required, Column("hashpassword")]
         public string? HashPassword { get; set; }
 
-        [MaxLength(50)]
+        [MaxLength(50), Column("firstname")]
         public string? FirstName { get; set; }
 
-        [MaxLength(50)]
+        [MaxLength(50), Column("lastname")]
         public string? LastName { get; set; }
-
+        [Column("dob")]
         public DateTime? Dob { get; set; }
 
-        [MaxLength(255)]
+        [MaxLength(255), Column("avatar")]
         public string? Avatar { get; set; }
 
-        [Required]
-        [Range(0, 1)]
+        [Required, Range(0, 1), Column("gender")]
         public int Gender { get; set; } = 0;
 
-        [Required]
-        [Range(0, 1)]
+        [Required,Range(0, 1), Column("status")]
         public int Status { get; set; } = 1;
-
+        [Column("lastlogin")]
         public DateTime? LastLogin { get; set; }
 
-        [Required]
+        [Required, Column("createat")]
         public DateTime CreateAt { get; set; } = DateTime.Now;
 
-        [Required]
+        [Required, Column("updateat")]
         public DateTime UpdateAt { get; set; } = DateTime.Now;
 
-        [Required]
+        [Required, Column("role")]
         [Range(0, 2)]
         public int Role { get; set; }
     }

@@ -38,14 +38,14 @@ public class ComicService : IComicService
             ID = x.ID,
             Title = x.Title,
             Author = x.Author,
-            URL = x.URL,
+            Url = x.Url,
             CoverImage = "https://static.doctruyenonline.vn/images/vu-luyen-dien-phong.jpg",
             Description = x.Description,
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
             ViewCount = x.Chapters.Sum(x => x.ViewCount),
-            genres = x.genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
             Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).ToList()
         })
         .Where(x => x.ID == id)
@@ -91,6 +91,7 @@ public class ComicService : IComicService
         int page = comicQueryParams.page == 0 ? 1 : comicQueryParams.page;
         int step = comicQueryParams.step == 0 ? 10 : comicQueryParams.step;
         var data = await _dbContext.Comics
+
         .OrderComicByType(comicQueryParams.sort)
         .Select(x =>
         new ComicDTO
@@ -98,19 +99,20 @@ public class ComicService : IComicService
             ID = x.ID,
             Title = x.Title,
             Author = x.Author,
-            URL = x.URL,
+            Url = x.Url,
             CoverImage = "https://static.doctruyenonline.vn/images/vu-luyen-dien-phong.jpg",
             Description = x.Description,
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
             ViewCount = x.Chapters.Sum(x => x.ViewCount),
-            genres = x.genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
             Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Take(3).Select(x => ChapterSelector(x)).ToList()
         })
         .Where(comicQueryParams.status == ComicStatus.All ? x => true : x => x.Status == (int)comicQueryParams.status)
         .Skip((page - 1) * step)
         .Take(step)
+        .AsSplitQuery()
         .ToListAsync();
         return new ServiceResponse<List<ComicDTO>>
         {
