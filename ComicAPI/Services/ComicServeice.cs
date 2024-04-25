@@ -30,8 +30,10 @@ public class ComicService : IComicService
 
     // Get one comic
 
-    public async Task<ServiceResponse<ComicDTO>> GetComic(int id)
+    public async Task<ServiceResponse<ComicDTO>> GetComic(string key)
     {
+        bool isID = int.TryParse(key, out int id2);
+
 
         var data = await _dbContext.Comics.Select(x => new ComicDTO
         {
@@ -48,7 +50,7 @@ public class ComicService : IComicService
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
             Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).ToList()
         })
-        .Where(x => x.ID == id)
+        .Where(x => isID ? x.ID == id2 : x.Url == key)
         .AsSplitQuery()
         .FirstOrDefaultAsync();
         return GetDataRes<ComicDTO>(data);
@@ -100,19 +102,20 @@ public class ComicService : IComicService
             Title = x.Title,
             Author = x.Author,
             Url = x.Url,
-            CoverImage = "https://static.doctruyenonline.vn/images/vu-luyen-dien-phong.jpg",
+            // CoverImage = "https://static.doctruyenonline.vn/images/vu-luyen-dien-phong.jpg",
             Description = x.Description,
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
             ViewCount = x.Chapters.Sum(x => x.ViewCount),
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
-            Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Take(3).Select(x => ChapterSelector(x)).ToList()
+            Chapters = x.Chapters.Select(x => ChapterSelector(x)).Take(2).ToList()
         })
         .Where(comicQueryParams.status == ComicStatus.All ? x => true : x => x.Status == (int)comicQueryParams.status)
+        .Where(comicQueryParams.genre == -1 ? x => true : x => x.genres.Any(g => comicQueryParams.genre == g.ID))
         .Skip((page - 1) * step)
         .Take(step)
-        .AsSplitQuery()
+        // .AsSplitQuery()d
         .ToListAsync();
         return new ServiceResponse<List<ComicDTO>>
         {

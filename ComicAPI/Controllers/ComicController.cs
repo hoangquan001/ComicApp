@@ -13,8 +13,6 @@ using Microsoft.AspNetCore.Authorization;
 using ComicAPI.Classes;
 [ApiController]
 [Route("")]
-
-
 public class ComicController : ControllerBase
 {
     IComicService _comicService;
@@ -24,7 +22,7 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet("Comics")]
-    public async Task<ActionResult<List<ComicDTO>>> GetComics(SortType sort = SortType.TopAll, ComicStatus status=ComicStatus.All, int genre = -1, int page =1, int step =100)
+    public async Task<ActionResult<List<ComicDTO>>> GetComics(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All, int genre = -1, int page = 1, int step = 100)
     {
         ComicQueryParams queryParams = new ComicQueryParams();
         {
@@ -40,10 +38,11 @@ public class ComicController : ControllerBase
 
     //get one comic by id
     // [Authorize]
-    [HttpGet("Comic/{id}")]
-    public async Task<ActionResult<ComicDTO>> GetComic(int id)
+    [HttpGet("Comic/{key}")]
+    public async Task<ActionResult<ComicDTO>> GetComic(string key)
     {
-        var data = await _comicService.GetComic(id);
+        ServiceResponse<ComicDTO>? data = await _comicService.GetComic(key);
+
         if (data.Data == null)
         {
             return NotFound(data);
@@ -51,10 +50,10 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("Comic/{comic_id}/{chapter_id}")]
-    public async Task<ActionResult<Comic>> GetPagesInChapter(int comic_id, int chapter_id)
+    [HttpGet("Comic/{comic_key}/{chapter_key}")]
+    public async Task<ActionResult<Comic>> GetPagesInChapter(int comic_key, int chapter_key)
     {
-        var data = await _comicService.GetPagesInChapter(this.HttpContext.Request.Headers, comic_id, chapter_id);
+        var data = await _comicService.GetPagesInChapter(this.HttpContext.Request.Headers, comic_key, chapter_key);
         if (data.Data == null)
         {
             return NotFound(data);
@@ -64,16 +63,16 @@ public class ComicController : ControllerBase
 
 
     [HttpPost]
-    public ActionResult<Comic> AddComic(Comic comic)
+    public async Task<ActionResult<Comic>> AddComic(Comic comic)
     {
         return Ok();
     }
 
     //Get all Genres
     [HttpGet("Genres")]
-    public ActionResult<List<Genre>> GetGenres()
+    public async Task<ActionResult<List<Genre>>> GetGenres()
     {
-        var data = _comicService.GetGenres();
+        var data = await _comicService.GetGenres();
         return Ok(data);
     }
 }
