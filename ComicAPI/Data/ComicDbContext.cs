@@ -26,9 +26,9 @@ namespace ComicApp.Data
             {
                 b.ToTable("chapter");
                 b.HasKey(x => x.ID);
-                b.HasMany(e => e.Pages)
-                .WithOne()
-                .HasForeignKey(x => x.ChapterID);
+                // b.HasMany(e => e.Pages)
+                // .WithOne()
+                // .HasForeignKey(x => x.ChapterID);
             });
             modelBuilder.Entity<Genre>().ToTable("genre").HasKey(x => x.ID);
             modelBuilder.Entity<Models.Comic>(b =>
@@ -36,6 +36,7 @@ namespace ComicApp.Data
                 b.ToTable("comic");
                 b.HasKey(x => x.ID);
                 b.HasMany(e => e.Genres).WithMany().UsingEntity<ComicGenre>();
+                b.HasMany(e => e.Chapters).WithOne().HasForeignKey(x => x.ComicID);
             });
             modelBuilder.Entity<ComicGenre>(b =>
             {

@@ -84,7 +84,8 @@ public class ComicService : IComicService
             Title = x.Title,
             ChapterNumber = x.ChapterNumber,
             ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt
+            UpdateAt = x.UpdateAt,
+            Slug = x.Url
         };
     }
 
@@ -179,5 +180,15 @@ public class ComicService : IComicService
             Pages = urlsData
         };
         return res;
+    }
+
+    public async Task<ServiceResponse<List<ChapterDTO>>> GetChaptersComic(string key)
+    {
+        bool isID = int.TryParse(key, out int id2);
+        var data = await _dbContext.Comics.Where(x => isID ? x.ID == id2 : x.Url == key)
+        .Select(x=> x.Chapters.Select(x => ChapterSelector(x)).ToList())
+        .FirstOrDefaultAsync();
+        return GetDataRes<List<ChapterDTO>>(data);
+
     }
 }

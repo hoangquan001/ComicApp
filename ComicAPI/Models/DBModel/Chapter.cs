@@ -14,6 +14,8 @@ namespace ComicApp.Models
 
         [Column("title")]
         public string Title { get; set; } = string.Empty;
+        [Column("url")]
+        public string Url { get; set; } = string.Empty;
 
         [Column("chapternumber")]
         public int? ChapterNumber { get; set; }
@@ -22,7 +24,8 @@ namespace ComicApp.Models
         public int ViewCount { get; set; }
         [Column("updateat")]
         public DateTime UpdateAt { get; set; }
-        public virtual List<Page>? Pages { get; set; }
+        
+        public Comic? comic;
     }
 
 }

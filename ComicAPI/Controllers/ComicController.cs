@@ -50,7 +50,19 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("Comic/{comic_key}/{chapter_key}")]
+    [HttpGet("Comic/{key}/chapters")]
+    public async Task<ActionResult<ComicDTO>> GetChaptersByComic(string key)
+    {
+        var data = await _comicService.GetChaptersComic(key);
+
+        if (data.Data == null)
+        {
+            return NotFound(data);
+        }
+        return Ok(data);
+    }
+
+    [HttpGet("Comic/{comic_key}/chapter/{chapter_key}")]
     public async Task<ActionResult<Comic>> GetPagesInChapter(int comic_key, int chapter_key)
     {
         var data = await _comicService.GetPagesInChapter(this.HttpContext.Request.Headers, comic_key, chapter_key);
@@ -62,11 +74,11 @@ public class ComicController : ControllerBase
     }
 
 
-    [HttpPost]
-    public async Task<ActionResult<Comic>> AddComic(Comic comic)
-    {
-        return Ok();
-    }
+    // [HttpPost]
+    // public async Task<ActionResult<Comic>> AddComic(Comic comic)
+    // {
+    //     return Ok();
+    // }
 
     //Get all Genres
     [HttpGet("Genres")]
