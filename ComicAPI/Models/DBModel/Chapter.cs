@@ -10,7 +10,7 @@ namespace ComicApp.Models
         public int ID { get; set; } // Primary Key (implicitly set by IDENTITY(1, 1))
 
         [Column("comicid")]
-        public int? ComicID { get; set; } // Foreign Key
+        public int? Comicid { get; set; } // Foreign Key
 
         [Column("title")]
         public string Title { get; set; } = string.Empty;
@@ -24,7 +24,7 @@ namespace ComicApp.Models
         public int ViewCount { get; set; }
         [Column("updateat")]
         public DateTime UpdateAt { get; set; }
-        
+
         public Comic? comic;
     }
 

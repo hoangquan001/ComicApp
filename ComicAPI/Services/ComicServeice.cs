@@ -15,6 +15,8 @@ using AutoMapper;
 using ComicAPI.Classes;
 using HtmlAgilityPack;
 using System.Collections.Immutable;
+using System.Net;
+using System.Net.Http.Headers;
 namespace ComicApp.Services;
 
 public class ComicService : IComicService
@@ -148,13 +150,27 @@ public class ComicService : IComicService
             Message = "Success"
         };
     }
-
-    static async Task<List<PageDTO>> FetchChapterImage(IHeaderDictionary header)
+    private static readonly HttpClient _httpClient = new HttpClient();
+    static async Task<List<PageDTO>> FetchChapterImage(string comic_slug, string chapter_slug, int chapterid)
     {
         List<PageDTO> urls = new List<PageDTO>();
-        string url = "https://nhattruyenbing.com/truyen-tranh/tinh-giap-hon-tuong/chap-196/1146887";
-        HtmlWeb web = new HtmlWeb();
-        HtmlDocument doc = await web.LoadFromWebAsync(url);
+        comic_slug = "truyen-tranh/het-nhu-han-quang-gap-nang-gat";
+        chapter_slug = "chap-143.2";
+        chapterid = 684968;
+        string url = $"https://nhattruyenss.com/truyen-tranh/{comic_slug}/{chapter_slug}/{chapterid}";
+        var request = new HttpRequestMessage()
+        {
+            RequestUri = new Uri(url),
+            Method = HttpMethod.Get,
+        };
+        string customUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36";
+        // request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
+        var response = await _httpClient.SendAsync(request);
+        System.Threading.Thread.Sleep(1000);
+        string responseBody = await response.Content.ReadAsStringAsync();
+
+        HtmlDocument doc = new HtmlDocument();
+        doc.LoadHtml(responseBody);
         HtmlNodeCollection elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
         int i = 0;
         foreach (HtmlNode element in elements)
@@ -171,9 +187,16 @@ public class ComicService : IComicService
         }
         return urls;
     }
-    public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(IHeaderDictionary header, int comic_id, int chapter_id)
+    public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(int comic_id, int chapter_id)
     {
-        List<PageDTO> urlsData = await FetchChapterImage(header);
+        var chapter = await _dbContext.Chapters.Where(x => x.ID == chapter_id).FirstOrDefaultAsync();
+        List<PageDTO>? urlsData = null;
+        if (chapter != null)
+        {
+        }
+        urlsData = await FetchChapterImage("a", "b", chapter_id);
+
+
         ServiceResponse<ChapterPageDTO> res = new ServiceResponse<ChapterPageDTO>();
         res.Data = new ChapterPageDTO()
         {
@@ -186,7 +209,7 @@ public class ComicService : IComicService
     {
         bool isID = int.TryParse(key, out int id2);
         var data = await _dbContext.Comics.Where(x => isID ? x.ID == id2 : x.Url == key)
-        .Select(x=> x.Chapters.Select(x => ChapterSelector(x)).ToList())
+        .Select(x => x.Chapters.Select(x => ChapterSelector(x)).ToList())
         .FirstOrDefaultAsync();
         return GetDataRes<List<ChapterDTO>>(data);
 

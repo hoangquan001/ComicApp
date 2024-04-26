@@ -62,10 +62,10 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("Comic/{comic_key}/chapter/{chapter_key}")]
+    [HttpGet("Comic/chapter/{chapter_key}")]
     public async Task<ActionResult<Comic>> GetPagesInChapter(int comic_key, int chapter_key)
     {
-        var data = await _comicService.GetPagesInChapter(this.HttpContext.Request.Headers, comic_key, chapter_key);
+        var data = await _comicService.GetPagesInChapter(comic_key, chapter_key);
         if (data.Data == null)
         {
             return NotFound(data);

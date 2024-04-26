@@ -128,3 +128,10 @@ ORDER BY view DESC;
 SELECT *
 FROM chapter
 WHERE updateat > '2020-08-04';
+
+
+
+INSERT INTO hostcollector
+(id,host,comic_format,chapter_format)
+VALUES
+(1,'nhattruyenss.com','https://{host}/truyen-tranh/{comic-slug}-{comicid}','https://{host}/truyen-tranh/{comic-slug}/{chapter-slug}/{chapterid}')
