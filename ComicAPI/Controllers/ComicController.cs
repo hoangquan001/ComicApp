@@ -11,6 +11,7 @@ using System.Linq;
 using ComicAPI.Enums;
 using Microsoft.AspNetCore.Authorization;
 using ComicAPI.Classes;
+using ComicApp.Services;
 [ApiController]
 [Route("")]
 public class ComicController : ControllerBase
@@ -63,9 +64,9 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet("Comic/chapter/{chapter_key}")]
-    public async Task<ActionResult<Comic>> GetPagesInChapter(int comic_key, int chapter_key)
+    public async Task<ActionResult<Comic>> GetPagesInChapter(int chapter_key)
     {
-        var data = await _comicService.GetPagesInChapter(comic_key, chapter_key);
+        var data = await _comicService.GetPagesInChapter( chapter_key);
         if (data.Data == null)
         {
             return NotFound(data);
@@ -73,6 +74,13 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
+    [HttpGet("Img/Data")]
+    public async Task<ActionResult> GetImage (string url)
+    {
+        // HttpContext.Request.Headers;
+        byte[]? rawdata = await _comicService.LoadImage(url);
+        return File(rawdata, contentType: "image/jpeg");
+    }
 
     // [HttpPost]
     // public async Task<ActionResult<Comic>> AddComic(Comic comic)
