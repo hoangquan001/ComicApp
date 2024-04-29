@@ -8,7 +8,6 @@ ComicAPI/bin/**/*
 */x64/
 */x86/
 */bld/
-*/[Bb]in/*
 */obj/*
 */[Ll]og/*
 

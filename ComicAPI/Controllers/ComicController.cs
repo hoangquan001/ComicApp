@@ -66,7 +66,7 @@ public class ComicController : ControllerBase
     [HttpGet("Comic/chapter/{chapter_key}")]
     public async Task<ActionResult<Comic>> GetPagesInChapter(int chapter_key)
     {
-        var data = await _comicService.GetPagesInChapter( chapter_key);
+        var data = await _comicService.GetPagesInChapter(chapter_key);
         if (data.Data == null)
         {
             return NotFound(data);
@@ -74,10 +74,11 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("Img/Data")]
-    public async Task<ActionResult> GetImage (string url)
+    [HttpGet("data/img/{img_name}")]
+    public async Task<ActionResult> GetImage(string img_name, string data)
     {
         // HttpContext.Request.Headers;
+        string url = ServiceUtils.Base64Decode(data);
         byte[]? rawdata = await _comicService.LoadImage(url);
         return File(rawdata, contentType: "image/jpeg");
     }

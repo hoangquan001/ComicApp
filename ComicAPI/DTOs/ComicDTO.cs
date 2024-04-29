@@ -1,6 +1,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using ComicApp.Data;
+using ComicApp.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 
@@ -18,5 +19,7 @@ public class ComicDTO
     public DateTime UpdateAt { get; set; } = DateTime.Now;
     public IEnumerable<GenreLiteDTO> genres { get; set; } = [];
     public IEnumerable<ChapterDTO> Chapters { get; set; } = [];
+
+    public Chapter? chapter { get; set; }
 
 }

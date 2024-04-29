@@ -22,6 +22,8 @@ public class ComicService : IComicService
 {
     readonly ComicDbContext _dbContext;
     readonly IMapper _mapper;
+    private static readonly HttpClient _httpClient = new HttpClient();
+
 
     public ComicService(ComicDbContext db, IMapper mapper)
     {
@@ -32,13 +34,16 @@ public class ComicService : IComicService
     public async Task<ServiceResponse<ComicDTO>> GetComic(string key)
     {
         bool isID = int.TryParse(key, out int id2);
-        var data = await _dbContext.Comics.Select(x => new ComicDTO
+
+        var data = await _dbContext.Comics
+        .Where(x => isID ? x.ID == id2 : x.Url == key)
+        .Select(x => new ComicDTO
         {
             ID = x.ID,
             Title = x.Title,
             Author = x.Author,
             Url = x.Url,
-            CoverImage = "https://static.doctruyenonline.vn/images/vu-luyen-dien-phong.jpg",
+            CoverImage = x.CoverImage,
             Description = x.Description,
             Status = x.Status,
             Rating = x.Rating,
@@ -47,7 +52,6 @@ public class ComicService : IComicService
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
             Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).ToList()
         })
-        .Where(x => isID ? x.ID == id2 : x.Url == key)
         .AsSplitQuery()
         .FirstOrDefaultAsync();
         return GetDataRes<ComicDTO>(data);
@@ -56,33 +60,34 @@ public class ComicService : IComicService
 
     public async Task<ServiceResponse<List<ComicDTO>>> GetComics(ComicQueryParams comicQueryParams)
     {
-        int page = comicQueryParams.page == 0 ? 1 : comicQueryParams.page;
-        int step = comicQueryParams.step == 0 ? 10 : comicQueryParams.step;
-        var data = await _dbContext.Comics.AsNoTracking()
-        .OrderComicByType(comicQueryParams.sort)
-        .Select(x =>
-        new ComicDTO
-        {
-            ID = x.ID,
-            Title = x.Title,
-            Author = x.Author,
-            Url = x.Url,
-            // CoverImage = "https://static.doctruyenonline.vn/images/vu-luyen-dien-phong.jpg",
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            UpdateAt = x.UpdateAt,
-            ViewCount = x.Chapters.Sum(x => x.ViewCount),
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
-            Chapters = x.Chapters.Select(x => ChapterSelector(x)).Take(2).ToList()
-        })
-        .Where(comicQueryParams.status == ComicStatus.All ? x => true : x => x.Status == (int)comicQueryParams.status)
-        .Where(comicQueryParams.genre == -1 ? x => true : x => x.genres.Any(g => comicQueryParams.genre == g.ID))
-        .Skip((page - 1) * step)
-        .Take(step)
-        .ToListAsync();
+        int page = comicQueryParams.page < 1 ? 1 : comicQueryParams.page;
+        int step = comicQueryParams.step < 1 ? 10 : comicQueryParams.step;
+        var data = await _dbContext.Comics
+           .Where(x =>
+               (comicQueryParams.status == ComicStatus.All || x.Status == (int)comicQueryParams.status) &&
+               (comicQueryParams.genre == -1 || x.Genres.Any(g => comicQueryParams.genre == g.ID)))
+                .OrderComicByType(comicQueryParams.sort)
+                  .Select(x => new ComicDTO
+                  {
+                      ID = x.ID,
+                      Title = x.Title,
+                      Author = x.Author,
+                      Url = x.Url,
+                      Description = x.Description,
+                      Status = x.Status,
+                      Rating = x.Rating,
+                      UpdateAt = x.UpdateAt,
+                      CoverImage = x.CoverImage,
+                      ViewCount = x.Chapters.Sum(ch => ch.ViewCount),
+                      genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+                      Chapters = x.Chapters.Take(1).Select(ch => ChapterSelector(ch))
+                  })
+               .Skip((page - 1) * step)
+               .Take(step)
+               .ToListAsync();
+
         return GetDataRes<List<ComicDTO>>(data);
-        
+
     }
 
     public async Task<ServiceResponse<Comic>> AddComic(Comic comic)
@@ -97,8 +102,7 @@ public class ComicService : IComicService
         var data = await _dbContext.Genres.ToListAsync();
         return GetDataRes<List<Genre>>(data);
     }
-    private static readonly HttpClient _httpClient = new HttpClient();
-    static async Task<List<PageDTO>> FetchChapterImage(string comic_slug, string chapter_slug, int chapterid)
+    static async Task<List<PageDTO>?> FetchChapterImage(string comic_slug, string chapter_slug, int chapterid)
     {
         List<PageDTO> urls = new List<PageDTO>();
         string url = $"https://nhattruyenss.com/truyen-tranh/{comic_slug}/{chapter_slug}/{chapterid}";
@@ -115,14 +119,17 @@ public class ComicService : IComicService
         HtmlDocument doc = new HtmlDocument();
         doc.LoadHtml(responseBody);
         HtmlNodeCollection elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
+        if (elements == null) return null;
         int i = 0;
+        Random rnd = new Random();
         foreach (HtmlNode element in elements)
         {
             string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
-            
+            string data = ServiceUtils.Base64Encode(imgUrl);
+            int num = rnd.Next();
             PageDTO page = new PageDTO()
             {
-                URL = imgUrl,
+                URL = $"http://localhost:5080/data/img/{num}.jpg?data={data}",
                 PageNumber = ++i,
 
             };
@@ -146,16 +153,16 @@ public class ComicService : IComicService
     public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(int chapter_id)
     {
         var chapter = await _dbContext.Chapters.Where(x => x.ID == chapter_id).FirstOrDefaultAsync();
-        if(chapter == null) return GetDataRes<ChapterPageDTO>(null);
+        if (chapter == null) return GetDataRes<ChapterPageDTO>(null);
 
-        chapter.comic =  await _dbContext.Comics.Where(x => x.ID == chapter.Comicid).FirstOrDefaultAsync();
-        if(chapter.comic == null) return GetDataRes<ChapterPageDTO>(null);
+        chapter.comic = await _dbContext.Comics.Where(x => x.ID == chapter.Comicid).FirstOrDefaultAsync();
+        if (chapter.comic == null) return GetDataRes<ChapterPageDTO>(null);
         List<PageDTO>? urlsData = null;
         if (chapter != null)
         {
             urlsData = await FetchChapterImage(chapter.comic.Url, chapter.Url, chapter_id);
         }
-        ChapterPageDTO chapterPageDTO =  new ChapterPageDTO{ Pages= urlsData };
+        ChapterPageDTO chapterPageDTO = new ChapterPageDTO { Pages = urlsData };
         return GetDataRes<ChapterPageDTO>(chapterPageDTO);
     }
 
