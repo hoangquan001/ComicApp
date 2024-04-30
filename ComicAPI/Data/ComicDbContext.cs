@@ -33,7 +33,7 @@ namespace ComicApp.Data
                 b.ToTable("comic");
                 b.HasKey(x => x.ID);
                 b.HasMany(e => e.Genres).WithMany().UsingEntity<ComicGenre>();
-                b.HasMany(e => e.Chapters).WithOne().HasForeignKey(x => x.Comicid);
+                b.HasMany(e => e.Chapters).WithOne().HasForeignKey(x => x.ComicID);
             });
             modelBuilder.Entity<ComicGenre>(b =>
             {

@@ -17,6 +17,7 @@ using HtmlAgilityPack;
 using System.Collections.Immutable;
 using System.Net;
 using System.Net.Http.Headers;
+using Microsoft.EntityFrameworkCore.Internal;
 namespace ComicApp.Services;
 public class ComicService : IComicService
 {
@@ -66,26 +67,25 @@ public class ComicService : IComicService
            .Where(x =>
                (comicQueryParams.status == ComicStatus.All || x.Status == (int)comicQueryParams.status) &&
                (comicQueryParams.genre == -1 || x.Genres.Any(g => comicQueryParams.genre == g.ID)))
-                .OrderComicByType(comicQueryParams.sort)
-                  .Select(x => new ComicDTO
-                  {
-                      ID = x.ID,
-                      Title = x.Title,
-                      Author = x.Author,
-                      Url = x.Url,
-                      Description = x.Description,
-                      Status = x.Status,
-                      Rating = x.Rating,
-                      UpdateAt = x.UpdateAt,
-                      CoverImage = x.CoverImage,
-                      ViewCount = x.Chapters.Sum(ch => ch.ViewCount),
-                      genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-                      Chapters = x.Chapters.Take(1).Select(ch => ChapterSelector(ch))
-                  })
-               .Skip((page - 1) * step)
-               .Take(step)
+            .OrderComicByType(comicQueryParams.sort)
+            .Skip((page - 1) * step)
+            .Take(step)
+            .Select(x => new ComicDTO
+            {
+                ID = x.ID,
+                Title = x.Title,
+                Author = x.Author,
+                Url = x.Url,
+                Description = x.Description,
+                Status = x.Status,
+                Rating = x.Rating,
+                UpdateAt = x.UpdateAt,
+                CoverImage = x.CoverImage,
+                ViewCount = x.ViewCount,
+                genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+                Chapters = x.Chapters.Select(ch => ChapterSelector(ch)).Take(1)
+            })
                .ToListAsync();
-
         return GetDataRes<List<ComicDTO>>(data);
 
     }
@@ -155,7 +155,7 @@ public class ComicService : IComicService
         var chapter = await _dbContext.Chapters.Where(x => x.ID == chapter_id).FirstOrDefaultAsync();
         if (chapter == null) return GetDataRes<ChapterPageDTO>(null);
 
-        chapter.comic = await _dbContext.Comics.Where(x => x.ID == chapter.Comicid).FirstOrDefaultAsync();
+        chapter.comic = await _dbContext.Comics.Where(x => x.ID == chapter.ComicID).FirstOrDefaultAsync();
         if (chapter.comic == null) return GetDataRes<ChapterPageDTO>(null);
         List<PageDTO>? urlsData = null;
         if (chapter != null)

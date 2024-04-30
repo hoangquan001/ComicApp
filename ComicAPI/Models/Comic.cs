@@ -36,12 +36,15 @@ namespace ComicApp.Models
 
         [Column("rating")]
         public int Rating { get; set; } = 10; // Enforced by data annotation check constraint
+        [Column("viewcount")]
+        public int ViewCount { get; set; } = 0; // Enforced by data annotation check constraint
 
         [Column("createat")]
         public DateTime CreateAt { get; set; } = DateTime.Now;
 
         [Column("updateat")]
         public DateTime UpdateAt { get; set; } = DateTime.Now;
+
 
         public List<Genre> Genres { get; set; } = new List<Genre>();
         public List<Chapter> Chapters { get; set; } = new List<Chapter>();

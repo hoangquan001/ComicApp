@@ -20,6 +20,4 @@ public class ComicDTO
     public IEnumerable<GenreLiteDTO> genres { get; set; } = [];
     public IEnumerable<ChapterDTO> Chapters { get; set; } = [];
 
-    public Chapter? chapter { get; set; }
-
 }

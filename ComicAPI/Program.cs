@@ -9,8 +9,18 @@ using Microsoft.OpenApi.Models;
 using ComicAPI.Middleware;
 using ComicAPI.Services;
 
+// Enable CORS
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+        });
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<ComicDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -83,6 +93,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+// Use CORS
+app.UseCors(MyAllowSpecificOrigins);
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<TokenHandlerMiddlerware>();
 app.UseHttpsRedirection();

@@ -11,7 +11,7 @@ namespace ComicApp.Data
                 case SortType.Chapter:
                     return query.OrderByDescending(x => x.Chapters.Count);
                 case SortType.LastUpdate:
-                    return query.OrderByDescending(keySelector: x => x.Chapters.Max(c => c.UpdateAt));
+                    return query.OrderByDescending(x => x.UpdateAt);
                 case SortType.NewComic:
                     return query.OrderByDescending(x => x.CreateAt).ThenBy(x => x.Chapters.Count);
                 case SortType.TopFollow:
@@ -20,7 +20,7 @@ namespace ComicApp.Data
                 case SortType.TopWeek:
                 case SortType.TopMonth:
                 case SortType.TopAll:
-                    return query.OrderByDescending(x => x.Chapters.Sum(c => c.ViewCount));
+                    return query.OrderByDescending(x => x.ViewCount);
 
             }
             return query.OrderBy(x => x.CreateAt);

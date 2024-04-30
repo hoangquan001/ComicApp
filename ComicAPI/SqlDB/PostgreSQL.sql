@@ -32,7 +32,9 @@ CREATE TABLE COMIC (
     Status INT NOT NULL CHECK (status IN (0, 1)),
     Rating NUMERIC NOT NULL CHECK (Rating <= 10),
     CreateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    UpdateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    UpdateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    viewcount integer DEFAULT 0,
+    numchapter integer NOT NULL DEFAULT 0
 );
 
 CREATE TABLE USER_FOLLOW_COMIC (
@@ -128,9 +130,42 @@ CREATE INDEX idx_comic_genre_genre_id ON COMIC_GENRE (GenreID);
 CREATE INDEX idx_chapter_id ON PAGE (ChapterID);
 
 
+UPdate comic  set viewcount = v.view 
+from 
+(	
+	select comicid, sum(ct.viewcount) as view
+	from  chapter ct 
+	group by comicid
+)as v
+where v.comicid = id
+
+
+select * from comic
+order by viewcount desc
 
 
 INSERT INTO hostcollector
 (id,host,comic_format,chapter_format)
 VALUES
 (1,'nhattruyenss.com','https://{host}/truyen-tranh/{comic-slug}-{comicid}','https://{host}/truyen-tranh/{comic-slug}/{chapter-slug}/{chapterid}');
+
+
+
+
+-- TRIGER WHEN UPDATE CHAPTER
+CREATE OR REPLACE FUNCTION update_comic_datetime()
+RETURNS TRIGGER AS $$
+BEGIN
+    -- Update the comic DateTime to current timestamp
+    UPDATE comic
+    SET UpdateAt = CURRENT_TIMESTAMP
+    WHERE id = NEW.ComicID; -- Assuming you have a foreign key 'comic_id' in chapters referencing comics.id
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Trigger to execute the update function after chapter insertion or update
+CREATE TRIGGER chapter_insert_update_trigger
+AFTER INSERT ON chapter
+FOR EACH ROW
+EXECUTE FUNCTION update_comic_datetime();
