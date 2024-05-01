@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 public interface IComicService
 {
 
-    Task<ServiceResponse<List<ComicDTO>>> GetComics(ComicQueryParams comicQueryParams);
-    Task<ServiceResponse<ComicDTO>> GetComic(string key);
+    Task<ServiceResponse<ListComicDTO>> GetComics(ComicQueryParams comicQueryParams);
+    Task<ServiceResponse<ComicDTO>> GetComic(string key, int chaptertake = -1);
     Task<ServiceResponse<List<ChapterDTO>>> GetChaptersComic(string key);
-    Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter( int chapter_id);
+    Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(int chapter_id);
     Task<ServiceResponse<Comic>> AddComic(Comic comic);
     Task<ServiceResponse<List<Genre>>> GetGenres();
-
+    Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword);
     Task<byte[]> LoadImage(string url);
 
 }

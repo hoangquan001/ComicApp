@@ -13,6 +13,9 @@ using ComicAPI.Services;
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Services.AddMemoryCache();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
@@ -49,7 +52,11 @@ builder.Services.AddAuthentication(x =>
 );
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IComicService, ComicService>();
+builder.Services.AddScoped<IDataService, DataService>();
 builder.Services.AddSingleton<ITokenMgr, TokenMgr>();
+builder.Services.AddScoped<IComicReposibility, ComicReposibility>();
+
+// builder.Services.AddSingleton<IComicCacheReposibility, ComicCacheReposibility>();
 
 
 builder.Services.AddSwaggerGen(c =>

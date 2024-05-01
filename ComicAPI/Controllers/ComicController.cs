@@ -23,7 +23,7 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet("Comics")]
-    public async Task<ActionResult<List<ComicDTO>>> GetComics(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All, int genre = -1, int page = 1, int step = 100)
+    public async Task<ActionResult<ListComicDTO>> GetComics(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All, int genre = -1, int page = 1, int step = 100)
     {
         ComicQueryParams queryParams = new ComicQueryParams();
         {
@@ -40,9 +40,9 @@ public class ComicController : ControllerBase
     //get one comic by id
     // [Authorize]
     [HttpGet("Comic/{key}")]
-    public async Task<ActionResult<ComicDTO>> GetComic(string key)
+    public async Task<ActionResult<ComicDTO>> GetComic(string key, int mchapter = -1)
     {
-        ServiceResponse<ComicDTO>? data = await _comicService.GetComic(key);
+        ServiceResponse<ComicDTO>? data = await _comicService.GetComic(key, mchapter);
 
         if (data.Data == null)
         {
@@ -78,11 +78,17 @@ public class ComicController : ControllerBase
     public async Task<ActionResult> GetImage(string img_name, string data)
     {
         // HttpContext.Request.Headers;
-        string url = ServiceUtils.Base64Decode(data);
+        string url = ServiceUtilily.Base64Decode(data);
         byte[]? rawdata = await _comicService.LoadImage(url);
         return File(rawdata, contentType: "image/jpeg");
     }
+    [HttpGet("api/search")]
 
+    public async Task<ActionResult<List<ComicDTO>>> SearchComicsByKeyword(string keyword)
+    {
+        var data = await _comicService.SearchComicByKeyword(keyword);
+        return Ok(data);
+    }
     // [HttpPost]
     // public async Task<ActionResult<Comic>> AddComic(Comic comic)
     // {

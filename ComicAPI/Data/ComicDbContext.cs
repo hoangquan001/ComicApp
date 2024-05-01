@@ -1,6 +1,8 @@
 // generate data context 
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Npgsql;
 
 namespace ComicApp.Data
 {
@@ -10,14 +12,21 @@ namespace ComicApp.Data
             : base(options)
         {
 
+
         }
 
         public DbSet<User> Users => Set<User>();
-        public DbSet<Models.Comic> Comics => base.Set<Models.Comic>();
+        public DbSet<Comic> Comics => base.Set<Comic>();
         public DbSet<Genre> Genres => Set<Genre>();
         public DbSet<ComicGenre> ComicGenre => Set<ComicGenre>();
         public DbSet<Chapter> Chapters => Set<Chapter>();
         // public DbSet<Page> Pages => Set<Page>();
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+
+
+            base.OnConfiguring(optionsBuilder);
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().ToTable("_user").HasKey(x => x.ID);

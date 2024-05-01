@@ -19,6 +19,9 @@ namespace ComicApp.Models
         [Column("title")]
         public string Title { get; set; } = "";
 
+        [Column("othername")]
+        public string OtherName { get; set; } = "";
+
         [Column("url")]
         public string Url { get; set; } = "";
 

@@ -18,89 +18,95 @@ using System.Collections.Immutable;
 using System.Net;
 using System.Net.Http.Headers;
 using Microsoft.EntityFrameworkCore.Internal;
+using ComicAPI.Services;
 namespace ComicApp.Services;
 public class ComicService : IComicService
 {
-    readonly ComicDbContext _dbContext;
+    readonly IDataService _dataService;
+    readonly IComicReposibility _comicReposibility;
     readonly IMapper _mapper;
     private static readonly HttpClient _httpClient = new HttpClient();
 
 
-    public ComicService(ComicDbContext db, IMapper mapper)
+    public ComicService(IComicReposibility comicReposibility, IMapper mapper, IDataService dataService)
     {
-        _dbContext = db;
+        _comicReposibility = comicReposibility;
+
         _mapper = mapper;
+
+        _dataService = dataService;
     }
 
-    public async Task<ServiceResponse<ComicDTO>> GetComic(string key)
+    public async Task<ServiceResponse<ComicDTO>> GetComic(string key, int maxchapter = -1)
     {
-        bool isID = int.TryParse(key, out int id2);
-
-        var data = await _dbContext.Comics
-        .Where(x => isID ? x.ID == id2 : x.Url == key)
-        .Select(x => new ComicDTO
-        {
-            ID = x.ID,
-            Title = x.Title,
-            Author = x.Author,
-            Url = x.Url,
-            CoverImage = x.CoverImage,
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            UpdateAt = x.UpdateAt,
-            ViewCount = x.Chapters.Sum(x => x.ViewCount),
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
-            Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).ToList()
-        })
-        .AsSplitQuery()
-        .FirstOrDefaultAsync();
+        // var data = _comicCacheReposibility.GetComic(key);
+        // if (data == null)
+        // {
+        var data = await _comicReposibility.GetComic(key);
+        //     if (data != null)
+        //     {
+        //         _comicCacheReposibility.AddComic(data);
+        //     }
+        // }
         return GetDataRes<ComicDTO>(data);
     }
 
+    public async Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword)
+    {
+        var data = await _dataService.GetAllComic();
+        var listkeys = SlugHelper.GetListKey(keyword);
+        List<(ComicDTO comic, int count)> result = new List<(ComicDTO, int)>();
+        Dictionary<int, int> myDict = new Dictionary<int, int>();
+        for (int i = 0; i < data.Count; i++)
+        {
+            var listtitlekeys = SlugHelper.GetListKey(data[i].Title);
 
-    public async Task<ServiceResponse<List<ComicDTO>>> GetComics(ComicQueryParams comicQueryParams)
+            var Elements = listkeys.Intersect(listtitlekeys);
+            int countElement = Elements.Count();
+            if (countElement > 0)
+            {
+                if (!myDict.ContainsKey(countElement))
+                {
+                    myDict[countElement] = 1;
+                    result.Add((data[i], countElement));
+                }
+                else if (myDict[countElement] < 5)
+                {
+                    myDict[countElement]++;
+                    result.Add((data[i], countElement));
+                }
+
+            }
+        }
+        result.Sort((x, y) => y.count.CompareTo(x.count));
+        List<ComicDTO> result2 = result.Take(5).Select(x => x.comic).ToList();
+        return GetDataRes<List<ComicDTO>>(result2);
+    }
+
+
+    public async Task<ServiceResponse<ListComicDTO>> GetComics(ComicQueryParams comicQueryParams)
     {
         int page = comicQueryParams.page < 1 ? 1 : comicQueryParams.page;
         int step = comicQueryParams.step < 1 ? 10 : comicQueryParams.step;
-        var data = await _dbContext.Comics
-           .Where(x =>
-               (comicQueryParams.status == ComicStatus.All || x.Status == (int)comicQueryParams.status) &&
-               (comicQueryParams.genre == -1 || x.Genres.Any(g => comicQueryParams.genre == g.ID)))
-            .OrderComicByType(comicQueryParams.sort)
-            .Skip((page - 1) * step)
-            .Take(step)
-            .Select(x => new ComicDTO
-            {
-                ID = x.ID,
-                Title = x.Title,
-                Author = x.Author,
-                Url = x.Url,
-                Description = x.Description,
-                Status = x.Status,
-                Rating = x.Rating,
-                UpdateAt = x.UpdateAt,
-                CoverImage = x.CoverImage,
-                ViewCount = x.ViewCount,
-                genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-                Chapters = x.Chapters.Select(ch => ChapterSelector(ch)).Take(1)
-            })
-               .ToListAsync();
-        return GetDataRes<List<ComicDTO>>(data);
+        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre, comicQueryParams.status, comicQueryParams.sort);
+
+        return GetDataRes<ListComicDTO>(data);
 
     }
 
     public async Task<ServiceResponse<Comic>> AddComic(Comic comic)
     {
-        _dbContext.Comics.Add(comic);
-        await _dbContext.SaveChangesAsync();
-        return GetDataRes<Comic>(comic);
+        // _dbContext.Comics.Add(comic);
+        // await _dbContext.SaveChangesAsync();
+        await Task.Delay(1000);
+        return GetDataRes<Comic>(null);
     }
 
     public async Task<ServiceResponse<List<Genre>>> GetGenres()
     {
-        var data = await _dbContext.Genres.ToListAsync();
-        return GetDataRes<List<Genre>>(data);
+        // var data = await _dbContext.Genres.ToListAsync();
+        await Task.Delay(1000);
+        return GetDataRes<List<Genre>>(null);
     }
     static async Task<List<PageDTO>?> FetchChapterImage(string comic_slug, string chapter_slug, int chapterid)
     {
@@ -125,7 +131,7 @@ public class ComicService : IComicService
         foreach (HtmlNode element in elements)
         {
             string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
-            string data = ServiceUtils.Base64Encode(imgUrl);
+            string data = ServiceUtilily.Base64Encode(imgUrl);
             int num = rnd.Next();
             PageDTO page = new PageDTO()
             {
@@ -152,26 +158,22 @@ public class ComicService : IComicService
     }
     public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(int chapter_id)
     {
-        var chapter = await _dbContext.Chapters.Where(x => x.ID == chapter_id).FirstOrDefaultAsync();
-        if (chapter == null) return GetDataRes<ChapterPageDTO>(null);
 
-        chapter.comic = await _dbContext.Comics.Where(x => x.ID == chapter.ComicID).FirstOrDefaultAsync();
-        if (chapter.comic == null) return GetDataRes<ChapterPageDTO>(null);
-        List<PageDTO>? urlsData = null;
-        if (chapter != null)
+        var chapter = await _comicReposibility.GetChapter(chapter_id);
+        if (chapter == null)
         {
-            urlsData = await FetchChapterImage(chapter.comic.Url, chapter.Url, chapter_id);
+            return GetDataRes<ChapterPageDTO>(null);
         }
+
+        List<PageDTO>? urlsData = await FetchChapterImage(chapter.comic!.Url, chapter.Url, chapter_id);
+
         ChapterPageDTO chapterPageDTO = new ChapterPageDTO { Pages = urlsData };
         return GetDataRes<ChapterPageDTO>(chapterPageDTO);
     }
 
     public async Task<ServiceResponse<List<ChapterDTO>>> GetChaptersComic(string key)
     {
-        bool isID = int.TryParse(key, out int id2);
-        var data = await _dbContext.Comics.Where(x => isID ? x.ID == id2 : x.Url == key)
-        .Select(x => x.Chapters.Select(x => ChapterSelector(x)).ToList())
-        .FirstOrDefaultAsync();
+        var data = await _comicReposibility.GetChaptersComic(key);
         return GetDataRes<List<ChapterDTO>>(data);
 
     }
@@ -195,16 +197,5 @@ public class ComicService : IComicService
         return res;
 
     }
-    private static ChapterDTO ChapterSelector(Chapter x)
-    {
-        return new ChapterDTO
-        {
-            ID = x.ID,
-            Title = x.Title,
-            ChapterNumber = x.ChapterNumber,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            Slug = x.Url
-        };
-    }
+
 }
