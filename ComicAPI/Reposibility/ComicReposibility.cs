@@ -127,9 +127,9 @@ public class ComicReposibility : IComicReposibility
     {
         var chapter = await _dbContext.Chapters.Where(x => x.ID == chapter_id).FirstOrDefaultAsync();
         if (chapter == null) return null;
-        Comic? c = await _dbContext.Comics.Where(x => x.ID == chapter.ComicID).FirstOrDefaultAsync();
-        if (c == null) return null;
-        chapter.comic = c;
+        // Comic? c = await _dbContext.Comics.Where(x => x.ID == chapter.ComicID).FirstOrDefaultAsync();
+        // if (c == null) return null;
+        // chapter.comic = c;
         return chapter;
     }
 

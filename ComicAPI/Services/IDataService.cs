@@ -8,4 +8,5 @@ public interface IDataService
 
 
     Task<List<ComicDTO>> GetAllComic();
+    Task<ComicDTO> GetComicByID(string id);
 }

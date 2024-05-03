@@ -39,10 +39,10 @@ public class ComicService : IComicService
 
     public async Task<ServiceResponse<ComicDTO>> GetComic(string key, int maxchapter = -1)
     {
-        // var data = _comicCacheReposibility.GetComic(key);
+        var data = await _comicReposibility.GetComic(key);
         // if (data == null)
         // {
-        var data = await _comicReposibility.GetComic(key);
+        // var data = await _dataService.GetComicByID(key);
         //     if (data != null)
         //     {
         //         _comicCacheReposibility.AddComic(data);
@@ -160,14 +160,25 @@ public class ComicService : IComicService
     {
 
         var chapter = await _comicReposibility.GetChapter(chapter_id);
-        if (chapter == null)
+        if (chapter == null) return GetDataRes<ChapterPageDTO>(null);
+        var comic = await _comicReposibility.GetComic(chapter.ComicID.ToString());
+        if (comic == null)
         {
             return GetDataRes<ChapterPageDTO>(null);
         }
 
-        List<PageDTO>? urlsData = await FetchChapterImage(chapter.comic!.Url, chapter.Url, chapter_id);
-
-        ChapterPageDTO chapterPageDTO = new ChapterPageDTO { Pages = urlsData };
+        List<PageDTO>? urlsData = await FetchChapterImage(comic.Url, chapter.Url, chapter_id);
+        ChapterPageDTO chapterPageDTO = new ChapterPageDTO
+        {
+            ID = chapter.ID,
+            Title = chapter.Title,
+            Slug = chapter.Url,
+            ChapterNumber = chapter.ChapterNumber,
+            UpdateAt = chapter.UpdateAt,
+            ViewCount = chapter.ViewCount,
+            Pages = urlsData,
+            Comic = comic
+        };
         return GetDataRes<ChapterPageDTO>(chapterPageDTO);
     }
 

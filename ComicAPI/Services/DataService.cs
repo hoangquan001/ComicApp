@@ -18,7 +18,7 @@ public class DataService : IDataService
     {
         const string cacheKey = "ALL_COMIC_KEY";
 
-        if (!_cache.TryGetValue(cacheKey, out List<ComicDTO> cachedData))
+        if (!_cache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
         {
             cachedData = await _comicReposibility.GetAllComics();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
@@ -77,6 +77,15 @@ public class DataService : IDataService
     public List<ChapterDTO>? GetChaptersComic(string key)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<ComicDTO> GetComicByID(string id)
+    {
+        var data = await GetAllComic();
+        bool IsInt = int.TryParse(id, out int id2);
+        var result = data.FirstOrDefault(x => IsInt ? x.ID == id2 : x.Url == id)!;
+        result.Chapters = await _comicReposibility.GetChaptersComic(result.Url) ?? new List<ChapterDTO>();
+        return result;
     }
 }
 

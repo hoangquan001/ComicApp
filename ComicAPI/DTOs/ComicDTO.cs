@@ -18,6 +18,7 @@ public class ComicDTO
     public int ViewCount { get; set; } = 0; // view
     public DateTime UpdateAt { get; set; } = DateTime.Now;
     public IEnumerable<GenreLiteDTO> genres { get; set; } = [];
-    public IEnumerable<ChapterDTO> Chapters { get; set; } = [];
+    public IEnumerable<object> Chapters { get; set; } = [];
+
 
 }
