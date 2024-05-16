@@ -20,21 +20,31 @@ public class AuthService : IAuthService
     {
         _dbContext = db;
         _tokenMgr = tokenMgr;
-   
+
     }
 
-    public async Task<ServiceResponse<string>> Login(UserLoginDTO userLogin)
+    public async Task<ServiceResponse<UserDTO>> Login(UserLoginDTO userLogin)
     {
-        ServiceResponse<string> res = new ServiceResponse<string>();
-        var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == userLogin.username && user.HashPassword == userLogin.password);
+        ServiceResponse<UserDTO> res = new ServiceResponse<UserDTO>();
+        var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == userLogin.email && user.HashPassword == userLogin.password);
         if (data == null)
         {
             res.Status = 0;
             res.Message = "Username or password is incorrect";
             return res;
         }
-
-        res.Data = _tokenMgr.CreateToken(data.ID);
+        UserDTO user = new UserDTO
+        {
+            ID = data.ID,
+            Username = data.Username,
+            Email = data.Email,
+            FirstName = data.FirstName,
+            LastName = data.LastName,
+            Avatar = data.Avatar,
+            Gender = data.Gender,
+            Token = _tokenMgr.CreateToken(data.ID)
+        };
+        res.Data = user;
         res.Status = 1;
         res.Message = "Success";
         return res;

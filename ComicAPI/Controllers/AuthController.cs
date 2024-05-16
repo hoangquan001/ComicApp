@@ -24,11 +24,16 @@ public class AuthController : ControllerBase
         _authService = authService;
         _tokenMgr = tokenMgr;
     }
-    [HttpPost]
+    [HttpGet]
     [Route("Login")]
-    public async Task<ActionResult<ServiceResponse<string>>> Login(UserLoginDTO userLogin)
+    public async Task<ActionResult<ServiceResponse<UserDTO>>> Login(string email, string password)
     {
-        ServiceResponse<string> res = await _authService.Login(userLogin);
+        UserLoginDTO userLoginDTO = new UserLoginDTO
+        {
+            email = email,
+            password = password
+        };
+        ServiceResponse<UserDTO> res = await _authService.Login(userLoginDTO);
         return Ok(res);
     }
     [Route("Register")]

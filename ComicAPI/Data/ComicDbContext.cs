@@ -19,6 +19,8 @@ namespace ComicApp.Data
         public DbSet<Comic> Comics => base.Set<Comic>();
         public DbSet<Genre> Genres => Set<Genre>();
         public DbSet<ComicGenre> ComicGenre => Set<ComicGenre>();
+
+        public DbSet<UserFollowComic> UserFollowComics => Set<UserFollowComic>();
         public DbSet<Chapter> Chapters => Set<Chapter>();
         // public DbSet<Page> Pages => Set<Page>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -52,6 +54,13 @@ namespace ComicApp.Data
                 b.HasOne(x => x.Genre).WithMany().HasForeignKey(x => x.GenreID);
             }
             );
+
+            modelBuilder.Entity<UserFollowComic>(b =>
+            {
+                b.ToTable("user_follow_comic");
+                b.HasKey(x => new { x.ComicID, x.UserID });
+                b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.ComicID);
+            });
 
 
             // modelBuilder.Entity<Page>(b =>
