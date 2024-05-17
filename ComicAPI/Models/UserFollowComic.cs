@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +14,7 @@ namespace ComicApp.Models
         public int UserID { get; set; }
 
         [Column("createat")]
-        public DateTime CreateAt { get; set; }
+        public DateTime? CreateAt { get; set; } = DateTime.UtcNow;
 
         public Comic? comic;
     }

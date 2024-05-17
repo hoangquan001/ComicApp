@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
+using ComicApp.Models;
 
 public class ServiceUtilily
 {
@@ -15,6 +16,26 @@ public class ServiceUtilily
     {
         byte[] base64EncodedBytes = Convert.FromBase64String(base64EncodedData);
         return Encoding.UTF8.GetString(base64EncodedBytes);
+    }
+    public static ServiceResponse<T> GetDataRes<T>(T? data)
+    {
+        var res = new ServiceResponse<T>();
+
+        if (data == null)
+        {
+            res.Status = 0;
+            res.Message = "Not found";
+
+        }
+        else
+        {
+            res.Data = data;
+            res.Status = 1;
+            res.Message = "Success";
+        }
+
+        return res;
+
     }
 }
 

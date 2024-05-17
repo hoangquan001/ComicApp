@@ -25,8 +25,6 @@ public class ComicReposibility : IComicReposibility
           .Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID)))
 
             .OrderComicByType(sort)
-           .Skip((page - 1) * step)
-           .Take(step)
            .Select(x => new ComicDTO
            {
                ID = x.ID,
@@ -40,8 +38,10 @@ public class ComicReposibility : IComicReposibility
                CoverImage = x.CoverImage,
                ViewCount = x.ViewCount,
                genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-               Chapters = x.Chapters.Select(ch => ChapterSelector(ch)).Take(1)
-           })
+               Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(ch => ChapterSelector(ch)).Take(1)
+           }).OrderByDescending(x => x.UpdateAt)
+           .Skip((page - 1) * step)
+           .Take(step)
             .ToListAsync();
         if (data != null)
         {
@@ -142,6 +142,30 @@ public class ComicReposibility : IComicReposibility
         .FirstOrDefaultAsync();
         return data;
 
+    }
+    public async Task<List<ComicDTO>> GetFollowComicsByUser(int userid, int page, int size)
+    {
+        var data = await _dbContext.UserFollowComics
+        .Where(x => x.UserID == userid)
+        .Include(x => x.comic)
+        .Select(x => new ComicDTO
+        {
+            ID = x.comic!.ID,
+            Title = x.comic.Title,
+            Author = x.comic.Author,
+            Url = x.comic.Url,
+            Description = x.comic.Description,
+            Status = x.comic.Status,
+            Rating = x.comic.Rating,
+            UpdateAt = x.comic.UpdateAt,
+            CoverImage = x.comic.CoverImage,
+            ViewCount = x.comic.ViewCount,
+            genres = x.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+            Chapters = x.comic.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).Take(1)
+        })
+        .Skip((page - 1) * size)
+        .Take(size).ToListAsync();
+        return data;
     }
     public async Task<List<ComicDTO>?> SearchComicsByKeyword(string keyword)
     {

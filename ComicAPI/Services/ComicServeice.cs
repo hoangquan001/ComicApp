@@ -48,7 +48,7 @@ public class ComicService : IComicService
         //         _comicCacheReposibility.AddComic(data);
         //     }
         // }
-        return GetDataRes<ComicDTO>(data);
+        return ServiceUtilily.GetDataRes<ComicDTO>(data);
     }
 
     public async Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword)
@@ -80,7 +80,7 @@ public class ComicService : IComicService
         }
         result.Sort((x, y) => y.count.CompareTo(x.count));
         List<ComicDTO> result2 = result.Take(5).Select(x => x.comic).ToList();
-        return GetDataRes<List<ComicDTO>>(result2);
+        return ServiceUtilily.GetDataRes<List<ComicDTO>>(result2);
     }
 
 
@@ -90,7 +90,7 @@ public class ComicService : IComicService
         int step = comicQueryParams.step < 1 ? 10 : comicQueryParams.step;
         var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre, comicQueryParams.status, comicQueryParams.sort);
 
-        return GetDataRes<ListComicDTO>(data);
+        return ServiceUtilily.GetDataRes<ListComicDTO>(data);
 
     }
 
@@ -99,14 +99,14 @@ public class ComicService : IComicService
         // _dbContext.Comics.Add(comic);
         // await _dbContext.SaveChangesAsync();
         await Task.Delay(1000);
-        return GetDataRes<Comic>(null);
+        return ServiceUtilily.GetDataRes<Comic>(null);
     }
 
     public async Task<ServiceResponse<List<Genre>>> GetGenres()
     {
         // var data = await _dbContext.Genres.ToListAsync();
         await Task.Delay(1000);
-        return GetDataRes<List<Genre>>(null);
+        return ServiceUtilily.GetDataRes<List<Genre>>(null);
     }
     static async Task<List<PageDTO>?> FetchChapterImage(string comic_slug, string chapter_slug, int chapterid)
     {
@@ -160,11 +160,11 @@ public class ComicService : IComicService
     {
 
         var chapter = await _comicReposibility.GetChapter(chapter_id);
-        if (chapter == null) return GetDataRes<ChapterPageDTO>(null);
+        if (chapter == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
         var comic = await _comicReposibility.GetComic(chapter.ComicID.ToString());
         if (comic == null)
         {
-            return GetDataRes<ChapterPageDTO>(null);
+            return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
         }
 
         List<PageDTO>? urlsData = await FetchChapterImage(comic.Url, chapter.Url, chapter_id);
@@ -179,34 +179,15 @@ public class ComicService : IComicService
             Pages = urlsData,
             Comic = comic
         };
-        return GetDataRes<ChapterPageDTO>(chapterPageDTO);
+        return ServiceUtilily.GetDataRes<ChapterPageDTO>(chapterPageDTO);
     }
 
     public async Task<ServiceResponse<List<ChapterDTO>>> GetChaptersComic(string key)
     {
         var data = await _comicReposibility.GetChaptersComic(key);
-        return GetDataRes<List<ChapterDTO>>(data);
+        return ServiceUtilily.GetDataRes<List<ChapterDTO>>(data);
 
     }
-    public ServiceResponse<T> GetDataRes<T>(T? data)
-    {
-        var res = new ServiceResponse<T>();
-
-        if (data == null)
-        {
-            res.Status = 0;
-            res.Message = "Not found";
-
-        }
-        else
-        {
-            res.Data = data;
-            res.Status = 1;
-            res.Message = "Success";
-        }
-
-        return res;
-
-    }
+    
 
 }

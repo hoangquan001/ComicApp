@@ -19,6 +19,14 @@ CREATE TABLE _USER (
     CreateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     UpdateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     Role INT NOT NULL CHECK (Role IN (0, 1, 2))
+    --MOCK DATA
+    -- INSERT INTO _USER (Username, Email, FirstName, LastName, DOB, Avatar, Gender, Status, Role)
+    -- VALUES
+    -- ('johndoe', 'johndoe@example.com', 'John', 'Doe', '1990-01-01 00:00:00', 'avatar.jpg', 0, 1, 0),
+    -- ('janedoe', 'janedoe@example.com', 'Jane', 'Doe', '1995-02-15 00:00:00', 'avatar2.png', 1, 1, 1),
+    -- ('coderDude', 'coderdude@gmail.com', 'Alex', 'Wang', '1985-12-24 00:00:00', 'avatar3.gif', 0, 1, 2),
+    -- ('bookworm', 'bookworm@hotmail.com', 'Alice', 'Green', '2000-06-09 00:00:00', NULL, 1, 0, 0),
+    -- ('musicLover', 'musiclover@yahoo.com', 'Ben', 'Garcia', '1978-03-18 00:00:00', 'avatar5.jpg', 0, 1, 1);
 );
 
 CREATE TABLE COMIC (

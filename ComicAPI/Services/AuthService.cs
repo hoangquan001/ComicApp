@@ -51,13 +51,13 @@ public class AuthService : IAuthService
     }
     public async Task<ServiceResponse<User>> Register(UserRegisterDTO RegisterData)
     {
-        if (await _dbContext.Users.AnyAsync(user => user.Username == RegisterData.username))
+        if (await _dbContext.Users.AnyAsync(user => user.Username == RegisterData.Name))
         {
             return new ServiceResponse<User> { Status = 0, Message = "Username already exists" };
         }
         User user = new User
         {
-            Username = RegisterData.username!,
+            FirstName = RegisterData.Name!,
             Email = RegisterData.email!,
             HashPassword = RegisterData.password!
         };
