@@ -19,6 +19,7 @@ public class ComicDTO
     public DateTime UpdateAt { get; set; } = DateTime.Now;
     public IEnumerable<GenreLiteDTO> genres { get; set; } = [];
     public IEnumerable<object> Chapters { get; set; } = [];
+    public bool IsFollow { get; set; } = false;
 
 
 }

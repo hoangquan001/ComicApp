@@ -17,6 +17,7 @@ using ComicApp.Services;
 public class ComicController : ControllerBase
 {
     IComicService _comicService;
+    IUserService _userService;
     public ComicController(IComicService comicService)
     {
         _comicService = comicService;
@@ -43,7 +44,6 @@ public class ComicController : ControllerBase
     public async Task<ActionResult<ComicDTO>> GetComic(string key, int mchapter = -1)
     {
         ServiceResponse<ComicDTO>? data = await _comicService.GetComic(key, mchapter);
-
         if (data.Data == null)
         {
             return NotFound(data);

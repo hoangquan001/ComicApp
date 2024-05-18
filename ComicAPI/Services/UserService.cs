@@ -18,6 +18,20 @@ public class UserService : IUserService
     readonly IComicReposibility _comicReposibility;
     ComicDbContext _dbContext;
     readonly ITokenMgr _tokenMgr;
+    private int _UserID = -1;
+
+    public int UserID
+    {
+        get
+        {
+            return _UserID;
+        }
+        set
+        {
+            _UserID = value;
+        }
+    }
+
     //Contructor
     public UserService(ComicDbContext db, ITokenMgr tokenMgr, IComicReposibility comicReposibility, IDataService dataService)
     {
@@ -42,8 +56,10 @@ public class UserService : IUserService
 
         return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
     }
-
-
+    public async Task<ServiceResponse<int>> FollowComic(int comicid)
+    {
+        return await FollowComic(UserID, comicid);
+    }
 
     public async Task<ServiceResponse<int>> UnFollowComic(int userid, int comicid)
     {
@@ -54,7 +70,11 @@ public class UserService : IUserService
         _dbContext.UserFollowComics.Remove(user);
 
         await _dbContext.SaveChangesAsync();
-        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
+        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 0 };
+    }
+    public async Task<ServiceResponse<int>> UnFollowComic(int comicid)
+    {
+        return await UnFollowComic(UserID, comicid);
     }
 
     public async Task<ServiceResponse<List<ComicDTO>>> GetFollowComics(int userid, int page = 1, int step = 40)
@@ -62,5 +82,21 @@ public class UserService : IUserService
         List<ComicDTO>? data = await _comicReposibility.GetFollowComicsByUser(userid, page, step);
         return ServiceUtilily.GetDataRes(data);
     }
+    public async Task<ServiceResponse<List<ComicDTO>>> GetFollowComics(int page = 1, int step = 40)
+    {
+        return await GetFollowComics(UserID, page, step);
+    }
 
+    public async Task<bool> IsFollowComic(int userid, int comicid)
+    {
+        //check comicid exist
+
+        var user = await _dbContext.UserFollowComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
+        return user != null;
+
+    }
+    public async Task<bool> IsFollowComic(int comicid)
+    {
+        return await IsFollowComic(UserID, comicid);
+    }
 }

@@ -8,6 +8,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using ComicAPI.Middleware;
 using ComicAPI.Services;
+using System.Security.Claims;
+using ComicApp.Models;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -106,6 +108,7 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<TokenHandlerMiddlerware>();
 app.UseHttpsRedirection();
+//imject IUserService
 app.Use((context, next) =>
 {
     return next();
@@ -113,6 +116,16 @@ app.Use((context, next) =>
 app.UseAuthentication();
 app.Use((context, next) =>
 {
+    if (context.User?.Identity?.IsAuthenticated ?? false)
+    {
+        var userService = context.RequestServices.GetService<IUserService>();
+        if (userService != null)
+        {
+            var strId = context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            userService.UserID = int.Parse(strId!);
+        }
+
+    }
     return next();
 });
 app.UseAuthorization();

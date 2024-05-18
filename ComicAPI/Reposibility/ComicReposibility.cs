@@ -39,7 +39,7 @@ public class ComicReposibility : IComicReposibility
                ViewCount = x.ViewCount,
                genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
                Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(ch => ChapterSelector(ch)).Take(1)
-           }).OrderByDescending(x => x.UpdateAt)
+           })
            .Skip((page - 1) * step)
            .Take(step)
             .ToListAsync();

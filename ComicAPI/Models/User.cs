@@ -9,8 +9,8 @@ namespace ComicApp.Models
         [Key, Column("id")]
         public int ID { get; set; }
 
-        [Required, MaxLength(50), Column("username")]
-        public string? Username { get; set; }
+        // [Required, MaxLength(50), Column("username")]
+        // public string? Username { get; set; }
 
         [MaxLength(100), Column("email")]
         public string? Email { get; set; }
@@ -32,16 +32,16 @@ namespace ComicApp.Models
         [Required, Range(0, 1), Column("gender")]
         public int Gender { get; set; } = 0;
 
-        [Required,Range(0, 1), Column("status")]
+        [Required, Range(0, 1), Column("status")]
         public int Status { get; set; } = 1;
         [Column("lastlogin")]
         public DateTime? LastLogin { get; set; }
 
         [Required, Column("createat")]
-        public DateTime CreateAt { get; set; } = DateTime.Now;
+        public DateTime CreateAt { get; set; } = DateTime.UtcNow;
 
         [Required, Column("updateat")]
-        public DateTime UpdateAt { get; set; } = DateTime.Now;
+        public DateTime UpdateAt { get; set; } = DateTime.UtcNow;
 
         [Required, Column("role")]
         [Range(0, 2)]

@@ -11,5 +11,5 @@ public class UserRegisterDTO
     public string? password { get; set; }
     [Required]
     [DataType(DataType.Text)]
-    public string? Name { get; set; }
+    public string? name { get; set; }
 }

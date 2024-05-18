@@ -5,8 +5,8 @@ CREATE DATABASE ComicApp;
 
 CREATE TABLE _USER (
     ID SERIAL PRIMARY KEY,
-    Username VARCHAR(50) UNIQUE,
-    Email VARCHAR(100),
+    -- Username VARCHAR(50) UNIQUE,
+    Email VARCHAR(100) UNIQUE,
     HashPassword VARCHAR(255),
     FirstName VARCHAR(50),
     LastName VARCHAR(50),

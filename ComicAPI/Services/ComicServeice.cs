@@ -25,29 +25,28 @@ public class ComicService : IComicService
     readonly IDataService _dataService;
     readonly IComicReposibility _comicReposibility;
     readonly IMapper _mapper;
+
+    readonly IUserService _userService;
+
     private static readonly HttpClient _httpClient = new HttpClient();
 
 
-    public ComicService(IComicReposibility comicReposibility, IMapper mapper, IDataService dataService)
+    public ComicService(IComicReposibility comicReposibility, IMapper mapper, IDataService dataService
+        , IUserService userService)
     {
         _comicReposibility = comicReposibility;
-
         _mapper = mapper;
-
         _dataService = dataService;
+        _userService = userService;
     }
 
     public async Task<ServiceResponse<ComicDTO>> GetComic(string key, int maxchapter = -1)
     {
         var data = await _comicReposibility.GetComic(key);
-        // if (data == null)
-        // {
-        // var data = await _dataService.GetComicByID(key);
-        //     if (data != null)
-        //     {
-        //         _comicCacheReposibility.AddComic(data);
-        //     }
-        // }
+        if (data != null && _userService.UserID != -1)
+        {
+            data.IsFollow = await _userService.IsFollowComic(_userService.UserID, data.ID);
+        }
         return ServiceUtilily.GetDataRes<ComicDTO>(data);
     }
 
@@ -188,6 +187,6 @@ public class ComicService : IComicService
         return ServiceUtilily.GetDataRes<List<ChapterDTO>>(data);
 
     }
-    
+
 
 }
