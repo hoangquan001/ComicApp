@@ -99,4 +99,68 @@ public class UserService : IUserService
     {
         return await IsFollowComic(UserID, comicid);
     }
+
+    public async Task<ServiceResponse<int>> AddComment(int userid, string content, int chapterid, int parentcommentid = 0)
+    {
+        var chapter = _dbContext.Chapters.FirstOrDefault(x => x.ID == chapterid);
+        if (chapter == null) return new ServiceResponse<int> { Status = 0, Message = "Chapter not found", Data = 0 };
+
+        Comment comment_data = new Comment
+        {
+            UserID = userid,
+            Content = content,
+            ChapterID = chapterid,
+            ComicID = chapter.ComicID,
+            ParentCommentID = parentcommentid == 0 ? null : parentcommentid
+        };
+        _dbContext.Comments.Add(comment_data);
+        await _dbContext.SaveChangesAsync();
+        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
+
+    }
+
+    public async Task<ServiceResponse<int>> AddComment(string content, int chapterid, int parentcommentid = 0)
+    {
+        return await AddComment(UserID, content, chapterid, parentcommentid);
+    }
+
+    public async Task<ServiceResponse<List<CommentDTO>>> GetCommentsOfComic(int comicid, int page = 1, int step = 40)
+    {
+        var data = await _dbContext.Comments
+            .Where(x => x.ComicID == comicid && x.ParentCommentID == null)
+            .OrderByDescending(x => x.CommentedAt)
+            .Include(x => x.Replies)
+            .Include(x => x.User)
+            .Select(x => new CommentDTO
+            {
+                ID = x.ID,
+                Content = x.Content,
+                UserID = x.UserID,
+                ChapterID = x.ChapterID,
+                ComicID = x.ComicID,
+                ParentCommentID = x.ParentCommentID,
+                CommentedAt = x.CommentedAt,
+                UserName = x.User!.FirstName + " " + x.User.LastName,
+                Replies = x.Replies.Select(y => new CommentDTO
+                {
+                    ID = y.ID,
+                    Content = y.Content,
+                    UserID = y.UserID,
+                    ChapterID = y.ChapterID,
+                    ComicID = y.ComicID,
+                    ParentCommentID = y.ParentCommentID,
+                    CommentedAt = y.CommentedAt,
+                    UserName = y.User!.FirstName + " " + y.User.LastName
+                }).ToList()
+            })
+            .Skip((page - 1) * step)
+            .Take(step)
+            .ToListAsync();
+        return ServiceUtilily.GetDataRes<List<CommentDTO>>(data);
+    }
+
+    public Task<ServiceResponse<List<CommentDTO>>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 40)
+    {
+        throw new NotImplementedException();
+    }
 }

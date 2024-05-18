@@ -110,36 +110,44 @@ public class ComicService : IComicService
     static async Task<List<PageDTO>?> FetchChapterImage(string comic_slug, string chapter_slug, int chapterid)
     {
         List<PageDTO> urls = new List<PageDTO>();
-        string url = $"https://nhattruyenss.com/truyen-tranh/{comic_slug}/{chapter_slug}/{chapterid}";
-        var request = new HttpRequestMessage();
-        request.RequestUri = new Uri(url);
-        request.Method = HttpMethod.Get;
-
-        request.Headers.Add("Accept", "*/*");
-        request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
-
-        var response = await _httpClient.SendAsync(request);
-        string responseBody = await response.Content.ReadAsStringAsync();
-
-        HtmlDocument doc = new HtmlDocument();
-        doc.LoadHtml(responseBody);
-        HtmlNodeCollection elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
-        if (elements == null) return null;
-        int i = 0;
-        Random rnd = new Random();
-        foreach (HtmlNode element in elements)
+        try
         {
-            string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
-            string data = ServiceUtilily.Base64Encode(imgUrl);
-            int num = rnd.Next();
-            PageDTO page = new PageDTO()
-            {
-                URL = $"http://localhost:5080/data/img/{num}.jpg?data={data}",
-                PageNumber = ++i,
+            string url = $"https://nhattruyenss.com/truyen-tranh/{comic_slug}/{chapter_slug}/{chapterid}";
+            var request = new HttpRequestMessage();
+            request.RequestUri = new Uri(url);
+            request.Method = HttpMethod.Get;
 
-            };
-            urls.Add(page);
-            // Add imgUrl to list or perform other tasks
+            request.Headers.Add("Accept", "*/*");
+            request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
+
+            var response = await _httpClient.SendAsync(request);
+            string responseBody = await response.Content.ReadAsStringAsync();
+
+            HtmlDocument doc = new HtmlDocument();
+            doc.LoadHtml(responseBody);
+            HtmlNodeCollection elements = doc.DocumentNode.SelectNodes("//div[contains(@class, 'page-chapter')]");
+            if (elements == null) return null;
+            int i = 0;
+            Random rnd = new Random();
+            foreach (HtmlNode element in elements)
+            {
+                string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
+                string data = ServiceUtilily.Base64Encode(imgUrl);
+                int num = rnd.Next();
+                PageDTO page = new PageDTO()
+                {
+                    URL = $"http://localhost:5080/data/img/{num}.jpg?data={data}",
+                    PageNumber = ++i,
+
+                };
+                urls.Add(page);
+                // Add imgUrl to list or perform other tasks
+            }
+
+        }
+        catch (Exception ex)
+        {
+            return urls;
         }
         return urls;
     }

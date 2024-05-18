@@ -37,9 +37,27 @@ public class UserController : ControllerBase
     //     return Ok(await _userService.UnFollowComic(comicid));
     // }
 
+    [HttpPost("Comment")]
+    public async Task<ActionResult<ServiceResponse<int>>> CommentComic(AddCommentDTO addCommentDTO)
+    {
+        var data = await _userService.AddComment(addCommentDTO.Content!, addCommentDTO.ChapterId, addCommentDTO.ParentCommentId);
+        return Ok(data);
+    }
+
     [HttpGet("FollowedComics")]
     public async Task<ActionResult<ServiceResponse<List<ComicDTO>>>> GetFollowedComics(int page = 1, int size = 40)
     {
         return Ok(await _userService.GetFollowComics(page, size));
+    }
+
+    [HttpGet("Comments/comic/{comicId}")]
+    public async Task<ActionResult<ServiceResponse<List<CommentDTO>>>> GetCommentsOfComic(int comicId, int page = 1, int size = 40)
+    {
+        return Ok(await _userService.GetCommentsOfComic(comicId, page, size));
+    }
+    [HttpGet("Comments/chapter/{chapterId}")]
+    public async Task<ActionResult<ServiceResponse<List<CommentDTO>>>> GetCommentsOfChapter(int chapterId, int page = 1, int size = 40)
+    {
+        return Ok(await _userService.GetCommentsOfChapter(chapterId, page, size));
     }
 }

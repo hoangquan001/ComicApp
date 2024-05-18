@@ -14,4 +14,9 @@ public interface IUserService
     Task<ServiceResponse<List<ComicDTO>>> GetFollowComics(int userid, int page = 1, int step = 40);
     Task<bool> IsFollowComic(int comicid);
     Task<bool> IsFollowComic(int userid, int comicid);
+
+    Task<ServiceResponse<int>> AddComment(int userid, string content, int chapterid, int parentcommentid = 0);
+    Task<ServiceResponse<int>> AddComment(string content, int chapterid, int parentcommentid = 0);
+    Task<ServiceResponse<List<CommentDTO>>> GetCommentsOfComic(int comicid, int page = 1, int step = 40);
+    Task<ServiceResponse<List<CommentDTO>>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 40);
 }
