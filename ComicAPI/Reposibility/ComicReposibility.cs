@@ -171,6 +171,8 @@ public class ComicReposibility : IComicReposibility
     {
         keyword = keyword.ToLower();
 
+
+
         // var data = await _dbContext.Comics
         // // .Where(
         // //     x =>
@@ -194,7 +196,7 @@ public class ComicReposibility : IComicReposibility
         // .ToListAsync();
 
         List<ComicDTO> result = new List<ComicDTO>();
-
+        await Task.Delay(1000);
 
         return result;
     }

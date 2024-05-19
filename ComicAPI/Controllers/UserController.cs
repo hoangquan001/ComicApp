@@ -38,7 +38,7 @@ public class UserController : ControllerBase
     // }
 
     [HttpPost("Comment")]
-    public async Task<ActionResult<ServiceResponse<int>>> CommentComic(AddCommentDTO addCommentDTO)
+    public async Task<ActionResult<ServiceResponse<CommentDTO>>> CommentComic(AddCommentDTO addCommentDTO)
     {
         var data = await _userService.AddComment(addCommentDTO.Content!, addCommentDTO.ChapterId, addCommentDTO.ParentCommentId);
         return Ok(data);

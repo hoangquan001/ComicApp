@@ -17,7 +17,7 @@ using ComicApp.Services;
 public class ComicController : ControllerBase
 {
     IComicService _comicService;
-    IUserService _userService;
+    // IUserService _userService;
     public ComicController(IComicService comicService)
     {
         _comicService = comicService;

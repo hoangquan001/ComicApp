@@ -22,7 +22,7 @@ namespace ComicApp.Models
         public string ImageURL { get; set; } = "";
 
         // Navigation property
-        public virtual Chapter Chapter { get; set; }
+        public virtual Chapter? Chapter { get; set; }
     }
 
 }

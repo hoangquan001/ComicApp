@@ -73,6 +73,8 @@ public class AuthService : IAuthService
     public async Task<ServiceResponse<string>> Logout(string token)
     {
         _tokenMgr.AddTokenToBlackList(token);
+        await Task.Delay(1000);
+
         return new ServiceResponse<string>
         {
             Status = 1,

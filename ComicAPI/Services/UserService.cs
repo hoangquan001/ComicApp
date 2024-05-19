@@ -10,6 +10,7 @@ using System.Text;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ComicAPI.Services;
+using Microsoft.Extensions.ObjectPool;
 
 namespace ComicApp.Services;
 public class UserService : IUserService
@@ -100,10 +101,10 @@ public class UserService : IUserService
         return await IsFollowComic(UserID, comicid);
     }
 
-    public async Task<ServiceResponse<int>> AddComment(int userid, string content, int chapterid, int parentcommentid = 0)
+    public async Task<ServiceResponse<CommentDTO>> AddComment(int userid, string content, int chapterid, int parentcommentid = 0)
     {
         var chapter = _dbContext.Chapters.FirstOrDefault(x => x.ID == chapterid);
-        if (chapter == null) return new ServiceResponse<int> { Status = 0, Message = "Chapter not found", Data = 0 };
+        if (chapter == null) return new ServiceResponse<CommentDTO> { Status = 0, Message = "Chapter not found", Data = null };
 
         Comment comment_data = new Comment
         {
@@ -113,13 +114,32 @@ public class UserService : IUserService
             ComicID = chapter.ComicID,
             ParentCommentID = parentcommentid == 0 ? null : parentcommentid
         };
-        _dbContext.Comments.Add(comment_data);
+        var commentData = _dbContext.Comments.Add(comment_data);
         await _dbContext.SaveChangesAsync();
-        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
+
+        var cmtData = await _dbContext.Comments
+        .Where(x => x.ID == commentData.Entity.ID)
+        .Include(x => x.User)
+        .Select(x => new CommentDTO
+        {
+            ID = x.ID,
+            Content = x.Content,
+            UserID = x.UserID,
+            ChapterID = x.ChapterID,
+            ComicID = x.ComicID,
+            ParentCommentID = x.ParentCommentID,
+            CommentedAt = x.CommentedAt,
+            UserName = x.User!.FirstName + " " + x.User.LastName,
+        })
+        .FirstOrDefaultAsync();
+
+
+
+        return new ServiceResponse<CommentDTO> { Status = 1, Message = "Success", Data = cmtData };
 
     }
 
-    public async Task<ServiceResponse<int>> AddComment(string content, int chapterid, int parentcommentid = 0)
+    public async Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int parentcommentid = 0)
     {
         return await AddComment(UserID, content, chapterid, parentcommentid);
     }
@@ -141,7 +161,7 @@ public class UserService : IUserService
                 ParentCommentID = x.ParentCommentID,
                 CommentedAt = x.CommentedAt,
                 UserName = x.User!.FirstName + " " + x.User.LastName,
-                Replies = x.Replies.Select(y => new CommentDTO
+                Replies = x.Replies!.Select(y => new CommentDTO
                 {
                     ID = y.ID,
                     Content = y.Content,

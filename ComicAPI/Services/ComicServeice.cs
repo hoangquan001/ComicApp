@@ -145,7 +145,7 @@ public class ComicService : IComicService
             }
 
         }
-        catch (Exception ex)
+        catch
         {
             return urls;
         }
