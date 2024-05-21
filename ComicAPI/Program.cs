@@ -10,6 +10,7 @@ using ComicAPI.Middleware;
 using ComicAPI.Services;
 using System.Security.Claims;
 using ComicApp.Models;
+using Microsoft.Extensions.FileProviders;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -98,6 +99,7 @@ WebApplication? app = builder.Build();
 
 // Configure the HTTP request pipeline. 
 
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -108,6 +110,13 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<TokenHandlerMiddlerware>();
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+           Path.Combine(builder.Environment.ContentRootPath, "StaticFiles")),
+    RequestPath = new PathString("/static")
+});
 //imject IUserService
 app.Use((context, next) =>
 {
