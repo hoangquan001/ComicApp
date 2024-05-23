@@ -64,7 +64,7 @@ public class ComicController : ControllerBase
     }
 
     [HttpGet("Comic/chapter/{chapter_key}")]
-    public async Task<ActionResult<Comic>> GetPagesInChapter(int chapter_key)
+    public async Task<ActionResult<ChapterPageDTO>> GetPagesInChapter(int chapter_key)
     {
         var data = await _comicService.GetPagesInChapter(chapter_key);
         if (data.Data == null)

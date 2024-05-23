@@ -112,7 +112,8 @@ public class ComicService : IComicService
         List<PageDTO> urls = new List<PageDTO>();
         try
         {
-            string url = $"https://nhattruyenss.com/truyen-tranh/{comic_slug}/{chapter_slug}/{chapterid}";
+            chapter_slug = chapter_slug.Replace("chapter", "chuong");
+            string url = $"https://nhattruyenvn.com/truyen-tranh/{comic_slug}/{chapter_slug}";
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri(url);
             request.Method = HttpMethod.Get;
@@ -131,7 +132,7 @@ public class ComicService : IComicService
             Random rnd = new Random();
             foreach (HtmlNode element in elements)
             {
-                string imgUrl = "https:" + element.SelectSingleNode("img").GetAttributeValue("src", "");
+                string imgUrl = element.SelectSingleNode("img").GetAttributeValue("data-src", "");
                 string data = ServiceUtilily.Base64Encode(imgUrl);
                 int num = rnd.Next();
                 PageDTO page = new PageDTO()
@@ -158,7 +159,7 @@ public class ComicService : IComicService
         request.Method = HttpMethod.Get;
         request.Headers.Add("Accept", "*/*");
         request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
-        request.Headers.Add("Referer", "nhattruyenss.com");
+        request.Headers.Add("Referer", "nhattruyenvn.com");
         var response = await _httpClient.SendAsync(request);
         var imgByte = await response.Content.ReadAsByteArrayAsync();
         return imgByte;
