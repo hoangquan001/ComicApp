@@ -11,6 +11,7 @@ using ComicAPI.Services;
 using System.Security.Claims;
 using ComicApp.Models;
 using Microsoft.Extensions.FileProviders;
+using ComicAPI.Updater;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -137,7 +138,13 @@ app.Use((context, next) =>
     }
     return next();
 });
+
+
 app.UseAuthorization();
 app.MapControllers();
+
+
+// Task task1 =  Updater.Update();
+
 app.Run();
 

@@ -1,1 +1,1 @@
-bin\Debug\net8.0\ComicApp.exe
+dotnet run
