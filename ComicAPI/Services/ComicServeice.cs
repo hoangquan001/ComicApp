@@ -113,7 +113,7 @@ public class ComicService : IComicService
         try
         {
             chapter_slug = chapter_slug.Replace("chapter", "chuong");
-            string url = $"https://nhattruyenvn.com/truyen-tranh/{comic_slug}/{chapter_slug}";
+            string url = $"https://nettruyenviet.com/truyen-tranh/{comic_slug}/{chapter_slug}";
             var request = new HttpRequestMessage();
             request.RequestUri = new Uri(url);
             request.Method = HttpMethod.Get;
@@ -146,8 +146,9 @@ public class ComicService : IComicService
             }
 
         }
-        catch
+        catch (Exception ex)
         {
+            Console.WriteLine("Error fetching chapter images: " + ex.Message);
             return urls;
         }
         return urls;
@@ -159,7 +160,7 @@ public class ComicService : IComicService
         request.Method = HttpMethod.Get;
         request.Headers.Add("Accept", "*/*");
         request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
-        request.Headers.Add("Referer", "nhattruyenvn.com");
+        request.Headers.Add("Referer", "nettruyenviet.com");
         var response = await _httpClient.SendAsync(request);
         var imgByte = await response.Content.ReadAsByteArrayAsync();
         return imgByte;
