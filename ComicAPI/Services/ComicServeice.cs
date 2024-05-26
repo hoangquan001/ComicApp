@@ -53,15 +53,38 @@ public class ComicService : IComicService
     public async Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword)
     {
         var data = await _dataService.GetAllComic();
+        keyword = keyword.Replace("-", " ");
         var listkeys = SlugHelper.GetListKey(keyword);
         List<(ComicDTO comic, int count)> result = new List<(ComicDTO, int)>();
         Dictionary<int, int> myDict = new Dictionary<int, int>();
         for (int i = 0; i < data.Count; i++)
         {
-            var listtitlekeys = SlugHelper.GetListKey(data[i].Title);
+            var listtitlekeys = data[i].Url.Split('-');
+            IEnumerable<string>? merge = listtitlekeys;
+            if (data[i].OtherName != "")
+            {
+                var listotherkeys = SlugHelper.GetListKey(data[i].OtherName);
+                merge = merge.Union(listotherkeys);
+            }
+            int countElement = 0;
+            if (listkeys.Count == 1)
+            {
+                string f = listkeys.First();
+                if (listtitlekeys.Contains(f))
+                {
+                    countElement = 2;
+                }
+                else if (listtitlekeys.Any(x => x.Contains(f)))
+                {
+                    countElement = 1;
+                }
+            }
+            else
+            {
+                var Elements = listkeys.Intersect(merge);
+                countElement = Elements.Count();
+            }
 
-            var Elements = listkeys.Intersect(listtitlekeys);
-            int countElement = Elements.Count();
             if (countElement > 0)
             {
                 if (!myDict.ContainsKey(countElement))

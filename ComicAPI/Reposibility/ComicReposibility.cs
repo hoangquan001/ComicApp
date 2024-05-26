@@ -29,6 +29,7 @@ public class ComicReposibility : IComicReposibility
            {
                ID = x.ID,
                Title = x.Title,
+               OtherName = x.OtherName,
                Author = x.Author,
                Url = x.Url,
                Description = x.Description,
@@ -75,6 +76,7 @@ public class ComicReposibility : IComicReposibility
         {
             ID = x.ID,
             Title = x.Title,
+            OtherName = x.OtherName,
             Author = x.Author,
             Url = x.Url,
             Description = x.Description,
@@ -106,6 +108,7 @@ public class ComicReposibility : IComicReposibility
         {
             ID = x.ID,
             Title = x.Title,
+            OtherName = x.OtherName,
             Author = x.Author,
             Url = x.Url,
             CoverImage = x.CoverImage,
@@ -152,6 +155,7 @@ public class ComicReposibility : IComicReposibility
         {
             ID = x.comic!.ID,
             Title = x.comic.Title,
+            OtherName = x.comic.OtherName,
             Author = x.comic.Author,
             Url = x.comic.Url,
             Description = x.comic.Description,
