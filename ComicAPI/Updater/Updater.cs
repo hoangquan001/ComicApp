@@ -8,6 +8,7 @@ namespace ComicAPI.Updater
     public static class Updater
     {
         static DateTime now = DateTime.Now;
+        static int FPS = 60;
         static Updater()
         {
             
@@ -17,9 +18,12 @@ namespace ComicAPI.Updater
             
             while (true)
             {
-                now = DateTime.Now;
-                // Console.WriteLine(now.ToString());
-                Task.Delay(1000).Wait();
+                DateTime _now = DateTime.Now;
+
+                // int value = _now.Millisecond - now.Millisecond;
+                // Console.WriteLine(value);
+                // now = _now;
+               await Task.Delay(1000);
             }
         }
     }

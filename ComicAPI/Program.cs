@@ -144,7 +144,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 
-// Task task1 =  Updater.Update();
+Task task1 =  Updater.Update();
 
 app.Run();
 
