@@ -111,7 +111,9 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<TokenHandlerMiddlerware>();
 app.UseHttpsRedirection();
+app.UseDefaultFiles();
 app.UseStaticFiles();
+
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
@@ -142,7 +144,7 @@ app.Use((context, next) =>
 
 app.UseAuthorization();
 app.MapControllers();
-
+// app.MapFallbackToFile("index.html");
 
 Task task1 =  Updater.Update();
 

@@ -221,5 +221,15 @@ public class ComicService : IComicService
 
     }
 
+    public async Task<ServiceResponse<List<ComicDTO>>> GetSimilarComics(string key)
+    {
 
+        ServiceResponse<List<ComicDTO>>? response= await SearchComicByKeyword(key);
+        foreach (var item in response.Data!)
+        {
+            item.Chapters = await _comicReposibility.GetChaptersComic(item.ID.ToString())?? [];
+        }
+
+        return response;
+    }
 }
