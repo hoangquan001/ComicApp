@@ -232,4 +232,52 @@ public class ComicService : IComicService
 
         return response;
     }
+
+    public async Task<ServiceResponse<List<ComicDTO>>> FindSimilarBooksAsync(int id)
+    {
+        var comics =await _dataService.GetAllComic();
+        var _comic =await _dataService.GetComicByID(id.ToString());
+        var _genre = _comic.genres.Select(x => x.ID).ToList();
+        int count = _genre.Count;
+        List<ComicDTO> result = new List<ComicDTO>();
+        Dictionary<int, List<ComicDTO>> myDict = new Dictionary<int, List<ComicDTO>>();
+        foreach (var comic in comics)
+        {
+            if(comic.ID == id) continue;
+            var genre = comic.genres.Select(x => x.ID).ToList();
+            int countElement = _genre.Intersect(genre).Count();
+            if (countElement >= 2)
+            {
+                if(!myDict.ContainsKey(countElement))
+                {
+                    myDict.Add(countElement, new List<ComicDTO>());
+                }
+                myDict[countElement].Add(comic);
+            }
+           
+        }
+        var  keys = myDict.Keys.ToList();
+        //Sort the keys in descending order
+        keys.Sort((x, y) => y.CompareTo(x));
+        foreach (var key in keys)
+        {
+            result.AddRange(myDict[key]);
+            if(result.Count >100) break;
+        }
+        Random rand = new Random();
+        //Suffle random
+        for (int i = result.Count - 1; i > 0; i--)
+        {
+            int j = rand.Next(i + 1);
+            var temp = result[i];
+            result[i] = result[j];
+            result[j] = temp;
+        }
+        result = result.Take(6).ToList();
+        
+        return ServiceUtilily.GetDataRes<List<ComicDTO>>(result);
+        
+    }
+
+  
 }

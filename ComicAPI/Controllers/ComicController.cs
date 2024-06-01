@@ -96,6 +96,14 @@ public class ComicController : ControllerBase
         var data = await _comicService.GetSimilarComics(key);
         return Ok(data);
     }
+
+    [HttpGet("Comic/{id}/similar")]
+    public async Task<IActionResult> GetSimilarBooks(int id)
+    {
+        var similarBooks = await _comicService.FindSimilarBooksAsync(id);
+        return Ok(similarBooks);
+    }
+
     // [HttpPost]
     // public async Task<ActionResult<Comic>> AddComic(Comic comic)
     // {
