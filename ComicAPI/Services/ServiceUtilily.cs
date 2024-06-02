@@ -78,8 +78,9 @@ public class SlugHelper
         string normalizedString = accentedString.Normalize(NormalizationForm.FormD);
         StringBuilder stringBuilder = new StringBuilder();
 
-        foreach (char c in normalizedString)
+        for (int i = 0; i < normalizedString.Length; i++)
         {
+            char c = normalizedString[i];
             UnicodeCategory category = CharUnicodeInfo.GetUnicodeCategory(c);
             if (category != UnicodeCategory.NonSpacingMark)
                 stringBuilder.Append(c);

@@ -224,45 +224,44 @@ public class ComicService : IComicService
     public async Task<ServiceResponse<List<ComicDTO>>> GetSimilarComics(string key)
     {
 
-        ServiceResponse<List<ComicDTO>>? response= await SearchComicByKeyword(key);
+        ServiceResponse<List<ComicDTO>>? response = await SearchComicByKeyword(key);
         foreach (var item in response.Data!)
         {
-            item.Chapters = await _comicReposibility.GetChaptersComic(item.ID.ToString())?? [];
+            item.Chapters = await _comicReposibility.GetChaptersComic(item.ID.ToString()) ?? [];
         }
 
         return response;
     }
 
-    public async Task<ServiceResponse<List<ComicDTO>>> FindSimilarBooksAsync(int id)
+    public async Task<ServiceResponse<List<ComicDTO>>> FindSimilarComicsAsync(int id)
     {
-        var comics =await _dataService.GetAllComic();
-        var _comic =await _dataService.GetComicByID(id.ToString());
-        var _genre = _comic.genres.Select(x => x.ID).ToList();
-        int count = _genre.Count;
+        var comics = await _dataService.GetAllComic();
+        var _comic = await _dataService.GetComicByID(id.ToString());
+        var _genre = _comic.genres.Select(x => x.ID);
         List<ComicDTO> result = new List<ComicDTO>();
-        Dictionary<int, List<ComicDTO>> myDict = new Dictionary<int, List<ComicDTO>>();
-        foreach (var comic in comics)
+        Dictionary<int, List<ComicDTO>> dictKey = new Dictionary<int, List<ComicDTO>>();
+        for (int i = 0; i < comics.Count; i++)
         {
-            if(comic.ID == id) continue;
-            var genre = comic.genres.Select(x => x.ID).ToList();
+            var comic = comics[i];
+            if (comic.ID == id) continue;
+            var genre = comic.genres.Select(x => x.ID);
             int countElement = _genre.Intersect(genre).Count();
-            if (countElement >= 2)
+            if (countElement >= 3)
             {
-                if(!myDict.ContainsKey(countElement))
+                if (!dictKey.ContainsKey(countElement))
                 {
-                    myDict.Add(countElement, new List<ComicDTO>());
+                    dictKey.Add(countElement, new List<ComicDTO>());
                 }
-                myDict[countElement].Add(comic);
+                dictKey[countElement].Add(comic);
             }
-           
         }
-        var  keys = myDict.Keys.ToList();
+        var keys = dictKey.Keys.ToList();
         //Sort the keys in descending order
         keys.Sort((x, y) => y.CompareTo(x));
         foreach (var key in keys)
         {
-            result.AddRange(myDict[key]);
-            if(result.Count >100) break;
+            result.AddRange(dictKey[key]);
+            if (result.Count > 200) break;
         }
         Random rand = new Random();
         //Suffle random
@@ -273,11 +272,11 @@ public class ComicService : IComicService
             result[i] = result[j];
             result[j] = temp;
         }
-        result = result.Take(6).ToList();
-        
+        result = result.Take(12).ToList();
+
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(result);
-        
+
     }
 
-  
+
 }

@@ -14,7 +14,7 @@ public interface IComicService
     Task<ServiceResponse<List<Genre>>> GetGenres();
     Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword);
     Task<ServiceResponse<List<ComicDTO>>> GetSimilarComics(string key);
-    Task<ServiceResponse<List<ComicDTO>>> FindSimilarBooksAsync(int id);
+    Task<ServiceResponse<List<ComicDTO>>> FindSimilarComicsAsync(int id);
     Task<byte[]> LoadImage(string url);
 
 }

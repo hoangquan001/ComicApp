@@ -86,7 +86,10 @@ public class ComicReposibility : IComicReposibility
             CoverImage = x.CoverImage,
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-        }).ToListAsync();
+            // Chapters = x.Chapters.Select(ch => ChapterSelector(ch)).ToList()
+        }).OrderBy(x => x.ID).ToListAsync();
+
+
     }
     public List<Genre> GetGenres()
     {

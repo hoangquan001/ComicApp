@@ -100,7 +100,7 @@ public class ComicController : ControllerBase
     [HttpGet("Comic/{id}/similar")]
     public async Task<IActionResult> GetSimilarBooks(int id)
     {
-        var similarBooks = await _comicService.FindSimilarBooksAsync(id);
+        var similarBooks = await _comicService.FindSimilarComicsAsync(id);
         return Ok(similarBooks);
     }
 
