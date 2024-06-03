@@ -20,5 +20,5 @@ public interface IComicReposibility
     public Task<List<ComicDTO>?> SearchComicsByKeyword(string keyword);
 
     public Task<List<ComicDTO>> GetAllComics();
-    public Task<List<ComicDTO>> GetFollowComicsByUser(int userid, int page, int size);
+    public Task<ListComicDTO?> GetUserFollowComics(int userid, int page, int size);
 }

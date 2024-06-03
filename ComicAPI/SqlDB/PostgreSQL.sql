@@ -43,6 +43,8 @@ CREATE TABLE COMIC (
     UpdateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     viewcount integer DEFAULT 0,
     numchapter integer NOT NULL DEFAULT 0
+    lastChapter INT
+    FOREIGN KEY (lastChapter) REFERENCES CHAPTER(ID)
 );
 
 CREATE TABLE USER_FOLLOW_COMIC (
@@ -195,3 +197,26 @@ CREATE TABLE COMMENT (
   FOREIGN KEY (ParentCommentID) REFERENCES COMMENT(ID),
   FOREIGN KEY (ComicID) REFERENCES COMIC(ID)
 );
+
+-- Update LastChapter Trigger when add new chapter.
+CREATE OR REPLACE FUNCTION update_last_chapter()
+RETURNS TRIGGER AS $$
+BEGIN
+    UPDATE COMIC
+    SET lastChapter = (
+        SELECT ID 
+        FROM CHAPTER 
+        WHERE ComicID = NEW.ComicID 
+        ORDER BY ChapterNumber DESC 
+        LIMIT 1
+    )
+    WHERE ID = NEW.ComicID;
+    RETURN NULL; -- Use NULL to indicate that this trigger does not modify the inserted row
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE TRIGGER trg_update_last_chapter
+AFTER INSERT ON CHAPTER
+FOR EACH STATEMENT
+EXECUTE FUNCTION update_last_chapter();

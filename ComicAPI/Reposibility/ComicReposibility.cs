@@ -22,34 +22,35 @@ public class ComicReposibility : IComicReposibility
     {
 
         var data = await _dbContext.Comics
-          .Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID)))
-
-            .OrderComicByType(sort)
-           .Select(x => new ComicDTO
-           {
-               ID = x.ID,
-               Title = x.Title,
-               OtherName = x.OtherName,
-               Author = x.Author,
-               Url = x.Url,
-               Description = x.Description,
-               Status = x.Status,
-               Rating = x.Rating,
-               UpdateAt = x.UpdateAt,
-               CoverImage = x.CoverImage,
-               ViewCount = x.ViewCount,
-               genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-               Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(ch => ChapterSelector(ch)).Take(1)
-           })
-           .Skip((page - 1) * step)
-           .Take(step)
-            .ToListAsync();
+        .Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID)))
+        .OrderComicByType(sort)
+        .Select(x => new ComicDTO
+        {
+            ID = x.ID,
+            Title = x.Title,
+            OtherName = x.OtherName,
+            Author = x.Author,
+            Url = x.Url,
+            Description = x.Description,
+            Status = x.Status,
+            Rating = x.Rating,
+            UpdateAt = x.UpdateAt,
+            CoverImage = x.CoverImage,
+            ViewCount = x.ViewCount,
+            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+            Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(ch => ChapterSelector(ch)).Take(1)
+        })
+        .Skip((page - 1) * step)
+        .Take(step)
+        .ToListAsync();
         if (data != null)
         {
             int totalcomic = _dbContext.Comics.Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID))).Count();
             ListComicDTO list = new ListComicDTO
             {
                 totalpage = (int)MathF.Ceiling((float)totalcomic / step),
+                Page = page,
+                Step = step,
                 comics = data
             };
             return list;
@@ -149,11 +150,12 @@ public class ComicReposibility : IComicReposibility
         return data;
 
     }
-    public async Task<List<ComicDTO>> GetFollowComicsByUser(int userid, int page, int size)
+    public async Task<ListComicDTO?> GetUserFollowComics(int userid, int page, int size)
     {
         var data = await _dbContext.UserFollowComics
         .Where(x => x.UserID == userid)
         .Include(x => x.comic)
+        .OrderByDescending(x => x.comic!.UpdateAt)
         .Select(x => new ComicDTO
         {
             ID = x.comic!.ID,
@@ -168,11 +170,23 @@ public class ComicReposibility : IComicReposibility
             CoverImage = x.comic.CoverImage,
             ViewCount = x.comic.ViewCount,
             genres = x.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
-            Chapters = x.comic.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).Take(1)
+            // Chapters = x.comic.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).Take(1)
         })
         .Skip((page - 1) * size)
         .Take(size).ToListAsync();
-        return data;
+        if (data != null)
+        {
+            int totalcomic = _dbContext.UserFollowComics.Where(x => x.UserID == userid).Count();
+            ListComicDTO list = new ListComicDTO
+            {
+                totalpage = (int)MathF.Ceiling((float)totalcomic / size),
+                Page = page,
+                Step = size,
+                comics = data
+            };
+            return list;
+        }
+        return null;
     }
     public async Task<List<ComicDTO>?> SearchComicsByKeyword(string keyword)
     {
