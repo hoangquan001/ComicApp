@@ -117,4 +117,28 @@ public class ComicController : ControllerBase
         var data = await _comicService.GetGenres();
         return Ok(data);
     }
+    [HttpGet("Comics/advance")]
+
+    public async Task<ActionResult<ListComicDTO>> GetComicBySearchAdvance(
+        [FromQuery] SortType sort = SortType.TopAll,
+        [FromQuery] ComicStatus status = ComicStatus.All,
+        [FromQuery] string? genres = null,
+        [FromQuery] int page = 1,
+        [FromQuery] int step = 100,
+        [FromQuery] string? Nogenres = null)
+    {
+        ComicQuerySearchAdvance queryParams = new ComicQuerySearchAdvance();
+        {
+            queryParams.Sort = sort;
+            queryParams.Status = status;
+            queryParams.Genres = genres;
+            queryParams.Page = page;
+            queryParams.Step = step;
+            queryParams.Notgenres = Nogenres;
+        }
+        var data = await _comicService.GetComicBySearchAdvance(queryParams);
+        return Ok(data);
+    }
+
+
 }

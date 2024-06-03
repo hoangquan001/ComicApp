@@ -12,6 +12,7 @@ using System.Security.Claims;
 using ComicApp.Models;
 using Microsoft.Extensions.FileProviders;
 using ComicAPI.Updater;
+using ComicAPI.Reposibility;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -60,7 +61,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IDataService, DataService>();
 builder.Services.AddSingleton<ITokenMgr, TokenMgr>();
 builder.Services.AddScoped<IComicReposibility, ComicReposibility>();
-
+builder.Services.AddScoped<IUserReposibility, UserReposibility>();
 // builder.Services.AddSingleton<IComicCacheReposibility, ComicCacheReposibility>();
 
 

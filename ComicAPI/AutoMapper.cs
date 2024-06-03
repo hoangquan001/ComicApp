@@ -8,11 +8,14 @@ public class AutoMapperProfile : Profile
         CreateMap<Chapter, ChapterDTO>();
         CreateMap<ComicDTO, Comic>();
         CreateMap<ChapterDTO, Chapter>();
+
+        CreateMap<User, UserDTO>();
         //gENRE LITE
         CreateMap<Genre, GenreLiteDTO>();
         CreateMap<GenreLiteDTO, Genre>();
         CreateMap<Genre, GenreDTO>();
         CreateMap<GenreDTO, Genre>();
+
 
     }
 }

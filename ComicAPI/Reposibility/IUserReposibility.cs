@@ -4,5 +4,6 @@ using ComicApp.Models;
 
 public interface IUserReposibility
 {
+    Task<User?> GetUser(int userid);
 
 }

@@ -11,11 +11,11 @@ namespace ComicAPI.Updater
         static int FPS = 60;
         static Updater()
         {
-            
+
         }
-        public static async Task  Update()
+        public static async Task Update()
         {
-            
+
             while (true)
             {
                 DateTime _now = DateTime.Now;
@@ -23,7 +23,7 @@ namespace ComicAPI.Updater
                 // int value = _now.Millisecond - now.Millisecond;
                 // Console.WriteLine(value);
                 // now = _now;
-               await Task.Delay(1000);
+                await Task.Delay(1000);
             }
         }
     }

@@ -207,4 +207,74 @@ public class ComicReposibility : IComicReposibility
 
         return result;
     }
+
+    public async Task<ListComicDTO?> GetComicBySearchAdvance(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All,
+     List<int>? genres = null, int page = 1, int step = 100, List<int>? Nogenres = null)
+    {
+
+
+        genres ??= new List<int> { -1 };
+        Nogenres ??= new List<int> { -1 };
+
+        var comicsQuery = _dbContext.Comics.AsQueryable();
+
+        // Áp dụng bộ lọc trạng thái
+        if (status != ComicStatus.All)
+        {
+            comicsQuery = comicsQuery.Where(x => x.Status == (int)status);
+        }
+
+        // Áp dụng bộ lọc thể loại (genres)
+        if (!genres.Contains(-1))
+        {
+            var genreIds = genres.ToHashSet();
+            comicsQuery = comicsQuery.Where(x => x.Genres.Select(g => g.ID).Intersect(genreIds).Count() == genreIds.Count);
+        }
+
+        // Áp dụng bộ lọc loại trừ thể loại (Nogenres)
+        if (!Nogenres.Contains(-1))
+        {
+            var nogenreIds = Nogenres.ToHashSet();
+            comicsQuery = comicsQuery.Where(x => !x.Genres.Select(g => g.ID).Any(gId => nogenreIds.Contains(gId)));
+        }
+
+        // Execute query and get data
+        var data = await comicsQuery
+            .OrderComicByType(sort)
+            .Select(x => new ComicDTO
+            {
+                ID = x.ID,
+                Title = x.Title,
+                OtherName = x.OtherName,
+                Author = x.Author,
+                Url = x.Url,
+                Description = x.Description,
+                Status = x.Status,
+                Rating = x.Rating,
+                UpdateAt = x.UpdateAt,
+                CoverImage = x.CoverImage,
+                ViewCount = x.ViewCount,
+                genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+                Chapters = x.Chapters.OrderByDescending(ch => ch.ChapterNumber).Select(ch => ChapterSelector(ch)).Take(1)
+            })
+            .Skip((page - 1) * step)
+            .Take(step)
+            .ToListAsync();
+
+        // Get total count
+        var totalComics = await comicsQuery.CountAsync();
+
+        if (data != null && data.Any())
+        {
+            ListComicDTO list = new ListComicDTO
+            {
+                totalpage = (int)MathF.Ceiling((float)totalComics / step),
+                comics = data
+            };
+
+            return list;
+        }
+
+        return null;
+    }
 }

@@ -11,17 +11,24 @@ using System.Linq;
 using ComicAPI.Enums;
 using Microsoft.AspNetCore.Authorization;
 using ComicAPI.Classes;
+using ComicAPI.DTOs;
 [ApiController]
 [Route("[controller]")]
 [Authorize]
 public class UserController : ControllerBase
 {
     IUserService _userService;
-    public UserController(IUserService comicService)
+    public UserController(IUserService uerService)
     {
-        _userService = comicService;
+        _userService = uerService;
     }
+    [HttpGet]
+    public async Task<ActionResult<ServiceResponse<UserDTO>>> GetMyUserInfo()
+    {
+        return Ok(await _userService.GetMyUserInfo());
 
+
+    }
     [HttpPost("Follow")]
     public async Task<ActionResult<ServiceResponse<int>>> FollowComic(int comicid, bool follow = true)
     {
@@ -59,5 +66,23 @@ public class UserController : ControllerBase
     public async Task<ActionResult<ServiceResponse<List<CommentDTO>>>> GetCommentsOfChapter(int chapterId, int page = 1, int size = 40)
     {
         return Ok(await _userService.GetCommentsOfChapter(chapterId, page, size));
+    }
+    [HttpPost("Update")]
+    public async Task<ActionResult<ServiceResponse<UserDTO>>> UpdateInfo(UpdateUserInfo request)
+    {
+
+        return Ok(await _userService.UpdateInfo(request));
+    }
+    [HttpPost("Update/password")]
+    public async Task<ActionResult<ServiceResponse<string>>> UpdatePassword(UpdateUserPassword request)
+    {
+
+        return Ok(await _userService.UpdatePassword(request));
+    }
+    [HttpPost("Update/avatar")]
+    public async Task<ActionResult<ServiceResponse<string>>> UpdateAvatar(IFormFile image)
+    {
+
+        return Ok(await _userService.UpdateAvatar(image));
     }
 }

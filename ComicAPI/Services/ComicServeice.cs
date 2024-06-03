@@ -40,6 +40,8 @@ public class ComicService : IComicService
         _userService = userService;
     }
 
+
+
     public async Task<ServiceResponse<ComicDTO>> GetComic(string key, int maxchapter = -1)
     {
         var data = await _comicReposibility.GetComic(key);
@@ -277,6 +279,34 @@ public class ComicService : IComicService
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(result);
 
     }
+    public List<int>? splitquery(string? query)
+    {
+        List<int> querys = new List<int>();
+        if (!string.IsNullOrEmpty(query))
+        {
+            string[] genreStrings = query.Split(',');
+            foreach (string genreString in genreStrings)
+            {
+                if (int.TryParse(genreString, out int genre))
+                {
+                    querys.Add((int)genre);
+                }
+            }
+        }
+        else
+            return null;
+        return querys;
+    }
+    public async Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance query)
+    {
+        int page = query.Page < 1 ? 1 : query.Page;
+        int step = query.Step < 1 ? 10 : query.Step;
+        var Genres = splitquery(query.Genres);
+        var Notgenres = splitquery(query.Notgenres);
 
 
+        var data = await _comicReposibility.GetComicBySearchAdvance(query.Sort, query.Status, Genres, page, step, Notgenres);
+        return ServiceUtilily.GetDataRes<ListComicDTO>(data);
+
+    }
 }
