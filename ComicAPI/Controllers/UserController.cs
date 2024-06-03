@@ -52,7 +52,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("FollowedComics")]
-    public async Task<ActionResult<ServiceResponse<List<ComicDTO>>>> GetFollowedComics(int page = 1, int size = 40)
+    public async Task<ActionResult<ServiceResponse<List<ListComicDTO>>>> GetFollowedComics(int page = 1, int size = 40)
     {
         return Ok(await _userService.GetFollowComics(page, size));
     }

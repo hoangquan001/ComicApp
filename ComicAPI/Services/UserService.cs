@@ -93,12 +93,12 @@ public class UserService : IUserService
         return await UnFollowComic(UserID, comicid);
     }
 
-    public async Task<ServiceResponse<List<ComicDTO>>> GetFollowComics(int userid, int page = 1, int step = 40)
+    public async Task<ServiceResponse<ListComicDTO>> GetFollowComics(int userid, int page = 1, int step = 40)
     {
-        List<ComicDTO>? data = await _comicReposibility.GetFollowComicsByUser(userid, page, step);
+        ListComicDTO? data = await _comicReposibility.GetUserFollowComics(userid, page, step);
         return ServiceUtilily.GetDataRes(data);
     }
-    public async Task<ServiceResponse<List<ComicDTO>>> GetFollowComics(int page = 1, int step = 40)
+    public async Task<ServiceResponse<ListComicDTO>> GetFollowComics(int page = 1, int step = 40)
     {
         return await GetFollowComics(UserID, page, step);
     }

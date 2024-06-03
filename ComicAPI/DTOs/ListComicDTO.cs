@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 public class ListComicDTO
 {
     public List<ComicDTO>? comics { get; set; }
-    int Page { get; set; }
-    int Step { get; set; }
+    public int Page { get; set; }
+    public int Step { get; set; }
     public int totalpage { get; set; }
 
 }

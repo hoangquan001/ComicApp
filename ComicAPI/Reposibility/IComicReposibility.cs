@@ -20,7 +20,7 @@ public interface IComicReposibility
     public Task<List<ComicDTO>?> SearchComicsByKeyword(string keyword);
 
     public Task<List<ComicDTO>> GetAllComics();
-    public Task<List<ComicDTO>> GetFollowComicsByUser(int userid, int page, int size);
+    public Task<ListComicDTO?> GetUserFollowComics(int userid, int page, int size);
     public Task<ListComicDTO?> GetComicBySearchAdvance(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All,
      List<int>? genres = null, int page = 1, int step = 100, List<int>? Nogenres = null);
 }
