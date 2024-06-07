@@ -8,10 +8,6 @@ namespace ComicApp.Models
 {
     public class Comic
     {
-        private ComicDbContext _dbContext;
-
-        public Comic(ComicDbContext dbContext) => _dbContext = dbContext;
-
         [Key]
         [Column("id")]
         public int ID { get; set; } // Primary Key (implicitly set by IDENTITY(1, 1))
@@ -35,20 +31,25 @@ namespace ComicApp.Models
         public string? CoverImage { get; set; }
 
         [Column("status")]
-        public int Status { get; set; } = 0;   // Enforced by data annotation check constraint
+        public int Status { get; set; } = 0;   
 
         [Column("rating")]
-        public int Rating { get; set; } = 10; // Enforced by data annotation check constraint
+        public int Rating { get; set; } = 10; 
         [Column("viewcount")]
-        public int ViewCount { get; set; } = 0; // Enforced by data annotation check constraint
+        public int ViewCount { get; set; } = 0; 
 
         [Column("createat")]
-        public DateTime CreateAt { get; set; } = DateTime.Now;
+        public DateTime CreateAt { get; set; } = DateTime.UtcNow;
 
         [Column("updateat")]
-        public DateTime UpdateAt { get; set; } = DateTime.Now;
+        public DateTime UpdateAt { get; set; } = DateTime.UtcNow;
 
-
+        [Column("numchapter")]
+        public int numchapter { get; set; }
+        
+        [Column("lastchapter")]
+        public int lastchapter { get; set; }
+        // public Chapter? LastChapter { get; set; }
         public List<Genre> Genres { get; set; } = new List<Genre>();
         public List<Chapter> Chapters { get; set; } = new List<Chapter>();
     }

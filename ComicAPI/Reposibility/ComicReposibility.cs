@@ -20,7 +20,6 @@ public class ComicReposibility : IComicReposibility
 
     public async Task<ListComicDTO?> GetComics(int page, int step, int genre = -1, ComicStatus status = ComicStatus.All, SortType sort = SortType.TopAll)
     {
-
         var data = await _dbContext.Comics
         .Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID)))
         .OrderComicByType(sort)
@@ -38,7 +37,7 @@ public class ComicReposibility : IComicReposibility
             CoverImage = x.CoverImage,
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(ch => ChapterSelector(ch)).Take(1)
+            Chapters = _dbContext.Chapters.Where(c =>c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
         })
         .Skip((page - 1) * step)
         .Take(step)
@@ -87,7 +86,7 @@ public class ComicReposibility : IComicReposibility
             CoverImage = x.CoverImage,
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            // Chapters = x.Chapters.Select(ch => ChapterSelector(ch)).ToList()
+            Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
         }).OrderBy(x => x.ID).ToListAsync();
 
 
@@ -170,7 +169,7 @@ public class ComicReposibility : IComicReposibility
             CoverImage = x.comic.CoverImage,
             ViewCount = x.comic.ViewCount,
             genres = x.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
-            // Chapters = x.comic.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).Take(1)
+            Chapters = _dbContext.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
         })
         .Skip((page - 1) * size)
         .Take(size).ToListAsync();

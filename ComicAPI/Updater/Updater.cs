@@ -8,7 +8,7 @@ namespace ComicAPI.Updater
     public static class Updater
     {
         static DateTime now = DateTime.Now;
-        static int FPS = 60;
+        // static int FPS = 60;
         static Updater()
         {
 

@@ -18,6 +18,7 @@ public class ComicDTO
     public int Rating { get; set; } = 10;// Enforced by data annotation check constraint
     public int ViewCount { get; set; } = 0; // view
     public DateTime UpdateAt { get; set; } = DateTime.Now;
+    public int NumChapter { get; set; } = 0;
     public IEnumerable<GenreLiteDTO> genres { get; set; } = [];
     public IEnumerable<object> Chapters { get; set; } = [];
     public bool IsFollow { get; set; } = false;
