@@ -43,9 +43,10 @@ CREATE TABLE COMIC (
     UpdateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     viewcount integer DEFAULT 0,
     numchapter integer NOT NULL DEFAULT 0
-    lastChapter INT
-    FOREIGN KEY (lastChapter) REFERENCES CHAPTER(ID)
+    lastchapter INT
+    FOREIGN KEY (lastchapter) REFERENCES CHAPTER(ID) ON  DELETE SET NULL
 );
+-- ALTER TABLE comic ADD  FOREIGN KEY (lastchapter) REFERENCES CHAPTER(id) ON  DELETE SET NULL
 
 CREATE TABLE USER_FOLLOW_COMIC (
   UserID INT NOT NULL,
@@ -102,6 +103,22 @@ CREATE TABLE PAGE (
   FOREIGN KEY (ChapterID) REFERENCES CHAPTER(ID)
 );
 
+CREATE TABLE COMMENT (
+  ID SERIAL PRIMARY KEY,
+  ChapterID INT NOT NULL,
+  ComicID INT NOT NULL,
+  UserID INT NOT NULL,
+  Content TEXT,
+  CommentedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  ParentCommentID INT DEFAULT NULL,
+  ReplyUserID INT DEFAULT NULL,
+  FOREIGN KEY (ChapterID) REFERENCES CHAPTER(ID),
+  FOREIGN KEY (UserID) REFERENCES _USER(ID),
+  FOREIGN KEY (ParentCommentID) REFERENCES COMMENT(ID),
+  FOREIGN KEY (ComicID) REFERENCES COMIC(ID)
+);
+
+
 CREATE TABLE IF NOT EXISTS hostcollector
 (
     id int NOT NULL,
@@ -140,7 +157,7 @@ CREATE INDEX idx_comic_genre_genre_id ON COMIC_GENRE (GenreID);
 
 CREATE INDEX idx_chapter_id ON PAGE (ChapterID);
 
-
+-- update view
 UPdate comic  set viewcount = v.view 
 from 
 (	
@@ -151,8 +168,20 @@ from
 where v.comicid = id
 
 
-select * from comic
-order by viewcount desc
+-- update lastchapter
+update comic
+set updateat = ct2.updateat,
+	numchapter = ct2.chapternumber,
+	lastchapter = ct2.id
+from 
+(
+	select ct.* from 
+	chapter ct, (select comicid, max(chapternumber) as chapternumber
+	from chapter
+	group by comicid) as maxct
+	where ct.comicid = maxct.comicid and ct.chapternumber = maxct.chapternumber
+) as ct2
+where ct2.comicid = comic.id
 
 
 INSERT INTO hostcollector
@@ -163,60 +192,3 @@ VALUES
 
 
 
--- TRIGER WHEN UPDATE CHAPTER
-CREATE OR REPLACE FUNCTION update_comic_datetime()
-RETURNS TRIGGER AS $$
-BEGIN
-    -- Update the comic DateTime to current timestamp
-    UPDATE comic
-    SET UpdateAt = CURRENT_TIMESTAMP
-    WHERE id = NEW.ComicID; -- Assuming you have a foreign key 'comic_id' in chapters referencing comics.id
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
--- Trigger to execute the update function after chapter insertion or update
-CREATE TRIGGER chapter_insert_update_trigger
-AFTER INSERT ON chapter
-FOR EACH ROW
-EXECUTE FUNCTION update_comic_datetime();
-
-
-
-CREATE TABLE COMMENT (
-  ID SERIAL PRIMARY KEY,
-  ChapterID INT NOT NULL,
-  ComicID INT NOT NULL,
-  UserID INT NOT NULL,
-  Content TEXT,
-  CommentedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  ParentCommentID INT DEFAULT NULL,
-  ReplyUserID INT DEFAULT NULL,
-  FOREIGN KEY (ChapterID) REFERENCES CHAPTER(ID),
-  FOREIGN KEY (UserID) REFERENCES _USER(ID),
-  FOREIGN KEY (ParentCommentID) REFERENCES COMMENT(ID),
-  FOREIGN KEY (ComicID) REFERENCES COMIC(ID)
-);
-
--- Update LastChapter Trigger when add new chapter.
-CREATE OR REPLACE FUNCTION update_last_chapter()
-RETURNS TRIGGER AS $$
-BEGIN
-    UPDATE COMIC
-    SET lastChapter = (
-        SELECT ID 
-        FROM CHAPTER 
-        WHERE ComicID = NEW.ComicID 
-        ORDER BY ChapterNumber DESC 
-        LIMIT 1
-    )
-    WHERE ID = NEW.ComicID;
-    RETURN NULL; -- Use NULL to indicate that this trigger does not modify the inserted row
-END;
-$$ LANGUAGE plpgsql;
-
-
-CREATE TRIGGER trg_update_last_chapter
-AFTER INSERT ON CHAPTER
-FOR EACH STATEMENT
-EXECUTE FUNCTION update_last_chapter();

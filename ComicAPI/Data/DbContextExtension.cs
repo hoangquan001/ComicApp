@@ -9,7 +9,7 @@ namespace ComicApp.Data
             switch (sortType)
             {
                 case SortType.Chapter:
-                    return query.OrderByDescending(x => x.Chapters.Count);
+                    return query.OrderByDescending(x => x.numchapter);
                 case SortType.LastUpdate:
                     return query.OrderByDescending(x => x.UpdateAt);
                 case SortType.NewComic:

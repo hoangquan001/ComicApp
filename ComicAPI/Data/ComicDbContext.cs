@@ -70,23 +70,14 @@ namespace ComicApp.Data
                 b.HasMany(x => x.Replies).WithOne().HasForeignKey(x => x.ParentCommentID);
             });
 
-
-
-            // modelBuilder.Entity<Page>(b =>
-            // {
-            //     b.ToTable("PAGE");
-            //     b.HasKey(x => x.ID);
-            // });
-
-
-
-
-            // .HasMany(e => e.genres)
-            // .WithMany(e => e.comics)
-            // .UsingEntity("Comic_Genre");
-            // modelBuilder.Entity<Comics>();
-
+            modelBuilder.HasDbFunction(() => GetLatestChapter(default))
+            .HasName("get_latest_chapter");
         }
-
+        [DbFunction("public", "get_latest_chapter")]
+        public virtual IQueryable<Chapter> GetLatestChapter(int comicId)
+        {
+            var parameter = new Npgsql.NpgsqlParameter("comic_id", comicId);
+            return this.Set<Chapter>().FromSqlRaw("SELECT * FROM get_latest_chapter(@comic_id)", parameter);
+        }
     }
 }
