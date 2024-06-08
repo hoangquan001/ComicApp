@@ -309,4 +309,10 @@ public class ComicService : IComicService
         return ServiceUtilily.GetDataRes<ListComicDTO>(data);
 
     }
+
+    public async Task<ServiceResponse<List<ComicDTO>>> GetComicRecommend()
+    {
+        var data = await _comicReposibility.GetComicRecommend();
+        return ServiceUtilily.GetDataRes<List<ComicDTO>>(data);
+    }
 }
