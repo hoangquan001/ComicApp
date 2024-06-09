@@ -65,18 +65,18 @@ public class GlobalConfig
     static Dictionary<string, string> _globalConfig = new Dictionary<string, string>();
     static GlobalConfig()
     {
-        string filePath = "ComicAPI/Properties/globalconfig.txt";
-        string[] lines = File.ReadAllLines(filePath);
-        foreach (var line in lines)
-        {
-            var parts = line.Split(new char[] { ':' }, 2);
-            if (parts.Length == 2)
-            {
-                string key = parts[0].Trim();
-                string value = parts[1].Trim();
-                _globalConfig[key] = value;
-            }
-        }
+        // string filePath = "./Properties/globalconfig.txt";
+        // string[] lines = File.ReadAllLines(filePath);
+        // foreach (var line in lines)
+        // {
+        //     var parts = line.Split(new char[] { ':' }, 2);
+        //     if (parts.Length == 2)
+        //     {
+        //         string key = parts[0].Trim();
+        //         string value = parts[1].Trim();
+        //         _globalConfig[key] = value;
+        //     }
+        // }
     }
 
     public static string GetString(string key)

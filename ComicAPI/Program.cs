@@ -58,7 +58,6 @@ builder.Services.AddAuthentication(x =>
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IComicService, ComicService>();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IDataService, DataService>();
 builder.Services.AddSingleton<ITokenMgr, TokenMgr>();
 builder.Services.AddScoped<IComicReposibility, ComicReposibility>();
 builder.Services.AddScoped<IUserReposibility, UserReposibility>();

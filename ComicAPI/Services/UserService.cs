@@ -24,7 +24,6 @@ using SixLabors.ImageSharp.Formats;
 namespace ComicApp.Services;
 public class UserService : IUserService
 {
-    readonly IDataService _dataService;
     readonly IComicReposibility _comicReposibility;
     ComicDbContext _dbContext;
     readonly ITokenMgr _tokenMgr;
@@ -47,13 +46,12 @@ public class UserService : IUserService
 
     //Contructor
     public UserService(ComicDbContext db, ITokenMgr tokenMgr, IComicReposibility comicReposibility,
-     IDataService dataService, IUserReposibility userReposibility, IMapper mapper, IWebHostEnvironment environment)
+      IUserReposibility userReposibility, IMapper mapper, IWebHostEnvironment environment)
     {
         _mapper = mapper;
         _environment = environment;
         _userReposibility = userReposibility;
         _comicReposibility = comicReposibility;
-        _dataService = dataService;
         _dbContext = db;
         _tokenMgr = tokenMgr;
 
