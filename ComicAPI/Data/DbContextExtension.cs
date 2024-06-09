@@ -13,7 +13,7 @@ namespace ComicApp.Data
                 case SortType.LastUpdate:
                     return query.OrderByDescending(x => x.UpdateAt);
                 case SortType.NewComic:
-                    return query.OrderByDescending(x => x.CreateAt).ThenBy(x => x.Chapters.Count);
+                    return query.OrderByDescending(x => x.CreateAt).ThenBy(x => x.numchapter);
                 case SortType.TopFollow:
                 case SortType.TopComment:
                 case SortType.TopDay:

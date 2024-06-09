@@ -22,21 +22,29 @@ using ComicAPI.Services;
 namespace ComicApp.Services;
 public class ComicService : IComicService
 {
-    readonly IDataService _dataService;
     readonly IComicReposibility _comicReposibility;
     readonly IMapper _mapper;
 
     readonly IUserService _userService;
 
     private static readonly HttpClient _httpClient = new HttpClient();
+    static List<int> genreWeight = new List<int>();
 
+    static ComicService()
+    {
+        for (int i = 0; i < 55; i++)
+        {
+            genreWeight.Add(1);
+        }
+        // var data = GlobalConfig.GetString("genresWeight");
+        // Console.WriteLine(data);
+    }
 
-    public ComicService(IComicReposibility comicReposibility, IMapper mapper, IDataService dataService
+    public ComicService(IComicReposibility comicReposibility, IMapper mapper
         , IUserService userService)
     {
         _comicReposibility = comicReposibility;
         _mapper = mapper;
-        _dataService = dataService;
         _userService = userService;
     }
 
@@ -54,7 +62,7 @@ public class ComicService : IComicService
 
     public async Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword)
     {
-        var data = await _dataService.GetAllComic();
+        var data = await _comicReposibility.GetAllComics();
         keyword = keyword.Replace("-", " ");
         var listkeys = SlugHelper.GetListKey(keyword);
         List<(ComicDTO comic, int count)> result = new List<(ComicDTO, int)>();
@@ -234,21 +242,22 @@ public class ComicService : IComicService
 
         return response;
     }
-
     public async Task<ServiceResponse<List<ComicDTO>>> FindSimilarComicsAsync(int id)
     {
-        var comics = await _dataService.GetAllComic();
-        var _comic = await _dataService.GetComicByID(id.ToString());
-        var _genre = _comic.genres.Select(x => x.ID);
+        var _comics = await _comicReposibility.GetAllComics();
+        var _comic = _comics.FirstOrDefault(x => x.ID == id);
+        var _genre = _comic!.genres.Select(x => x.ID);
         List<ComicDTO> result = new List<ComicDTO>();
         Dictionary<int, List<ComicDTO>> dictKey = new Dictionary<int, List<ComicDTO>>();
-        for (int i = 0; i < comics.Count; i++)
+        int minElement = Math.Min(3, _genre.Count());
+        for (int i = 0; i < _comics.Count; i++)
         {
-            var comic = comics[i];
+            var comic = _comics[i];
             if (comic.ID == id) continue;
             var genre = comic.genres.Select(x => x.ID);
-            int countElement = _genre.Intersect(genre).Count();
-            if (countElement >= 3)
+
+            int countElement = _genre.Intersect(genre).Sum(x => genreWeight[x]);
+            if (countElement >= minElement)
             {
                 if (!dictKey.ContainsKey(countElement))
                 {
@@ -265,46 +274,32 @@ public class ComicService : IComicService
             result.AddRange(dictKey[key]);
             if (result.Count > 200) break;
         }
-        Random rand = new Random();
-        //Suffle random
-        for (int i = result.Count - 1; i > 0; i--)
-        {
-            int j = rand.Next(i + 1);
-            var temp = result[i];
-            result[i] = result[j];
-            result[j] = temp;
-        }
-        result = result.Take(12).ToList();
+        ServiceUtilily.SuffleList(result);
+        result = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-2)).Take(12).ToList();
 
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(result);
 
     }
-    public List<int>? splitquery(string? query)
+    private List<int>? ParseGenreQuery(string? query)
     {
+        if (string.IsNullOrEmpty(query)) return null;
         List<int> querys = new List<int>();
-        if (!string.IsNullOrEmpty(query))
+        string[] genreStrings = query.Split(',');
+        foreach (string genreString in genreStrings)
         {
-            string[] genreStrings = query.Split(',');
-            foreach (string genreString in genreStrings)
+            if (int.TryParse(genreString, out int genre))
             {
-                if (int.TryParse(genreString, out int genre))
-                {
-                    querys.Add((int)genre);
-                }
+                querys.Add((int)genre);
             }
         }
-        else
-            return null;
         return querys;
     }
     public async Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance query)
     {
         int page = query.Page < 1 ? 1 : query.Page;
         int step = query.Step < 1 ? 10 : query.Step;
-        var Genres = splitquery(query.Genres);
-        var Notgenres = splitquery(query.Notgenres);
-
-
+        var Genres = ParseGenreQuery(query.Genres);
+        var Notgenres = ParseGenreQuery(query.Notgenres);
         var data = await _comicReposibility.GetComicBySearchAdvance(query.Sort, query.Status, Genres, page, step, Notgenres);
         return ServiceUtilily.GetDataRes<ListComicDTO>(data);
 

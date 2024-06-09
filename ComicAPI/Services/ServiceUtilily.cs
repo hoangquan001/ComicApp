@@ -5,10 +5,16 @@ using ComicApp.Models;
 
 public class ServiceUtilily
 {
+
     public static string Base64Encode(string plainText)
     {
         byte[] plainTextBytes = Encoding.UTF8.GetBytes(plainText);
         return Convert.ToBase64String(plainTextBytes);
+    }
+
+    public static string GetGlobalConfig(string base64EncodedData)
+    {
+        return Base64Decode(base64EncodedData);
     }
 
     // Hàm giải mã chuỗi Base64
@@ -37,8 +43,51 @@ public class ServiceUtilily
         return res;
 
     }
+
+    public static void SuffleList<T>(List<T> list)
+    {
+        Random rng = new Random();
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+    }
+
 }
 
+public class GlobalConfig
+{
+    static Dictionary<string, string> _globalConfig = new Dictionary<string, string>();
+    static GlobalConfig()
+    {
+        // string filePath = "./Properties/globalconfig.txt";
+        // string[] lines = File.ReadAllLines(filePath);
+        // foreach (var line in lines)
+        // {
+        //     var parts = line.Split(new char[] { ':' }, 2);
+        //     if (parts.Length == 2)
+        //     {
+        //         string key = parts[0].Trim();
+        //         string value = parts[1].Trim();
+        //         _globalConfig[key] = value;
+        //     }
+        // }
+    }
+
+    public static string GetString(string key)
+    {
+        if (!_globalConfig.ContainsKey(key))
+        {
+            return "";
+        }
+        return _globalConfig[key];
+    }
+}
 public class SlugHelper
 {
     public static string CreateSlug(string inputString, bool ignoreDot = true)
