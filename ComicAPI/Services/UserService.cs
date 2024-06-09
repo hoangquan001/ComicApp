@@ -306,7 +306,7 @@ public class UserService : IUserService
 
             var uploadsFolder = Path.Combine(_environment.ContentRootPath, "StaticFiles\\Avatarimg");
             var fileExtension = Path.GetExtension(avatar.FileName);
-            var fileName = $"{user.Email + user.ID}{fileExtension}";
+            var fileName = $"{user.Email}{fileExtension}";
             var filePath = Path.Combine(uploadsFolder, fileName);
 
             if (!Directory.Exists(uploadsFolder))
@@ -360,26 +360,7 @@ public class UserService : IUserService
                         }
                     }
 
-                    using (var croppedStream = new MemoryStream())
-                    {
-                        switch (avatar.ContentType)
-                        {
-                            case "image/jpeg":
-                                image.SaveAsJpeg(croppedStream);
-                                break;
-                            case "image/png":
-                                image.SaveAsPng(croppedStream);
-                                break;
-                            case "image/gif":
-                                image.SaveAsGif(croppedStream);
-                                break;
-                            case "image/bmp":
-                                image.SaveAsBmp(croppedStream);
-                                break;
-                        }
 
-                        response.Data = $"data:{avatar.ContentType};base64,{Convert.ToBase64String(croppedStream.ToArray())}";
-                    }
                 }
             }
 
@@ -387,7 +368,7 @@ public class UserService : IUserService
             user.UpdateAt = DateTime.UtcNow;
 
             await _dbContext.SaveChangesAsync();
-
+            response.Data = "http://localhost:5080/static/Avatarimg/" + fileName;
             response.Status = 200;
             response.Message = "Avatar updated successfully";
         }
