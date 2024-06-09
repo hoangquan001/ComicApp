@@ -331,12 +331,9 @@ public class ComicReposibility : IComicReposibility
 
         return null;
     }
-
-    public async Task<List<ComicDTO>?> GetComicRecommend()
+    private async Task<List<ComicDTO>?> _getComicRecommendFromDB()
     {
-
-        var Nogenres = new List<string> { "gender-bender","adult" ,"dam-my",
-                                        "gender-bender","shoujo-ai","shounen-ai",
+        var Nogenres = new List<string> { "gender-bender","adult" ,"dam-my","shoujo-ai","shounen-ai",
                                         "smut","soft-yaoi","soft-yuri","historial"};
 
         var comicsQuery = _dbContext.Comics.AsQueryable();
@@ -348,36 +345,48 @@ public class ComicReposibility : IComicReposibility
         var datenow = DateTime.UtcNow;
         comicsQuery = comicsQuery.Where(x => !x.Genres.Select(g => g.Slug).Any(gSlug => nogenreIds.Contains(gSlug)));
         comicsQuery = comicsQuery.Where(x => (datenow - x.UpdateAt).TotalDays <= 700
-         && x.ViewCount >= 1000000 && x.Rating > 3.75);
+         && x.ViewCount >= 1000000);
         // query number chaper>10
-        // comicsQuery=comicsQuery.Where(x=>x.numChapter>10);
-        comicsQuery = comicsQuery.Where(x => x.Chapters.Count() > 10);
-
-
+        comicsQuery = comicsQuery.Where(x => x.numchapter > 10);
         // Execute query and get data
         var data = await comicsQuery
-            .OrderBy(x => Guid.NewGuid())
-            .Select(x => new ComicDTO
-            {
-                ID = x.ID,
-                Title = x.Title,
-                OtherName = x.OtherName,
-                Author = x.Author,
-                Url = x.Url,
-                Description = x.Description,
-                Status = x.Status,
-                Rating = x.Rating,
-                UpdateAt = x.UpdateAt,
-                CoverImage = x.CoverImage,
-                ViewCount = x.ViewCount,
-                genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            })
-            .Take(50)
-            .ToListAsync();
+        .Select(x => new ComicDTO
+        {
+            ID = x.ID,
+            Title = x.Title,
+            OtherName = x.OtherName,
+            Author = x.Author,
+            Url = x.Url,
+            Description = x.Description,
+            Status = x.Status,
+            Rating = x.Rating,
+            UpdateAt = x.UpdateAt,
+            CoverImage = x.CoverImage,
+            ViewCount = x.ViewCount,
+            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+        })
+        .ToListAsync();
+        List<float> data2 = data.Select(x => (float)x.ViewCount).ToList();
+        data = ServiceUtilily.SampleList(data, data2, 50);
         if (data != null && data.Any())
         {
             return data;
         }
         return null;
+    }
+
+    public async Task<List<ComicDTO>?> GetComicRecommend()
+    {
+
+        const string cacheKey = "RECOMMEND_COMIC_KEY";
+        if (!_cache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
+        {
+            cachedData = await _getComicRecommendFromDB();
+            var cacheEntryOptions = new MemoryCacheEntryOptions()
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
+            _cache.Set(cacheKey, cachedData, cacheEntryOptions);
+        }
+
+        return cachedData!;
     }
 }

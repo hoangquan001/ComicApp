@@ -5,6 +5,7 @@ using ComicApp.Models;
 
 public class ServiceUtilily
 {
+    static Random random = new Random();
 
     public static string Base64Encode(string plainText)
     {
@@ -56,6 +57,40 @@ public class ServiceUtilily
             list[k] = list[n];
             list[n] = value;
         }
+    }
+
+    public static List<T> SampleList<T>(List<T> list, List<float> weights, int sampleSize)
+    {
+        if (list.Count != weights.Count)
+            throw new ArgumentException("The number of values must match the number of weights.");
+        List<T> sampledValues = new List<T>();
+        for (int i = 0; i < sampleSize && weights.Count > 0; i++)
+        {
+            double totalWeight = weights.Sum();
+            double rnd = random.NextDouble() * totalWeight;
+
+            double cumulativeWeight = 0.0;
+            int selectedIndex = -1;
+
+            for (int j = 0; j < weights.Count; j++)
+            {
+                cumulativeWeight += weights[j];
+                if (rnd < cumulativeWeight)
+                {
+                    selectedIndex = j;
+                    break;
+                }
+            }
+
+            if (selectedIndex != -1)
+            {
+                sampledValues.Add(list[selectedIndex]);
+                weights.RemoveAt(selectedIndex);
+                list.RemoveAt(selectedIndex);
+            }
+        }
+
+        return sampledValues;
     }
 
 }
