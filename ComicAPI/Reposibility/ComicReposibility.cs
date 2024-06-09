@@ -353,8 +353,6 @@ public class ComicReposibility : IComicReposibility
          && x.ViewCount >= 1000000);
         // query number chaper>10
         comicsQuery = comicsQuery.Where(x => x.numchapter > 10);
-
-        comicsQuery = comicsQuery.Where(x => x.numchapter > 10);
         // Execute query and get data
         var data = await comicsQuery
         .Select(x => new ComicDTO
