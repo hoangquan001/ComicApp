@@ -2,17 +2,44 @@ using ComicAPI.Enums;
 using ComicApp.Data;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.Extensions.Caching.Memory;
 
 public class ComicReposibility : IComicReposibility
 {
     private readonly ComicDbContext _dbContext;
+    private readonly IMemoryCache _cache;
 
-    public ComicReposibility(ComicDbContext dbContext)
+    public ComicReposibility(ComicDbContext dbContext, IMemoryCache cache)
     {
+        _cache = cache;
         _dbContext = dbContext;
 
     }
 
+
+
+    private async Task<int> GetComicTotalPageAsync(int genre = -1, ComicStatus status = ComicStatus.All)
+    {
+
+        string key = genre.ToString() + status.ToString();
+        if (!_cache.TryGetValue("TotalPageComicKey", out Dictionary<string, int>? cachedData))
+        {
+            cachedData = new Dictionary<string, int>();
+            var cacheEntryOptions = new MemoryCacheEntryOptions()
+                 .SetSlidingExpiration(TimeSpan.FromHours(1)); // Example: cache for 10 minutes
+            _cache.Set("TotalPageComicKey", cachedData, cacheEntryOptions);
+        }
+
+
+        if (!cachedData!.TryGetValue(key, out int totalcomic))
+        {
+            totalcomic = await _dbContext.Comics.Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID))).CountAsync();
+            cachedData.Add(key, totalcomic);
+        }
+        return totalcomic;
+
+    }
     public Comic AddComic(Comic comic)
     {
         throw new NotImplementedException();
@@ -37,14 +64,14 @@ public class ComicReposibility : IComicReposibility
             CoverImage = x.CoverImage,
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = _dbContext.Chapters.Where(c =>c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
         })
         .Skip((page - 1) * step)
         .Take(step)
         .ToListAsync();
         if (data != null)
         {
-            int totalcomic = _dbContext.Comics.Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID))).Count();
+            int totalcomic = await GetComicTotalPageAsync(genre, status);
             ListComicDTO list = new ListComicDTO
             {
                 totalpage = (int)MathF.Ceiling((float)totalcomic / step),

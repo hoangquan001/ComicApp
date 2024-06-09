@@ -29,7 +29,17 @@ public class ComicService : IComicService
     readonly IUserService _userService;
 
     private static readonly HttpClient _httpClient = new HttpClient();
+    static List<int> genreWeight = new List<int>();
 
+    static ComicService()
+    {
+        for (int i = 0; i < 55; i++)
+        {
+            genreWeight.Add(1);
+        }
+        var data = GlobalConfig.GetString("genresWeight");
+        Console.WriteLine(data);
+    }
 
     public ComicService(IComicReposibility comicReposibility, IMapper mapper, IDataService dataService
         , IUserService userService)
@@ -234,21 +244,24 @@ public class ComicService : IComicService
 
         return response;
     }
-
     public async Task<ServiceResponse<List<ComicDTO>>> FindSimilarComicsAsync(int id)
     {
+
+
         var comics = await _dataService.GetAllComic();
         var _comic = await _dataService.GetComicByID(id.ToString());
         var _genre = _comic.genres.Select(x => x.ID);
         List<ComicDTO> result = new List<ComicDTO>();
         Dictionary<int, List<ComicDTO>> dictKey = new Dictionary<int, List<ComicDTO>>();
+        int minElement = Math.Min(3, _genre.Count());
         for (int i = 0; i < comics.Count; i++)
         {
             var comic = comics[i];
             if (comic.ID == id) continue;
             var genre = comic.genres.Select(x => x.ID);
-            int countElement = _genre.Intersect(genre).Count();
-            if (countElement >= 3)
+
+            int countElement = _genre.Intersect(genre).Sum(x => genreWeight[x]);
+            if (countElement >= minElement)
             {
                 if (!dictKey.ContainsKey(countElement))
                 {
@@ -265,16 +278,8 @@ public class ComicService : IComicService
             result.AddRange(dictKey[key]);
             if (result.Count > 200) break;
         }
-        Random rand = new Random();
-        //Suffle random
-        for (int i = result.Count - 1; i > 0; i--)
-        {
-            int j = rand.Next(i + 1);
-            var temp = result[i];
-            result[i] = result[j];
-            result[j] = temp;
-        }
-        result = result.Take(12).ToList();
+        ServiceUtilily.SuffleList(result);
+        result = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-2)).Take(12).ToList();
 
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(result);
 
