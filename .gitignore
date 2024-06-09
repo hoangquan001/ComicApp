@@ -1,5 +1,4 @@
-ToolExtract/NettruyenData/*
-ComicAPI/bin/**/*
+*/[Bb]in/*
 # Build results
 */[Dd]ebug/*
 */[Dd]ebugPublic/*
