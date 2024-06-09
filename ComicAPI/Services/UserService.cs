@@ -10,15 +10,16 @@ using System.Text;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ComicAPI.Services;
-using Microsoft.Extensions.ObjectPool;
+
 using ComicAPI.DTOs;
-using Azure;
+
 using AutoMapper;
 // using static System.Net.Mime.MediaTypeNames;
 
 
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Formats;
 
 namespace ComicApp.Services;
 public class UserService : IUserService
@@ -261,82 +262,85 @@ public class UserService : IUserService
 
     public async Task<ServiceResponse<string>> UpdateAvatar(IFormFile avatar)
     {
+        var response = new ServiceResponse<string>();
+
         try
         {
-            var response = new ServiceResponse<string>();
             var user = await _userReposibility.GetUser(UserID);
             if (user == null)
             {
-                response.Status = 404;
-                response.Message = "User not found";
-                return response;
-            }
-            if (avatar == null || avatar.Length == 0)
-            {
-                response.Status = 400;
-                response.Message = "Invalid avatar file";
-                return response;
+                return new ServiceResponse<string>
+                {
+                    Status = 404,
+                    Message = "User not found"
+                };
             }
 
-            // Check file type (ensure it's an image)
+            if (avatar == null || avatar.Length == 0)
+            {
+                return new ServiceResponse<string>
+                {
+                    Status = 400,
+                    Message = "Invalid avatar file"
+                };
+            }
+
             var validImageTypes = new[] { "image/jpeg", "image/png", "image/gif", "image/bmp" };
             if (!validImageTypes.Contains(avatar.ContentType))
             {
-                response.Status = 400;
-                response.Message = "Invalid file type. Only JPEG, PNG, GIF, and BMP are allowed";
-                return response;
+                return new ServiceResponse<string>
+                {
+                    Status = 400,
+                    Message = "Invalid file type. Only JPEG, PNG, GIF, and BMP are allowed"
+                };
             }
 
-            // Check file size (3MB = 3 * 1024 * 1024 bytes)
             if (avatar.Length > 3 * 1024 * 1024)
             {
-                response.Status = 400;
-                response.Message = "File size exceeds the 3MB limit";
-                return response;
+                return new ServiceResponse<string>
+                {
+                    Status = 400,
+                    Message = "File size exceeds the 3MB limit"
+                };
             }
 
-            // Define the folder to save the uploaded avatar
-
             var uploadsFolder = Path.Combine(_environment.ContentRootPath, "StaticFiles\\Avatarimg");
-            // if (!Directory.Exists(uploadsFolder))
-            // {
-            //     Directory.CreateDirectory(uploadsFolder);
-            // }
-
-            // Define the file path for the avatar
             var fileExtension = Path.GetExtension(avatar.FileName);
-            var fileName = $"{user.Email}{fileExtension}";
+            var fileName = $"{user.Email + user.ID}{fileExtension}";
             var filePath = Path.Combine(uploadsFolder, fileName);
+
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+            }
 
             if (user.Avatar != null)
             {
-                var oldeFilePath = Path.Combine(uploadsFolder, user.Avatar);
-                if (File.Exists(oldeFilePath))
+                var oldFilePath = Path.Combine(uploadsFolder, user.Avatar);
+                if (File.Exists(oldFilePath))
                 {
-                    // Delete the existing file
-                    File.Delete(oldeFilePath);
+                    File.Delete(oldFilePath);
                 }
             }
+
             using (var memoryStream = new MemoryStream())
             {
                 await avatar.CopyToAsync(memoryStream);
                 memoryStream.Seek(0, SeekOrigin.Begin);
+
                 using (var image = await Image.LoadAsync(memoryStream))
                 {
-                    // Crop the image to 200x200 pixels from the center
-
-                    // Ensure the crop size is not larger than the image dimensions
-                    int cropWidth = Math.Min(200, image.Width);
-                    int cropHeight = Math.Min(200, image.Height);
+                    int cropbox = Math.Min(image.Height, image.Width);
+                    int cropWidth = Math.Min(cropbox, image.Width);
+                    int cropHeight = Math.Min(cropbox, image.Height);
                     int cropX = (image.Width - cropWidth) / 2;
                     int cropY = (image.Height - cropHeight) / 2;
 
                     var cropRectangle = new Rectangle(cropX, cropY, cropWidth, cropHeight);
 
-                    // Crop the image
                     image.Mutate(x => x.Crop(cropRectangle));
+                    image.Mutate(x => x.Resize(200, 200));
 
-                    // Save the cropped image
                     await using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         switch (avatar.ContentType)
@@ -355,32 +359,45 @@ public class UserService : IUserService
                                 break;
                         }
                     }
+
+                    using (var croppedStream = new MemoryStream())
+                    {
+                        switch (avatar.ContentType)
+                        {
+                            case "image/jpeg":
+                                image.SaveAsJpeg(croppedStream);
+                                break;
+                            case "image/png":
+                                image.SaveAsPng(croppedStream);
+                                break;
+                            case "image/gif":
+                                image.SaveAsGif(croppedStream);
+                                break;
+                            case "image/bmp":
+                                image.SaveAsBmp(croppedStream);
+                                break;
+                        }
+
+                        response.Data = $"data:{avatar.ContentType};base64,{Convert.ToBase64String(croppedStream.ToArray())}";
+                    }
                 }
             }
 
-            // Update the user's avatar path
             user.Avatar = fileName;
             user.UpdateAt = DateTime.UtcNow;
 
-            // Save the changes to the database
             await _dbContext.SaveChangesAsync();
 
             response.Status = 200;
             response.Message = "Avatar updated successfully";
-            response.Data = user.Avatar; // Return the new avatar path
-
-            return response;
         }
         catch (Exception ex)
         {
-            return new ServiceResponse<string>
-            {
-                Status = 500,
-                Message = ex.Message
-            };
+            response.Status = 500;
+            response.Message = ex.Message;
         }
 
-
+        return response;
     }
 
     public async Task<ServiceResponse<UserDTO>> GetMyUserInfo()

@@ -117,7 +117,7 @@ public class ComicController : ControllerBase
         var data = await _comicService.GetGenres();
         return Ok(data);
     }
-    [HttpGet("Comics/advance")]
+    [HttpGet("Comic/advance")]
 
     public async Task<ActionResult<ListComicDTO>> GetComicBySearchAdvance(
         [FromQuery] SortType sort = SortType.TopAll,
@@ -136,9 +136,13 @@ public class ComicController : ControllerBase
             queryParams.Step = step;
             queryParams.Notgenres = Nogenres;
         }
-        var data = await _comicService.GetComicBySearchAdvance(queryParams);
-        return Ok(data);
-    }
 
+        return Ok(await _comicService.GetComicBySearchAdvance(queryParams));
+    }
+    [HttpGet("Comic/recommend")]
+    public async Task<ActionResult<List<ComicDTO>>> GetComicRecommend()
+    {
+        return Ok(await _comicService.GetComicRecommend());
+    }
 
 }

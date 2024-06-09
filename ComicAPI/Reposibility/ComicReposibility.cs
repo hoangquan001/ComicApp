@@ -317,4 +317,68 @@ public class ComicReposibility : IComicReposibility
 
         return null;
     }
+
+    public async Task<List<ComicDTO>?> GetComicRecommend()
+    {
+
+
+
+        // var startTime = DateTime.Now;
+
+
+
+
+        var Nogenres = new List<string> { "gender-bender","adult" ,"dam-my",
+                                        "gender-bender","shoujo-ai","shounen-ai",
+                                        "smut","soft-yaoi","soft-yuri"};
+
+        var comicsQuery = _dbContext.Comics.AsQueryable();
+
+        // Áp dụng bộ lọc loại trừ thể loại (Nogenres)
+
+        var nogenreIds = Nogenres.ToHashSet();
+
+        comicsQuery = comicsQuery.Where(x => !x.Genres.Select(g => g.Slug).Any(gSlug => nogenreIds.Contains(gSlug)));
+        var datenow = DateTime.UtcNow;
+        comicsQuery = comicsQuery.Where(x => (datenow - x.UpdateAt).TotalDays <= 365
+         && x.ViewCount >= 100000 && x.Rating > 3.5);
+        // query number chaper>10
+        // comicsQuery=comicsQuery.Where(x=>x.numChapter>10);
+        comicsQuery = comicsQuery.Where(x => x.Chapters.Count() > 10);
+
+
+        // Execute query and get data
+        var data = await comicsQuery
+            // .OrderBy(x => Guid.NewGuid())
+            .OrderBy(x => new Random().Next())
+            .Select(x => new ComicDTO
+            {
+                ID = x.ID,
+                Title = x.Title,
+                OtherName = x.OtherName,
+                Author = x.Author,
+                Url = x.Url,
+                Description = x.Description,
+                Status = x.Status,
+                Rating = x.Rating,
+                UpdateAt = x.UpdateAt,
+                CoverImage = x.CoverImage,
+                ViewCount = x.ViewCount,
+                genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+                Chapters = x.Chapters.OrderByDescending(ch => ch.ChapterNumber).Select(ch => ChapterSelector(ch)).Take(1)
+            })
+
+            .Take(50)
+            .ToListAsync();
+
+        // var time = DateTime.Now.Subtract(startTime);
+        // Console.WriteLine("time run: " + time);
+        if (data != null && data.Any())
+        {
+            return data;
+        }
+
+
+        return null;
+    }
 }
