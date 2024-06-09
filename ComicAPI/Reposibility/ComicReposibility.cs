@@ -15,8 +15,11 @@ public class ComicReposibility : IComicReposibility
         _cache = cache;
         _dbContext = dbContext;
 
+
     }
-    private async Task<List<ComicDTO>> _getAllComicsFromDB()
+    private List<string> Nogenres = new List<string> { "gender-bender","adult" ,"dam-my",
+                                        "gender-bender","shoujo-ai","shounen-ai",
+                                        "smut","soft-yaoi","soft-yuri"}; private async Task<List<ComicDTO>> _getAllComicsFromDB()
     {
         return await _dbContext.Comics
         .Select(x => new ComicDTO
@@ -336,6 +339,8 @@ public class ComicReposibility : IComicReposibility
         var Nogenres = new List<string> { "gender-bender","adult" ,"dam-my","shoujo-ai","shounen-ai",
                                         "smut","soft-yaoi","soft-yuri","historial"};
 
+
+
         var comicsQuery = _dbContext.Comics.AsQueryable();
 
         // Áp dụng bộ lọc loại trừ thể loại (Nogenres)
@@ -347,6 +352,8 @@ public class ComicReposibility : IComicReposibility
         comicsQuery = comicsQuery.Where(x => (datenow - x.UpdateAt).TotalDays <= 700
          && x.ViewCount >= 1000000);
         // query number chaper>10
+        comicsQuery = comicsQuery.Where(x => x.numchapter > 10);
+
         comicsQuery = comicsQuery.Where(x => x.numchapter > 10);
         // Execute query and get data
         var data = await comicsQuery
@@ -364,10 +371,12 @@ public class ComicReposibility : IComicReposibility
             CoverImage = x.CoverImage,
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+
         })
         .ToListAsync();
         List<float> data2 = data.Select(x => (float)x.ViewCount).ToList();
         data = ServiceUtilily.SampleList(data, data2, 50);
+
         if (data != null && data.Any())
         {
             return data;
