@@ -1,3 +1,5 @@
+using System.Globalization;
+using System.Text;
 using ComicAPI.Enums;
 using ComicApp.Data;
 using ComicApp.Models;
@@ -83,8 +85,11 @@ public class ComicReposibility : IComicReposibility
         throw new NotImplementedException();
     }
 
-    public async Task<ListComicDTO?> GetComics(int page, int step, int genre = -1, ComicStatus status = ComicStatus.All, SortType sort = SortType.TopAll)
+    public async Task<ListComicDTO?> GetComics(int page, int step, int genre = -1, ComicStatus status = ComicStatus.All,
+     SortType sort = SortType.TopAll)
     {
+
+
         var data = await _dbContext.Comics
         .Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID)))
         .OrderComicByType(sort)
@@ -265,8 +270,31 @@ public class ComicReposibility : IComicReposibility
         return result;
     }
 
+
+    public static string RemoveDiacritics(string text)
+    {
+        while (text.IndexOf("  ") != -1) // kiểm tra xem có dấu 2 dấu cách nào liền nhau hay không
+        {
+            // thực hiện câu lệnh trong vòng lặp này chứng tỏ là có 2 dấu cách liền nhau
+            text = text.Remove(text.IndexOf("  "), 1); // loại bỏ đi 1 trong 2 dấu cách
+        }
+        var normalizedString = text.Normalize(NormalizationForm.FormD);
+        var stringBuilder = new StringBuilder();
+
+        foreach (var c in normalizedString)
+        {
+            var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+            if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+            {
+                stringBuilder.Append(c);
+            }
+        }
+
+        return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+    }
+
     public async Task<ListComicDTO?> GetComicBySearchAdvance(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All,
-     List<int>? genres = null, int page = 1, int step = 100, List<int>? Nogenres = null)
+     List<int>? genres = null, int page = 1, int step = 100, List<int>? Nogenres = null, int? year = null, string? keyword = null)
     {
 
 
@@ -275,12 +303,16 @@ public class ComicReposibility : IComicReposibility
 
         var comicsQuery = _dbContext.Comics.AsQueryable();
 
-        // Áp dụng bộ lọc trạng thái
+
+
         if (status != ComicStatus.All)
         {
             comicsQuery = comicsQuery.Where(x => x.Status == (int)status);
         }
-
+        if (year > -1)
+        {
+            comicsQuery = comicsQuery.Where(x => (int)x.UpdateAt.Year == (int)year);
+        }
         // Áp dụng bộ lọc thể loại (genres)
         if (!genres.Contains(-1))
         {
@@ -294,6 +326,14 @@ public class ComicReposibility : IComicReposibility
             var nogenreIds = Nogenres.ToHashSet();
             comicsQuery = comicsQuery.Where(x => !x.Genres.Select(g => g.ID).Any(gId => nogenreIds.Contains(gId)));
         }
+        if (!string.IsNullOrEmpty(keyword))
+        {
+            keyword = RemoveDiacritics(keyword).ToLower();
+            comicsQuery = comicsQuery.Where(comic =>
+                comic.Url.ToLower().Contains(RemoveDiacritics(keyword).Trim().ToLower().Replace(" ", "-"))
+                );
+        }
+
 
         // Execute query and get data
         var data = await comicsQuery
@@ -319,8 +359,10 @@ public class ComicReposibility : IComicReposibility
             .ToListAsync();
 
         // Get total count
-        var totalComics = await comicsQuery.CountAsync();
 
+        // Get total count
+        var totalComics = await comicsQuery.CountAsync();
+        Console.WriteLine(data);
         if (data != null && data.Any())
         {
             ListComicDTO list = new ListComicDTO
@@ -396,4 +438,6 @@ public class ComicReposibility : IComicReposibility
 
         return cachedData!;
     }
+
+
 }

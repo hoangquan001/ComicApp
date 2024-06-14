@@ -125,17 +125,22 @@ public class ComicController : ControllerBase
         [FromQuery] string? genres = null,
         [FromQuery] int page = 1,
         [FromQuery] int step = 100,
-        [FromQuery] string? Nogenres = null)
+        [FromQuery] string? nogenres = null,
+        [FromQuery] int? year = null,
+        [FromQuery] string keyword = ""
+        )
     {
-        ComicQuerySearchAdvance queryParams = new ComicQuerySearchAdvance();
+        ComicQuerySearchAdvance queryParams = new ComicQuerySearchAdvance
         {
-            queryParams.Sort = sort;
-            queryParams.Status = status;
-            queryParams.Genres = genres;
-            queryParams.Page = page;
-            queryParams.Step = step;
-            queryParams.Notgenres = Nogenres;
-        }
+            Sort = sort,
+            Status = status,
+            Genres = genres,
+            Page = page,
+            Step = step,
+            Notgenres = nogenres,
+            Year = year,
+            Keyword = keyword
+        };
 
         return Ok(await _comicService.GetComicBySearchAdvance(queryParams));
     }

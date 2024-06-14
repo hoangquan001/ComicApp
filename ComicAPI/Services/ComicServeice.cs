@@ -59,10 +59,8 @@ public class ComicService : IComicService
         }
         return ServiceUtilily.GetDataRes<ComicDTO>(data);
     }
-
-    public async Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword)
+    private List<ComicDTO> GetComicByKeyword(List<ComicDTO> data, string keyword)
     {
-        var data = await _comicReposibility.GetAllComics();
         keyword = keyword.Replace("-", " ");
         var listkeys = SlugHelper.GetListKey(keyword);
         List<(ComicDTO comic, int count)> result = new List<(ComicDTO, int)>();
@@ -112,7 +110,14 @@ public class ComicService : IComicService
         }
         result.Sort((x, y) => y.count.CompareTo(x.count));
         List<ComicDTO> result2 = result.Take(5).Select(x => x.comic).ToList();
-        return ServiceUtilily.GetDataRes<List<ComicDTO>>(result2);
+        return result2;
+    }
+    public async Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword)
+    {
+        var data = await _comicReposibility.GetAllComics();
+        var result = GetComicByKeyword(data, keyword);
+        return ServiceUtilily.GetDataRes<List<ComicDTO>>(result);
+
     }
 
 
@@ -296,11 +301,13 @@ public class ComicService : IComicService
     }
     public async Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance query)
     {
+
+
         int page = query.Page < 1 ? 1 : query.Page;
         int step = query.Step < 1 ? 10 : query.Step;
         var Genres = ParseGenreQuery(query.Genres);
         var Notgenres = ParseGenreQuery(query.Notgenres);
-        var data = await _comicReposibility.GetComicBySearchAdvance(query.Sort, query.Status, Genres, page, step, Notgenres);
+        var data = await _comicReposibility.GetComicBySearchAdvance(query.Sort, query.Status, Genres, page, step, Notgenres, query.Year, query.Keyword);
         return ServiceUtilily.GetDataRes<ListComicDTO>(data);
 
     }
