@@ -21,7 +21,8 @@ public class ComicReposibility : IComicReposibility
     }
     private List<string> Nogenres = new List<string> { "gender-bender","adult" ,"dam-my",
                                         "gender-bender","shoujo-ai","shounen-ai",
-                                        "smut","soft-yaoi","soft-yuri"}; private async Task<List<ComicDTO>> _getAllComicsFromDB()
+                                        "smut","soft-yaoi","soft-yuri"};
+    private async Task<List<ComicDTO>> _getAllComicsFromDB()
     {
         return await _dbContext.Comics
         .Select(x => new ComicDTO
@@ -149,11 +150,9 @@ public class ComicReposibility : IComicReposibility
     {
         throw new NotImplementedException();
     }
-
-    public async Task<ComicDTO?> GetComic(string key)
+    private async Task<ComicDTO?> _getComicFromDB(string key)
     {
         bool isID = int.TryParse(key, out int id2);
-
         var data = await _dbContext.Comics
         .Where(x => isID ? x.ID == id2 : x.Url == key)
         .Select(x => new ComicDTO
@@ -176,6 +175,21 @@ public class ComicReposibility : IComicReposibility
         .FirstOrDefaultAsync();
 
         return data;
+
+    }
+
+    public async Task<ComicDTO?> GetComic(string key)
+    {
+        string keysave = string.Format("comic-{0}", key);
+        if (!_cache.TryGetValue(keysave, out ComicDTO? cachedData))
+        {
+            cachedData = await _getComicFromDB(key); ;
+            var cacheEntryOptions = new MemoryCacheEntryOptions()
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Example: cache for 10 minutes
+            _cache.Set(keysave, cachedData, cacheEntryOptions);
+        }
+        return cachedData;
+
     }
 
     public async Task<Chapter?> GetChapter(int chapter_id)
