@@ -309,7 +309,7 @@ public class ComicReposibility : IComicReposibility
         {
             comicsQuery = comicsQuery.Where(x => x.Status == (int)status);
         }
-        if (year > -1)
+        if (year > 0)
         {
             comicsQuery = comicsQuery.Where(x => (int)x.UpdateAt.Year == (int)year);
         }
