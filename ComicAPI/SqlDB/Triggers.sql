@@ -45,3 +45,20 @@ FOR EACH ROW
 EXECUTE FUNCTION update_comic_after_delete_chapters();
 
 --END-----------------------------CHAPTER--------------------------------
+
+
+--BEGIN-------------------------------NOTIFY--------------------------------
+-- Trigger to notify users after inserting a new chapter
+CREATE TRIGGER after_insert_chapter_notify
+AFTER INSERT ON CHAPTER
+FOR EACH ROW
+EXECUTE FUNCTION notify_users_of_comic_update();
+
+
+-- Trigger to remove notifications after deleting a chapter
+CREATE TRIGGER after_delete_chapter_remove_notify
+AFTER DELETE ON CHAPTER
+FOR EACH ROW
+EXECUTE FUNCTION remove_notifications_on_chapter_delete();
+
+--END-----------------------------NOTIFY--------------------------------

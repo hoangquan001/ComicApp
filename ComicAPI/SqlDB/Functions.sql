@@ -49,3 +49,46 @@ BEGIN
     WHERE Comic.id = NEW.ComicID;
 END;
 $$ LANGUAGE plpgsql;
+
+
+--BEGIN-------------------------------NOTIFY--------------------------------
+-- Function to delete notifications when a chapter is deleted
+
+-- Function to create notifications for users following a comic
+CREATE OR REPLACE FUNCTION notify_users_of_comic_update()
+RETURNS TRIGGER AS $$
+DECLARE
+    user RECORD;
+BEGIN
+    FOR user IN
+        SELECT UserID
+        FROM USER_FOLLOW_COMIC
+        WHERE ComicID = NEW.ComicID
+    LOOP
+        INSERT INTO NOTIFICATIONS (UserID, ComicID, NotificationContent)
+        VALUES (
+            user.UserID,
+            NEW.ComicID,
+            'The comic "' || (SELECT Title FROM COMIC WHERE ID = NEW.ComicID) || '" has a new chapter: ' || NEW.Title
+        );
+    END LOOP;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION remove_notifications_on_chapter_delete()
+RETURNS TRIGGER AS $$
+BEGIN
+    DELETE FROM NOTIFICATIONS
+    WHERE ComicID = OLD.ComicID
+      AND NotificationContent LIKE '%' || OLD.Title || '%';
+
+    RETURN OLD;
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+--END-----------------------------NOTIFY--------------------------------

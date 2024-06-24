@@ -1,4 +1,5 @@
 // generate data context 
+using ComicAPI.Models;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -22,6 +23,7 @@ namespace ComicApp.Data
         public DbSet<UserFollowComic> UserFollowComics => Set<UserFollowComic>();
         public DbSet<Chapter> Chapters => Set<Chapter>();
         public DbSet<Comment> Comments => Set<Comment>();
+        public DbSet<UserNotification> Notifications => Set<UserNotification>();
         // public DbSet<Page> Pages => Set<Page>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -70,8 +72,18 @@ namespace ComicApp.Data
                 b.HasMany(x => x.Replies).WithOne().HasForeignKey(x => x.ParentCommentID);
             });
 
+            modelBuilder.Entity<UserNotification>(b =>
+            {
+                b.ToTable("notifications");
+                b.HasKey(x => new { x.ID });
+                b.HasOne(x => x.user).WithMany().HasForeignKey(x => x.UserID);
+
+                b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.ComicID);
+            });
+
             modelBuilder.HasDbFunction(() => GetLatestChapter(default))
             .HasName("get_latest_chapter");
+
         }
         [DbFunction("public", "get_latest_chapter")]
         public virtual IQueryable<Chapter> GetLatestChapter(int comicId)

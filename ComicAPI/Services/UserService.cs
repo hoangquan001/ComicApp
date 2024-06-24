@@ -267,11 +267,9 @@ public class UserService : IUserService
             var user = await _userReposibility.GetUser(UserID);
             if (user == null)
             {
-                return new ServiceResponse<string>
-                {
-                    Status = 404,
-                    Message = "User not found"
-                };
+                response.Status = 404;
+                response.Message = "User not found";
+                return response;
             }
 
             if (avatar == null || avatar.Length == 0)
@@ -286,20 +284,16 @@ public class UserService : IUserService
             var validImageTypes = new[] { "image/jpeg", "image/png", "image/gif", "image/bmp" };
             if (!validImageTypes.Contains(avatar.ContentType))
             {
-                return new ServiceResponse<string>
-                {
-                    Status = 400,
-                    Message = "Invalid file type. Only JPEG, PNG, GIF, and BMP are allowed"
-                };
+                response.Status = 400;
+                response.Message = "Invalid file type. Only JPEG, PNG, GIF, and BMP are allowed";
+                return response;
             }
 
             if (avatar.Length > 3 * 1024 * 1024)
             {
-                return new ServiceResponse<string>
-                {
-                    Status = 400,
-                    Message = "File size exceeds the 3MB limit"
-                };
+                response.Status = 400;
+                response.Message = "File size exceeds the 3MB limit";
+                return response;
             }
 
             var uploadsFolder = Path.Combine(_environment.ContentRootPath, "StaticFiles\\Avatarimg");
@@ -392,6 +386,23 @@ public class UserService : IUserService
 
         response.Status = 200;
         response.Data = _mapper.Map<UserDTO>(user); // Return the user
+        return response;
+    }
+
+    public async Task<ServiceResponse<List<UserNotificationDTO>>> GetUserNotify()
+    {
+
+        var response = new ServiceResponse<List<UserNotificationDTO>>();
+        var notifys = await _userReposibility.GetUserNotify(UserID);
+        if (notifys == null)
+        {
+            response.Status = 404;
+            response.Message = "User not found";
+            return response;
+        }
+
+        response.Status = 200;
+        response.Data = notifys;
         return response;
     }
 }

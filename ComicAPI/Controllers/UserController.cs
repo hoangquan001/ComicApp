@@ -85,4 +85,10 @@ public class UserController : ControllerBase
 
         return Ok(await _userService.UpdateAvatar(image));
     }
+    [HttpGet("Notify")]
+    public async Task<ActionResult<ServiceResponse<List<UserNotificationDTO>>>> GetUserNotify()
+    {
+
+        return Ok(await _userService.GetUserNotify());
+    }
 }

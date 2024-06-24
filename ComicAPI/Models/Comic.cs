@@ -31,12 +31,12 @@ namespace ComicApp.Models
         public string? CoverImage { get; set; }
 
         [Column("status")]
-        public int Status { get; set; } = 0;   
+        public int Status { get; set; } = 0;
 
         [Column("rating")]
-        public int Rating { get; set; } = 10; 
+        public int Rating { get; set; } = 10;
         [Column("viewcount")]
-        public int ViewCount { get; set; } = 0; 
+        public int ViewCount { get; set; } = 0;
 
         [Column("createat")]
         public DateTime CreateAt { get; set; } = DateTime.UtcNow;
@@ -46,7 +46,7 @@ namespace ComicApp.Models
 
         [Column("numchapter")]
         public int numchapter { get; set; }
-        
+
         [Column("lastchapter")]
         public int lastchapter { get; set; }
         // public Chapter? LastChapter { get; set; }

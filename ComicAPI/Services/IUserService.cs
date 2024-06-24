@@ -24,6 +24,7 @@ public interface IUserService
     Task<ServiceResponse<UserDTO>> UpdateInfo(UpdateUserInfo request);
     Task<ServiceResponse<string>> UpdatePassword(UpdateUserPassword request);
     Task<ServiceResponse<string>> UpdateAvatar(IFormFile avatar);
+    Task<ServiceResponse<List<UserNotificationDTO>>> GetUserNotify();
 
 
 }
