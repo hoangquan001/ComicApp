@@ -69,7 +69,7 @@ BEGIN
         VALUES (
             user_id,
             NEW.ComicID,
-            'The comic "' || comic.Title || '" has a new chapter: ' || NEW.Title,
+            'Truyện "' || comic.Title || '" ra chap mới: ' || NEW.Title,
             comic.CoverImage,
             comic.URLComic,
             NEW.ID,
