@@ -54,6 +54,7 @@ namespace ComicAPI.Reposibility
         {
             var notifys = await _dbContext.Notifications
             .Where(x => x.UserID == userid)
+            .OrderByDescending(x => x.NotificationTimestamp)
             .Select(n => new UserNotificationDTO
             {
                 ID = n.ID,
@@ -62,22 +63,11 @@ namespace ComicAPI.Reposibility
                 NotificationContent = n.NotificationContent,
                 NotificationTimestamp = n.NotificationTimestamp,
                 IsRead = n.IsRead,
-                comic = _dbContext.Comics.Where(c => c.ID == n.ComicID).Select(x => new ComicDTO
-                {
-                    ID = x.ID,
-                    Title = x.Title,
-                    OtherName = x.OtherName,
-                    Author = x.Author,
-                    Url = x.Url,
-                    Description = x.Description,
-                    Status = x.Status,
-                    Rating = x.Rating,
-                    UpdateAt = x.UpdateAt,
-                    CoverImage = x.CoverImage,
-                    ViewCount = x.ViewCount,
-                    genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-                    Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
-                }).FirstOrDefault()
+                CoverImage = n.CoverImage,
+                URLComic = n.URLComic,
+                lastchapter = n.lastchapter,
+                URLChapter = n.URLChapter
+
             })
             .Take(10)
             .ToListAsync();

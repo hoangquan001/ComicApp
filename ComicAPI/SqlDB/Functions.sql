@@ -78,17 +78,6 @@ END;
 $$ LANGUAGE plpgsql;
 
 
-CREATE OR REPLACE FUNCTION remove_notifications_on_chapter_delete()
-RETURNS TRIGGER AS $$
-BEGIN
-    DELETE FROM NOTIFICATIONS
-    WHERE ComicID = OLD.ComicID
-      AND NotificationContent LIKE '%' || OLD.Title || '%';
-
-    RETURN OLD;
-END;
-$$ LANGUAGE plpgsql;
-
 
 
 --END-----------------------------NOTIFY--------------------------------

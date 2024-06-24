@@ -74,11 +74,8 @@ namespace ComicApp.Data
 
             modelBuilder.Entity<UserNotification>(b =>
             {
-                b.ToTable("notifications");
+                b.ToTable("user_notification");
                 b.HasKey(x => new { x.ID });
-                b.HasOne(x => x.user).WithMany().HasForeignKey(x => x.UserID);
-
-                b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.ComicID);
             });
 
             modelBuilder.HasDbFunction(() => GetLatestChapter(default))

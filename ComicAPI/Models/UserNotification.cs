@@ -23,9 +23,15 @@ namespace ComicAPI.Models
         public DateTime NotificationTimestamp { get; set; } = DateTime.UtcNow;
         [Column("isread")]
         public Boolean IsRead { get; set; } = false;
+        [Column("coverimage")]
+        public string CoverImage { get; set; } = string.Empty;
+        [Column("urlcomic")]
+        public string URLComic { get; set; } = string.Empty;
+        [Column("lastchapter")]
+        public int? lastchapter { get; set; }
+        [Column("urlchapter")]
+        public string URLChapter { get; set; } = string.Empty;
 
-        public Comic? comic { get; set; }
-        public User? user;
 
     }
 }

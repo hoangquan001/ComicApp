@@ -138,14 +138,18 @@ CREATE TABLE IF NOT EXISTS chaptermapping
     CONSTRAINT chaptermapping_pkey PRIMARY KEY (comic_slug, chapter_slug),
     CONSTRAINT fk_hostid FOREIGN KEY (hostid) REFERENCES hostcollector (id)
 )
--- Create the NOTIFICATIONS table
-CREATE TABLE IF NOT EXISTS NOTIFICATIONS (
+-- Create the USER NOTIFICATION table
+CREATE TABLE IF NOT EXISTS USER_NOTIFICATION (
     ID SERIAL PRIMARY KEY,
     UserID INT NOT NULL,
     ComicID INT NOT NULL,
-    NotificationContent TEXT NOT NULL,
+    NotificationContent VARCHAR(255) NOT NULL,
     NotificationTimestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     IsRead BOOLEAN NOT NULL DEFAULT FALSE,
+	  CoverImage VARCHAR(255),
+	  URLComic VARCHAR(255) NOT NULL,
+	  lastchapter INT,
+	  URLChapter VARCHAR(255) NOT NULL,
     FOREIGN KEY (UserID) REFERENCES _USER(ID),
     FOREIGN KEY (ComicID) REFERENCES COMIC(ID)
 );
@@ -170,8 +174,8 @@ CREATE INDEX idx_comic_genre_genre_id ON COMIC_GENRE (GenreID);
 
 CREATE INDEX idx_chapter_id ON PAGE (ChapterID);
 
-CREATE INDEX idx_notifications_comic_id ON NOTIFICATIONS (UserID);
-CREATE INDEX idx_notifications_genre_id ON NOTIFICATIONS (ComicID);
+CREATE INDEX idx_notifications_comic_id ON USER_NOTIFICATION (UserID);
+CREATE INDEX idx_notifications_genre_id ON USER_NOTIFICATION (ComicID);
 
 -- update view
 UPdate comic  set viewcount = v.view 

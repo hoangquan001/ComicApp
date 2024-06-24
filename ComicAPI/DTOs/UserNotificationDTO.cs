@@ -22,7 +22,9 @@ namespace ComicAPI.DTOs
 
         public Boolean IsRead { get; set; } = false;
 
-        public ComicDTO? comic { get; set; }
-        public UserDTO? user;
+        public string CoverImage { get; set; } = string.Empty;
+        public string URLComic { get; set; } = string.Empty;
+        public int? lastchapter { get; set; }
+        public string URLChapter { get; set; } = string.Empty;
     }
 }
