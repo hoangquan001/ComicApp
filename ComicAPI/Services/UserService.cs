@@ -445,6 +445,31 @@ public class UserService : IUserService
     public async Task<ServiceResponse<string>> DeleteUserNotify(int? idNotify)
     {
 
-        throw new NotImplementedException();
+        var response = new ServiceResponse<string>();
+
+
+
+        if (idNotify == -1)
+        {
+
+            var notify = await _dbContext.Notifications
+               .Where(n => n.UserID == UserID)
+               .ExecuteDeleteAsync(); // Kiểm tra xem notification có tồn tại hay không    
+            await _dbContext.SaveChangesAsync();
+            response.Status = 200;
+            response.Message = "Notification has been deleted";
+        }
+        else
+        {
+            var notify = await _dbContext.Notifications
+                .Where(n => n.ID == idNotify && n.UserID == UserID)
+                .ExecuteDeleteAsync(); // Kiểm tra xem notification có tồn tại hay không    
+            await _dbContext.SaveChangesAsync();
+            response.Status = 200;
+            response.Message = "Notification has been deleted";
+        }
+
+
+        return response;
     }
 }
