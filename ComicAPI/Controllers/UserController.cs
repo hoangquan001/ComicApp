@@ -91,4 +91,20 @@ public class UserController : ControllerBase
 
         return Ok(await _userService.GetUserNotify());
     }
+    [HttpPost("Notify/update")]
+    public async Task<ActionResult<ServiceResponse<string>>> UpdateUserNotify(
+       UpdateUserNotifyDTO notify)
+    {
+
+        var result = await _userService.UpdateUserNotify(notify.ID, notify.IsRead);
+        return Ok(result);
+    }
+    [HttpDelete("Notify/delete/{notifyID}")]
+    public async Task<ActionResult<ServiceResponse<string>>> DeleteUserNotify(
+     int? notifyID)
+    {
+        Console.WriteLine($"{notifyID},isread123"); // Optional: Log the received isRead value for debugging
+        var result = await _userService.DeleteUserNotify(notifyID);
+        return Ok(result);
+    }
 }

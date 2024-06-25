@@ -22,7 +22,7 @@ namespace ComicAPI.Models
         [Column("notificationtimestamp")]
         public DateTime NotificationTimestamp { get; set; } = DateTime.UtcNow;
         [Column("isread")]
-        public Boolean IsRead { get; set; } = false;
+        public bool IsRead { get; set; } = false;
         [Column("coverimage")]
         public string CoverImage { get; set; } = string.Empty;
         [Column("urlcomic")]

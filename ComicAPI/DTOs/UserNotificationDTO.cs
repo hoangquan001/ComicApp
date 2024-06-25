@@ -20,9 +20,20 @@ namespace ComicAPI.DTOs
 
         public DateTime NotificationTimestamp { get; set; } = DateTime.UtcNow;
 
-        public Boolean IsRead { get; set; } = false;
+        public bool IsRead { get; set; } = false;
 
-        public string CoverImage { get; set; } = string.Empty;
+        private string? _CoverImage;
+        public string? CoverImage
+        {
+            get
+            {
+                return _CoverImage;
+            }
+            set
+            {
+                _CoverImage = "http://localhost:5080/static/CoverImg/" + value;
+            }
+        }
         public string URLComic { get; set; } = string.Empty;
         public int? lastchapter { get; set; }
         public string URLChapter { get; set; } = string.Empty;

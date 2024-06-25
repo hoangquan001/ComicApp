@@ -78,6 +78,5 @@ namespace ComicAPI.Reposibility
             return notifys;
         }
 
-
     }
 }

@@ -405,4 +405,46 @@ public class UserService : IUserService
         response.Data = notifys;
         return response;
     }
+    public async Task<ServiceResponse<string>> UpdateUserNotify(int? idNotify, bool? isRead = null)
+    {
+
+        var response = new ServiceResponse<string>();
+
+        if (idNotify == null)
+        {
+            // Đánh dấu tất cả thông báo là đã đọc
+            var notifys = await _dbContext.Notifications.ToListAsync();
+            notifys.ForEach(n => n.IsRead = true);
+            await _dbContext.SaveChangesAsync();
+
+            response.Status = 200;
+            response.Message = "All notifications have been marked as read";
+        }
+        else
+        {
+            var notify = await _dbContext.Notifications
+                .Where(n => n.ID == idNotify && n.UserID == UserID)
+                .FirstOrDefaultAsync();
+
+            if (notify == null)
+            {
+                response.Status = 404;
+                response.Message = "Notification not found";
+            }
+            else
+            {
+                notify.IsRead = isRead ?? true;
+                await _dbContext.SaveChangesAsync();
+                response.Status = 200;
+                response.Message = "Notification has been marked as read";
+            }
+        }
+
+        return response;
+    }
+    public async Task<ServiceResponse<string>> DeleteUserNotify(int? idNotify)
+    {
+
+        throw new NotImplementedException();
+    }
 }
