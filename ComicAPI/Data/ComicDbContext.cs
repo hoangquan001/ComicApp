@@ -47,7 +47,7 @@ namespace ComicApp.Data
                 b.HasKey(x => x.ID);
                 b.HasMany(e => e.Genres).WithMany().UsingEntity<ComicGenre>();
                 b.HasMany(e => e.Chapters).WithOne().HasForeignKey(x => x.ComicID);
-                b.HasQueryFilter(x => !(x.UpdateAt < new DateTime(2018, 1, 1).ToUniversalTime() && x.Chapters.Count < 15));
+                // b.HasQueryFilter(x => !(x.UpdateAt < new DateTime(2018, 1, 1).ToUniversalTime() && x.Chapters.Count < 15));
             });
             modelBuilder.Entity<ComicGenre>(b =>
             {

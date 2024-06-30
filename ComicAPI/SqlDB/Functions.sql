@@ -7,13 +7,14 @@ RETURNS TABLE (
     ChapterNumber INT,
     URL VARCHAR,
     ViewCount INT,
-    UpdateAt TIMESTAMP
+    UpdateAt TIMESTAMP,
+    Pages TEXT
 ) AS $$
 BEGIN
     RETURN QUERY
     SELECT *
     FROM CHAPTER
-    WHERE ComicID = comic_id
+    WHERE CHAPTER.ComicID = comic_id
     ORDER BY ChapterNumber DESC
     LIMIT 1;
 END;

@@ -429,7 +429,7 @@ public class ComicReposibility : IComicReposibility
         })
         .ToListAsync();
         List<float> data2 = data.Select(x => (float)x.ViewCount).ToList();
-        data = ServiceUtilily.SampleList(data, data2, 50);
+        data = ServiceUtilily.SampleList(data, data2, 30);
 
         if (data != null && data.Any())
         {
