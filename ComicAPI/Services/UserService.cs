@@ -414,6 +414,12 @@ public class UserService : IUserService
         {
             // Đánh dấu tất cả thông báo là đã đọc
             var notifys = await _dbContext.Notifications.ToListAsync();
+            if (notifys == null)
+            {
+                response.Status = 404;
+                response.Message = "Notifications not found";
+                return response;
+            }
             notifys.ForEach(n => n.IsRead = true);
             await _dbContext.SaveChangesAsync();
 
