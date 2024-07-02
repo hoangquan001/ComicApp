@@ -61,7 +61,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddSingleton<ITokenMgr, TokenMgr>();
 builder.Services.AddScoped<IComicReposibility, ComicReposibility>();
 builder.Services.AddScoped<IUserReposibility, UserReposibility>();
-// builder.Services.AddSingleton<IComicCacheReposibility, ComicCacheReposibility>();
+builder.Services.AddHostedService<ComicUpdater>();
 
 
 builder.Services.AddSwaggerGen(c =>
@@ -144,9 +144,5 @@ app.Use((context, next) =>
 
 app.UseAuthorization();
 app.MapControllers();
-// app.MapFallbackToFile("index.html");
-
-// Task task1 =  Updater.Update();
-
 app.Run();
 
