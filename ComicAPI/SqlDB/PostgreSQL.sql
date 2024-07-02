@@ -103,6 +103,24 @@ CREATE TABLE PAGE (
   ImageURL VARCHAR(255),  -- URL for the page image
   FOREIGN KEY (ChapterID) REFERENCES CHAPTER(ID)
 );
+CREATE TABLE DAILY_COMIC_VIEWS (
+    ComicID INT NOT NULL,
+    ViewDate DATE NOT NULL,
+    ViewCount INT NOT NULL DEFAULT 0,
+    PRIMARY KEY (ComicID, ViewDate),
+    FOREIGN KEY (ComicID) REFERENCES COMIC(ID)
+);
+-- SELECT ComicID, ViewDate, ViewCount
+-- FROM DAILY_COMIC_VIEWS
+-- WHERE ViewDate = CURRENT_DATE;
+-- SELECT ComicID, DATE_TRUNC('week', ViewDate) as ViewWeek, SUM(ViewCount) as ViewCount
+-- FROM DAILY_COMIC_VIEWS
+-- WHERE ViewDate >= CURRENT_DATE - INTERVAL '1 week'
+-- GROUP BY ComicID, DATE_TRUNC('week', ViewDate);
+-- SELECT ComicID, DATE_TRUNC('month', ViewDate) as ViewMonth, SUM(ViewCount) as ViewCount
+-- FROM DAILY_COMIC_VIEWS
+-- WHERE ViewDate >= CURRENT_DATE - INTERVAL '1 month'
+-- GROUP BY ComicID, DATE_TRUNC('month', ViewDate);
 
 CREATE TABLE COMMENT (
   ID SERIAL PRIMARY KEY,

@@ -1,3 +1,5 @@
+-- ResetChapterID
+SELECT SETVAL('chapter_id_seq', (SELECT MAX(id) FROM chapter));
 -----GetLastChapter------
 CREATE OR REPLACE FUNCTION get_latest_chapter(comic_id INT)
 RETURNS TABLE (
@@ -48,6 +50,15 @@ BEGIN
         numchapter = lc.chapterNumber
     from get_latest_chapter(NEW.ComicID) as lc 
     WHERE Comic.id = NEW.ComicID;
+
+    UPDATE comic  set viewcount = v.view 
+    from 
+    (	
+        select comicid, sum(ct.viewcount) as view
+        from  chapter ct 
+        group by comicid
+    )as v
+    where v.comicid = id
 END;
 $$ LANGUAGE plpgsql;
 

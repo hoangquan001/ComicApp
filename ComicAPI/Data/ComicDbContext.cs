@@ -23,6 +23,7 @@ namespace ComicApp.Data
         public DbSet<UserFollowComic> UserFollowComics => Set<UserFollowComic>();
         public DbSet<Chapter> Chapters => Set<Chapter>();
         public DbSet<Comment> Comments => Set<Comment>();
+        public DbSet<DailyComicView> DailyComicViews => Set<DailyComicView>();
         public DbSet<UserNotification> Notifications => Set<UserNotification>();
         // public DbSet<Page> Pages => Set<Page>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -78,6 +79,16 @@ namespace ComicApp.Data
                 b.HasKey(x => new { x.ID });
             });
 
+            modelBuilder.Entity<DailyComicView> (b => 
+            {
+                
+                b.ToTable("daily_comic_view")
+                .HasKey(x => new { x.ComicID, x.ViewDate });
+                b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.ComicID);
+            }
+            );
+
+                
             modelBuilder.HasDbFunction(() => GetLatestChapter(default))
             .HasName("get_latest_chapter");
 
