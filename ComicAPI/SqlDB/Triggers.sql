@@ -127,8 +127,8 @@ RETURNS TRIGGER AS $$
 DECLARE
     avg_rating NUMERIC;
 BEGIN
-    -- Tính điểm trung bình rating cho comic
-    SELECT AVG(VotePoint) INTO avg_rating
+    -- Tính điểm trung bình rating cho comic và làm tròn tới thập phân thứ nhất
+    SELECT ROUND(AVG(VotePoint), 1) INTO avg_rating
     FROM USER_VOTE_COMIC
     WHERE ComicID = COALESCE(NEW.ComicID, OLD.ComicID);
 

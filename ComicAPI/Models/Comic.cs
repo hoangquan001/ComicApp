@@ -34,7 +34,7 @@ namespace ComicApp.Models
         public int Status { get; set; } = 0;
 
         [Column("rating")]
-        public int Rating { get; set; } = 10;
+        public float Rating { get; set; } = 10;
         [Column("viewcount")]
         public int ViewCount { get; set; } = 0;
 

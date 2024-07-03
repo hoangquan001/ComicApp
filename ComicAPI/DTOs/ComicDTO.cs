@@ -15,7 +15,7 @@ public class ComicDTO
     public string? Description { get; set; }
     private string? _CoverImage;
     public int Status { get; set; } = 0;   // Enforced by data annotation check constraint
-    public int Rating { get; set; } = 10;// Enforced by data annotation check constraint
+    public float Rating { get; set; } = 10;// Enforced by data annotation check constraint
     public int ViewCount { get; set; } = 0; // view
     public DateTime UpdateAt { get; set; } = DateTime.Now;
     public int NumChapter { get; set; } = 0;
