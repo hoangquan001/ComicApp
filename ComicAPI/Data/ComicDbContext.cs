@@ -24,6 +24,7 @@ namespace ComicApp.Data
         public DbSet<Chapter> Chapters => Set<Chapter>();
         public DbSet<Comment> Comments => Set<Comment>();
         public DbSet<UserNotification> Notifications => Set<UserNotification>();
+        public DbSet<UserVoteComic> UserVoteComics => Set<UserVoteComic>();
         // public DbSet<Page> Pages => Set<Page>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -64,6 +65,14 @@ namespace ComicApp.Data
                 b.HasKey(x => new { x.ComicID, x.UserID });
                 b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.ComicID);
             });
+
+            modelBuilder.Entity<UserVoteComic>(b =>
+            {
+                b.ToTable("user_vote_comic");
+                b.HasKey(x => new { x.ComicID, x.UserID });
+
+            });
+
             modelBuilder.Entity<Comment>(b =>
             {
                 b.ToTable("comment");

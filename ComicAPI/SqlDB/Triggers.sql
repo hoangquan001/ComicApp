@@ -118,3 +118,33 @@ FOR EACH ROW
 EXECUTE FUNCTION remove_notifications_on_chapter_delete();
 
 --END-----------------------------NOTIFY--------------------------------
+
+
+--BEGIN-------------------------------Rating--------------------------------
+
+CREATE OR REPLACE FUNCTION update_comic_rating()
+RETURNS TRIGGER AS $$
+DECLARE
+    avg_rating NUMERIC;
+BEGIN
+    -- Tính điểm trung bình rating cho comic
+    SELECT AVG(VotePoint) INTO avg_rating
+    FROM USER_VOTE_COMIC
+    WHERE ComicID = COALESCE(NEW.ComicID, OLD.ComicID);
+
+    -- Cập nhật điểm trung bình vào bảng COMIC
+    UPDATE COMIC
+    SET Rating = COALESCE(avg_rating, 0)
+    WHERE ID = COALESCE(NEW.ComicID, OLD.ComicID);
+
+    RETURN NULL;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Trigger sau khi insert hoặc update hoặc delete bảng USER_VOTE_COMIC
+CREATE OR REPLACE TRIGGER update_comic_rating
+AFTER INSERT OR UPDATE OR DELETE ON USER_VOTE_COMIC
+FOR EACH ROW
+EXECUTE FUNCTION update_comic_rating();
+
+--END-------------------------------Rating--------------------------------

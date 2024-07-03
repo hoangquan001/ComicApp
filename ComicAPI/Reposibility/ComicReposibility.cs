@@ -376,7 +376,7 @@ public class ComicReposibility : IComicReposibility
 
         // Get total count
         var totalComics = await comicsQuery.CountAsync();
-        Console.WriteLine(data);
+
         if (data != null && data.Any())
         {
             ListComicDTO list = new ListComicDTO

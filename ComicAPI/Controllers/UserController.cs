@@ -103,8 +103,18 @@ public class UserController : ControllerBase
     public async Task<ActionResult<ServiceResponse<string>>> DeleteUserNotify(
      int? notifyID)
     {
-        Console.WriteLine($"{notifyID},isread123"); // Optional: Log the received isRead value for debugging
+
         var result = await _userService.DeleteUserNotify(notifyID);
         return Ok(result);
+    }
+    [HttpPost("Vote")]
+    public async Task<ActionResult<ServiceResponse<int>>> VoteComic(int comicid, int votePoint)
+    {
+        return Ok(await _userService.VoteComic(comicid, votePoint));
+    }
+    [HttpDelete("Vote/delete")]
+    public async Task<ActionResult<ServiceResponse<int>>> UnVoteComic(int comicid)
+    {
+        return Ok(await _userService.UnVoteComic(comicid));
     }
 }

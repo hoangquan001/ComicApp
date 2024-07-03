@@ -178,6 +178,9 @@ CREATE INDEX idx_chapter_id ON PAGE (ChapterID);
 CREATE INDEX idx_notifications_comic_id ON USER_NOTIFICATION (UserID);
 CREATE INDEX idx_notifications_genre_id ON USER_NOTIFICATION (ComicID);
 
+CREATE INDEX idx_vote_comic_id ON USER_VOTE_COMIC (UserID);
+CREATE INDEX idx_vote_genre_id ON USER_VOTE_COMIC (ComicID);
+
 -- update view
 UPdate comic  set viewcount = v.view 
 from 

@@ -20,6 +20,8 @@ using AutoMapper;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.ImageSharp.Formats;
+using ComicAPI.Models;
+using System.Formats.Tar;
 
 namespace ComicApp.Services;
 public class UserService : IUserService
@@ -477,5 +479,37 @@ public class UserService : IUserService
 
 
         return response;
+    }
+
+    public async Task<ServiceResponse<int>> VoteComic(int userid, int comicid, int votePoint)
+    {
+        if (!_dbContext.Comics.Any(x => x.ID == comicid)) return new ServiceResponse<int> { Status = 0, Message = "Comic not found", Data = 0 };
+        //check comicid exist
+        if (votePoint < 0 || votePoint > 10) return new ServiceResponse<int> { Status = 0, Message = "Invalid vote point", Data = 0 };
+        var user = await _dbContext.UserVoteComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
+        if (user != null) user.VotePoint = votePoint;
+        else _dbContext.UserVoteComics.Add(new UserVoteComic { UserID = userid, ComicID = comicid, VotePoint = votePoint });
+        await _dbContext.SaveChangesAsync();
+
+        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
+    }
+    public async Task<ServiceResponse<int>> VoteComic(int comicid, int votePoint)
+    {
+        return await VoteComic(UserID, comicid, votePoint);
+    }
+    public async Task<ServiceResponse<int>> UnVoteComic(int userid, int comicid)
+    {
+        if (!_dbContext.Comics.Any(x => x.ID == comicid)) return new ServiceResponse<int> { Status = 0, Message = "Comic not found", Data = 0 };
+
+        var user = _dbContext.UserVoteComics.FirstOrDefault(x => x.UserID == userid && x.ComicID == comicid);
+        if (user == null) return new ServiceResponse<int> { Status = 0, Message = "Not Vote", Data = 0 };
+        _dbContext.UserVoteComics.Remove(user);
+
+        await _dbContext.SaveChangesAsync();
+        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 0 };
+    }
+    public async Task<ServiceResponse<int>> UnVoteComic(int comicid)
+    {
+        return await UnVoteComic(UserID, comicid);
     }
 }
