@@ -486,7 +486,7 @@ public class UserService : IUserService
         if (!_dbContext.Comics.Any(x => x.ID == comicid)) return new ServiceResponse<int> { Status = 0, Message = "Comic not found", Data = 0 };
         //check comicid exist
         if (votePoint < 0 || votePoint > 10) return new ServiceResponse<int> { Status = 0, Message = "Invalid vote point", Data = 0 };
-        var user = await _dbContext.UserVoteComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
+        var user = await _userReposibility.GetUserVoteComic(userid, comicid);
         if (user != null) user.VotePoint = votePoint;
         else _dbContext.UserVoteComics.Add(new UserVoteComic { UserID = userid, ComicID = comicid, VotePoint = votePoint });
         await _dbContext.SaveChangesAsync();
@@ -501,7 +501,7 @@ public class UserService : IUserService
     {
         if (!_dbContext.Comics.Any(x => x.ID == comicid)) return new ServiceResponse<int> { Status = 0, Message = "Comic not found", Data = 0 };
 
-        var user = _dbContext.UserVoteComics.FirstOrDefault(x => x.UserID == userid && x.ComicID == comicid);
+        var user = await _userReposibility.GetUserVoteComic(userid, comicid);
         if (user == null) return new ServiceResponse<int> { Status = 0, Message = "Not Vote", Data = 0 };
         _dbContext.UserVoteComics.Remove(user);
 
@@ -511,5 +511,12 @@ public class UserService : IUserService
     public async Task<ServiceResponse<int>> UnVoteComic(int comicid)
     {
         return await UnVoteComic(UserID, comicid);
+    }
+    public async Task<ServiceResponse<int>> GetUserVote(int comicid)
+    {
+
+        var user = await _userReposibility.GetUserVoteComic(UserID, comicid);
+        var votepoint = user?.VotePoint ?? -1;
+        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = votepoint };
     }
 }

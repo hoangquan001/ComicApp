@@ -78,5 +78,9 @@ namespace ComicAPI.Reposibility
             return notifys;
         }
 
+        public async Task<UserVoteComic?> GetUserVoteComic(int userid, int comicid)
+        {
+            return await _dbContext.UserVoteComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
+        }
     }
 }

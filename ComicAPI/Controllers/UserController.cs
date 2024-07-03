@@ -107,7 +107,12 @@ public class UserController : ControllerBase
         var result = await _userService.DeleteUserNotify(notifyID);
         return Ok(result);
     }
-    [HttpPost("Vote")]
+    [HttpGet("Vote")]
+    public async Task<ActionResult<ServiceResponse<int>>> GetUserVote(int comicid)
+    {
+        return Ok(await _userService.GetUserVote(comicid));
+    }
+    [HttpPost("Vote/update")]
     public async Task<ActionResult<ServiceResponse<int>>> VoteComic(int comicid, int votePoint)
     {
         return Ok(await _userService.VoteComic(comicid, votePoint));

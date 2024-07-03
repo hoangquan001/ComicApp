@@ -26,6 +26,10 @@ public interface IUserService
     Task<ServiceResponse<List<UserNotificationDTO>>> GetUserNotify();
     Task<ServiceResponse<string>> UpdateUserNotify(int? idNotify = null, bool? isRead = null);
     Task<ServiceResponse<string>> DeleteUserNotify(int? idNotify = null);
+
+
+
+    Task<ServiceResponse<int>> GetUserVote(int comicid);
     Task<ServiceResponse<int>> VoteComic(int userid, int comicid, int votePoint);
     Task<ServiceResponse<int>> VoteComic(int comicid, int votePoint);
     Task<ServiceResponse<int>> UnVoteComic(int userid, int comicid);
