@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Text;
 using ComicAPI.Enums;
+using ComicAPI.Models;
 using ComicApp.Data;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore;
@@ -452,6 +453,58 @@ public class ComicReposibility : IComicReposibility
 
         return cachedData!;
     }
+
+    public async Task<List<DailyComicView?>> GetTopViewComics()
+    {
+        ComicTopViewDTO? data = new ComicTopViewDTO();
+        var today = DateTime.UtcNow.Date;
+         data.DailyComics = await _dbContext.DailyComicViews
+            .Where(dv => dv.ViewDate == today)
+            .OrderByDescending(dv => dv.ViewCount)
+            .Take(10)
+            .Select(dv => new ComicDTO
+            {
+                ID = dv.ComicID,
+                Title = dv.comic!.Title,
+                OtherName = dv.comic.OtherName,
+                Author = dv.comic.Author,
+                Url = dv.comic.Url,
+                Description = dv.comic.Description,
+                Status = dv.comic.Status,
+                Rating = dv.comic.Rating,
+                UpdateAt = dv.comic.UpdateAt,
+                CoverImage = dv.comic.CoverImage,
+                ViewCount = dv.comic.ViewCount,
+                genres = dv.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+                Chapters = _dbContext.Chapters.Where(c => c.ID == dv.comic.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            })
+            .ToListAsync();
+        var oneWeekAgo = DateTime.UtcNow.Date.AddDays(-7);
+        data.WeeklyComics = await _dbContext.DailyComicViews
+            .Where(dv => dv.ViewDate >= oneWeekAgo)
+            .GroupBy(dv => dv.comic)
+            .Select(g => new ComicDTO
+            {
+                ID = g.Key!.ID,
+                Title = g.Key.Title,
+                OtherName = g.Key.OtherName,
+                Author = g.Key.Author,
+                Url = g.Key.Url,
+                Description = g.Key.Description,
+                Status = g.Key.Status,
+                Rating = g.Key.Rating,
+                UpdateAt = g.Key.UpdateAt,
+                CoverImage = g.Key.CoverImage,
+                ViewCount = g.Key.ViewCount,
+                genres = g.Key.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+                Chapters = _dbContext.Chapters.Where(c => c.ID == g.Key.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            })
+            .ToListAsync();
+
+
+        return null!;
+    }
+
 
 
 }
