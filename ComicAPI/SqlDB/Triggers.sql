@@ -99,23 +99,7 @@ FOR EACH ROW
 EXECUTE FUNCTION notify_users_of_comic_update();
 
 
--- Trigger to remove notifications after deleting a chapter
 
-CREATE OR REPLACE FUNCTION remove_notifications_on_chapter_delete()
-RETURNS TRIGGER AS $$
-BEGIN
-    DELETE FROM USER_NOTIFICATION
-    WHERE ComicID = OLD.ComicID
-      AND NotificationContent LIKE '%' || OLD.Title || '%';
-
-    RETURN OLD;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER after_delete_chapter_remove_notify
-AFTER DELETE ON CHAPTER
-FOR EACH ROW
-EXECUTE FUNCTION remove_notifications_on_chapter_delete();
 
 --END-----------------------------NOTIFY--------------------------------
 

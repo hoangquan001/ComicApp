@@ -24,6 +24,9 @@ namespace ComicApp.Models
         public int ViewCount { get; set; }
         [Column("updateat")]
         public DateTime UpdateAt { get; set; }
+
+        [Column("pages")]
+        public string? Pages { get; set; }
     }
 
 }

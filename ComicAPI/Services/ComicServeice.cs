@@ -19,6 +19,8 @@ using System.Net;
 using System.Net.Http.Headers;
 using Microsoft.EntityFrameworkCore.Internal;
 using ComicAPI.Services;
+using System.Text.Json;
+
 namespace ComicApp.Services;
 public class ComicService : IComicService
 {
@@ -193,28 +195,34 @@ public class ComicService : IComicService
     }
     public async Task<byte[]> LoadImage(string url)
     {
-        var request = new HttpRequestMessage();
+        HttpRequestMessage? request = new HttpRequestMessage();
         request.RequestUri = new Uri(url);
         request.Method = HttpMethod.Get;
         request.Headers.Add("Accept", "*/*");
         request.Headers.Add("User-Agent", "Thunder Client (https://www.thunderclient.com)");
         request.Headers.Add("Referer", "nettruyenviet.com");
-        var response = await _httpClient.SendAsync(request);
-        var imgByte = await response.Content.ReadAsByteArrayAsync();
+        HttpResponseMessage? response = await _httpClient.SendAsync(request);
+        byte[]? imgByte = await response.Content.ReadAsByteArrayAsync();
         return imgByte;
     }
     public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(int chapter_id)
     {
 
-        var chapter = await _comicReposibility.GetChapter(chapter_id);
+        Chapter? chapter = await _comicReposibility.GetChapter(chapter_id);
         if (chapter == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
-        var comic = await _comicReposibility.GetComic(chapter.ComicID.ToString());
-        if (comic == null)
+        ComicDTO? comic = await _comicReposibility.GetComic(chapter.ComicID.ToString());
+        if (comic == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
+        // List<PageDTO>? urlsData = await FetchChapterImage(comic.Url, chapter.Url, chapter_id);
+        List<PageDTO>? urlsData = null;
+        if (chapter.Pages != null)
         {
-            return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
+            List<string>? links = JsonSerializer.Deserialize<List<string>>(chapter.Pages.Replace("'", "\""));
+            if (links != null)
+            {
+                urlsData = links.Select((x, i) => new PageDTO { URL = x, PageNumber = i }).ToList();
+            }
         }
 
-        List<PageDTO>? urlsData = await FetchChapterImage(comic.Url, chapter.Url, chapter_id);
         ChapterPageDTO chapterPageDTO = new ChapterPageDTO
         {
             ID = chapter.ID,

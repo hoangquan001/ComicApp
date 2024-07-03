@@ -199,37 +199,11 @@ CREATE INDEX idx_notifications_genre_id ON USER_NOTIFICATION (ComicID);
 CREATE INDEX idx_vote_comic_id ON USER_VOTE_COMIC (UserID);
 CREATE INDEX idx_vote_genre_id ON USER_VOTE_COMIC (ComicID);
 
--- update view
-UPdate comic  set viewcount = v.view 
-from 
-(	
-	select comicid, sum(ct.viewcount) as view
-	from  chapter ct 
-	group by comicid
-)as v
-where v.comicid = id
 
-
--- update lastchapter
-update comic
-set updateat = ct2.updateat,
-	numchapter = ct2.chapternumber,
-	lastchapter = ct2.id
-from 
-(
-	select ct.* from 
-	chapter ct, (select comicid, max(chapternumber) as chapternumber
-	from chapter
-	group by comicid) as maxct
-	where ct.comicid = maxct.comicid and ct.chapternumber = maxct.chapternumber
-) as ct2
-where ct2.comicid = comic.id
-
-
-INSERT INTO hostcollector
-(id,host,comic_format,chapter_format)
-VALUES
-(1,'nhattruyenss.com','https://{host}/truyen-tranh/{comic-slug}-{comicid}','https://{host}/truyen-tranh/{comic-slug}/{chapter-slug}/{chapterid}');
+-- INSERT INTO hostcollector
+-- (id,host,comic_format,chapter_format)
+-- VALUES
+-- (1,'nhattruyenss.com','https://{host}/truyen-tranh/{comic-slug}-{comicid}','https://{host}/truyen-tranh/{comic-slug}/{chapter-slug}/{chapterid}');
 
 
 
