@@ -7,7 +7,7 @@ BEGIN
     -- Update the UpdateAt and numchapter fields
     UPDATE COMIC
     SET updateAt = lc.UpdateAt,
-        numchapter = lc.chapterNumber,
+        numchapter = numchapter + 1,
         lastChapter = NEW.ID
     from get_latest_chapter(NEW.ComicID) as lc 
     WHERE Comic.id = NEW.ComicID;
@@ -30,7 +30,7 @@ BEGIN
     UPDATE COMIC
     SET 
         updateAt = lc.UpdateAt,
-        numchapter = lc.chapterNumber,
+        numchapter = numchapter - 1,
         lastChapter = CASE WHEN lc.ID = OLD.ID THEN NULL ELSE lc.ID END
     FROM get_latest_chapter(OLD.ComicID) AS lc 
     WHERE COMIC.ID = OLD.ComicID;

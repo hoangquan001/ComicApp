@@ -228,7 +228,6 @@ public class ComicService : IComicService
             ID = chapter.ID,
             Title = chapter.Title,
             Slug = chapter.Url,
-            ChapterNumber = chapter.ChapterNumber,
             UpdateAt = chapter.UpdateAt,
             ViewCount = chapter.ViewCount,
             Pages = urlsData,

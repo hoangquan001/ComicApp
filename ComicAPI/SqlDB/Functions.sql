@@ -17,51 +17,40 @@ BEGIN
     SELECT *
     FROM CHAPTER
     WHERE CHAPTER.ComicID = comic_id
-    ORDER BY ChapterNumber DESC
+    ORDER BY url::float DESC
     LIMIT 1;
 END;
 $$ LANGUAGE plpgsql;
 
-----Update View
-
-CREATE OR REPLACE FUNCTION update_view()
-RETURNS void
-AS $$
-BEGIN
-    UPdate comic  set viewcount = v.view 
-    from 
-    (	
-        select comicid, sum(ct.viewcount) as view
-        from  chapter ct 
-        group by comicid
-    )as v
-    where v.comicid = id
-END;
-$$ LANGUAGE plpgsql;
-
---Synchronize comic
+----------------------BEGIN COMIC------------------------------
+-- Synchronize comic : set static data of chapter to comic
 CREATE OR REPLACE FUNCTION synchronize_comic()
 RETURNS void
 AS $$
 BEGIN
-    -- Update the UpdateAt and numchapter fields
-    UPDATE COMIC
-    SET updateAt = lc.UpdateAt,
-        numchapter = lc.chapterNumber
-    from get_latest_chapter(NEW.ComicID) as lc 
-    WHERE Comic.id = NEW.ComicID;
 
-    UPDATE comic  set viewcount = v.view 
-    from 
-    (	
-        select comicid, sum(ct.viewcount) as view
-        from  chapter ct 
-        group by comicid
-    )as v
-    where v.comicid = id
+	UPdate comic  set viewcount = v.view , numchapter = v.num
+	from 
+	(	
+		select comicid, sum(ct.viewcount) as view , count(id) as num
+		from  chapter ct 
+		group by comicid
+	)as v
+	where v.comicid = id;
+
+
+    Update comic
+    SET lastchapter = lastchapter.id,
+        updateat = lastchapter.updateat
+    FROM (
+        Select * from chapter where comicid = chapter.comicid
+        ORDER BY url::float DESC
+        LIMIT 1
+    ) as lastchapter
+    WHERE comic.id = lastchapter.comicid;
 END;
 $$ LANGUAGE plpgsql;
-
+----------------------END COMIC------------------------------
 
 --BEGIN-------------------------------NOTIFY--------------------------------
 -- Function to delete notifications when a chapter is deleted

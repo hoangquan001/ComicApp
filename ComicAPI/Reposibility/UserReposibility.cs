@@ -44,7 +44,6 @@ namespace ComicAPI.Reposibility
             {
                 ID = x.ID,
                 Title = x.Title,
-                ChapterNumber = x.ChapterNumber,
                 ViewCount = x.ViewCount,
                 UpdateAt = x.UpdateAt,
                 Slug = x.Url

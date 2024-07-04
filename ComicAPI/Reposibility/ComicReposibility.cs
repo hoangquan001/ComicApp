@@ -135,7 +135,6 @@ public class ComicReposibility : IComicReposibility
         {
             ID = x.ID,
             Title = x.Title,
-            ChapterNumber = x.ChapterNumber,
             ViewCount = x.ViewCount,
             UpdateAt = x.UpdateAt,
             Slug = x.Url
@@ -170,7 +169,7 @@ public class ComicReposibility : IComicReposibility
             UpdateAt = x.UpdateAt,
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
-            Chapters = x.Chapters.OrderByDescending(x => x.ChapterNumber).Select(x => ChapterSelector(x)).ToList()
+            Chapters = x.Chapters.OrderByDescending(x => Convert.ToDouble(x.Url)).Select(x => ChapterSelector(x)).ToList()
         })
         .AsSplitQuery()
         .FirstOrDefaultAsync();
@@ -458,27 +457,27 @@ public class ComicReposibility : IComicReposibility
     {
         ComicTopViewDTO? data = new ComicTopViewDTO();
         var today = DateTime.UtcNow.Date;
-         data.DailyComics = await _dbContext.DailyComicViews
-            .Where(dv => dv.ViewDate == today)
-            .OrderByDescending(dv => dv.ViewCount)
-            .Take(10)
-            .Select(dv => new ComicDTO
-            {
-                ID = dv.ComicID,
-                Title = dv.comic!.Title,
-                OtherName = dv.comic.OtherName,
-                Author = dv.comic.Author,
-                Url = dv.comic.Url,
-                Description = dv.comic.Description,
-                Status = dv.comic.Status,
-                Rating = dv.comic.Rating,
-                UpdateAt = dv.comic.UpdateAt,
-                CoverImage = dv.comic.CoverImage,
-                ViewCount = dv.comic.ViewCount,
-                genres = dv.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
-                Chapters = _dbContext.Chapters.Where(c => c.ID == dv.comic.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
-            })
-            .ToListAsync();
+        data.DailyComics = await _dbContext.DailyComicViews
+           .Where(dv => dv.ViewDate == today)
+           .OrderByDescending(dv => dv.ViewCount)
+           .Take(10)
+           .Select(dv => new ComicDTO
+           {
+               ID = dv.ComicID,
+               Title = dv.comic!.Title,
+               OtherName = dv.comic.OtherName,
+               Author = dv.comic.Author,
+               Url = dv.comic.Url,
+               Description = dv.comic.Description,
+               Status = dv.comic.Status,
+               Rating = dv.comic.Rating,
+               UpdateAt = dv.comic.UpdateAt,
+               CoverImage = dv.comic.CoverImage,
+               ViewCount = dv.comic.ViewCount,
+               genres = dv.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+               Chapters = _dbContext.Chapters.Where(c => c.ID == dv.comic.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+           })
+           .ToListAsync();
         var oneWeekAgo = DateTime.UtcNow.Date.AddDays(-7);
         data.WeeklyComics = await _dbContext.DailyComicViews
             .Where(dv => dv.ViewDate >= oneWeekAgo)
