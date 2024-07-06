@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Globalization;
 using System.Text;
 using ComicAPI.Enums;
@@ -65,9 +66,9 @@ public class ComicReposibility : IComicReposibility
     {
 
         string key = genre.ToString() + status.ToString();
-        if (!_cache.TryGetValue("TotalPageComicKey", out Dictionary<string, int>? cachedData))
+        if (!_cache.TryGetValue("TotalPageComicKey", out ConcurrentDictionary<string, int>? cachedData))
         {
-            cachedData = new Dictionary<string, int>();
+            cachedData = new ConcurrentDictionary<string, int>();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
                  .SetSlidingExpiration(TimeSpan.FromHours(1)); // Example: cache for 10 minutes
             _cache.Set("TotalPageComicKey", cachedData, cacheEntryOptions);
@@ -77,7 +78,7 @@ public class ComicReposibility : IComicReposibility
         if (!cachedData!.TryGetValue(key, out int totalcomic))
         {
             totalcomic = await _dbContext.Comics.Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID))).CountAsync();
-            cachedData.Add(key, totalcomic);
+            cachedData.TryAdd(key, totalcomic);
         }
         return totalcomic;
 
