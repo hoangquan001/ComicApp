@@ -19,6 +19,7 @@ public class UserDTO
         }
     }
     public DateTime? Dob { get; set; }
+    public DateTime? CreateAt { get; set; }
     public int Gender { get; set; }
     public string? Token { get; set; }
 }

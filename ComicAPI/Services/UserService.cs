@@ -155,7 +155,8 @@ public class UserService : IUserService
                 LastName = x.User.LastName,
                 Avatar = x.User.Avatar,
                 Dob = x.User.Dob,
-                Gender = x.User.Gender
+                Gender = x.User.Gender,
+                CreateAt = x.User.CreateAt,
             },
         })
         .FirstOrDefaultAsync();
@@ -197,7 +198,8 @@ public class UserService : IUserService
                     LastName = x.User.LastName,
                     Avatar = x.User.Avatar,
                     Dob = x.User.Dob,
-                    Gender = x.User.Gender
+                    Gender = x.User.Gender,
+                    CreateAt = x.User.CreateAt,
                 },
                 Replies = x.Replies!.Select(y => new CommentDTO
                 {
@@ -218,7 +220,8 @@ public class UserService : IUserService
                         LastName = y.User.LastName,
                         Avatar = y.User.Avatar,
                         Dob = y.User.Dob,
-                        Gender = y.User.Gender
+                        Gender = y.User.Gender,
+                        CreateAt = y.User.CreateAt,
                     },
                 }).ToList()
             })
