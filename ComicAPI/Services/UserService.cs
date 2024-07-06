@@ -146,6 +146,17 @@ public class UserService : IUserService
             ParentCommentID = x.ParentCommentID,
             CommentedAt = x.CommentedAt,
             UserName = x.User!.FirstName + " " + x.User.LastName,
+            User = new UserDTO
+            {
+                ID = x.UserID,
+                Username = x.User!.FirstName + " " + x.User.LastName,
+                Email = x.User.Email,
+                FirstName = x.User.FirstName,
+                LastName = x.User.LastName,
+                Avatar = x.User.Avatar,
+                Dob = x.User.Dob,
+                Gender = x.User.Gender
+            },
         })
         .FirstOrDefaultAsync();
 
