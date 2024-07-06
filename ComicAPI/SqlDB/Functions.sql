@@ -1,12 +1,11 @@
 -- ResetChapterID
-SELECT SETVAL('chapter_id_seq', (SELECT MAX(id) FROM chapter));
+SELECT SETVAL('chapter_id_seq',1500000);
 -----GetLastChapter------
 CREATE OR REPLACE FUNCTION get_latest_chapter(comic_id INT)
 RETURNS TABLE (
     ID INT,
     ComicID INT,
     Title VARCHAR,
-    ChapterNumber INT,
     URL VARCHAR,
     ViewCount INT,
     UpdateAt TIMESTAMP,
@@ -17,7 +16,7 @@ BEGIN
     SELECT *
     FROM CHAPTER
     WHERE CHAPTER.ComicID = comic_id
-    ORDER BY url::float DESC
+    ORDER BY CHAPTER.url::float DESC
     LIMIT 1;
 END;
 $$ LANGUAGE plpgsql;

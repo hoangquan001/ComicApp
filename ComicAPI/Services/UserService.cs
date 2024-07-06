@@ -177,6 +177,17 @@ public class UserService : IUserService
                 ParentCommentID = x.ParentCommentID,
                 CommentedAt = x.CommentedAt,
                 UserName = x.User!.FirstName + " " + x.User.LastName,
+                User = new UserDTO
+                {
+                    ID = x.UserID,
+                    Username = x.User!.FirstName + " " + x.User.LastName,
+                    Email = x.User.Email,
+                    FirstName = x.User.FirstName,
+                    LastName = x.User.LastName,
+                    Avatar = x.User.Avatar,
+                    Dob = x.User.Dob,
+                    Gender = x.User.Gender
+                },
                 Replies = x.Replies!.Select(y => new CommentDTO
                 {
                     ID = y.ID,
@@ -186,7 +197,18 @@ public class UserService : IUserService
                     ComicID = y.ComicID,
                     ParentCommentID = y.ParentCommentID,
                     CommentedAt = y.CommentedAt,
-                    UserName = y.User!.FirstName + " " + y.User.LastName
+                    UserName = y.User!.FirstName + " " + y.User.LastName,
+                    User = new UserDTO
+                    {
+                        ID = y.UserID,
+                        Username = y.User!.FirstName + " " + y.User.LastName,
+                        Email = y.User.Email,
+                        FirstName = y.User.FirstName,
+                        LastName = y.User.LastName,
+                        Avatar = y.User.Avatar,
+                        Dob = y.User.Dob,
+                        Gender = y.User.Gender
+                    },
                 }).ToList()
             })
             .Skip((page - 1) * step)

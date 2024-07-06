@@ -17,9 +17,6 @@ namespace ComicApp.Models
         [Column("url")]
         public string Url { get; set; } = string.Empty;
 
-        [Column("chapternumber")]
-        public int? ChapterNumber { get; set; }
-
         [Column("viewcount")]
         public int ViewCount { get; set; }
         [Column("updateat")]

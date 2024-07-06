@@ -86,7 +86,6 @@ CREATE TABLE CHAPTER (
     ID SERIAL PRIMARY KEY,
     ComicID INT,
     Title VARCHAR(255),
-    ChapterNumber INT NOT NULL,
     URL VARCHAR(255),
     ViewCount INT NOT NULL DEFAULT 0,
     UpdateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -186,7 +185,7 @@ CREATE INDEX idx_genre_title ON GENRE (Title);
 CREATE INDEX idx_genre_slug ON GENRE (Slug);
 
 CREATE INDEX idx_comic_id ON CHAPTER (ComicID);
-CREATE INDEX idx_chapter_number ON CHAPTER (ChapterNumber);
+CREATE INDEX idx_chapter_number ON CHAPTER (url);
 
 CREATE INDEX idx_comic_genre_comic_id ON COMIC_GENRE (ComicID);
 CREATE INDEX idx_comic_genre_genre_id ON COMIC_GENRE (GenreID);
