@@ -18,8 +18,8 @@ public interface IUserService
     Task<bool> IsFollowComic(int userid, int comicid);
     Task<ServiceResponse<CommentDTO>> AddComment(int userid, string content, int chapterid, int parentcommentid = 0);
     Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int parentcommentid = 0);
-    Task<ServiceResponse<List<CommentDTO>>> GetCommentsOfComic(int comicid, int page = 1, int step = 40);
-    Task<ServiceResponse<List<CommentDTO>>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 40);
+    Task<ServiceResponse<CommentPageDTO>> GetCommentsOfComic(int comicid, int page = 1, int step = 10);
+    Task<ServiceResponse<CommentPageDTO>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 10);
     Task<ServiceResponse<UserDTO>> UpdateInfo(UpdateUserInfo request);
     Task<ServiceResponse<string>> UpdatePassword(UpdateUserPassword request);
     Task<ServiceResponse<string>> UpdateAvatar(IFormFile avatar);

@@ -383,6 +383,8 @@ public class ComicReposibility : IComicReposibility
             ListComicDTO list = new ListComicDTO
             {
                 totalpage = (int)MathF.Ceiling((float)totalComics / step),
+                Page = page,
+                Step = step,
                 comics = data
             };
 

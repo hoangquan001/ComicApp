@@ -172,7 +172,7 @@ public class UserService : IUserService
         return await AddComment(UserID, content, chapterid, parentcommentid);
     }
 
-    public async Task<ServiceResponse<List<CommentDTO>>> GetCommentsOfComic(int comicid, int page = 1, int step = 40)
+    public async Task<ServiceResponse<CommentPageDTO>> GetCommentsOfComic(int comicid, int page = 1, int step = 10)
     {
         var data = await _dbContext.Comments
             .Where(x => x.ComicID == comicid && x.ParentCommentID == null)
@@ -228,10 +228,22 @@ public class UserService : IUserService
             .Skip((page - 1) * step)
             .Take(step)
             .ToListAsync();
-        return ServiceUtilily.GetDataRes<List<CommentDTO>>(data);
+        if (data != null)
+        {
+            int totalcomment = _dbContext.Comments.Where(x => x.ComicID == comicid && x.ParentCommentID == null).Count();
+            CommentPageDTO list = new CommentPageDTO
+            {
+                Totalpage = (int)MathF.Ceiling((float)totalcomment / step),
+                cerrentpage = page,
+                Comments = data
+
+            };
+            return ServiceUtilily.GetDataRes<CommentPageDTO>(list);
+        }
+        return ServiceUtilily.GetDataRes<CommentPageDTO>(null);
     }
 
-    public Task<ServiceResponse<List<CommentDTO>>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 40)
+    public Task<ServiceResponse<CommentPageDTO>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 10)
     {
         throw new NotImplementedException();
     }

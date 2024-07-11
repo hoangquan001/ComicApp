@@ -10,8 +10,9 @@ namespace ComicApp.Models
 {
     public class CommentPageDTO
     {
-        public int total { get; set; } = 0;
-        public int cerrent { get; set; } = 0;
+        public int Totalpage { get; set; } = 0;
+        public int cerrentpage { get; set; } = 0;
+
         public List<CommentDTO>? Comments { get; set; }
     }
 }
