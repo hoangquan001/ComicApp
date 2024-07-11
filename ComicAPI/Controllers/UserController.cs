@@ -58,11 +58,14 @@ public class UserController : ControllerBase
     }
 
     [HttpGet("Comments/comic/{comicId}")]
+    [AllowAnonymous]
     public async Task<ActionResult<ServiceResponse<List<CommentDTO>>>> GetCommentsOfComic(int comicId, int page = 1, int size = 40)
     {
         return Ok(await _userService.GetCommentsOfComic(comicId, page, size));
     }
+
     [HttpGet("Comments/chapter/{chapterId}")]
+    [AllowAnonymous]
     public async Task<ActionResult<ServiceResponse<List<CommentDTO>>>> GetCommentsOfChapter(int chapterId, int page = 1, int size = 40)
     {
         return Ok(await _userService.GetCommentsOfChapter(chapterId, page, size));
