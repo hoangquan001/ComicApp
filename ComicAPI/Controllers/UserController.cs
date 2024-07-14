@@ -88,6 +88,12 @@ public class UserController : ControllerBase
 
         return Ok(await _userService.UpdateAvatar(image));
     }
+    [HttpPost("Update/typelevel/{typelevel}")]
+    public async Task<ActionResult<ServiceResponse<string>>> UpdateTypeLevel(int typelevel)
+    {
+
+        return Ok(await _userService.UpdateTypelevel(typelevel));
+    }
     [HttpGet("Notify")]
     public async Task<ActionResult<ServiceResponse<List<UserNotificationDTO>>>> GetUserNotify()
     {

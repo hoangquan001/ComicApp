@@ -433,7 +433,18 @@ public class UserService : IUserService
         return response;
     }
 
-
+    public async Task<ServiceResponse<string>> UpdateTypelevel(int typelevel)
+    {
+        var user = await _userReposibility.GetUser(UserID);
+        if (user == null)
+        {
+            return new ServiceResponse<string> { Status = 404, Message = "User not found" };
+        }
+        user.TypeLevel = typelevel;
+        user.UpdateAt = DateTime.UtcNow;
+        await _dbContext.SaveChangesAsync();
+        return new ServiceResponse<string> { Status = 200, Message = "Success" };
+    }
 
     public async Task<ServiceResponse<UserDTO>> GetMyUserInfo()
     {

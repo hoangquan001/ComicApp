@@ -38,17 +38,7 @@ namespace ComicAPI.Reposibility
             }
             return user;
         }
-        private static ChapterDTO ChapterSelector(Chapter x)
-        {
-            return new ChapterDTO
-            {
-                ID = x.ID,
-                Title = x.Title,
-                ViewCount = x.ViewCount,
-                UpdateAt = x.UpdateAt,
-                Slug = x.Url
-            };
-        }
+
         public async Task<List<UserNotificationDTO>?> GetUserNotify(int userid)
         {
             var notifys = await _dbContext.Notifications

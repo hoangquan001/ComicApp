@@ -18,7 +18,10 @@ CREATE TABLE _USER (
     LastLoginIp VARCHAR(50),
     CreateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     UpdateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    Role INT NOT NULL CHECK (Role IN (0, 1, 2))
+    Role INT NOT NULL CHECK (Role IN (0, 1, 2)),
+    Experience INT DEFAULT 0,
+    Maxim TEXT,
+    TypeLevel INT DEFAULT 0
     --MOCK DATA
     -- INSERT INTO _USER (Username, Email, FirstName, LastName, DOB, Avatar, Gender, Status, Role)
     -- VALUES

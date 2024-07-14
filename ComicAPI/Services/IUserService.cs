@@ -23,6 +23,8 @@ public interface IUserService
     Task<ServiceResponse<UserDTO>> UpdateInfo(UpdateUserInfo request);
     Task<ServiceResponse<string>> UpdatePassword(UpdateUserPassword request);
     Task<ServiceResponse<string>> UpdateAvatar(IFormFile avatar);
+    Task<ServiceResponse<string>> UpdateTypelevel(int typelevel);
+
     Task<ServiceResponse<List<UserNotificationDTO>>> GetUserNotify();
     Task<ServiceResponse<string>> UpdateUserNotify(int? idNotify = null, bool? isRead = null);
     Task<ServiceResponse<string>> DeleteUserNotify(int? idNotify = null);
