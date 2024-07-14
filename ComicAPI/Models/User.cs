@@ -46,6 +46,15 @@ namespace ComicApp.Models
         [Required, Column("role")]
         [Range(0, 2)]
         public int Role { get; set; }
+
+        [Column("experience")]
+        public int Experience { get; set; } = 0;
+
+        [Column("maxim")]
+        public string? Maxim { get; set; } = string.Empty;
+
+        [Column("typelevel")]
+        public int TypeLevel { get; set; } = 0;
     }
 
 }

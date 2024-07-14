@@ -157,6 +157,9 @@ public class UserService : IUserService
                 Dob = x.User.Dob,
                 Gender = x.User.Gender,
                 CreateAt = x.User.CreateAt,
+                TypeLevel = x.User.TypeLevel,
+                Experience = x.User.Experience,
+                Maxim = x.User.Maxim
             },
         })
         .FirstOrDefaultAsync();
@@ -200,6 +203,10 @@ public class UserService : IUserService
                     Dob = x.User.Dob,
                     Gender = x.User.Gender,
                     CreateAt = x.User.CreateAt,
+                    TypeLevel = x.User.TypeLevel,
+                    Experience = x.User.Experience,
+                    Maxim = x.User.Maxim
+
                 },
                 Replies = x.Replies!.Select(y => new CommentDTO
                 {
@@ -222,6 +229,9 @@ public class UserService : IUserService
                         Dob = y.User.Dob,
                         Gender = y.User.Gender,
                         CreateAt = y.User.CreateAt,
+                        TypeLevel = y.User.TypeLevel,
+                        Experience = y.User.Experience,
+                        Maxim = y.User.Maxim
                     },
                 }).ToList()
             })

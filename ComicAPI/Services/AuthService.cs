@@ -42,7 +42,10 @@ public class AuthService : IAuthService
             LastName = data.LastName,
             Avatar = data.Avatar,
             Gender = data.Gender,
-            Token = _tokenMgr.CreateToken(data.ID)
+            Token = _tokenMgr.CreateToken(data.ID),
+            TypeLevel = data.TypeLevel,
+            Experience = data.Experience,
+            Maxim = data.Maxim
         };
         res.Data = user;
         res.Status = 1;
