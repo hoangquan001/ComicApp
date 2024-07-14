@@ -121,7 +121,14 @@ public class GlobalConfig
             return "";
         }
         return _globalConfig[key];
+
     }
+    public static string AddTimestampToUrl(string url)
+    {
+        long timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        return $"{url}?timestamp={timestamp}";
+    }
+
 }
 public class SlugHelper
 {
@@ -172,4 +179,5 @@ public class SlugHelper
 
         return stringBuilder.ToString();
     }
+
 }

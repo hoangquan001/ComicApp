@@ -420,7 +420,7 @@ public class UserService : IUserService
             user.UpdateAt = DateTime.UtcNow;
 
             await _dbContext.SaveChangesAsync();
-            response.Data = "http://localhost:5080/static/Avatarimg/" + fileName;
+            response.Data = GlobalConfig.AddTimestampToUrl("http://localhost:5080/static/Avatarimg/" + fileName);
             response.Status = 200;
             response.Message = "Avatar updated successfully";
         }
@@ -432,6 +432,8 @@ public class UserService : IUserService
 
         return response;
     }
+
+
 
     public async Task<ServiceResponse<UserDTO>> GetMyUserInfo()
     {

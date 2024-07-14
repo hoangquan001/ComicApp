@@ -15,7 +15,7 @@ public class UserDTO
         }
         set
         {
-            _Avatar = "http://localhost:5080/static/Avatarimg/" + value;
+            _Avatar = GlobalConfig.AddTimestampToUrl("http://localhost:5080/static/Avatarimg/" + value);
         }
     }
     public DateTime? Dob { get; set; }
