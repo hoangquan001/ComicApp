@@ -22,18 +22,8 @@ namespace ComicAPI.DTOs
 
         public bool IsRead { get; set; } = false;
 
-        private string? _CoverImage;
-        public string? CoverImage
-        {
-            get
-            {
-                return _CoverImage;
-            }
-            set
-            {
-                _CoverImage = "http://localhost:5080/static/CoverImg/" + value;
-            }
-        }
+        public string? CoverImage { get; set; }
+
         public string URLComic { get; set; } = string.Empty;
         public int? lastchapter { get; set; }
         public string URLChapter { get; set; } = string.Empty;

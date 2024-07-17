@@ -24,13 +24,12 @@ using System.Text.Json;
 namespace ComicApp.Services;
 public class ComicService : IComicService
 {
-    readonly IComicReposibility _comicReposibility;
-    readonly IMapper _mapper;
-
-    readonly IUserService _userService;
-
     private static readonly HttpClient _httpClient = new HttpClient();
-    static List<int> genreWeight = new List<int>();
+    private readonly IComicReposibility _comicReposibility;
+    private static List<int> genreWeight = new List<int>();
+    private readonly IUserService _userService;
+    private readonly IMapper _mapper;
+
 
     static ComicService()
     {

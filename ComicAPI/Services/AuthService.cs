@@ -13,11 +13,13 @@ using ComicAPI.Services;
 namespace ComicApp.Services;
 public class AuthService : IAuthService
 {
-    readonly ComicDbContext _dbContext;
-    readonly ITokenMgr _tokenMgr;
+    private readonly ComicDbContext _dbContext;
+    private readonly UrlService _urlService;
+    private readonly ITokenMgr _tokenMgr;
     //Contructor
-    public AuthService(ComicDbContext db, ITokenMgr tokenMgr)
+    public AuthService(ComicDbContext db, ITokenMgr tokenMgr, UrlService urlService)
     {
+        _urlService = urlService;
         _dbContext = db;
         _tokenMgr = tokenMgr;
 
@@ -40,7 +42,7 @@ public class AuthService : IAuthService
             Email = data.Email,
             FirstName = data.FirstName,
             LastName = data.LastName,
-            Avatar = data.Avatar,
+            Avatar = _urlService.GetUserImagePath(data.Avatar),
             Gender = data.Gender,
             Token = _tokenMgr.CreateToken(data.ID),
             TypeLevel = data.TypeLevel,

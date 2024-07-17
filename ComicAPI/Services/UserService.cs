@@ -26,13 +26,13 @@ using System.Formats.Tar;
 namespace ComicApp.Services;
 public class UserService : IUserService
 {
-    readonly IComicReposibility _comicReposibility;
-    ComicDbContext _dbContext;
-    readonly ITokenMgr _tokenMgr;
-    private int _UserID = -1;
+    private readonly IComicReposibility _comicReposibility;
     private readonly IUserReposibility _userReposibility;
-    private readonly IMapper _mapper;
     private readonly IWebHostEnvironment _environment;
+    private readonly UrlService _urlService;
+    private readonly ComicDbContext _dbContext;
+    private readonly IMapper _mapper;
+    private int _UserID = -1;
     public int UserID
     {
         get
@@ -47,16 +47,15 @@ public class UserService : IUserService
 
 
     //Contructor
-    public UserService(ComicDbContext db, ITokenMgr tokenMgr, IComicReposibility comicReposibility,
-      IUserReposibility userReposibility, IMapper mapper, IWebHostEnvironment environment)
+    public UserService(ComicDbContext db, IComicReposibility comicReposibility,
+      IUserReposibility userReposibility, IMapper mapper, IWebHostEnvironment environment, UrlService urlService)
     {
+        _urlService = urlService;
         _mapper = mapper;
         _environment = environment;
         _userReposibility = userReposibility;
         _comicReposibility = comicReposibility;
         _dbContext = db;
-        _tokenMgr = tokenMgr;
-
     }
 
     public async Task<ServiceResponse<int>> FollowComic(int userid, int comicid)
@@ -153,7 +152,7 @@ public class UserService : IUserService
                 Email = x.User.Email,
                 FirstName = x.User.FirstName,
                 LastName = x.User.LastName,
-                Avatar = x.User.Avatar,
+                Avatar = _urlService.GetUserImagePath(x.User.Avatar),
                 Dob = x.User.Dob,
                 Gender = x.User.Gender,
                 CreateAt = x.User.CreateAt,
@@ -199,7 +198,7 @@ public class UserService : IUserService
                     Email = x.User.Email,
                     FirstName = x.User.FirstName,
                     LastName = x.User.LastName,
-                    Avatar = x.User.Avatar,
+                    Avatar = _urlService.GetUserImagePath(x.User.Avatar),
                     Dob = x.User.Dob,
                     Gender = x.User.Gender,
                     CreateAt = x.User.CreateAt,
@@ -225,7 +224,7 @@ public class UserService : IUserService
                         Email = y.User.Email,
                         FirstName = y.User.FirstName,
                         LastName = y.User.LastName,
-                        Avatar = y.User.Avatar,
+                        Avatar = _urlService.GetUserImagePath(x.User.Avatar),
                         Dob = y.User.Dob,
                         Gender = y.User.Gender,
                         CreateAt = y.User.CreateAt,
@@ -418,9 +417,8 @@ public class UserService : IUserService
 
             user.Avatar = fileName;
             user.UpdateAt = DateTime.UtcNow;
-
             await _dbContext.SaveChangesAsync();
-            response.Data = GlobalConfig.AddTimestampToUrl("http://localhost:5080/static/Avatarimg/" + fileName);
+            response.Data = _urlService.GetUserImagePath(fileName);
             response.Status = 200;
             response.Message = "Avatar updated successfully";
         }

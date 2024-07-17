@@ -13,7 +13,7 @@ public class ComicDTO
     public string Url { get; set; } = "";
     public string? Author { get; set; }
     public string? Description { get; set; }
-    private string? _CoverImage;
+    public string? CoverImage { get; set; }
     public int Status { get; set; } = 0;   // Enforced by data annotation check constraint
     public float Rating { get; set; } = 10;// Enforced by data annotation check constraint
     public int ViewCount { get; set; } = 0; // view
@@ -22,16 +22,4 @@ public class ComicDTO
     public IEnumerable<GenreLiteDTO> genres { get; set; } = [];
     public IEnumerable<object> Chapters { get; set; } = [];
     public bool IsFollow { get; set; } = false;
-
-    public string? CoverImage
-    {
-        get
-        {
-            return _CoverImage;
-        }
-        set
-        {
-            _CoverImage = "http://localhost:5080/static/CoverImg/" + value;
-        }
-    }
 }

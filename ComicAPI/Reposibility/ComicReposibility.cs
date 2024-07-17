@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Text;
 using ComicAPI.Enums;
 using ComicAPI.Models;
+using ComicAPI.Services;
 using ComicApp.Data;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore;
@@ -12,13 +13,14 @@ using Microsoft.Extensions.Caching.Memory;
 public class ComicReposibility : IComicReposibility
 {
     private readonly ComicDbContext _dbContext;
+    private readonly UrlService _urlService;
     private readonly IMemoryCache _cache;
 
-    public ComicReposibility(ComicDbContext dbContext, IMemoryCache cache)
+    public ComicReposibility(ComicDbContext dbContext, IMemoryCache cache, UrlService urlService)
     {
         _cache = cache;
         _dbContext = dbContext;
-
+        _urlService = urlService;
 
     }
     private List<string> Nogenres = new List<string> { "gender-bender","adult" ,"dam-my",
@@ -38,7 +40,7 @@ public class ComicReposibility : IComicReposibility
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
-            CoverImage = x.CoverImage,
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
             Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
@@ -91,8 +93,6 @@ public class ComicReposibility : IComicReposibility
     public async Task<ListComicDTO?> GetComics(int page, int step, int genre = -1, ComicStatus status = ComicStatus.All,
      SortType sort = SortType.TopAll)
     {
-
-
         var data = await _dbContext.Comics
         .Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID)))
         .OrderComicByType(sort)
@@ -107,7 +107,7 @@ public class ComicReposibility : IComicReposibility
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
-            CoverImage = x.CoverImage,
+            CoverImage =_urlService.GetComicCoverImagePath(x.CoverImage),
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
             Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
@@ -163,7 +163,7 @@ public class ComicReposibility : IComicReposibility
             OtherName = x.OtherName,
             Author = x.Author,
             Url = x.Url,
-            CoverImage = x.CoverImage,
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Description = x.Description,
             Status = x.Status,
             Rating = x.Rating,
@@ -230,7 +230,7 @@ public class ComicReposibility : IComicReposibility
             Status = x.comic.Status,
             Rating = x.comic.Rating,
             UpdateAt = x.comic.UpdateAt,
-            CoverImage = x.comic.CoverImage,
+            CoverImage = _urlService.GetComicCoverImagePath(x.comic.CoverImage),
             ViewCount = x.comic.ViewCount,
             genres = x.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
             Chapters = _dbContext.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
@@ -364,7 +364,7 @@ public class ComicReposibility : IComicReposibility
                 Status = x.Status,
                 Rating = x.Rating,
                 UpdateAt = x.UpdateAt,
-                CoverImage = x.CoverImage,
+                CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
                 ViewCount = x.ViewCount,
                 genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
                 Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
@@ -425,7 +425,7 @@ public class ComicReposibility : IComicReposibility
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
-            CoverImage = x.CoverImage,
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
 
@@ -475,7 +475,7 @@ public class ComicReposibility : IComicReposibility
                Status = dv.comic.Status,
                Rating = dv.comic.Rating,
                UpdateAt = dv.comic.UpdateAt,
-               CoverImage = dv.comic.CoverImage,
+               CoverImage = _urlService.GetComicCoverImagePath(dv.comic.CoverImage),
                ViewCount = dv.comic.ViewCount,
                genres = dv.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
                Chapters = _dbContext.Chapters.Where(c => c.ID == dv.comic.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
@@ -496,7 +496,7 @@ public class ComicReposibility : IComicReposibility
                 Status = g.Key.Status,
                 Rating = g.Key.Rating,
                 UpdateAt = g.Key.UpdateAt,
-                CoverImage = g.Key.CoverImage,
+                CoverImage = _urlService.GetComicCoverImagePath(g.Key.CoverImage),
                 ViewCount = g.Key.ViewCount,
                 genres = g.Key.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
                 Chapters = _dbContext.Chapters.Where(c => c.ID == g.Key.lastchapter).Select(ch => ChapterSelector(ch)).ToList()

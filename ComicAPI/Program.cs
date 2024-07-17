@@ -62,7 +62,8 @@ builder.Services.AddSingleton<ITokenMgr, TokenMgr>();
 builder.Services.AddScoped<IComicReposibility, ComicReposibility>();
 builder.Services.AddScoped<IUserReposibility, UserReposibility>();
 builder.Services.AddHostedService<ComicUpdater>();
-
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<UrlService>();
 
 builder.Services.AddSwaggerGen(c =>
 {

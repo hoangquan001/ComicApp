@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using ComicAPI.DTOs;
 using ComicAPI.Models;
+using ComicAPI.Services;
 using ComicApp.Data;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore;
@@ -15,10 +16,12 @@ namespace ComicAPI.Reposibility
     {
         private readonly ComicDbContext _dbContext;
 
+        private readonly UrlService _urlService;
 
-        public UserReposibility(ComicDbContext dbContext)
+
+        public UserReposibility(ComicDbContext dbContext, UrlService urlService)
         {
-
+            _urlService = urlService;
             _dbContext = dbContext;
 
         }
@@ -52,7 +55,7 @@ namespace ComicAPI.Reposibility
                 NotificationContent = n.NotificationContent,
                 NotificationTimestamp = n.NotificationTimestamp,
                 IsRead = n.IsRead,
-                CoverImage = n.CoverImage,
+                CoverImage = _urlService.GetComicCoverImagePath(n.CoverImage),
                 URLComic = n.URLComic,
                 lastchapter = n.lastchapter,
                 URLChapter = n.URLChapter
