@@ -100,6 +100,8 @@ public class UserController : ControllerBase
 
         return Ok(await _userService.UpdateMaxim(maxim));
     }
+
+    [HttpPost("Update/exp/{exp}")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateExp(int exp)
     {
 
