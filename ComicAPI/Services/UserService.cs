@@ -279,6 +279,7 @@ public class UserService : IUserService
 
         response.Status = 200;
         response.Message = "Success";
+        user.Avatar = _urlService.GetUserImagePath(user.Avatar);
         response.Data = _mapper.Map<UserDTO>(user);
 
 
@@ -316,7 +317,19 @@ public class UserService : IUserService
 
         return response;
     }
+    public async Task<ServiceResponse<string>> UpdateMaxim(string? maxim)
+    {
 
+        var user = await _userReposibility.GetUser(UserID);
+        if (user == null)
+        {
+            return new ServiceResponse<string> { Status = 404, Message = "User not found" };
+        }
+
+        user.Maxim = maxim;
+        await _dbContext.SaveChangesAsync();
+        return new ServiceResponse<string> { Status = 200, Message = "Update success" };
+    }
     public async Task<ServiceResponse<string>> UpdateAvatar(IFormFile avatar)
     {
         var response = new ServiceResponse<string>();
@@ -430,7 +443,18 @@ public class UserService : IUserService
 
         return response;
     }
-
+    public async Task<ServiceResponse<string>> UpdateExp(int exp)
+    {
+        var user = await _userReposibility.GetUser(UserID);
+        if (user == null)
+        {
+            return new ServiceResponse<string> { Status = 404, Message = "User not found" };
+        }
+        user.Experience = exp;
+        user.UpdateAt = DateTime.UtcNow;
+        await _dbContext.SaveChangesAsync();
+        return new ServiceResponse<string> { Status = 200, Message = "Success" };
+    }
     public async Task<ServiceResponse<string>> UpdateTypelevel(int typelevel)
     {
         var user = await _userReposibility.GetUser(UserID);
@@ -456,6 +480,7 @@ public class UserService : IUserService
         }
 
         response.Status = 200;
+        user.Avatar = _urlService.GetUserImagePath(user.Avatar);
         response.Data = _mapper.Map<UserDTO>(user); // Return the user
         return response;
     }

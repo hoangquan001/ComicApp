@@ -94,6 +94,17 @@ public class UserController : ControllerBase
 
         return Ok(await _userService.UpdateTypelevel(typelevel));
     }
+    [HttpPost("Update/maxim")]
+    public async Task<ActionResult<ServiceResponse<string>>> UpdateMaxim(string? maxim)
+    {
+
+        return Ok(await _userService.UpdateMaxim(maxim));
+    }
+    public async Task<ActionResult<ServiceResponse<string>>> UpdateExp(int exp)
+    {
+
+        return Ok(await _userService.UpdateExp(exp));
+    }
     [HttpGet("Notify")]
     public async Task<ActionResult<ServiceResponse<List<UserNotificationDTO>>>> GetUserNotify()
     {

@@ -20,16 +20,17 @@ public interface IUserService
     Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int parentcommentid = 0);
     Task<ServiceResponse<CommentPageDTO>> GetCommentsOfComic(int comicid, int page = 1, int step = 10);
     Task<ServiceResponse<CommentPageDTO>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 10);
+
     Task<ServiceResponse<UserDTO>> UpdateInfo(UpdateUserInfo request);
     Task<ServiceResponse<string>> UpdatePassword(UpdateUserPassword request);
     Task<ServiceResponse<string>> UpdateAvatar(IFormFile avatar);
     Task<ServiceResponse<string>> UpdateTypelevel(int typelevel);
+    Task<ServiceResponse<string>> UpdateMaxim(string? maxim);
+    Task<ServiceResponse<string>> UpdateExp(int exp);
 
     Task<ServiceResponse<List<UserNotificationDTO>>> GetUserNotify();
     Task<ServiceResponse<string>> UpdateUserNotify(int? idNotify = null, bool? isRead = null);
     Task<ServiceResponse<string>> DeleteUserNotify(int? idNotify = null);
-
-
 
     Task<ServiceResponse<int>> GetUserVote(int comicid);
     Task<ServiceResponse<int>> VoteComic(int userid, int comicid, int votePoint);
