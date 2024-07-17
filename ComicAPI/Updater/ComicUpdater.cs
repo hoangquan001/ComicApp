@@ -23,14 +23,14 @@ namespace ComicAPI.Updater
         }
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _timer = new Timer(Update, GetTick(), TimeSpan.Zero, TimeSpan.FromSeconds(1)); // Update every hour
+            _timer = new Timer(Update, null, TimeSpan.Zero, TimeSpan.FromSeconds(1)); // Update every hour
             Init();
-            return Task.CompletedTask;
+            return Task.CompletedTask; 
         }
         private void Update(object? state) // Call every 1 second
         {
-            ulong  _tick = (ulong )state!;
-            tick = _tick;
+            tick = GetTick();
+            // Console.WriteLine(tick);
             //Implement Task Update Here
             for (int i = 0; i < _updaters.Count; i++)
             {
