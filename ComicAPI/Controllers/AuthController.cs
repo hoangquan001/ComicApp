@@ -10,6 +10,7 @@ using System.Text;
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using ComicAPI.Services;
+using ComicAPI.DTOs;
 
 [ApiController]
 [Route("[controller]")]
@@ -36,6 +37,13 @@ public class AuthController : ControllerBase
         ServiceResponse<UserDTO> res = await _authService.Login(userLoginDTO);
         return Ok(res);
     }
+    [HttpPost]
+    [Route("LoginWithSocial")]
+    public async Task<ActionResult<ServiceResponse<UserDTO>>> LoginWithSocial(UserLoginSocialDTO userLoginDTO)
+    {
+        return Ok(await _authService.LoginWithSocial(userLoginDTO));
+    }
+
     [Route("Register")]
     [HttpPost]
     public async Task<ActionResult<ServiceResponse<User>>> Register(UserRegisterDTO RegisterData)
@@ -54,3 +62,4 @@ public class AuthController : ControllerBase
     }
 
 }
+

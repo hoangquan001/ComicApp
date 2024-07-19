@@ -8,9 +8,10 @@ namespace ComicAPI.Services
     public class UrlService
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
-
-        public UrlService(IHttpContextAccessor httpContextAccessor)
+        private readonly IWebHostEnvironment _environment;
+        public UrlService(IHttpContextAccessor httpContextAccessor, IWebHostEnvironment environment)
         {
+            _environment = environment;
             _httpContextAccessor = httpContextAccessor;
         }
 
@@ -23,7 +24,7 @@ namespace ComicAPI.Services
 
             return url;
         }
-        public string GetComicCoverImagePath(string ?Image)
+        public string GetComicCoverImagePath(string? Image)
         {
             var request = _httpContextAccessor.HttpContext!.Request;
             var host = request.Host.Value;
@@ -31,7 +32,7 @@ namespace ComicAPI.Services
             var url = $"{scheme}://{host}/static/CoverImg/{Image}";
             return url;
         }
-        public string GetUserImagePath(string ?Image)
+        public string GetUserImagePath(string? Image)
         {
             var request = _httpContextAccessor.HttpContext!.Request;
             var host = request.Host.Value;
@@ -39,6 +40,10 @@ namespace ComicAPI.Services
             var url = $"{scheme}://{host}/static/AvatarImg/{Image}";
             return GlobalConfig.AddTimestampToUrl(url);
         }
-        
+        public string GetPathSaveUserImage()
+        {
+            return Path.Combine(_environment.ContentRootPath, "StaticFiles\\Avatarimg"); ;
+        }
+
     }
 }

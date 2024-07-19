@@ -10,6 +10,7 @@ using System.Text;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ComicAPI.Services;
+using ComicAPI.DTOs;
 namespace ComicApp.Services;
 public class AuthService : IAuthService
 {
@@ -50,6 +51,69 @@ public class AuthService : IAuthService
             Maxim = data.Maxim
         };
         res.Data = user;
+        res.Status = 1;
+        res.Message = "Success";
+        return res;
+    }
+    public async Task<ServiceResponse<UserDTO>> LoginWithSocial(UserLoginSocialDTO userLogin)
+    {
+        ServiceResponse<UserDTO> res = new ServiceResponse<UserDTO>();
+        var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == userLogin.Email);
+
+        if (user == null)
+        {
+            var uploadsFolder = _urlService.GetPathSaveUserImage();
+            string avatarPath = $"{userLogin.Email}.png";
+            string fileavatarPath = Path.Combine(uploadsFolder, avatarPath);
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    byte[] imageBytes = await client.GetByteArrayAsync(userLogin.PhotoUrl);
+                    await File.WriteAllBytesAsync(fileavatarPath, imageBytes);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error downloading image: {ex.Message}");
+                res.Status = 0;
+                res.Message = "Failed to download user avatar.";
+                return res;
+            }
+
+            user = new User
+            {
+                FirstName = userLogin.FirstName!,
+                LastName = userLogin.LastName!,
+                Email = userLogin.Email!,
+                Avatar = avatarPath,
+                Gender = 0,
+                HashPassword = "",
+
+            };
+            _dbContext.Users.Add(user);
+            await _dbContext.SaveChangesAsync();
+
+
+        }
+        // // Fetch the newly added user
+        user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == userLogin.Email);
+
+        var userDto = new UserDTO
+        {
+            ID = user!.ID,
+            Email = user.Email,
+            FirstName = user.FirstName,
+            LastName = user.LastName,
+            Avatar = _urlService.GetUserImagePath(user.Avatar),
+            Gender = user.Gender,
+            Token = _tokenMgr.CreateToken(user.ID),
+            TypeLevel = user.TypeLevel,
+            Experience = user.Experience,
+            Maxim = user.Maxim
+        };
+
+        res.Data = userDto;
         res.Status = 1;
         res.Message = "Success";
         return res;

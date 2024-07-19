@@ -28,7 +28,7 @@ public class UserService : IUserService
 {
     private readonly IComicReposibility _comicReposibility;
     private readonly IUserReposibility _userReposibility;
-    private readonly IWebHostEnvironment _environment;
+
     private readonly UrlService _urlService;
     private readonly ComicDbContext _dbContext;
     private readonly IMapper _mapper;
@@ -48,11 +48,11 @@ public class UserService : IUserService
 
     //Contructor
     public UserService(ComicDbContext db, IComicReposibility comicReposibility,
-      IUserReposibility userReposibility, IMapper mapper, IWebHostEnvironment environment, UrlService urlService)
+      IUserReposibility userReposibility, IMapper mapper, UrlService urlService)
     {
         _urlService = urlService;
         _mapper = mapper;
-        _environment = environment;
+
         _userReposibility = userReposibility;
         _comicReposibility = comicReposibility;
         _dbContext = db;
@@ -368,7 +368,7 @@ public class UserService : IUserService
                 return response;
             }
 
-            var uploadsFolder = Path.Combine(_environment.ContentRootPath, "StaticFiles\\Avatarimg");
+            var uploadsFolder = _urlService.GetPathSaveUserImage();
             var fileExtension = Path.GetExtension(avatar.FileName);
             var fileName = $"{user.Email}{fileExtension}";
             var filePath = Path.Combine(uploadsFolder, fileName);
