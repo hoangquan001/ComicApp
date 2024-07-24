@@ -51,6 +51,13 @@ public class AuthController : ControllerBase
         ServiceResponse<User> res = await _authService.Register(RegisterData);
         return Ok(res);
     }
+    [Route("ConfirmEmail")]
+    [HttpGet]
+    public async Task<ActionResult<ServiceResponse<string>>> ConfirmEmail(int UserId, string Code)
+    {
+        ServiceResponse<User> res = await _authService.ConfirmEmail(UserId, Code);
+        return Ok(res);
+    }
     [Route("Logout")]
     [HttpGet]
     [Authorize]

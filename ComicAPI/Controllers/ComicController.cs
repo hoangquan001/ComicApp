@@ -149,5 +149,10 @@ public class ComicController : ControllerBase
     {
         return Ok(await _comicService.GetComicRecommend());
     }
+    [HttpGet("Comic/topview")]
+    public async Task<ActionResult<List<ComicDTO>>> GetTopViewComics()
+    {
+        return Ok(await _comicService.GetTopViewComics());
+    }
 
 }

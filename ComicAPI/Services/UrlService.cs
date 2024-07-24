@@ -44,6 +44,9 @@ namespace ComicAPI.Services
         {
             return Path.Combine(_environment.ContentRootPath, "StaticFiles\\Avatarimg"); ;
         }
-
+        public string GetConfirmEmailPath(int UserId, string Code)
+        {
+            return $"{GetCurrentHost()}/Auth/ConfirmEmail?UserId={UserId}&Code={Code}";
+        }
     }
 }

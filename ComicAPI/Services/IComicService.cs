@@ -18,5 +18,5 @@ public interface IComicService
     Task<byte[]> LoadImage(string url);
     Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance comicQueryParams);
     Task<ServiceResponse<List<ComicDTO>>> GetComicRecommend();
-
+    Task<ServiceResponse<ComicTopViewDTO?>> GetTopViewComics();
 }

@@ -10,8 +10,12 @@ namespace ComicAPI.Models
 {
     public class DailyComicView
     {
+        [Key]
+        [Column("comicid")]
         public int ComicID { get; set; }
+        [Column("viewdate")]
         public DateTime ViewDate { get; set; }
+        [Column("viewcount")]
         public int ViewCount { get; set; }
 
         public Comic? comic { get; set; }

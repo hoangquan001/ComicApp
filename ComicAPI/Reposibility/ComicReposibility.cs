@@ -107,7 +107,7 @@ public class ComicReposibility : IComicReposibility
             Status = x.Status,
             Rating = x.Rating,
             UpdateAt = x.UpdateAt,
-            CoverImage =_urlService.GetComicCoverImagePath(x.CoverImage),
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             ViewCount = x.ViewCount,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
             Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
@@ -456,12 +456,13 @@ public class ComicReposibility : IComicReposibility
         return cachedData!;
     }
 
-    public async Task<List<DailyComicView?>> GetTopViewComics()
+    public async Task<ComicTopViewDTO?> GetTopViewComics()
     {
         ComicTopViewDTO? data = new ComicTopViewDTO();
         var today = DateTime.UtcNow.Date;
         data.DailyComics = await _dbContext.DailyComicViews
            .Where(dv => dv.ViewDate == today)
+           .Include(dv => dv.comic)
            .OrderByDescending(dv => dv.ViewCount)
            .Take(10)
            .Select(dv => new ComicDTO
@@ -485,6 +486,7 @@ public class ComicReposibility : IComicReposibility
         data.WeeklyComics = await _dbContext.DailyComicViews
             .Where(dv => dv.ViewDate >= oneWeekAgo)
             .GroupBy(dv => dv.comic)
+
             .Select(g => new ComicDTO
             {
                 ID = g.Key!.ID,
@@ -498,13 +500,39 @@ public class ComicReposibility : IComicReposibility
                 UpdateAt = g.Key.UpdateAt,
                 CoverImage = _urlService.GetComicCoverImagePath(g.Key.CoverImage),
                 ViewCount = g.Key.ViewCount,
-                genres = g.Key.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
+
                 Chapters = _dbContext.Chapters.Where(c => c.ID == g.Key.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
             })
+            .OrderByDescending(c => c.ViewCount)
+            .Take(10)
             .ToListAsync();
 
 
-        return null!;
+        var onemonthAgo = DateTime.UtcNow.Date.AddDays(-30);
+        data.MonthlyComics = await _dbContext.DailyComicViews
+            .Where(dv => dv.ViewDate >= onemonthAgo)
+            .GroupBy(dv => dv.comic)
+            .Select(g => new ComicDTO
+            {
+                ID = g.Key!.ID,
+                Title = g.Key.Title,
+                OtherName = g.Key.OtherName,
+                Author = g.Key.Author,
+                Url = g.Key.Url,
+                Description = g.Key.Description,
+                Status = g.Key.Status,
+                Rating = g.Key.Rating,
+                UpdateAt = g.Key.UpdateAt,
+                CoverImage = _urlService.GetComicCoverImagePath(g.Key.CoverImage),
+                ViewCount = g.Key.ViewCount,
+
+                Chapters = _dbContext.Chapters.Where(c => c.ID == g.Key.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            })
+            .OrderByDescending(c => c.ViewCount)
+            .Take(10)
+            .ToListAsync();
+
+        return data;
     }
 
 

@@ -13,6 +13,7 @@ using ComicApp.Models;
 using Microsoft.Extensions.FileProviders;
 using ComicAPI.Updater;
 using ComicAPI.Reposibility;
+using Microsoft.AspNetCore.Identity;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -30,6 +31,16 @@ builder.Services.AddCors(options =>
         });
 });
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.Configure<IdentityOptions>(options => options.SignIn.RequireConfirmedEmail = true);
+
+builder.Services.AddTransient<EmailSender>(provider => new EmailSender(
+            builder.Configuration.GetSection("SmtpSettings")["Server"]!,
+            int.Parse(builder.Configuration.GetSection("SmtpSettings")["Port"]!),
+            builder.Configuration.GetSection("SmtpSettings")["User"]!,
+            builder.Configuration.GetSection("SmtpSettings")["Pass"]!
+        ));
+
 builder.Services.AddDbContext<ComicDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddAuthentication(x =>
@@ -64,6 +75,7 @@ builder.Services.AddScoped<IUserReposibility, UserReposibility>();
 builder.Services.AddHostedService<ComicUpdater>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<UrlService>();
+
 
 builder.Services.AddSwaggerGen(c =>
 {

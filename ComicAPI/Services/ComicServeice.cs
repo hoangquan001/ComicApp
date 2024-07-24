@@ -323,4 +323,10 @@ public class ComicService : IComicService
         var data = await _comicReposibility.GetComicRecommend();
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(data);
     }
+
+    public async Task<ServiceResponse<ComicTopViewDTO?>> GetTopViewComics()
+    {
+        var data = await _comicReposibility.GetTopViewComics();
+        return ServiceUtilily.GetDataRes<ComicTopViewDTO>(data)!;
+    }
 }

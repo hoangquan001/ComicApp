@@ -11,18 +11,23 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ComicAPI.Services;
 using ComicAPI.DTOs;
+
 namespace ComicApp.Services;
+
 public class AuthService : IAuthService
 {
     private readonly ComicDbContext _dbContext;
     private readonly UrlService _urlService;
     private readonly ITokenMgr _tokenMgr;
+    private readonly EmailSender _emailSender;
+
     //Contructor
-    public AuthService(ComicDbContext db, ITokenMgr tokenMgr, UrlService urlService)
+    public AuthService(ComicDbContext db, ITokenMgr tokenMgr, UrlService urlService, EmailSender emailSender)
     {
         _urlService = urlService;
         _dbContext = db;
         _tokenMgr = tokenMgr;
+        _emailSender = emailSender;
 
     }
 
@@ -55,6 +60,7 @@ public class AuthService : IAuthService
         res.Message = "Success";
         return res;
     }
+
     public async Task<ServiceResponse<UserDTO>> LoginWithSocial(UserLoginSocialDTO userLogin)
     {
         ServiceResponse<UserDTO> res = new ServiceResponse<UserDTO>();
@@ -118,25 +124,59 @@ public class AuthService : IAuthService
         res.Message = "Success";
         return res;
     }
+
     public async Task<ServiceResponse<User>> Register(UserRegisterDTO RegisterData)
     {
+
         if (await _dbContext.Users.AnyAsync(user => user.Email == RegisterData.email))
         {
             return new ServiceResponse<User> { Status = 0, Message = "Username already exists" };
         }
+        int maxID = await _dbContext.Users.MaxAsync(user => user.ID);
         User user = new User
         {
+            ID = maxID,
             FirstName = RegisterData.name!,
             Email = RegisterData.email!,
-            HashPassword = RegisterData.password!
+            HashPassword = RegisterData.password!,
+            Status = 0
         };
-        _dbContext.Users.Add(user);
+
+        try
+        {
+            var code = _tokenMgr.CreateToken(user.ID);
+            var callbackUrl = _urlService.GetConfirmEmailPath(user.ID, code);
+            await _emailSender.SendEmailAsync(user.Email
+                      , "Confirm your email",
+                      $"Please confirm your account by <a href='{callbackUrl}'>clicking here</a>.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error downloading image: {ex.Message}");
+            return new ServiceResponse<User> { Status = 0, Message = "Email không hợp lệ." }; ;
+        }
+        // _dbContext.Users.Add(user);
+        // await _dbContext.SaveChangesAsync();
+
+        return new ServiceResponse<User> { Data = user, Status = 1, Message = "Success" };
+    }
+    public async Task<ServiceResponse<User>> ConfirmEmail(int UserId, string Code)
+    {
+        var user = await _dbContext.Users.FindAsync(UserId);
+        if (user == null || Code == null)
+        {
+            return new ServiceResponse<User> { Status = 0, Message = "User not found" };
+        }
+
+        user.Status = 0;
+
         await _dbContext.SaveChangesAsync();
+
         return new ServiceResponse<User>
         {
             Data = user,
             Status = 1,
-            Message = "Success"
+            Message = "Email confirmed successfully"
         };
     }
     public async Task<ServiceResponse<string>> Logout(string token)
@@ -153,3 +193,4 @@ public class AuthService : IAuthService
 
 
 }
+

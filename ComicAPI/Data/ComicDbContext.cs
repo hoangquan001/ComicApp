@@ -88,16 +88,16 @@ namespace ComicApp.Data
                 b.HasKey(x => new { x.ID });
             });
 
-            modelBuilder.Entity<DailyComicView> (b => 
+            modelBuilder.Entity<DailyComicView>(b =>
             {
-                
-                b.ToTable("daily_comic_view")
+
+                b.ToTable("daily_comic_views")
                 .HasKey(x => new { x.ComicID, x.ViewDate });
                 b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.ComicID);
             }
             );
 
-                
+
             modelBuilder.HasDbFunction(() => GetLatestChapter(default))
             .HasName("get_latest_chapter");
 
