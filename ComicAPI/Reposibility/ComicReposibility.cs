@@ -456,7 +456,7 @@ public class ComicReposibility : IComicReposibility
         return cachedData!;
     }
 
-    public async Task<ComicTopViewDTO?> GetTopViewComics()
+    public async Task<ComicTopViewDTO?> GetTopViewComics(int step)
     {
         ComicTopViewDTO? data = new ComicTopViewDTO();
         var today = DateTime.UtcNow.Date;
@@ -464,7 +464,7 @@ public class ComicReposibility : IComicReposibility
            .Where(dv => dv.ViewDate.Date == today)
            .Include(dv => dv.comic)
            .OrderByDescending(dv => dv.ViewCount)
-           .Take(10)
+           .Take(step)
            .Select(dv => new ComicDTO
            {
                ID = dv.ComicID,
@@ -504,7 +504,7 @@ public class ComicReposibility : IComicReposibility
                 Chapters = _dbContext.Chapters.Where(c => c.ID == g.Key.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
             })
             .OrderByDescending(c => c.ViewCount)
-            .Take(10)
+            .Take(step)
             .ToListAsync();
 
 
@@ -529,7 +529,7 @@ public class ComicReposibility : IComicReposibility
                 Chapters = _dbContext.Chapters.Where(c => c.ID == g.Key.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
             })
             .OrderByDescending(c => c.ViewCount)
-            .Take(10)
+            .Take(step)
             .ToListAsync();
 
         return data;

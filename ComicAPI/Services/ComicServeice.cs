@@ -324,9 +324,9 @@ public class ComicService : IComicService
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(data);
     }
 
-    public async Task<ServiceResponse<ComicTopViewDTO?>> GetTopViewComics()
+    public async Task<ServiceResponse<ComicTopViewDTO?>> GetTopViewComics(int step)
     {
-        var data = await _comicReposibility.GetTopViewComics();
+        var data = await _comicReposibility.GetTopViewComics(step);
         return ServiceUtilily.GetDataRes<ComicTopViewDTO>(data)!;
     }
 }
