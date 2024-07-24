@@ -461,7 +461,7 @@ public class ComicReposibility : IComicReposibility
         ComicTopViewDTO? data = new ComicTopViewDTO();
         var today = DateTime.UtcNow.Date;
         data.DailyComics = await _dbContext.DailyComicViews
-           .Where(dv => dv.ViewDate == today)
+           .Where(dv => dv.ViewDate.Date == today)
            .Include(dv => dv.comic)
            .OrderByDescending(dv => dv.ViewCount)
            .Take(10)
