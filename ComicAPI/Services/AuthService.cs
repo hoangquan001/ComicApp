@@ -50,6 +50,7 @@ public class AuthService : IAuthService
             LastName = data.LastName,
             Avatar = _urlService.GetUserImagePath(data.Avatar),
             Gender = data.Gender,
+            Status = data.Status,
             Token = _tokenMgr.CreateToken(data.ID),
             TypeLevel = data.TypeLevel,
             Experience = data.Experience,
@@ -95,6 +96,7 @@ public class AuthService : IAuthService
                 Avatar = avatarPath,
                 Gender = 0,
                 HashPassword = "",
+                Status = 1
 
             };
             _dbContext.Users.Add(user);
@@ -113,6 +115,7 @@ public class AuthService : IAuthService
             LastName = user.LastName,
             Avatar = _urlService.GetUserImagePath(user.Avatar),
             Gender = user.Gender,
+            Status = user.Status,
             Token = _tokenMgr.CreateToken(user.ID),
             TypeLevel = user.TypeLevel,
             Experience = user.Experience,
@@ -124,7 +127,30 @@ public class AuthService : IAuthService
         res.Message = "Success";
         return res;
     }
+    public async Task<ServiceResponse<int>> SendEmailConfirm(int userid, string email)
+    {
+        var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == email && user.ID == userid);
+        if (data?.Status == 1)
+        {
+            return new ServiceResponse<int> { Status = 0, Message = "Tài khoản đã xác thực vui lòng đăng nhập" };
+        }
+        try
+        {
+            var code = _tokenMgr.CreateToken(userid);
+            var callbackUrl = _urlService.GetConfirmEmailPath(userid, code);
+            var time = DateTime.UtcNow.Date;
+            await _emailSender.SendEmailAsync(email!
+                      , "Confirm your email",
+                      $"Please confirm your account by <a href='{callbackUrl}'>clicking here</a>.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error downloading image: {ex.Message}");
+            return new ServiceResponse<int> { Status = 0, Message = "Email không hợp lệ." };
+        }
 
+        return new ServiceResponse<int> { Data = userid, Status = 1, Message = "Gửi thư thành công" };
+    }
     public async Task<ServiceResponse<User>> Register(UserRegisterDTO RegisterData)
     {
 
@@ -135,43 +161,48 @@ public class AuthService : IAuthService
         int maxID = await _dbContext.Users.MaxAsync(user => user.ID);
         User user = new User
         {
-            ID = maxID,
+            ID = maxID + 1,
             FirstName = RegisterData.name!,
             Email = RegisterData.email!,
             HashPassword = RegisterData.password!,
             Status = 0
         };
 
-        try
+        var response = await SendEmailConfirm(user.ID, user.Email);
+        if (response.Status == 0)
         {
-            var code = _tokenMgr.CreateToken(user.ID);
-            var callbackUrl = _urlService.GetConfirmEmailPath(user.ID, code);
-            await _emailSender.SendEmailAsync(user.Email
-                      , "Confirm your email",
-                      $"Please confirm your account by <a href='{callbackUrl}'>clicking here</a>.");
+            return new ServiceResponse<User> { Status = 0, Message = "Not send email confirm" };
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error downloading image: {ex.Message}");
-            return new ServiceResponse<User> { Status = 0, Message = "Email không hợp lệ." }; ;
-        }
-        // _dbContext.Users.Add(user);
-        // await _dbContext.SaveChangesAsync();
+        _dbContext.Users.Add(user);
+        await _dbContext.SaveChangesAsync();
 
         return new ServiceResponse<User> { Data = user, Status = 1, Message = "Success" };
     }
-    public async Task<ServiceResponse<User>> ConfirmEmail(int UserId, string Code)
+    public async Task<ServiceResponse<User>> ConfirmEmail(int UserId, string Code, string Date)
     {
+        var datesend = DateTime.Parse(Date);
+        var difference = DateTime.UtcNow.Date - datesend;
+
+        if (difference.Days > 1)
+        {
+            return new ServiceResponse<User> { Status = 0, Message = "Liên kết hết hạn" };
+        }
         var user = await _dbContext.Users.FindAsync(UserId);
         if (user == null || Code == null)
         {
             return new ServiceResponse<User> { Status = 0, Message = "User not found" };
         }
+        if (user.Status == 1)
+        {
+            return new ServiceResponse<User>
+            {
 
-        user.Status = 0;
-
+                Status = 0,
+                Message = "Tài khoản đã được xác thực, xin vui lòng đăng nhập"
+            };
+        }
+        user.Status = 1;
         await _dbContext.SaveChangesAsync();
-
         return new ServiceResponse<User>
         {
             Data = user,

@@ -46,7 +46,8 @@ namespace ComicAPI.Services
         }
         public string GetConfirmEmailPath(int UserId, string Code)
         {
-            return $"{GetCurrentHost()}/Auth/ConfirmEmail?UserId={UserId}&Code={Code}";
+            var dateTime = DateTime.UtcNow.Date.ToString();
+            return $"{GetCurrentHost()}/Auth/ConfirmEmail?UserId={UserId}&Code={Code}&Date={dateTime}";
         }
     }
 }

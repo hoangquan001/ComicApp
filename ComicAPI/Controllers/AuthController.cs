@@ -51,11 +51,25 @@ public class AuthController : ControllerBase
         ServiceResponse<User> res = await _authService.Register(RegisterData);
         return Ok(res);
     }
+
+    [Route("SendEmailConfirm")]
+    [HttpGet]
+    public async Task<ActionResult<ServiceResponse<int>>> SendEmailConfirm(int UserId, string email)
+    {
+        ServiceResponse<int> res = await _authService.SendEmailConfirm(UserId, email);
+        return Ok(res);
+    }
     [Route("ConfirmEmail")]
     [HttpGet]
-    public async Task<ActionResult<ServiceResponse<string>>> ConfirmEmail(int UserId, string Code)
+    public async Task<ActionResult<ServiceResponse<string>>> ConfirmEmail(int UserId, string Code, string Date)
     {
-        ServiceResponse<User> res = await _authService.ConfirmEmail(UserId, Code);
+
+        ServiceResponse<User> res = await _authService.ConfirmEmail(UserId, Code, Date);
+        if (res.Status == 1)
+        {
+            return Redirect("http://localhost:4200/auth/login");
+        }
+
         return Ok(res);
     }
     [Route("Logout")]

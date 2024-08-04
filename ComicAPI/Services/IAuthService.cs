@@ -7,6 +7,7 @@ public interface IAuthService
     Task<ServiceResponse<UserDTO>> Login(UserLoginDTO userLogin);
     Task<ServiceResponse<UserDTO>> LoginWithSocial(UserLoginSocialDTO userLogin);
     Task<ServiceResponse<User>> Register(UserRegisterDTO RegisterData);
-    Task<ServiceResponse<User>> ConfirmEmail(int userId, string code);
+    Task<ServiceResponse<int>> SendEmailConfirm(int userId, string email);
+    Task<ServiceResponse<User>> ConfirmEmail(int userId, string code, string Date);
     Task<ServiceResponse<string>> Logout(string token);
 }
