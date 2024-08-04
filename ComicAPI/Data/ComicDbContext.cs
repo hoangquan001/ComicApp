@@ -123,38 +123,17 @@ namespace ComicApp.Data
         [DbFunction("public", "get_top_daily_comics")]
         public virtual IQueryable<Comic> GetTopDailyComics()
         {
-            return this.Set<Comic>().FromSqlRaw(
-                @"SELECT c.*
-          FROM (
-              SELECT ComicID, ROW_NUMBER() OVER () AS OrderIndex
-              FROM get_top_daily_comics()
-          ) AS top_comics
-          JOIN COMIC c ON top_comics.ComicID = c.ID
-          ORDER BY top_comics.OrderIndex");
+            return this.Comics.FromSqlRaw(@"select comic.* from get_top_daily_comics() join comic on id = comicid");
         }
         [DbFunction("public", "get_top_weekly_comics")]
         public virtual IQueryable<Comic> GetTopWeeklyComics()
         {
-            return this.Set<Comic>().FromSqlRaw(
-                @"SELECT c.*
-          FROM (
-              SELECT ComicID, ROW_NUMBER() OVER () AS OrderIndex
-              FROM get_top_weekly_comics()
-          ) AS top_comics
-          JOIN COMIC c ON top_comics.ComicID = c.ID
-          ORDER BY top_comics.OrderIndex");
+            return this.Comics.FromSqlRaw(@"select comic.* from get_top_weekly_comics() join comic on id = comicid");
         }
         [DbFunction("public", "get_top_monthly_comics")]
         public virtual IQueryable<Comic> GetTopMonthlyComics()
         {
-            return this.Set<Comic>().FromSqlRaw(
-    @"SELECT c.*
-          FROM (
-              SELECT ComicID, ROW_NUMBER() OVER () AS OrderIndex
-              FROM get_top_monthly_comics()
-          ) AS top_comics
-          JOIN COMIC c ON top_comics.ComicID = c.ID
-          ORDER BY top_comics.OrderIndex");
+            return this.Comics.FromSqlRaw(@"select comic.* from get_top_monthly_comics() join comic on id = comicid");
         }
     }
 }

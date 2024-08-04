@@ -94,9 +94,8 @@ public class ComicReposibility : IComicReposibility
      SortType sort = SortType.TopAll)
     {
 
-        var data = await _dbContext.Comics
+        var data = await _dbContext.GetComicsWithOrderByType(sort)
         .Where(x => (status == ComicStatus.All || x.Status == (int)status) && (genre == -1 || x.Genres.Any(g => genre == g.ID)))
-        .OrderComicByType(sort)
         .Select(x => new ComicDTO
         {
             ID = x.ID,
@@ -317,7 +316,7 @@ public class ComicReposibility : IComicReposibility
         genres ??= new List<int> { -1 };
         Nogenres ??= new List<int> { -1 };
 
-        var comicsQuery = _dbContext.Comics.AsQueryable();
+        var comicsQuery = _dbContext.GetComicsWithOrderByType(sort);
 
         if (status != ComicStatus.All)
         {
@@ -352,7 +351,7 @@ public class ComicReposibility : IComicReposibility
         // Execute query and get data
 
         var data = await comicsQuery
-            .OrderComicByType(sort)
+
             .Select(x => new ComicDTO
             {
                 ID = x.ID,
