@@ -81,3 +81,91 @@ $$ LANGUAGE plpgsql;
 
 
 --END-----------------------------NOTIFY--------------------------------
+
+
+
+--BEGIN---------------------------TOPVIEW--------------------------------
+
+CREATE OR REPLACE FUNCTION get_top_daily_comics()
+RETURNS TABLE (ComicID INT) AS $$
+BEGIN
+    RETURN QUERY
+    WITH top_daily AS (
+        SELECT dc.ComicID, SUM(dc.ViewCount) AS TotalViewCount
+        FROM DAILY_COMIC_VIEWS dc
+        WHERE  DATE(dc.ViewDate) = DATE(CURRENT_DATE)
+        GROUP BY dc.ComicID
+        ORDER BY TotalViewCount DESC
+        
+    ),
+    additional_comics AS (
+        SELECT c.ID AS ComicID
+        FROM COMIC c
+        WHERE c.ID NOT IN (SELECT td.ComicID FROM top_daily td)
+        ORDER BY c.ViewCount DESC
+         
+    )
+    SELECT td.ComicID
+    FROM top_daily td
+    UNION ALL
+    SELECT ac.ComicID
+    FROM additional_comics ac;
+END;
+$$ LANGUAGE plpgsql
+
+CREATE OR REPLACE FUNCTION get_top_weekly_comics()
+RETURNS TABLE (ComicID INT) AS $$
+BEGIN
+    RETURN QUERY
+    WITH top_weekly AS (
+        SELECT dc.ComicID, SUM(dc.ViewCount) AS TotalViewCount
+        FROM DAILY_COMIC_VIEWS dc
+        WHERE dc.ViewDate >= CURRENT_DATE - INTERVAL '7 days'
+        GROUP BY dc.ComicID
+        ORDER BY TotalViewCount DESC
+    ),
+    additional_comics AS (
+        SELECT c.ID AS ComicID
+        FROM COMIC c
+        WHERE c.ID NOT IN (SELECT tw.ComicID FROM top_weekly tw)
+        ORDER BY c.ViewCount DESC
+    )
+    SELECT tw.ComicID
+    FROM top_weekly tw
+    UNION ALL
+    SELECT ac.ComicID
+    FROM additional_comics ac;
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+CREATE OR REPLACE FUNCTION get_top_monthly_comics()
+RETURNS TABLE (ComicID INT) AS $$
+BEGIN
+    RETURN QUERY
+    WITH top_monthly AS (
+        SELECT dc.ComicID, SUM(dc.ViewCount) AS TotalViewCount
+        FROM DAILY_COMIC_VIEWS dc
+        WHERE dc.ViewDate >= CURRENT_DATE - INTERVAL '1 month'
+        GROUP BY dc.ComicID
+        ORDER BY TotalViewCount DESC
+        
+    ),
+    additional_comics AS (
+        SELECT c.ID AS ComicID
+        FROM COMIC c
+        WHERE c.ID NOT IN (SELECT tm.ComicID FROM top_monthly tm)
+        ORDER BY c.ViewCount DESC
+    )
+    SELECT tm.ComicID
+    FROM top_monthly tm
+    UNION ALL
+    SELECT ac.ComicID
+    FROM additional_comics ac;
+END;
+$$ LANGUAGE plpgsql;
+
+
+
+--BEGIN---------------------------END--------------------------------

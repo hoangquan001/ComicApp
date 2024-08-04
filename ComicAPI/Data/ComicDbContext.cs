@@ -101,12 +101,60 @@ namespace ComicApp.Data
             modelBuilder.HasDbFunction(() => GetLatestChapter(default))
             .HasName("get_latest_chapter");
 
+            modelBuilder.HasDbFunction(() => GetTopDailyComics())
+           .HasName("get_top_daily_comics")
+           .HasSchema("public");
+
+            modelBuilder.HasDbFunction(() => GetTopWeeklyComics())
+                .HasName("get_top_weekly_comics")
+                .HasSchema("public");
+
+            modelBuilder.HasDbFunction(() => GetTopMonthlyComics())
+                .HasName("get_top_monthly_comics")
+                .HasSchema("public");
+
         }
         [DbFunction("public", "get_latest_chapter")]
         public virtual IQueryable<Chapter> GetLatestChapter(int comicId)
         {
             var parameter = new Npgsql.NpgsqlParameter("comic_id", comicId);
             return this.Set<Chapter>().FromSqlRaw("SELECT * FROM get_latest_chapter(@comic_id)", parameter);
+        }
+        [DbFunction("public", "get_top_daily_comics")]
+        public virtual IQueryable<Comic> GetTopDailyComics()
+        {
+            return this.Set<Comic>().FromSqlRaw(
+                @"SELECT c.*
+          FROM (
+              SELECT ComicID, ROW_NUMBER() OVER () AS OrderIndex
+              FROM get_top_daily_comics()
+          ) AS top_comics
+          JOIN COMIC c ON top_comics.ComicID = c.ID
+          ORDER BY top_comics.OrderIndex");
+        }
+        [DbFunction("public", "get_top_weekly_comics")]
+        public virtual IQueryable<Comic> GetTopWeeklyComics()
+        {
+            return this.Set<Comic>().FromSqlRaw(
+                @"SELECT c.*
+          FROM (
+              SELECT ComicID, ROW_NUMBER() OVER () AS OrderIndex
+              FROM get_top_weekly_comics()
+          ) AS top_comics
+          JOIN COMIC c ON top_comics.ComicID = c.ID
+          ORDER BY top_comics.OrderIndex");
+        }
+        [DbFunction("public", "get_top_monthly_comics")]
+        public virtual IQueryable<Comic> GetTopMonthlyComics()
+        {
+            return this.Set<Comic>().FromSqlRaw(
+                @"SELECT c.*
+          FROM (
+              SELECT ComicID, ROW_NUMBER() OVER () AS OrderIndex
+              FROM get_top_monthly_comics()
+          ) AS top_comics
+          JOIN COMIC c ON top_comics.ComicID = c.ID
+          ORDER BY top_comics.OrderIndex");
         }
     }
 }
