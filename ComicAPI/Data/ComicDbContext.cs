@@ -106,12 +106,12 @@ namespace ComicApp.Data
            .HasSchema("public");
 
             modelBuilder.HasDbFunction(() => GetTopWeeklyComics())
-                .HasName("get_top_weekly_comics")
-                .HasSchema("public");
+            .HasName("get_top_weekly_comics")
+            .HasSchema("public");
 
             modelBuilder.HasDbFunction(() => GetTopMonthlyComics())
-                .HasName("get_top_monthly_comics")
-                .HasSchema("public");
+            .HasName("get_top_monthly_comics")
+            .HasSchema("public");
 
         }
         [DbFunction("public", "get_latest_chapter")]
@@ -148,7 +148,7 @@ namespace ComicApp.Data
         public virtual IQueryable<Comic> GetTopMonthlyComics()
         {
             return this.Set<Comic>().FromSqlRaw(
-                @"SELECT c.*
+    @"SELECT c.*
           FROM (
               SELECT ComicID, ROW_NUMBER() OVER () AS OrderIndex
               FROM get_top_monthly_comics()
