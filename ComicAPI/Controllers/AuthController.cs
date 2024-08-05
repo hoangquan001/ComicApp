@@ -11,6 +11,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using ComicAPI.Services;
 using ComicAPI.DTOs;
+using System.Web;
 
 [ApiController]
 [Route("[controller]")]
@@ -69,8 +70,11 @@ public class AuthController : ControllerBase
         {
             return Redirect("http://localhost:4200/auth/login");
         }
-
-        return Ok(res);
+        else
+        {
+            string encodedMessage = HttpUtility.UrlEncode(res.Message);
+            return Redirect($"http://localhost:4200/auth/confirm-email?mssg={encodedMessage}");
+        }
     }
     [Route("Logout")]
     [HttpGet]
