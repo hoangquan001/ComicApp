@@ -450,7 +450,7 @@ public class ComicReposibility : IComicReposibility
         return cachedData!;
     }
 
-    public async Task<ComicTopViewDTO?> GetTopViewComics(int step)
+    public async Task<ComicTopViewDTO?> _getTopViewComicsFromDB(int step)
     {
         var dailyComics = await _dbContext.GetTopDailyComics(TopViewType.Day)
         .Take(step)
@@ -513,8 +513,19 @@ public class ComicReposibility : IComicReposibility
             WeeklyComics = weeklyComics,
             MonthlyComics = monthlyComics
         };
-
         return data;
+    }
+    public async Task<ComicTopViewDTO?> GetTopViewComics( int step)
+    {
+        const string cacheKey = "TOPVIEW_COMIC_KEY";
+        if (!_cache.TryGetValue(cacheKey, out ComicTopViewDTO? cachedData))
+        {
+            cachedData = await _getTopViewComicsFromDB(step);
+            var cacheEntryOptions = new MemoryCacheEntryOptions()
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(10)); // Reset each 10 minutes
+            _cache.Set(cacheKey, cachedData, cacheEntryOptions);
+        }
+        return cachedData!;
     }
 
 
