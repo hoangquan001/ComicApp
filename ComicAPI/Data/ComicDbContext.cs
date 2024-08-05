@@ -1,8 +1,10 @@
 // generate data context 
+using ComicAPI.Enums;
 using ComicAPI.Models;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using Npgsql;
 
 namespace ComicApp.Data
@@ -97,21 +99,8 @@ namespace ComicApp.Data
             }
             );
 
-
             modelBuilder.HasDbFunction(() => GetLatestChapter(default))
             .HasName("get_latest_chapter");
-
-            modelBuilder.HasDbFunction(() => GetTopDailyComics())
-           .HasName("get_top_daily_comics")
-           .HasSchema("public");
-
-            modelBuilder.HasDbFunction(() => GetTopWeeklyComics())
-            .HasName("get_top_weekly_comics")
-            .HasSchema("public");
-
-            modelBuilder.HasDbFunction(() => GetTopMonthlyComics())
-            .HasName("get_top_monthly_comics")
-            .HasSchema("public");
 
         }
         [DbFunction("public", "get_latest_chapter")]
@@ -120,20 +109,44 @@ namespace ComicApp.Data
             var parameter = new Npgsql.NpgsqlParameter("comic_id", comicId);
             return this.Set<Chapter>().FromSqlRaw("SELECT * FROM get_latest_chapter(@comic_id)", parameter);
         }
-        [DbFunction("public", "get_top_daily_comics")]
-        public virtual IQueryable<Comic> GetTopDailyComics()
+
+        public IQueryable<Comic> GetTopDailyComics(TopViewType topViewType = TopViewType.Day)
         {
-            return this.Comics.FromSqlRaw(@"select comic.* from get_top_daily_comics() join comic on id = comicid");
-        }
-        [DbFunction("public", "get_top_weekly_comics")]
-        public virtual IQueryable<Comic> GetTopWeeklyComics()
-        {
-            return this.Comics.FromSqlRaw(@"select comic.* from get_top_weekly_comics() join comic on id = comicid");
-        }
-        [DbFunction("public", "get_top_monthly_comics")]
-        public virtual IQueryable<Comic> GetTopMonthlyComics()
-        {
-            return this.Comics.FromSqlRaw(@"select comic.* from get_top_monthly_comics() join comic on id = comicid");
+            int day = 0;
+            switch (topViewType)
+            {
+                case TopViewType.Day:
+                    day = 1;
+                    break;
+                case TopViewType.Week:
+                    day = 7;
+                    break;
+                case TopViewType.Month:
+                    day = 30;
+                    break;
+            }
+            var dateTime  = DateTime.UtcNow.Date.AddDays(-day);
+            var result = this.Comics
+                .GroupJoin( this.DailyComicViews
+                .Where(dcv => dcv.ViewDate > dateTime)
+                .GroupBy(dcv => dcv.ComicID)
+                .Select(g => new
+                {
+                    ComicID = g.Key,
+                    TotalDailyViewCount = g.Sum(dcv => dcv.ViewCount)
+                }),
+            comic => comic.ID,
+            dcvGroup => dcvGroup.ComicID,
+            (comic, dcvGroup) => new
+            {
+                Comic = comic,
+                TotalDailyViewCount = dcvGroup.FirstOrDefault() != null ? dcvGroup.FirstOrDefault()!.TotalDailyViewCount : 0
+            })
+            .OrderByDescending(result => result.TotalDailyViewCount)
+            .ThenByDescending(result => result.Comic.ViewCount)
+            .Select(result => result.Comic);
+
+            return result;
         }
     }
 }

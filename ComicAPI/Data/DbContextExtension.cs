@@ -25,11 +25,11 @@ namespace ComicApp.Data
                     // Implement logic for TopComment if needed
                     break;
                 case SortType.TopDay:
-                    return context.GetTopDailyComics();
+                    return context.GetTopDailyComics(TopViewType.Day);
                 case SortType.TopWeek:
-                    return context.GetTopWeeklyComics();
+                    return context.GetTopDailyComics(TopViewType.Week);
                 case SortType.TopMonth:
-                    return context.GetTopMonthlyComics();
+                    return context.GetTopDailyComics(TopViewType.Month);
                 case SortType.TopAll:
                     return context.Comics.OrderByDescending(x => x.ViewCount);
             }

@@ -14,6 +14,7 @@ namespace ComicAPI.Models
         [Column("comicid")]
         public int ComicID { get; set; }
         [Column("viewdate")]
+        [DataType(DataType.Date)]
         public DateTime ViewDate { get; set; }
         [Column("viewcount")]
         public int ViewCount { get; set; }

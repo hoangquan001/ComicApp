@@ -452,7 +452,7 @@ public class ComicReposibility : IComicReposibility
 
     public async Task<ComicTopViewDTO?> GetTopViewComics(int step)
     {
-        var dailyComics = await _dbContext.GetTopDailyComics()
+        var dailyComics = await _dbContext.GetTopDailyComics(TopViewType.Day)
         .Take(step)
         .Select(x => new ComicDTO
         {
@@ -470,8 +470,9 @@ public class ComicReposibility : IComicReposibility
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
         }).ToListAsync();
-        var weeklyComics = await _dbContext.GetTopWeeklyComics().
-        Select(x => new ComicDTO
+        var weeklyComics = await _dbContext.GetTopDailyComics(TopViewType.Week)
+        .Take(step)
+        .Select(x => new ComicDTO
         {
             ID = x.ID,
             Title = x.Title,
@@ -486,9 +487,10 @@ public class ComicReposibility : IComicReposibility
             UpdateAt = x.UpdateAt,
             genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
-        }).Take(step).ToListAsync();
-        var monthlyComics = await _dbContext.GetTopMonthlyComics().Take(step).
-        Select(x => new ComicDTO
+        }).ToListAsync();
+        var monthlyComics = await _dbContext.GetTopDailyComics(TopViewType.Month)
+        .Take(step)
+        .Select(x => new ComicDTO
         {
             ID = x.ID,
             Title = x.Title,
