@@ -61,10 +61,10 @@ public class AuthController : ControllerBase
     }
     [Route("ConfirmEmail")]
     [HttpGet]
-    public async Task<ActionResult<ServiceResponse<string>>> ConfirmEmail(int UserId, string Code, string Date)
+    public async Task<ActionResult<ServiceResponse<string>>> ConfirmEmail(int UserId, string Code)
     {
 
-        ServiceResponse<User> res = await _authService.ConfirmEmail(UserId, Code, Date);
+        ServiceResponse<User> res = await _authService.ConfirmEmail(UserId, Code);
         if (res.Status == 1)
         {
             return Redirect("http://localhost:4200/auth/login");

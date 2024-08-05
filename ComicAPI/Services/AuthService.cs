@@ -178,15 +178,45 @@ public class AuthService : IAuthService
 
         return new ServiceResponse<User> { Data = user, Status = 1, Message = "Success" };
     }
-    public async Task<ServiceResponse<User>> ConfirmEmail(int UserId, string Code, string Date)
+    public async Task<ServiceResponse<User>> ConfirmEmail(int UserId, string Code)
     {
-        var datesend = DateTime.Parse(Date);
-        var difference = DateTime.UtcNow.Date - datesend;
 
-        if (difference.Days > 1)
+        var handler = new JwtSecurityTokenHandler();
+        JwtSecurityToken jwtToken;
+        try
         {
-            return new ServiceResponse<User> { Status = 0, Message = "Liên kết hết hạn" };
+            jwtToken = handler.ReadJwtToken(Code) as JwtSecurityToken;
         }
+        catch (Exception)
+        {
+            return new ServiceResponse<User> { Status = 0, Message = "Invalid token" };
+        }
+
+        if (jwtToken == null)
+        {
+            return new ServiceResponse<User> { Status = 0, Message = "Invalid token" };
+        }
+
+        var expClaim = jwtToken.Claims.FirstOrDefault(claim => claim.Type == JwtRegisteredClaimNames.Exp);
+
+        if (expClaim == null || !long.TryParse(expClaim.Value, out var exp))
+        {
+            return new ServiceResponse<User> { Status = 0, Message = "Invalid token" };
+        }
+
+        var expirationTime = DateTimeOffset.FromUnixTimeSeconds(exp).UtcDateTime;
+        if (DateTime.UtcNow > expirationTime)
+        {
+            return new ServiceResponse<User> { Status = 0, Message = "Token has expired" };
+        }
+
+        // var datesend = DateTime.Parse(Date);
+        // var difference = DateTime.UtcNow.Date - datesend;
+
+        // if (difference.Days > 1)
+        // {
+        //     return new ServiceResponse<User> { Status = 0, Message = "Liên kết hết hạn" };
+        // }
         var user = await _dbContext.Users.FindAsync(UserId);
         if (user == null || Code == null)
         {
