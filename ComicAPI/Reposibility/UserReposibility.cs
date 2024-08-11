@@ -74,5 +74,10 @@ namespace ComicAPI.Reposibility
         {
             return await _dbContext.UserVoteComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
         }
+
+        public Task UpdateUserExp(Dictionary<int, int> exps)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

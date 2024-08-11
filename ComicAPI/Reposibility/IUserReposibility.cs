@@ -9,4 +9,5 @@ public interface IUserReposibility
     Task<User?> GetUser(int userid);
     Task<List<UserNotificationDTO>?> GetUserNotify(int userid);
     Task<UserVoteComic?> GetUserVoteComic(int userid, int comicid);
+    Task UpdateUserExp(Dictionary<int, int> exps);
 }

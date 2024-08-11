@@ -29,7 +29,7 @@ public class ComicService : IComicService
     private static List<int> genreWeight = new List<int>();
     private readonly IUserService _userService;
     private readonly IMapper _mapper;
-
+    private static Dictionary<int, int> views = new Dictionary<int, int>();
 
     static ComicService()
     {
@@ -47,6 +47,7 @@ public class ComicService : IComicService
         _comicReposibility = comicReposibility;
         _mapper = mapper;
         _userService = userService;
+
     }
 
 
@@ -328,5 +329,20 @@ public class ComicService : IComicService
     {
         var data = await _comicReposibility.GetTopViewComics(step);
         return ServiceUtilily.GetDataRes<ComicTopViewDTO>(data)!;
+    }
+    public Task<ServiceResponse<int>> TotalViewComics(int comicid)
+    {
+        if (!views.ContainsKey(comicid))
+        {
+            views[comicid] = 0;
+        }
+        views[comicid]++;
+
+        return Task.FromResult(ServiceUtilily.GetDataRes<int>(views[comicid]));
+    }
+
+    public async Task UpdateViewComic()
+    {
+        await _comicReposibility.UpdateViewComic(views);
     }
 }

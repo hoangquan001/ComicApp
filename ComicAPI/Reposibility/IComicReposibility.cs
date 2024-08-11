@@ -25,4 +25,5 @@ public interface IComicReposibility
      List<int>? genres = null, int page = 1, int step = 100, List<int>? Nogenres = null, int? year = null, string? keyword = null);
     public Task<List<ComicDTO>?> GetComicRecommend();
     public Task<ComicTopViewDTO?> GetTopViewComics(int step);
+    public Task UpdateViewComic(Dictionary<int, int> views);
 }

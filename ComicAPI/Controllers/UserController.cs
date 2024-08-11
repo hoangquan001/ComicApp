@@ -101,11 +101,11 @@ public class UserController : ControllerBase
         return Ok(await _userService.UpdateMaxim(maxim));
     }
 
-    [HttpPost("Update/exp/{exp}")]
-    public async Task<ActionResult<ServiceResponse<string>>> UpdateExp(int exp)
+    [HttpPost("Exps/{exp}")]
+    public async Task<ActionResult<ServiceResponse<string>>> UpdateExp(UserExpType exp)
     {
 
-        return Ok(await _userService.UpdateExp(exp));
+        return Ok(await _userService.Totalexp(exp));
     }
     [HttpGet("Notify")]
     public async Task<ActionResult<ServiceResponse<List<UserNotificationDTO>>>> GetUserNotify()

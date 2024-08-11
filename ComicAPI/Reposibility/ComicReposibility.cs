@@ -515,7 +515,7 @@ public class ComicReposibility : IComicReposibility
         };
         return data;
     }
-    public async Task<ComicTopViewDTO?> GetTopViewComics( int step)
+    public async Task<ComicTopViewDTO?> GetTopViewComics(int step)
     {
         const string cacheKey = "TOPVIEW_COMIC_KEY";
         if (!_cache.TryGetValue(cacheKey, out ComicTopViewDTO? cachedData))
@@ -528,6 +528,8 @@ public class ComicReposibility : IComicReposibility
         return cachedData!;
     }
 
-
-
+    public Task UpdateViewComic(Dictionary<int, int> views)
+    {
+        throw new NotImplementedException();
+    }
 }

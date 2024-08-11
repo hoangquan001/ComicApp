@@ -26,7 +26,6 @@ public interface IUserService
     Task<ServiceResponse<string>> UpdateAvatar(IFormFile avatar);
     Task<ServiceResponse<string>> UpdateTypelevel(int typelevel);
     Task<ServiceResponse<string>> UpdateMaxim(string? maxim);
-    Task<ServiceResponse<string>> UpdateExp(int exp);
 
     Task<ServiceResponse<List<UserNotificationDTO>>> GetUserNotify();
     Task<ServiceResponse<string>> UpdateUserNotify(int? idNotify = null, bool? isRead = null);
@@ -38,4 +37,6 @@ public interface IUserService
     Task<ServiceResponse<int>> UnVoteComic(int userid, int comicid);
     Task<ServiceResponse<int>> UnVoteComic(int comicid);
 
+    Task<ServiceResponse<int>> Totalexp(UserExpType expt = UserExpType.Chapter);
+    Task UpdateExp();
 }
