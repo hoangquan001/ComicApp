@@ -37,6 +37,6 @@ public interface IUserService
     Task<ServiceResponse<int>> UnVoteComic(int userid, int comicid);
     Task<ServiceResponse<int>> UnVoteComic(int comicid);
 
-    Task<ServiceResponse<int>> Totalexp(UserExpType expt = UserExpType.Chapter);
+    Task<ServiceResponse<int>> TotalExpUser(UserExpType expt = UserExpType.Chapter);
     Task UpdateExp();
 }

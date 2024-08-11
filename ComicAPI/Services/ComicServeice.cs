@@ -330,7 +330,7 @@ public class ComicService : IComicService
         var data = await _comicReposibility.GetTopViewComics(step);
         return ServiceUtilily.GetDataRes<ComicTopViewDTO>(data)!;
     }
-    public Task<ServiceResponse<int>> TotalViewComics(int comicid)
+    public async Task<ServiceResponse<int>> TotalViewComics(int comicid)
     {
         if (!views.ContainsKey(comicid))
         {
@@ -338,11 +338,12 @@ public class ComicService : IComicService
         }
         views[comicid]++;
 
-        return Task.FromResult(ServiceUtilily.GetDataRes<int>(views[comicid]));
+        return await Task.FromResult(ServiceUtilily.GetDataRes<int>(views[comicid]));
     }
 
     public async Task UpdateViewComic()
     {
         await _comicReposibility.UpdateViewComic(views);
+        views.Clear();
     }
 }

@@ -12,15 +12,17 @@ using ComicAPI.Enums;
 using Microsoft.AspNetCore.Authorization;
 using ComicAPI.Classes;
 using ComicApp.Services;
+using Npgsql.TypeMapping;
 [ApiController]
 [Route("")]
 public class ComicController : ControllerBase
 {
     IComicService _comicService;
-    // IUserService _userService;
-    public ComicController(IComicService comicService)
+    IUserService _userService;
+    public ComicController(IComicService comicService, IUserService userService)
     {
         _comicService = comicService;
+        _userService = userService;
     }
 
     [HttpGet("Comics")]
@@ -154,10 +156,11 @@ public class ComicController : ControllerBase
     {
         return Ok(await _comicService.GetTopViewComics(8));
     }
-    [HttpGet("Comic/view/{comicid}")]
-    public async Task<ActionResult<int>> TotalViewComics(int comicid)
+    [HttpPost("Comic/view_exp")]
+    public async Task<ActionResult<int>> TotalViewComics(int comicid, UserExpType exp)
     {
-
-        return Ok(await _comicService.TotalViewComics(comicid));
+        var responseUser = await _userService.TotalExpUser(exp);
+        var responseComic = await _comicService.TotalViewComics(comicid);
+        return Ok(responseComic);
     }
 }

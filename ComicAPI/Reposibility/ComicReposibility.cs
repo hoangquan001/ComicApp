@@ -528,8 +528,20 @@ public class ComicReposibility : IComicReposibility
         return cachedData!;
     }
 
-    public Task UpdateViewComic(Dictionary<int, int> views)
+    public async Task UpdateViewComic(Dictionary<int, int> views)
     {
-        throw new NotImplementedException();
+        var comicIds = views.Keys.ToList();
+        var comicsToUpdate = await _dbContext.Comics
+                                            .Where(c => comicIds.Contains(c.ID))
+                                            .ToListAsync();
+        if (comicsToUpdate == null) return;
+
+        foreach (var comic in comicsToUpdate)
+        {
+            comic.ViewCount += views[comic.ID];
+        }
+
+
+        await _dbContext.SaveChangesAsync();
     }
 }

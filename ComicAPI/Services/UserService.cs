@@ -606,18 +606,21 @@ public class UserService : IUserService
 
 
 
-    public Task<ServiceResponse<int>> Totalexp(UserExpType expt = UserExpType.Chapter)
+    public async Task<ServiceResponse<int>> TotalExpUser(UserExpType expt = UserExpType.Chapter)
     {
+        if (UserID == -1) return await Task.FromResult(ServiceUtilily.GetDataRes<int>(-1));
         if (!exps.ContainsKey(UserID))
         {
             exps[UserID] = 0;
         }
         exps[UserID] = exps[UserID] + (int)expt;
-
-        return Task.FromResult(ServiceUtilily.GetDataRes<int>(1));
+        Console.WriteLine(UserID);
+        Console.WriteLine(exps[UserID]);
+        return await Task.FromResult(ServiceUtilily.GetDataRes<int>(1));
     }
     public async Task UpdateExp()
     {
         await _userReposibility.UpdateUserExp(exps);
+        exps.Clear();
     }
 }

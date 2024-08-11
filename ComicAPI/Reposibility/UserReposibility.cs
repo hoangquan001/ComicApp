@@ -75,9 +75,22 @@ namespace ComicAPI.Reposibility
             return await _dbContext.UserVoteComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
         }
 
-        public Task UpdateUserExp(Dictionary<int, int> exps)
+        public async Task UpdateUserExp(Dictionary<int, int> exps)
         {
-            throw new NotImplementedException();
+            var userIds = exps.Keys.ToList();
+            var usersToUpdate = await _dbContext.Users
+                                                .Where(u => userIds.Contains(u.ID))
+                                                .ToListAsync();
+
+            if (usersToUpdate == null) return;
+            foreach (var user in usersToUpdate)
+            {
+                user.Experience += exps[user.ID];
+            }
+
+
+            await _dbContext.SaveChangesAsync();
+
         }
     }
 }
