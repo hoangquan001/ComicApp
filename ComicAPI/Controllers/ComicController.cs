@@ -157,10 +157,10 @@ public class ComicController : ControllerBase
         return Ok(await _comicService.GetTopViewComics(8));
     }
     [HttpGet("Comic/view_exp")]
-    public async Task<ActionResult<int>> TotalViewComics(int comicId, UserExpType exp)
+    public async Task<ActionResult<int>> TotalViewComics(int comicId, int chapterId, UserExpType exp)
     {
         var responseUser = await _userService.TotalExpUser(exp);
-        var responseComic = await _comicService.TotalViewComics(comicId);
+        var responseComic = await _comicService.TotalViewComics(comicId, chapterId);
         return Ok(responseComic);
     }
 }

@@ -19,7 +19,8 @@ public interface IComicService
     Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance comicQueryParams);
     Task<ServiceResponse<List<ComicDTO>>> GetComicRecommend();
     Task<ServiceResponse<ComicTopViewDTO?>> GetTopViewComics(int step);
-    Task<ServiceResponse<int>> TotalViewComics(int comicid);
+    Task<ServiceResponse<int>> TotalViewComics(int comicid, int chapterid);
     Task UpdateViewComic();
+    Task updateViewChapter();
 
 }

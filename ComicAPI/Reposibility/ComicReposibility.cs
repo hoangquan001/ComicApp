@@ -528,17 +528,49 @@ public class ComicReposibility : IComicReposibility
         return cachedData!;
     }
 
-    public async Task UpdateViewComic(Dictionary<int, int> views)
+    public async Task UpdateViewComic(HashSet<int> comicview)
     {
-        var comicIds = views.Keys.ToList();
+        var comicIds = comicview.ToList();
+
         var comicsToUpdate = await _dbContext.Comics
-                                            .Where(c => comicIds.Contains(c.ID))
-                                            .ToListAsync();
-        if (comicsToUpdate == null) return;
+                                             .Where(c => comicIds.Contains(c.ID))
+                                             .ToListAsync();
+
+        var chapterViewCounts = await _dbContext.Chapters
+                                                .Where(c => comicIds.Contains(c.ComicID))
+                                                .GroupBy(c => c.ComicID)
+                                                .Select(g => new { ComicID = g.Key, TotalViewCount = g.Sum(c => c.ViewCount) })
+                                                .ToListAsync();
+
+        var chapterViewCountDict = chapterViewCounts.ToDictionary(x => x.ComicID, x => x.TotalViewCount);
 
         foreach (var comic in comicsToUpdate)
         {
-            comic.ViewCount += views[comic.ID];
+            if (chapterViewCountDict.TryGetValue(comic.ID, out int totalViewCount))
+            {
+                comic.ViewCount = totalViewCount;
+            }
+            else
+            {
+                comic.ViewCount = 0;
+            }
+        }
+
+        await _dbContext.SaveChangesAsync();
+    }
+    public async Task UpdateViewChapter(Dictionary<int, int> chapterviews)
+    {
+
+        var chapterIds = chapterviews.Keys.ToList();
+        var chaptersToUpdate = await _dbContext.Chapters
+                                            .Where(c => chapterIds.Contains(c.ID))
+                                            .ToListAsync();
+
+
+        foreach (var chapter in chaptersToUpdate)
+        {
+
+            chapter.ViewCount += chapterviews[chapter.ID];
         }
 
 

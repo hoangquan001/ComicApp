@@ -29,7 +29,8 @@ public class ComicService : IComicService
     private static List<int> genreWeight = new List<int>();
     private readonly IUserService _userService;
     private readonly IMapper _mapper;
-    private static Dictionary<int, int> views = new Dictionary<int, int>();
+    private static Dictionary<int, int> chapterViews = new Dictionary<int, int>();
+    private static HashSet<int> comicViews = new HashSet<int>();
 
     static ComicService()
     {
@@ -330,20 +331,29 @@ public class ComicService : IComicService
         var data = await _comicReposibility.GetTopViewComics(step);
         return ServiceUtilily.GetDataRes<ComicTopViewDTO>(data)!;
     }
-    public async Task<ServiceResponse<int>> TotalViewComics(int comicid)
+    public async Task<ServiceResponse<int>> TotalViewComics(int comicid, int chapterid)
     {
-        if (!views.ContainsKey(comicid))
+        if (!chapterViews.ContainsKey(chapterid))
         {
-            views[comicid] = 0;
+            chapterViews[chapterid] = 0;
         }
-        views[comicid]++;
+        chapterViews[chapterid]++;
 
-        return await Task.FromResult(ServiceUtilily.GetDataRes<int>(views[comicid]));
+        comicViews.Add(comicid);
+
+        return await Task.FromResult(ServiceUtilily.GetDataRes<int>(chapterViews[chapterid]));
     }
 
+    public async Task updateViewChapter()
+    {
+        await _comicReposibility.UpdateViewChapter(chapterViews);
+        chapterViews.Clear();
+    }
     public async Task UpdateViewComic()
     {
-        await _comicReposibility.UpdateViewComic(views);
-        views.Clear();
+        await _comicReposibility.UpdateViewComic(comicViews);
+        comicViews.Clear();
     }
+
+
 }

@@ -614,8 +614,7 @@ public class UserService : IUserService
             exps[UserID] = 0;
         }
         exps[UserID] = exps[UserID] + (int)expt;
-        Console.WriteLine(UserID);
-        Console.WriteLine(exps[UserID]);
+
         return await Task.FromResult(ServiceUtilily.GetDataRes<int>(1));
     }
     public async Task UpdateExp()
