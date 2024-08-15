@@ -39,7 +39,7 @@ public class UserService : IUserService
     }
 
     //Contructor
-    public UserService( IComicReposibility comicReposibility,
+    public UserService(IComicReposibility comicReposibility,
       IUserReposibility userReposibility, IMapper mapper, UrlService urlService)
     {
         _urlService = urlService;
@@ -50,7 +50,7 @@ public class UserService : IUserService
 
     public async Task<ServiceResponse<int>> FollowComic(int comicid)
     {
-        if(_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
+        if (_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
         int status = await _userReposibility.FollowComic(_CurrentUser.ID, comicid);
         if (status == 0) return new ServiceResponse<int> { Status = 0, Message = "Failed", Data = 0 };
         return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 0 };
@@ -77,7 +77,7 @@ public class UserService : IUserService
         return await _userReposibility.IsFollowComic(_CurrentUser.ID, comicid);
     }
 
-    public async Task<ServiceResponse<CommentDTO>> AddComment( string content, int chapterid, int parentcommentid = 0)
+    public async Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int parentcommentid = 0)
     {
         if (_CurrentUser == null) return new ServiceResponse<CommentDTO> { Status = 404, Message = "User not found", Data = null };
         var cmtData = await _userReposibility.AddComment(_CurrentUser.ID, content, chapterid, parentcommentid);
@@ -106,9 +106,12 @@ public class UserService : IUserService
             response.Data = null;
             return response;
         }
+        request.UserId = CurrentUser.ID;
         var user = await _userReposibility.UpdateInfo(request);
         CurrentUser = user;
         response.Data = _mapper.Map<UserDTO>(user);
+        response.Status = 200;
+        response.Message = "Success";
         return response;
     }
 
@@ -133,7 +136,7 @@ public class UserService : IUserService
             response.Message = "Confirm password is incorrect";
             return response;
         }
-
+        request.UserId = CurrentUser.ID;
         await _userReposibility.UpdatePassword(request);
         response.Status = 200;
         response.Message = "Success";
@@ -336,17 +339,17 @@ public class UserService : IUserService
         return response;
     }
 
-    public async Task<ServiceResponse<int>> VoteComic( int comicid, int votePoint)
+    public async Task<ServiceResponse<int>> VoteComic(int comicid, int votePoint)
     {
         if (_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
         bool flag = await _userReposibility.VoteComic(_CurrentUser.ID, comicid, votePoint);
         if (flag) return new ServiceResponse<int> { Status = 0, Message = "Failed", Data = 0 };
         return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
     }
-    public async Task<ServiceResponse<int>> UnVoteComic( int comicid)
+    public async Task<ServiceResponse<int>> UnVoteComic(int comicid)
     {
         if (_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
-        if(await _userReposibility.UnVoteComic(_CurrentUser.ID, comicid))
+        if (await _userReposibility.UnVoteComic(_CurrentUser.ID, comicid))
         {
             return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
         }

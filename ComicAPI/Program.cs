@@ -14,6 +14,8 @@ using Microsoft.Extensions.FileProviders;
 using ComicAPI.Updater;
 using ComicAPI.Reposibility;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.HttpLogging;
+using System.Diagnostics;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -110,7 +112,6 @@ builder.Services.AddAutoMapper(typeof(Program));
 
 
 WebApplication? app = builder.Build();
-
 // Configure the HTTP request pipeline. 
 
 
@@ -125,18 +126,25 @@ app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<TokenHandlerMiddlerware>();
 app.UseHttpsRedirection();
 app.UseDefaultFiles();
-app.UseStaticFiles();
-
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
            Path.Combine(builder.Environment.ContentRootPath, "StaticFiles")),
     RequestPath = new PathString("/static")
 });
-
 app.UseAuthentication();
 app.UseMiddleware<UserMiddleware>();
 app.UseAuthorization();
 app.MapControllers();
+if (app.Environment.IsDevelopment())
+{
+    app.Use(async (context, next) =>
+    {
+        var stopwatch = Stopwatch.StartNew();
+        await next(context);
+        stopwatch.Stop();
+        Console.WriteLine($"Response: {context.Request.Method} {context.Request.Path} {context.Response.StatusCode} {stopwatch.ElapsedMilliseconds}ms");
+    });
+}
 app.Run();
 

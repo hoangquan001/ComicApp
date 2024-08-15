@@ -33,7 +33,7 @@ namespace ComicAPI.Reposibility
             await _dbContext.SaveChangesAsync();
             return true;
         }
-        public async Task<bool> DeleteUserNotify(int userId,int? idNotify)
+        public async Task<bool> DeleteUserNotify(int userId, int? idNotify)
         {
             if (idNotify == -1)
             {
@@ -51,7 +51,7 @@ namespace ComicAPI.Reposibility
                 await _dbContext.SaveChangesAsync();
                 return true;
             }
-           
+
         }
         public async Task<bool> UpdateUserNotify(int userId, int? idNotify, bool? isRead = null)
         {
@@ -85,6 +85,10 @@ namespace ComicAPI.Reposibility
 
             }
         }
+        private void ClearUserCache(int userid)
+        {
+            _memoryCache.Remove(string.Format("user-{0}", userid));
+        }
 
         public async Task<User?> GetUser(int userid)
         {
@@ -100,6 +104,7 @@ namespace ComicAPI.Reposibility
             }
             return user;
         }
+
 
         public async Task<List<UserNotificationDTO>?> GetUserNotify(int userid)
         {
@@ -136,7 +141,7 @@ namespace ComicAPI.Reposibility
             if (user != null)
                 user.VotePoint = votePoint;
             else
-                _dbContext.UserVoteComics.Add(new UserVoteComic { UserID = userid, ComicID = comicid, VotePoint = votePoint });
+                await _dbContext.UserVoteComics.AddAsync(new UserVoteComic { UserID = userid, ComicID = comicid, VotePoint = votePoint });
             await _dbContext.SaveChangesAsync();
             return true;
         }
@@ -166,7 +171,7 @@ namespace ComicAPI.Reposibility
         public async Task<int> UnFollowComic(int userid, int comicid)
         {
             if (!_dbContext.Comics.Any(x => x.ID == comicid)) return 0;
-            var user = _dbContext.UserFollowComics.FirstOrDefault(x => x.UserID == userid && x.ComicID == comicid);
+            var user = await _dbContext.UserFollowComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
             if (user == null) return 0;
             _dbContext.UserFollowComics.Remove(user);
             await _dbContext.SaveChangesAsync();
@@ -182,7 +187,7 @@ namespace ComicAPI.Reposibility
             return 1;
         }
 
-        public async Task<User> UpdateInfo(UpdateUserInfo request)
+        public async Task<User?> UpdateInfo(UpdateUserInfo request)
         {
             var user = _dbContext.Users.SingleOrDefault(x => x.ID == request.UserId);
             if (user == null) return null;
@@ -194,46 +199,51 @@ namespace ComicAPI.Reposibility
 
             await _dbContext.SaveChangesAsync();
             user.Avatar = _urlService.GetUserImagePath(user.Avatar);
+            ClearUserCache(user.ID);
             return user;
         }
-        public async Task<string> UpdatePassword(UpdateUserPassword request)
+        public async Task<User?> UpdatePassword(UpdateUserPassword request)
         {
             var user = _dbContext.Users.SingleOrDefault(x => x.ID == request.UserId);
             if (user == null) return null;
             user.HashPassword = request.NewPassword;
             user.UpdateAt = DateTime.UtcNow;
             await _dbContext.SaveChangesAsync();
-            return user.HashPassword;
+            ClearUserCache(user.ID);
+            return user;
         }
 
-        public async Task<string> UpdateAvatar(int userId, string fileName)
+        public async Task<User?> UpdateAvatar(int userId, string fileName)
         {
             User? user = await _dbContext.Users.SingleOrDefaultAsync(x => x.ID == userId);
             if (user == null) return null;
             user.Avatar = fileName;
             user.UpdateAt = DateTime.UtcNow;
             await _dbContext.SaveChangesAsync();
-            return user.Avatar;
+            ClearUserCache(user.ID);
+            return user;
         }
 
-        public async Task<string> UpdateMaxim(int UserID, string? maxim)
+        public async Task<User?> UpdateMaxim(int UserID, string? maxim)
         {
             var user = await _dbContext.Users.SingleOrDefaultAsync(x => x.ID == UserID);
             if (user == null) return null;
 
             user.Maxim = maxim;
             await _dbContext.SaveChangesAsync();
-            return user.Maxim;
+            ClearUserCache(user.ID);
+            return user;
         }
 
-        public async Task<string> UpdateTypelevel(int userId, int typelevel)
+        public async Task<User?> UpdateTypelevel(int userId, int typelevel)
         {
             var user = await _dbContext.Users.SingleOrDefaultAsync(x => x.ID == userId);
             if (user == null) return null;
             user.TypeLevel = typelevel;
             user.UpdateAt = DateTime.UtcNow;
             await _dbContext.SaveChangesAsync();
-            return user.TypeLevel.ToString();
+            ClearUserCache(user.ID);
+            return user;
         }
         public async Task<bool> IsFollowComic(int userid, int comicid)
         {
@@ -243,7 +253,7 @@ namespace ComicAPI.Reposibility
 
         }
 
-        public async Task<CommentDTO> AddComment(int userid, string content, int chapterid, int parentcommentid = 0)
+        public async Task<CommentDTO?> AddComment(int userid, string content, int chapterid, int parentcommentid = 0)
         {
             var chapter = _dbContext.Chapters.FirstOrDefault(x => x.ID == chapterid);
             if (chapter == null) return null;
@@ -290,7 +300,7 @@ namespace ComicAPI.Reposibility
             .FirstOrDefaultAsync();
             return cmtData;
         }
-        public async Task<ListComicDTO> GetFollowComics(int userid, int page, int size)
+        public async Task<ListComicDTO?> GetFollowComics(int userid, int page, int size)
         {
             var data = await _dbContext.UserFollowComics
             .Where(x => x.UserID == userid)
@@ -329,7 +339,7 @@ namespace ComicAPI.Reposibility
             return null;
         }
 
-        public async Task<CommentPageDTO> GetCommentsOfComic(int comicid, int page = 1, int step = 10)
+        public async Task<CommentPageDTO?> GetCommentsOfComic(int comicid, int page = 1, int step = 10)
         {
             var data = await _dbContext.Comments
                 .Where(x => x.ComicID == comicid && x.ParentCommentID == null)
