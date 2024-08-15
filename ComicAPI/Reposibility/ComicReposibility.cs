@@ -14,11 +14,11 @@ public class ComicReposibility : IComicReposibility
 {
     private readonly ComicDbContext _dbContext;
     private readonly UrlService _urlService;
-    private readonly IMemoryCache _cache;
+    private readonly IMemoryCache _memoryCache;
 
     public ComicReposibility(ComicDbContext dbContext, IMemoryCache cache, UrlService urlService)
     {
-        _cache = cache;
+        _memoryCache = cache;
         _dbContext = dbContext;
         _urlService = urlService;
 
@@ -53,12 +53,12 @@ public class ComicReposibility : IComicReposibility
     {
         const string cacheKey = "ALL_COMIC_KEY";
 
-        if (!_cache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
+        if (!_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
         {
             cachedData = await _getAllComicsFromDB();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
                  .SetSlidingExpiration(TimeSpan.FromMinutes(10)); // Example: cache for 10 minutes
-            _cache.Set(cacheKey, cachedData, cacheEntryOptions);
+            _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
 
         return cachedData!;
@@ -68,12 +68,12 @@ public class ComicReposibility : IComicReposibility
     {
 
         string key = genre.ToString() + status.ToString();
-        if (!_cache.TryGetValue("TotalPageComicKey", out ConcurrentDictionary<string, int>? cachedData))
+        if (!_memoryCache.TryGetValue("TotalPageComicKey", out ConcurrentDictionary<string, int>? cachedData))
         {
             cachedData = new ConcurrentDictionary<string, int>();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
                  .SetSlidingExpiration(TimeSpan.FromHours(1)); // Example: cache for 10 minutes
-            _cache.Set("TotalPageComicKey", cachedData, cacheEntryOptions);
+            _memoryCache.Set("TotalPageComicKey", cachedData, cacheEntryOptions);
         }
 
 
@@ -182,12 +182,12 @@ public class ComicReposibility : IComicReposibility
     public async Task<ComicDTO?> GetComic(string key)
     {
         string keysave = string.Format("comic-{0}", key);
-        if (!_cache.TryGetValue(keysave, out ComicDTO? cachedData))
+        if (!_memoryCache.TryGetValue(keysave, out ComicDTO? cachedData))
         {
             cachedData = await _getComicFromDB(key); ;
             var cacheEntryOptions = new MemoryCacheEntryOptions()
                  .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Example: cache for 10 minutes
-            _cache.Set(keysave, cachedData, cacheEntryOptions);
+            _memoryCache.Set(keysave, cachedData, cacheEntryOptions);
         }
         return cachedData;
 
@@ -197,9 +197,14 @@ public class ComicReposibility : IComicReposibility
     {
         var chapter = await _dbContext.Chapters.Where(x => x.ID == chapter_id).FirstOrDefaultAsync();
         if (chapter == null) return null;
-        // Comic? c = await _dbContext.Comics.Where(x => x.ID == chapter.ComicID).FirstOrDefaultAsync();
-        // if (c == null) return null;
-        // chapter.comic = c;
+        // string cacheKey = string.Format("chapter-{0}", chapter_id);
+        // if (!_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
+        // {
+        //     cachedData = await _getComicRecommendFromDB();
+        //     var cacheEntryOptions = new MemoryCacheEntryOptions()
+        //          .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
+        //     _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
+        // }
         return chapter;
     }
 
@@ -213,44 +218,7 @@ public class ComicReposibility : IComicReposibility
         return data;
 
     }
-    public async Task<ListComicDTO?> GetUserFollowComics(int userid, int page, int size)
-    {
-        var data = await _dbContext.UserFollowComics
-        .Where(x => x.UserID == userid)
-        .Include(x => x.comic)
-        .OrderByDescending(x => x.comic!.UpdateAt)
-        .Select(x => new ComicDTO
-        {
-            ID = x.comic!.ID,
-            Title = x.comic.Title,
-            OtherName = x.comic.OtherName,
-            Author = x.comic.Author,
-            Url = x.comic.Url,
-            CoverImage = _urlService.GetComicCoverImagePath(x.comic.CoverImage),
-            Description = x.comic.Description,
-            Status = x.comic.Status,
-            Rating = x.comic.Rating,
-            ViewCount = x.comic.ViewCount,
-            UpdateAt = x.comic.UpdateAt,
-            genres = x.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.comic.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
-        })
-        .Skip((page - 1) * size)
-        .Take(size).ToListAsync();
-        if (data != null)
-        {
-            int totalcomic = _dbContext.UserFollowComics.Where(x => x.UserID == userid).Count();
-            ListComicDTO list = new ListComicDTO
-            {
-                totalpage = (int)MathF.Ceiling((float)totalcomic / size),
-                Page = page,
-                Step = size,
-                comics = data
-            };
-            return list;
-        }
-        return null;
-    }
+    
     public async Task<List<ComicDTO>?> SearchComicsByKeyword(string keyword)
     {
         keyword = keyword.ToLower();
@@ -439,12 +407,12 @@ public class ComicReposibility : IComicReposibility
     {
 
         const string cacheKey = "RECOMMEND_COMIC_KEY";
-        if (!_cache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
+        if (!_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
         {
             cachedData = await _getComicRecommendFromDB();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
                  .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
-            _cache.Set(cacheKey, cachedData, cacheEntryOptions);
+            _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
 
         return cachedData!;
@@ -518,12 +486,12 @@ public class ComicReposibility : IComicReposibility
     public async Task<ComicTopViewDTO?> GetTopViewComics(int step)
     {
         const string cacheKey = "TOPVIEW_COMIC_KEY";
-        if (!_cache.TryGetValue(cacheKey, out ComicTopViewDTO? cachedData))
+        if (!_memoryCache.TryGetValue(cacheKey, out ComicTopViewDTO? cachedData))
         {
             cachedData = await _getTopViewComicsFromDB(step);
             var cacheEntryOptions = new MemoryCacheEntryOptions()
                  .SetSlidingExpiration(TimeSpan.FromMinutes(10)); // Reset each 10 minutes
-            _cache.Set(cacheKey, cachedData, cacheEntryOptions);
+            _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
         return cachedData!;
     }
@@ -532,16 +500,15 @@ public class ComicReposibility : IComicReposibility
     {
         var comicIds = comicview.ToList();
 
-        var comicsToUpdate = await _dbContext.Comics
-                                             .Where(c => comicIds.Contains(c.ID))
-                                             .ToListAsync();
+        var comicsToUpdate =  _dbContext.Comics
+                                             .Where(c => comicIds.Contains(c.ID));
+                                             
 
-        var chapterViewCounts = await _dbContext.Chapters
+        var chapterViewCounts =  _dbContext.Chapters
                                                 .Where(c => comicIds.Contains(c.ComicID))
                                                 .GroupBy(c => c.ComicID)
-                                                .Select(g => new { ComicID = g.Key, TotalViewCount = g.Sum(c => c.ViewCount) })
-                                                .ToListAsync();
-
+                                                .Select(g => new { ComicID = g.Key, TotalViewCount = g.Sum(c => c.ViewCount) });
+                                                
         var chapterViewCountDict = chapterViewCounts.ToDictionary(x => x.ComicID, x => x.TotalViewCount);
 
         foreach (var comic in comicsToUpdate)
@@ -562,14 +529,12 @@ public class ComicReposibility : IComicReposibility
     {
 
         var chapterIds = chapterviews.Keys.ToList();
-        var chaptersToUpdate = await _dbContext.Chapters
-                                            .Where(c => chapterIds.Contains(c.ID))
-                                            .ToListAsync();
-
+        var chaptersToUpdate = _dbContext.Chapters
+                                            .Where(c => chapterIds.Contains(c.ID));
+                                            
 
         foreach (var chapter in chaptersToUpdate)
         {
-
             chapter.ViewCount += chapterviews[chapter.ID];
         }
 

@@ -1,256 +1,94 @@
 
 using ComicApp.Data;
 using ComicApp.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Reflection.Metadata.Ecma335;
-using System.Security.Claims;
-using System.Text;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ComicAPI.Services;
-
 using ComicAPI.DTOs;
-
 using AutoMapper;
-// using static System.Net.Mime.MediaTypeNames;
-
-
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
-using SixLabors.ImageSharp.Formats;
-using ComicAPI.Models;
-using System.Formats.Tar;
 using ComicAPI.Enums;
+using System.Collections.Concurrent;
 
 namespace ComicApp.Services;
 public class UserService : IUserService
 {
     private readonly IComicReposibility _comicReposibility;
     private readonly IUserReposibility _userReposibility;
-
     private readonly UrlService _urlService;
-    private readonly ComicDbContext _dbContext;
     private readonly IMapper _mapper;
-    private int _UserID = -1;
-    public int UserID
+
+    private static ConcurrentDictionary<int, int> _exps = new ConcurrentDictionary<int, int>();
+
+    private User? _CurrentUser;
+    public User? CurrentUser
     {
         get
         {
-            return _UserID;
+            return _CurrentUser;
         }
         set
         {
-            _UserID = value;
+            _CurrentUser = value;
         }
     }
 
-    private static Dictionary<int, int> exps = new Dictionary<int, int>();
+    public bool HasLogin()
+    {
+        return _CurrentUser != null;
+    }
+
     //Contructor
-    public UserService(ComicDbContext db, IComicReposibility comicReposibility,
+    public UserService( IComicReposibility comicReposibility,
       IUserReposibility userReposibility, IMapper mapper, UrlService urlService)
     {
         _urlService = urlService;
         _mapper = mapper;
-
         _userReposibility = userReposibility;
         _comicReposibility = comicReposibility;
-        _dbContext = db;
     }
 
-    public async Task<ServiceResponse<int>> FollowComic(int userid, int comicid)
-    {
-        if (!_dbContext.Comics.Any(x => x.ID == comicid)) return new ServiceResponse<int> { Status = 0, Message = "Comic not found", Data = 0 };
-
-        var user = await _dbContext.UserFollowComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
-        if (user != null) return new ServiceResponse<int> { Status = 0, Message = "Already followed", Data = 0 };
-        //check comicid exist
-
-
-        _dbContext.UserFollowComics.Add(new UserFollowComic { UserID = userid, ComicID = comicid });
-        await _dbContext.SaveChangesAsync();
-
-        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
-    }
     public async Task<ServiceResponse<int>> FollowComic(int comicid)
     {
-        return await FollowComic(UserID, comicid);
-    }
-
-    public async Task<ServiceResponse<int>> UnFollowComic(int userid, int comicid)
-    {
-        if (!_dbContext.Comics.Any(x => x.ID == comicid)) return new ServiceResponse<int> { Status = 0, Message = "Comic not found", Data = 0 };
-
-        var user = _dbContext.UserFollowComics.FirstOrDefault(x => x.UserID == userid && x.ComicID == comicid);
-        if (user == null) return new ServiceResponse<int> { Status = 0, Message = "Not followed", Data = 0 };
-        _dbContext.UserFollowComics.Remove(user);
-
-        await _dbContext.SaveChangesAsync();
+        if(_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
+        int status = await _userReposibility.FollowComic(_CurrentUser.ID, comicid);
+        if (status == 0) return new ServiceResponse<int> { Status = 0, Message = "Failed", Data = 0 };
         return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 0 };
     }
+
     public async Task<ServiceResponse<int>> UnFollowComic(int comicid)
     {
-        return await UnFollowComic(UserID, comicid);
+        if (_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
+        int status = await _userReposibility.UnFollowComic(_CurrentUser.ID, comicid);
+        if (status == 0) return new ServiceResponse<int> { Status = 0, Message = "Failed", Data = 0 };
+        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 0 };
     }
 
-    public async Task<ServiceResponse<ListComicDTO>> GetFollowComics(int userid, int page = 1, int step = 40)
-    {
-        ListComicDTO? data = await _comicReposibility.GetUserFollowComics(userid, page, step);
-        return ServiceUtilily.GetDataRes(data);
-    }
     public async Task<ServiceResponse<ListComicDTO>> GetFollowComics(int page = 1, int step = 40)
     {
-        return await GetFollowComics(UserID, page, step);
+        if (_CurrentUser == null) return new ServiceResponse<ListComicDTO> { Status = 404, Message = "User not found", Data = null };
+        ListComicDTO? data = await _userReposibility.GetFollowComics(_CurrentUser.ID, page, step);
+        return ServiceUtilily.GetDataRes(data);
     }
 
-    public async Task<bool> IsFollowComic(int userid, int comicid)
-    {
-        //check comicid exist
-
-        var user = await _dbContext.UserFollowComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
-        return user != null;
-
-    }
     public async Task<bool> IsFollowComic(int comicid)
     {
-        return await IsFollowComic(UserID, comicid);
+        if (_CurrentUser == null) return false;
+        return await _userReposibility.IsFollowComic(_CurrentUser.ID, comicid);
     }
 
-    public async Task<ServiceResponse<CommentDTO>> AddComment(int userid, string content, int chapterid, int parentcommentid = 0)
+    public async Task<ServiceResponse<CommentDTO>> AddComment( string content, int chapterid, int parentcommentid = 0)
     {
-        var chapter = _dbContext.Chapters.FirstOrDefault(x => x.ID == chapterid);
-        if (chapter == null) return new ServiceResponse<CommentDTO> { Status = 0, Message = "Chapter not found", Data = null };
-
-        Comment comment_data = new Comment
-        {
-            UserID = userid,
-            Content = content,
-            ChapterID = chapterid,
-            ComicID = chapter.ComicID,
-            ParentCommentID = parentcommentid == 0 ? null : parentcommentid
-        };
-        var commentData = _dbContext.Comments.Add(comment_data);
-        await _dbContext.SaveChangesAsync();
-
-        var cmtData = await _dbContext.Comments
-        .Where(x => x.ID == commentData.Entity.ID)
-        .Include(x => x.User)
-        .Select(x => new CommentDTO
-        {
-            ID = x.ID,
-            Content = x.Content,
-            UserID = x.UserID,
-            ChapterID = x.ChapterID,
-            ComicID = x.ComicID,
-            ParentCommentID = x.ParentCommentID,
-            CommentedAt = x.CommentedAt,
-            UserName = x.User!.FirstName + " " + x.User.LastName,
-            User = new UserDTO
-            {
-                ID = x.UserID,
-                Username = x.User!.FirstName + " " + x.User.LastName,
-                Email = x.User.Email,
-                FirstName = x.User.FirstName,
-                LastName = x.User.LastName,
-                Avatar = _urlService.GetUserImagePath(x.User.Avatar),
-                Dob = x.User.Dob,
-                Gender = x.User.Gender,
-                CreateAt = x.User.CreateAt,
-                TypeLevel = x.User.TypeLevel,
-                Experience = x.User.Experience,
-                Maxim = x.User.Maxim
-            },
-        })
-        .FirstOrDefaultAsync();
-
-
-
+        if (_CurrentUser == null) return new ServiceResponse<CommentDTO> { Status = 404, Message = "User not found", Data = null };
+        var cmtData = await _userReposibility.AddComment(_CurrentUser.ID, content, chapterid, parentcommentid);
+        if (cmtData == null) return new ServiceResponse<CommentDTO> { Status = 0, Message = "Failed", Data = null };
         return new ServiceResponse<CommentDTO> { Status = 1, Message = "Success", Data = cmtData };
-
-    }
-
-    public async Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int parentcommentid = 0)
-    {
-        return await AddComment(UserID, content, chapterid, parentcommentid);
     }
 
     public async Task<ServiceResponse<CommentPageDTO>> GetCommentsOfComic(int comicid, int page = 1, int step = 10)
     {
-        var data = await _dbContext.Comments
-            .Where(x => x.ComicID == comicid && x.ParentCommentID == null)
-            .OrderByDescending(x => x.CommentedAt)
-            .Include(x => x.Replies)
-            .Include(x => x.User)
-            .Select(x => new CommentDTO
-            {
-                ID = x.ID,
-                Content = x.Content,
-                UserID = x.UserID,
-                ChapterID = x.ChapterID,
-                ComicID = x.ComicID,
-                ParentCommentID = x.ParentCommentID,
-                CommentedAt = x.CommentedAt,
-                UserName = x.User!.FirstName + " " + x.User.LastName,
-                User = new UserDTO
-                {
-                    ID = x.UserID,
-                    Username = x.User!.FirstName + " " + x.User.LastName,
-                    Email = x.User.Email,
-                    FirstName = x.User.FirstName,
-                    LastName = x.User.LastName,
-                    Avatar = _urlService.GetUserImagePath(x.User.Avatar),
-                    Dob = x.User.Dob,
-                    Gender = x.User.Gender,
-                    CreateAt = x.User.CreateAt,
-                    TypeLevel = x.User.TypeLevel,
-                    Experience = x.User.Experience,
-                    Maxim = x.User.Maxim
-
-                },
-                Replies = x.Replies!.Select(y => new CommentDTO
-                {
-                    ID = y.ID,
-                    Content = y.Content,
-                    UserID = y.UserID,
-                    ChapterID = y.ChapterID,
-                    ComicID = y.ComicID,
-                    ParentCommentID = y.ParentCommentID,
-                    CommentedAt = y.CommentedAt,
-                    UserName = y.User!.FirstName + " " + y.User.LastName,
-                    User = new UserDTO
-                    {
-                        ID = y.UserID,
-                        Username = y.User!.FirstName + " " + y.User.LastName,
-                        Email = y.User.Email,
-                        FirstName = y.User.FirstName,
-                        LastName = y.User.LastName,
-                        Avatar = _urlService.GetUserImagePath(x.User.Avatar),
-                        Dob = y.User.Dob,
-                        Gender = y.User.Gender,
-                        CreateAt = y.User.CreateAt,
-                        TypeLevel = y.User.TypeLevel,
-                        Experience = y.User.Experience,
-                        Maxim = y.User.Maxim
-                    },
-                }).ToList()
-            })
-            .Skip((page - 1) * step)
-            .Take(step)
-            .ToListAsync();
-        if (data != null)
-        {
-            int totalcomment = _dbContext.Comments.Where(x => x.ComicID == comicid && x.ParentCommentID == null).Count();
-            CommentPageDTO list = new CommentPageDTO
-            {
-                Totalpage = (int)MathF.Ceiling((float)totalcomment / step),
-                cerrentpage = page,
-                Comments = data
-
-            };
-            return ServiceUtilily.GetDataRes<CommentPageDTO>(list);
-        }
-        return ServiceUtilily.GetDataRes<CommentPageDTO>(null);
+        var data = await _userReposibility.GetCommentsOfComic(comicid, page, step);
+        return ServiceUtilily.GetDataRes(data);
     }
 
     public Task<ServiceResponse<CommentPageDTO>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 10)
@@ -261,43 +99,29 @@ public class UserService : IUserService
     public async Task<ServiceResponse<UserDTO>> UpdateInfo(UpdateUserInfo request)
     {
         var response = new ServiceResponse<UserDTO>();
-        var user = await _userReposibility.GetUser(UserID);
-        if (user == null)
+        if (CurrentUser == null)
         {
             response.Status = 404;
             response.Message = "User not found";
             response.Data = null;
             return response;
         }
-
-        user.FirstName = request.FirstName;
-        user.LastName = request.LastName;
-        user.Email = request.Email;
-        user.Dob = request.Dob;
-        user.UpdateAt = DateTime.UtcNow;
-
-        await _dbContext.SaveChangesAsync();
-
-        response.Status = 200;
-        response.Message = "Success";
-        user.Avatar = _urlService.GetUserImagePath(user.Avatar);
+        var user = await _userReposibility.UpdateInfo(request);
+        CurrentUser = user;
         response.Data = _mapper.Map<UserDTO>(user);
-
-
         return response;
     }
 
     public async Task<ServiceResponse<string>> UpdatePassword(UpdateUserPassword request)
     {
         var response = new ServiceResponse<string>();
-        var user = await _userReposibility.GetUser(UserID);
-        if (user == null)
+        if (CurrentUser == null)
         {
             response.Status = 404;
             response.Message = "User not found";
             return response;
         }
-        else if (user.HashPassword != request.OldPassword)
+        else if (CurrentUser.HashPassword != request.OldPassword)
         {
             response.Status = 404;
             response.Message = "Password is incorrect";
@@ -310,9 +134,7 @@ public class UserService : IUserService
             return response;
         }
 
-        user.HashPassword = request.NewPassword;
-        user.UpdateAt = DateTime.UtcNow;
-        await _dbContext.SaveChangesAsync();
+        await _userReposibility.UpdatePassword(request);
         response.Status = 200;
         response.Message = "Success";
 
@@ -320,15 +142,11 @@ public class UserService : IUserService
     }
     public async Task<ServiceResponse<string>> UpdateMaxim(string? maxim)
     {
-
-        var user = await _userReposibility.GetUser(UserID);
-        if (user == null)
+        if (CurrentUser == null)
         {
             return new ServiceResponse<string> { Status = 404, Message = "User not found" };
         }
-
-        user.Maxim = maxim;
-        await _dbContext.SaveChangesAsync();
+        var user = await _userReposibility.UpdateMaxim(CurrentUser.ID, maxim);
         return new ServiceResponse<string> { Status = 200, Message = "Update success" };
     }
     public async Task<ServiceResponse<string>> UpdateAvatar(IFormFile avatar)
@@ -337,8 +155,7 @@ public class UserService : IUserService
 
         try
         {
-            var user = await _userReposibility.GetUser(UserID);
-            if (user == null)
+            if (CurrentUser == null)
             {
                 response.Status = 404;
                 response.Message = "User not found";
@@ -371,7 +188,7 @@ public class UserService : IUserService
 
             var uploadsFolder = _urlService.GetPathSaveUserImage();
             var fileExtension = Path.GetExtension(avatar.FileName);
-            var fileName = $"{user.Email}{fileExtension}";
+            var fileName = $"{CurrentUser.Email}{fileExtension}";
             var filePath = Path.Combine(uploadsFolder, fileName);
 
             if (!Directory.Exists(uploadsFolder))
@@ -379,9 +196,9 @@ public class UserService : IUserService
                 Directory.CreateDirectory(uploadsFolder);
             }
 
-            if (user.Avatar != null)
+            if (CurrentUser.Avatar != null)
             {
-                var oldFilePath = Path.Combine(uploadsFolder, user.Avatar);
+                var oldFilePath = Path.Combine(uploadsFolder, CurrentUser.Avatar);
                 if (File.Exists(oldFilePath))
                 {
                     File.Delete(oldFilePath);
@@ -428,10 +245,7 @@ public class UserService : IUserService
 
                 }
             }
-
-            user.Avatar = fileName;
-            user.UpdateAt = DateTime.UtcNow;
-            await _dbContext.SaveChangesAsync();
+            await _userReposibility.UpdateAvatar(CurrentUser.ID, fileName);
             response.Data = _urlService.GetUserImagePath(fileName);
             response.Status = 200;
             response.Message = "Avatar updated successfully";
@@ -447,39 +261,35 @@ public class UserService : IUserService
 
     public async Task<ServiceResponse<string>> UpdateTypelevel(int typelevel)
     {
-        var user = await _userReposibility.GetUser(UserID);
-        if (user == null)
+        if (CurrentUser == null)
         {
             return new ServiceResponse<string> { Status = 404, Message = "User not found" };
         }
-        user.TypeLevel = typelevel;
-        user.UpdateAt = DateTime.UtcNow;
-        await _dbContext.SaveChangesAsync();
+        await _userReposibility.UpdateTypelevel(CurrentUser.ID, typelevel);
         return new ServiceResponse<string> { Status = 200, Message = "Success" };
     }
 
     public async Task<ServiceResponse<UserDTO>> GetMyUserInfo()
     {
         var response = new ServiceResponse<UserDTO>();
-        var user = await _userReposibility.GetUser(UserID);
-        if (user == null)
+
+        if (_CurrentUser == null)
         {
             response.Status = 404;
             response.Message = "User not found";
             return response;
         }
-
         response.Status = 200;
-        user.Avatar = _urlService.GetUserImagePath(user.Avatar);
-        response.Data = _mapper.Map<UserDTO>(user); // Return the user
-        return response;
+        _CurrentUser.Avatar = _urlService.GetUserImagePath(_CurrentUser.Avatar);
+        response.Data = _mapper.Map<UserDTO>(_CurrentUser); // Return the user
+        return await Task.FromResult(response);
     }
 
     public async Task<ServiceResponse<List<UserNotificationDTO>>> GetUserNotify()
     {
-
+        if (_CurrentUser == null) return new ServiceResponse<List<UserNotificationDTO>> { Status = 404, Message = "User not found", Data = null };
         var response = new ServiceResponse<List<UserNotificationDTO>>();
-        var notifys = await _userReposibility.GetUserNotify(UserID);
+        var notifys = await _userReposibility.GetUserNotify(_CurrentUser.ID);
         if (notifys == null)
         {
             response.Status = 404;
@@ -493,133 +303,72 @@ public class UserService : IUserService
     }
     public async Task<ServiceResponse<string>> UpdateUserNotify(int? idNotify, bool? isRead = null)
     {
-
+        if (_CurrentUser == null) return new ServiceResponse<string> { Status = 404, Message = "User not found" };
         var response = new ServiceResponse<string>();
-
-        if (idNotify == null)
+        if (await _userReposibility.UpdateUserNotify(_CurrentUser.ID, idNotify, isRead))
         {
-            // Đánh dấu tất cả thông báo là đã đọc
-            var notifys = await _dbContext.Notifications.ToListAsync();
-            if (notifys == null)
-            {
-                response.Status = 404;
-                response.Message = "Notifications not found";
-                return response;
-            }
-            notifys.ForEach(n => n.IsRead = true);
-            await _dbContext.SaveChangesAsync();
-
             response.Status = 200;
-            response.Message = "All notifications have been marked as read";
+            response.Message = "Success";
         }
         else
         {
-            var notify = await _dbContext.Notifications
-                .Where(n => n.ID == idNotify && n.UserID == UserID)
-                .FirstOrDefaultAsync();
-
-            if (notify == null)
-            {
-                response.Status = 404;
-                response.Message = "Notification not found";
-            }
-            else
-            {
-                notify.IsRead = isRead ?? true;
-                await _dbContext.SaveChangesAsync();
-                response.Status = 200;
-                response.Message = "Notification has been marked as read";
-            }
+            response.Status = 404;
+            response.Message = "Notification not found";
         }
-
         return response;
     }
     public async Task<ServiceResponse<string>> DeleteUserNotify(int? idNotify)
     {
+        if (_CurrentUser == null) return new ServiceResponse<string> { Status = 404, Message = "User not found" };
 
         var response = new ServiceResponse<string>();
-
-
-
-        if (idNotify == -1)
+        if (await _userReposibility.DeleteUserNotify(_CurrentUser.ID, idNotify))
         {
-
-            var notify = await _dbContext.Notifications
-               .Where(n => n.UserID == UserID)
-               .ExecuteDeleteAsync(); // Kiểm tra xem notification có tồn tại hay không    
-            await _dbContext.SaveChangesAsync();
             response.Status = 200;
-            response.Message = "Notification has been deleted";
+            response.Message = "Success";
+
         }
         else
         {
-            var notify = await _dbContext.Notifications
-                .Where(n => n.ID == idNotify && n.UserID == UserID)
-                .ExecuteDeleteAsync(); // Kiểm tra xem notification có tồn tại hay không    
-            await _dbContext.SaveChangesAsync();
-            response.Status = 200;
-            response.Message = "Notification has been deleted";
+            response.Status = 404;
+            response.Message = "Notification not found";
         }
-
-
         return response;
     }
 
-    public async Task<ServiceResponse<int>> VoteComic(int userid, int comicid, int votePoint)
+    public async Task<ServiceResponse<int>> VoteComic( int comicid, int votePoint)
     {
-        if (!_dbContext.Comics.Any(x => x.ID == comicid)) return new ServiceResponse<int> { Status = 0, Message = "Comic not found", Data = 0 };
-        //check comicid exist
-        if (votePoint < 0 || votePoint > 10) return new ServiceResponse<int> { Status = 0, Message = "Invalid vote point", Data = 0 };
-        var user = await _userReposibility.GetUserVoteComic(userid, comicid);
-        if (user != null) user.VotePoint = votePoint;
-        else _dbContext.UserVoteComics.Add(new UserVoteComic { UserID = userid, ComicID = comicid, VotePoint = votePoint });
-        await _dbContext.SaveChangesAsync();
-
+        if (_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
+        bool flag = await _userReposibility.VoteComic(_CurrentUser.ID, comicid, votePoint);
+        if (flag) return new ServiceResponse<int> { Status = 0, Message = "Failed", Data = 0 };
         return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
     }
-    public async Task<ServiceResponse<int>> VoteComic(int comicid, int votePoint)
+    public async Task<ServiceResponse<int>> UnVoteComic( int comicid)
     {
-        return await VoteComic(UserID, comicid, votePoint);
-    }
-    public async Task<ServiceResponse<int>> UnVoteComic(int userid, int comicid)
-    {
-        if (!_dbContext.Comics.Any(x => x.ID == comicid)) return new ServiceResponse<int> { Status = 0, Message = "Comic not found", Data = 0 };
-
-        var user = await _userReposibility.GetUserVoteComic(userid, comicid);
-        if (user == null) return new ServiceResponse<int> { Status = 0, Message = "Not Vote", Data = 0 };
-        _dbContext.UserVoteComics.Remove(user);
-
-        await _dbContext.SaveChangesAsync();
-        return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 0 };
-    }
-    public async Task<ServiceResponse<int>> UnVoteComic(int comicid)
-    {
-        return await UnVoteComic(UserID, comicid);
+        if (_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
+        if(await _userReposibility.UnVoteComic(_CurrentUser.ID, comicid))
+        {
+            return new ServiceResponse<int> { Status = 1, Message = "Success", Data = 1 };
+        }
+        return new ServiceResponse<int> { Status = 0, Message = "Failed", Data = 0 };
     }
     public async Task<ServiceResponse<int>> GetUserVote(int comicid)
     {
-
-        var user = await _userReposibility.GetUserVoteComic(UserID, comicid);
+        if (_CurrentUser == null) return new ServiceResponse<int> { Status = 404, Message = "User not found", Data = 0 };
+        var user = await _userReposibility.GetUserVoteComic(_CurrentUser.ID, comicid);
         var votepoint = user?.VotePoint ?? -1;
         return new ServiceResponse<int> { Status = 1, Message = "Success", Data = votepoint };
     }
 
-
-
     public async Task<ServiceResponse<int>> TotalExpUser(UserExpType expt = UserExpType.Chapter)
     {
-        if (UserID == -1) return await Task.FromResult(ServiceUtilily.GetDataRes<int>(-1));
-        if (!exps.ContainsKey(UserID))
-        {
-            exps[UserID] = 0;
-        }
-        exps[UserID] = exps[UserID] + (int)expt;
-
+        if (_CurrentUser == null) return await Task.FromResult(ServiceUtilily.GetDataRes<int>(-1));
+        _exps.AddOrUpdate(_CurrentUser.ID, 0, (key, oldValue) => oldValue + (int)expt);
         return await Task.FromResult(ServiceUtilily.GetDataRes<int>(1));
     }
     public async Task UpdateExp()
     {
-        await _userReposibility.UpdateUserExp(exps);
-        exps.Clear();
+        await _userReposibility.UpdateUserExp(_exps.ToDictionary());
+        _exps.Clear();
     }
 }

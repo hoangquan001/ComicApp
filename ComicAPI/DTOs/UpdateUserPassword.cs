@@ -8,6 +8,7 @@ namespace ComicAPI.DTOs
 {
     public class UpdateUserPassword
     {
+        public int UserId { get; set; }
         [Required]
         [DataType(DataType.Password)]
         public string OldPassword { get; set; } = "";

@@ -133,28 +133,9 @@ app.UseStaticFiles(new StaticFileOptions
            Path.Combine(builder.Environment.ContentRootPath, "StaticFiles")),
     RequestPath = new PathString("/static")
 });
-//imject IUserService
-app.Use((context, next) =>
-{
-    return next();
-});
+
 app.UseAuthentication();
-app.Use((context, next) =>
-{
-    if (context.User?.Identity?.IsAuthenticated ?? false)
-    {
-        var userService = context.RequestServices.GetService<IUserService>();
-        if (userService != null)
-        {
-            var strId = context.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            userService.UserID = int.Parse(strId!);
-        }
-
-    }
-    return next();
-});
-
-
+app.UseMiddleware<UserMiddleware>();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

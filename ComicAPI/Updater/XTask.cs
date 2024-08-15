@@ -9,11 +9,15 @@ namespace ComicAPI.Updater
     public class XTask
     {
         private ulong  _second = 1;
-        public event Action? OnTrigger;
+        private event Action? OnTrigger;
 
         public XTask()
         {
             _second = 1;
+        }
+        public void Register(Action action)
+        {
+            OnTrigger += action;
         }
 
         public XTask(ulong second)

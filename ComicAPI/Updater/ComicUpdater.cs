@@ -44,15 +44,15 @@ namespace ComicAPI.Updater
         {
 
             var tasks = new XTask(second: 5 * 60);
-            tasks.OnTrigger += updateViewChapter;
-            tasks.OnTrigger += updaeExp;
-            _updaters.Add(tasks);
+            tasks.Register(UpdateViewChapter);
+            tasks.Register(UpdateExp);
+            AddUpdater(tasks);
 
             var tasks2 = new XTask(second: 60 * 60);
-            tasks2.OnTrigger += updateViewComic;
-            _updaters.Add(tasks2);
+            tasks2.Register(UpdateViewComic);
+            AddUpdater(tasks2);
         }
-        async void updateViewComic()
+        async void UpdateViewComic()
         {
 
             using (var scope = _services.CreateScope())
@@ -63,18 +63,18 @@ namespace ComicAPI.Updater
             }
 
         }
-        async void updateViewChapter()
+        async void UpdateViewChapter()
         {
 
             using (var scope = _services.CreateScope())
             {
                 var comicService = scope.ServiceProvider.GetRequiredService<IComicService>();
-                await comicService.updateViewChapter();
+                await comicService.UpdateViewChapter();
 
             }
 
         }
-        async void updaeExp()
+        async void UpdateExp()
         {
             using (var scope = _services.CreateScope())
             {

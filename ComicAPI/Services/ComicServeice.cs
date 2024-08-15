@@ -1,25 +1,12 @@
 
-using ComicApp.Data;
 using ComicApp.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Reflection.Metadata.Ecma335;
-using System.Security.Claims;
-using System.Text;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using ComicAPI.Enums;
-using System.Linq.Expressions;
 using AutoMapper;
 using ComicAPI.Classes;
 using HtmlAgilityPack;
 using System.Collections.Immutable;
-using System.Net;
-using System.Net.Http.Headers;
-using Microsoft.EntityFrameworkCore.Internal;
-using ComicAPI.Services;
 using System.Text.Json;
+using System.Collections.Concurrent;
 
 namespace ComicApp.Services;
 public class ComicService : IComicService
@@ -29,8 +16,8 @@ public class ComicService : IComicService
     private static List<int> genreWeight = new List<int>();
     private readonly IUserService _userService;
     private readonly IMapper _mapper;
-    private static Dictionary<int, int> chapterViews = new Dictionary<int, int>();
-    private static HashSet<int> comicViews = new HashSet<int>();
+    private static ConcurrentDictionary<int, int> chapterViews = new ConcurrentDictionary<int, int>();
+    private static ConcurrentDictionary<int, int> comicViews = new ConcurrentDictionary<int, int>();
 
     static ComicService()
     {
@@ -56,9 +43,9 @@ public class ComicService : IComicService
     public async Task<ServiceResponse<ComicDTO>> GetComic(string key, int maxchapter = -1)
     {
         var data = await _comicReposibility.GetComic(key);
-        if (data != null && _userService.UserID != -1)
+        if (data != null && _userService.CurrentUser!=null)
         {
-            data.IsFollow = await _userService.IsFollowComic(_userService.UserID, data.ID);
+            data.IsFollow = await _userService.IsFollowComic(data.ID);
         }
         return ServiceUtilily.GetDataRes<ComicDTO>(data);
     }
@@ -309,10 +296,8 @@ public class ComicService : IComicService
     }
     public async Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance query)
     {
-
-
-        int page = query.Page < 1 ? 1 : query.Page;
-        int step = query.Step < 1 ? 10 : query.Step;
+        int page = Math.Max(1, query.Page);
+        int step = Math.Max(1, query.Step);
         var Genres = ParseGenreQuery(query.Genres);
         var Notgenres = ParseGenreQuery(query.Notgenres);
         var data = await _comicReposibility.GetComicBySearchAdvance(query.Sort, query.Status, Genres, page, step, Notgenres, query.Year, query.Keyword);
@@ -331,27 +316,23 @@ public class ComicService : IComicService
         var data = await _comicReposibility.GetTopViewComics(step);
         return ServiceUtilily.GetDataRes<ComicTopViewDTO>(data)!;
     }
-    public async Task<ServiceResponse<int>> TotalViewComics(int comicid, int chapterid)
+    public async Task<ServiceResponse<int>> TotalViewComics(int chapterid)
     {
-        if (!chapterViews.ContainsKey(chapterid))
-        {
-            chapterViews[chapterid] = 0;
-        }
-        chapterViews[chapterid]++;
-
-        comicViews.Add(comicid);
-
-        return await Task.FromResult(ServiceUtilily.GetDataRes<int>(chapterViews[chapterid]));
+        var chapter = await _comicReposibility.GetChapter(chapterid);
+        if (chapter == null) return ServiceUtilily.GetDataRes<int>(0);
+        chapterViews.AddOrUpdate(chapter.ID, 0, (key, oldValue) => oldValue + 1);
+        comicViews.AddOrUpdate(chapter.ComicID, 0, (key, oldValue) => oldValue + 1);    
+        return ServiceUtilily.GetDataRes<int>(chapterViews[chapterid]);
     }
 
-    public async Task updateViewChapter()
+    public async Task UpdateViewChapter()
     {
-        await _comicReposibility.UpdateViewChapter(chapterViews);
+        await _comicReposibility.UpdateViewChapter(chapterViews.ToDictionary());
         chapterViews.Clear();
     }
     public async Task UpdateViewComic()
     {
-        await _comicReposibility.UpdateViewComic(comicViews);
+        await _comicReposibility.UpdateViewComic(comicViews.Keys.ToHashSet());
         comicViews.Clear();
     }
 

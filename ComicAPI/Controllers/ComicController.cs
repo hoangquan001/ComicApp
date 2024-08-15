@@ -160,7 +160,7 @@ public class ComicController : ControllerBase
     public async Task<ActionResult<int>> TotalViewComics(int comicId, int chapterId, UserExpType exp)
     {
         var responseUser = await _userService.TotalExpUser(exp);
-        var responseComic = await _comicService.TotalViewComics(comicId, chapterId);
+        var responseComic = await _comicService.TotalViewComics( chapterId);
         return Ok(responseComic);
     }
 }
