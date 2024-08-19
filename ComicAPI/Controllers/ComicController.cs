@@ -25,8 +25,8 @@ public class ComicController : ControllerBase
         _userService = userService;
     }
 
-    [HttpGet("Comics")]
-    public async Task<ActionResult<ListComicDTO>> GetComics(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All, int genre = -1, int page = 1, int step = 100)
+    [HttpGet("comics")]
+    public async Task<ActionResult<ListComicDTO>> GetComics(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All, int genre = -1, int page = 1, int step = 100, int hot = -1)
     {
         ComicQueryParams queryParams = new ComicQueryParams();
         {
@@ -35,6 +35,7 @@ public class ComicController : ControllerBase
             queryParams.genre = genre;
             queryParams.page = page;
             queryParams.step = step;
+            queryParams.hot = hot;
         }
         var data = await _comicService.GetComics(queryParams);
         return Ok(data);
@@ -42,7 +43,7 @@ public class ComicController : ControllerBase
 
     //get one comic by id
     // [Authorize]
-    [HttpGet("Comic/{key}")]
+    [HttpGet("comic/{key}")]
     public async Task<ActionResult<ComicDTO>> GetComic(string key, int mchapter = -1)
     {
         ServiceResponse<ComicDTO>? data = await _comicService.GetComic(key, mchapter);
@@ -53,7 +54,7 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("Comic/{key}/chapters")]
+    [HttpGet("comic/{key}/chapters")]
     public async Task<ActionResult<ComicDTO>> GetChaptersByComic(string key)
     {
         var data = await _comicService.GetChaptersComic(key);
@@ -65,7 +66,7 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("Comic/chapter/{chapter_key}")]
+    [HttpGet("comic/chapter/{chapter_key}")]
     public async Task<ActionResult<ChapterPageDTO>> GetPagesInChapter(int chapter_key)
     {
         var data = await _comicService.GetPagesInChapter(chapter_key);
@@ -92,17 +93,11 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("Comic/Similar/{key}")]
-    public async Task<ActionResult<List<ComicDTO>>> GetSimilarComics(string key)
-    {
-        var data = await _comicService.GetSimilarComics(key);
-        return Ok(data);
-    }
 
-    [HttpGet("Comic/{id}/similar")]
+    [HttpGet("comic/similar/{id}")]
     public async Task<IActionResult> GetSimilarBooks(int id)
     {
-        var similarBooks = await _comicService.FindSimilarComicsAsync(id);
+        var similarBooks = await _comicService.FindSimilarComics(id);
         return Ok(similarBooks);
     }
 
@@ -119,7 +114,7 @@ public class ComicController : ControllerBase
         var data = await _comicService.GetGenres();
         return Ok(data);
     }
-    [HttpGet("Comic/advance")]
+    [HttpGet("comic/advance")]
 
     public async Task<ActionResult<ListComicDTO>> GetComicBySearchAdvance(
         [FromQuery] SortType sort = SortType.TopAll,
@@ -146,21 +141,21 @@ public class ComicController : ControllerBase
 
         return Ok(await _comicService.GetComicBySearchAdvance(queryParams));
     }
-    [HttpGet("Comic/recommend")]
+    [HttpGet("comic/recommend")]
     public async Task<ActionResult<List<ComicDTO>>> GetComicRecommend()
     {
         return Ok(await _comicService.GetComicRecommend());
     }
-    [HttpGet("Comic/topview")]
+    [HttpGet("comic/topview")]
     public async Task<ActionResult<List<ComicDTO>>> GetTopViewComics()
     {
         return Ok(await _comicService.GetTopViewComics(8));
     }
-    [HttpGet("Comic/view_exp")]
+    [HttpGet("comic/view_exp")]
     public async Task<ActionResult<int>> TotalViewComics(int comicId, int chapterId, UserExpType exp)
     {
         var responseUser = await _userService.TotalExpUser(exp);
-        var responseComic = await _comicService.TotalViewComics( chapterId);
+        var responseComic = await _comicService.TotalViewComics(chapterId);
         return Ok(responseComic);
     }
 }

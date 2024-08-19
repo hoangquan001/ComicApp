@@ -13,8 +13,7 @@ public interface IComicService
     Task<ServiceResponse<Comic>> AddComic(Comic comic);
     Task<ServiceResponse<List<Genre>>> GetGenres();
     Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword);
-    Task<ServiceResponse<List<ComicDTO>>> GetSimilarComics(string key);
-    Task<ServiceResponse<List<ComicDTO>>> FindSimilarComicsAsync(int id);
+    Task<ServiceResponse<List<ComicDTO>>> FindSimilarComics(int id);
     Task<byte[]> LoadImage(string url);
     Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance comicQueryParams);
     Task<ServiceResponse<List<ComicDTO>>> GetComicRecommend();

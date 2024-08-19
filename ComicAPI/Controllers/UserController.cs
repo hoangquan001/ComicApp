@@ -29,7 +29,7 @@ public class UserController : ControllerBase
 
 
     }
-    [HttpPost("Follow")]
+    [HttpPost("follow")]
     public async Task<ActionResult<ServiceResponse<int>>> FollowComic(int comicid, bool follow = true)
     {
         if (follow)
@@ -44,57 +44,57 @@ public class UserController : ControllerBase
     //     return Ok(await _userService.UnFollowComic(comicid));
     // }
 
-    [HttpPost("Comment")]
+    [HttpPost("comment")]
     public async Task<ActionResult<ServiceResponse<CommentDTO>>> CommentComic(AddCommentDTO addCommentDTO)
     {
         var data = await _userService.AddComment(addCommentDTO.Content!, addCommentDTO.ChapterId, addCommentDTO.ParentCommentId);
         return Ok(data);
     }
 
-    [HttpGet("FollowedComics")]
+    [HttpGet("followedComics")]
     public async Task<ActionResult<ServiceResponse<List<ListComicDTO>>>> GetFollowedComics(int page = 1, int size = 40)
     {
         return Ok(await _userService.GetFollowComics(page, size));
     }
 
-    [HttpGet("Comments/comic/{comicId}")]
+    [HttpGet("comments/comic/{comicId}")]
     [AllowAnonymous]
     public async Task<ActionResult<ServiceResponse<CommentPageDTO>>> GetCommentsOfComic(int comicId, int page = 1, int size = 10)
     {
         return Ok(await _userService.GetCommentsOfComic(comicId, page, size));
     }
 
-    [HttpGet("Comments/chapter/{chapterId}")]
+    [HttpGet("comments/chapter/{chapterId}")]
     [AllowAnonymous]
     public async Task<ActionResult<ServiceResponse<CommentPageDTO>>> GetCommentsOfChapter(int chapterId, int page = 1, int size = 10)
     {
         return Ok(await _userService.GetCommentsOfChapter(chapterId, page, size));
     }
-    [HttpPost("Update")]
+    [HttpPost("update")]
     public async Task<ActionResult<ServiceResponse<UserDTO>>> UpdateInfo(UpdateUserInfo request)
     {
 
         return Ok(await _userService.UpdateInfo(request));
     }
-    [HttpPost("Update/password")]
+    [HttpPost("update/password")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdatePassword(UpdateUserPassword request)
     {
 
         return Ok(await _userService.UpdatePassword(request));
     }
-    [HttpPost("Update/avatar")]
+    [HttpPost("update/avatar")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateAvatar(IFormFile image)
     {
 
         return Ok(await _userService.UpdateAvatar(image));
     }
-    [HttpPost("Update/typelevel/{typelevel}")]
+    [HttpPost("update/typelevel/{typelevel}")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateTypeLevel(int typelevel)
     {
 
         return Ok(await _userService.UpdateTypelevel(typelevel));
     }
-    [HttpPost("Update/maxim")]
+    [HttpPost("update/maxim")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateMaxim(string? maxim)
     {
 
@@ -102,13 +102,13 @@ public class UserController : ControllerBase
     }
 
 
-    [HttpGet("Notify")]
+    [HttpGet("notify")]
     public async Task<ActionResult<ServiceResponse<List<UserNotificationDTO>>>> GetUserNotify()
     {
 
         return Ok(await _userService.GetUserNotify());
     }
-    [HttpPost("Notify/update")]
+    [HttpPost("notify/update")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateUserNotify(
        UpdateUserNotifyDTO notify)
     {
@@ -116,7 +116,7 @@ public class UserController : ControllerBase
         var result = await _userService.UpdateUserNotify(notify.ID, notify.IsRead);
         return Ok(result);
     }
-    [HttpDelete("Notify/delete/{notifyID}")]
+    [HttpDelete("notify/delete/{notifyID}")]
     public async Task<ActionResult<ServiceResponse<string>>> DeleteUserNotify(
      int? notifyID)
     {
@@ -124,17 +124,17 @@ public class UserController : ControllerBase
         var result = await _userService.DeleteUserNotify(notifyID);
         return Ok(result);
     }
-    [HttpGet("Vote")]
+    [HttpGet("vote")]
     public async Task<ActionResult<ServiceResponse<int>>> GetUserVote(int comicid)
     {
         return Ok(await _userService.GetUserVote(comicid));
     }
-    [HttpPost("Vote/update")]
+    [HttpPost("vote/update")]
     public async Task<ActionResult<ServiceResponse<int>>> VoteComic(int comicid, int votePoint)
     {
         return Ok(await _userService.VoteComic(comicid, votePoint));
     }
-    [HttpDelete("Vote/delete")]
+    [HttpDelete("vote/delete")]
     public async Task<ActionResult<ServiceResponse<int>>> UnVoteComic(int comicid)
     {
         return Ok(await _userService.UnVoteComic(comicid));

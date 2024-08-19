@@ -27,7 +27,7 @@ public class AuthController : ControllerBase
         _tokenMgr = tokenMgr;
     }
     [HttpGet]
-    [Route("Login")]
+    [Route("login")]
     public async Task<ActionResult<ServiceResponse<UserDTO>>> Login(string email, string password)
     {
         UserLoginDTO userLoginDTO = new UserLoginDTO
@@ -39,13 +39,13 @@ public class AuthController : ControllerBase
         return Ok(res);
     }
     [HttpPost]
-    [Route("LoginWithSocial")]
+    [Route("loginWithSocial")]
     public async Task<ActionResult<ServiceResponse<UserDTO>>> LoginWithSocial(UserLoginSocialDTO userLoginDTO)
     {
         return Ok(await _authService.LoginWithSocial(userLoginDTO));
     }
 
-    [Route("Register")]
+    [Route("register")]
     [HttpPost]
     public async Task<ActionResult<ServiceResponse<User>>> Register(UserRegisterDTO RegisterData)
     {
@@ -53,14 +53,14 @@ public class AuthController : ControllerBase
         return Ok(res);
     }
 
-    [Route("SendEmailConfirm")]
+    [Route("sendEmailConfirm")]
     [HttpGet]
     public async Task<ActionResult<ServiceResponse<int>>> SendEmailConfirm(int UserId, string email)
     {
         ServiceResponse<int> res = await _authService.SendEmailConfirm(UserId, email);
         return Ok(res);
     }
-    [Route("ConfirmEmail")]
+    [Route("confirmEmail")]
     [HttpGet]
     public async Task<ActionResult<ServiceResponse<string>>> ConfirmEmail(int UserId, string Code)
     {
@@ -76,7 +76,7 @@ public class AuthController : ControllerBase
             return Redirect($"http://localhost:4200/auth/confirm-email?mssg={encodedMessage}");
         }
     }
-    [Route("Logout")]
+    [Route("logout")]
     [HttpGet]
     [Authorize]
     public async Task<ActionResult<ServiceResponse<string>>> Logout()

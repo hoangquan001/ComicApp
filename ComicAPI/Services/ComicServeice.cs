@@ -115,7 +115,7 @@ public class ComicService : IComicService
     {
         int page = comicQueryParams.page < 1 ? 1 : comicQueryParams.page;
         int step = comicQueryParams.step < 1 ? 10 : comicQueryParams.step;
-        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre, comicQueryParams.status, comicQueryParams.sort);
+        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre,comicQueryParams.hot, comicQueryParams.status, comicQueryParams.sort);
 
         return ServiceUtilily.GetDataRes<ListComicDTO>(data);
 
@@ -231,18 +231,18 @@ public class ComicService : IComicService
 
     }
 
-    public async Task<ServiceResponse<List<ComicDTO>>> GetSimilarComics(string key)
-    {
+    // public async Task<ServiceResponse<List<ComicDTO>>> GetSimilarComics(string key)
+    // {
 
-        ServiceResponse<List<ComicDTO>>? response = await SearchComicByKeyword(key);
-        foreach (var item in response.Data!)
-        {
-            item.Chapters = await _comicReposibility.GetChaptersComic(item.ID.ToString()) ?? [];
-        }
+    //     ServiceResponse<List<ComicDTO>>? response = await SearchComicByKeyword(key);
+    //     foreach (var item in response.Data!)
+    //     {
+    //         item.Chapters = await _comicReposibility.GetChaptersComic(item.ID.ToString()) ?? [];
+    //     }
 
-        return response;
-    }
-    public async Task<ServiceResponse<List<ComicDTO>>> FindSimilarComicsAsync(int id)
+    //     return response;
+    // }
+    public async Task<ServiceResponse<List<ComicDTO>>> FindSimilarComics(int id)
     {
         var _comics = await _comicReposibility.GetAllComics();
         var _comic = _comics.FirstOrDefault(x => x.ID == id);
