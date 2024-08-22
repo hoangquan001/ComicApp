@@ -4,8 +4,8 @@ using ComicApp.Models;
 
 public interface IComicReposibility
 {
-
-    public Task<ListComicDTO?> GetComics(int page, int step,int hot, int genre = -1, ComicStatus status = ComicStatus.All, SortType sort = SortType.TopAll);
+    public Task<List<ComicDTO>> GetComicsByIds(List<int> ids);
+    public Task<ListComicDTO?> GetComics(int page, int step, int hot, int genre = -1, ComicStatus status = ComicStatus.All, SortType sort = SortType.TopAll);
 
     public Task<ComicDTO?> GetComic(string key);
     public Comic AddComic(Comic comic);

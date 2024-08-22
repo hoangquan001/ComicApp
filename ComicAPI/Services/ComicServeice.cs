@@ -43,7 +43,7 @@ public class ComicService : IComicService
     public async Task<ServiceResponse<ComicDTO>> GetComic(string key, int maxchapter = -1)
     {
         var data = await _comicReposibility.GetComic(key);
-        if (data != null && _userService.CurrentUser!=null)
+        if (data != null && _userService.CurrentUser != null)
         {
             data.IsFollow = await _userService.IsFollowComic(data.ID);
         }
@@ -115,7 +115,7 @@ public class ComicService : IComicService
     {
         int page = comicQueryParams.page < 1 ? 1 : comicQueryParams.page;
         int step = comicQueryParams.step < 1 ? 10 : comicQueryParams.step;
-        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre,comicQueryParams.hot, comicQueryParams.status, comicQueryParams.sort);
+        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre, comicQueryParams.hot, comicQueryParams.status, comicQueryParams.sort);
 
         return ServiceUtilily.GetDataRes<ListComicDTO>(data);
 
@@ -321,7 +321,7 @@ public class ComicService : IComicService
         var chapter = await _comicReposibility.GetChapter(chapterid);
         if (chapter == null) return ServiceUtilily.GetDataRes<int>(0);
         chapterViews.AddOrUpdate(chapter.ID, 0, (key, oldValue) => oldValue + 1);
-        comicViews.AddOrUpdate(chapter.ComicID, 0, (key, oldValue) => oldValue + 1);    
+        comicViews.AddOrUpdate(chapter.ComicID, 0, (key, oldValue) => oldValue + 1);
         return ServiceUtilily.GetDataRes<int>(chapterViews[chapterid]);
     }
 
@@ -336,5 +336,9 @@ public class ComicService : IComicService
         comicViews.Clear();
     }
 
-
+    public async Task<ServiceResponse<List<ComicDTO>>> GetComicsByIds(List<int> ids)
+    {
+        List<ComicDTO>? data = await _comicReposibility.GetComicsByIds(ids);
+        return ServiceUtilily.GetDataRes<List<ComicDTO>>(data);
+    }
 }

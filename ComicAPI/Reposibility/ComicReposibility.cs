@@ -551,4 +551,27 @@ public class ComicReposibility : IComicReposibility
 
         await _dbContext.SaveChangesAsync();
     }
+
+    public async Task<List<ComicDTO>> GetComicsByIds(List<int> ids)
+    {
+        var comics = await _dbContext.Comics
+        .Where(x => ids.Contains(x.ID))
+        .Select(x => new ComicDTO
+        {
+            ID = x.ID,
+            Title = x.Title,
+            OtherName = x.OtherName,
+            Author = x.Author,
+            Url = x.Url,
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
+            Description = x.Description,
+            Status = x.Status,
+            Rating = x.Rating,
+            ViewCount = x.ViewCount,
+            UpdateAt = x.UpdateAt,
+            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+            // Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+        }).ToListAsync();
+        return comics;
+    }
 }

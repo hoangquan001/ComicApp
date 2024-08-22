@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using ComicApp.Data;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -20,6 +21,10 @@ public class ComicDTO
     public DateTime UpdateAt { get; set; } = DateTime.Now;
     public int NumChapter { get; set; } = 0;
     public IEnumerable<GenreLiteDTO> genres { get; set; } = [];
+
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public IEnumerable<object> Chapters { get; set; } = [];
+
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public bool IsFollow { get; set; } = false;
 }

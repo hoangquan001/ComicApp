@@ -25,6 +25,20 @@ public class ComicController : ControllerBase
         _userService = userService;
     }
 
+    [HttpGet("comicsbyids")]
+    public async Task<ActionResult<List<ComicDTO>>> GetComics(string ids)
+    {
+
+        try
+        {
+            List<int> list = ids.Split(',').Select(int.Parse).ToList();
+            return Ok(await _comicService.GetComicsByIds(list));
+        }
+        catch (System.Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
     [HttpGet("comics")]
     public async Task<ActionResult<ListComicDTO>> GetComics(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All, int genre = -1, int page = 1, int step = 100, int hot = -1)
     {

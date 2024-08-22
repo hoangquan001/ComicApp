@@ -7,6 +7,7 @@ public interface IComicService
 {
 
     Task<ServiceResponse<ListComicDTO>> GetComics(ComicQueryParams comicQueryParams);
+    Task<ServiceResponse<List<ComicDTO>>> GetComicsByIds(List<int> ids);
     Task<ServiceResponse<ComicDTO>> GetComic(string key, int chaptertake = -1);
     Task<ServiceResponse<List<ChapterDTO>>> GetChaptersComic(string key);
     Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(int chapter_id);
@@ -18,7 +19,7 @@ public interface IComicService
     Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance comicQueryParams);
     Task<ServiceResponse<List<ComicDTO>>> GetComicRecommend();
     Task<ServiceResponse<ComicTopViewDTO?>> GetTopViewComics(int step);
-    Task<ServiceResponse<int>> TotalViewComics( int chapterid);
+    Task<ServiceResponse<int>> TotalViewComics(int chapterid);
     Task UpdateViewComic();
     Task UpdateViewChapter();
 
