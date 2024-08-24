@@ -29,7 +29,7 @@ namespace ComicAPI.Services
             var request = _httpContextAccessor.HttpContext!.Request;
             var host = request.Host.Value;
             var scheme = request.Scheme;
-            var url = $"{scheme}://{host}/static/CoverImg/{Image}";
+            var url = $"{scheme}://{host}/CoverImg/{Image}";
             return url;
         }
         public string GetUserImagePath(string? Image)
@@ -37,12 +37,12 @@ namespace ComicAPI.Services
             var request = _httpContextAccessor.HttpContext!.Request;
             var host = request.Host.Value;
             var scheme = request.Scheme;
-            var url = $"{scheme}://{host}/static/AvatarImg/{Image}";
+            var url = $"{scheme}://{host}/AvatarImg/{Image}";
             return GlobalConfig.AddTimestampToUrl(url);
         }
         public string GetPathSaveUserImage()
         {
-            return Path.Combine(_environment.ContentRootPath, "StaticFiles\\Avatarimg"); ;
+            return Path.Combine(_environment.ContentRootPath, "wwwroot\\Avatarimg"); ;
         }
         public string GetConfirmEmailPath(int UserId, string Code)
         {
