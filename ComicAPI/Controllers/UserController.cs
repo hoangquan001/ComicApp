@@ -1,16 +1,7 @@
 
-using ComicApp.Data;
 using ComicApp.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Reflection.Metadata.Ecma335;
-using System.Security.Claims;
-using System.Text;
-using System.Linq;
-using ComicAPI.Enums;
 using Microsoft.AspNetCore.Authorization;
-using ComicAPI.Classes;
 using ComicAPI.DTOs;
 [ApiController]
 [Route("[controller]")]

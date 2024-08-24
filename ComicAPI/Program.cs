@@ -16,14 +16,31 @@ using ComicAPI.Reposibility;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.HttpLogging;
 using System.Diagnostics;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
+
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
+builder.Services.AddOptions();
 builder.Services.AddMemoryCache();
+builder.Services.AddRateLimiter(options =>
+{
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+    options.AddFixedWindowLimiter("DefaultLimiter", _ =>
+    {
+        _.Window = TimeSpan.FromSeconds(1);
+        _.PermitLimit = 5;
+
+    });
+
+});
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
@@ -77,6 +94,7 @@ builder.Services.AddScoped<IUserReposibility, UserReposibility>();
 builder.Services.AddHostedService<ComicUpdater>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<UrlService>();
+builder.Services.AddSingleton<MetricService>();
 
 
 builder.Services.AddSwaggerGen(c =>
@@ -113,7 +131,7 @@ builder.Services.AddAutoMapper(typeof(Program));
 
 WebApplication? app = builder.Build();
 // Configure the HTTP request pipeline. 
-
+app.UseRateLimiter();
 
 if (app.Environment.IsDevelopment())
 {
@@ -122,29 +140,16 @@ if (app.Environment.IsDevelopment())
 }
 // Use CORS
 app.UseCors(MyAllowSpecificOrigins);
+
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<TokenHandlerMiddlerware>();
+app.UseMiddleware<MetricMiddleware>();
 app.UseHttpsRedirection();
 app.UseDefaultFiles();
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-           Path.Combine(builder.Environment.ContentRootPath, "StaticFiles")),
-    RequestPath = new PathString("/static")
-});
+app.UseStaticFiles();
 app.UseAuthentication();
-app.UseMiddleware<UserMiddleware>();
 app.UseAuthorization();
+app.UseMiddleware<UserMiddleware>();
 app.MapControllers();
-if (app.Environment.IsDevelopment())
-{
-    app.Use(async (context, next) =>
-    {
-        var stopwatch = Stopwatch.StartNew();
-        await next(context);
-        stopwatch.Stop();
-        Console.WriteLine($"Response: {context.Request.Method} {context.Request.Path} {context.Response.StatusCode} {stopwatch.ElapsedMilliseconds}ms");
-    });
-}
 app.Run();
 
