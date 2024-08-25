@@ -6,7 +6,7 @@ using ComicAPI.Classes;
 using Microsoft.AspNetCore.RateLimiting;
 [ApiController]
 [Route("")]
-[EnableRateLimiting("DefaultLimiter")]
+[EnableRateLimiting("FixedLimiter")]
 public class ComicController : ControllerBase
 {
     IComicService _comicService;

@@ -49,59 +49,49 @@ public class ComicService : IComicService
         }
         return ServiceUtilily.GetDataRes<ComicDTO>(data);
     }
+
     private List<ComicDTO> GetComicByKeyword(List<ComicDTO> data, string keyword)
     {
         keyword = keyword.Replace("-", " ");
-        var listkeys = SlugHelper.GetListKey(keyword);
-        List<(ComicDTO comic, int count)> result = new List<(ComicDTO, int)>();
-        Dictionary<int, int> myDict = new Dictionary<int, int>();
+        keyword = SlugHelper.CreateSlug(keyword);
+        var vec1 = new Dictionary<string, int>();
+        SlugHelper.GetTermFrequencyVector(keyword, ref vec1);
+        List<(ComicDTO comic, int similarity)> result = new List<(ComicDTO, int)>();
+
         for (int i = 0; i < data.Count; i++)
         {
-            var listtitlekeys = data[i].Url.Split('-');
-            IEnumerable<string>? merge = listtitlekeys;
-            if (data[i].OtherName != "")
+            Dictionary<string, int> vec2 = new Dictionary<string, int>();
+            SlugHelper.GetTermFrequencyVector(data[i].Url, ref vec2);
+            if (!string.IsNullOrEmpty(data[i].OtherName))
             {
-                var listotherkeys = SlugHelper.GetListKey(data[i].OtherName);
-                merge = merge.Union(listotherkeys);
-            }
-            int countElement = 0;
-            if (listkeys.Count == 1)
-            {
-                string f = listkeys.First();
-                if (listtitlekeys.Contains(f))
-                {
-                    countElement = 2;
-                }
-                else if (listtitlekeys.Any(x => x.Contains(f)))
-                {
-                    countElement = 1;
-                }
-            }
-            else
-            {
-                var Elements = listkeys.Intersect(merge);
-                countElement = Elements.Count();
+                var otherName = SlugHelper.CreateSlug(data[i].OtherName);
+                SlugHelper.GetTermFrequencyVector(otherName, ref vec2);
             }
 
-            if (countElement > 0)
-            {
-                if (!myDict.ContainsKey(countElement))
-                {
-                    myDict[countElement] = 1;
-                    result.Add((data[i], countElement));
-                }
-                else if (myDict[countElement] < 5)
-                {
-                    myDict[countElement]++;
-                    result.Add((data[i], countElement));
-                }
+            double dotProduct = 0;
+            double norm1 = 0;
+            double norm2 = 0;
 
+            foreach (string key in vec1.Keys)
+            {
+                if (vec2.ContainsKey(key))
+                    dotProduct += vec1[key] * vec2[key];
+                norm1 += vec1[key] * vec1[key];
+            }
+            norm2 = vec2.Keys.Sum(x => vec2[x] * vec2[x]);
+
+            var a = dotProduct / (Math.Sqrt(norm1) * Math.Sqrt(norm2));
+            if (a > 0.1)
+            {
+                result.Add((data[i], (int)(a * 100)));
             }
         }
-        result.Sort((x, y) => y.count.CompareTo(x.count));
-        List<ComicDTO> result2 = result.Take(5).Select(x => x.comic).ToList();
-        return result2;
+
+        return result.OrderByDescending(x => x.similarity).Take(5).Select(x => x.comic).ToList();
+
     }
+
+
     public async Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword)
     {
         var data = await _comicReposibility.GetAllComics();
@@ -272,7 +262,7 @@ public class ComicService : IComicService
         foreach (var key in keys)
         {
             result.AddRange(dictKey[key]);
-            if (result.Count > 200) break;
+            if (result.Count > 100) break;
         }
         ServiceUtilily.SuffleList(result);
         result = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-2)).Take(12).ToList();

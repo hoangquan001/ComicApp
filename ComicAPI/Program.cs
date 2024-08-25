@@ -17,25 +17,27 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.HttpLogging;
 using System.Diagnostics;
 using Microsoft.AspNetCore.RateLimiting;
-using System.Threading.RateLimiting;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
-
-builder.Logging.ClearProviders();
+// builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
-builder.Services.AddOptions();
+// builder.Services.AddOptions();
 builder.Services.AddMemoryCache();
 builder.Services.AddRateLimiter(options =>
 {
     options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
-    options.AddFixedWindowLimiter("DefaultLimiter", _ =>
+    options.AddFixedWindowLimiter("FixedLimiter", _ =>
     {
         _.Window = TimeSpan.FromSeconds(1);
         _.PermitLimit = 5;
 
+    });
+    options.AddConcurrencyLimiter("ConcurrencyLimiter", _ =>
+    {
+        _.PermitLimit = 2;
     });
 
 });
@@ -47,6 +49,7 @@ builder.Services.AddCors(options =>
         policy =>
         {
             policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+            // policy.WithOrigins("http://localhost:4200");
         });
 });
 builder.Services.AddEndpointsApiExplorer();
@@ -72,7 +75,7 @@ builder.Services.AddAuthentication(x =>
 {
     x.SaveToken = true;
     x.RequireHttpsMetadata = false;
-    x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    x.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuer = false,
         ValidateAudience = false,
@@ -88,15 +91,13 @@ builder.Services.AddAuthentication(x =>
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IComicService, ComicService>();
 builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddSingleton<ITokenMgr, TokenMgr>();
 builder.Services.AddScoped<IComicReposibility, ComicReposibility>();
 builder.Services.AddScoped<IUserReposibility, UserReposibility>();
+builder.Services.AddScoped<UrlService>();
 builder.Services.AddHostedService<ComicUpdater>();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddScoped<UrlService>();
 builder.Services.AddSingleton<MetricService>();
-
-
+builder.Services.AddSingleton<ITokenMgr, TokenMgr>();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
@@ -131,22 +132,23 @@ builder.Services.AddAutoMapper(typeof(Program));
 
 WebApplication? app = builder.Build();
 // Configure the HTTP request pipeline. 
-app.UseRateLimiter();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-// Use CORS
+if (app.Environment.IsProduction())
+{
+    app.UseRateLimiter();
+}
 app.UseCors(MyAllowSpecificOrigins);
-
-app.UseMiddleware<ExceptionMiddleware>();
-app.UseMiddleware<TokenHandlerMiddlerware>();
-app.UseMiddleware<MetricMiddleware>();
-app.UseHttpsRedirection();
 app.UseDefaultFiles();
 app.UseStaticFiles();
+app.UseMiddleware<MetricMiddleware>();
+app.UseMiddleware<ExceptionMiddleware>();
+app.UseMiddleware<TokenHandlerMiddlerware>();
+app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseMiddleware<UserMiddleware>();

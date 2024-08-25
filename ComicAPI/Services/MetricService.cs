@@ -16,11 +16,18 @@ namespace ComicAPI.Services
     {
         private readonly ConcurrentDictionary<MetricType, long> _intMetrics = new ConcurrentDictionary<MetricType, long>();
         private readonly ConcurrentDictionary<string, (float duration, int count)> _endpointDurations = new ConcurrentDictionary<string, (float duration, int count)>();
+
+        private readonly ConcurrentDictionary<string, int> _ips = new ConcurrentDictionary<string, int>();
         private readonly Process _process;
 
         public MetricService()
         {
             _process = Process.GetCurrentProcess();
+        }
+
+        public void IpCount(string ip)
+        {
+            _ips.AddOrUpdate(ip, 1, (key, value) => value + 1);
         }
 
         public double GetCpuUsage()

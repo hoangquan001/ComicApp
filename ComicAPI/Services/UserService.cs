@@ -13,7 +13,6 @@ using System.Collections.Concurrent;
 namespace ComicApp.Services;
 public class UserService : IUserService
 {
-    private readonly IComicReposibility _comicReposibility;
     private readonly IUserReposibility _userReposibility;
     private readonly UrlService _urlService;
     private readonly IMapper _mapper;
@@ -45,7 +44,6 @@ public class UserService : IUserService
         _urlService = urlService;
         _mapper = mapper;
         _userReposibility = userReposibility;
-        _comicReposibility = comicReposibility;
     }
 
     public async Task<ServiceResponse<int>> FollowComic(int comicid)

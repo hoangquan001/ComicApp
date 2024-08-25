@@ -134,26 +134,17 @@ public class SlugHelper
 {
     public static string CreateSlug(string inputString, bool ignoreDot = true)
     {
-        try
-        {
-            string slug = inputString.ToLowerInvariant().Trim();
-            string unaccentedString = RemoveAccents(slug);
+        string slug = inputString.ToLowerInvariant().Trim();
+        string unaccentedString = RemoveAccents(slug);
+        if (ignoreDot)
+            unaccentedString = Regex.Replace(unaccentedString, @"[^\w\s]", ""); // Ignore dots
+        else
+            unaccentedString = Regex.Replace(unaccentedString, @"[^\w\s.]", "");
+        unaccentedString = Regex.Replace(unaccentedString, @"\s+", "-");
+        unaccentedString = unaccentedString.Trim('-');
+        return unaccentedString;
 
-            if (ignoreDot)
-                unaccentedString = Regex.Replace(unaccentedString, @"[^\w\s]", ""); // Ignore dots
-            else
-                unaccentedString = Regex.Replace(unaccentedString, @"[^\w\s.]", "");
 
-            unaccentedString = Regex.Replace(unaccentedString, @"\s+", "-");
-            unaccentedString = unaccentedString.Trim('-');
-
-            return unaccentedString;
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Error in CreateSlug: {e.Message}");
-            return inputString; // Return the input string as a fallback
-        }
     }
     public static HashSet<string> GetListKey(string inputString)
     {
@@ -163,7 +154,19 @@ public class SlugHelper
         unaccentedString = Regex.Replace(unaccentedString, @"\s+", " ");
         return unaccentedString.Split(' ').ToHashSet();
     }
+    public static bool GetTermFrequencyVector(string s, ref Dictionary<string, int> vector)
+    {
+        var words = s.Split(new char[] { ' ', '-' }, StringSplitOptions.RemoveEmptyEntries);
+        foreach (var word in words)
+        {
+            if (vector.ContainsKey(word))
+                vector[word]++;
+            else
+                vector[word] = 1;
+        }
 
+        return true;
+    }
     private static string RemoveAccents(string accentedString)
     {
         string normalizedString = accentedString.Normalize(NormalizationForm.FormD);

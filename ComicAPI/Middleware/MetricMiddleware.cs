@@ -31,15 +31,15 @@ public class MetricMiddleware
 
     public async Task InvokeAsync(HttpContext context)
     {
-        if (context.Request.Path.ToString().ToLower() == "/metrics")
+        if (context.Request.Path.Value!.ToLower() == "/metrics")
         {
             await _next(context);
             return;
         }
-        var data = GetEndpointPatterns();
+        // var data = GetEndpointPatterns();
 
         var stopwatch = Stopwatch.StartNew();
-
+        _metricService.IpCount(context.Connection.RemoteIpAddress!.MapToIPv4().ToString());
         _metricService.IncrementInt(MetricType.RequestCount);
 
         try
