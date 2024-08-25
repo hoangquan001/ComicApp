@@ -1,15 +1,10 @@
-using System.Collections.Concurrent;
-using System.Globalization;
-using System.Text;
+
 using ComicAPI.Enums;
-using ComicAPI.Models;
 using ComicAPI.Services;
 using ComicApp.Data;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.VisualBasic;
 
 public class ComicReposibility : IComicReposibility
 {
@@ -229,62 +224,53 @@ public class ComicReposibility : IComicReposibility
 
     }
 
-    public async Task<List<ComicDTO>?> SearchComicsByKeyword(string keyword)
+
+
+    public async Task<List<ComicDTO>> GetComicByKeyword(string keyword)
     {
-        keyword = keyword.ToLower();
-
-
-
-        // var data = await _dbContext.Comics
-        // // .Where(
-        // //     x =>
-        // //     EF.Functions.ILike(x.Title, $"%{keyword}%") ||
-        // //     EF.Functions.ILike(x.Url, $"%{keyword}%") ||
-        // //     EF.Functions.ILike(x.OtherName, $"%{keyword}%")
-        // // )
-        // .Select(x => new ComicDTO
-        // {
-        //     ID = x.ID,
-        //     Title = x.Title,
-        //     Author = x.Author,
-        //     Url = x.Url,
-        //     CoverImage = x.CoverImage,
-        //     Description = x.Description,
-        //     Status = x.Status,
-        //     Rating = x.Rating,
-        //     UpdateAt = x.UpdateAt,
-        //     ViewCount = x.ViewCount
-        // })
-        // .ToListAsync();
-
-        List<ComicDTO> result = new List<ComicDTO>();
-        await Task.Delay(1000);
-
-        return result;
+        return GetComicByKeyword(await GetAllComics(), keyword);
     }
-
-
-    public static string RemoveDiacritics(string text)
+    private List<ComicDTO> GetComicByKeyword(List<ComicDTO> data, string keyword)
     {
-        while (text.IndexOf("  ") != -1) // kiểm tra xem có dấu 2 dấu cách nào liền nhau hay không
-        {
-            // thực hiện câu lệnh trong vòng lặp này chứng tỏ là có 2 dấu cách liền nhau
-            text = text.Remove(text.IndexOf("  "), 1); // loại bỏ đi 1 trong 2 dấu cách
-        }
-        var normalizedString = text.Normalize(NormalizationForm.FormD);
-        var stringBuilder = new StringBuilder();
+        keyword = keyword.Replace("-", " ");
+        keyword = SlugHelper.CreateSlug(keyword);
+        var vec1 = new Dictionary<string, int>();
+        SlugHelper.GetTermFrequencyVector(keyword, ref vec1);
+        List<(ComicDTO comic, int similarity)> result = new List<(ComicDTO, int)>();
 
-        foreach (var c in normalizedString)
+        for (int i = 0; i < data.Count; i++)
         {
-            var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
-            if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+            Dictionary<string, int> vec2 = new Dictionary<string, int>();
+            SlugHelper.GetTermFrequencyVector(data[i].Url, ref vec2);
+            if (!string.IsNullOrEmpty(data[i].OtherName))
             {
-                stringBuilder.Append(c);
+                var otherName = SlugHelper.CreateSlug(data[i].OtherName);
+                SlugHelper.GetTermFrequencyVector(otherName, ref vec2);
+            }
+
+            double dotProduct = 0;
+            double norm1 = 0;
+            double norm2 = 0;
+
+            foreach (string key in vec1.Keys)
+            {
+                if (vec2.ContainsKey(key))
+                    dotProduct += vec1[key] * vec2[key];
+                norm1 += vec1[key] * vec1[key];
+            }
+            norm2 = vec2.Keys.Sum(x => vec2[x] * vec2[x]);
+
+            var a = dotProduct / (Math.Sqrt(norm1) * Math.Sqrt(norm2));
+            if (a > 0.1)
+            {
+                result.Add((data[i], (int)(a * 100)));
             }
         }
 
-        return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+        return result.OrderByDescending(x => x.similarity).Take(5).Select(x => x.comic).ToList();
+
     }
+
 
     public async Task<ListComicDTO?> GetComicBySearchAdvance(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All,
      List<int>? genres = null, int page = 1, int step = 100, List<int>? Nogenres = null, int? year = null, string? keyword = null)
@@ -319,36 +305,38 @@ public class ComicReposibility : IComicReposibility
         }
         if (!string.IsNullOrEmpty(keyword))
         {
-            keyword = RemoveDiacritics(keyword).ToLower();
-            comicsQuery = comicsQuery.Where(comic =>
-                comic.Url.ToLower().Contains(RemoveDiacritics(keyword).Trim().ToLower().Replace(" ", "-"))
-                );
+            keyword = keyword.Replace("-", " ");
+            comicsQuery = comicsQuery.Select(x => new
+            {
+                comic = x,
+                similarity = EF.Functions.TrigramsSimilarity(x.Title, keyword)
+            })
+            .Where(x => x.similarity > 0.1)
+            .OrderByDescending(x => x.similarity)
+            .Select(x => x.comic)
+            ;
         }
 
-
-        // Execute query and get data
-
         var data = await comicsQuery
-
-            .Select(x => new ComicDTO
-            {
-                ID = x.ID,
-                Title = x.Title,
-                OtherName = x.OtherName,
-                Author = x.Author,
-                Url = x.Url,
-                CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-                Description = x.Description,
-                Status = x.Status,
-                Rating = x.Rating,
-                ViewCount = x.ViewCount,
-                UpdateAt = x.UpdateAt,
-                genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-                Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
-            })
-            .Skip((page - 1) * step)
-            .Take(step)
-            .ToListAsync();
+        .Select(x => new ComicDTO
+        {
+            ID = x.ID,
+            Title = x.Title,
+            OtherName = x.OtherName,
+            Author = x.Author,
+            Url = x.Url,
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
+            Description = x.Description,
+            Status = x.Status,
+            Rating = x.Rating,
+            ViewCount = x.ViewCount,
+            UpdateAt = x.UpdateAt,
+            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+        })
+        .Skip((page - 1) * step)
+        .Take(step)
+        .ToListAsync();
 
         // Get total count
 
@@ -574,4 +562,5 @@ public class ComicReposibility : IComicReposibility
         }).ToListAsync();
         return comics;
     }
+
 }

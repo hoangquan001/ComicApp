@@ -50,52 +50,11 @@ public class ComicService : IComicService
         return ServiceUtilily.GetDataRes<ComicDTO>(data);
     }
 
-    private List<ComicDTO> GetComicByKeyword(List<ComicDTO> data, string keyword)
-    {
-        keyword = keyword.Replace("-", " ");
-        keyword = SlugHelper.CreateSlug(keyword);
-        var vec1 = new Dictionary<string, int>();
-        SlugHelper.GetTermFrequencyVector(keyword, ref vec1);
-        List<(ComicDTO comic, int similarity)> result = new List<(ComicDTO, int)>();
-
-        for (int i = 0; i < data.Count; i++)
-        {
-            Dictionary<string, int> vec2 = new Dictionary<string, int>();
-            SlugHelper.GetTermFrequencyVector(data[i].Url, ref vec2);
-            if (!string.IsNullOrEmpty(data[i].OtherName))
-            {
-                var otherName = SlugHelper.CreateSlug(data[i].OtherName);
-                SlugHelper.GetTermFrequencyVector(otherName, ref vec2);
-            }
-
-            double dotProduct = 0;
-            double norm1 = 0;
-            double norm2 = 0;
-
-            foreach (string key in vec1.Keys)
-            {
-                if (vec2.ContainsKey(key))
-                    dotProduct += vec1[key] * vec2[key];
-                norm1 += vec1[key] * vec1[key];
-            }
-            norm2 = vec2.Keys.Sum(x => vec2[x] * vec2[x]);
-
-            var a = dotProduct / (Math.Sqrt(norm1) * Math.Sqrt(norm2));
-            if (a > 0.1)
-            {
-                result.Add((data[i], (int)(a * 100)));
-            }
-        }
-
-        return result.OrderByDescending(x => x.similarity).Take(5).Select(x => x.comic).ToList();
-
-    }
 
 
     public async Task<ServiceResponse<List<ComicDTO>>> SearchComicByKeyword(string keyword)
     {
-        var data = await _comicReposibility.GetAllComics();
-        var result = GetComicByKeyword(data, keyword);
+        var result = await _comicReposibility.GetComicByKeyword(keyword);
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(result);
 
     }
