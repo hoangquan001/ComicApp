@@ -7,6 +7,8 @@ using HtmlAgilityPack;
 using System.Collections.Immutable;
 using System.Text.Json;
 using System.Collections.Concurrent;
+using Microsoft.Extensions.Options;
+using System.Text;
 
 namespace ComicApp.Services;
 public class ComicService : IComicService
@@ -18,6 +20,7 @@ public class ComicService : IComicService
     private readonly IMapper _mapper;
     private static ConcurrentDictionary<int, int> chapterViews = new ConcurrentDictionary<int, int>();
     private static ConcurrentDictionary<int, int> comicViews = new ConcurrentDictionary<int, int>();
+    private readonly AppSetting _config;
 
     static ComicService()
     {
@@ -30,12 +33,12 @@ public class ComicService : IComicService
     }
 
     public ComicService(IComicReposibility comicReposibility, IMapper mapper
-        , IUserService userService)
+        , IUserService userService, IOptions<AppSetting> options)
     {
         _comicReposibility = comicReposibility;
         _mapper = mapper;
         _userService = userService;
-
+        _config = options.Value;
     }
 
 
@@ -290,4 +293,22 @@ public class ComicService : IComicService
         List<ComicDTO>? data = await _comicReposibility.GetComicsByIds(ids);
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(data);
     }
+
+    public async Task<ServiceResponse<bool>> ReportError(string name, int chapterid, string errorType, string message)
+    {
+        var data = new 
+        {
+            name = name,
+            errorType = errorType,
+            createdAt = DateTime.UtcNow,
+            message = message,
+        };
+        HttpResponseMessage? response = await _httpClient.PostAsJsonAsync(_config.ReportApiUrl, data);
+        if(response.IsSuccessStatusCode)
+        {
+            return ServiceUtilily.GetDataRes<bool>(true);
+        }
+        return ServiceUtilily.GetDataRes<bool>(false);
+    }
 }
+

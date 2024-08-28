@@ -164,16 +164,28 @@ CREATE TABLE IF NOT EXISTS USER_NOTIFICATION (
     ID SERIAL PRIMARY KEY,
     UserID INT NOT NULL,
     ComicID INT NOT NULL,
-    NotificationContent VARCHAR(255) NOT NULL,
-    NotificationTimestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    Type INT CHECK (Type IN (0, 1)) DEFAULT 0,
+    Content VARCHAR(255) NOT NULL,
+    Timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     IsRead BOOLEAN NOT NULL DEFAULT FALSE,
-	  CoverImage VARCHAR(255),
-	  URLComic VARCHAR(255) NOT NULL,
-	  lastchapter INT,
-	  URLChapter VARCHAR(255) NOT NULL,
+    CoverImage VARCHAR(255),
+    URLComic VARCHAR(255) NOT NULL,
+    lastchapter INT,
+    URLChapter VARCHAR(255) NOT NULL,
     FOREIGN KEY (UserID) REFERENCES _USER(ID),
     FOREIGN KEY (ComicID) REFERENCES COMIC(ID)
 );
+
+-- CREATE TABLE Notifications (
+--     ID SERIAL PRIMARY KEY,
+--     Title VARCHAR(255) NOT NULL,
+--     Message TEXT NOT NULL,
+--     CreatedAt TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+--     Type INT default 0,
+-- 	ComicID INT,
+--     ChapterID INT,
+--     Commnet
+-- );
 
 
 CREATE INDEX idx_user_username ON _USER (Username);

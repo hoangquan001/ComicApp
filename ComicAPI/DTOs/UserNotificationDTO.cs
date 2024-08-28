@@ -16,9 +16,9 @@ namespace ComicAPI.DTOs
 
         public int ComicID { get; set; }
 
-        public string NotificationContent { get; set; } = "";
+        public string Content { get; set; } = "";
 
-        public DateTime NotificationTimestamp { get; set; } = DateTime.UtcNow;
+        public DateTime Timestamp { get; set; } = DateTime.UtcNow;
 
         public bool IsRead { get; set; } = false;
 

@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.HttpLogging;
 using System.Diagnostics;
 using Microsoft.AspNetCore.RateLimiting;
+using ComicAPI.Classes;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -24,7 +25,9 @@ var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 // builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
-// builder.Services.AddOptions();
+builder.Services.AddOptions();
+builder.Services.Configure<AppSetting>(
+    builder.Configuration.GetSection("AppSettings"));
 builder.Services.AddMemoryCache();
 builder.Services.AddRateLimiter(options =>
 {

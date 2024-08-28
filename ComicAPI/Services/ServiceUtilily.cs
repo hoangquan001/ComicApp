@@ -28,10 +28,10 @@ public class ServiceUtilily
     {
         var res = new ServiceResponse<T>();
 
-        if (data == null)
+        if (data == null || (data is bool d && d == false))
         {
             res.Status = 0;
-            res.Message = "Not found";
+            res.Message = "Error";
 
         }
         else

@@ -65,7 +65,7 @@ BEGIN
         FROM USER_FOLLOW_COMIC
         WHERE ComicID = NEW.ComicID
     LOOP
-        INSERT INTO NOTIFICATIONS (UserID, ComicID, NotificationContent)
+        INSERT INTO NOTIFICATIONS (UserID, ComicID, Content)
         VALUES (
             user.UserID,
             NEW.ComicID,

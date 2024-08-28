@@ -65,7 +65,7 @@ BEGIN
         FROM USER_FOLLOW_COMIC
         WHERE ComicID = NEW.ComicID
     LOOP
-        INSERT INTO USER_NOTIFICATION (UserID, ComicID, NotificationContent, CoverImage, URLComic, lastchapter, URLChapter)
+        INSERT INTO USER_NOTIFICATION (UserID, ComicID, Content, CoverImage, URLComic, lastchapter, URLChapter)
         VALUES (
             user_id,
             NEW.ComicID,
@@ -87,7 +87,7 @@ RETURNS TRIGGER AS $$
 BEGIN
     DELETE FROM USER_NOTIFICATION
     WHERE ComicID = OLD.ComicID
-      AND NotificationContent LIKE '%' || OLD.Title || '%';
+      AND Content LIKE '%' || OLD.Title || '%';
 
     RETURN OLD;
 END;

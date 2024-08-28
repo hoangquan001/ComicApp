@@ -110,14 +110,14 @@ namespace ComicAPI.Reposibility
         {
             var notifys = await _dbContext.Notifications
             .Where(x => x.UserID == userid)
-            .OrderByDescending(x => x.NotificationTimestamp)
+            .OrderByDescending(x => x.Timestamp)
             .Select(n => new UserNotificationDTO
             {
                 ID = n.ID,
                 ComicID = n.ComicID,
                 UserID = n.UserID,
-                NotificationContent = n.NotificationContent,
-                NotificationTimestamp = n.NotificationTimestamp,
+                Content = n.Content,
+                Timestamp = n.Timestamp,
                 IsRead = n.IsRead,
                 CoverImage = _urlService.GetComicCoverImagePath(n.CoverImage),
                 URLComic = n.URLComic,

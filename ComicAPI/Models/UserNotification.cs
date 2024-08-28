@@ -17,10 +17,10 @@ namespace ComicAPI.Models
         public int UserID { get; set; }
         [Column("comicid")]
         public int ComicID { get; set; }
-        [Column("notificationcontent")]
-        public string NotificationContent { get; set; } = "";
-        [Column("notificationtimestamp")]
-        public DateTime NotificationTimestamp { get; set; } = DateTime.UtcNow;
+        [Column("content")]
+        public string Content { get; set; } = "";
+        [Column("timestamp")]
+        public DateTime Timestamp { get; set; } = DateTime.UtcNow;
         [Column("isread")]
         public bool IsRead { get; set; } = false;
         [Column("coverimage")]

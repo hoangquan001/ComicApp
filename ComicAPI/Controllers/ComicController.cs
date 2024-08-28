@@ -164,4 +164,11 @@ public class ComicController : ControllerBase
         var responseComic = await _comicService.TotalViewComics(chapterId);
         return Ok(responseComic);
     }
+    [HttpPost("comic/report")]
+    public async Task<ActionResult<bool>> ReportError(ErrorReportDTO data)
+    {
+
+        var responseComic = await _comicService.ReportError(data.name, data.chapterid, data.errorType, data.message);
+        return Ok(responseComic);
+    }
 }
