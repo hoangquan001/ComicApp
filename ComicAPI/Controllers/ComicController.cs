@@ -46,6 +46,12 @@ public class ComicController : ControllerBase
         var data = await _comicService.GetComics(queryParams);
         return Ok(data);
     }
+    [HttpGet("hotcomics")]
+    public async Task<ActionResult<ListComicDTO>> GetHotComics(  int page = 1, int step = 30)
+    {
+        var data = await _comicService.GetHotComics(page, step);
+        return Ok(data);
+    }
 
     //get one comic by id
     // [Authorize]

@@ -65,7 +65,7 @@ public class MetricMiddleware
             {
                 _metricService.TrackRequestDuration(context.Request.Path, stopwatch.ElapsedMilliseconds);
 
-                Console.WriteLine($"Response: {context.Request.Method} {context.Request.Path} {context.Response.StatusCode} {stopwatch.ElapsedMilliseconds}ms");
+                Console.WriteLine($"Response: {context.Request.Method} {context.Request.Path}{context.Request.QueryString} {context.Response.StatusCode} {stopwatch.ElapsedMilliseconds}ms");
             }
 
         }

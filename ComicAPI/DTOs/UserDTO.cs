@@ -13,9 +13,6 @@ public class UserDTO
     public string? Token { get; set; }
     public int Experience { get; set; } = 0;
     public int? Status { get; set; }
-
     public string? Maxim { get; set; } = string.Empty;
-
-
     public int TypeLevel { get; set; } = 0;
 }

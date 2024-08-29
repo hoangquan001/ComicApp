@@ -8,6 +8,7 @@ public interface IUserService
 {
     public User? CurrentUser { get; set; }
     Task<ServiceResponse<UserDTO>> GetMyUserInfo();
+    Task<ServiceResponse<UserDTO>> GetUserInfo(int id);
     Task<ServiceResponse<int>> FollowComic(int comicid);
     Task<ServiceResponse<int>> UnFollowComic(int comicid);
     Task<ServiceResponse<ListComicDTO>> GetFollowComics(int page = 1, int step = 40);

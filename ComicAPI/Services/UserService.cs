@@ -281,9 +281,21 @@ public class UserService : IUserService
             return response;
         }
         response.Status = 200;
-        _CurrentUser.Avatar = _urlService.GetUserImagePath(_CurrentUser.Avatar);
+        // _CurrentUser.Avatar = _urlService.GetUserImagePath(_CurrentUser.Avatar);
         response.Data = _mapper.Map<UserDTO>(_CurrentUser); // Return the user
         return await Task.FromResult(response);
+    }
+
+    public async Task<ServiceResponse<UserDTO>> GetUserInfo(int id)
+    {
+        var userData = await _userReposibility.GetUser(id);
+        if (userData == null)
+        {
+            return new ServiceResponse<UserDTO> { Status = 404, Message = "User not found", Data = null };
+        }
+
+        // userData.Avatar = _urlService.GetUserImagePath(userData.Avatar);
+        return new ServiceResponse<UserDTO> { Status = 200, Message = "Success", Data = _mapper.Map<UserDTO>(userData) };
     }
 
     public async Task<ServiceResponse<List<UserNotificationDTO>>> GetUserNotify()
@@ -372,4 +384,6 @@ public class UserService : IUserService
         await _userReposibility.UpdateUserExp(_exps.ToDictionary());
         _exps.Clear();
     }
+
+    
 }

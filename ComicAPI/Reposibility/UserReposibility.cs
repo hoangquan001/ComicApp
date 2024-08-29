@@ -97,9 +97,10 @@ namespace ComicAPI.Reposibility
             {
                 return cachedData;
             }
-            var user = await _dbContext.Users.Where(x => x.ID == userid).FirstOrDefaultAsync();
+            var user = await _dbContext.Users.Where(x => x.ID == userid).AsNoTracking().FirstOrDefaultAsync();
             if (user != null)
             {
+                user.Avatar = _urlService.GetUserImagePath(user.Avatar);
                 _memoryCache.Set(key, user, TimeSpan.FromMinutes(5));
             }
             return user;
@@ -356,22 +357,6 @@ namespace ComicAPI.Reposibility
                     ParentCommentID = x.ParentCommentID,
                     CommentedAt = x.CommentedAt,
                     UserName = x.User!.FirstName + " " + x.User.LastName,
-                    User = new UserDTO
-                    {
-                        ID = x.UserID,
-                        Username = x.User!.FirstName + " " + x.User.LastName,
-                        Email = x.User.Email,
-                        FirstName = x.User.FirstName,
-                        LastName = x.User.LastName,
-                        Avatar = _urlService.GetUserImagePath(x.User.Avatar),
-                        Dob = x.User.Dob,
-                        Gender = x.User.Gender,
-                        CreateAt = x.User.CreateAt,
-                        TypeLevel = x.User.TypeLevel,
-                        Experience = x.User.Experience,
-                        Maxim = x.User.Maxim
-
-                    },
                     Replies = x.Replies!.Select(y => new CommentDTO
                     {
                         ID = y.ID,
@@ -382,21 +367,6 @@ namespace ComicAPI.Reposibility
                         ParentCommentID = y.ParentCommentID,
                         CommentedAt = y.CommentedAt,
                         UserName = y.User!.FirstName + " " + y.User.LastName,
-                        User = new UserDTO
-                        {
-                            ID = y.UserID,
-                            Username = y.User!.FirstName + " " + y.User.LastName,
-                            Email = y.User.Email,
-                            FirstName = y.User.FirstName,
-                            LastName = y.User.LastName,
-                            Avatar = _urlService.GetUserImagePath(x.User.Avatar),
-                            Dob = y.User.Dob,
-                            Gender = y.User.Gender,
-                            CreateAt = y.User.CreateAt,
-                            TypeLevel = y.User.TypeLevel,
-                            Experience = y.User.Experience,
-                            Maxim = y.User.Maxim
-                        },
                     }).ToList()
                 })
                 .Skip((page - 1) * step)

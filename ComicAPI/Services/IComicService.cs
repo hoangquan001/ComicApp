@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 public interface IComicService
 {
 
+    Task<ServiceResponse<ListComicDTO>> GetHotComics(int page = 1, int step = 30);
     Task<ServiceResponse<ListComicDTO>> GetComics(ComicQueryParams comicQueryParams);
     Task<ServiceResponse<List<ComicDTO>>> GetComicsByIds(List<int> ids);
     Task<ServiceResponse<ComicDTO>> GetComic(string key, int chaptertake = -1);

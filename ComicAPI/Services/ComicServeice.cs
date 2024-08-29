@@ -67,10 +67,16 @@ public class ComicService : IComicService
     {
         int page = comicQueryParams.page < 1 ? 1 : comicQueryParams.page;
         int step = comicQueryParams.step < 1 ? 10 : comicQueryParams.step;
-        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre, comicQueryParams.hot, comicQueryParams.status, comicQueryParams.sort);
+        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre,  comicQueryParams.status, comicQueryParams.sort);
 
         return ServiceUtilily.GetDataRes<ListComicDTO>(data);
-
+    }
+    public async Task<ServiceResponse<ListComicDTO>> GetHotComics( int page = 1, int step = 30)
+    {
+        page = page < 1 ? 1 : page;
+        step = step < 1 ? 30 : step;
+        var data = await _comicReposibility.GetHotComics(page, step);
+        return ServiceUtilily.GetDataRes<ListComicDTO>(data);
     }
 
     public async Task<ServiceResponse<Comic>> AddComic(Comic comic)

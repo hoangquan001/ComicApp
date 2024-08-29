@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using ComicAPI.DTOs;
 [ApiController]
-[Route("[controller]")]
+[Route("")]
 [Authorize]
 public class UserController : ControllerBase
 {
@@ -13,14 +13,20 @@ public class UserController : ControllerBase
     {
         _userService = uerService;
     }
-    [HttpGet]
+    [HttpGet("user/me")]
     public async Task<ActionResult<ServiceResponse<UserDTO>>> GetMyUserInfo()
     {
         return Ok(await _userService.GetMyUserInfo());
-
-
     }
-    [HttpPost("follow")]
+    //no authorize
+    
+    [HttpGet("user/{id}")]
+    [AllowAnonymous]
+    public async Task<ActionResult<ServiceResponse<UserDTO>>> GetUserInfo(int id)
+    {
+        return Ok(await _userService.GetUserInfo(id));
+    }
+    [HttpPost("user/follow")]
     public async Task<ActionResult<ServiceResponse<int>>> FollowComic(int comicid, bool follow = true)
     {
         if (follow)
@@ -29,20 +35,15 @@ public class UserController : ControllerBase
         }
         return Ok(await _userService.UnFollowComic(comicid));
     }
-    // [HttpPost("UnFollow")]
-    // public async Task<ActionResult<ServiceResponse<int>>> UnFollowComic(int comicid)
-    // {
-    //     return Ok(await _userService.UnFollowComic(comicid));
-    // }
 
-    [HttpPost("comment")]
+    [HttpPost("user/comment")]
     public async Task<ActionResult<ServiceResponse<CommentDTO>>> CommentComic(AddCommentDTO addCommentDTO)
     {
         var data = await _userService.AddComment(addCommentDTO.Content!, addCommentDTO.ChapterId, addCommentDTO.ParentCommentId);
         return Ok(data);
     }
 
-    [HttpGet("followedComics")]
+    [HttpGet("user/followedComics")]
     public async Task<ActionResult<ServiceResponse<List<ListComicDTO>>>> GetFollowedComics(int page = 1, int size = 40)
     {
         return Ok(await _userService.GetFollowComics(page, size));
@@ -61,31 +62,31 @@ public class UserController : ControllerBase
     {
         return Ok(await _userService.GetCommentsOfChapter(chapterId, page, size));
     }
-    [HttpPost("update")]
+    [HttpPost("user/update")]
     public async Task<ActionResult<ServiceResponse<UserDTO>>> UpdateInfo(UpdateUserInfo request)
     {
 
         return Ok(await _userService.UpdateInfo(request));
     }
-    [HttpPost("update/password")]
+    [HttpPost("user/update/password")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdatePassword(UpdateUserPassword request)
     {
 
         return Ok(await _userService.UpdatePassword(request));
     }
-    [HttpPost("update/avatar")]
+    [HttpPost("user/update/avatar")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateAvatar(IFormFile image)
     {
 
         return Ok(await _userService.UpdateAvatar(image));
     }
-    [HttpPost("update/typelevel/{typelevel}")]
+    [HttpPost("user/update/typelevel/{typelevel}")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateTypeLevel(int typelevel)
     {
 
         return Ok(await _userService.UpdateTypelevel(typelevel));
     }
-    [HttpPost("update/maxim")]
+    [HttpPost("user/update/maxim")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateMaxim(string? maxim)
     {
 
@@ -93,13 +94,13 @@ public class UserController : ControllerBase
     }
 
 
-    [HttpGet("notify")]
+    [HttpGet("user/notify")]
     public async Task<ActionResult<ServiceResponse<List<UserNotificationDTO>>>> GetUserNotify()
     {
 
         return Ok(await _userService.GetUserNotify());
     }
-    [HttpPost("notify/update")]
+    [HttpPost("user/notify/update")]
     public async Task<ActionResult<ServiceResponse<string>>> UpdateUserNotify(
        UpdateUserNotifyDTO notify)
     {
@@ -107,7 +108,7 @@ public class UserController : ControllerBase
         var result = await _userService.UpdateUserNotify(notify.ID, notify.IsRead);
         return Ok(result);
     }
-    [HttpDelete("notify/delete/{notifyID}")]
+    [HttpDelete("user/notify/delete/{notifyID}")]
     public async Task<ActionResult<ServiceResponse<string>>> DeleteUserNotify(
      int? notifyID)
     {
@@ -115,17 +116,17 @@ public class UserController : ControllerBase
         var result = await _userService.DeleteUserNotify(notifyID);
         return Ok(result);
     }
-    [HttpGet("vote")]
+    [HttpGet("user/vote")]
     public async Task<ActionResult<ServiceResponse<int>>> GetUserVote(int comicid)
     {
         return Ok(await _userService.GetUserVote(comicid));
     }
-    [HttpPost("vote/update")]
+    [HttpPost("user/vote/update")]
     public async Task<ActionResult<ServiceResponse<int>>> VoteComic(int comicid, int votePoint)
     {
         return Ok(await _userService.VoteComic(comicid, votePoint));
     }
-    [HttpDelete("vote/delete")]
+    [HttpDelete("user/vote/delete")]
     public async Task<ActionResult<ServiceResponse<int>>> UnVoteComic(int comicid)
     {
         return Ok(await _userService.UnVoteComic(comicid));
