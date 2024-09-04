@@ -278,8 +278,8 @@ public class ComicService : IComicService
     {
         var chapter = await _comicReposibility.GetChapter(chapterid);
         if (chapter == null) return ServiceUtilily.GetDataRes<int>(0);
-        chapterViews.AddOrUpdate(chapter.ID, 0, (key, oldValue) => oldValue + 1);
-        comicViews.AddOrUpdate(chapter.ComicID, 0, (key, oldValue) => oldValue + 1);
+        chapterViews.AddOrUpdate(chapter.ID, 1, (key, oldValue) => oldValue + 1);
+        comicViews.AddOrUpdate(chapter.ComicID, 1, (key, oldValue) => oldValue + 1);
         return ServiceUtilily.GetDataRes<int>(chapterViews[chapterid]);
     }
 
