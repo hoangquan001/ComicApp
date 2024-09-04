@@ -26,7 +26,8 @@ namespace ComicApp.Data
         public DbSet<Chapter> Chapters => Set<Chapter>();
         public DbSet<Comment> Comments => Set<Comment>();
         public DbSet<DailyComicView> DailyComicViews => Set<DailyComicView>();
-        public DbSet<UserNotification> Notifications => Set<UserNotification>();
+        public DbSet<UserNotification> UserNotifications => Set<UserNotification>();
+        public DbSet<Notification> Notifications => Set<Notification>();
         public DbSet<UserVoteComic> UserVoteComics => Set<UserVoteComic>();
         // public DbSet<Page> Pages => Set<Page>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -87,7 +88,15 @@ namespace ComicApp.Data
             modelBuilder.Entity<UserNotification>(b =>
             {
                 b.ToTable("user_notification");
-                b.HasKey(x => new { x.ID });
+                b.HasKey(x => new { x.UserID,x.NtfID });
+                b.HasOne(x => x.notification ).WithMany().HasForeignKey(x=>x.NtfID);
+            });
+            modelBuilder.Entity<Notification>(b =>
+            {
+                b.ToTable("notification");
+                b.HasKey(x => new { x.ID});
+                // b.HasOne(x=>x.Comic).WithMany().HasForeignKey(x=>x.ComicId);
+                // b.HasOne(x=>x.Comment).WithMany().HasForeignKey(x=>x.CommentId);
             });
 
             modelBuilder.Entity<DailyComicView>(b =>

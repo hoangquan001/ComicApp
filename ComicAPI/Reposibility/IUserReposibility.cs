@@ -14,7 +14,7 @@ public interface IUserReposibility
     Task<int> UnFollowComic(int userid, int comicid);
     Task<ListComicDTO?> GetFollowComics(int userid, int page = 1, int step = 40);
     Task<bool> IsFollowComic(int userid, int comicid);
-    Task<CommentDTO?> AddComment(int userid, string content, int chapterid, int parentcommentid = 0);
+    Task<CommentDTO?> AddComment(User user, string content, int chapterid, int parentcommentid = 0);
     Task<CommentPageDTO?> GetCommentsOfComic(int comicid, int page = 1, int step = 10);
     Task<User?> UpdateInfo(UpdateUserInfo request);
     Task<User?> UpdatePassword(UpdateUserPassword request);

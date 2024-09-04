@@ -35,9 +35,9 @@ namespace ComicAPI.Reposibility
         }
         public async Task<bool> DeleteUserNotify(int userId, int? idNotify)
         {
-            if (idNotify == -1)
+            if (idNotify == null)
             {
-                var notify = await _dbContext.Notifications
+                var notify = await _dbContext.UserNotifications
                 .Where(n => n.UserID == userId)
                 .ExecuteDeleteAsync(); // Kiểm tra xem notification có tồn tại hay không    
                 await _dbContext.SaveChangesAsync();
@@ -45,20 +45,80 @@ namespace ComicAPI.Reposibility
             }
             else
             {
-                var notify = await _dbContext.Notifications
-                .Where(n => n.ID == idNotify && n.UserID == userId)
+                var notify = await _dbContext.UserNotifications
+                .Where(n => n.NtfID == idNotify && n.UserID == userId)
                 .ExecuteDeleteAsync(); // Kiểm tra xem notification có tồn tại hay không    
                 await _dbContext.SaveChangesAsync();
                 return true;
             }
 
         }
+        public async Task<Notification> GetOrAddCommentNotification(int commentId)
+        {
+            Notification? noti = await _dbContext.Notifications.FirstOrDefaultAsync(x => x.CommentId == commentId && x.Type == 2);
+            if (noti == null)
+            {
+                noti = new Notification
+                {
+                    CommentId = commentId,
+                    Type = 2
+                };
+                var daa = await _dbContext.Notifications.AddAsync(noti);
+                await _dbContext.SaveChangesAsync();
+                noti = daa.Entity;
+            }
+            return noti;
+        }
+        public async Task<UserNotification> AddOrUpdateNotificationForUser(int userId, int ntfId)
+        {
+            UserNotification? noti = await _dbContext.UserNotifications.FirstOrDefaultAsync(x => x.UserID == userId && x.NtfID == ntfId);
+            if (noti == null)
+            {
+                noti = new UserNotification
+                {
+                    UserID = userId,
+                    NtfID = ntfId
+                };
+                var daa = await _dbContext.UserNotifications.AddAsync(noti);
+                noti = daa.Entity;
+            }
+            else
+            {
+                noti.IsRead = false;
+            }
+            await _dbContext.SaveChangesAsync();
+            return noti;
+        }
+        public async Task<Notification> AddComicNotification(int comicId, int chapterId)
+        {
+            var noti = new Notification
+            {
+                ComicId = comicId,
+                ChapterId = chapterId,
+                Type = 1
+            };
+            var daa = await _dbContext.AddAsync(noti);
+            await _dbContext.SaveChangesAsync();
+            return noti;
+        }
+        public async Task<Notification> AddSysNotification(int comicId, int chapterId)
+        {
+            var noti = new Notification
+            {
+                ComicId = comicId,
+                ChapterId = chapterId,
+                Type = 0
+            };
+            var daa = await _dbContext.AddAsync(noti);
+            await _dbContext.SaveChangesAsync();
+            return daa.Entity;
+        }
         public async Task<bool> UpdateUserNotify(int userId, int? idNotify, bool? isRead = null)
         {
             if (idNotify == null)
             {
                 // Đánh dấu tất cả thông báo là đã đọc
-                var notifys = await _dbContext.Notifications.Where(n => n.UserID == userId).ToListAsync();
+                var notifys = await _dbContext.UserNotifications.Where(n => n.UserID == userId).ToListAsync();
                 if (notifys == null)
                 {
                     return false;
@@ -70,8 +130,8 @@ namespace ComicAPI.Reposibility
             }
             else
             {
-                var notify = await _dbContext.Notifications
-                    .Where(n => n.ID == idNotify && n.UserID == userId)
+                var notify = await _dbContext.UserNotifications
+                    .Where(n => n.NtfID == idNotify && n.UserID == userId)
                     .FirstOrDefaultAsync();
 
                 if (notify == null)
@@ -109,30 +169,25 @@ namespace ComicAPI.Reposibility
 
         public async Task<List<UserNotificationDTO>?> GetUserNotify(int userid)
         {
-            var notifys = await _dbContext.Notifications
+            var notifys = await _dbContext.UserNotifications
             .Where(x => x.UserID == userid)
-            .OrderByDescending(x => x.Timestamp)
-            .Select(n => new UserNotificationDTO
-            {
-                ID = n.ID,
-                ComicID = n.ComicID,
-                UserID = n.UserID,
-                Content = n.Content,
-                Timestamp = n.Timestamp,
-                IsRead = n.IsRead,
-                CoverImage = _urlService.GetComicCoverImagePath(n.CoverImage),
-                URLComic = n.URLComic,
-                lastchapter = n.lastchapter,
-                URLChapter = n.URLChapter
-
-            })
+            .Include(x => x.notification)
+            .OrderByDescending(x => x.notification!.CreatedAt)
             .Take(10)
             .ToListAsync();
-            if (notifys == null)
+            return notifys.Select(n=>
             {
-                return null;
+                return new UserNotificationDTO
+                {
+                    ID = n.notification!.ID,
+                    ComicID = n.notification.ComicId ?? 0,
+                    UserID = n.UserID,
+                    Content = n.notification.Message ?? "",
+                    Timestamp = n.notification.CreatedAt,
+                    IsRead = n.IsRead,
+                };
             }
-            return notifys;
+            ).ToList();
         }
         public async Task<bool> VoteComic(int userid, int comicid, int votePoint)
         {
@@ -254,25 +309,22 @@ namespace ComicAPI.Reposibility
 
         }
 
-        public async Task<CommentDTO?> AddComment(int userid, string content, int chapterid, int parentcommentid = 0)
+        public async Task<CommentDTO?> AddComment(User user, string content, int chapterid, int parentcommentid = 0)
         {
             var chapter = _dbContext.Chapters.FirstOrDefault(x => x.ID == chapterid);
             if (chapter == null) return null;
-            Comment comment_data = new Comment
-            {
-                UserID = userid,
-                Content = content,
-                ChapterID = chapterid,
-                ComicID = chapter.ComicID,
-                ParentCommentID = parentcommentid == 0 ? null : parentcommentid
-            };
-            var commentData = _dbContext.Comments.Add(comment_data);
+            var commentData = _dbContext.Comments.Add(
+                new Comment
+                {
+                    UserID = user.ID,
+                    Content = content,
+                    ChapterID = chapterid,
+                    ComicID = chapter.ComicID,
+                    ParentCommentID = parentcommentid == 0 ? null : parentcommentid
+                });
             await _dbContext.SaveChangesAsync();
-
-            var cmtData = await _dbContext.Comments
-            .Where(x => x.ID == commentData.Entity.ID)
-            .Include(x => x.User)
-            .Select(x => new CommentDTO
+            Comment? x = commentData.Entity;
+            var cmtData = new CommentDTO
             {
                 ID = x.ID,
                 Content = x.Content,
@@ -281,25 +333,34 @@ namespace ComicAPI.Reposibility
                 ComicID = x.ComicID,
                 ParentCommentID = x.ParentCommentID,
                 CommentedAt = x.CommentedAt,
-                UserName = x.User!.FirstName + " " + x.User.LastName,
-                User = new UserDTO
-                {
-                    ID = x.UserID,
-                    Username = x.User!.FirstName + " " + x.User.LastName,
-                    Email = x.User.Email,
-                    FirstName = x.User.FirstName,
-                    LastName = x.User.LastName,
-                    Avatar = _urlService.GetUserImagePath(x.User.Avatar),
-                    Dob = x.User.Dob,
-                    Gender = x.User.Gender,
-                    CreateAt = x.User.CreateAt,
-                    TypeLevel = x.User.TypeLevel,
-                    Experience = x.User.Experience,
-                    Maxim = x.User.Maxim
-                },
-            })
-            .FirstOrDefaultAsync();
+                UserName = user.FirstName + " " + user.LastName,
+            };
+            if (parentcommentid != 0)
+            {
+                var notifData = await GetOrAddCommentNotification(parentcommentid);
+                await AddOrUpdateNotificationForUser(user.ID, notifData.ID);
+
+            }
             return cmtData;
+        }
+        private static UserDTO? UserSelector(User? x)
+        {
+            if (x == null) return null;
+            return new UserDTO
+            {
+                ID = x.ID,
+                Username = x!.FirstName + " " + x.LastName,
+                Email = x.Email,
+                FirstName = x.FirstName,
+                LastName = x.LastName,
+                Avatar = x.Avatar,
+                Dob = x.Dob,
+                Gender = x.Gender,
+                CreateAt = x.CreateAt,
+                TypeLevel = x.TypeLevel,
+                Experience = x.Experience,
+                Maxim = x.Maxim
+            };
         }
         public async Task<ListComicDTO?> GetFollowComics(int userid, int page, int size)
         {
@@ -346,7 +407,6 @@ namespace ComicAPI.Reposibility
                 .Where(x => x.ComicID == comicid && x.ParentCommentID == null)
                 .OrderByDescending(x => x.CommentedAt)
                 .Include(x => x.Replies)
-                .Include(x => x.User)
                 .Select(x => new CommentDTO
                 {
                     ID = x.ID,
