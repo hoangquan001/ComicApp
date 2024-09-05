@@ -231,6 +231,7 @@ namespace ComicAPI.Reposibility
             if (user == null) return null;
 
             user.Maxim = maxim;
+            user.UpdateAt = DateTime.UtcNow;
             await _dbContext.SaveChangesAsync();
             ClearUserCache(user.ID);
             return user;
