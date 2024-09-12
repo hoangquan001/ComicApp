@@ -8,14 +8,14 @@ using ComicApp.Models;
 
 namespace ComicAPI.Models
 {
-    public class  Notification
+    public class Notification
     {
         [Column("id")]
         [Key]
         public int ID { get; set; }
 
         [Column("message")]
-        public string? Message { get; set; } 
+        public string? Message { get; set; }
 
         [Column("createdat")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
@@ -23,15 +23,7 @@ namespace ComicAPI.Models
         [Column("type")]
         public int Type { get; set; } = 0;
 
-        [Column("comicid")]
-        public int? ComicId { get; set; }
-
-        [Column("chapterid")]
-        public int? ChapterId { get; set; }
-
-        [Column("commentid")]
-        public int? CommentId { get; set; }
-
+        [Column("params")]
+        public string? Params { get; set; }
     }
-
 }

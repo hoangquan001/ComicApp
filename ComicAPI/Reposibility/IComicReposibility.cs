@@ -12,7 +12,7 @@ public interface IComicReposibility
     public List<Genre> GetGenres();
     public byte[] LoadImage(string url);
     public Task<Chapter?> GetChapter(int chapter_id);
-    public Task<List<ChapterDTO>?> GetChaptersComic(string key);
+    public Task<List<ChapterDTO>?> GetChapters(int comicId);
     public Task<List<ComicDTO>> GetAllComics();
     public Task<List<ComicDTO>> GetComicByKeyword(string keyword);
     public Task<ListComicDTO?> GetComicBySearchAdvance(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All,

@@ -67,11 +67,11 @@ public class ComicService : IComicService
     {
         int page = comicQueryParams.page < 1 ? 1 : comicQueryParams.page;
         int step = comicQueryParams.step < 1 ? 10 : comicQueryParams.step;
-        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre,  comicQueryParams.status, comicQueryParams.sort);
+        var data = await _comicReposibility.GetComics(page, step, comicQueryParams.genre, comicQueryParams.status, comicQueryParams.sort);
 
         return ServiceUtilily.GetDataRes<ListComicDTO>(data);
     }
-    public async Task<ServiceResponse<ListComicDTO>> GetHotComics( int page = 1, int step = 30)
+    public async Task<ServiceResponse<ListComicDTO>> GetHotComics(int page = 1, int step = 30)
     {
         page = page < 1 ? 1 : page;
         step = step < 1 ? 30 : step;
@@ -169,22 +169,17 @@ public class ComicService : IComicService
             }
         }
 
-        ChapterPageDTO chapterPageDTO = new ChapterPageDTO
+        ChapterPageDTO chapterPageDTO = new ChapterPageDTO(chapter)
         {
-            ID = chapter.ID,
-            Title = chapter.Title,
-            Slug = chapter.Url,
-            UpdateAt = chapter.UpdateAt,
-            ViewCount = chapter.ViewCount,
             Pages = urlsData,
             Comic = comic
         };
         return ServiceUtilily.GetDataRes<ChapterPageDTO>(chapterPageDTO);
     }
 
-    public async Task<ServiceResponse<List<ChapterDTO>>> GetChaptersComic(string key)
+    public async Task<ServiceResponse<List<ChapterDTO>>> GetChapters(int comicid)
     {
-        var data = await _comicReposibility.GetChaptersComic(key);
+        var data = await _comicReposibility.GetChapters(comicid);
         return ServiceUtilily.GetDataRes<List<ChapterDTO>>(data);
 
     }
@@ -195,7 +190,7 @@ public class ComicService : IComicService
     //     ServiceResponse<List<ComicDTO>>? response = await SearchComicByKeyword(key);
     //     foreach (var item in response.Data!)
     //     {
-    //         item.Chapters = await _comicReposibility.GetChaptersComic(item.ID.ToString()) ?? [];
+    //         item.Chapters = await _comicReposibility.GetChapters(item.ID.ToString()) ?? [];
     //     }
 
     //     return response;
@@ -302,7 +297,7 @@ public class ComicService : IComicService
 
     public async Task<ServiceResponse<bool>> ReportError(string name, int chapterid, string errorType, string message)
     {
-        var data = new 
+        var data = new
         {
             name = name,
             errorType = errorType,
@@ -310,7 +305,7 @@ public class ComicService : IComicService
             message = message,
         };
         HttpResponseMessage? response = await _httpClient.PostAsJsonAsync(_config.ReportApiUrl, data);
-        if(response.IsSuccessStatusCode)
+        if (response.IsSuccessStatusCode)
         {
             return ServiceUtilily.GetDataRes<bool>(true);
         }

@@ -53,21 +53,16 @@ namespace ComicAPI.Reposibility
             }
 
         }
-        public async Task<Notification> GetOrAddCommentNotification(int commentId)
+        public async Task<Notification> AddCommentNotification(int commentId)
         {
-            Notification? noti = await _dbContext.Notifications.FirstOrDefaultAsync(x => x.CommentId == commentId && x.Type == 2);
-            if (noti == null)
-            {
-                noti = new Notification
-                {
-                    CommentId = commentId,
-                    Type = 2
-                };
-                var daa = await _dbContext.Notifications.AddAsync(noti);
-                await _dbContext.SaveChangesAsync();
-                noti = daa.Entity;
-            }
-            return noti;
+            // Notification? noti = await _dbContext.Notifications.FirstOrDefaultAsync(x => x.CommentId == commentId && x.Type == 2);
+            // if (noti == null)
+            // {
+            //     var daa = await _dbContext.Notifications.AddAsync(noti);
+            //     await _dbContext.SaveChangesAsync();
+            //     noti = daa.Entity;
+            // }
+            return null;
         }
         public async Task<UserNotification> AddOrUpdateNotificationForUser(int userId, int ntfId)
         {
@@ -93,11 +88,9 @@ namespace ComicAPI.Reposibility
         {
             var noti = new Notification
             {
-                ComicId = comicId,
-                ChapterId = chapterId,
                 Type = 1
             };
-            var daa = await _dbContext.AddAsync(noti);
+            // var daa = await _dbContext.AddAsync(noti);
             await _dbContext.SaveChangesAsync();
             return noti;
         }
@@ -105,8 +98,6 @@ namespace ComicAPI.Reposibility
         {
             var noti = new Notification
             {
-                ComicId = comicId,
-                ChapterId = chapterId,
                 Type = 0
             };
             var daa = await _dbContext.AddAsync(noti);
@@ -175,12 +166,11 @@ namespace ComicAPI.Reposibility
             .OrderByDescending(x => x.notification!.CreatedAt)
             .Take(10)
             .ToListAsync();
-            return notifys.Select(n=>
+            return notifys.Select(n =>
             {
                 return new UserNotificationDTO
                 {
                     ID = n.notification!.ID,
-                    ComicID = n.notification.ComicId ?? 0,
                     UserID = n.UserID,
                     Content = n.notification.Message ?? "",
                     Timestamp = n.notification.CreatedAt,
@@ -324,66 +314,27 @@ namespace ComicAPI.Reposibility
                     ParentCommentID = parentcommentid == 0 ? null : parentcommentid
                 });
             await _dbContext.SaveChangesAsync();
-            Comment? x = commentData.Entity;
-            var cmtData = new CommentDTO
-            {
-                ID = x.ID,
-                Content = x.Content,
-                UserID = x.UserID,
-                ChapterID = x.ChapterID,
-                ComicID = x.ComicID,
-                ParentCommentID = x.ParentCommentID,
-                CommentedAt = x.CommentedAt,
-                UserName = user.FirstName + " " + user.LastName,
-            };
-            if (parentcommentid != 0)
-            {
-                var notifData = await GetOrAddCommentNotification(parentcommentid);
-                await AddOrUpdateNotificationForUser(user.ID, notifData.ID);
+            var cmtData = new CommentDTO(commentData.Entity);
+            cmtData.UserName = user.FirstName + " " + user.LastName;
+            // if (parentcommentid != 0)
+            // {
+            //     var notifData = await AddCommentNotification(parentcommentid);
+            //     await AddOrUpdateNotificationForUser(user.ID, notifData.ID);
 
-            }
+            // }
             return cmtData;
         }
-        private static UserDTO? UserSelector(User? x)
-        {
-            if (x == null) return null;
-            return new UserDTO
-            {
-                ID = x.ID,
-                Username = x!.FirstName + " " + x.LastName,
-                Email = x.Email,
-                FirstName = x.FirstName,
-                LastName = x.LastName,
-                Avatar = x.Avatar,
-                Dob = x.Dob,
-                Gender = x.Gender,
-                CreateAt = x.CreateAt,
-                TypeLevel = x.TypeLevel,
-                Experience = x.Experience,
-                Maxim = x.Maxim
-            };
-        }
+
         public async Task<ListComicDTO?> GetFollowComics(int userid, int page, int size)
         {
             var data = await _dbContext.UserFollowComics
             .Where(x => x.UserID == userid)
             .Include(x => x.comic)
             .OrderByDescending(x => x.comic!.UpdateAt)
-            .Select(x => new ComicDTO
+            .Select(x => new ComicDTO(x.comic)
             {
-                ID = x.comic!.ID,
-                Title = x.comic.Title,
-                OtherName = x.comic.OtherName,
-                Author = x.comic.Author,
-                Url = x.comic.Url,
-                CoverImage = _urlService.GetComicCoverImagePath(x.comic.CoverImage),
-                Description = x.comic.Description,
-                Status = x.comic.Status,
-                Rating = x.comic.Rating,
-                ViewCount = x.comic.ViewCount,
-                UpdateAt = x.comic.UpdateAt,
-                genres = x.comic.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-                Chapters = x.comic.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+                CoverImage = _urlService.GetComicCoverImagePath(x.comic!.CoverImage),
+                Chapters = x.comic.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => new ChapterDTO(ch))
             })
             .Skip((page - 1) * size)
             .Take(size).ToListAsync();
@@ -408,30 +359,11 @@ namespace ComicAPI.Reposibility
                 .Where(x => x.ComicID == comicid && x.ParentCommentID == null)
                 .OrderByDescending(x => x.CommentedAt)
                 .Include(x => x.Replies)
-                .Select(x => new CommentDTO
-                {
-                    ID = x.ID,
-                    Content = x.Content,
-                    UserID = x.UserID,
-                    ChapterID = x.ChapterID,
-                    ComicID = x.ComicID,
-                    ParentCommentID = x.ParentCommentID,
-                    CommentedAt = x.CommentedAt,
-                    UserName = x.User!.FirstName + " " + x.User.LastName,
-                    Replies = x.Replies!.Select(y => new CommentDTO
-                    {
-                        ID = y.ID,
-                        Content = y.Content,
-                        UserID = y.UserID,
-                        ChapterID = y.ChapterID,
-                        ComicID = y.ComicID,
-                        ParentCommentID = y.ParentCommentID,
-                        CommentedAt = y.CommentedAt,
-                        UserName = y.User!.FirstName + " " + y.User.LastName,
-                    }).ToList()
-                })
+                .Include(x => x.User)
+                .Include(x => x.Chapter)
                 .Skip((page - 1) * step)
                 .Take(step)
+                .Select(x => new CommentDTO(x))
                 .ToListAsync();
             if (data != null)
             {
@@ -447,16 +379,6 @@ namespace ComicAPI.Reposibility
             }
             return null;
         }
-        private static ChapterDTO ChapterSelector(Chapter x)
-        {
-            return new ChapterDTO
-            {
-                ID = x.ID,
-                Title = x.Title,
-                ViewCount = x.ViewCount,
-                UpdateAt = x.UpdateAt,
-                Slug = x.Url
-            };
-        }
+
     }
 }

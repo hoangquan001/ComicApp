@@ -88,15 +88,13 @@ namespace ComicApp.Data
             modelBuilder.Entity<UserNotification>(b =>
             {
                 b.ToTable("user_notification");
-                b.HasKey(x => new { x.UserID,x.NtfID });
-                b.HasOne(x => x.notification ).WithMany().HasForeignKey(x=>x.NtfID);
+                b.HasKey(x => new { x.UserID, x.NtfID });
+                b.HasOne(x => x.notification).WithMany().HasForeignKey(x => x.NtfID);
             });
             modelBuilder.Entity<Notification>(b =>
             {
                 b.ToTable("notification");
-                b.HasKey(x => new { x.ID});
-                // b.HasOne(x=>x.Comic).WithMany().HasForeignKey(x=>x.ComicId);
-                // b.HasOne(x=>x.Comment).WithMany().HasForeignKey(x=>x.CommentId);
+                b.HasKey(x => new { x.ID });
             });
 
             modelBuilder.Entity<DailyComicView>(b =>
@@ -134,9 +132,9 @@ namespace ComicApp.Data
                     day = 30;
                     break;
             }
-            var dateTime  = DateTime.UtcNow.Date.AddDays(-day);
+            var dateTime = DateTime.UtcNow.Date.AddDays(-day);
             var result = this.Comics
-                .GroupJoin( this.DailyComicViews
+                .GroupJoin(this.DailyComicViews
                 .Where(dcv => dcv.ViewDate > dateTime)
                 .GroupBy(dcv => dcv.ComicID)
                 .Select(g => new

@@ -10,7 +10,7 @@ public interface IComicService
     Task<ServiceResponse<ListComicDTO>> GetComics(ComicQueryParams comicQueryParams);
     Task<ServiceResponse<List<ComicDTO>>> GetComicsByIds(List<int> ids);
     Task<ServiceResponse<ComicDTO>> GetComic(string key, int chaptertake = -1);
-    Task<ServiceResponse<List<ChapterDTO>>> GetChaptersComic(string key);
+    Task<ServiceResponse<List<ChapterDTO>>> GetChapters(int comicid);
     Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(int chapter_id);
     Task<ServiceResponse<Comic>> AddComic(Comic comic);
     Task<ServiceResponse<List<Genre>>> GetGenres();

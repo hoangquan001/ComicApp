@@ -27,23 +27,12 @@ public class ComicReposibility : IComicReposibility
     {
         return await _dbContext.Comics
         .OrderBy(x => x.ID)
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         })
-        .AsNoTracking()
         .ToListAsync();
     }
 
@@ -92,26 +81,16 @@ public class ComicReposibility : IComicReposibility
         var query = _dbContext.Comics
         .OrderByDescending(keySelector: x => x.UpdateAt)
         .Where(x => x.Status == (int)ComicStatus.Ongoing)
-        .Where(x => x.UpdateAt >= DateTime.UtcNow.AddMonths(-6))   
+        .Where(x => x.UpdateAt >= DateTime.UtcNow.AddMonths(-6))
         .AsQueryable();
         var data = await query
         .Skip((page - 1) * step)
         .Take(step)
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         }).ToListAsync();
 
         if (data != null)
@@ -138,21 +117,11 @@ public class ComicReposibility : IComicReposibility
         var data = await queryBuilder
         .Skip((page - 1) * step)
         .Take(step)
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         })
         .ToListAsync();
         if (data != null)
@@ -171,17 +140,6 @@ public class ComicReposibility : IComicReposibility
         return null;
     }
 
-    private static ChapterDTO ChapterSelector(Chapter x)
-    {
-        return new ChapterDTO
-        {
-            ID = x.ID,
-            Title = x.Title,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            Slug = x.Url
-        };
-    }
 
     public List<Genre> GetGenres()
     {
@@ -197,24 +155,12 @@ public class ComicReposibility : IComicReposibility
         bool isID = int.TryParse(key, out int id2);
         var data = await _dbContext.Comics
         .Where(x => isID ? x.ID == id2 : x.Url == key)
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            UpdateAt = x.UpdateAt,
-            ViewCount = x.ViewCount,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }).ToList(),
-            Chapters = x.Chapters.OrderByDescending(x => Convert.ToDouble(x.Url)).Select(x => ChapterSelector(x)).ToList()
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         })
-        .AsSplitQuery()
-        .AsNoTracking()
         .FirstOrDefaultAsync();
 
         return data;
@@ -254,14 +200,16 @@ public class ComicReposibility : IComicReposibility
         return chapter;
     }
 
-    public async Task<List<ChapterDTO>?> GetChaptersComic(string key)
+    public async Task<List<ChapterDTO>?> GetChapters(int comicid)
     {
 
-        bool isID = int.TryParse(key, out int id2);
-        var data = await _dbContext.Comics.Where(x => isID ? x.ID == id2 : x.Url == key)
-        .Select(x => x.Chapters.Select(x => ChapterSelector(x)).ToList())
-        .FirstOrDefaultAsync();
-        return data;
+        var chapters = await _dbContext.Chapters
+        .AsNoTracking()
+        .Where(x => x.ComicID == comicid)
+        .OrderByDescending(x => Convert.ToDouble(x.Url))
+        .Select(x => new ChapterDTO(x))
+        .ToListAsync();
+        return chapters;
 
     }
 
@@ -359,24 +307,15 @@ public class ComicReposibility : IComicReposibility
         }
 
         var data = await comicsQuery
-        .Select(x => new ComicDTO
-        {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
-        })
         .Skip((page - 1) * step)
         .Take(step)
+        .Select(x => new ComicDTO(x)
+        {
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
+
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
+        })
         .ToListAsync();
 
         // Get total count
@@ -415,21 +354,12 @@ public class ComicReposibility : IComicReposibility
         comicsQuery = comicsQuery.Where(x => x.numchapter > 10);
         // Execute query and get data
         var data = await comicsQuery
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
+
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         })
         .AsNoTracking()
         .ToListAsync();
@@ -462,58 +392,33 @@ public class ComicReposibility : IComicReposibility
     {
         var dailyComics = await _dbContext.GetTopDailyComics(TopViewType.Day)
         .Take(step)
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
+
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         }).ToListAsync();
         var weeklyComics = await _dbContext.GetTopDailyComics(TopViewType.Week)
         .Take(step)
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
+
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
-        }).ToListAsync();
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
+        })
+        .ToListAsync();
         var monthlyComics = await _dbContext.GetTopDailyComics(TopViewType.Month)
         .Take(step)
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
+
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
-        }).ToListAsync();
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
+        })
+        .ToListAsync();
 
         ComicTopViewDTO? data = new ComicTopViewDTO()
         {
@@ -586,21 +491,11 @@ public class ComicReposibility : IComicReposibility
     {
         var comics = await _dbContext.Comics
         .Where(x => ids.Contains(x.ID))
-        .Select(x => new ComicDTO
+        .Select(x => new ComicDTO(x)
         {
-            ID = x.ID,
-            Title = x.Title,
-            OtherName = x.OtherName,
-            Author = x.Author,
-            Url = x.Url,
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Description = x.Description,
-            Status = x.Status,
-            Rating = x.Rating,
-            ViewCount = x.ViewCount,
-            UpdateAt = x.UpdateAt,
-            genres = x.Genres.Select(g => new GenreLiteDTO { ID = g.ID, Title = g.Title }),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => ChapterSelector(ch)).ToList()
+            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         }).ToListAsync();
         return comics;
     }

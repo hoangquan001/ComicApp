@@ -47,7 +47,7 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
     [HttpGet("hotcomics")]
-    public async Task<ActionResult<ListComicDTO>> GetHotComics(  int page = 1, int step = 30)
+    public async Task<ActionResult<ListComicDTO>> GetHotComics(int page = 1, int step = 30)
     {
         var data = await _comicService.GetHotComics(page, step);
         return Ok(data);
@@ -66,10 +66,10 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("comic/{key}/chapters")]
-    public async Task<ActionResult<ComicDTO>> GetChaptersByComic(string key)
+    [HttpGet("comic/{comic_id}/chapters")]
+    public async Task<ActionResult<ComicDTO>> GetChaptersByComic(int comic_id)
     {
-        var data = await _comicService.GetChaptersComic(key);
+        var data = await _comicService.GetChapters(comic_id);
 
         if (data.Data == null)
         {

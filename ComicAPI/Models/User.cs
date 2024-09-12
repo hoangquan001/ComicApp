@@ -11,6 +11,13 @@ namespace ComicApp.Models
 
         // [Required, MaxLength(50), Column("username")]
         // public string? Username { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
 
         [MaxLength(100), Column("email")]
         public string? Email { get; set; }

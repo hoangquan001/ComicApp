@@ -8,6 +8,26 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 public class ComicDTO
 {
+    public ComicDTO()
+    {
+
+    }
+    public ComicDTO(Comic? x)
+    {
+        if (x == null) return;
+        ID = x.ID;
+        Title = x.Title;
+        OtherName = x.OtherName;
+        Url = x.Url;
+        Author = x.Author;
+        Description = x.Description;
+        CoverImage = x.CoverImage;
+        Status = x.Status;
+        Rating = x.Rating;
+        ViewCount = x.ViewCount;
+        UpdateAt = x.UpdateAt;
+        NumChapter = x.numchapter;
+    }
     public int ID { get; set; } // Primary Key (implicitly set by IDENTITY(1, 1))
     public string Title { get; set; } = "";
     public string OtherName { get; set; } = "";

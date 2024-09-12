@@ -23,8 +23,8 @@ namespace ComicApp.Models
         public DateTime CommentedAt { get; set; } = DateTime.UtcNow;
         [Column("parentcommentid")]
         public int? ParentCommentID { get; set; }
-
         public User? User { get; set; }
+        public Chapter? Chapter { get; set; }
         public List<Comment>? Replies { get; set; }
     }
 }
