@@ -78,7 +78,7 @@ public class UserService : IUserService
     public async Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int parentcommentid = 0)
     {
         if (_CurrentUser == null) return new ServiceResponse<CommentDTO> { Status = 404, Message = "User not found", Data = null };
-        var cmtData = await _userReposibility.AddComment(_CurrentUser.ID, content, chapterid, parentcommentid);
+        var cmtData = await _userReposibility.AddComment(_CurrentUser, content, chapterid, parentcommentid);
         if (cmtData == null) return new ServiceResponse<CommentDTO> { Status = 0, Message = "Failed", Data = null };
         return new ServiceResponse<CommentDTO> { Status = 1, Message = "Success", Data = cmtData };
     }
@@ -376,7 +376,7 @@ public class UserService : IUserService
     public async Task<ServiceResponse<int>> TotalExpUser(UserExpType expt = UserExpType.Chapter)
     {
         if (_CurrentUser == null) return await Task.FromResult(ServiceUtilily.GetDataRes<int>(-1));
-        _exps.AddOrUpdate(_CurrentUser.ID, 0, (key, oldValue) => oldValue + (int)expt);
+        _exps.AddOrUpdate(_CurrentUser.ID, (int)expt, (key, oldValue) => oldValue + (int)expt);
         return await Task.FromResult(ServiceUtilily.GetDataRes<int>(1));
     }
     public async Task UpdateExp()
