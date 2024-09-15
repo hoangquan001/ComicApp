@@ -37,9 +37,14 @@ public class AuthService : IAuthService
         var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == userLogin.email && user.HashPassword == userLogin.password);
         if (data == null)
         {
-            res.Status = 0;
-            res.Message = "Username or password is incorrect";
-            return res;
+            var decoderPassword = ServiceUtilily.Base64Decode(userLogin.password!);
+            data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == userLogin.email && user.HashPassword == decoderPassword);
+            if (data == null)
+            {
+                res.Status = 0;
+                res.Message = "Username or password is incorrect";
+                return res;
+            }
         }
         UserDTO user = new UserDTO
         {
@@ -210,13 +215,6 @@ public class AuthService : IAuthService
             return new ServiceResponse<User> { Status = 0, Message = "Token has expired" };
         }
 
-        // var datesend = DateTime.Parse(Date);
-        // var difference = DateTime.UtcNow.Date - datesend;
-
-        // if (difference.Days > 1)
-        // {
-        //     return new ServiceResponse<User> { Status = 0, Message = "Liên kết hết hạn" };
-        // }
         var user = await _dbContext.Users.FindAsync(UserId);
         if (user == null || Code == null)
         {
@@ -243,6 +241,28 @@ public class AuthService : IAuthService
     public async Task<ServiceResponse<string>> Logout(string token)
     {
         await Task.FromResult(_tokenMgr.AddTokenToBlackList(token));
+        return new ServiceResponse<string>
+        {
+            Status = 1,
+            Message = "Success"
+        };
+    }
+    public async Task<ServiceResponse<string>> ForgotPassword(string email)
+    {
+
+        var user = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == email);
+        if (user == null)
+        {
+            return new ServiceResponse<string>
+            {
+                Status = 0,
+                Message = "User not found"
+            };
+        }
+
+        var encoderPassword = ServiceUtilily.Base64Encode(user.HashPassword!);
+        var message = "New password: " + encoderPassword;
+        await _emailSender.SendEmailAsync(email, "Reset Password", message);
         return new ServiceResponse<string>
         {
             Status = 1,

@@ -10,4 +10,5 @@ public interface IAuthService
     Task<ServiceResponse<int>> SendEmailConfirm(int userId, string email);
     Task<ServiceResponse<User>> ConfirmEmail(int userId, string code);
     Task<ServiceResponse<string>> Logout(string token);
+    Task<ServiceResponse<string>> ForgotPassword(string email);
 }

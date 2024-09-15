@@ -79,6 +79,13 @@ public class AuthController : ControllerBase
         ServiceResponse<string> res = await _authService.Logout(jwt);
         return Ok(res);
     }
+    [Route("forgot")]
+    [HttpGet]
+    public async Task<ActionResult<ServiceResponse<string>>> ForgotPassword(string email)
+    {
+        ServiceResponse<string> res = await _authService.ForgotPassword(email);
+        return Ok(res);
+    }
 
 }
 
