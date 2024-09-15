@@ -13,7 +13,7 @@ public interface IUserService
     Task<ServiceResponse<int>> UnFollowComic(int comicid);
     Task<ServiceResponse<ListComicDTO>> GetFollowComics(int page = 1, int step = 40);
     Task<bool> IsFollowComic(int comicid);
-    Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int parentcommentid = 0);
+    Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int? replyFromCmt);
     Task<ServiceResponse<CommentPageDTO>> GetCommentsOfComic(int comicid, int page = 1, int step = 10);
     Task<ServiceResponse<CommentPageDTO>> GetCommentsOfChapter(int chapterid, int page = 1, int step = 10);
 

@@ -19,7 +19,7 @@ public class UserController : ControllerBase
         return Ok(await _userService.GetMyUserInfo());
     }
     //no authorize
-    
+
     [HttpGet("user/{id}")]
     [AllowAnonymous]
     public async Task<ActionResult<ServiceResponse<UserDTO>>> GetUserInfo(int id)
@@ -39,7 +39,8 @@ public class UserController : ControllerBase
     [HttpPost("user/comment")]
     public async Task<ActionResult<ServiceResponse<CommentDTO>>> CommentComic(AddCommentDTO addCommentDTO)
     {
-        var data = await _userService.AddComment(addCommentDTO.Content!, addCommentDTO.ChapterId, addCommentDTO.ParentCommentId);
+
+        var data = await _userService.AddComment(addCommentDTO.Content!, addCommentDTO.ChapterId, addCommentDTO.replyFromCmt);
         return Ok(data);
     }
 

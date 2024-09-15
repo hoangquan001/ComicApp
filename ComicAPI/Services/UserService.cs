@@ -75,10 +75,10 @@ public class UserService : IUserService
         return await _userReposibility.IsFollowComic(_CurrentUser.ID, comicid);
     }
 
-    public async Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int parentcommentid = 0)
+    public async Task<ServiceResponse<CommentDTO>> AddComment(string content, int chapterid, int? replyFromCmt)
     {
         if (_CurrentUser == null) return new ServiceResponse<CommentDTO> { Status = 404, Message = "User not found", Data = null };
-        var cmtData = await _userReposibility.AddComment(_CurrentUser, content, chapterid, parentcommentid);
+        var cmtData = await _userReposibility.AddComment(_CurrentUser, content, chapterid, replyFromCmt);
         if (cmtData == null) return new ServiceResponse<CommentDTO> { Status = 0, Message = "Failed", Data = null };
         return new ServiceResponse<CommentDTO> { Status = 1, Message = "Success", Data = cmtData };
     }
@@ -385,5 +385,5 @@ public class UserService : IUserService
         _exps.Clear();
     }
 
-    
+
 }

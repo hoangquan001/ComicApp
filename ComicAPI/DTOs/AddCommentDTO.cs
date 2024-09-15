@@ -7,6 +7,6 @@ public class AddCommentDTO
 
     public int ChapterId { get; set; }
 
-    public int ParentCommentId { get; set; }
+    public int? replyFromCmt { get; set; }
 
 }

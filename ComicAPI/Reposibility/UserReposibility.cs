@@ -300,7 +300,7 @@ namespace ComicAPI.Reposibility
 
         }
 
-        public async Task<CommentDTO?> AddComment(User user, string content, int chapterid, int parentcommentid = 0)
+        public async Task<CommentDTO?> AddComment(User user, string content, int chapterid, int? replyFromCmt)
         {
             var chapter = _dbContext.Chapters.FirstOrDefault(x => x.ID == chapterid);
             if (chapter == null) return null;
@@ -311,7 +311,7 @@ namespace ComicAPI.Reposibility
                     Content = content,
                     ChapterID = chapterid,
                     ComicID = chapter.ComicID,
-                    ParentCommentID = parentcommentid == 0 ? null : parentcommentid
+                    ParentCommentID = replyFromCmt
                 });
             await _dbContext.SaveChangesAsync();
             var cmtData = new CommentDTO(commentData.Entity);
@@ -356,6 +356,7 @@ namespace ComicAPI.Reposibility
         public async Task<CommentPageDTO?> GetCommentsOfComic(int comicid, int page = 1, int step = 10)
         {
             var data = await _dbContext.Comments
+                .AsNoTracking()
                 .Where(x => x.ComicID == comicid && x.ParentCommentID == null)
                 .OrderByDescending(x => x.CommentedAt)
                 .Include(x => x.Replies)
