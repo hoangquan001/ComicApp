@@ -158,6 +158,7 @@ public class ComicService : IComicService
         if (chapter == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
         ComicDTO? comic = await _comicReposibility.GetComic(chapter.ComicID.ToString());
         if (comic == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
+        comic.Chapters = await _comicReposibility.GetChapters(comic.ID) ?? [];
         // List<PageDTO>? urlsData = await FetchChapterImage(comic.Url, chapter.Url, chapter_id);
         List<PageDTO>? urlsData = null;
         if (chapter.Pages != null)
