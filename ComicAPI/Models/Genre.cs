@@ -12,7 +12,7 @@ namespace ComicApp.Models
         public string Title { get; set; } = string.Empty;
         [Column("slug")]
         public string Slug { get; set; } = string.Empty;
-        [Column("description")]
-        public string Description { get; set; } = string.Empty;
+        // [Column("description")]
+        // public string Description { get; set; } = string.Empty;
     }
 }

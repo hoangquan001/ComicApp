@@ -13,10 +13,11 @@ public interface IComicReposibility
     public byte[] LoadImage(string url);
     public Task<Chapter?> GetChapter(int chapter_id);
     public Task<List<ChapterDTO>?> GetChapters(int comicId);
-    public Task<List<ComicDTO>> GetAllComics();
+    public Task<List<Comic>> GetAllComics();
     public Task<List<ComicDTO>> GetComicByKeyword(string keyword);
     public Task<ListComicDTO?> GetComicBySearchAdvance(SortType sort = SortType.TopAll, ComicStatus status = ComicStatus.All,
      List<int>? genres = null, int page = 1, int step = 100, List<int>? Nogenres = null, int? year = null, string? keyword = null);
+    public Task<List<ComicDTO>> FindSimilarComics(int comicid);
     public Task<List<ComicDTO>?> GetComicRecommend();
     public Task<ComicTopViewDTO?> GetTopViewComics(int step);
     public Task UpdateViewComic(HashSet<int> comicviews);

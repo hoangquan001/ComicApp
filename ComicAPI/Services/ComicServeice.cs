@@ -198,40 +198,9 @@ public class ComicService : IComicService
     // }
     public async Task<ServiceResponse<List<ComicDTO>>> FindSimilarComics(int id)
     {
-        var _comics = await _comicReposibility.GetAllComics();
-        var _comic = _comics.FirstOrDefault(x => x.ID == id);
-        var _genre = _comic!.genres.Select(x => x.ID);
-        List<ComicDTO> result = new List<ComicDTO>();
-        Dictionary<int, List<ComicDTO>> dictKey = new Dictionary<int, List<ComicDTO>>();
-        int minElement = Math.Min(3, _genre.Count());
-        for (int i = 0; i < _comics.Count; i++)
-        {
-            var comic = _comics[i];
-            if (comic.ID == id) continue;
-            var genre = comic.genres.Select(x => x.ID);
 
-            int countElement = _genre.Intersect(genre).Sum(x => genreWeight[x]);
-            if (countElement >= minElement)
-            {
-                if (!dictKey.ContainsKey(countElement))
-                {
-                    dictKey.Add(countElement, new List<ComicDTO>());
-                }
-                dictKey[countElement].Add(comic);
-            }
-        }
-        var keys = dictKey.Keys.ToList();
-        //Sort the keys in descending order
-        keys.Sort((x, y) => y.CompareTo(x));
-        foreach (var key in keys)
-        {
-            result.AddRange(dictKey[key]);
-            if (result.Count > 100) break;
-        }
-        ServiceUtilily.SuffleList(result);
-        result = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-2)).Take(12).ToList();
-
-        return ServiceUtilily.GetDataRes<List<ComicDTO>>(result);
+        var resultDTO = await _comicReposibility.FindSimilarComics(id);
+        return ServiceUtilily.GetDataRes<List<ComicDTO>>(resultDTO);
 
     }
     private List<int>? ParseGenreQuery(string? query)

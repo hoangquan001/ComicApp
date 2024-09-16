@@ -13,6 +13,11 @@ public class ComicReposibility : IComicReposibility
     private readonly UrlService _urlService;
     private readonly IMemoryCache _memoryCache;
 
+    private readonly bool CacheEnabled = true;
+
+    private List<string> NoGenres = new List<string> { "gender-bender","adult" ,"dam-my",
+                                        "gender-bender","shoujo-ai","shounen-ai",
+                                        "smut","soft-yaoi","soft-yuri"};
     public ComicReposibility(ComicDbContext dbContext, IMemoryCache cache, UrlService urlService)
     {
         _memoryCache = cache;
@@ -20,29 +25,24 @@ public class ComicReposibility : IComicReposibility
         _urlService = urlService;
 
     }
-    private List<string> Nogenres = new List<string> { "gender-bender","adult" ,"dam-my",
-                                        "gender-bender","shoujo-ai","shounen-ai",
-                                        "smut","soft-yaoi","soft-yuri"};
-    private async Task<List<ComicDTO>> _getAllComicsFromDB()
+    private async Task<List<Comic>> _getAllComicsFromDB()
     {
         return await _dbContext.Comics
-        .OrderBy(x => x.ID)
-        .Select(x => new ComicDTO(x)
-        {
-            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
-        })
+        .Include(x => x.Genres)
+        .AsNoTracking()
         .ToListAsync();
     }
 
-    public async Task<List<ComicDTO>> GetAllComics()
+    public async Task<List<Comic>> GetAllComics()
     {
         const string cacheKey = "ALL_COMIC_KEY";
 
-        if (!_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
+        if (!CacheEnabled || !_memoryCache.TryGetValue(cacheKey, out List<Comic>? cachedData))
         {
+            DateTime start = DateTime.Now;
             cachedData = await _getAllComicsFromDB();
+            TimeSpan timeItTook = DateTime.Now - start;
+            Console.WriteLine($"GetAllComics took {timeItTook.TotalMilliseconds} ms");
             var cacheEntryOptions = new MemoryCacheEntryOptions()
                  .SetSlidingExpiration(TimeSpan.FromMinutes(10)); // Example: cache for 10 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
@@ -170,7 +170,7 @@ public class ComicReposibility : IComicReposibility
     public async Task<ComicDTO?> GetComic(string key)
     {
         string keysave = string.Format("comic-{0}", key);
-        if (!_memoryCache.TryGetValue(keysave, out ComicDTO? cachedData))
+        if (!CacheEnabled || !_memoryCache.TryGetValue(keysave, out ComicDTO? cachedData))
         {
             cachedData = await _getComicFromDB(key); ;
             var cacheEntryOptions = new MemoryCacheEntryOptions()
@@ -189,26 +189,28 @@ public class ComicReposibility : IComicReposibility
         .FirstOrDefaultAsync();
 
         if (chapter == null) return null;
-        // string cacheKey = string.Format("chapter-{0}", chapter_id);
-        // if (!_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
-        // {
-        //     cachedData = await _getComicRecommendFromDB();
-        //     var cacheEntryOptions = new MemoryCacheEntryOptions()
-        //          .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
-        //     _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
-        // }
+        string cacheKey = string.Format("chapter-{0}", chapter_id);
+        if (!CacheEnabled || !_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
+        {
+            cachedData = await _getComicRecommendFromDB();
+            var cacheEntryOptions = new MemoryCacheEntryOptions()
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
+            _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
+        }
         return chapter;
     }
 
     public async Task<List<ChapterDTO>?> GetChapters(int comicid)
     {
-
+        // DateTime start = DateTime.Now;
         var chapters = await _dbContext.Chapters
         .AsNoTracking()
         .Where(x => x.ComicID == comicid)
-        .OrderByDescending(x => Convert.ToDouble(x.Url))
+        .OrderByDescending(x => x.Url)
         .Select(x => new ChapterDTO(x))
         .ToListAsync();
+        // TimeSpan timeItTook = DateTime.Now - start;
+        // Console.WriteLine(value: $"GetChapters took {timeItTook.TotalMilliseconds} ms");
         return chapters;
 
     }
@@ -219,21 +221,21 @@ public class ComicReposibility : IComicReposibility
     {
         return GetComicByKeyword(await GetAllComics(), keyword);
     }
-    private List<ComicDTO> GetComicByKeyword(List<ComicDTO> data, string keyword)
+    private List<ComicDTO> GetComicByKeyword(List<Comic> comis, string keyword)
     {
         keyword = keyword.Replace("-", " ");
         keyword = SlugHelper.CreateSlug(keyword);
         var vec1 = new Dictionary<string, int>();
         SlugHelper.GetTermFrequencyVector(keyword, ref vec1);
-        List<(ComicDTO comic, int similarity)> result = new List<(ComicDTO, int)>();
+        List<(Comic comic, int similarity)> result = new List<(Comic, int)>();
 
-        for (int i = 0; i < data.Count; i++)
+        for (int i = 0; i < comis.Count; i++)
         {
             Dictionary<string, int> vec2 = new Dictionary<string, int>();
-            SlugHelper.GetTermFrequencyVector(data[i].Url, ref vec2);
-            if (!string.IsNullOrEmpty(data[i].OtherName))
+            SlugHelper.GetTermFrequencyVector(comis[i].Url, ref vec2);
+            if (!string.IsNullOrEmpty(comis[i].OtherName))
             {
-                var otherName = SlugHelper.CreateSlug(data[i].OtherName);
+                var otherName = SlugHelper.CreateSlug(comis[i].OtherName);
                 SlugHelper.GetTermFrequencyVector(otherName, ref vec2);
             }
 
@@ -252,11 +254,18 @@ public class ComicReposibility : IComicReposibility
             var a = dotProduct / (Math.Sqrt(norm1) * Math.Sqrt(norm2));
             if (a > 0.1)
             {
-                result.Add((data[i], (int)(a * 100)));
+                result.Add((comis[i], (int)(a * 100)));
             }
         }
 
-        return result.OrderByDescending(x => x.similarity).Take(5).Select(x => x.comic).ToList();
+        return result
+        .OrderByDescending(x => x.similarity)
+        .Take(5)
+        .Select(x => new ComicDTO(x.comic)
+        {
+            CoverImage = _urlService.GetComicCoverImagePath(x.comic.CoverImage),
+            Chapters = _dbContext.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => new ChapterDTO(ch))
+        }).ToList();
 
     }
 
@@ -340,35 +349,28 @@ public class ComicReposibility : IComicReposibility
     }
     private async Task<List<ComicDTO>?> _getComicRecommendFromDB()
     {
-        var comicsQuery = _dbContext.Comics.AsQueryable();
-
+        var comicsQuery = _dbContext.Comics.AsQueryable().AsNoTracking();
         // Áp dụng bộ lọc loại trừ thể loại (Nogenres)
-
-        var nogenreIds = Nogenres.ToHashSet();
-
+        var nogenreIds = NoGenres.ToHashSet();
         var datenow = DateTime.UtcNow;
         comicsQuery = comicsQuery.Where(x => !x.Genres.Select(g => g.Slug).Any(gSlug => nogenreIds.Contains(gSlug)));
-        comicsQuery = comicsQuery.Where(x => (datenow - x.UpdateAt).TotalDays <= 700
-         && x.ViewCount >= 1000000);
-        // query number chaper>10
+        comicsQuery = comicsQuery.Where(x => (datenow - x.UpdateAt).TotalDays <= 700);
         comicsQuery = comicsQuery.Where(x => x.numchapter > 10);
-        // Execute query and get data
         var data = await comicsQuery
-        .Select(x => new ComicDTO(x)
-        {
-            genres = x.Genres.Select(g => new GenreLiteDTO(g)),
-
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
-        })
-        .AsNoTracking()
+        .OrderByDescending(x => x.ViewCount)
+        .Take(2000)
         .ToListAsync();
         List<float> data2 = data.Select(x => (float)x.ViewCount).ToList();
         data = ServiceUtilily.SampleList(data, data2, 30);
-
-        if (data != null && data.Any())
+        var reult = data.Select(x => new ComicDTO(x)
         {
-            return data;
+            genres = _dbContext.ComicGenre.Where(c => c.ComicID == x.ID).Select(g => new GenreLiteDTO(g.Genre!)).ToList(),
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
+            Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch)).ToList()
+        }).ToList();
+        if (reult != null && reult.Any())
+        {
+            return reult;
         }
         return null;
     }
@@ -377,7 +379,7 @@ public class ComicReposibility : IComicReposibility
     {
 
         const string cacheKey = "RECOMMEND_COMIC_KEY";
-        if (!_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
+        if (!CacheEnabled || !_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
         {
             cachedData = await _getComicRecommendFromDB();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
@@ -431,7 +433,7 @@ public class ComicReposibility : IComicReposibility
     public async Task<ComicTopViewDTO?> GetTopViewComics(int step)
     {
         const string cacheKey = "TOPVIEW_COMIC_KEY";
-        if (!_memoryCache.TryGetValue(cacheKey, out ComicTopViewDTO? cachedData))
+        if (!CacheEnabled || !_memoryCache.TryGetValue(cacheKey, out ComicTopViewDTO? cachedData))
         {
             cachedData = await _getTopViewComicsFromDB(step);
             var cacheEntryOptions = new MemoryCacheEntryOptions()
@@ -500,4 +502,47 @@ public class ComicReposibility : IComicReposibility
         return comics;
     }
 
+    public async Task<List<ComicDTO>> FindSimilarComics(int comicid)
+    {
+        var _comics = await GetAllComics();
+        var _comic = _comics.FirstOrDefault(x => x.ID == comicid);
+        var _genre = _comic!.Genres.Select(x => x.ID);
+        List<Comic> result = new List<Comic>();
+        Dictionary<int, List<Comic>> dictKey = new Dictionary<int, List<Comic>>();
+        int minElement = Math.Min(3, _genre.Count());
+        for (int i = 0; i < _comics.Count; i++)
+        {
+            var comic = _comics[i];
+            if (comic.ID == comicid) continue;
+            var genre = comic.Genres.Select(x => x.ID);
+
+            int countElement = _genre.Intersect(genre).Sum(x => 1);
+            if (countElement >= minElement)
+            {
+                if (!dictKey.ContainsKey(countElement))
+                {
+                    dictKey.Add(countElement, new List<Comic>());
+                }
+                dictKey[countElement].Add(comic);
+            }
+        }
+        var keys = dictKey.Keys.ToList();
+        //Sort the keys in descending order
+        keys.Sort((x, y) => y.CompareTo(x));
+        foreach (var key in keys)
+        {
+            result.AddRange(dictKey[key]);
+            if (result.Count > 100) break;
+        }
+        ServiceUtilily.SuffleList(result);
+        var data = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-2)).Take(12).ToList();
+        var resultDTO = data.Select(x => new ComicDTO(x)
+        {
+            Chapters = _dbContext.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
+            ,
+            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage)
+        }).ToList();
+
+        return resultDTO;
+    }
 }

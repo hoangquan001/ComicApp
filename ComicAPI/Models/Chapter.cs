@@ -15,7 +15,7 @@ namespace ComicApp.Models
         [Column("title")]
         public string Title { get; set; } = string.Empty;
         [Column("url")]
-        public string Url { get; set; } = string.Empty;
+        public float Url { get; set; } = 0;
 
         [Column("viewcount")]
         public int ViewCount { get; set; }

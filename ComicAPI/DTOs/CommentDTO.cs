@@ -20,7 +20,7 @@ namespace ComicApp.Models
             CommentedAt = comment.CommentedAt;
             Replies = new List<CommentDTO>();
             UserName = comment.User?.FullName;
-            ChapterName = comment.Chapter?.Url;
+            ChapterName = comment.Chapter?.Url.ToString();
             for (int i = 0; i < comment.Replies?.Count; i++)
             {
                 Replies.Add(new CommentDTO(comment.Replies[i]));
