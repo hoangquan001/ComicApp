@@ -53,17 +53,17 @@ namespace ComicAPI.Reposibility
             }
 
         }
-        public async Task<Notification> AddCommentNotification(int commentId)
-        {
-            // Notification? noti = await _dbContext.Notifications.FirstOrDefaultAsync(x => x.CommentId == commentId && x.Type == 2);
-            // if (noti == null)
-            // {
-            //     var daa = await _dbContext.Notifications.AddAsync(noti);
-            //     await _dbContext.SaveChangesAsync();
-            //     noti = daa.Entity;
-            // }
-            return null;
-        }
+        // public async Task<Notification> AddCommentNotification(int commentId)
+        // {
+        // Notification? noti = await _dbContext.Notifications.FirstOrDefaultAsync(x => x.CommentId == commentId && x.Type == 2);
+        // if (noti == null)
+        // {
+        //     var daa = await _dbContext.Notifications.AddAsync(noti);
+        //     await _dbContext.SaveChangesAsync();
+        //     noti = daa.Entity;
+        // }
+        // return null;
+        // }
         public async Task<UserNotification> AddOrUpdateNotificationForUser(int userId, int ntfId)
         {
             UserNotification? noti = await _dbContext.UserNotifications.FirstOrDefaultAsync(x => x.UserID == userId && x.NtfID == ntfId);
