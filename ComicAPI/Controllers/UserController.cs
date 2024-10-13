@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using ComicAPI.DTOs;
 [ApiController]
-[Route("")]
+[Route("api")]
 [Authorize]
 public class UserController : ControllerBase
 {
@@ -44,7 +44,7 @@ public class UserController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("user/followedComics")]
+    [HttpGet("user/followed-comics")]
     public async Task<ActionResult<ServiceResponse<List<ListComicDTO>>>> GetFollowedComics(int page = 1, int size = 40)
     {
         return Ok(await _userService.GetFollowComics(page, size));

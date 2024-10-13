@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ComicAPI.Services;
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class MetricsController : ControllerBase
 {
     private readonly MetricService _metricService;

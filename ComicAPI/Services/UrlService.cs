@@ -47,7 +47,7 @@ namespace ComicAPI.Services
         public string GetConfirmEmailPath(int UserId, string Code)
         {
 
-            return $"{GetCurrentHost()}/Auth/ConfirmEmail?UserId={UserId}&Code={Code}";
+            return $"{GetCurrentHost()}/auth/confirm-email?UserId={UserId}&Code={Code}";
         }
     }
 }

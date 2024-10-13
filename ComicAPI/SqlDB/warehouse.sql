@@ -1,0 +1,17 @@
+--DROP DATABASE IF EXISTS ComicApp;
+CREATE DATABASE warehouse;
+\c warehouse;
+
+
+CREATE TABLE COMIC (
+    ID SERIAL PRIMARY KEY,
+    Title VARCHAR(255),
+    OtherName VARCHAR(255),
+    URL VARCHAR(255) NOT NULL UNIQUE,
+    Description TEXT,
+    CoverImage VARCHAR(255),
+    Status INT NOT NULL CHECK (status IN (0, 1)),
+    CreateAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	Source TEXT,
+    Genres TEXT[]
+); 

@@ -8,7 +8,7 @@ using ComicAPI.DTOs;
 using System.Web;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
     readonly IAuthService _authService;
@@ -33,7 +33,7 @@ public class AuthController : ControllerBase
         return Ok(res);
     }
     [HttpPost]
-    [Route("loginWithSocial")]
+    [Route("social-login")]
     public async Task<ActionResult<ServiceResponse<UserDTO>>> LoginWithSocial(UserLoginSocialDTO userLoginDTO)
     {
         return Ok(await _authService.LoginWithSocial(userLoginDTO));
@@ -47,14 +47,14 @@ public class AuthController : ControllerBase
         return Ok(res);
     }
 
-    [Route("sendEmailConfirm")]
+    [Route("send-confirm-email")]
     [HttpGet]
     public async Task<ActionResult<ServiceResponse<int>>> SendEmailConfirm(int UserId, string email)
     {
         ServiceResponse<int> res = await _authService.SendEmailConfirm(UserId, email);
         return Ok(res);
     }
-    [Route("confirmEmail")]
+    [Route("confirm-email")]
     [HttpGet]
     public async Task<ActionResult<ServiceResponse<string>>> ConfirmEmail(int UserId, string Code)
     {

@@ -5,7 +5,7 @@ using ComicAPI.Enums;
 using ComicAPI.Classes;
 using Microsoft.AspNetCore.RateLimiting;
 [ApiController]
-[Route("")]
+[Route("api")]
 [EnableRateLimiting("FixedLimiter")]
 public class ComicController : ControllerBase
 {
@@ -20,10 +20,10 @@ public class ComicController : ControllerBase
     [HttpGet("comicsbyids")]
     public async Task<ActionResult<List<ComicDTO>>> GetComics(string ids)
     {
-
         try
         {
             List<int> list = ids.Split(',').Select(int.Parse).ToList();
+            if (list.Count > 40) return BadRequest("List of comic ids is too long");
             return Ok(await _comicService.GetComicsByIds(list));
         }
         catch (System.Exception e)
@@ -97,7 +97,7 @@ public class ComicController : ControllerBase
         byte[]? rawdata = await _comicService.LoadImage(url);
         return File(rawdata, contentType: "image/jpeg");
     }
-    [HttpGet("api/search")]
+    [HttpGet("comic/search")]
 
     public async Task<ActionResult<List<ComicDTO>>> SearchComicsByKeyword(string keyword)
     {

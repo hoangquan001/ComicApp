@@ -6,7 +6,7 @@ RETURNS TABLE (
     ID INT,
     ComicID INT,
     Title VARCHAR,
-    URL VARCHAR,
+    URL REAL,
     ViewCount INT,
     UpdateAt TIMESTAMP,
     Pages TEXT
@@ -16,7 +16,7 @@ BEGIN
     SELECT *
     FROM CHAPTER
     WHERE CHAPTER.ComicID = comic_id
-    ORDER BY CHAPTER.url::float DESC
+    ORDER BY CHAPTER.url DESC
     LIMIT 1;
 END;
 $$ LANGUAGE plpgsql;
@@ -43,7 +43,7 @@ BEGIN
         updateat = lastchapter.updateat
     FROM (
         Select * from chapter where comicid = chapter.comicid
-        ORDER BY url::float DESC
+        ORDER BY url
         LIMIT 1
     ) as lastchapter
     WHERE comic.id = lastchapter.comicid;
