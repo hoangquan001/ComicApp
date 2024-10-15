@@ -9,36 +9,25 @@ namespace ComicAPI.Services
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IWebHostEnvironment _environment;
+        private readonly string _url = "https://metruyenmoi.com";
         public UrlService(IHttpContextAccessor httpContextAccessor, IWebHostEnvironment environment)
         {
             _environment = environment;
             _httpContextAccessor = httpContextAccessor;
+
         }
 
         public string GetCurrentHost()
         {
-            var request = _httpContextAccessor.HttpContext!.Request;
-            var host = request.Host.Value;
-            var scheme = request.Scheme;
-            var url = $"{scheme}://{host}";
-
-            return url;
+            return _url;
         }
         public string GetComicCoverImagePath(string? Image)
         {
-            var request = _httpContextAccessor.HttpContext!.Request;
-            var host = request.Host.Value;
-            var scheme = request.Scheme;
-            var url = $"{scheme}://{host}/CoverImg/{Image}";
-            return url;
+            return $"{_url}/CoverImg/{Image}";
         }
         public string GetUserImagePath(string? Image)
         {
-            var request = _httpContextAccessor.HttpContext!.Request;
-            var host = request.Host.Value;
-            var scheme = request.Scheme;
-            var url = $"{scheme}://{host}/AvatarImg/{Image}";
-            return GlobalConfig.AddTimestampToUrl(url);
+            return GlobalConfig.AddTimestampToUrl($"{_url}/AvatarImg/{Image}");
         }
         public string GetPathSaveUserImage()
         {
