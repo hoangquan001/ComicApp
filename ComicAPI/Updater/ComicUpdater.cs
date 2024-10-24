@@ -46,11 +46,20 @@ namespace ComicAPI.Updater
             var tasks = new XTask(second: 5 * 60);
             tasks.Register(UpdateViewChapter);
             tasks.Register(UpdateExp);
-            AddUpdater(tasks);
 
             var tasks2 = new XTask(second: 60 * 60);
             tasks2.Register(UpdateViewComic);
+            var tasks3 = new XTask(second: 60 * 60);
+            tasks3.Register(UpdateComic);
+            AddUpdater(tasks);
             AddUpdater(tasks2);
+            AddUpdater(tasks3);
+        }
+        void UpdateComic()
+        {
+            Console.WriteLine($"Start UpdateComic at {DateTime.Now}");
+
+            // CommandLineHelper.RunCommandAndLog("python", "Updater.py", @"D:/Project/ComicExtractor"); // Example for .NET version check
         }
         async void UpdateViewComic()
         {
