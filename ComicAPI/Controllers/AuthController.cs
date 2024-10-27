@@ -62,12 +62,12 @@ public class AuthController : ControllerBase
         ServiceResponse<User> res = await _authService.ConfirmEmail(UserId, Code);
         if (res.Status == 1)
         {
-            return Redirect("http://localhost:4200/auth/login");
+            return Redirect("https:/metruyenmoi/auth/login");
         }
         else
         {
             string encodedMessage = HttpUtility.UrlEncode(res.Message);
-            return Redirect($"http://localhost:4200/auth/confirm-email?mssg={encodedMessage}");
+            return Redirect($"https:/metruyenmoi/auth/confirm-email?mssg={encodedMessage}");
         }
     }
     [Route("logout")]
