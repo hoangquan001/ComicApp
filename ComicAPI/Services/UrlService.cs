@@ -31,7 +31,7 @@ namespace ComicAPI.Services
         }
         public string GetPathSaveUserImage()
         {
-            return Path.Combine(_environment.ContentRootPath, "wwwroot\\AvatarImg"); ;
+            return Path.Combine(_environment.ContentRootPath, "wwwroot/AvatarImg"); ;
         }
         public string GetConfirmEmailPath(int UserId, string Code)
         {
