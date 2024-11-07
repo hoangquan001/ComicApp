@@ -129,6 +129,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
+builder.Services.AddHttpClient();
 builder.Services.AddAuthentication();
 builder.Services.AddAutoMapper(typeof(Program));
 

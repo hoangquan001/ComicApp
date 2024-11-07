@@ -9,12 +9,14 @@ using Microsoft.AspNetCore.RateLimiting;
 [EnableRateLimiting("FixedLimiter")]
 public class ComicController : ControllerBase
 {
+    private readonly HttpClient _httpClient;
     IComicService _comicService;
     IUserService _userService;
-    public ComicController(IComicService comicService, IUserService userService)
+    public ComicController(IComicService comicService, IUserService userService, HttpClient httpClient)
     {
         _comicService = comicService;
         _userService = userService;
+        _httpClient = httpClient;
     }
 
     [HttpGet("comicsbyids")]
@@ -89,14 +91,49 @@ public class ComicController : ControllerBase
         return Ok(data);
     }
 
-    [HttpGet("data/img/{img_name}")]
-    public async Task<ActionResult> GetImage(string img_name, string data)
+    // [HttpGet("data/img/{img_name}")]
+    // public async Task<ActionResult> GetImage(string img_name, [FromQuery]string data)
+    // {
+        
+    //     // HttpContext.Request.Headers;
+    //     string url = ServiceUtilily.Base64Decode(data);
+    //     byte[]? rawdata = await _comicService.LoadImage(url);
+
+        
+    //     return File(rawdata, contentType: "image/jpeg");
+    // }
+
+    [HttpGet("image/{*path}")]
+    public async Task<ActionResult> HandleImageRequest(string path, [FromQuery] string data)
     {
-        // HttpContext.Request.Headers;
-        string url = ServiceUtilily.Base64Decode(data);
-        byte[]? rawdata = await _comicService.LoadImage(url);
-        return File(rawdata, contentType: "image/jpeg");
+        // Xử lý logic với URL con trong "path"
+        try
+        {
+            string url = ServiceUtilily.Base64Decode(data);
+            
+            // byte[]? rawdata = await _comicService.LoadImage(url);
+            HttpRequestMessage? request = new HttpRequestMessage();
+            request.RequestUri = new Uri(url);
+            request.Method = HttpMethod.Get;
+            request.Headers.Add("Accept", "*/*");
+            request.Headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.2; Win64; x64; en-US) Gecko/20130401 Firefox/53.5");
+            request.Headers.Add("Referer", "nettruyenviet.com");
+            HttpResponseMessage? response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+            if (!response.IsSuccessStatusCode)
+            {
+                return NotFound(); // Trả về 404 nếu ảnh không tìm thấy
+            }
+            byte[]? imgByte = await response.Content.ReadAsByteArrayAsync();
+            // return imgByte;
+            var contentType = response.Content.Headers.ContentType?.ToString() ?? "application/octet-stream";
+            return new FileStreamResult(await response.Content.ReadAsStreamAsync(), contentType);
+        }
+        catch (System.Exception)
+        {
+            return NotFound("Image not found");
+        }
     }
+
     [HttpGet("comic/search")]
 
     public async Task<ActionResult<List<ComicDTO>>> SearchComicsByKeyword(string keyword)
