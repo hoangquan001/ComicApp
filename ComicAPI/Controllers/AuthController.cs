@@ -12,13 +12,15 @@ using System.Web;
 public class AuthController : ControllerBase
 {
     readonly IAuthService _authService;
-
     readonly ITokenMgr _tokenMgr;
+    readonly UrlService _urlService;
+
     //Contructor
-    public AuthController(IAuthService authService, ITokenMgr tokenMgr)
+    public AuthController(IAuthService authService, ITokenMgr tokenMgr, UrlService urlService)
     {
         _authService = authService;
         _tokenMgr = tokenMgr;
+        _urlService = urlService;
     }
     [HttpGet]
     [Route("login")]
@@ -62,12 +64,12 @@ public class AuthController : ControllerBase
         ServiceResponse<User> res = await _authService.ConfirmEmail(UserId, Code);
         if (res.Status == 1)
         {
-            return Redirect("https:/metruyenmoi/auth/login");
+            return Redirect($"{_urlService.Host}/auth/login");
         }
         else
         {
             string encodedMessage = HttpUtility.UrlEncode(res.Message);
-            return Redirect($"https:/metruyenmoi/auth/confirm-email?mssg={encodedMessage}");
+            return Redirect($"{_urlService.Host}/auth/confirm-email?mssg={encodedMessage}");
         }
     }
     [Route("logout")]

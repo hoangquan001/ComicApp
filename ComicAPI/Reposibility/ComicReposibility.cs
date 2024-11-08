@@ -25,19 +25,20 @@ public class ComicReposibility : IComicReposibility
         _urlService = urlService;
 
     }
-    private async Task<List<Comic>> _getAllComicsFromDB()
+    private async Task<Dictionary<int, Comic>> _getAllComicsFromDB()
     {
-        return await _dbContext.Comics
+        var data = await _dbContext.Comics
         .Include(x => x.Genres)
         .AsNoTracking()
-        .ToListAsync();
+        .ToDictionaryAsync(x => x.ID, x => x);
+        return data;
     }
 
-    public async Task<List<Comic>> GetAllComics()
+    public async Task<Dictionary<int, Comic>> GetAllComics()
     {
         const string cacheKey = "ALL_COMIC_KEY";
 
-        if (/*!CacheEnabled ||*/ !_memoryCache.TryGetValue(cacheKey, out List<Comic>? cachedData))
+        if (/*!CacheEnabled ||*/ !_memoryCache.TryGetValue(cacheKey, out Dictionary<int, Comic>? cachedData))
         {
             DateTime start = DateTime.Now;
             cachedData = await _getAllComicsFromDB();
@@ -150,27 +151,33 @@ public class ComicReposibility : IComicReposibility
     {
         throw new NotImplementedException();
     }
-    private async Task<ComicDTO?> _getComicFromDB(string key)
+    private async Task<Comic?> _getComicFromDB(string key)
     {
         bool isID = int.TryParse(key, out int id2);
+
         var data = await _dbContext.Comics
         .Where(x => isID ? x.ID == id2 : x.Url == key)
         .Include(x => x.Genres)
-        .Select(x => new ComicDTO(x)
+        .Select(x => new 
         {
+            Comic = x,
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
+            Chapters = x.Chapters.Where(c => c.ID == x.lastchapter)
         })
         .FirstOrDefaultAsync();
+        if(data == null) return null;
 
-        return data;
+        Comic comic = data.Comic;
+        comic.CoverImage = data.CoverImage;
+        comic.Chapters = data.Chapters.ToList();
+        return comic;
 
     }
 
-    public async Task<ComicDTO?> GetComic(string key)
+    public async Task<Comic?> GetComic(string key)
     {
         string keysave = string.Format("comic-{0}", key);
-        if (!CacheEnabled || !_memoryCache.TryGetValue(keysave, out ComicDTO? cachedData))
+        if (!CacheEnabled || !_memoryCache.TryGetValue(keysave, out Comic? cachedData))
         {
             cachedData = await _getComicFromDB(key); ;
             var cacheEntryOptions = new MemoryCacheEntryOptions()
@@ -217,34 +224,32 @@ public class ComicReposibility : IComicReposibility
 
     public async Task<List<ComicDTO>> GetComicByKeyword(string keyword)
     {
-        return GetComicByKeyword(await GetAllComics(), keyword);
-    }
-    private List<ComicDTO> GetComicByKeyword(List<Comic> comis, string keyword)
-    {
+        Dictionary<int, Comic>? comis = await GetAllComics();
         keyword = keyword.Replace("-", " ");
         keyword = SlugHelper.CreateSlug(keyword);
         var vec1 = new Dictionary<string, int>();
         SlugHelper.GetTermFrequencyVector(keyword, ref vec1);
         List<(Comic comic, int similarity)> result = new List<(Comic, int)>();
 
-        for (int i = 0; i < comis.Count; i++)
+        Dictionary<string, int> vec2 = new Dictionary<string, int>();
+        foreach (KeyValuePair<int, Comic> comic in comis)
         {
-            Dictionary<string, int> vec2 = new Dictionary<string, int>();
-            SlugHelper.GetTermFrequencyVector(comis[i].Url, ref vec2);
-            if (!string.IsNullOrEmpty(comis[i].OtherName))
+            vec2.Clear();
+            SlugHelper.GetTermFrequencyVector(comic.Value.Url, ref vec2);
+            if (!string.IsNullOrEmpty(comic.Value.OtherName))
             {
-                var otherName = SlugHelper.CreateSlug(comis[i].OtherName);
+                var otherName = SlugHelper.CreateSlug(comic.Value.OtherName);
                 SlugHelper.GetTermFrequencyVector(otherName, ref vec2);
             }
-
             double dotProduct = 0;
             double norm1 = 0;
             double norm2 = 0;
-
             foreach (string key in vec1.Keys)
             {
                 if (vec2.ContainsKey(key))
+                {
                     dotProduct += vec1[key] * vec2[key];
+                }
                 norm1 += vec1[key] * vec1[key];
             }
             norm2 = vec2.Keys.Sum(x => vec2[x] * vec2[x]);
@@ -252,7 +257,7 @@ public class ComicReposibility : IComicReposibility
             var a = dotProduct / (Math.Sqrt(norm1) * Math.Sqrt(norm2));
             if (a > 0.1)
             {
-                result.Add((comis[i], (int)(a * 100)));
+                result.Add((comic.Value, (int)(a * 100)));
             }
         }
 
@@ -262,9 +267,9 @@ public class ComicReposibility : IComicReposibility
         .Select(x => new ComicDTO(x.comic)
         {
             CoverImage = _urlService.GetComicCoverImagePath(x.comic.CoverImage),
-            Chapters = _dbContext.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => new ChapterDTO(ch))
-        }).ToList();
-
+        })
+        .ToList();
+        // return GetComicByKeyword(, keyword);
     }
 
 
@@ -494,17 +499,20 @@ public class ComicReposibility : IComicReposibility
 
     public async Task<List<ComicDTO>> FindSimilarComics(int comicid)
     {
-        var _comics = await GetAllComics();
-        var _comic = _comics.FirstOrDefault(x => x.ID == comicid);
-        var _genres = _comic!.Genres.Select(x => x.ID);
+        Dictionary<int, Comic>? _comics = await GetAllComics();
+        if(!_comics.TryGetValue(comicid, out Comic? _comic)) 
+        {
+            return new List<ComicDTO>();
+        }
+        IEnumerable<int>? _genres = _comic.Genres.Select(x => x.ID);
+
         List<Comic> result = new List<Comic>();
         Dictionary<int, List<Comic>> dictKey = new Dictionary<int, List<Comic>>();
         int minElement = Math.Min(3, _genres.Count());
-        for (int i = 0; i < _comics.Count; i++)
+        foreach (var comic in _comics.Values)
         {
-            var comic = _comics[i];
             if (comic.ID == comicid) continue;
-            var genre = comic.Genres.Select(x => x.ID);
+            IEnumerable<int>? genre = comic.Genres.Select(x => x.ID);
 
             int countElement = _genres.Intersect(genre).Sum(x => 1);
             if (countElement >= minElement)
@@ -516,7 +524,7 @@ public class ComicReposibility : IComicReposibility
                 dictKey[countElement].Add(comic);
             }
         }
-        var keys = dictKey.Keys.ToList();
+        List<int>? keys = dictKey.Keys.ToList();
         //Sort the keys in descending order
         keys.Sort((x, y) => y.CompareTo(x));
         foreach (var key in keys)
@@ -525,8 +533,8 @@ public class ComicReposibility : IComicReposibility
             if (result.Count > 100) break;
         }
         ServiceUtilily.SuffleList(result);
-        var data = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-2)).Take(12).ToList();
-        var resultDTO = data.Select(x => new ComicDTO(x)
+        List<Comic>? data = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-2)).Take(12).ToList();
+        List<ComicDTO>? resultDTO = data.Select(x => new ComicDTO(x)
         {
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage)
         }).ToList();

@@ -2,32 +2,39 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ComicAPI.Classes;
+using Microsoft.Extensions.Options;
 
 namespace ComicAPI.Services
 {
     public class UrlService
     {
-        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IWebHostEnvironment _environment;
-        private readonly string _url = "https://metruyenmoi.com";
-        public UrlService(IHttpContextAccessor httpContextAccessor, IWebHostEnvironment environment)
+        private readonly AppSetting _config;
+
+        public string Host
+        {
+            get
+            {
+                return _host;
+            }
+        }
+
+        private readonly string _host = "https://metruyenmoi.com";
+        public UrlService( IWebHostEnvironment environment, IOptions<AppSetting> options)
         {
             _environment = environment;
-            _httpContextAccessor = httpContextAccessor;
-
+            _config = options.Value;
+            _host = _config.Host ?? _host;
         }
 
-        public string GetCurrentHost()
-        {
-            return _url;
-        }
         public string GetComicCoverImagePath(string? Image)
         {
-            return $"{_url}/CoverImg/{Image}";
+            return $"{Host}/CoverImg/{Image}";
         }
         public string GetUserImagePath(string? Image)
         {
-            return GlobalConfig.AddTimestampToUrl($"{_url}/AvatarImg/{Image}");
+            return ServiceUtilily.AddTimestampToUrl($"{Host}/AvatarImg/{Image}");
         }
         public string GetPathSaveUserImage()
         {
@@ -36,7 +43,7 @@ namespace ComicAPI.Services
         public string GetConfirmEmailPath(int UserId, string Code)
         {
 
-            return $"{GetCurrentHost()}/auth/confirm-email?UserId={UserId}&Code={Code}";
+            return $"{Host}/auth/confirm-email?UserId={UserId}&Code={Code}";
         }
     }
 }

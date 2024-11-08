@@ -50,11 +50,12 @@ public class ComicService : IComicService
     public async Task<ServiceResponse<ComicDTO>> GetComic(string key, int maxchapter = -1)
     {
         var data = await _comicReposibility.GetComic(key);
+        var comicDTO = new ComicDTO(data);
         if (data != null && _userService.CurrentUser != null)
         {
-            data.IsFollow = await _userService.IsFollowComic(data.ID);
+            comicDTO.IsFollow = await _userService.IsFollowComic(data.ID);
         }
-        return ServiceUtilily.GetDataRes<ComicDTO>(data);
+        return ServiceUtilily.GetDataRes<ComicDTO>(comicDTO);
     }
 
 
@@ -161,9 +162,14 @@ public class ComicService : IComicService
 
         Chapter? chapter = await _comicReposibility.GetChapter(chapter_id);
         if (chapter == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
-        ComicDTO? comic = await _comicReposibility.GetComic(chapter.ComicID.ToString());
+
+        Comic? comic = (await _comicReposibility.GetAllComics())?[chapter.ComicID];
+
         if (comic == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
-        comic.Chapters = await _comicReposibility.GetChapters(comic.ID) ?? [];
+
+        ComicDTO? comicDTO = new ComicDTO(comic);
+
+        // comicDTO.Chapters = await _comicReposibility.GetChapters(comic.ID) ?? [];
         // List<PageDTO>? urlsData = await FetchChapterImage(comic.Url, chapter.Url, chapter_id);
         List<PageDTO>? urlsData = null;
         if (chapter.Pages != null)
@@ -175,7 +181,7 @@ public class ComicService : IComicService
                 {
                     Uri uri = new Uri(x);
                     string path = uri.AbsolutePath.Replace("nettruyen","image");
-                    string newUrl = $"https://metruyenmoi.com/api{path}?data={ServiceUtilily.Base64Encode(x)}";
+                    string newUrl = $"{_urlService.Host}/api{path}?data={ServiceUtilily.Base64Encode(x)}";
                     return new PageDTO { URL = newUrl, PageNumber = i };
                 }).ToList();
             }
@@ -184,7 +190,7 @@ public class ComicService : IComicService
         ChapterPageDTO chapterPageDTO = new ChapterPageDTO(chapter)
         {
             Pages = urlsData,
-            Comic = comic
+            Comic = comicDTO
         };
         return ServiceUtilily.GetDataRes<ChapterPageDTO>(chapterPageDTO);
     }

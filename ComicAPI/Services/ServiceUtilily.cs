@@ -59,6 +59,12 @@ public class ServiceUtilily
         }
     }
 
+    public static string AddTimestampToUrl(string url)
+    {
+        long timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+        return $"{url}?timestamp={timestamp}";
+    }
+
     public static List<T> SampleList<T>(List<T> list, List<float> weights, int sampleSize)
     {
         if (list.Count != weights.Count)
@@ -123,11 +129,7 @@ public class GlobalConfig
         return _globalConfig[key];
 
     }
-    public static string AddTimestampToUrl(string url)
-    {
-        long timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-        return $"{url}?timestamp={timestamp}";
-    }
+
 
 }
 public class SlugHelper

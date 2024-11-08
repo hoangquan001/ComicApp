@@ -28,6 +28,7 @@ public class ComicDTO
         UpdateAt = x.UpdateAt;
         NumChapter = x.numchapter;
         genres = x.Genres.Select(g => new GenreLiteDTO(g));
+        Chapters = x.Chapters.Select(c => new ChapterDTO(c));
     }
     public int ID { get; set; } // Primary Key (implicitly set by IDENTITY(1, 1))
     public string Title { get; set; } = "";
