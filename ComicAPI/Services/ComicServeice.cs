@@ -168,31 +168,34 @@ public class ComicService : IComicService
         if (comic == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
 
         ComicDTO? comicDTO = new ComicDTO(comic);
-
-        // comicDTO.Chapters = await _comicReposibility.GetChapters(comic.ID) ?? [];
-        // List<PageDTO>? urlsData = await FetchChapterImage(comic.Url, chapter.Url, chapter_id);
         List<PageDTO>? urlsData = null;
         if (chapter.Pages != null)
         {
+            bool needEncode = chapter.Pages.Contains("s3.mideman.com");
             List<string>? links = JsonSerializer.Deserialize<List<string>>(chapter.Pages.Replace("'", "\""));
             if (links != null)
             {
                 urlsData = links.Select((x, i) =>
                 {
-                    Uri uri = new Uri(x);
-                    string path = uri.AbsolutePath.Replace("nettruyen","image");
-                    string newUrl = $"{_urlService.Host}/api{path}?data={ServiceUtilily.Base64Encode(x)}";
+                    string newUrl = x;
+                    if(needEncode)
+                    {
+                        Uri uri = new Uri(x);
+                        string path = uri.AbsolutePath.Replace("nettruyen","image");
+                        newUrl = $"{_urlService.Host}/api{path}?data={ServiceUtilily.Base64Encode(x)}";
+                    }
                     return new PageDTO { URL = newUrl, PageNumber = i };
                 }).ToList();
             }
         }
 
-        ChapterPageDTO chapterPageDTO = new ChapterPageDTO(chapter)
-        {
-            Pages = urlsData,
-            Comic = comicDTO
-        };
-        return ServiceUtilily.GetDataRes<ChapterPageDTO>(chapterPageDTO);
+        return ServiceUtilily.GetDataRes<ChapterPageDTO>(
+            new ChapterPageDTO(chapter)
+            {
+                Pages = urlsData,
+                Comic = comicDTO
+            }
+        );
     }
 
     public async Task<ServiceResponse<List<ChapterDTO>>> GetChapters(int comicid)
