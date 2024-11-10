@@ -24,7 +24,7 @@ public class ComicService : IComicService
     private static ConcurrentDictionary<int, int> comicViews = new ConcurrentDictionary<int, int>();
     private readonly AppSetting _config;
 
-    static ComicService( )
+    static ComicService()
     {
         for (int i = 0; i < 55; i++)
         {
@@ -34,7 +34,7 @@ public class ComicService : IComicService
         // Console.WriteLine(data);
     }
 
-    public ComicService(IComicReposibility comicReposibility, IMapper mapper,UrlService urlService
+    public ComicService(IComicReposibility comicReposibility, IMapper mapper, UrlService urlService
         , IUserService userService, IOptions<AppSetting> options, HttpClient httpClient)
     {
         _comicReposibility = comicReposibility;
@@ -156,7 +156,7 @@ public class ComicService : IComicService
     //     byte[]? imgByte = await response.Content.ReadAsByteArrayAsync();
     //     return imgByte;
     // }
-    
+
     public async Task<ServiceResponse<ChapterPageDTO>> GetPagesInChapter(int chapter_id)
     {
 
@@ -167,7 +167,10 @@ public class ComicService : IComicService
 
         if (comic == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
 
-        ComicDTO? comicDTO = new ComicDTO(comic);
+        ComicDTO? comicDTO = new ComicDTO(comic)
+        {
+            CoverImage = _urlService.GetComicCoverImagePath(comic.CoverImage)
+        };
         List<PageDTO>? urlsData = null;
         if (chapter.Pages != null)
         {
@@ -178,10 +181,10 @@ public class ComicService : IComicService
                 urlsData = links.Select((x, i) =>
                 {
                     string newUrl = x;
-                    if(needEncode)
+                    if (needEncode)
                     {
                         Uri uri = new Uri(x);
-                        string path = uri.AbsolutePath.Replace("nettruyen","image");
+                        string path = uri.AbsolutePath.Replace("nettruyen", "image");
                         newUrl = $"{_urlService.Host}/api{path}?data={ServiceUtilily.Base64Encode(x)}";
                     }
                     return new PageDTO { URL = newUrl, PageNumber = i };
