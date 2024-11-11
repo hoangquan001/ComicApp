@@ -17,12 +17,27 @@ public class ServiceUtilily
     {
         return Base64Decode(base64EncodedData);
     }
+    public static bool IsValidEmail(string? email)
+    {
+        if (string.IsNullOrWhiteSpace(email))
+            return false;
 
+        // Define a regular expression for validating email format
+        string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+        return Regex.IsMatch(email, emailPattern, RegexOptions.IgnoreCase);
+    }
     // Hàm giải mã chuỗi Base64
     public static string Base64Decode(string base64EncodedData)
     {
-        byte[] base64EncodedBytes = Convert.FromBase64String(base64EncodedData);
-        return Encoding.UTF8.GetString(base64EncodedBytes);
+        try
+        {
+            byte[] base64EncodedBytes = Convert.FromBase64String(base64EncodedData);
+            return Encoding.UTF8.GetString(base64EncodedBytes);
+        }
+        catch (System.Exception)
+        {
+            return "";
+        }
     }
     public static ServiceResponse<T> GetDataRes<T>(T? data)
     {

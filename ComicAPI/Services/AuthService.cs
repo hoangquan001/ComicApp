@@ -34,17 +34,13 @@ public class AuthService : IAuthService
     public async Task<ServiceResponse<UserDTO>> Login(UserLoginDTO userLogin)
     {
         ServiceResponse<UserDTO> res = new ServiceResponse<UserDTO>();
-        var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == userLogin.email && user.HashPassword == userLogin.password);
+        var decoderPassword = ServiceUtilily.Base64Decode(userLogin.password!);
+        var data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == userLogin.email && (user.HashPassword == userLogin.password || user.HashPassword == decoderPassword));
         if (data == null)
         {
-            var decoderPassword = ServiceUtilily.Base64Decode(userLogin.password!);
-            data = await _dbContext.Users.SingleOrDefaultAsync(user => user.Email == userLogin.email && user.HashPassword == decoderPassword);
-            if (data == null)
-            {
-                res.Status = 0;
-                res.Message = "Username or password is incorrect";
-                return res;
-            }
+            res.Status = 0;
+            res.Message = "Tên đăng nhập hoặc mật khẩu không chính xác.";
+            return res;
         }
         UserDTO user = new UserDTO
         {
@@ -63,7 +59,7 @@ public class AuthService : IAuthService
         };
         res.Data = user;
         res.Status = 1;
-        res.Message = "Success";
+        res.Message = "Đăng nhập thành công";
         return res;
     }
 
@@ -151,37 +147,40 @@ public class AuthService : IAuthService
         catch (Exception ex)
         {
             Console.WriteLine($"Error downloading image: {ex.Message}");
-            return new ServiceResponse<int> { Status = 0, Message = "Email không hợp lệ." };
+            return new ServiceResponse<int> { Status = 0, Message = "Địa chỉ email không hợp lệ." };
         }
 
         return new ServiceResponse<int> { Data = userid, Status = 1, Message = "Gửi thư thành công" };
     }
-    public async Task<ServiceResponse<User>> Register(UserRegisterDTO RegisterData)
+    public async Task<ServiceResponse<User>> Register(UserRegisterDTO registerData)
     {
-
-        if (await _dbContext.Users.AnyAsync(user => user.Email == RegisterData.email))
+        if (!ServiceUtilily.IsValidEmail(registerData.email))
         {
-            return new ServiceResponse<User> { Status = 0, Message = "Username already exists" };
+            return new ServiceResponse<User> { Status = 0, Message = "Địa chỉ email không hợp lệ." };
+        }
+        if (await _dbContext.Users.AnyAsync(user => user.Email == registerData.email))
+        {
+            return new ServiceResponse<User> { Status = 0, Message = "Tài khoản đã tồn tại" };
         }
         int maxID = await _dbContext.Users.MaxAsync(user => user.ID);
         User user = new User
         {
-            ID = maxID + 1,
-            FirstName = RegisterData.name!,
-            Email = RegisterData.email!,
-            HashPassword = RegisterData.password!,
-            Status = 0
+            ID = maxID + 10,
+            FirstName = registerData.name!,
+            Email = registerData.email!,
+            HashPassword = registerData.password!,
+            Status = 1
         };
 
-        var response = await SendEmailConfirm(user.ID, user.Email);
-        if (response.Status == 0)
-        {
-            return new ServiceResponse<User> { Status = 0, Message = "Not send email confirm" };
-        }
+        // var response = await SendEmailConfirm(user.ID, user.Email);
+        // if (response.Status == 0)
+        // {
+        //     return new ServiceResponse<User> { Status = 0, Message = "Not send email confirm" };
+        // }
         _dbContext.Users.Add(user);
         await _dbContext.SaveChangesAsync();
 
-        return new ServiceResponse<User> { Data = user, Status = 1, Message = "Success" };
+        return new ServiceResponse<User> { Data = user, Status = 1, Message = "Đăng ký thành công" };
     }
     public async Task<ServiceResponse<User>> ConfirmEmail(int UserId, string Code)
     {
