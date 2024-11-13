@@ -12,12 +12,16 @@ public class MetricMiddleware
     private readonly MetricService _metricService;
     private readonly EndpointDataSource _endpointDataSource;
 
+    private readonly ILogger _logger;
 
-    public MetricMiddleware(RequestDelegate next, MetricService metricService, EndpointDataSource endpointDataSource)
+
+
+    public MetricMiddleware(RequestDelegate next, MetricService metricService, EndpointDataSource endpointDataSource,  ILogger<MetricMiddleware> logger)
     {
         _next = next;
         _metricService = metricService;
         _endpointDataSource = endpointDataSource;
+        _logger = logger;
     }
 
     public IEnumerable<string> GetEndpointPatterns()
@@ -56,18 +60,39 @@ public class MetricMiddleware
         finally
         {
             stopwatch.Stop();
-            if (context.Request.Path.ToString().ToLower().Contains("/static/"))
+            var  lowerPath = context.Request.Path.ToString().ToLower();
+
+         
+
+            if (lowerPath.Contains("/static/"))
             {
                 _metricService.TrackRequestDuration("/static", stopwatch.ElapsedMilliseconds);
 
             }
+            else if(lowerPath.Contains("/api/image/"))
+            {
+                _metricService.TrackRequestDuration("/api/image", stopwatch.ElapsedMilliseconds);
+            }
             else
             {
+                string ipAddress = GetIpAddress(context);
                 _metricService.TrackRequestDuration(context.Request.Path, stopwatch.ElapsedMilliseconds);
-
-                Console.WriteLine($"Response: {context.Request.Method} {context.Request.Path}{context.Request.QueryString} {context.Response.StatusCode} {stopwatch.ElapsedMilliseconds}ms");
+                _logger.LogInformation($"[{DateTime.Now.ToLocalTime()}] {context.Request.Method} {context.Request.Path}{context.Request.QueryString} {context.Response.StatusCode} {stopwatch.ElapsedMilliseconds}ms {ipAddress}");
             }
 
         }
+    }
+
+    private string GetIpAddress(HttpContext context)
+    {
+        if (context.Request.Headers.ContainsKey("CF-Connecting-IP"))
+        {
+            return context.Request.Headers["CF-Connecting-IP"].ToString();
+        }
+        else if (context.Request.Headers.ContainsKey("X-Forwarded-For"))
+        {
+            return context.Request.Headers["X-Forwarded-For"].ToString().Split(',').First().Trim();
+        }
+        return context.Connection.RemoteIpAddress?.ToString() ?? string.Empty;
     }
 }
