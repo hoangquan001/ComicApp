@@ -220,44 +220,49 @@ public class ComicReposibility : IComicReposibility
 
     }
 
+    private static List<string> GetNgrams(string text, int n)
+    {
+        List<string> ngrams = new List<string>();
+        for (int i = 0; i <= text.Length - n; i++)
+        {
+            ngrams.Add(text.Substring(i, n));
+        }
+        return ngrams;
+    }
+    private static double CalculateNgramSimilarity(List<string> ngrams1, List<string> ngrams2)
+    {
+        int matchCount = ngrams1.Intersect(ngrams2).Count();
+        // Tổng số N-gram trong cả hai chuỗi
+        int totalNgrams = ngrams1.Count + ngrams2.Count;
+        // Trả về độ tương đồng N-gram
+        return (2.0 * matchCount) / totalNgrams;
+    }
 
+    // Hàm tính độ tương đồng N-gram giữa hai chuỗi
+    private static int GetNgram(string text)
+    {
+        return text.Length < 10 ? 2 : text.Length < 20 ? 3 : 4;
+    }
 
     public async Task<List<ComicDTO>> GetComicByKeyword(string keyword)
     {
         Dictionary<int, Comic>? comis = await GetAllComics();
-        keyword = keyword.Replace("-", " ");
         keyword = SlugHelper.CreateSlug(keyword);
-        var vec1 = new Dictionary<string, int>();
-        SlugHelper.GetTermFrequencyVector(keyword, ref vec1);
-        List<(Comic comic, int similarity)> result = new List<(Comic, int)>();
-
-        Dictionary<string, int> vec2 = new Dictionary<string, int>();
+        List<List<string>> ngrams = new List<List<string>> { GetNgrams(keyword, 2), GetNgrams(keyword, 3), GetNgrams(keyword, 4) };
+        List<(Comic comic, double similarity)> result = new List<(Comic, double)>();
         foreach (KeyValuePair<int, Comic> comic in comis)
         {
-            vec2.Clear();
-            SlugHelper.GetTermFrequencyVector(comic.Value.Url, ref vec2);
+            int n = GetNgram(comic.Value.Url);
+            double similarity = CalculateNgramSimilarity(ngrams[n - 2], GetNgrams(comic.Value.Url, n));
             if (!string.IsNullOrEmpty(comic.Value.OtherName))
             {
-                var otherName = SlugHelper.CreateSlug(comic.Value.OtherName);
-                SlugHelper.GetTermFrequencyVector(otherName, ref vec2);
+                string OtherName = SlugHelper.CreateSlug(comic.Value.OtherName);
+                n = GetNgram(comic.Value.OtherName);
+                similarity = Math.Max(similarity, CalculateNgramSimilarity(ngrams[n - 2], GetNgrams(OtherName, n)));
             }
-            double dotProduct = 0;
-            double norm1 = 0;
-            double norm2 = 0;
-            foreach (string key in vec1.Keys)
+            if (similarity >0.1)
             {
-                if (vec2.ContainsKey(key))
-                {
-                    dotProduct += vec1[key] * vec2[key];
-                }
-                norm1 += vec1[key] * vec1[key];
-            }
-            norm2 = vec2.Keys.Sum(x => vec2[x] * vec2[x]);
-
-            var a = dotProduct / (Math.Sqrt(norm1) * Math.Sqrt(norm2));
-            if (a > 0.1)
-            {
-                result.Add((comic.Value, (int)(a * 100)));
+                result.Add((comic.Value, similarity));
             }
         }
 
@@ -269,7 +274,6 @@ public class ComicReposibility : IComicReposibility
             CoverImage = _urlService.GetComicCoverImagePath(x.comic.CoverImage),
         })
         .ToList();
-        // return GetComicByKeyword(, keyword);
     }
 
 
