@@ -18,6 +18,8 @@ using Microsoft.AspNetCore.HttpLogging;
 using System.Diagnostics;
 using Microsoft.AspNetCore.RateLimiting;
 using ComicAPI.Classes;
+using Microsoft.AspNetCore.ResponseCompression;
+using System.IO.Compression;
 
 // Enable CORS
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -89,8 +91,23 @@ builder.Services.AddAuthentication(x =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
     };
 }
-
 );
+builder.Services.AddResponseCompression(options =>
+{
+    options.EnableForHttps = true;
+    options.Providers.Add<BrotliCompressionProvider>();
+    options.Providers.Add<GzipCompressionProvider>();
+    options.MimeTypes = ResponseCompressionDefaults.MimeTypes;
+});
+builder.Services.Configure<BrotliCompressionProviderOptions>(options =>
+{
+    options.Level = CompressionLevel.Optimal;
+});
+
+builder.Services.Configure<GzipCompressionProviderOptions>(options =>
+{
+    options.Level = CompressionLevel.SmallestSize;
+});
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IComicService, ComicService>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -146,6 +163,7 @@ if (app.Environment.IsProduction())
 {
     app.UseRateLimiter();
 }
+app.UseResponseCompression();
 app.UseCors(MyAllowSpecificOrigins);
 app.UseDefaultFiles();
 app.UseStaticFiles();
