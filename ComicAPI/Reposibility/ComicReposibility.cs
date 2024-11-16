@@ -158,14 +158,14 @@ public class ComicReposibility : IComicReposibility
         var data = await _dbContext.Comics
         .Where(x => isID ? x.ID == id2 : x.Url == key)
         .Include(x => x.Genres)
-        .Select(x => new 
+        .Select(x => new
         {
             Comic = x,
             CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter)
         })
         .FirstOrDefaultAsync();
-        if(data == null) return null;
+        if (data == null) return null;
 
         Comic comic = data.Comic;
         comic.CoverImage = data.CoverImage;
@@ -438,50 +438,70 @@ public class ComicReposibility : IComicReposibility
         return cachedData!;
     }
 
-    public async Task UpdateViewComic(HashSet<int> comicview)
+    public async Task<bool> UpdateViewComic(HashSet<int> comicview)
     {
-        var comicIds = comicview.ToList();
 
-        var comicsToUpdate = _dbContext.Comics
-                                             .Where(c => comicIds.Contains(c.ID));
-
-
-        var chapterViewCounts = _dbContext.Chapters
-                                                .Where(c => comicIds.Contains(c.ComicID))
-                                                .GroupBy(c => c.ComicID)
-                                                .Select(g => new { ComicID = g.Key, TotalViewCount = g.Sum(c => c.ViewCount) });
-
-        var chapterViewCountDict = chapterViewCounts.ToDictionary(x => x.ComicID, x => x.TotalViewCount);
-
-        foreach (var comic in comicsToUpdate)
+        try
         {
-            if (chapterViewCountDict.TryGetValue(comic.ID, out int totalViewCount))
-            {
-                comic.ViewCount = totalViewCount;
-            }
-            else
-            {
-                comic.ViewCount = 0;
-            }
-        }
+            var comicIds = comicview.ToList();
 
-        await _dbContext.SaveChangesAsync();
+            var comicsToUpdate = _dbContext.Comics
+                                                 .Where(c => comicIds.Contains(c.ID));
+
+            var chapterViewCounts = _dbContext.Chapters
+                                                    .Where(c => comicIds.Contains(c.ComicID))
+                                                    .GroupBy(c => c.ComicID)
+                                                    .Select(g => new { ComicID = g.Key, TotalViewCount = g.Sum(c => c.ViewCount) });
+
+            var chapterViewCountDict = chapterViewCounts.ToDictionary(x => x.ComicID, x => x.TotalViewCount);
+
+            foreach (var comic in comicsToUpdate)
+            {
+                if (chapterViewCountDict.TryGetValue(comic.ID, out int totalViewCount))
+                {
+                    comic.ViewCount = totalViewCount;
+                }
+                else
+                {
+                    comic.ViewCount = 0;
+                }
+            }
+
+            await _dbContext.SaveChangesAsync();
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            _dbContext.ChangeTracker.Clear();
+            Console.WriteLine($"Transaction rolled back due to: {ex.Message}");
+            return false;
+        }
     }
-    public async Task UpdateViewChapter(Dictionary<int, int> chapterviews)
+    public async Task<bool> UpdateViewChapter(Dictionary<int, int> chapterviews)
     {
 
-        var chapterIds = chapterviews.Keys.ToList();
-        var chaptersToUpdate = _dbContext.Chapters
-                                            .Where(c => chapterIds.Contains(c.ID));
-
-
-        foreach (var chapter in chaptersToUpdate)
+        try
         {
-            chapter.ViewCount += chapterviews[chapter.ID];
+            var chapterIds = chapterviews.Keys.ToList();
+            var chaptersToUpdate = _dbContext.Chapters
+                                                .Where(c => chapterIds.Contains(c.ID));
+
+            foreach (var chapter in chaptersToUpdate)
+            {
+                chapter.ViewCount += chapterviews[chapter.ID];
+            }
+            await _dbContext.SaveChangesAsync();
+            return true;
+
         }
+        catch (Exception ex)
+        {
+            _dbContext.ChangeTracker.Clear();
+            Console.WriteLine($"Transaction rolled back due to: {ex.Message}");
 
-
-        await _dbContext.SaveChangesAsync();
+            return false;
+        }
     }
 
     public async Task<List<ComicDTO>> GetComicsByIds(List<int> ids)
@@ -500,7 +520,7 @@ public class ComicReposibility : IComicReposibility
     public async Task<List<ComicDTO>> FindSimilarComics(int comicid)
     {
         Dictionary<int, Comic>? _comics = await GetAllComics();
-        if(!_comics.TryGetValue(comicid, out Comic? _comic)) 
+        if (!_comics.TryGetValue(comicid, out Comic? _comic))
         {
             return new List<ComicDTO>();
         }

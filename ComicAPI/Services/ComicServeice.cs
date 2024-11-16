@@ -174,7 +174,7 @@ public class ComicService : IComicService
         List<PageDTO>? urlsData = null;
         if (chapter.Pages != null)
         {
-            bool needEncode = chapter.Pages.Contains("s3.mideman.com");
+            bool needEncode = false;// = chapter.Pages.Contains("s3.mideman.com");
             List<string>? links = JsonSerializer.Deserialize<List<string>>(chapter.Pages.Replace("'", "\""));
             if (links != null)
             {
@@ -273,13 +273,17 @@ public class ComicService : IComicService
 
     public async Task UpdateViewChapter()
     {
-        await _comicReposibility.UpdateViewChapter(chapterViews.ToDictionary());
-        chapterViews.Clear();
+        if (await _comicReposibility.UpdateViewChapter(chapterViews.ToDictionary()))
+        {
+            chapterViews.Clear();
+        }
     }
     public async Task UpdateViewComic()
     {
-        await _comicReposibility.UpdateViewComic(comicViews.Keys.ToHashSet());
-        comicViews.Clear();
+        if (await _comicReposibility.UpdateViewComic(comicViews.Keys.ToHashSet()))
+        {
+            comicViews.Clear();
+        }
     }
 
     public async Task<ServiceResponse<List<ComicDTO>>> GetComicsByIds(List<int> ids)

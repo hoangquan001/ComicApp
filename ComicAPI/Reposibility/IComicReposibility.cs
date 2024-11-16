@@ -20,6 +20,6 @@ public interface IComicReposibility
     public Task<List<ComicDTO>> FindSimilarComics(int comicid);
     public Task<List<ComicDTO>?> GetComicRecommend();
     public Task<ComicTopViewDTO?> GetTopViewComics(int step);
-    public Task UpdateViewComic(HashSet<int> comicviews);
-    public Task UpdateViewChapter(Dictionary<int, int> chapterviews);
+    public Task<bool> UpdateViewComic(HashSet<int> comicviews);
+    public Task<bool> UpdateViewChapter(Dictionary<int, int> chapterviews);
 }

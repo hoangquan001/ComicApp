@@ -18,14 +18,14 @@ public class ExceptionMiddleware
 
     public async Task InvokeAsync(HttpContext httpContext)
     {
-        // try
-        // {
+        try
+        {
             await _next(httpContext);
-        // }
-        // catch (Exception ex)
-        // {
-        //     await HandleExceptionAsync(httpContext, ex);        
-        // }
+        }
+        catch (Exception ex)
+        {
+            await HandleExceptionAsync(httpContext, ex);
+        }
     }
 
     private async Task HandleExceptionAsync(HttpContext context, Exception exception)
@@ -38,7 +38,6 @@ public class ExceptionMiddleware
             Message = exception.Message
         };
         var jsonString = JsonSerializer.Serialize(res);
-        await context.Response.WriteAsync( jsonString);
-        
+        await context.Response.WriteAsync(jsonString);
     }
 }
