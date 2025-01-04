@@ -167,7 +167,7 @@ app.UseResponseCompression();
 app.UseCors(MyAllowSpecificOrigins);
 app.UseDefaultFiles();
 app.UseStaticFiles();
-app.UseMiddleware<MetricMiddleware>();
+// app.UseMiddleware<MetricMiddleware>();
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<TokenHandlerMiddlerware>();
 app.UseHttpsRedirection();

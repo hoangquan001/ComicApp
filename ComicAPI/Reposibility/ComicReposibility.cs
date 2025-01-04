@@ -88,9 +88,8 @@ public class ComicReposibility : IComicReposibility
         .Skip((page - 1) * step)
         .Take(step)
         .Include(x => x.Genres)
-        .Select(x => new ComicDTO(x)
+        .Select(x => new ComicDTO(x, _urlService)
         {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         }).ToListAsync();
 
@@ -119,9 +118,8 @@ public class ComicReposibility : IComicReposibility
         .Skip((page - 1) * step)
         .Take(step)
         .Include(x => x.Genres)
-        .Select(x => new ComicDTO(x)
+        .Select(x => new ComicDTO(x, _urlService)
         {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         })
         .ToListAsync();
@@ -220,47 +218,33 @@ public class ComicReposibility : IComicReposibility
 
     }
 
-    private static List<string> GetNgrams(string text, int n)
-    {
-        List<string> ngrams = new List<string>();
-        for (int i = 0; i <= text.Length - n; i++)
-        {
-            ngrams.Add(text.Substring(i, n));
-        }
-        return ngrams;
-    }
-    private static double CalculateNgramSimilarity(List<string> ngrams1, List<string> ngrams2)
-    {
-        int matchCount = ngrams1.Intersect(ngrams2).Count();
-        // Tổng số N-gram trong cả hai chuỗi
-        int totalNgrams = ngrams1.Count + ngrams2.Count;
-        // Trả về độ tương đồng N-gram
-        return (2.0 * matchCount) / totalNgrams;
-    }
-
-    // Hàm tính độ tương đồng N-gram giữa hai chuỗi
-    private static int GetNgram(string text)
-    {
-        return text.Length < 10 ? 2 : text.Length < 20 ? 3 : 4;
-    }
-
     public async Task<List<ComicDTO>> GetComicByKeyword(string keyword)
     {
         Dictionary<int, Comic>? comis = await GetAllComics();
         keyword = SlugHelper.CreateSlug(keyword);
-        List<List<string>> ngrams = new List<List<string>> { GetNgrams(keyword, 2), GetNgrams(keyword, 3), GetNgrams(keyword, 4) };
+        List<List<string>> ngrams = new List<List<string>> { JaccardSearch.GetNgrams(keyword, 2, false), JaccardSearch.GetNgrams(keyword, 3, false), JaccardSearch.GetNgrams(keyword, 4, false) };
         List<(Comic comic, double similarity)> result = new List<(Comic, double)>();
+        List<string> comicNames = new List<string>();
+        // Console.WriteLine($"GetComicByKeyword: {CalculateDictionaryMemory(SlugHelper._slugCache)}");
         foreach (KeyValuePair<int, Comic> comic in comis)
         {
-            int n = GetNgram(comic.Value.Url);
-            double similarity = CalculateNgramSimilarity(ngrams[n - 2], GetNgrams(comic.Value.Url, n));
+            comicNames.Clear();
+            comicNames.Add(comic.Value.Title);
+            double similarity = 0;
             if (!string.IsNullOrEmpty(comic.Value.OtherName))
             {
-                string OtherName = SlugHelper.CreateSlug(comic.Value.OtherName);
-                n = GetNgram(comic.Value.OtherName);
-                similarity = Math.Max(similarity, CalculateNgramSimilarity(ngrams[n - 2], GetNgrams(OtherName, n)));
+                var otherNames = comic.Value.OtherName.Split(";", StringSplitOptions.RemoveEmptyEntries);
+                comicNames.AddRange(otherNames);
             }
-            if (similarity >0.1)
+            for (int i = 0; i < comicNames.Count; i++)
+            {
+                string slugComicName = SlugHelper.CreateSlug(comicNames[i], true, true);
+                int n = JaccardSearch.CalNGram(slugComicName);
+                similarity = Math.Max(similarity, JaccardSearch.CalculateSimilarity(ngrams[n - 2], JaccardSearch.GetNgrams(slugComicName, n, true)));
+                if (i == 0) similarity += 0.05;
+            }
+
+            if (similarity > 0.1)
             {
                 result.Add((comic.Value, similarity));
             }
@@ -269,11 +253,7 @@ public class ComicReposibility : IComicReposibility
         return result
         .OrderByDescending(x => x.similarity)
         .Take(5)
-        .Select(x => new ComicDTO(x.comic)
-        {
-            CoverImage = _urlService.GetComicCoverImagePath(x.comic.CoverImage),
-        })
-        .ToList();
+        .Select(x => new ComicDTO(x.comic, _urlService)).ToList();
     }
 
 
@@ -326,9 +306,8 @@ public class ComicReposibility : IComicReposibility
         .Skip((page - 1) * step)
         .Take(step)
         .Include(x => x.Genres)
-        .Select(x => new ComicDTO(x)
+        .Select(x => new ComicDTO(x, _urlService)
         {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         })
         .ToListAsync();
@@ -369,10 +348,7 @@ public class ComicReposibility : IComicReposibility
         .ToListAsync();
         List<float> data2 = data.Select(x => (float)x.ViewCount).ToList();
         data = ServiceUtilily.SampleList(data, data2, 30);
-        var result = data.Select(x => new ComicDTO(x)
-        {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
-        }).ToList();
+        var result = data.Select(x => new ComicDTO(x, _urlService)).ToList();
 
         return result;
     }
@@ -397,26 +373,23 @@ public class ComicReposibility : IComicReposibility
         var dailyComics = await _dbContext.GetTopDailyComics(TopViewType.Day)
         .Take(step)
         .Include(x => x.Genres)
-        .Select(x => new ComicDTO(x)
+        .Select(x => new ComicDTO(x, _urlService)
         {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         }).ToListAsync();
         var weeklyComics = await _dbContext.GetTopDailyComics(TopViewType.Week)
         .Take(step)
         .Include(x => x.Genres)
-        .Select(x => new ComicDTO(x)
+        .Select(x => new ComicDTO(x, _urlService)
         {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         })
         .ToListAsync();
         var monthlyComics = await _dbContext.GetTopDailyComics(TopViewType.Month)
         .Take(step)
         .Include(x => x.Genres)
-        .Select(x => new ComicDTO(x)
+        .Select(x => new ComicDTO(x, _urlService)
         {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         })
         .ToListAsync();
@@ -513,15 +486,27 @@ public class ComicReposibility : IComicReposibility
         var comics = await _dbContext.Comics
         .Where(x => ids.Contains(x.ID))
         .Include(x => x.Genres)
-        .Select(x => new ComicDTO(x)
+        .Select(x => new ComicDTO(x, _urlService)
         {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage),
             Chapters = x.Chapters.Where(c => c.ID == x.lastchapter).Select(ch => new ChapterDTO(ch))
         }).ToListAsync();
         return comics;
     }
 
     public async Task<List<ComicDTO>> FindSimilarComics(int comicid)
+    {
+        string cacheKey = $"SIMILAR_COMIC_KEY{comicid}";
+        if (!CacheEnabled || !_memoryCache.TryGetValue(cacheKey, out List<ComicDTO>? cachedData))
+        {
+            cachedData = await _getSimilarComicsFromDB(comicid, 12);
+            var cacheEntryOptions = new MemoryCacheEntryOptions()
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 10 minutes
+            _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
+        }
+        return cachedData!;
+    }
+
+    private async Task<List<ComicDTO>> _getSimilarComicsFromDB(int comicid, int size)
     {
         Dictionary<int, Comic>? _comics = await GetAllComics();
         if (!_comics.TryGetValue(comicid, out Comic? _comic))
@@ -551,18 +536,14 @@ public class ComicReposibility : IComicReposibility
         List<int>? keys = dictKey.Keys.ToList();
         //Sort the keys in descending order
         keys.Sort((x, y) => y.CompareTo(x));
-        foreach (var key in keys)
+        for (int i = 0; i < keys.Count; i++)
         {
-            result.AddRange(dictKey[key]);
+            result.AddRange(dictKey[keys[i]]);
             if (result.Count > 100) break;
         }
         ServiceUtilily.SuffleList(result);
-        List<Comic>? data = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-2)).Take(12).ToList();
-        List<ComicDTO>? resultDTO = data.Select(x => new ComicDTO(x)
-        {
-            CoverImage = _urlService.GetComicCoverImagePath(x.CoverImage)
-        }).ToList();
-
-        return resultDTO;
+        IEnumerable<Comic>? query = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-4)).Take(size);
+        var resultDTO = query.Select(x => new ComicDTO(x, _urlService));
+        return resultDTO.ToList();
     }
 }

@@ -167,10 +167,7 @@ public class ComicService : IComicService
 
         if (comic == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
 
-        ComicDTO? comicDTO = new ComicDTO(comic)
-        {
-            CoverImage = _urlService.GetComicCoverImagePath(comic.CoverImage)
-        };
+        ComicDTO? comicDTO = new ComicDTO(comic, urlService: _urlService);
         List<PageDTO>? urlsData = null;
         if (chapter.Pages != null)
         {

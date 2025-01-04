@@ -331,10 +331,9 @@ namespace ComicAPI.Reposibility
             .Where(x => x.UserID == userid)
             .Include(x => x.comic)
             .OrderByDescending(x => x.comic!.UpdateAt)
-            .Select(x => new ComicDTO(x.comic)
+            .Select(x => new ComicDTO(x.comic, _urlService)
             {
-                CoverImage = _urlService.GetComicCoverImagePath(x.comic!.CoverImage),
-                Chapters = x.comic.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => new ChapterDTO(ch))
+                Chapters = x.comic!.Chapters.Where(c => c.ID == x.comic.lastchapter).Select(ch => new ChapterDTO(ch))
             })
             .Skip((page - 1) * size)
             .Take(size).ToListAsync();

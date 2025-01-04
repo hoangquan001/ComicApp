@@ -1,6 +1,8 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
+using ComicAPI.Enums;
+using ComicAPI.Services;
 using ComicApp.Data;
 using ComicApp.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -8,10 +10,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 public class ComicDTO
 {
-    public ComicDTO()
-    {
-
-    }
+    public ComicDTO() => Type = false;
     public ComicDTO(Comic? x)
     {
         if (x == null) return;
@@ -29,7 +28,9 @@ public class ComicDTO
         NumChapter = x.numchapter;
         genres = x.Genres.Select(g => new GenreLiteDTO(g));
         Chapters = x.Chapters.Select(c => new ChapterDTO(c));
+        Type = x.Status == (int)ComicStatus.Ongoing && x.UpdateAt >= DateTime.UtcNow.AddMonths(-6);
     }
+    public ComicDTO(Comic? x, UrlService urlService) : this(x) => CoverImage = urlService.GetComicCoverImagePath(CoverImage);
     public int ID { get; set; } // Primary Key (implicitly set by IDENTITY(1, 1))
     public string Title { get; set; } = "";
     public string OtherName { get; set; } = "";
@@ -49,4 +50,5 @@ public class ComicDTO
 
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
     public bool IsFollow { get; set; } = false;
+    public bool Type { get; set; }
 }

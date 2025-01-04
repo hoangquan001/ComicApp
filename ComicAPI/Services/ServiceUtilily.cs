@@ -149,8 +149,13 @@ public class GlobalConfig
 }
 public class SlugHelper
 {
-    public static string CreateSlug(string inputString, bool ignoreDot = true)
+    public static Dictionary<string, string> _slugCache = new Dictionary<string, string>();
+    public static string CreateSlug(string inputString, bool ignoreDot = true, bool useCache = false)
     {
+        if (useCache && _slugCache.ContainsKey(inputString))
+        {
+            return _slugCache[inputString];
+        }
         string slug = inputString.ToLowerInvariant().Trim();
         string unaccentedString = RemoveAccents(slug);
         if (ignoreDot)
@@ -159,6 +164,10 @@ public class SlugHelper
             unaccentedString = Regex.Replace(unaccentedString, @"[^\w\s.]", "");
         unaccentedString = Regex.Replace(unaccentedString, @"\s+", "-");
         unaccentedString = unaccentedString.Trim('-');
+        if (useCache)
+        {
+            _slugCache[inputString] = unaccentedString;
+        }
         return unaccentedString;
 
 
@@ -184,7 +193,7 @@ public class SlugHelper
 
         return true;
     }
-    private static string RemoveAccents(string accentedString)
+    public static string RemoveAccents(string accentedString)
     {
         string normalizedString = accentedString.Normalize(NormalizationForm.FormD);
         StringBuilder stringBuilder = new StringBuilder();
