@@ -171,7 +171,7 @@ public class ComicService : IComicService
         List<PageDTO>? urlsData = null;
         if (chapter.Pages != null)
         {
-            bool needEncode = false;// = chapter.Pages.Contains("s3.mideman.com");
+            bool needEncode = true;// = chapter.Pages.Contains("s3.mideman.com");
             List<string>? links = JsonSerializer.Deserialize<List<string>>(chapter.Pages.Replace("'", "\""));
             if (links != null)
             {
@@ -182,7 +182,7 @@ public class ComicService : IComicService
                     {
                         Uri uri = new Uri(x);
                         string path = uri.AbsolutePath.Replace("nettruyen", "image");
-                        newUrl = $"{_urlService.Host}/api{path}?data={ServiceUtilily.Base64Encode(x)}";
+                        newUrl = $"{_urlService.ImgHost}{path}?data={ServiceUtilily.Base64Encode(x)}";
                     }
                     return new PageDTO { URL = newUrl, PageNumber = i };
                 }).ToList();

@@ -12,20 +12,16 @@ namespace ComicAPI.Services
         private readonly IWebHostEnvironment _environment;
         private readonly AppSetting _config;
 
-        public string Host
-        {
-            get
-            {
-                return _host;
-            }
-        }
-
+        public string Host => _host;
+        public string ImgHost => _imgHost;
+        private readonly string _imgHost = "https://img.metruyenmoi.com";
         private readonly string _host = "https://metruyenmoi.com";
-        public UrlService( IWebHostEnvironment environment, IOptions<AppSetting> options)
+        public UrlService(IWebHostEnvironment environment, IOptions<AppSetting> options)
         {
             _environment = environment;
             _config = options.Value;
             _host = _config.Host ?? _host;
+            _imgHost = _config.ImgHost ?? _imgHost;
         }
 
         public string GetComicCoverImagePath(string? Image)

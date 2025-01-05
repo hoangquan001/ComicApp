@@ -8,10 +8,11 @@ namespace ComicAPI.Classes
 {
     public class AppSetting
     {
-       public string ReportApiUrl { get; set; } = string.Empty;
+        public string ReportApiUrl { get; set; } = string.Empty;
 
-       public string ReportApiToken { get; set; } = string.Empty;
+        public string ReportApiToken { get; set; } = string.Empty;
 
-       public string ?Host  { get; set; } = null;
+        public string? Host { get; set; } = null;
+        public string? ImgHost { get; set; } = null;
     }
 }
