@@ -289,14 +289,17 @@ public class ComicService : IComicService
         return ServiceUtilily.GetDataRes<List<ComicDTO>>(data);
     }
 
-    public async Task<ServiceResponse<bool>> ReportError(string name, int chapterid, string errorType, string message)
+    public async Task<ServiceResponse<bool>> ReportError(string name, int chapterid, string errorType, string? message)
     {
+        Chapter? chapter = await _comicReposibility.GetChapter(chapterid);
+        if (chapter == null) return ServiceUtilily.GetDataRes<bool>(false);
         var data = new
         {
             name = name,
             errorType = errorType,
+            chapterLink = $"{_config.Host}/truyen-tranh/chapter/{chapter.ID}",
             createdAt = DateTime.UtcNow,
-            message = message,
+            message = message ?? "",
         };
         HttpResponseMessage? response = await _httpClient.PostAsJsonAsync(_config.ReportApiUrl, data);
         if (response.IsSuccessStatusCode)
