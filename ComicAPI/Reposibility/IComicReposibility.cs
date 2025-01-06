@@ -22,4 +22,5 @@ public interface IComicReposibility
     public Task<ComicTopViewDTO?> GetTopViewComics(int step);
     public Task<bool> UpdateViewComic(HashSet<int> comicviews);
     public Task<bool> UpdateViewChapter(Dictionary<int, int> chapterviews);
+    public Task<List<AnnouncementDTO>?> GetAnnouncements();
 }

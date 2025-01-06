@@ -22,6 +22,7 @@ public interface IComicService
     Task<ServiceResponse<ComicTopViewDTO?>> GetTopViewComics(int step);
     Task<ServiceResponse<int>> TotalViewComics(int chapterid);
     Task<ServiceResponse<bool>> ReportError(string name, int chapterid, string errorType, string? content);
+    Task<ServiceResponse<List<AnnouncementDTO>>> GetAnnouncement();
     Task UpdateViewComic();
     Task UpdateViewChapter();
 

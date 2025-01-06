@@ -20,6 +20,7 @@ namespace ComicApp.Models
             CommentedAt = comment.CommentedAt;
             Replies = new List<CommentDTO>();
             UserName = comment.User?.FullName;
+            Avatar = comment.User?.Avatar;
             ChapterName = comment.Chapter?.Url.ToString();
             for (int i = 0; i < comment.Replies?.Count; i++)
             {
@@ -34,6 +35,8 @@ namespace ComicApp.Models
         public DateTime CommentedAt { get; set; }
         public string? UserName { get; set; }
         public string? ChapterName { get; set; }
+        public string? Avatar { get; set; }
         public List<CommentDTO>? Replies { get; set; }
+
     }
 }

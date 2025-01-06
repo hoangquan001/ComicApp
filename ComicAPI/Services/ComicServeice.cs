@@ -308,5 +308,11 @@ public class ComicService : IComicService
         }
         return ServiceUtilily.GetDataRes<bool>(false);
     }
+
+    public async Task<ServiceResponse<List<AnnouncementDTO>>> GetAnnouncement()
+    {
+        var data = await _comicReposibility.GetAnnouncements();
+        return ServiceUtilily.GetDataRes<List<AnnouncementDTO>>(data);
+    }
 }
 

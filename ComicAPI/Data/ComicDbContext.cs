@@ -29,6 +29,7 @@ namespace ComicApp.Data
         public DbSet<UserNotification> UserNotifications => Set<UserNotification>();
         public DbSet<Notification> Notifications => Set<Notification>();
         public DbSet<UserVoteComic> UserVoteComics => Set<UserVoteComic>();
+        public DbSet<Announcement> Announcements => Set<Announcement>();
         // public DbSet<Page> Pages => Set<Page>();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -105,6 +106,12 @@ namespace ComicApp.Data
                 b.HasOne(x => x.comic).WithMany().HasForeignKey(x => x.ComicID);
             }
             );
+
+            modelBuilder.Entity<Announcement>(b =>
+            {
+                b.ToTable("announcement");
+                b.HasKey(x => new { x.ID });
+            });
 
             modelBuilder.HasDbFunction(() => GetLatestChapter(default))
             .HasName("get_latest_chapter");

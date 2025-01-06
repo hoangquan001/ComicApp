@@ -330,7 +330,14 @@ public class ComicReposibility : IComicReposibility
             return list;
         }
 
-        return null;
+        return new ListComicDTO()
+        {
+            totalpage = 0,
+            Page = page,
+            Step = step,
+            comics = new List<ComicDTO>()
+
+        };
     }
     private async Task<List<ComicDTO>?> _getComicRecommendFromDB()
     {
@@ -545,5 +552,19 @@ public class ComicReposibility : IComicReposibility
         IEnumerable<Comic>? query = result.Where(x => x.UpdateAt > DateTime.Now.AddYears(-4)).Take(size);
         var resultDTO = query.Select(x => new ComicDTO(x, _urlService));
         return resultDTO.ToList();
+    }
+
+    public async Task<List<AnnouncementDTO>?> GetAnnouncements()
+    {
+        return await _dbContext.Announcements
+            .Where(a => a.IsVisible && a.ApplyFrom <= DateTime.UtcNow && a.ApplyTo >= DateTime.UtcNow)
+            .OrderByDescending(a => a.CreateAt)
+            .Select(a => new AnnouncementDTO
+            {
+                Title = a.Title,
+                Content = a.Content
+            })
+            .ToListAsync();
+
     }
 }

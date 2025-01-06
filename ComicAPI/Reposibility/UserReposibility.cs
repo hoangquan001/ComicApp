@@ -363,7 +363,10 @@ namespace ComicAPI.Reposibility
                 .Include(x => x.Chapter)
                 .Skip((page - 1) * step)
                 .Take(step)
-                .Select(x => new CommentDTO(x))
+                .Select(x => new CommentDTO(x)
+                {
+                    Avatar = _urlService.GetUserImagePath(x.User!.Avatar),
+                })
                 .ToListAsync();
             if (data != null)
             {

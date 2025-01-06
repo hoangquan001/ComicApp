@@ -94,12 +94,12 @@ public class ComicController : ControllerBase
     // [HttpGet("data/img/{img_name}")]
     // public async Task<ActionResult> GetImage(string img_name, [FromQuery]string data)
     // {
-        
+
     //     // HttpContext.Request.Headers;
     //     string url = ServiceUtilily.Base64Decode(data);
     //     byte[]? rawdata = await _comicService.LoadImage(url);
 
-        
+
     //     return File(rawdata, contentType: "image/jpeg");
     // }
 
@@ -110,7 +110,7 @@ public class ComicController : ControllerBase
         try
         {
             string url = ServiceUtilily.Base64Decode(data);
-            
+
             // byte[]? rawdata = await _comicService.LoadImage(url);
             HttpRequestMessage? request = new HttpRequestMessage();
             request.RequestUri = new Uri(url);
@@ -207,6 +207,19 @@ public class ComicController : ControllerBase
         var responseComic = await _comicService.TotalViewComics(chapterId);
         return Ok(responseComic);
     }
+    // [HttpPost("announcement")]
+    // public async Task<ActionResult<bool>> AddAnnouncement(AnnouncementDTO data)
+    // {
+    //     var responseComic = await _comicService.AddAnnouncement(data);
+    //     return Ok(responseComic);
+    // }
+    [HttpGet("announcement")]
+    public async Task<ActionResult<List<AnnouncementDTO>>> GetAnnouncement()
+    {
+        var responseComic = await _comicService.GetAnnouncement();
+        return Ok(responseComic);
+    }
+
     [HttpPost("comic/report")]
     public async Task<ActionResult<bool>> ReportError(ErrorReportDTO data)
     {
