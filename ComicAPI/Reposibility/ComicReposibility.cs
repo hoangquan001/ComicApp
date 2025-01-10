@@ -18,6 +18,8 @@ public class ComicReposibility : IComicReposibility
     private List<string> NoGenres = new List<string> { "gender-bender","adult" ,"dam-my",
                                         "gender-bender","shoujo-ai","shounen-ai",
                                         "smut","soft-yaoi","soft-yuri"};
+    private static readonly object _cacheLock = new object();
+
     public ComicReposibility(ComicDbContext dbContext, IMemoryCache cache, UrlService urlService)
     {
         _memoryCache = cache;
@@ -27,10 +29,13 @@ public class ComicReposibility : IComicReposibility
     }
     private async Task<Dictionary<int, Comic>> _getAllComicsFromDB()
     {
+        DateTime start = DateTime.Now;
         var data = await _dbContext.Comics
         .Include(x => x.Genres)
         .AsNoTracking()
         .ToDictionaryAsync(x => x.ID, x => x);
+        TimeSpan timeItTook = DateTime.Now - start;
+        Console.WriteLine($"GetAllComics took {timeItTook.TotalMilliseconds} ms");
         return data;
     }
 
@@ -38,18 +43,23 @@ public class ComicReposibility : IComicReposibility
     {
         const string cacheKey = "ALL_COMIC_KEY";
 
-        if (/*!CacheEnabled ||*/ !_memoryCache.TryGetValue(cacheKey, out Dictionary<int, Comic>? cachedData))
+        if (!_memoryCache.TryGetValue(cacheKey, out Lazy<Task<Dictionary<int, Comic>>>? cachedData))
         {
-            DateTime start = DateTime.Now;
-            cachedData = await _getAllComicsFromDB();
-            TimeSpan timeItTook = DateTime.Now - start;
-            Console.WriteLine($"GetAllComics took {timeItTook.TotalMilliseconds} ms");
-            var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(10)); // Example: cache for 10 minutes
-            _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
+            lock (_cacheLock)
+            {
+                if (!_memoryCache.TryGetValue(cacheKey, out cachedData))
+                {
+
+                    cachedData = new Lazy<Task<Dictionary<int, Comic>>>(async () => await _getAllComicsFromDB());
+
+                    var cacheEntryOptions = new MemoryCacheEntryOptions()
+                            .SetSlidingExpiration(TimeSpan.FromMinutes(30)); // Example: cache for 10 minutes
+                    _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
+                }
+            }
         }
 
-        return cachedData!;
+        return await cachedData!.Value;
     }
 
     private async Task<int> GetComicTotalPageAsync(int genre = -1, ComicStatus status = ComicStatus.All)
@@ -368,7 +378,7 @@ public class ComicReposibility : IComicReposibility
         {
             cachedData = await _getComicRecommendFromDB();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(60)); // Reset each 5 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
 
@@ -416,7 +426,7 @@ public class ComicReposibility : IComicReposibility
         {
             cachedData = await _getTopViewComicsFromDB(step);
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(10)); // Reset each 10 minutes
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(120)); // Reset each 10 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
         return cachedData!;
@@ -507,7 +517,7 @@ public class ComicReposibility : IComicReposibility
         {
             cachedData = await _getSimilarComicsFromDB(comicid, 12);
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 10 minutes
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(30)); // Reset each 10 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
         return cachedData!;
