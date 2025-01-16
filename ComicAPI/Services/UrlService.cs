@@ -14,7 +14,7 @@ namespace ComicAPI.Services
 
         public string Host => _host;
         public string ImgHost => _imgHost;
-        private readonly string _imgHost = "https://img.metruyenmoi.com";
+        private readonly string _imgHost = "https://img1.metruyenmoi.com";
         private readonly string _host = "https://metruyenmoi.com";
         public UrlService(IWebHostEnvironment environment, IOptions<AppSetting> options)
         {
