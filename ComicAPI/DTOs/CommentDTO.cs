@@ -1,16 +1,10 @@
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using ComicApp.Data;
-using ComicApp.Models;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-
-
+using ComicAPI.Services;
 namespace ComicApp.Models
 {
     public class CommentDTO
     {
-        public CommentDTO(Comment comment)
+        public CommentDTO(Comment comment, UrlService urlService)
         {
             ID = comment.ID;
             ChapterID = comment.ChapterID;
@@ -20,11 +14,11 @@ namespace ComicApp.Models
             CommentedAt = comment.CommentedAt;
             Replies = new List<CommentDTO>();
             UserName = comment.User?.FullName;
-            Avatar = comment.User?.Avatar;
             ChapterName = comment.Chapter?.Url.ToString();
+            Avatar = urlService.GetUserImagePath(comment.User?.Avatar);
             for (int i = 0; i < comment.Replies?.Count; i++)
             {
-                Replies.Add(new CommentDTO(comment.Replies[i]));
+                Replies.Add(new CommentDTO(comment.Replies[i], urlService));
             }
         }
         public int ID { get; set; }

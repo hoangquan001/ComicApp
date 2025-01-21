@@ -165,6 +165,8 @@ public class ComicService : IComicService
 
         Comic? comic = (await _comicReposibility.GetAllComics())?[chapter.ComicID];
 
+        if (comic == null) comic = await _comicReposibility.GetComic(chapter.ComicID.ToString());
+
         if (comic == null) return ServiceUtilily.GetDataRes<ChapterPageDTO>(null);
 
         ComicDTO? comicDTO = new ComicDTO(comic, urlService: _urlService);

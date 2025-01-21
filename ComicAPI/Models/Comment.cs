@@ -25,6 +25,6 @@ namespace ComicApp.Models
         public int? ParentCommentID { get; set; }
         public User? User { get; set; }
         public Chapter? Chapter { get; set; }
-        public List<Comment>? Replies { get; set; }
+        public List<Comment> Replies { get; set; } = new List<Comment>();
     }
 }

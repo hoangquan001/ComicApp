@@ -314,7 +314,7 @@ namespace ComicAPI.Reposibility
                     ParentCommentID = replyFromCmt
                 });
             await _dbContext.SaveChangesAsync();
-            var cmtData = new CommentDTO(commentData.Entity);
+            var cmtData = new CommentDTO(commentData.Entity, _urlService);
             cmtData.UserName = user.FirstName + " " + user.LastName;
             // if (parentcommentid != 0)
             // {
@@ -354,19 +354,19 @@ namespace ComicAPI.Reposibility
 
         public async Task<CommentPageDTO?> GetCommentsOfComic(int comicid, int page = 1, int step = 10)
         {
-            var data = await _dbContext.Comments
+            List<CommentDTO>? data = await _dbContext.Comments
                 .AsNoTracking()
                 .Where(x => x.ComicID == comicid && x.ParentCommentID == null)
                 .OrderByDescending(x => x.CommentedAt)
                 .Include(x => x.Replies)
+                .ThenInclude(x => x.User)
+                .Include(x => x.Replies)
+                .ThenInclude(x => x.Chapter)
                 .Include(x => x.User)
                 .Include(x => x.Chapter)
                 .Skip((page - 1) * step)
                 .Take(step)
-                .Select(x => new CommentDTO(x)
-                {
-                    Avatar = _urlService.GetUserImagePath(x.User!.Avatar),
-                })
+                .Select(x => new CommentDTO(x, _urlService))
                 .ToListAsync();
             if (data != null)
             {
