@@ -1,6 +1,7 @@
 
 using System.Collections.Concurrent;
 using ComicAPI.Enums;
+using ComicAPI.Models;
 using ComicAPI.Services;
 using ComicApp.Data;
 using ComicApp.Models;
@@ -216,6 +217,7 @@ public class ComicReposibility : IComicReposibility
     public async Task<List<ChapterDTO>?> GetChapters(int comicid)
     {
         // DateTime start = DateTime.Now;
+        string key = $"chapters-{comicid}";
         var chapters = await _dbContext.Chapters
         .AsNoTracking()
         .Where(x => x.ComicID == comicid)
@@ -432,36 +434,29 @@ public class ComicReposibility : IComicReposibility
         return cachedData!;
     }
 
-    public async Task<bool> UpdateViewComic(HashSet<int> comicview)
+    public async Task<bool> SyncViewComic(Dictionary<int, int> comicviews)
     {
 
         try
         {
-            var comicIds = comicview.ToList();
+            if (comicviews.Count == 0) return true;
+            var comicIds = comicviews.Keys.ToHashSet();
+            await UpdateComicViewAsync(comicIds);
 
-            var comicsToUpdate = _dbContext.Comics
-                                                 .Where(c => comicIds.Contains(c.ID));
-
-            var chapterViewCounts = _dbContext.Chapters
-                                                    .Where(c => comicIds.Contains(c.ComicID))
-                                                    .GroupBy(c => c.ComicID)
-                                                    .Select(g => new { ComicID = g.Key, TotalViewCount = g.Sum(c => c.ViewCount) });
-
-            var chapterViewCountDict = chapterViewCounts.ToDictionary(x => x.ComicID, x => x.TotalViewCount);
-
-            foreach (var comic in comicsToUpdate)
+            var dailyComicViews = new List<DailyComicView>();
+            foreach (var comic in comicviews)
             {
-                if (chapterViewCountDict.TryGetValue(comic.ID, out int totalViewCount))
+                var comicId = comic.Key;
+                var viewCount = comic.Value;
+                var dailycomic = new DailyComicView
                 {
-                    comic.ViewCount = totalViewCount;
-                }
-                else
-                {
-                    comic.ViewCount = 0;
-                }
+                    ComicID = comicId,
+                    ViewDate = DateTime.UtcNow.Date,
+                    ViewCount = viewCount
+                };
+                dailyComicViews.Add(dailycomic);
             }
-
-            await _dbContext.SaveChangesAsync();
+            await AddOrUpdateDailyComicViewsAsync(dailyComicViews);
 
             return true;
         }
@@ -472,7 +467,49 @@ public class ComicReposibility : IComicReposibility
             return false;
         }
     }
-    public async Task<bool> UpdateViewChapter(Dictionary<int, int> chapterviews)
+
+    public async Task UpdateComicViewAsync(HashSet<int> comicIds)
+    {
+        var chapterViewCounts = _dbContext.Chapters
+                                                .Where(c => comicIds.Contains(c.ComicID))
+                                                .GroupBy(c => c.ComicID)
+                                                .Select(g => new { ComicID = g.Key, TotalViewCount = g.Sum(c => c.ViewCount) });
+
+        var chapterViewCountDict = await chapterViewCounts.ToDictionaryAsync(x => x.ComicID, x => x.TotalViewCount);
+        comicIds = chapterViewCountDict.Keys.ToHashSet();
+        var comicsToUpdate = await _dbContext.Comics
+        .Where(c => comicIds.Contains(c.ID))
+        .ToListAsync();
+
+        comicsToUpdate.ForEach(c =>
+        {
+            if (chapterViewCountDict.TryGetValue(c.ID, out int totalViewCount))
+            {
+                c.ViewCount = totalViewCount;
+            }
+        });
+        await _dbContext.SaveChangesAsync();
+    }
+
+    public async Task AddOrUpdateDailyComicViewsAsync(List<DailyComicView> dailyComicViews)
+    {
+        if (dailyComicViews.Count > 0)
+        {
+            var values = dailyComicViews
+                .Select(v => $"({v.ComicID}, '{v.ViewDate:yyyy-MM-dd}', {v.ViewCount})")
+                .ToList();
+
+            var sql = $@"
+                INSERT INTO DAILY_COMIC_VIEWS (ComicID, ViewDate, ViewCount)
+                VALUES {string.Join(", ", values)}
+                ON CONFLICT (ComicID, ViewDate)
+                DO UPDATE SET
+                    ViewCount = DAILY_COMIC_VIEWS.ViewCount + EXCLUDED.ViewCount;";
+
+            await _dbContext.Database.ExecuteSqlRawAsync(sql);
+        }
+    }
+    public async Task<bool> SyncViewChapter(Dictionary<int, int> chapterviews)
     {
 
         try
@@ -566,7 +603,10 @@ public class ComicReposibility : IComicReposibility
 
     public async Task<List<AnnouncementDTO>?> GetAnnouncements()
     {
-        return await _dbContext.Announcements
+        string cacheKey = $"ANNOUNCEMENT_KEY";
+        if (!CacheEnabled || !_memoryCache.TryGetValue(cacheKey, out List<AnnouncementDTO>? cachedData))
+        {
+            cachedData = await _dbContext.Announcements
             .Where(a => a.IsVisible && a.ApplyFrom <= DateTime.UtcNow && a.ApplyTo >= DateTime.UtcNow)
             .OrderByDescending(a => a.CreateAt)
             .Select(a => new AnnouncementDTO
@@ -576,5 +616,12 @@ public class ComicReposibility : IComicReposibility
             })
             .ToListAsync();
 
+            var cacheEntryOptions = new MemoryCacheEntryOptions()
+                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
+            _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
+
+        }
+
+        return cachedData!;
     }
 }

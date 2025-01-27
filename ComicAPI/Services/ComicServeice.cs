@@ -261,7 +261,7 @@ public class ComicService : IComicService
         var data = await _comicReposibility.GetTopViewComics(step);
         return ServiceUtilily.GetDataRes<ComicTopViewDTO>(data)!;
     }
-    public async Task<ServiceResponse<int>> TotalViewComics(int chapterid)
+    public async Task<ServiceResponse<int>> CalcView(int chapterid)
     {
         var chapter = await _comicReposibility.GetChapter(chapterid);
         if (chapter == null) return ServiceUtilily.GetDataRes<int>(0);
@@ -270,19 +270,24 @@ public class ComicService : IComicService
         return ServiceUtilily.GetDataRes<int>(chapterViews[chapterid]);
     }
 
-    public async Task UpdateViewChapter()
+    public async Task<bool> SyncViewChapter()
     {
-        if (await _comicReposibility.UpdateViewChapter(chapterViews.ToDictionary()))
+        if (await _comicReposibility.SyncViewChapter(chapterViews.ToDictionary()))
         {
             chapterViews.Clear();
+            return true;
         }
+        return false;
     }
-    public async Task UpdateViewComic()
+    public async Task<bool> SyncViewComic()
     {
-        if (await _comicReposibility.UpdateViewComic(comicViews.Keys.ToHashSet()))
+        if (await _comicReposibility.SyncViewComic(comicViews.ToDictionary()))
         {
             comicViews.Clear();
+            return true;
         }
+        return false;
+
     }
 
     public async Task<ServiceResponse<List<ComicDTO>>> GetComicsByIds(List<int> ids)

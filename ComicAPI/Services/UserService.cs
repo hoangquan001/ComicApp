@@ -373,16 +373,19 @@ public class UserService : IUserService
         return new ServiceResponse<int> { Status = 1, Message = "Success", Data = votepoint };
     }
 
-    public async Task<ServiceResponse<int>> TotalExpUser(UserExpType expt = UserExpType.Chapter)
+    public async Task<ServiceResponse<int>> CalcExp(UserExpType expt = UserExpType.Chapter)
     {
         if (_CurrentUser == null) return await Task.FromResult(ServiceUtilily.GetDataRes<int>(-1));
         _exps.AddOrUpdate(_CurrentUser.ID, (int)expt, (key, oldValue) => oldValue + (int)expt);
         return await Task.FromResult(ServiceUtilily.GetDataRes<int>(1));
     }
-    public async Task UpdateExp()
+    public async Task SyncUserExp()
     {
-        await _userReposibility.UpdateUserExp(_exps.ToDictionary());
-        _exps.Clear();
+
+        if (await _userReposibility.SyncUserExp(_exps.ToDictionary()))
+        {
+            _exps.Clear();
+        }
     }
 
 

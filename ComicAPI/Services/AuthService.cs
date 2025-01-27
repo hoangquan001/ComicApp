@@ -162,10 +162,9 @@ public class AuthService : IAuthService
         {
             return new ServiceResponse<User> { Status = 0, Message = "Tài khoản đã tồn tại" };
         }
-        int maxID = await _dbContext.Users.MaxAsync(user => user.ID);
+        // int maxID = await _dbContext.Users.MaxAsync(user => user.ID);
         User user = new User
         {
-            ID = maxID + 10,
             FirstName = registerData.name!,
             Email = registerData.email!,
             HashPassword = registerData.password!,

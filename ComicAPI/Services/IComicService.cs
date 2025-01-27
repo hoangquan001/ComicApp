@@ -20,10 +20,10 @@ public interface IComicService
     Task<ServiceResponse<ListComicDTO>> GetComicBySearchAdvance(ComicQuerySearchAdvance comicQueryParams);
     Task<ServiceResponse<List<ComicDTO>>> GetComicRecommend();
     Task<ServiceResponse<ComicTopViewDTO?>> GetTopViewComics(int step);
-    Task<ServiceResponse<int>> TotalViewComics(int chapterid);
+    Task<ServiceResponse<int>> CalcView(int chapterid);
     Task<ServiceResponse<bool>> ReportError(string name, int chapterid, string errorType, string? content);
     Task<ServiceResponse<List<AnnouncementDTO>>> GetAnnouncement();
-    Task UpdateViewComic();
-    Task UpdateViewChapter();
+    Task<bool> SyncViewComic();
+    Task<bool> SyncViewChapter();
 
 }

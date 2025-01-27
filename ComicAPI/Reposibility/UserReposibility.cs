@@ -197,14 +197,13 @@ namespace ComicAPI.Reposibility
             return await _dbContext.UserVoteComics.FirstOrDefaultAsync(x => x.UserID == userid && x.ComicID == comicid);
         }
 
-        public async Task UpdateUserExp(Dictionary<int, int> exps)
+        public async Task<bool> SyncUserExp(Dictionary<int, int> exps)
         {
             var userIds = exps.Keys.ToList();
             var usersToUpdate = await _dbContext.Users
             .Where(u => userIds.Contains(u.ID))
             .ToListAsync();
-
-            if (usersToUpdate == null) return;
+            if (usersToUpdate == null) return false;
             foreach (var user in usersToUpdate)
             {
                 user.Experience += exps[user.ID];
@@ -212,7 +211,7 @@ namespace ComicAPI.Reposibility
 
 
             await _dbContext.SaveChangesAsync();
-
+            return true;
         }
         public async Task<int> UnFollowComic(int userid, int comicid)
         {

@@ -28,6 +28,6 @@ public interface IUserService
     Task<ServiceResponse<int>> GetUserVote(int comicid);
     Task<ServiceResponse<int>> VoteComic(int comicid, int votePoint);
     Task<ServiceResponse<int>> UnVoteComic(int comicid);
-    Task<ServiceResponse<int>> TotalExpUser(UserExpType expt = UserExpType.Chapter);
-    Task UpdateExp();
+    Task<ServiceResponse<int>> CalcExp(UserExpType expt = UserExpType.Chapter);
+    Task SyncUserExp();
 }

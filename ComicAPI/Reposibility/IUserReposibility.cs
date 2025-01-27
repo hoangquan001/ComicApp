@@ -9,7 +9,7 @@ public interface IUserReposibility
     Task<User?> GetUser(int userid);
     Task<List<UserNotificationDTO>?> GetUserNotify(int userid);
     Task<UserVoteComic?> GetUserVoteComic(int userid, int comicid);
-    Task UpdateUserExp(Dictionary<int, int> exps);
+    Task<bool> SyncUserExp(Dictionary<int, int> exps);
     Task<int> FollowComic(int userid, int comicid);
     Task<int> UnFollowComic(int userid, int comicid);
     Task<ListComicDTO?> GetFollowComics(int userid, int page = 1, int step = 40);
