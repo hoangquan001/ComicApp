@@ -54,7 +54,7 @@ public class ComicReposibility : IComicReposibility
                     cachedData = new Lazy<Task<Dictionary<int, Comic>>>(async () => await _getAllComicsFromDB());
 
                     var cacheEntryOptions = new MemoryCacheEntryOptions()
-                            .SetSlidingExpiration(TimeSpan.FromMinutes(30)); // Example: cache for 10 minutes
+                            .SetAbsoluteExpiration(TimeSpan.FromMinutes(60)); // Example: cache for 10 minutes
                     _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
                 }
             }
@@ -71,7 +71,7 @@ public class ComicReposibility : IComicReposibility
         {
             cachedData = new ConcurrentDictionary<string, int>();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromHours(1)); // Example: cache for 10 minutes
+                 .SetAbsoluteExpiration(TimeSpan.FromHours(1)); // Example: cache for 10 minutes
             _memoryCache.Set("TotalPageComicKey", cachedData, cacheEntryOptions);
         }
 
@@ -190,7 +190,7 @@ public class ComicReposibility : IComicReposibility
         {
             cachedData = await _getComicFromDB(key); ;
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Example: cache for 10 minutes
+                 .SetAbsoluteExpiration(TimeSpan.FromMinutes(5)); // Example: cache for 10 minutes
             _memoryCache.Set(keysave, cachedData, cacheEntryOptions);
         }
         return cachedData;
@@ -207,7 +207,7 @@ public class ComicReposibility : IComicReposibility
             .AsNoTracking()
             .FirstOrDefaultAsync();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
+                 .SetAbsoluteExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
 
         }
@@ -380,7 +380,7 @@ public class ComicReposibility : IComicReposibility
         {
             cachedData = await _getComicRecommendFromDB();
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(60)); // Reset each 5 minutes
+                 .SetAbsoluteExpiration(TimeSpan.FromMinutes(60)); // Reset each 5 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
 
@@ -428,7 +428,7 @@ public class ComicReposibility : IComicReposibility
         {
             cachedData = await _getTopViewComicsFromDB(step);
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(120)); // Reset each 10 minutes
+                 .SetAbsoluteExpiration(TimeSpan.FromMinutes(60)); // Reset each 10 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
         return cachedData!;
@@ -554,7 +554,7 @@ public class ComicReposibility : IComicReposibility
         {
             cachedData = await _getSimilarComicsFromDB(comicid, 12);
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(30)); // Reset each 10 minutes
+                 .SetAbsoluteExpiration(TimeSpan.FromMinutes(30)); // Reset each 10 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
         }
         return cachedData!;
@@ -617,7 +617,7 @@ public class ComicReposibility : IComicReposibility
             .ToListAsync();
 
             var cacheEntryOptions = new MemoryCacheEntryOptions()
-                 .SetSlidingExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
+                 .SetAbsoluteExpiration(TimeSpan.FromMinutes(5)); // Reset each 5 minutes
             _memoryCache.Set(cacheKey, cachedData, cacheEntryOptions);
 
         }
